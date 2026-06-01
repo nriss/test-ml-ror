@@ -1,116 +1,134 @@
 {
-  "date" : "Mon, 01 Jun, 2026 09:54:39 +0000",
+  "date" : "Mon, 01 Jun, 2026 10:00:27 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [{
     "name" : "/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.test.ror.json",
-    "size" : 2468,
+    "size" : 2790,
     "processes" : [{
       "activity" : "load",
-      "start" : 56,
-      "length" : 163
+      "start" : 53,
+      "length" : 206
+    },
+    {
+      "activity" : "scan",
+      "start" : 54,
+      "length" : 1
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 57,
-      "length" : 18
+      "start" : 54,
+      "length" : 17
     },
     {
       "activity" : "generateNarratives",
-      "start" : 57,
-      "length" : 87
+      "start" : 54,
+      "length" : 74
     },
     {
       "activity" : "validate",
-      "start" : 57,
-      "length" : 4370
-    },
-    {
-      "activity" : "checkConformanceResources3",
-      "start" : 62,
-      "length" : 1
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 62,
-      "length" : 1
+      "start" : 54,
+      "length" : 4282
     },
     {
       "activity" : "validate",
-      "start" : 62,
+      "start" : 59,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 62,
-      "length" : 126
+      "start" : 59,
+      "length" : 106
     },
     {
       "activity" : "generate2",
-      "start" : 65,
-      "length" : 130
+      "start" : 61,
+      "length" : 116
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 74,
-      "length" : 2
+      "start" : 70,
+      "length" : 3
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 78,
-      "length" : 1
+      "start" : 73,
+      "length" : 2
     }]
   },
   {
     "name" : "/fsh-generated/includes/menu.xml",
-    "size" : 1234,
+    "size" : 1612,
     "processes" : [{
       "activity" : "validate",
-      "start" : 62,
+      "start" : 59,
       "length" : 1
     },
     {
       "activity" : "generate2",
-      "start" : 65,
+      "start" : 61,
       "length" : 1
     }]
   },
   {
     "name" : "/input/data/features.yml",
-    "size" : 164,
-    "processes" : [{
-      "activity" : "validate",
-      "start" : 62,
-      "length" : 1
-    }]
+    "size" : 164
   },
   {
     "name" : "/input/pagecontent/index.md",
     "size" : 1972,
     "processes" : [{
+      "activity" : "generate2",
+      "start" : 61,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/fonctionnalites-ror.md",
+    "size" : 3290,
+    "processes" : [{
       "activity" : "validate",
-      "start" : 62,
+      "start" : 59,
       "length" : 1
     },
     {
       "activity" : "generate2",
-      "start" : 65,
+      "start" : 61,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/avantages-ml.md",
+    "size" : 3526,
+    "processes" : [{
+      "activity" : "scan",
+      "start" : 54,
       "length" : 1
     }]
   },
   {
     "name" : "/input/pagecontent/change-log.md",
-    "size" : 222
+    "size" : 222,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 59,
+      "length" : 1
+    }]
   },
   {
     "name" : "/template/config",
-    "size" : 0
+    "size" : 0,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 61,
+      "length" : 1
+    }]
   },
   {
     "name" : "/template/config/_config.yml",
     "size" : 140,
     "processes" : [{
       "activity" : "validate",
-      "start" : 62,
+      "start" : 59,
       "length" : 1
     }]
   },
@@ -123,12 +141,7 @@
     "size" : 36288,
     "processes" : [{
       "activity" : "validate",
-      "start" : 62,
-      "length" : 1
-    },
-    {
-      "activity" : "generate2",
-      "start" : 65,
+      "start" : 59,
       "length" : 1
     }]
   },
@@ -138,6 +151,11 @@
   },
   {
     "name" : "/temp/pages/_includes/artifacts.xml",
-    "size" : 695
+    "size" : 695,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 61,
+      "length" : 1
+    }]
   }]
 }

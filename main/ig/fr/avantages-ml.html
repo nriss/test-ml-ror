@@ -5,7 +5,7 @@
 <html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Historique des versions - Démonstration - Modèle Logique ROR dérivant du MOS v0.1.0</title>
+    <title>Pourquoi le Modèle Logique HL7 ? - Démonstration - Modèle Logique ROR dérivant du MOS v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -46,8 +46,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"4"}
-    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -141,15 +141,15 @@
     <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Historique des versions</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Pourquoi le Modèle Logique HL7 ?</b></li>
 
           <span style="float: var(--ig-right);">
 
-            <a href="fonctionnalites-ror.html">&lt; précédent</a> | 
+            <a href="index.html">&lt; précédent</a> | 
 
             <a href="#bottom">bas de page</a>
 
-          | <a href="artifacts.html">suivant &gt;</a>
+          | <a href="fonctionnalites-ror.html">suivant &gt;</a>
 
           </span>
 
@@ -171,7 +171,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Démonstration - Modèle Logique ROR dérivant du MOS - version de développement local (intégration continue v0.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/test-ror/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
-  <h2>Historique des versions</h2>
+  <h2>Pourquoi le Modèle Logique HL7 ?</h2>
   
 
 
@@ -187,18 +187,58 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#pourquoi-passer-de-modelio-au-modèle-logique-hl7-" id="markdown-toc-pourquoi-passer-de-modelio-au-modèle-logique-hl7-">Pourquoi passer de Modelio au Modèle Logique HL7 ?</a></li>
+  <li><a href="#collaboration-ouverte-avec-lécosystème" id="markdown-toc-collaboration-ouverte-avec-lécosystème">Collaboration ouverte avec l'écosystème</a></li>
+  <li><a href="#compétences-et-autonomie-à-lagence" id="markdown-toc-compétences-et-autonomie-à-lagence">Compétences et autonomie à l'agence</a></li>
+  <li><a href="#alignement-international-et-extensibilité" id="markdown-toc-alignement-international-et-extensibilité">Alignement international et extensibilité</a></li>
+</ul>
+
 </div>
-<h3 id="historique-des-versions">Historique des versions</h3>
+<h3 id="pourquoi-passer-de-modelio-au-modèle-logique-hl7-">Pourquoi passer de Modelio au Modèle Logique HL7 ?</h3>
 
-<h4 id="version-010-ci-build">version 0.1.0 (ci-build)</h4>
+<p>Le MOS était jusqu'à présent publié via le site <a href="https://mos.esante.gouv.fr">mos.esante.gouv.fr</a>, accompagné d'exports Excel et PDF générés depuis Modelio. Ce passage vers un guide d'implémentation en Modèle Logique HL7 (écrit en FSH et hébergé sur GitHub) s'inscrit dans une démarche d'alignement sur les pratiques internationales, tout en ouvrant de nouvelles possibilités pour l'écosystème.</p>
 
-<p>Première version de l'IG de démonstration ROR.</p>
+<div style="background-color: #fff9e6; border-left: 4px solid #ff9800; padding: 10px 15px; margin: 15px 0;">
+<b>Ce qui ne change pas</b><br />
+La gouvernance et le processus d'évolution du MOS restent inchangés. Le MOS conserve sa neutralité technologique : le Modèle Logique HL7 n'est pas FHIR. C'est un formalisme de modélisation indépendant de toute implémentation, qui peut servir de socle pour différents standards (FHIR, CDA, HL7 V2/V3, etc.).
+</div>
+
+<h3 id="collaboration-ouverte-avec-lécosystème">Collaboration ouverte avec l'écosystème</h3>
+
+<p>L'hébergement sur <strong>GitHub</strong> transforme la manière de collaborer autour du MOS.</p>
+
+<p>Avec Modelio, les échanges se faisaient hors ligne, par email ou lors de réunions. Avec GitHub :</p>
 
 <ul>
-  <li>Initialisation du projet à partir du template ANS</li>
-  <li>Configuration de la dépendance vers le MOS 0.1.0-ballot</li>
+  <li>Chaque acteur peut <strong>proposer une modification</strong> via une pull request, <strong>signaler un problème</strong> via une issue, ou <strong>commenter</strong> une proposition en cours — sans attendre une réunion de concertation.</li>
+  <li>L'<strong>historique complet</strong> des évolutions est traçable : qui a proposé quoi, pourquoi, quand, et quelle décision a été prise.</li>
+  <li>Les discussions sont <strong>publiques et indexées</strong>, ce qui facilite la réutilisation des décisions passées et évite de rejouer les mêmes débats.</li>
+  <li>La contribution externe est possible : une première proposition avait d'ailleurs déjà été soumise par un contributeur externe avant même la migration officielle.</li>
+</ul>
+
+<h3 id="compétences-et-autonomie-à-lagence">Compétences et autonomie à l'agence</h3>
+
+<p>Travailler en FSH sur un dépôt Git place le MOS dans le même outillage que tous les autres IGs de l'ANS. Concrètement, cela signifie que :</p>
+
+<ul>
+  <li>Les équipes de l'ANS peuvent <strong>modifier, valider et publier le MOS</strong> avec les mêmes outils et les mêmes compétences que pour n'importe quel autre guide d'implémentation.</li>
+  <li>La <strong>validation structurelle est automatique</strong> à chaque modification : les erreurs sont détectées avant la publication, pas après.</li>
+  <li>Les <strong>diagrammes sont générés automatiquement</strong> à partir du modèle source — ils sont toujours synchronisés avec le contenu réel, sans export manuel.</li>
+  <li>L'<strong>intégration continue</strong> permet une preview instantanée de chaque branche, ce qui facilite la revue des contributions avant merge.</li>
+</ul>
+
+<h3 id="alignement-international-et-extensibilité">Alignement international et extensibilité</h3>
+
+<p>De nombreux pays et organisations utilisent déjà les Modèles Logiques HL7 pour leurs modélisations nationales : le projet européen XT-EHR, la Belgique, la Suisse (CH-ELM), l'OMS (Smart Guidelines). Ce passage aligne la France sur ces pratiques.</p>
+
+<p>Le format ouvre également de nouvelles possibilités techniques :</p>
+
+<ul>
+  <li>Les projets peuvent <strong>hériter des Modèles Logiques du MOS</strong> (qui lui même peut dériver des objets européens) pour y ajouter leurs propres spécificités, en garantissant la cohérence avec le référentiel national (voir la <a href="fonctionnalites-ror.html">page des fonctionnalités disponibles</a>).</li>
+  <li>Les nomenclatures nationales (TRE du SMT) sont <strong>référencées directement</strong> dans le modèle via leurs packages FHIR, sans gestion manuelle.</li>
+  <li>Le format permet d'exploiter les datatypes FHIR et l'héritage depuis des modèles européens.</li>
 </ul>
 
 
@@ -226,7 +266,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:var(--ig-left);">&#xA0;
 
-                <a href="fonctionnalites-ror.html">&lt; précédent</a>
+                <a href="index.html">&lt; précédent</a>
 
               </td>
               <td style="text-align:center">
@@ -234,7 +274,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:var(--ig-right);">&#xA0;
 
-                <a href="artifacts.html">suivant ></a>
+                <a href="fonctionnalites-ror.html">suivant ></a>
 
               </td>
             </tr>

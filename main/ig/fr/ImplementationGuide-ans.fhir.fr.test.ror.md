@@ -14,7 +14,7 @@
   "name" : "TestROR",
   "title" : "Démonstration - Modèle Logique ROR dérivant du MOS",
   "status" : "draft",
-  "date" : "2026-06-01T09:54:39+00:00",
+  "date" : "2026-06-01T10:00:27+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -746,6 +746,24 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Accueil",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "avantages-ml.html"
+        }],
+        "nameUrl" : "avantages-ml.html",
+        "title" : "Pourquoi le Modèle Logique HL7 ?",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "fonctionnalites-ror.html"
+        }],
+        "nameUrl" : "fonctionnalites-ror.html",
+        "title" : "Fonctionnalités disponibles pour le ROR",
         "generation" : "markdown"
       },
       {
