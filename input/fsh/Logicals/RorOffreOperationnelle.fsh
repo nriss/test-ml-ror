@@ -16,14 +16,16 @@ Description: "Spécialisation ROR du modèle MOS OffreOperationnelle. Ajoute des
   * ^short = "Type d'offre (ex : soins, médico-social)"
 * champActivite 1..1
   * ^short = "Champ d'activité principal de l'offre"
-* modePriseEnCharge 1..*
-  * ^short = "Mode(s) de prise en charge proposé(s)"
+* modePriseEnCharge 1..1
+  * ^short = "Mode de prise en charge proposé"
 
-// Éléments additionnels propres au ROR
+// Éléments hérités du MOS contraints pour le ROR (pas de redéfinition de type)
+* dateFermeture
+  * ^short = "Date à partir de laquelle l'offre n'est plus active dans le ROR"
+
+// Éléments additionnels propres au ROR (absents du MOS)
 * dateOuverture 0..1 date "Date d'ouverture de l'offre"
   * ^short = "Date à partir de laquelle l'offre est active dans le ROR"
-* dateFermeture 0..1 date "Date de fermeture de l'offre"
-  * ^short = "Date à partir de laquelle l'offre n'est plus active"
 * entiteGeographique 1..1 Reference(RorEntiteGeographique) "Entité géographique où l'offre est réalisée"
   * ^short = "Lieu de réalisation de l'offre"
 * organisationInterne 0..1 Reference(RorOrganisationInterne) "Organisation interne porteuse de l'offre"
