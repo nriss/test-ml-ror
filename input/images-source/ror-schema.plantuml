@@ -1,0 +1,82 @@
+@startuml ror-schema
+!theme plain
+skinparam linetype ortho
+skinparam classBorderColor #555
+skinparam classBackgroundColor #fafafa
+skinparam classFontStyle bold
+skinparam arrowColor #333
+skinparam noteBackgroundColor #fff9e6
+skinparam noteBorderColor #ff9800
+
+title Modèle logique ROR — relations entre objets
+
+package "MOS (socle commun)" #e8f4f8 {
+  class OffreOperationnelle <<MOS>> {
+    identifiantOffre : Identifier
+    nomOffre : string
+    typeOffre : Coding
+    champActivite : Coding
+    modePriseEnCharge : Coding
+    ...
+  }
+
+  class EntiteGeographique <<MOS>> {
+    identifiantEG : Identifier
+    numFINESS : Identifier
+    nomOperationnel : string
+    secteurActivite : Coding
+    ...
+  }
+}
+
+package "ROR (spécialisation)" #fff9e6 {
+  class RorOffreOperationnelle <<ROR>> {
+    -- hérité du MOS --
+    identifiantOffre [1..1]
+    nomOffre [1..1]
+    typeOffre [1..1]
+    modePriseEnCharge [1..*]
+    -- propre au ROR --
+    dateOuverture : date [0..1]
+    dateFermeture : date [0..1]
+    tarifInformation : string [0..1]
+  }
+
+  class RorEntiteGeographique <<ROR>> {
+    -- hérité du MOS --
+    identifiantEG [1..1]
+    nomOperationnel [1..1]
+    secteurActivite [1..1]
+    -- propre au ROR --
+    coordonneesGeographiques [0..1]
+    accessibilitePMR : boolean [0..1]
+    horairesAccueil : string [0..1]
+    telephoneContact : string [0..1]
+  }
+
+  class RorOrganisationInterne <<ROR>> {
+    -- nouveau (hors MOS) --
+    identifiant : Identifier [1..1]
+    nom : string [1..1]
+    type : Coding [1..1]
+    responsable [0..1]
+    dateMiseAJour : dateTime [0..1]
+  }
+}
+
+' Héritage MOS → ROR
+OffreOperationnelle <|-- RorOffreOperationnelle : dérive de
+EntiteGeographique <|-- RorEntiteGeographique : dérive de
+
+' Relations ROR
+RorOffreOperationnelle "0..*" --> "1..1" RorEntiteGeographique : réalisée dans
+RorOffreOperationnelle "0..*" --> "0..1" RorOrganisationInterne : portée par
+RorEntiteGeographique "1..1" *-- "0..*" RorOrganisationInterne : contient
+
+note right of RorOrganisationInterne
+  Pôle, service ou unité fonctionnelle
+  Entité propre au ROR,
+  non couverte par le MOS
+end note
+
+@enduml
