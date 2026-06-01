@@ -13,7 +13,8 @@ Description: "Spécialisation ROR du modèle MOS EntiteGeographique. Ajoute des 
 * nomOperationnel 1..1
   * ^short = "Nom opérationnel affiché dans le ROR"
 * secteurActivite 1..1
-  * ^short = "Secteur d'activité principal de l'entité"
+* secteurActivite from VS_RorSecteurActivite (required)
+  * ^short = "Secteur d'activité principal de l'entité (restreint aux secteurs couverts par le ROR)"
 * categorieEtablissement 0..1
   * ^short = "Catégorie d'établissement (MCO, SSR, PSY, etc.)"
 
