@@ -267,7 +267,13 @@ Cet IG est un exemple illustrant comment des équipes projets (ici : ROR) peuven
 <p>Cet IG de démonstration montre comment une équipe projet — ici l'équipe <strong>ROR (Répertoire de l'Offre de soins et des Ressources)</strong> — peut :</p>
 
 <ol>
-  <li><strong>Dériver</strong> des modèles logiques existants du MOS pour les spécialiser à son contexte</li>
+  <li><strong>Dériver</strong> des modèles logiques existants du MOS pour les spécialiser à son contexte, par exemple :
+    <ul>
+      <li>ajouter de nouveaux attributs (<code class="language-plaintext highlighter-rouge">dateOuverture</code>, coordonnées GPS, accessibilité PMR…)</li>
+      <li>contraindre des cardinalités (<code class="language-plaintext highlighter-rouge">identifiantOffre</code> passe de <code class="language-plaintext highlighter-rouge">0..1</code> à <code class="language-plaintext highlighter-rouge">1..1</code> — obligatoire dans le ROR)</li>
+      <li>restreindre un jeu de valeurs (<code class="language-plaintext highlighter-rouge">secteurActivite</code> limité aux 7 secteurs couverts par le ROR, via <code class="language-plaintext highlighter-rouge">VS_RorSecteurActivite</code>)</li>
+    </ul>
+  </li>
   <li><strong>Créer</strong> de nouveaux modèles logiques propres au ROR, non couverts par le MOS</li>
   <li><strong>Documenter</strong> les relations entre les objets via un schéma de liaison</li>
 </ol>
