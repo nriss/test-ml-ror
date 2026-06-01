@@ -14,7 +14,7 @@
   "name" : "TestROR",
   "title" : "Démonstration - Modèle Logique ROR dérivant du MOS",
   "status" : "draft",
-  "date" : "2026-06-01T10:00:27+00:00",
+  "date" : "2026-06-01T10:02:18+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
