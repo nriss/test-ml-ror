@@ -17,7 +17,10 @@ Le [MOS (Modèle des Objets de Santé)](https://interop.esante.gouv.fr/ig/mos/0.
 
 Cet IG de démonstration montre comment une équipe projet — ici l'équipe **ROR (Répertoire de l'Offre de soins et des Ressources)** — peut :
 
-1. **Dériver** des modèles logiques existants du MOS pour les spécialiser à son contexte
+1. **Dériver** des modèles logiques existants du MOS pour les spécialiser à son contexte, par exemple :
+   - ajouter de nouveaux attributs (`dateOuverture`, coordonnées GPS, accessibilité PMR…)
+   - contraindre des cardinalités (`identifiantOffre` passe de `0..1` à `1..1` — obligatoire dans le ROR)
+   - restreindre un jeu de valeurs (`secteurActivite` limité aux 7 secteurs couverts par le ROR, via `VS_RorSecteurActivite`)
 2. **Créer** de nouveaux modèles logiques propres au ROR, non couverts par le MOS
 3. **Documenter** les relations entre les objets via un schéma de liaison
 
