@@ -1,0 +1,7 @@
+[{
+  "id" : "ans.fhir.fr.test.ror",
+  "type" : "ImplementationGuide",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ImplementationGuide/ans.fhir.fr.test.ror",
+  "version" : "0.1.0",
+  "name" : "TestROR"
+}]
