@@ -29,6 +29,10 @@ Cet IG de démonstration montre comment une équipe projet — ici l'équipe **R
 | `RorEntiteGeographique` | Dérivé du MOS | Lieu de réalisation de l'offre, avec extensions ROR |
 | `RorOrganisationInterne` | Nouveau | Organisation interne d'une structure (pôle, unité, service) |
 
+### Schéma des relations
+
+{% include ror-schema.svg %}
+
 ### Dépendances
 
 {% include dependency-table.xhtml %}
