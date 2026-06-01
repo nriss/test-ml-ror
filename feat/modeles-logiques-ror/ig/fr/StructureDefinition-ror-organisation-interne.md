@@ -78,13 +78,17 @@ Autres représentations du profil : [CSV](../StructureDefinition-ror-organisatio
 {
   "resourceType" : "StructureDefinition",
   "id" : "ror-organisation-interne",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+    "valueCode" : "can-be-target"
+  }],
   "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-organisation-interne",
   "version" : "0.1.0",
   "name" : "RorOrganisationInterne",
   "title" : "ROR - Organisation Interne",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-01T10:04:08+00:00",
+  "date" : "2026-06-01T10:05:41+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

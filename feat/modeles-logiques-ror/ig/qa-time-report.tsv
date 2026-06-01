@@ -1,9 +1,9 @@
 Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	translate	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.test.ror.json	4195	-	0	0	0	0	0	0	16	71	0	0	0	0	0	0	0	1	0	0	0	101	114	0	0	0	3	0	2
-fsh-generated/resources/StructureDefinition-ror-entite-geographique.json	5061	6	0	69	1	0	0	0	0	107	0	0	1	0	1	0	0	1	0	0	0	271	1100	0	0	0	11	0	1
-fsh-generated/resources/StructureDefinition-ror-offre-operationnelle.json	4235	5	0	41	0	0	0	0	0	21	0	0	0	0	0	0	0	1	0	0	0	149	398	0	0	0	6	0	1
-fsh-generated/resources/StructureDefinition-ror-organisation-interne.json	5326	4	0	18	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	0	88	254	0	0	0	3	0	0
-fsh-generated/resources/ValueSet-vs-ror-secteur-activite.json	1693	3	0	0	0	0	0	0	1	110	0	0	0	0	0	0	0	0	0	0	0	22	122	0	0	0	1	0	0
+/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.test.ror.json	4195	-	0	0	0	0	0	0	16	77	0	0	0	0	0	0	0	1	0	0	0	103	118	0	0	0	3	0	2
+fsh-generated/resources/StructureDefinition-ror-entite-geographique.json	5227	5	0	70	1	0	1	0	0	108	0	0	1	0	0	0	0	0	0	0	0	263	1165	0	0	0	11	0	1
+fsh-generated/resources/StructureDefinition-ror-offre-operationnelle.json	4401	5	0	35	0	0	0	0	0	24	0	0	0	0	0	0	0	1	0	0	0	119	319	0	0	0	5	0	0
+fsh-generated/resources/StructureDefinition-ror-organisation-interne.json	5492	6	0	15	1	0	0	0	0	17	0	0	1	0	1	0	0	0	0	0	0	73	226	0	0	0	4	0	1
+fsh-generated/resources/ValueSet-vs-ror-secteur-activite.json	1693	2	0	0	0	0	0	0	1	145	0	0	0	0	0	0	0	0	0	0	0	19	126	0	0	0	1	0	0
 /fsh-generated/includes/fsh-link-references.md	288	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
 /fsh-generated/includes/menu.xml	1234	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 /input/data/features.yml	164	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
@@ -12,6 +12,6 @@ fsh-generated/resources/ValueSet-vs-ror-secteur-activite.json	1693	3	0	0	0	0	0	0
 /template/config	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 /template/config/_config.yml	140	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 /input/images	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/images/anImage.png	36288	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
-/input/images/ci-sis-logo.png	61365	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images/anImage.png	36288	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images/ci-sis-logo.png	61365	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
 /temp/pages/_includes/artifacts.xml	4416	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	0	0	0	0	0	0	0
