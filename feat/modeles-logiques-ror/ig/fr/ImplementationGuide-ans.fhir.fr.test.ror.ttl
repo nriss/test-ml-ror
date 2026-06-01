@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "TestROR"] ; # 
   fhir:title [ fhir:v "Démonstration - Modèle Logique ROR dérivant du MOS"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-06-01T10:05:41+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-01T10:07:23+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -1673,6 +1673,44 @@
            fhir:l fhir:index.html
          ] ;
          fhir:title [ fhir:v "Accueil" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "avantages-ml.html"^^xsd:anyURI ;
+             fhir:l fhir:avantages-ml.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "avantages-ml.html"^^xsd:anyURI ;
+           fhir:l fhir:avantages-ml.html
+         ] ;
+         fhir:title [ fhir:v "Pourquoi le Modèle Logique HL7 ?" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "fonctionnalites-ror.html"^^xsd:anyURI ;
+             fhir:l fhir:fonctionnalites-ror.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "fonctionnalites-ror.html"^^xsd:anyURI ;
+           fhir:l fhir:fonctionnalites-ror.html
+         ] ;
+         fhir:title [ fhir:v "Fonctionnalités disponibles pour le ROR" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

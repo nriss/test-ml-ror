@@ -3,7 +3,7 @@ TestROR : Validation Results
 
 err = 0, warn = 217, info = 34
 IG Publisher Version: 2.2.8
-Generated Mon Jun 01 10:07:12 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.test.ror#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/test-ror)
+Generated Mon Jun 01 10:08:58 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.test.ror#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/test-ror)
  Build Errors : 0 / 0 / 0
  /home/runner/work/test-ml-ror/test-ml-ror/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.test.ror : 0 / 0 / 1
  /home/runner/work/test-ml-ror/test-ml-ror/igSource/fsh-generated/resources/StructureDefinition-ror-entite-geographique : 0 / 115 / 12

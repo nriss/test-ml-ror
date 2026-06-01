@@ -86,7 +86,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-ror-entite-geog
   "title" : "ROR - Entité Géographique",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-01T10:05:41+00:00",
+  "date" : "2026-06-01T10:07:23+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

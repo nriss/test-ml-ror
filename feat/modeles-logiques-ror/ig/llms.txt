@@ -4,6 +4,8 @@
 
 * [Accueil](fr/index.md)
 * [Historique des versions](fr/change-log.md)
+* [Pourquoi le Modèle Logique HL7 ?](fr/avantages-ml.md)
+* [Fonctionnalités disponibles pour le ROR](fr/fonctionnalites-ror.md)
 * [Résumé des artefacts](fr/artifacts.md)
 
 ## Resources
