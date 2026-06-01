@@ -1,16 +1,15 @@
 {
-    "package-id" : "ans.fhir.fr.[todo]",
-    "version" : "[todo]",
-    "path" : "https://interop.esante.gouv.fr/ig/fhir/[todo]",
-    "mode" : "milestone",
-    "status" : "release",
+    "package-id" : "ans.fhir.fr.test.ror",
+    "version" : "0.1.0",
+    "path" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/0.1.0",
+    "mode" : "working",
+    "status" : "ci-build",
     "sequence" : "STU1",
-    "title" : "[todo]",
+    "title" : "Démonstration - Modèle Logique ROR dérivant du MOS",
     "first" : true,
-    "desc" : "[todo]",
-    "ci-build" : "https://ansforge.github.io/[todo]",
-    "category" : "[todo]",
-    "introduction" : "[todo]",
+    "desc" : "IG de démonstration illustrant comment définir des modèles logiques ROR qui dérivent des modèles logiques du MOS.",
+    "ci-build" : "https://nriss.github.io/test-ml-ror/main/ig",
+    "category" : "Administration",
+    "introduction" : "Démonstration de dérivation de modèles logiques MOS pour le ROR.",
     "changes": "change-log.html"
-
   }
