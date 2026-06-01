@@ -32,11 +32,18 @@ parameters:
 pages:
     index.md:
         title: Accueil
+    avantages-ml.md:
+        title: Pourquoi le Modèle Logique HL7 ?
+    fonctionnalites-ror.md:
+        title: Fonctionnalités disponibles pour le ROR
     change-log.md:
         title: Historique des versions
 
 menu:
     Accueil: index.html
+    Contexte:
+        Pourquoi le Modèle Logique HL7 ?: avantages-ml.html
+        Fonctionnalités pour le ROR: fonctionnalites-ror.html
     Ressources de conformité: artifacts.html
     Historique: change-log.html
     Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
