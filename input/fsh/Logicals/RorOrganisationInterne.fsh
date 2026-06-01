@@ -3,6 +3,7 @@ Parent: Base
 Id: ror-organisation-interne
 Title: "ROR - Organisation Interne"
 Description: "Modèle logique ROR représentant une organisation interne d'une structure de santé (pôle, service, unité fonctionnelle). Cette entité n'existe pas dans le MOS et est propre au ROR."
+Characteristics: #can-be-target
 
 * ^status = #draft
 * ^experimental = true

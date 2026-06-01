@@ -3,6 +3,7 @@ Parent: https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OffreOperation
 Id: ror-offre-operationnelle
 Title: "ROR - Offre Opérationnelle"
 Description: "Spécialisation ROR du modèle MOS OffreOperationnelle. Ajoute des éléments propres au Répertoire de l'Offre de soins et des Ressources."
+Characteristics: #can-be-target
 
 * ^status = #draft
 * ^experimental = true

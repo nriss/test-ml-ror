@@ -3,6 +3,7 @@ Parent: https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EntiteGeograph
 Id: ror-entite-geographique
 Title: "ROR - Entité Géographique"
 Description: "Spécialisation ROR du modèle MOS EntiteGeographique. Ajoute des éléments de géolocalisation et de contact opérationnel propres au ROR."
+Characteristics: #can-be-target
 
 * ^status = #draft
 * ^experimental = true
