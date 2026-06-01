@@ -1,0 +1,35 @@
+[{
+  "id" : "ans.fhir.fr.test.ror",
+  "type" : "ImplementationGuide",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ImplementationGuide/ans.fhir.fr.test.ror",
+  "version" : "0.1.0",
+  "name" : "TestROR"
+},
+{
+  "id" : "ror-entite-geographique",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique",
+  "version" : "0.1.0",
+  "name" : "RorEntiteGeographique"
+},
+{
+  "id" : "ror-offre-operationnelle",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle",
+  "version" : "0.1.0",
+  "name" : "RorOffreOperationnelle"
+},
+{
+  "id" : "ror-organisation-interne",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-organisation-interne",
+  "version" : "0.1.0",
+  "name" : "RorOrganisationInterne"
+},
+{
+  "id" : "vs-ror-secteur-activite",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/vs-ror-secteur-activite",
+  "version" : "0.1.0",
+  "name" : "VS_RorSecteurActivite"
+}]

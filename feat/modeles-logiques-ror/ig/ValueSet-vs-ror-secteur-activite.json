@@ -1,0 +1,66 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-ror-secteur-activite",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs vs-ror-secteur-activite</b></p><a name=\"vs-ror-secteur-activite\"> </a><a name=\"hcvs-ror-secteur-activite\"> </a><ul><li>Include ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R02-SecteurActivite.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite</code></a><span title=\"La version est explicitement indiquée comme étant 20250523120000\"> version &#x1F4CD;20250523120000</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R02-SecteurActivite.html#TRE-R02-SecteurActivite-SA07\">SA07</a></td><td>Etablissement de santé privé d'intérêt collectif</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R02-SecteurActivite.html#TRE-R02-SecteurActivite-SA08\">SA08</a></td><td>Etablissement de santé privé lucratif</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R02-SecteurActivite.html#TRE-R02-SecteurActivite-SA09\">SA09</a></td><td>Etablissement public de santé</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R02-SecteurActivite.html#TRE-R02-SecteurActivite-SA25\">SA25</a></td><td>Laboratoire de biologie médicale</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R02-SecteurActivite.html#TRE-R02-SecteurActivite-SA29\">SA29</a></td><td>Cabinets et cliniques vétérinaires</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R02-SecteurActivite.html#TRE-R02-SecteurActivite-SA33\">SA33</a></td><td>Etablissement et service social et médico-social</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R02-SecteurActivite.html#TRE-R02-SecteurActivite-SA52\">SA52</a></td><td>Maison de santé</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/vs-ror-secteur-activite",
+  "version" : "0.1.0",
+  "name" : "VS_RorSecteurActivite",
+  "title" : "ROR - Secteur d'activité (restreint)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-06-01T10:04:08+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Restriction du ValueSet MOS `secteurActivite-vs` aux secteurs d'activité couverts par le périmètre du ROR.\n\nLe ValueSet MOS de référence inclut l'ensemble des secteurs définis dans la TRE_R02-SecteurActivite (transports sanitaires, hôpitaux militaires, etc.). Cette restriction ne retient que les secteurs effectivement répertoriés dans le ROR.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "copyright" : "ANS",
+  "compose" : {
+    "include" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
+      "version" : "20250523120000",
+      "concept" : [{
+        "code" : "SA07",
+        "display" : "Etablissement de santé privé d'intérêt collectif"
+      },
+      {
+        "code" : "SA08",
+        "display" : "Etablissement de santé privé lucratif"
+      },
+      {
+        "code" : "SA09",
+        "display" : "Etablissement public de santé"
+      },
+      {
+        "code" : "SA25",
+        "display" : "Laboratoire de biologie médicale"
+      },
+      {
+        "code" : "SA29",
+        "display" : "Cabinets et cliniques vétérinaires"
+      },
+      {
+        "code" : "SA33",
+        "display" : "Etablissement et service social et médico-social"
+      },
+      {
+        "code" : "SA52",
+        "display" : "Maison de santé"
+      }]
+    }]
+  }
+}

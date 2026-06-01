@@ -1,0 +1,14 @@
+{
+  "codeSystems" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/vs-ror-secteur-activite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "VS_RorSecteurActivite",
+    "title" : "ROR - Secteur d'activité (restreint)",
+    "description" : "Restriction du ValueSet MOS `secteurActivite-vs` aux secteurs d'activité couverts par le périmètre du ROR.\n\nLe ValueSet MOS de référence inclut l'ensemble des secteurs définis dans la TRE_R02-SecteurActivite (transports sanitaires, hôpitaux militaires, etc.). Cette restriction ne retient que les secteurs effectivement répertoriés dans le ROR.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-entite-geographique.html" : "ROR - Entité Géographique"
+  }]
+}

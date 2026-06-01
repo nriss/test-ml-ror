@@ -1,0 +1,98 @@
+{
+  "codeSystems" : [{
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
+    "version" : "20250523120000",
+    "status" : "active",
+    "name" : "TRE_R02_SecteurActivite",
+    "title" : null,
+    "description" : "Le secteur d'activité de santé est une donnée RPPS et correspond au type de service fourni par une structure. Il sert principalement à déterminer les propriétés de facturation des professionnels de ces structures vis-à-vis de l'assurance maladie",
+    "oids" : ["1.2.250.1.71.4.2.4"],
+    "uses" : {
+    },
+    "ValueSet-vs-ror-secteur-activite.html" : "ROR - Secteur d'activité (restreint)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R266-FamilleActiviteOperationnelleHorsSerafin/FHIR/TRE-R266-FamilleActiviteOperationnelleHorsSerafin",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R266_FamilleActiviteOperationnelleHorsSerafin",
+    "title" : null,
+    "description" : "Familles activités opérationnelles hors Serafin",
+    "oids" : ["1.2.250.1.213.3.3.61"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-familleActiviteOperationnelle-vs.html" : "FamilleactiviteoperationnelleVs"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R316-AutreCategorieEtablissement/FHIR/TRE-R316-AutreCategorieEtablissement",
+    "version" : "20240329120000",
+    "status" : "active",
+    "name" : "TRE_R316_AutreCategorieEtablissement",
+    "title" : null,
+    "description" : "Cette table de référence permet d'identifier des catégories d'établissements qui ne sont pas présentes dans la TRE R66 qui est une table de référence ne listant que les catégories d'établissements présentes dans le FINESS",
+    "oids" : ["1.2.250.1.213.1.6.1.239"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-categorieEtablissement-vs.html" : "CategorieetablissementVs"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R356-ProfessionRessource/FHIR/TRE-R356-ProfessionRessource",
+    "version" : "20250623120000",
+    "status" : "active",
+    "name" : "TRE_R356_ProfessionRessource",
+    "title" : null,
+    "description" : "Profession Ressource",
+    "oids" : ["1.2.250.1.213.3.3.246"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-professionRessource-vs.html" : "ProfessionressourceVs"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement",
+    "version" : "20250425120000",
+    "status" : "active",
+    "name" : "TRE_R66_CategorieEtablissement",
+    "title" : null,
+    "description" : "Catégorie d'établissements",
+    "oids" : ["1.2.250.1.213.1.6.1.8"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-categorieEtablissement-vs.html" : "CategorieetablissementVs"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R73_ESPIC",
+    "title" : null,
+    "description" : "Etablissement de santé privé d'intérêt collectif",
+    "oids" : ["1.2.250.1.213.1.6.1.45"],
+    "uses" : {
+    },
+    "https://smt.esante.gouv.fr/fhir/ValueSet/vs-tre-r73-espic-all" : "Vs Tre R73 Espic All"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R74-ModeFixationTarifaire/FHIR/TRE-R74-ModeFixationTarifaire",
+    "version" : "20240223120000",
+    "status" : "active",
+    "name" : "TRE_R74_ModeFixationTarifaire",
+    "title" : null,
+    "description" : "Mode de fixation tarifaire",
+    "oids" : ["1.2.250.1.213.1.6.1.46"],
+    "uses" : {
+    },
+    "https://smt.esante.gouv.fr/fhir/ValueSet/vs-tre-r74-mode-fixation-tarifaire-all" : "Vs Tre R74 Mode Fixation Tarifaire All"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial",
+    "version" : "20241213120000",
+    "status" : "active",
+    "name" : "TRE_R94_ProfessionSocial",
+    "title" : null,
+    "description" : "Profession du social",
+    "oids" : ["1.2.250.1.213.1.6.1.4"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-professionRessource-vs.html" : "ProfessionressourceVs"
+  }]
+}

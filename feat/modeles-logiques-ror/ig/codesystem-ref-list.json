@@ -1,0 +1,14 @@
+{
+  "codeSystems" : [{
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
+    "version" : "20250523120000",
+    "status" : "active",
+    "name" : "TRE_R02_SecteurActivite",
+    "title" : null,
+    "description" : "Le secteur d'activité de santé est une donnée RPPS et correspond au type de service fourni par une structure. Il sert principalement à déterminer les propriétés de facturation des professionnels de ces structures vis-à-vis de l'assurance maladie",
+    "oids" : ["1.2.250.1.71.4.2.4"],
+    "uses" : {
+    },
+    "ValueSet-vs-ror-secteur-activite.html" : "ROR - Secteur d'activité (restreint)"
+  }]
+}

@@ -1,0 +1,79 @@
+{
+  "codeSystems" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/vs-ror-secteur-activite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "VS_RorSecteurActivite",
+    "title" : "ROR - Secteur d'activité (restreint)",
+    "description" : "Restriction du ValueSet MOS `secteurActivite-vs` aux secteurs d'activité couverts par le périmètre du ROR.\n\nLe ValueSet MOS de référence inclut l'ensemble des secteurs définis dans la TRE_R02-SecteurActivite (transports sanitaires, hôpitaux militaires, etc.). Cette restriction ne retient que les secteurs effectivement répertoriés dans le ROR.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-entite-geographique.html" : "ROR - Entité Géographique"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/categorieEtablissement-vs",
+    "version" : "0.1.0-ballot",
+    "status" : "draft",
+    "name" : "CategorieetablissementVs",
+    "title" : null,
+    "description" : "",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R316-AutreCategorieEtablissement/FHIR/TRE-R316-AutreCategorieEtablissement",
+    "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-entite-geographique.html" : "ROR - Entité Géographique"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/familleActiviteOperationnelle-vs",
+    "version" : "0.1.0-ballot",
+    "status" : "draft",
+    "name" : "FamilleactiviteoperationnelleVs",
+    "title" : null,
+    "description" : "",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R266-FamilleActiviteOperationnelleHorsSerafin/FHIR/TRE-R266-FamilleActiviteOperationnelleHorsSerafin",
+    "https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin/FHIR/TRE-R265-PrestationPilotageSerafin"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/professionRessource-vs",
+    "version" : "0.1.0-ballot",
+    "status" : "draft",
+    "name" : "ProfessionressourceVs",
+    "title" : null,
+    "description" : "",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial",
+    "https://mos.esante.gouv.fr/NOS/TRE_R356-ProfessionRessource/FHIR/TRE-R356-ProfessionRessource"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC?vs",
+    "version" : "20260223120000",
+    "status" : "active",
+    "name" : "VsTreR73EspicAll",
+    "title" : "Vs Tre R73 Espic All",
+    "description" : "Jeu de valeurs ALL contenant tous les établissements de santé privés d'intérêt collectif",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC"],
+    "oids" : ["1.2.250.1.213.1.6.1.280"],
+    "sources" : ["1.2.250.1.213.1.6.1.280"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-entite-geographique.html" : "ROR - Entité Géographique"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R74-ModeFixationTarifaire/FHIR/TRE-R74-ModeFixationTarifaire?vs",
+    "version" : "20260330120000",
+    "status" : "active",
+    "name" : "VsTreR74ModeFixationTarifaireAll",
+    "title" : "Vs Tre R74 Mode Fixation Tarifaire All",
+    "description" : "Jeu de valeurs ALL contenant les modes de fixation tarifaire",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R74-ModeFixationTarifaire/FHIR/TRE-R74-ModeFixationTarifaire"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-entite-geographique.html" : "ROR - Entité Géographique"
+  }]
+}

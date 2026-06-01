@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/vs-ror-secteur-activite> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vs-ror-secteur-activite"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs vs-ror-secteur-activite</b></p><a name=\"vs-ror-secteur-activite\"> </a><a name=\"hcvs-ror-secteur-activite\"> </a><ul><li>Include ce(s) code(s) tel qu'il(s) est (sont) défini(s) dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R02-SecteurActivite.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite</code></a><span title=\"La version est explicitement indiquée comme étant 20250523120000\"> version ?20250523120000</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Affichage</b></td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R02-SecteurActivite.html#TRE-R02-SecteurActivite-SA07\">SA07</a></td><td>Etablissement de santé privé d'intérêt collectif</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R02-SecteurActivite.html#TRE-R02-SecteurActivite-SA08\">SA08</a></td><td>Etablissement de santé privé lucratif</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R02-SecteurActivite.html#TRE-R02-SecteurActivite-SA09\">SA09</a></td><td>Etablissement public de santé</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R02-SecteurActivite.html#TRE-R02-SecteurActivite-SA25\">SA25</a></td><td>Laboratoire de biologie médicale</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R02-SecteurActivite.html#TRE-R02-SecteurActivite-SA29\">SA29</a></td><td>Cabinets et cliniques vétérinaires</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R02-SecteurActivite.html#TRE-R02-SecteurActivite-SA33\">SA33</a></td><td>Etablissement et service social et médico-social</td></tr><tr><td><a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R02-SecteurActivite.html#TRE-R02-SecteurActivite-SA52\">SA52</a></td><td>Maison de santé</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/vs-ror-secteur-activite"^^xsd:anyURI ;
+     fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/vs-ror-secteur-activite>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "VS_RorSecteurActivite"] ; # 
+  fhir:title [ fhir:v "ROR - Secteur d'activité (restreint)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-06-01T10:04:08+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://esante.gouv.fr" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Restriction du ValueSet MOS `secteurActivite-vs` aux secteurs d'activité couverts par le périmètre du ROR.\n\nLe ValueSet MOS de référence inclut l'ensemble des secteurs définis dans la TRE_R02-SecteurActivite (transports sanitaires, hôpitaux militaires, etc.). Cette restriction ne retient que les secteurs effectivement répertoriés dans le ROR."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "FR" ] ;
+       fhir:display [ fhir:v "France (la)" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "ANS"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite"^^xsd:anyURI ;
+         fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite>
+       ] ;
+       fhir:version [ fhir:v "20250523120000" ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "SA07" ] ;
+         fhir:display [ fhir:v "Etablissement de santé privé d'intérêt collectif" ]
+       ] [
+         fhir:code [ fhir:v "SA08" ] ;
+         fhir:display [ fhir:v "Etablissement de santé privé lucratif" ]
+       ] [
+         fhir:code [ fhir:v "SA09" ] ;
+         fhir:display [ fhir:v "Etablissement public de santé" ]
+       ] [
+         fhir:code [ fhir:v "SA25" ] ;
+         fhir:display [ fhir:v "Laboratoire de biologie médicale" ]
+       ] [
+         fhir:code [ fhir:v "SA29" ] ;
+         fhir:display [ fhir:v "Cabinets et cliniques vétérinaires" ]
+       ] [
+         fhir:code [ fhir:v "SA33" ] ;
+         fhir:display [ fhir:v "Etablissement et service social et médico-social" ]
+       ] [
+         fhir:code [ fhir:v "SA52" ] ;
+         fhir:display [ fhir:v "Maison de santé" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
