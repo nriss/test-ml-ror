@@ -22,9 +22,9 @@ Cet IG de démonstration montre comment une équipe projet — ici l'équipe **R
 
 | | | |
 | :--- | :--- | :--- |
-| `RorOffreOperationnelle` | Dérivé du MOS | Offre de soins opérationnelle, spécialisée pour le ROR |
-| `RorEntiteGeographique` | Dérivé du MOS | Lieu de réalisation de l'offre, avec extensions ROR |
-| `RorOrganisationInterne` | Nouveau | Organisation interne d'une structure (pôle, unité, service) |
+| [RorOffreOperationnelle](StructureDefinition-ror-offre-operationnelle.md) | Dérivé du MOS | Offre de soins opérationnelle, spécialisée pour le ROR |
+| [RorEntiteGeographique](StructureDefinition-ror-entite-geographique.md) | Dérivé du MOS | Lieu de réalisation de l'offre, avec extensions ROR |
+| [RorOrganisationInterne](StructureDefinition-ror-organisation-interne.md) | Nouveau | Organisation interne d'une structure (pôle, unité, service) |
 
 ### Schéma des relations
 
