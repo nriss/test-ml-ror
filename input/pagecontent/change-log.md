@@ -1,9 +1,8 @@
-### version xxx
+### Historique des versions
 
-**Release xxx de l'Implementation Guide FHIR xxx.**
+#### version 0.1.0 (ci-build)
 
-URL : <https://interop.esante.gouv.fr/ig/fhir/xxx>
+Première version de l'IG de démonstration ROR.
 
-[Modifications apportées dans cette release](https://github.com/ansforge/xxx/milestone/10?closed=1) :
-
-* [narratif] modification xxx [numéro d'issue](https://github.com/ansforge/xxx/issues/numéro d'issue)
+* Initialisation du projet à partir du template ANS
+* Configuration de la dépendance vers le MOS 0.1.0-ballot

@@ -1,62 +1,42 @@
-<p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
-<b>Brief description of this Implementation Guide</b><br>
-[Add a brief description of this IG in English]
-</p>
+<div style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
+<b>IG de démonstration</b><br>
+Cet IG est un exemple illustrant comment des équipes projets (ici : ROR) peuvent définir leurs propres modèles logiques en dérivant des modèles du MOS.
+</div>
 
 {% if site.data.info.releaselabel == 'ci-build' %}
 <div style="width: 65%">
     <blockquote class="stu-note">
-    <p>Cet Implementation Guide n'est pas la version courante, il s'agit de la version en intégration continue soumise à des changements fréquents uniquement destinée à suivre les travaux en cours. La version courante sera accessible via l'URL canonique suite à la première release : http://interop.esante.gouv.fr/ig/fhir/[code - ig]</p>
+    <p>Cet Implementation Guide est en cours de construction (ci-build). Il est susceptible d'évoluer fréquemment.</p>
     </blockquote>
 </div>
 {% endif %}
 
+### Contexte et objectif
 
-{% if site.data.info.releaselabel == 'public-comment' %}
-<div style="width: 65%">
-<blockquote class="stu-note">
-<p>
-  <b>Attention !</b>
-  <br>
- Cet Implementation Guide est actuellement en concertation. La version courante est accessible à l'adresse : http://interop.esante.gouv.fr/ig/fhir/[code - ig]
-</p>
-</blockquote>
-</div>
-{% endif %}
+Le [MOS (Modèle des Objets de Santé)](https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/) définit un socle commun de modèles logiques pour représenter les entités du système de santé français : professionnels de santé, structures, offres de soins, etc.
 
+Cet IG de démonstration montre comment une équipe projet — ici l'équipe **ROR (Répertoire de l'Offre de soins et des Ressources)** — peut :
 
-<!--  A décommenter si CI-SIS
-<div class="figure">
-    <img src="ci-sis-logo.png" alt="CI-SIS" title="Logo du CI-SIS" style="width:100%;">
-</div>
--->
+1. **Dériver** des modèles logiques existants du MOS pour les spécialiser à son contexte
+2. **Créer** de nouveaux modèles logiques propres au ROR, non couverts par le MOS
+3. **Documenter** les relations entre les objets via un schéma de liaison
 
-### Introduction
+### Modèles logiques définis
 
-Définir ici de quoi parle l'IG (En termes non expert, compréhensible par un patient). Rajouter également les détails techniques sur le contexte et le besoin de cet IG
+| Modèle | Type | Description |
+|---|---|---|
+| `RorOffreOperationnelle` | Dérivé du MOS | Offre de soins opérationnelle, spécialisée pour le ROR |
+| `RorEntiteGeographique` | Dérivé du MOS | Lieu de réalisation de l'offre, avec extensions ROR |
+| `RorOrganisationInterne` | Nouveau | Organisation interne d'une structure (pôle, unité, service) |
 
-Les principales sections de l'IG  sont :
+### Schéma des relations
 
-* Le contexte de l'IG, quelle problématique il résout
-* Ce que les Implémenteurs doivent mettre en place
-* Un onglet "Ressources de conformité" pour s'assurer d'un schéma global entre tous les IGs
-
-### Périmètre du projet
-
-Définir en quelques lignes quel est le périmètre du projet
-
-Toujours laisser l'onglet "Ressources de conformité" pour s'assurer d'une cohérence globales entre tous les IGs
-
-### Auteurs et contributeurs (optionnel)
-
-| Role  | Nom | Organisation | Contact |
-| --- | --- | --- | --- |
-| **Primary Editor** | Prenom Nom | Agence du Numérique en Santé | prenom.nom@address.email |
+{% include ror-schema.svg %}
 
 ### Dépendances
 
-{% lang-fragment dependency-table.xhtml %}
+{% include dependency-table.xhtml %}
 
 ### Propriété intellectuelle
 
-{% lang-fragment ip-statements.xhtml %}
+{% include ip-statements.xhtml %}
