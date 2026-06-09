@@ -18,6 +18,20 @@ jurisdiction: urn:iso:std:iso:3166#FR "France (la)"
 
 dependencies:
   ans.fr.mos: 0.1.0-ballot
+  hl7.fhir.uv.xver-r5.r4: 0.1.0
+
+groups:
+  ReglesDéGestion:
+    name: "Règles de gestion"
+    description: "Instances Requirements regroupant les règles de gestion RG_EXP_* du modèle d'exposition ROR"
+    resources:
+      - Basic/ror-requirements-structure
+      - Basic/ror-requirements-organisation
+      - Basic/ror-requirements-offre-operationnelle
+      - Basic/ror-requirements-tarif
+      - Basic/ror-requirements-ressources-operationnelles
+      - Basic/ror-requirements-professionnel
+      - Basic/ror-requirements-classes-communes
 
 parameters:
     shownav: 'true'

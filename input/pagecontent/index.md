@@ -11,8 +11,6 @@ Cet IG illustre comment définir des modèles logiques ROR en dérivant des mod�
 </div>
 {% endif %}
 
-### Le Répertoire Opérationnel des Ressources (ROR)
-
 Le **Répertoire Opérationnel des Ressources (ROR)** est le référentiel national de description de l'offre de santé. Il constitue le gisement de données de référence pour les échanges entre systèmes d'information de santé.
 
 Ce modèle d'exposition (version 3.0.1) répond aux besoins suivants :
