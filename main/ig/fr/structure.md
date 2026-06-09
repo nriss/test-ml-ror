@@ -45,6 +45,12 @@ Ces données pivots ne sont pas modifiables après création.
 
 -------
 
+#### Règles générales de transmission
+
+* `RG_EXP_002` : Si un élément obligatoire dans la structure du flux d'échange n'est pas renseigné dans le ROR interrogé, alors l'instance de l'entité à laquelle appartient cet élément NE DOIT PAS être transmise. Les instances des entités hiérarchiquement inférieures NE DOIVENT PAS être transmises non plus. Les instances des entités hiérarchiquement supérieures DOIVENT être transmises en respectant la condition ci-dessus.
+
+-------
+
 #### ROREntiteJuridique
 
 L'**Entité Juridique** (EJ) correspond à la notion de personne morale :
@@ -56,8 +62,10 @@ L'**Entité Juridique** (EJ) correspond à la notion de personne morale :
 **Règles de gestion :**
 
 * `RG_EXP_004` : L'`idNat_Struct` DOIT être renseigné en priorité avec le numéro FINESS si l'établissement est immatriculé dans FINESS.
-* `RG_EXP_043` : La date de fermeture est obligatoire lorsqu'un type de fermeture est renseigné.
-* `RG_EXP_044` : Lorsqu'une structure est fermée, tous les niveaux inférieurs et les offres opérationnelles rattachées sont également fermés avec le même type et la même date de fermeture.
+* `RG_EXP_037` : Lorsque `numEJ_RPPS_ADELI_Rang` (RPPSrang ou ADELIrang pour les cabinets libéraux hors société d'exercice) est renseigné, il doit être utilisé pour la construction de l'`idNat_Struct`.
+* `RG_EXP_043` : La date de fermeture est obligatoire lorsqu'un type de fermeture est renseigné, sinon elle n'est jamais renseignée.
+* `RG_EXP_044` : Lorsqu'un niveau de structure ou d'organisation est fermé, tous les niveaux inférieurs ainsi que toutes les offres opérationnelles qui lui sont rattachées sont également fermés avec le même type, la même date de fermeture et, le cas échéant, la même date de réouverture prévisionnelle.
+* `RG_EXP_045` : La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire », sinon elle n'est jamais renseignée.
 
 Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
 
@@ -69,6 +77,17 @@ L'**Entité Géographique** (EG) correspond à la notion d'établissement d'une 
 
 * Pour les entités FINESS : l'EG correspond à une implantation géographique caractérisée par une catégorie d'établissement.
 * Pour les entités RPPS/ADELI hors FINESS : l'EG correspond à l'implantation géographique où le professionnel exerce.
+
+**Règles de gestion :**
+
+* `RG_EXP_005` : L'`idNat_Struct` de l'EG DOIT être renseigné en priorité avec le numéro FINESS si l'établissement est immatriculé dans FINESS.
+* `RG_EXP_006` : Les contacts d'une EG PEUVENT contenir les contacts du directeur et de la cellule d'alerte.
+* `RG_EXP_030` : L'attribut `territoireSante` est obligatoirement une division territoriale de type « Territoire de Santé ».
+* `RG_EXP_038` : Lorsque `numEG_RPPS_ADELI_Rang` est renseigné, il doit être utilisé pour la construction de l'`idNat_Struct`.
+* `RG_EXP_003` : Si la date de fermeture transmise est la date de fermeture définitive, alors `typeFermeture` DOIT être renseigné avec l'OID correspondant au code DEF issu du référentiel FINESS.
+* `RG_EXP_043` : La date de fermeture est obligatoire lorsqu'un type de fermeture est renseigné, sinon elle n'est jamais renseignée.
+* `RG_EXP_044` : Lorsqu'un niveau de structure ou d'organisation est fermé, tous les niveaux inférieurs ainsi que toutes les offres opérationnelles qui lui sont rattachées sont également fermés avec le même type, la même date de fermeture et, le cas échéant, la même date de réouverture prévisionnelle.
+* `RG_EXP_045` : La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire », sinon elle n'est jamais renseignée.
 
 Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
 

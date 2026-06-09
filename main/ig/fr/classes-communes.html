@@ -686,6 +686,16 @@ Cette section est destinée aux développeurs et intégrateurs. Elle décrit les
 
 <p>Ces classes sont documentées dans le MOS et ne sont pas redéfinies dans cet IG. Se référer à la documentation MOS pour le détail de leurs attributs.</p>
 
+<h4 id="règles-de-gestion-sur-la-classe-contact">Règles de gestion sur la classe Contact</h4>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_032</code> : Lors de la création d'un objet Contact, le niveau de confidentialité a la valeur par défaut « restreint ».</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_034</code> : Le niveau de confidentialité de l'objet Télécommunication doit être plus restrictif ou égal au niveau de confidentialité de l'objet Contact auquel il est rattaché.</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_039</code> : Dans une unité sensible, le niveau de confidentialité des contacts doit être positionné à la valeur « très restreint ».</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_040</code> : Si l'attribut <code class="language-plaintext highlighter-rouge">natureContact</code> est renseigné dans l'objet Contact, alors il ne doit pas y avoir de <code class="language-plaintext highlighter-rouge">nom</code> de contact ni de <code class="language-plaintext highlighter-rouge">fonctionContact</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_041</code> : Si l'attribut <code class="language-plaintext highlighter-rouge">fonctionContact</code> est renseigné dans l'objet Contact, alors il doit y avoir un <code class="language-plaintext highlighter-rouge">nom</code> de contact et il ne doit pas y avoir de <code class="language-plaintext highlighter-rouge">natureContact</code>.</li>
+</ul>
+
 
 
 
@@ -735,7 +745,7 @@ Cette section est destinée aux développeurs et intégrateurs. Elle décrit les
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-09 15:32:00 +0000">
+  <span title="2026-06-09 15:39:00 +0000">
     2026-06-09
   </span>
 

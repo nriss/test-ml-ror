@@ -659,7 +659,10 @@ Cette section est transversale : elle décrit l'organisation interne des établi
 
 <p><strong>Règles de gestion :</strong></p>
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">RG_EXP_044</code> : Lorsqu'une organisation interne est fermée, toutes les offres opérationnelles rattachées sont également fermées avec le même type et la même date de fermeture.</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_013</code> : En fonction du type d'OI, les contacts PEUVENT inclure le contact du responsable du pôle, le contact du responsable du service, le contact du responsable de l'unité, le contact du secrétariat, le contact du secrétariat de permanence…</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_043</code> : La date de fermeture est obligatoire lorsqu'un type de fermeture est renseigné, sinon elle n'est jamais renseignée.</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_044</code> : Lorsqu'un niveau de structure ou d'organisation est fermé, tous les niveaux inférieurs ainsi que toutes les offres opérationnelles qui lui sont rattachées sont également fermés avec le même type, la même date de fermeture et, le cas échéant, la même date de réouverture prévisionnelle.</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_045</code> : La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire », sinon elle n'est jamais renseignée.</li>
 </ul>
 
 <p>Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés<a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries">ici</a></p>
@@ -792,7 +795,7 @@ Cette section est transversale : elle décrit l'organisation interne des établi
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-09 15:32:00 +0000">
+  <span title="2026-06-09 15:39:00 +0000">
     2026-06-09
   </span>
 

@@ -647,6 +647,14 @@ Cette section est transversale : elle intéresse les professionnels de santé (c
 
 <hr />
 
+<h4 id="règles-générales-de-transmission">Règles générales de transmission</h4>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_002</code> : Si un élément obligatoire dans la structure du flux d'échange n'est pas renseigné dans le ROR interrogé, alors l'instance de l'entité à laquelle appartient cet élément NE DOIT PAS être transmise. Les instances des entités hiérarchiquement inférieures NE DOIVENT PAS être transmises non plus. Les instances des entités hiérarchiquement supérieures DOIVENT être transmises en respectant la condition ci-dessus.</li>
+</ul>
+
+<hr />
+
 <h4 id="rorentitejuridique">ROREntiteJuridique</h4>
 
 <p>L'<strong>Entité Juridique</strong> (EJ) correspond à la notion de personne morale :</p>
@@ -659,8 +667,10 @@ Cette section est transversale : elle intéresse les professionnels de santé (c
 <p><strong>Règles de gestion :</strong></p>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">RG_EXP_004</code> : L'<code class="language-plaintext highlighter-rouge">idNat_Struct</code> DOIT être renseigné en priorité avec le numéro FINESS si l'établissement est immatriculé dans FINESS.</li>
-  <li><code class="language-plaintext highlighter-rouge">RG_EXP_043</code> : La date de fermeture est obligatoire lorsqu'un type de fermeture est renseigné.</li>
-  <li><code class="language-plaintext highlighter-rouge">RG_EXP_044</code> : Lorsqu'une structure est fermée, tous les niveaux inférieurs et les offres opérationnelles rattachées sont également fermés avec le même type et la même date de fermeture.</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_037</code> : Lorsque <code class="language-plaintext highlighter-rouge">numEJ_RPPS_ADELI_Rang</code> (RPPSrang ou ADELIrang pour les cabinets libéraux hors société d'exercice) est renseigné, il doit être utilisé pour la construction de l'<code class="language-plaintext highlighter-rouge">idNat_Struct</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_043</code> : La date de fermeture est obligatoire lorsqu'un type de fermeture est renseigné, sinon elle n'est jamais renseignée.</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_044</code> : Lorsqu'un niveau de structure ou d'organisation est fermé, tous les niveaux inférieurs ainsi que toutes les offres opérationnelles qui lui sont rattachées sont également fermés avec le même type, la même date de fermeture et, le cas échéant, la même date de réouverture prévisionnelle.</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_045</code> : La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire », sinon elle n'est jamais renseignée.</li>
 </ul>
 
 <p>Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés<a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries">ici</a></p>
@@ -761,6 +771,18 @@ Cette section est transversale : elle intéresse les professionnels de santé (c
 <ul>
   <li>Pour les entités FINESS : l'EG correspond à une implantation géographique caractérisée par une catégorie d'établissement.</li>
   <li>Pour les entités RPPS/ADELI hors FINESS : l'EG correspond à l'implantation géographique où le professionnel exerce.</li>
+</ul>
+
+<p><strong>Règles de gestion :</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_005</code> : L'<code class="language-plaintext highlighter-rouge">idNat_Struct</code> de l'EG DOIT être renseigné en priorité avec le numéro FINESS si l'établissement est immatriculé dans FINESS.</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_006</code> : Les contacts d'une EG PEUVENT contenir les contacts du directeur et de la cellule d'alerte.</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_030</code> : L'attribut <code class="language-plaintext highlighter-rouge">territoireSante</code> est obligatoirement une division territoriale de type « Territoire de Santé ».</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_038</code> : Lorsque <code class="language-plaintext highlighter-rouge">numEG_RPPS_ADELI_Rang</code> est renseigné, il doit être utilisé pour la construction de l'<code class="language-plaintext highlighter-rouge">idNat_Struct</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_003</code> : Si la date de fermeture transmise est la date de fermeture définitive, alors <code class="language-plaintext highlighter-rouge">typeFermeture</code> DOIT être renseigné avec l'OID correspondant au code DEF issu du référentiel FINESS.</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_043</code> : La date de fermeture est obligatoire lorsqu'un type de fermeture est renseigné, sinon elle n'est jamais renseignée.</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_044</code> : Lorsqu'un niveau de structure ou d'organisation est fermé, tous les niveaux inférieurs ainsi que toutes les offres opérationnelles qui lui sont rattachées sont également fermés avec le même type, la même date de fermeture et, le cas échéant, la même date de réouverture prévisionnelle.</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_045</code> : La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire », sinon elle n'est jamais renseignée.</li>
 </ul>
 
 <p>Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés<a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries">ici</a></p>
@@ -1040,7 +1062,7 @@ Cette section est transversale : elle intéresse les professionnels de santé (c
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-09 15:32:00 +0000">
+  <span title="2026-06-09 15:39:00 +0000">
     2026-06-09
   </span>
 

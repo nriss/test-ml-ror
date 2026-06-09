@@ -50,3 +50,11 @@ Les classes suivantes sont définies dans le [MOS (Modèle des Objets de Santé)
 
 Ces classes sont documentées dans le MOS et ne sont pas redéfinies dans cet IG. Se référer à la documentation MOS pour le détail de leurs attributs.
 
+#### Règles de gestion sur la classe Contact
+
+* `RG_EXP_032` : Lors de la création d'un objet Contact, le niveau de confidentialité a la valeur par défaut « restreint ».
+* `RG_EXP_034` : Le niveau de confidentialité de l'objet Télécommunication doit être plus restrictif ou égal au niveau de confidentialité de l'objet Contact auquel il est rattaché.
+* `RG_EXP_039` : Dans une unité sensible, le niveau de confidentialité des contacts doit être positionné à la valeur « très restreint ».
+* `RG_EXP_040` : Si l'attribut `natureContact` est renseigné dans l'objet Contact, alors il ne doit pas y avoir de `nom` de contact ni de `fonctionContact`.
+* `RG_EXP_041` : Si l'attribut `fonctionContact` est renseigné dans l'objet Contact, alors il doit y avoir un `nom` de contact et il ne doit pas y avoir de `natureContact`.
+
