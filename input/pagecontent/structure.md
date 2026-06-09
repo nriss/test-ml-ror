@@ -1,4 +1,3 @@
-### Structure
 
 <div style="background-color: #fff9e6; border-left: 4px solid #ff9800; padding: 12px 16px; margin-bottom: 16px;">
 Cette section est transversale : elle intéresse les professionnels de santé (compréhension de la structure des établissements) et les développeurs (implémentation des modèles logiques).
@@ -70,7 +69,7 @@ L'**Entité Juridique** (EJ) correspond à la notion de personne morale :
 - `RG_EXP_044` : Lorsqu'un niveau de structure ou d'organisation est fermé, tous les niveaux inférieurs ainsi que toutes les offres opérationnelles qui lui sont rattachées sont également fermés avec le même type, la même date de fermeture et, le cas échéant, la même date de réouverture prévisionnelle.
 - `RG_EXP_045` : La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire », sinon elle n'est jamais renseignée.
 
-{% include StructureDefinition-ror-entite-juridique-dict.xhtml %}
+{% include StructureDefinition-ror-entite-juridique-class-table.xhtml %}
 
 ---
 
@@ -90,4 +89,4 @@ L'**Entité Géographique** (EG) correspond à la notion d'établissement d'une 
 - `RG_EXP_044` : Lorsqu'un niveau de structure ou d'organisation est fermé, tous les niveaux inférieurs ainsi que toutes les offres opérationnelles qui lui sont rattachées sont également fermés avec le même type, la même date de fermeture et, le cas échéant, la même date de réouverture prévisionnelle.
 - `RG_EXP_045` : La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire », sinon elle n'est jamais renseignée.
 
-{% include StructureDefinition-ror-entite-geographique-dict.xhtml %}
+{% include StructureDefinition-ror-entite-geographique-class-table.xhtml %}

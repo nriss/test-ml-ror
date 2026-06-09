@@ -1,4 +1,3 @@
-### Professionnel Ressource
 
 <div style="background-color: #fff9e6; border-left: 4px solid #ff9800; padding: 12px 16px; margin-bottom: 16px;">
 Cette section est transversale : elle décrit les professionnels de santé participant à l'offre opérationnelle.
@@ -61,7 +60,7 @@ L'**idNat_PS** (numéro RPPS ou ADELI) est l'identifiant national du professionn
 
 La **Personne Physique** porte les données d'identité du professionnel.
 
-{% include StructureDefinition-ror-personne-physique-dict.xhtml %}
+{% include StructureDefinition-ror-personne-physique-class-table.xhtml %}
 
 ---
 
@@ -69,7 +68,7 @@ La **Personne Physique** porte les données d'identité du professionnel.
 
 Le **Professionnel** représente le professionnel enregistré dans le RPPS ou ADELI.
 
-{% include StructureDefinition-ror-professionnel-dict.xhtml %}
+{% include StructureDefinition-ror-professionnel-class-table.xhtml %}
 
 ---
 
@@ -77,7 +76,7 @@ Le **Professionnel** représente le professionnel enregistré dans le RPPS ou AD
 
 L'**Exercice Professionnel** caractérise l'exercice d'une profession par un professionnel.
 
-{% include StructureDefinition-ror-exercice-professionnel-dict.xhtml %}
+{% include StructureDefinition-ror-exercice-professionnel-class-table.xhtml %}
 
 ---
 
@@ -85,29 +84,29 @@ L'**Exercice Professionnel** caractérise l'exercice d'une profession par un pro
 
 Le **Savoir-Faire** est une classe abstraite décrivant la spécialité ou la compétence principale du professionnel. Elle est spécialisée en 9 sous-classes.
 
-{% include StructureDefinition-ror-savoir-faire-dict.xhtml %}
+{% include StructureDefinition-ror-savoir-faire-class-table.xhtml %}
 
 ---
 
 #### Sous-classes de RORSavoirFaire
 
-{% include StructureDefinition-ror-specialite-dict.xhtml %}
+{% include StructureDefinition-ror-specialite-class-table.xhtml %}
 
-{% include StructureDefinition-ror-competence-dict.xhtml %}
+{% include StructureDefinition-ror-competence-class-table.xhtml %}
 
-{% include StructureDefinition-ror-competence-exclusive-dict.xhtml %}
+{% include StructureDefinition-ror-competence-exclusive-class-table.xhtml %}
 
-{% include StructureDefinition-ror-orientation-particuliere-dict.xhtml %}
+{% include StructureDefinition-ror-orientation-particuliere-class-table.xhtml %}
 
-{% include StructureDefinition-ror-capacite-savoir-faire-dict.xhtml %}
+{% include StructureDefinition-ror-capacite-savoir-faire-class-table.xhtml %}
 
-{% include StructureDefinition-ror-qualification-pac-dict.xhtml %}
+{% include StructureDefinition-ror-qualification-pac-class-table.xhtml %}
 
-{% include StructureDefinition-ror-droit-exercice-complementaire-dict.xhtml %}
+{% include StructureDefinition-ror-droit-exercice-complementaire-class-table.xhtml %}
 
-{% include StructureDefinition-ror-surspecialite-transversale-dict.xhtml %}
+{% include StructureDefinition-ror-surspecialite-transversale-class-table.xhtml %}
 
-{% include StructureDefinition-ror-desc-non-qualifiant-dict.xhtml %}
+{% include StructureDefinition-ror-desc-non-qualifiant-class-table.xhtml %}
 
 ---
 
@@ -118,4 +117,4 @@ La **Situation Opérationnelle** caractérise les conditions d'exercice du profe
 **Règles de gestion :**
 - `RG_EXP_049` : Uniquement les valeurs de `Horaire/typeHoraire` suivantes sont applicables pour les professionnels : `03` (Horaire de garde), `06` (Horaire de consultation sans RDV), `07` (Horaire de consultation sur RDV).
 
-{% include StructureDefinition-ror-situation-operationnelle-dict.xhtml %}
+{% include StructureDefinition-ror-situation-operationnelle-class-table.xhtml %}

@@ -1,4 +1,3 @@
-### Organisation
 
 <div style="background-color: #fff9e6; border-left: 4px solid #ff9800; padding: 12px 16px; margin-bottom: 16px;">
 Cette section est transversale : elle décrit l'organisation interne des établissements, utile pour les professionnels de santé (compréhension des structures de soins) et pour les développeurs (implémentation des modèles logiques).
@@ -63,22 +62,22 @@ Les classes `RORPole`, `RORStructureInterne` et `RORUniteFonctionnelle` sont des
 - `RG_EXP_044` : Lorsqu'un niveau de structure ou d'organisation est fermé, tous les niveaux inférieurs ainsi que toutes les offres opérationnelles qui lui sont rattachées sont également fermés avec le même type, la même date de fermeture et, le cas échéant, la même date de réouverture prévisionnelle.
 - `RG_EXP_045` : La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire », sinon elle n'est jamais renseignée.
 
-{% include StructureDefinition-ror-organisation-interne-dict.xhtml %}
+{% include StructureDefinition-ror-organisation-interne-class-table.xhtml %}
 
 ---
 
 #### RORPole
 
-{% include StructureDefinition-ror-pole-dict.xhtml %}
+{% include StructureDefinition-ror-pole-class-table.xhtml %}
 
 ---
 
 #### RORStructureInterne
 
-{% include StructureDefinition-ror-structure-interne-dict.xhtml %}
+{% include StructureDefinition-ror-structure-interne-class-table.xhtml %}
 
 ---
 
 #### RORUniteFonctionnelle
 
-{% include StructureDefinition-ror-unite-fonctionnelle-dict.xhtml %}
+{% include StructureDefinition-ror-unite-fonctionnelle-class-table.xhtml %}

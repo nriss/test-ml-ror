@@ -1,4 +1,3 @@
-### Ressources Opérationnelles
 
 <div style="background-color: #fff9e6; border-left: 4px solid #ff9800; padding: 12px 16px; margin-bottom: 16px;">
 Cette section est transversale : elle décrit les moyens mis en œuvre pour réaliser les prestations de soins.
@@ -48,7 +47,7 @@ L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette s
 
 Le **Lieu de Réalisation de l'Offre** indique le lieu précis où se déroule la prestation. Il hérite de la classe MOS `Lieu` (adresse, coordonnées géographiques, etc.) et ajoute les attributs spécifiques au contexte ROR.
 
-{% include StructureDefinition-ror-lieu-realisation-offre-dict.xhtml %}
+{% include StructureDefinition-ror-lieu-realisation-offre-class-table.xhtml %}
 
 ---
 
@@ -56,7 +55,7 @@ Le **Lieu de Réalisation de l'Offre** indique le lieu précis où se déroule l
 
 L'**Équipement Spécifique** décrit les équipements matériels et installations spécialisés disponibles dans un établissement, susceptibles d'influencer l'orientation d'un patient.
 
-{% include StructureDefinition-ror-equipement-specifique-dict.xhtml %}
+{% include StructureDefinition-ror-equipement-specifique-class-table.xhtml %}
 
 ---
 
@@ -64,7 +63,7 @@ L'**Équipement Spécifique** décrit les équipements matériels et installatio
 
 La **Capacité de Prise en Charge** décrit les capacités d'accueil en termes de places autorisées ou installées pour une offre donnée.
 
-{% include StructureDefinition-ror-capacite-prise-charge-dict.xhtml %}
+{% include StructureDefinition-ror-capacite-prise-charge-class-table.xhtml %}
 
 ---
 
@@ -75,7 +74,7 @@ La **Capacité d'Accueil Opérationnelle** représente les disponibilités de pr
 **Règles de gestion :**
 - `RG_EXP_047` : Lorsque le `statutCapacite` est à « disponible » avec une valeur à 0, cela indique que l'offre est actuellement saturée mais reste ouverte.
 
-{% include StructureDefinition-ror-capacite-accueil-operationnelle-dict.xhtml %}
+{% include StructureDefinition-ror-capacite-accueil-operationnelle-class-table.xhtml %}
 
 ---
 
@@ -83,4 +82,4 @@ La **Capacité d'Accueil Opérationnelle** représente les disponibilités de pr
 
 La **Capacité Habitation** décrit le nombre de places ou de logements disponibles selon le type d'hébergement.
 
-{% include StructureDefinition-ror-capacite-habitation-dict.xhtml %}
+{% include StructureDefinition-ror-capacite-habitation-class-table.xhtml %}

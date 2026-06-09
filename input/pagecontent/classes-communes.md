@@ -1,4 +1,3 @@
-### Classes Communes
 
 <div style="background-color: #e8f4f8; border-left: 4px solid #0077be; padding: 12px 16px; margin-bottom: 16px;">
 Cette section est destinée aux développeurs et intégrateurs. Elle décrit les classes transverses utilisées dans tous les modèles logiques ROR.
@@ -37,7 +36,7 @@ La **Métadonnée** est présente dans toutes les classes du modèle ROR (`metad
 
 **Règle :** La métadonnée est obligatoire (`1..1`) sur toutes les classes du modèle ROR. Elle permet notamment d'identifier la région source de la donnée et de gérer les mises à jour dans le contexte d'un système fédéré.
 
-{% include StructureDefinition-ror-metadonnee-dict.xhtml %}
+{% include StructureDefinition-ror-metadonnee-class-table.xhtml %}
 
 ---
 

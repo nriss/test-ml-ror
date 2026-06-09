@@ -1,4 +1,3 @@
-### Tarif
 
 <div style="background-color: #fff9e6; border-left: 4px solid #ff9800; padding: 12px 16px; margin-bottom: 16px;">
 Cette section est transversale : les tarifs intéressent les patients et les professionnels de santé pour l'orientation, et les développeurs pour l'implémentation.
@@ -53,7 +52,7 @@ Attributs communs à tous les types de tarifs. Cette classe n'est pas instancié
 - `RG_EXP_026` : Un seul tarif de type « Forfait socle hébergement » PEUT être instancié pour chaque combinaison de `tarifMoins60Ans`, `typeHabitation`, `temporaliteAccueil`, `conditionTarifaire` pour une même EG.
 - `RG_EXP_027` : Pour les autres types de tarifs, un seul montant PEUT être exposé pour chaque combinaison des valeurs des attributs (hors montant) pour une même EG.
 
-{% include StructureDefinition-ror-tarif-dict.xhtml %}
+{% include StructureDefinition-ror-tarif-class-table.xhtml %}
 
 ---
 
@@ -61,25 +60,25 @@ Attributs communs à tous les types de tarifs. Cette classe n'est pas instancié
 
 Tarif journalier et par personne pour un type d'hébergement donné. Inclut obligatoirement les prestations définies dans le décret n°2015-1868.
 
-{% include StructureDefinition-ror-forfait-socle-hebergement-dict.xhtml %}
+{% include StructureDefinition-ror-forfait-socle-hebergement-class-table.xhtml %}
 
 ---
 
 #### RORTarifAccueilDeJour
 
-{% include StructureDefinition-ror-tarif-accueil-de-jour-dict.xhtml %}
+{% include StructureDefinition-ror-tarif-accueil-de-jour-class-table.xhtml %}
 
 ---
 
 #### RORTarifDependance
 
-{% include StructureDefinition-ror-tarif-dependance-dict.xhtml %}
+{% include StructureDefinition-ror-tarif-dependance-class-table.xhtml %}
 
 ---
 
 #### RORTarifAidesHumaines
 
-{% include StructureDefinition-ror-tarif-aides-humaines-dict.xhtml %}
+{% include StructureDefinition-ror-tarif-aides-humaines-class-table.xhtml %}
 
 ---
 
@@ -88,7 +87,7 @@ Tarif journalier et par personne pour un type d'hébergement donné. Inclut obli
 **Règles de gestion :**
 - `RG_EXP_036` : Les attributs de la classe `TarifPrestationSupplementaire` DOIVENT être mutuellement exclusifs : soit `nomPrestationSupp` (code d'une prestation connue), soit `nomAutrePrestationSupp` (libellé libre), mais pas les deux simultanément.
 
-{% include StructureDefinition-ror-tarif-prestation-supplementaire-dict.xhtml %}
+{% include StructureDefinition-ror-tarif-prestation-supplementaire-class-table.xhtml %}
 
 ---
 
@@ -97,10 +96,10 @@ Tarif journalier et par personne pour un type d'hébergement donné. Inclut obli
 **Règles de gestion :**
 - `RG_EXP_029` : L'attribut `typeHabitation` d'un tarif de type « supplément tarif hébergement » DOIT prendre la valeur « chambre simple ».
 
-{% include StructureDefinition-ror-supplement-tarif-hebergement-dict.xhtml %}
+{% include StructureDefinition-ror-supplement-tarif-hebergement-class-table.xhtml %}
 
 ---
 
 #### RORTarifPortageRepas
 
-{% include StructureDefinition-ror-tarif-portage-repas-dict.xhtml %}
+{% include StructureDefinition-ror-tarif-portage-repas-class-table.xhtml %}
