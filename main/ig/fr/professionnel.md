@@ -12,6 +12,17 @@ La section **Professionnel Ressource** décrit les professionnels de santé qui 
 
 L'**idNat_PS** (numéro RPPS ou ADELI) est l'identifiant national du professionnel dans le cadre de l'interopérabilité.
 
+**Règles de gestion :**
+
+* `RG_EXP_030` : En cas de coexistence d'un identifiant RPPS et ADELI pour un même professionnel, l'identifiant RPPS est prioritaire.
+* `RG_EXP_031` : Les données issues du RPPS (profession, civilité d'exercice, etc.) ne sont pas modifiables dans le ROR.
+
+-------
+
+#### Diagramme
+
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+
 -------
 
 #### Modèles logiques
@@ -21,7 +32,7 @@ L'**idNat_PS** (numéro RPPS ou ADELI) est l'identifiant national du professionn
 | [RORPersonnePhysique](StructureDefinition-ror-personne-physique.md) | PersonnePhysique | Données d'identité de la personne physique |
 | [RORProfessionnel](StructureDefinition-ror-professionnel.md) | Professionnel | Professionnel enregistré dans un répertoire national |
 | [RORExerciceProfessionnel](StructureDefinition-ror-exercice-professionnel.md) | ExerciceProfessionnel | Exercice d'une profession par un professionnel |
-| [RORSavoirFaire](StructureDefinition-ror-savoir-faire.md) | SavoirFaire | Savoir-faire principal du professionnel |
+| [RORSavoirFaire](StructureDefinition-ror-savoir-faire.md) | SavoirFaire | Savoir-faire principal du professionnel (classe abstraite) |
 | [RORSpecialite](StructureDefinition-ror-specialite.md) | Specialite | Spécialité ordinale du professionnel |
 | [RORCompetence](StructureDefinition-ror-competence.md) | Competence | Compétence reconnue |
 | [RORCompetenceExclusive](StructureDefinition-ror-competence-exclusive.md) | CompetenceExclusive | Compétence exclusive |
@@ -39,12 +50,7 @@ L'**idNat_PS** (numéro RPPS ou ADELI) est l'identifiant national du professionn
 
 La **Personne Physique** porte les données d'identité du professionnel.
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| civilite | 0..1 | Coding | TRE_R81-Civilite |
-| nomFamille | 1..1 | string | — |
-| prenom | 1..1 | string | — |
-| metadonnee | 1..1 | [RORMetadonnee](StructureDefinition-ror-metadonnee.md) | — |
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
 
 -------
 
@@ -52,10 +58,7 @@ La **Personne Physique** porte les données d'identité du professionnel.
 
 Le **Professionnel** représente le professionnel enregistré dans le RPPS ou ADELI.
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| idNatPS | 1..1 | Identifier | TRE_G08-TypeIdentifiantPersonne |
-| metadonnee | 1..1 | [RORMetadonnee](StructureDefinition-ror-metadonnee.md) | — |
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
 
 -------
 
@@ -63,23 +66,37 @@ Le **Professionnel** représente le professionnel enregistré dans le RPPS ou AD
 
 L'**Exercice Professionnel** caractérise l'exercice d'une profession par un professionnel.
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| profession | 1..1 | Coding | TRE_G15-ProfessionSante |
-| civiliteExercice | 0..1 | Coding | TRE_R11-CiviliteExercice |
-| metadonnee | 1..1 | [RORMetadonnee](StructureDefinition-ror-metadonnee.md) | — |
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
 
 -------
 
 #### RORSavoirFaire
 
-Le **Savoir-Faire** décrit la spécialité ou la compétence principale du professionnel.
+Le **Savoir-Faire** est une classe abstraite décrivant la spécialité ou la compétence principale du professionnel. Elle est spécialisée en 9 sous-classes.
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| typeSavoirFaire | 1..1 | Coding | TRE_R04-TypeSavoirFaire |
-| codeSpecialite | 0..1 | Coding | — |
-| metadonnee | 1..1 | [RORMetadonnee](StructureDefinition-ror-metadonnee.md) | — |
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
+
+-------
+
+#### Sous-classes de RORSavoirFaire
+
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
+
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
+
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
+
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
+
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
+
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
+
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
+
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
+
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
 
 -------
 
@@ -87,10 +104,5 @@ Le **Savoir-Faire** décrit la spécialité ou la compétence principale du prof
 
 La **Situation Opérationnelle** caractérise les conditions d'exercice du professionnel dans le cadre d'une offre opérationnelle précise.
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| modeExerciceOffre | 1..1 | Coding | TRE_R23-ModeExercice |
-| competenceSpecifique | 0..* | Coding | TRE_R243-CompetenceSpecifique |
-| secteurConventionnement | 0..1 | Coding | TRE_R282-CNAMAmeliSecteurConventionnement |
-| metadonnee | 1..1 | [RORMetadonnee](StructureDefinition-ror-metadonnee.md) | — |
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
 

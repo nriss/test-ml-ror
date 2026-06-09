@@ -33,7 +33,7 @@ Jeu de valeurs provisoire incluant tous les codes de TRE_R213-ModePriseEnCharge 
   "title" : "JDV ROR - Mode de Prise en Charge (provisoire)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-09T14:33:17+00:00",
+  "date" : "2026-06-09T15:10:34+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

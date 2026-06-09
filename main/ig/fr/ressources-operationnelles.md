@@ -10,7 +10,13 @@ La section **Ressources Opérationnelles** décrit les moyens matériels et capa
 
 #### Donnée pivot
 
-L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette section.
+L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette section. Lorsqu'il est généré par une instance régionale, il est de la forme `code INSEE régional / code interne ROR`.
+
+-------
+
+#### Diagramme
+
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
 
 -------
 
@@ -18,11 +24,19 @@ L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette s
 
 | | | |
 | :--- | :--- | :--- |
+| [RORLieuRealisationOffre](StructureDefinition-ror-lieu-realisation-offre.md) | LieuRealisationOffre | Lieu où se réalise l'offre opérationnelle |
 | [ROREquipementSpecifique](StructureDefinition-ror-equipement-specifique.md) | EquipementSpecifique | Équipement spécialisé disponible dans la structure |
+| [RORCapacitePriseCharge](StructureDefinition-ror-capacite-prise-charge.md) | CapacitePriseCharge | Capacité de prise en charge par l'offre |
 | [RORCapaciteAccueilOperationnelle](StructureDefinition-ror-capacite-accueil-operationnelle.md) | Base | Capacité d'accueil disponible en temps réel |
 | [RORCapaciteHabitation](StructureDefinition-ror-capacite-habitation.md) | CapaciteHabitation | Capacité d'hébergement de l'établissement |
-| [RORCapacitePriseCharge](StructureDefinition-ror-capacite-prise-charge.md) | CapacitePriseCharge | Capacité de prise en charge par l'offre |
-| [RORLieuRealisationOffre](StructureDefinition-ror-lieu-realisation-offre.md) | LieuRealisationOffre | Lieu où se réalise l'offre opérationnelle |
+
+-------
+
+#### RORLieuRealisationOffre
+
+Le **Lieu de Réalisation de l'Offre** indique le lieu précis où se déroule la prestation. Il hérite de la classe MOS `Lieu` (adresse, coordonnées géographiques, etc.) et ajoute les attributs spécifiques au contexte ROR.
+
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
 
 -------
 
@@ -30,46 +44,7 @@ L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette s
 
 L'**Équipement Spécifique** décrit les équipements matériels et installations spécialisés disponibles dans un établissement, susceptibles d'influencer l'orientation d'un patient.
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| typeEquipement | 1..1 | Coding | TRE_R212-Equipement |
-| nombreEquipement | 0..1 | integer | — |
-| metadonnee | 1..1 | [RORMetadonnee](StructureDefinition-ror-metadonnee.md) | — |
-
--------
-
-#### RORCapaciteAccueilOperationnelle
-
-La **Capacité d'Accueil Opérationnelle** représente les disponibilités de prise en charge en temps réel ou à court terme. Elle permet aux outils d'orientation d'accéder aux disponibilités d'un établissement.
-
-| | | | |
-| :--- | :--- | :--- | :--- |
-| natureCapacite | 1..1 | Coding | TRE_R329-NatureCapacite |
-| nombreCapacite | 0..1 | integer | — |
-| statutCapacite | 1..1 | Coding | TRE_R330-StatutCapacite |
-| dateMAJ | 0..1 | dateTime | — |
-| temporaliteCapacite | 1..1 | Coding | TRE_R331-Temporalite |
-| horaireOuverture | 0..1 | string | — |
-| typeSourceCapacite | 0..1 | Coding | TRE_R335-TypeSource |
-| commentaire | 0..1 | string | — |
-| genreCapaciteDispo | 0..1 | Coding | TRE_R332-GenreCapacite |
-| capaciteJour | 0..1 | integer | — |
-| typeFermetureCapacite | 0..1 | Coding | TRE_R333-TypeFermetureCapacite |
-| typeLitSupplementaire | 0..* | Coding | TRE_R334-TypeLitSupplementaire |
-| typeCrise | 0..* | Coding | TRE_R336-TypeCrise |
-
--------
-
-#### RORCapaciteHabitation
-
-La **Capacité Habitation** décrit le nombre de places ou de logements disponibles selon le type d'hébergement.
-
-| | | | |
-| :--- | :--- | :--- | :--- |
-| nombrePlaces | 1..1 | integer | — |
-| typeHabitation | 1..1 | Coding | TRE_R242-TypeHabitation |
-| temporaliteAccueil | 0..1 | Coding | TRE_R240-TemporaliteAccueil |
-| metadonnee | 1..1 | [RORMetadonnee](StructureDefinition-ror-metadonnee.md) | — |
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
 
 -------
 
@@ -77,9 +52,25 @@ La **Capacité Habitation** décrit le nombre de places ou de logements disponib
 
 La **Capacité de Prise en Charge** décrit les capacités d'accueil en termes de places autorisées ou installées pour une offre donnée.
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| nombrePlaces | 0..1 | integer | — |
-| affectationTemporaire | 0..1 | Coding | TRE_R337-AffectationTemporaire |
-| metadonnee | 1..1 | [RORMetadonnee](StructureDefinition-ror-metadonnee.md) | — |
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
+
+-------
+
+#### RORCapaciteAccueilOperationnelle
+
+La **Capacité d'Accueil Opérationnelle** représente les disponibilités de prise en charge en temps réel ou à court terme. Elle permet aux outils d'orientation d'accéder aux disponibilités d'un établissement.
+
+**Règles de gestion :**
+
+* `RG_EXP_047` : Lorsque le `statutCapacite` est à « disponible » avec une valeur à 0, cela indique que l'offre est actuellement saturée mais reste ouverte.
+
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
+
+-------
+
+#### RORCapaciteHabitation
+
+La **Capacité Habitation** décrit le nombre de places ou de logements disponibles selon le type d'hébergement.
+
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
 

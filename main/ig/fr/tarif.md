@@ -12,6 +12,12 @@ La classe `RORTarif` est une **classe abstraite** dont héritent les différents
 
 -------
 
+#### Diagramme
+
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+
+-------
+
 #### Modèles logiques
 
 | | | |
@@ -29,20 +35,14 @@ La classe `RORTarif` est une **classe abstraite** dont héritent les différents
 
 #### RORTarif (classe abstraite)
 
-Attributs communs à tous les types de tarifs :
-
-| | | | |
-| :--- | :--- | :--- | :--- |
-| typeTarif | 1..1 | Coding | TRE_R246-TypeTarif |
-| montantTarif | 1..1 | Money | — |
-| unitePrix | 1..1 | Coding | TRE_R228-UnitePrix |
-| dateDebutValiditeTarif | 0..1 | date | — |
-| metadonnee | 1..1 | [RORMetadonnee](StructureDefinition-ror-metadonnee.md) | — |
+Attributs communs à tous les types de tarifs. Cette classe n'est pas instanciée directement : seules ses sous-classes spécialisées sont utilisées.
 
 **Règles de gestion :**
 
 * `RG_EXP_026` : Un seul tarif de type « Forfait socle hébergement » PEUT être instancié pour chaque combinaison de `tarifMoins60Ans`, `typeHabitation`, `temporaliteAccueil`, `conditionTarifaire` pour une même EG.
 * `RG_EXP_027` : Pour les autres types de tarifs, un seul montant PEUT être exposé pour chaque combinaison des valeurs des attributs (hors montant) pour une même EG.
+
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
 
 -------
 
@@ -50,25 +50,41 @@ Attributs communs à tous les types de tarifs :
 
 Tarif journalier et par personne pour un type d'hébergement donné. Inclut obligatoirement les prestations définies dans le décret n°2015-1868.
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| prestationsNonObligatoiresIncluses | 0..* | Coding | TRE_R264-PrestationNonObligatoireIncluse |
-| autresPrestationsNonObligatoiresIncluses | 0..* | string | — |
-| tarifMoins60Ans | 1..1 | boolean | — |
-| typeHabitation | 1..1 | Coding | TRE_R242-TypeHabitation |
-| conditionTarifaire | 0..1 | Coding | TRE_R250-ConditionTarifaire |
-| temporaliteAccueil | 1..1 | Coding | TRE_R240-TemporaliteAccueil |
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
 
 -------
 
-#### Autres tarifs spécialisés
+#### RORTarifAccueilDeJour
 
-| | |
-| :--- | :--- |
-| **TarifAccueilDeJour** | `conditionTarifaire`(TRE_R250) |
-| **TarifDependance** | `groupeTarifaireDependance`(TRE_R237-NiveauDependance),`temporaliteAccueil`(TRE_R240) |
-| **TarifAidesHumaines** | `conditionTarifaire`(TRE_R250),`modeGestion`(TRE_R236) |
-| **TarifPrestationSupplementaire** | `nomPrestationSupp`(TRE_R264) |
-| **SupplementTarifHebergement** | `typeHabitation`(TRE_R242) |
-| **TarifPortageRepas** | `conditionTarifaire`(TRE_R250) |
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
+
+-------
+
+#### RORTarifDependance
+
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
+
+-------
+
+#### RORTarifAidesHumaines
+
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
+
+-------
+
+#### RORTarifPrestationSupplementaire
+
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
+
+-------
+
+#### RORSupplementTarifHebergement
+
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
+
+-------
+
+#### RORTarifPortageRepas
+
+Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
 

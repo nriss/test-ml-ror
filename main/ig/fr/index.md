@@ -4,27 +4,64 @@
 
 **IG de démonstration**
 
-Cet IG est un exemple illustrant comment des équipes projets (ici : ROR) peuvent définir leurs propres modèles logiques en dérivant des modèles du MOS.
+Cet IG illustre comment définir des modèles logiques ROR en dérivant des modèles du MOS (Modèle des Objets de Santé).
 
 > Cet Implementation Guide est en cours de construction (ci-build). Il est susceptible d'évoluer fréquemment.
 
-### Contexte et objectif
+### Le Répertoire Opérationnel des Ressources (ROR)
 
-Le [MOS (Modèle des Objets de Santé)](https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/) définit un socle commun de modèles logiques pour représenter les entités du système de santé français : professionnels de santé, structures, offres de soins, etc.
+Le **Répertoire Opérationnel des Ressources (ROR)** est le référentiel national de description de l'offre de santé. Il constitue le gisement de données de référence pour les échanges entre systèmes d'information de santé.
 
-Cet IG de démonstration montre comment une équipe projet — ici l'équipe **ROR (Répertoire de l'Offre de soins et des Ressources)** — peut :
+Ce modèle d'exposition (version 3.0.1) répond aux besoins suivants :
 
-1. **Dériver**des modèles logiques existants du MOS pour les spécialiser à son contexte
-1. **Créer**de nouveaux modèles logiques propres au ROR, non couverts par le MOS
-1. **Documenter**les relations entre les objets via un schéma de liaison
+* **Recherche inter-ROR** en sanitaire et médico-social
+* **Orientation en aval de l'hospitalisation**
+* **Orientation d'une personne âgée** en perte d'autonomie ou en situation de handicap
+* **Orientation en soins non programmés**
 
-### Modèles logiques définis
+Les données sont modélisées en cohérence avec le [Modèle des Objets de Santé (MOS)](https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/) et les nomenclatures associées (NOS) gérés par l'ANS.
 
-| | | |
-| :--- | :--- | :--- |
-| `RorOffreOperationnelle` | Dérivé du MOS | Offre de soins opérationnelle, spécialisée pour le ROR |
-| `RorEntiteGeographique` | Dérivé du MOS | Lieu de réalisation de l'offre, avec extensions ROR |
-| `RorOrganisationInterne` | Nouveau | Organisation interne d'une structure (pôle, unité, service) |
+-------
+
+### Description de l'offre de santé
+
+Les acteurs de santé ont convergé sur une vision commune de l'offre de santé autour de quatre composantes :
+
+* L'**organisation opérationnelle** au sein d'une structure,
+* Qui **mobilise des professionnels**,
+* Et dispose d'**équipements spécifiques**,
+* Pour réaliser des **activités opérationnelles**.
+
+Les données de description de l'offre de santé, échangées avec les ROR, sont structurées en **5 sous-ensembles** :
+
+| | | | |
+| :--- | :--- | :--- | :--- |
+| 1 | **Structure** | Entité Juridique et Entité Géographique, auxquelles sont rattachés les tarifs | [Structure](structure.md),[Tarif](tarif.md) |
+| 2 | **Organisation** | Organisation interne d'un établissement (pôles, services, unités fonctionnelles) | [Organisation](organisation.md) |
+| 3 | **Offre Opérationnelle** | Prestations que peut réaliser une structure pour répondre au besoin de santé | [Offre Opérationnelle](offre-operationnelle.md) |
+| 4 | **Ressources Opérationnelles** | Moyens mis en œuvre pour réaliser la prestation | [Ressources Opérationnelles](ressources-operationnelles.md) |
+| 5 | **Professionnel** | Personnes physiques, professionnels, exercice professionnel et savoir-faire | [Professionnel Ressource](professionnel.md) |
+
+<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+
+-------
+
+### Relation avec le MOS
+
+Ce modèle ROR dérive du MOS. La stratégie appliquée est :
+
+* **Ne pas redéfinir** ce qui existe déjà dans le MOS
+* **Créer des LogicalModels ROR** qui héritent des LogicalModels MOS correspondants
+* **N'ajouter en FSH que les différences** : attributs supplémentaires, contraintes spécifiques au contexte ROR, cardinalités resserrées
+
+Différences notables par rapport au MOS :
+
+* Les attributs MOS ne répondant pas aux besoins métiers ROR ne sont pas repris.
+* Certaines cardinalités sont contraintes (ex. `idNatStruct 1..1`, `champActivite 1..1`).
+* De nouveaux concepts propres au ROR ont été ajoutés (ex. `RORMetadonnee`, `RORCapaciteAccueilOperationnelle`, hiérarchie `RORTarif`).
+* Les héritages UML sont traduits par des compositions conformément au [Guide UML-XML de l'État](https://references.modernisation.gouv.fr/sites/default/files/RGI-MDC%20Guide%20UML-XML.pdf).
+
+-------
 
 ### Dépendances
 
