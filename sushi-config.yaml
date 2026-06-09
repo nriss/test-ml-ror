@@ -36,6 +36,20 @@ pages:
         title: Pourquoi le Modèle Logique HL7 ?
     fonctionnalites-ror.md:
         title: Fonctionnalités disponibles pour le ROR
+    classes-communes.md:
+        title: Classes Communes
+    structure.md:
+        title: Structure
+    organisation.md:
+        title: Organisation
+    offre-operationnelle.md:
+        title: Offre Opérationnelle
+    tarif.md:
+        title: Tarif
+    ressources-operationnelles.md:
+        title: Ressources Opérationnelles
+    professionnel.md:
+        title: Professionnel Ressource
     change-log.md:
         title: Historique des versions
 
@@ -44,6 +58,14 @@ menu:
     Contexte:
         Pourquoi le Modèle Logique HL7 ?: avantages-ml.html
         Fonctionnalités pour le ROR: fonctionnalites-ror.html
+    Modèle d'exposition:
+        Classes Communes: classes-communes.html
+        Structure: structure.html
+        Organisation: organisation.html
+        Offre Opérationnelle: offre-operationnelle.html
+        Tarif: tarif.html
+        Ressources Opérationnelles: ressources-operationnelles.html
+        Professionnel Ressource: professionnel.html
     Ressources de conformité: artifacts.html
     Historique: change-log.html
     Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
