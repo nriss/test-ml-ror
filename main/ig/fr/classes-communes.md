@@ -2,8 +2,6 @@
 
 ## Classes Communes
 
-### Classes Communes
-
 Cette section est destinée aux développeurs et intégrateurs. Elle décrit les classes transverses utilisées dans tous les modèles logiques ROR.
 
 Les **Classes Communes** regroupent les éléments partagés par l'ensemble des modèles logiques ROR. Elles se divisent en deux catégories :
@@ -29,8 +27,6 @@ Les **Classes Communes** regroupent les éléments partagés par l'ensemble des 
 La **Métadonnée** est présente dans toutes les classes du modèle ROR (`metadonnee 1..1`). Elle permet de tracer les informations de gestion des données : date de création, date de mise à jour, identifiant de la donnée, commentaire, région source et modèle de saisie.
 
 **Règle :** La métadonnée est obligatoire (`1..1`) sur toutes les classes du modèle ROR. Elle permet notamment d'identifier la région source de la donnée et de gérer les mises à jour dans le contexte d'un système fédéré.
-
-Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
 
 -------
 

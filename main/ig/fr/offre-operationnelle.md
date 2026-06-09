@@ -2,8 +2,6 @@
 
 ## Offre Opérationnelle
 
-### Offre Opérationnelle
-
 Cette section est transversale : elle décrit les prestations de soins qu'une structure peut réaliser, intéressant aussi bien les professionnels de santé que les développeurs.
 
 La section **Offre Opérationnelle** décrit les prestations qu'une structure peut réaliser pour répondre au besoin de santé d'une personne. C'est le cœur fonctionnel du ROR : l'offre opérationnelle permet d'orienter les patients vers les établissements adaptés à leurs besoins.
@@ -61,8 +59,6 @@ L'**Offre Opérationnelle** décrit les prestations que peut réaliser une struc
 * `RG_EXP_017` : Les horaires portant sur une période (date début, date fin) DOIVENT être transmis si la période est en cours ou à venir lors de la lecture de l'information dans le ROR.
 * `RG_EXP_018` : Les horaires portant sur une période échue (date de fin antérieure à la date du jour) lors de la lecture de l'information dans le ROR NE DOIVENT PAS être transmis.
 
-Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
-
 -------
 
 #### RORActiviteOperationnelle
@@ -72,8 +68,6 @@ L'**Activité Opérationnelle** caractérise l'activité exercée dans le cadre 
 **Règles de gestion :**
 
 * `RG_EXP_007` : La `familleActiviteOperationnelle` DOIT être renseignée pour toute instance de la classe Activité Opérationnelle liée à une offre dont le `champActivite` est « médico-social ».
-
-Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
 
 -------
 
@@ -86,6 +80,4 @@ La **Patientèle** décrit les caractéristiques de la population cible de l'off
 * `RG_EXP_008` : Si le `champActivite` de l'offre est « médico-social », le public pris en charge (`publicPrisEnCharge`) DOIT être renseigné dans l'instance de la classe Patientèle.
 * `RG_EXP_009` : Chaque instance de la zone d'intervention DOIT être composée par des instances de `DivisionTerritoriale` de type Commune.
 * `RG_EXP_048` : L'unité de mesure (`Mesure/uniteMesure`) des attributs `ageMin` et `ageMax` accepte uniquement les valeurs suivantes : `a` (année), `mo` (mois), `wk` (semaine), `d` (jour).
-
-Des conseils sur l'interprétation du contenu de ce tableau peuvent être trouvés[ici](https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#data-dictionaries)
 

@@ -73,7 +73,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-ror-tarif-prest
   "name" : "RORTarifPrestationSupplementaire",
   "title" : "ROR - Tarif Prestation Supplémentaire",
   "status" : "draft",
-  "date" : "2026-06-09T15:42:49+00:00",
+  "date" : "2026-06-09T15:47:14+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
