@@ -1,7 +1,6 @@
 <!-- Script pour les contrôles SVG interactifs -->
 <script>
 (function() {
-  // Attendre que le DOM soit complètement chargé
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initAllSvgWrappers);
   } else {
@@ -9,7 +8,6 @@
   }
 
   function initAllSvgWrappers() {
-    // Initialiser tous les wrappers SVG sur la page
     const wrappers = document.querySelectorAll('.svg-wrap');
     wrappers.forEach(wrap => initSvgWrapper(wrap));
   }
@@ -17,7 +15,6 @@
   function initSvgWrapper(wrap) {
     if (!wrap) return;
 
-    // Trouver le SVG inclus
     const svg = wrap.querySelector('svg');
     if (!svg) {
       console.warn('SVG non trouvé dans', wrap);
@@ -36,7 +33,6 @@
     let startX = 0;
     let startY = 0;
 
-    // Fonction pour vérifier si on est en fullscreen
     function isFullscreen() {
       return document.fullscreenElement === wrap;
     }
@@ -46,21 +42,20 @@
         svg.style.transformOrigin = "center center";
         svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
       } else {
-        // En mode normal, pas de transformation
-        svg.style.transform = '';
+        // En mode normal : zoom centré en haut
+        svg.style.transformOrigin = "center top";
+        svg.style.transform = scale !== 1 ? `scale(${scale})` : '';
       }
     }
 
-    // Récupérer les boutons de contrôle pour ce wrapper spécifique
     const zoomInBtn = wrap.querySelector('.svg-zoom-in');
     const zoomOutBtn = wrap.querySelector('.svg-zoom-out');
     const zoomResetBtn = wrap.querySelector('.svg-zoom-reset');
     const fsBtn = wrap.querySelector('.svg-fullscreen');
 
-    /* ZOOM PAR BOUTONS */
+    /* ZOOM PAR BOUTONS — actif en mode normal et fullscreen */
     if (zoomInBtn) {
       zoomInBtn.addEventListener('click', (e) => {
-        if (!isFullscreen()) return; // Actif uniquement en fullscreen
         e.preventDefault();
         e.stopPropagation();
         scale = Math.min(maxScale, scale + zoomStep);
@@ -70,7 +65,6 @@
 
     if (zoomOutBtn) {
       zoomOutBtn.addEventListener('click', (e) => {
-        if (!isFullscreen()) return; // Actif uniquement en fullscreen
         e.preventDefault();
         e.stopPropagation();
         scale = Math.max(minScale, scale - zoomStep);
@@ -80,7 +74,6 @@
 
     if (zoomResetBtn) {
       zoomResetBtn.addEventListener('click', (e) => {
-        if (!isFullscreen()) return; // Actif uniquement en fullscreen
         e.preventDefault();
         e.stopPropagation();
         scale = 1;
@@ -90,27 +83,21 @@
       });
     }
 
-    /* ZOOM À LA MOLETTE */
+    /* ZOOM À LA MOLETTE — actif en fullscreen uniquement */
     wrap.addEventListener('wheel', (e) => {
-      if (!isFullscreen()) return; // Actif uniquement en fullscreen
+      if (!isFullscreen()) return;
       e.preventDefault();
       const delta = e.deltaY < 0 ? zoomStep : -zoomStep;
       scale = Math.min(maxScale, Math.max(minScale, scale + delta));
       applyTransform();
     }, { passive: false });
 
-    /* PAN (déplacement à la souris) */
+    /* PAN — actif en fullscreen uniquement */
     wrap.addEventListener('mousedown', (e) => {
-      if (!isFullscreen()) return; // Actif uniquement en fullscreen
-
-      // Ignorer si clic sur les boutons de contrôle
+      if (!isFullscreen()) return;
       if (e.target.closest('.svg-controls')) return;
-
-      // Ignorer si clic sur un lien ou élément cliquable dans le SVG
       if (e.target.tagName === 'A' || e.target.closest('a')) return;
       if (e.target.hasAttribute('href') || e.target.getAttribute('xlink:href')) return;
-
-      // Ignorer si ce n'est pas le bouton gauche
       if (e.button !== 0) return;
 
       e.preventDefault();
@@ -123,14 +110,12 @@
     document.addEventListener('mousemove', (e) => {
       if (!isPanning) return;
       e.preventDefault();
-      const deltaX = (e.clientX - startX) * panSpeed;
-      const deltaY = (e.clientY - startY) * panSpeed;
-      translateX = deltaX;
-      translateY = deltaY;
+      translateX = (e.clientX - startX) * panSpeed;
+      translateY = (e.clientY - startY) * panSpeed;
       applyTransform();
     });
 
-    document.addEventListener('mouseup', (e) => {
+    document.addEventListener('mouseup', () => {
       if (isPanning) {
         isPanning = false;
         wrap.classList.remove('grabbing');
@@ -144,18 +129,17 @@
       }
     });
 
-    /* PINCH ZOOM (mobile) */
+    /* PINCH ZOOM (mobile) — fullscreen uniquement */
     let touchDistance = null;
     let lastTouchX = 0;
     let lastTouchY = 0;
 
     wrap.addEventListener('touchstart', (e) => {
-      if (!isFullscreen()) return; // Actif uniquement en fullscreen
+      if (!isFullscreen()) return;
       if (e.touches.length === 2) {
         const dx = e.touches[0].clientX - e.touches[1].clientX;
         const dy = e.touches[0].clientY - e.touches[1].clientY;
         touchDistance = Math.sqrt(dx*dx + dy*dy);
-
         lastTouchX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
         lastTouchY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
       } else if (e.touches.length === 1) {
@@ -165,31 +149,26 @@
     });
 
     wrap.addEventListener('touchmove', (e) => {
-      if (!isFullscreen()) return; // Actif uniquement en fullscreen
+      if (!isFullscreen()) return;
       if (e.touches.length === 2) {
         e.preventDefault();
-
         const dx = e.touches[0].clientX - e.touches[1].clientX;
         const dy = e.touches[0].clientY - e.touches[1].clientY;
         const newDist = Math.sqrt(dx*dx + dy*dy);
-
         if (touchDistance) {
           const diff = newDist - touchDistance;
           scale += diff * 0.005;
           scale = Math.min(maxScale, Math.max(minScale, scale));
           applyTransform();
         }
-
         touchDistance = newDist;
       } else if (e.touches.length === 1 && scale > 1) {
         e.preventDefault();
         const touchX = e.touches[0].clientX;
         const touchY = e.touches[0].clientY;
-
         translateX += touchX - lastTouchX;
         translateY += touchY - lastTouchY;
         applyTransform();
-
         lastTouchX = touchX;
         lastTouchY = touchY;
       }
@@ -207,7 +186,6 @@
         e.stopImmediatePropagation();
         try {
           if (!document.fullscreenElement) {
-            // Réinitialiser zoom/pan avant fullscreen
             scale = 1;
             translateX = 0;
             translateY = 0;
@@ -222,10 +200,8 @@
       });
     }
 
-    // Gérer fullscreenchange pour réinitialiser quand on sort du fullscreen
     document.addEventListener('fullscreenchange', () => {
       if (!isFullscreen()) {
-        // Sortie du fullscreen : réinitialiser le zoom/pan
         scale = 1;
         translateX = 0;
         translateY = 0;
