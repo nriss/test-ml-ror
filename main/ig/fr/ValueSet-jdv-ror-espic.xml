@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="jdv-ror-espic"/>
+  <language value="fr"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs jdv-ror-espic</b></p><a name="jdv-ror-espic"> </a><a name="hcjdv-ror-espic"> </a><ul><li>Include tous les codes définis dans <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R73-ESPIC.html"><code>https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC</code></a><span title="La version est explicitement indiquée comme étant 20231215120000"> version &#x1F4CD;20231215120000</span></li></ul></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-espic"/>
+  <version value="0.1.0"/>
+  <name value="JDVRORModaliteParticipationSPH"/>
+  <title value="JDV ROR - Modalité Participation SPH / ESPIC (provisoire)"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-06-09T14:33:17+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R73-ESPIC pour le contexte ROR. En attente de création officielle."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC"/>
+      <version value="20231215120000"/>
+    </include>
+  </compose>
+</ValueSet>

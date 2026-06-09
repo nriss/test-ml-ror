@@ -1,3 +1,692 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-accessibilite-lieu",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORAccessibiliteLieu",
+    "title" : "JDV ROR - Accessibilité Lieu (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R202-AccessibiliteLieu pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R202-AccessibiliteLieu/FHIR/TRE-R202-AccessibiliteLieu"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-entite-geographique.html" : "ROR - Entité Géographique"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-acte-specifique",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORActeSpecifique",
+    "title" : "JDV ROR - Acte Spécifique (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R210-ActeSpecifique pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R210-ActeSpecifique/FHIR/TRE-R210-ActeSpecifique"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-activite-operationnelle",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORActiviteOperationnelle",
+    "title" : "JDV ROR - Activité Opérationnelle (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R211-ActiviteOperationnelle pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R211-ActiviteOperationnelle/FHIR/TRE-R211-ActiviteOperationnelle"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-activite-operationnelle.html" : "ROR - Activité Opérationnelle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-affectation-temporaire",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORAffectationTemporaire",
+    "title" : "JDV ROR - Affectation Temporaire (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R337-AffectationTemporaire pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R337-AffectationTemporaire/FHIR/TRE-R337-AffectationTemporaire"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-capacite-prise-charge.html" : "ROR - Capacité de Prise en Charge"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-agreg-statut-juridique-niv2",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORAgregatStatutJuridiqueNiv2",
+    "title" : "JDV ROR - Agrégat Statut Juridique Niv2 (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R69-FinessAgregatStatutJuridiqueNiv2 pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R69-FinessAgregatStatutJuridiqueNiv2/FHIR/TRE-R69-FinessAgregatStatutJuridiqueNiv2"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-entite-juridique.html" : "ROR - Entité Juridique"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-aide-financiere",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORAideFinanciere",
+    "title" : "JDV ROR - Aide Financière (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R241-AideFinanciere pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R241-AideFinanciere/FHIR/TRE-R241-AideFinanciere"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-entite-geographique.html" : "ROR - Entité Géographique"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-capacite-savoir-faire",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORCapaciteSavoirFaire",
+    "title" : "JDV ROR - Capacité de Savoir-Faire (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R43-CapaciteSavoirFaire pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R43-CapaciteSavoirFaire/FHIR/TRE-R43-CapaciteSavoirFaire"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-capacite-savoir-faire.html" : "ROR - Capacité (Savoir-Faire)"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-champ-activite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORChampActivite",
+    "title" : "JDV ROR - Champ d'Activité (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R227-ChampActivite pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R227-ChampActivite/FHIR/TRE-R227-ChampActivite"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORCivilite",
+    "title" : "JDV ROR - Civilité (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R81-Civilite pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-personne-physique.html" : "ROR - Personne Physique"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite-exercice",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORCiviliteExercice",
+    "title" : "JDV ROR - Civilité d'Exercice (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R11-CiviliteExercice pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R11-CiviliteExercice/FHIR/TRE-R11-CiviliteExercice"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-exercice-professionnel.html" : "ROR - Exercice Professionnel"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORCompetence",
+    "title" : "JDV ROR - Compétence (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R39-Competence pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R39-Competence/FHIR/TRE-R39-Competence"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-competence.html" : "ROR - Compétence"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence-exclusive",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORCompetenceExclusive",
+    "title" : "JDV ROR - Compétence Exclusive (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R40-CompetenceExclusive pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R40-CompetenceExclusive/FHIR/TRE-R40-CompetenceExclusive"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-competence-exclusive.html" : "ROR - Compétence Exclusive"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence-specifique",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORCompetenceSpecifique",
+    "title" : "JDV ROR - Compétence Spécifique (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R243-CompetenceSpecifique pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R243-CompetenceSpecifique/FHIR/TRE-R243-CompetenceSpecifique"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle",
+    "StructureDefinition-ror-situation-operationnelle.html" : "ROR - Situation Opérationnelle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-condition-tarifaire",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORConditionTarifaire",
+    "title" : "JDV ROR - Condition Tarifaire (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R250-ConditionTarifaire pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R250-ConditionTarifaire/FHIR/TRE-R250-ConditionTarifaire"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-tarif-aides-humaines.html" : "ROR - Tarif Aides Humaines",
+    "StructureDefinition-ror-tarif-accueil-de-jour.html" : "ROR - Tarif Accueil de Jour",
+    "StructureDefinition-ror-forfait-socle-hebergement.html" : "ROR - Forfait Socle Hébergement",
+    "StructureDefinition-ror-tarif-portage-repas.html" : "ROR - Tarif Portage Repas"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-desc-non-qualifiant",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORDESCNonQualifiant",
+    "title" : "JDV ROR - DESC Non Qualifiant (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R42-DESCnonQualifiant pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R42-DESCnonQualifiant/FHIR/TRE-R42-DESCnonQualifiant"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-desc-non-qualifiant.html" : "ROR - DESC Non Qualifiant"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-droit-exercice-complementaire",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORDroitExerciceComplementaire",
+    "title" : "JDV ROR - Droit d'Exercice Complémentaire (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R97-DroitExerciceCompl pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R97-DroitExerciceCompl/FHIR/TRE-R97-DroitExerciceCompl"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-droit-exercice-complementaire.html" : "ROR - Droit d'Exercice Complémentaire"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-equipement",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVROREquipement",
+    "title" : "JDV ROR - Équipement (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R212-Equipement pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R212-Equipement/FHIR/TRE-R212-Equipement"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-equipement-specifique.html" : "ROR - Équipement Spécifique"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-espic",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORModaliteParticipationSPH",
+    "title" : "JDV ROR - Modalité Participation SPH / ESPIC (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R73-ESPIC pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-entite-geographique.html" : "ROR - Entité Géographique"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-finess-statut-juridique",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORFinessStatutJuridique",
+    "title" : "JDV ROR - Statut Juridique FINESS (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R72-FinessStatutJuridique pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R72-FinessStatutJuridique/FHIR/TRE-R72-FinessStatutJuridique"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-entite-juridique.html" : "ROR - Entité Juridique"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-genre-capacite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORGenreCapacite",
+    "title" : "JDV ROR - Genre de Capacité (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R332-GenreCapacite pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R332-GenreCapacite/FHIR/TRE-R332-GenreCapacite"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-capacite-accueil-operationnelle.html" : "ROR - Capacité d'Accueil Opérationnelle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-modalite-accueil",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORModaliteAccueil",
+    "title" : "JDV ROR - Modalité d'Accueil (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R338-ModaliteAccueil pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R338-ModaliteAccueil/FHIR/TRE-R338-ModaliteAccueil"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-exercice",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORModeExercice",
+    "title" : "JDV ROR - Mode d'Exercice (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R23-ModeExercice pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-situation-operationnelle.html" : "ROR - Situation Opérationnelle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-gestion",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORModeGestion",
+    "title" : "JDV ROR - Mode de Gestion (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R236-ModeGestion pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R236-ModeGestion/FHIR/TRE-R236-ModeGestion"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle",
+    "StructureDefinition-ror-tarif-aides-humaines.html" : "ROR - Tarif Aides Humaines"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-prise-en-charge",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORModePriseEnCharge",
+    "title" : "JDV ROR - Mode de Prise en Charge (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R213-ModePriseEnCharge pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R213-ModePriseEnCharge/FHIR/TRE-R213-ModePriseEnCharge"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-nature-capacite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORNatureCapacite",
+    "title" : "JDV ROR - Nature de Capacité (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R329-NatureCapacite pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R329-NatureCapacite/FHIR/TRE-R329-NatureCapacite"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-capacite-accueil-operationnelle.html" : "ROR - Capacité d'Accueil Opérationnelle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-niveau-dependance",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORNiveauDependance",
+    "title" : "JDV ROR - Niveau de Dépendance (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R237-NiveauDependance pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R237-NiveauDependance/FHIR/TRE-R237-NiveauDependance"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-tarif-dependance.html" : "ROR - Tarif Dépendance"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-niveau-recours-orsan",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORNiveauRecoursORSAN",
+    "title" : "JDV ROR - Niveau Recours ORSAN (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R284-NiveauRecoursORSAN pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R284-NiveauRecoursORSAN/FHIR/TRE-R284-NiveauRecoursORSAN"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-entite-geographique.html" : "ROR - Entité Géographique"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-orientation-particuliere",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVROROrientationParticuliere",
+    "title" : "JDV ROR - Orientation Particulière (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_G13-OrientationParticuliere pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_G13-OrientationParticuliere/FHIR/TRE-G13-OrientationParticuliere"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-orientation-particuliere.html" : "ROR - Orientation Particulière"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-ouverture-annuelle",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVROROuvertureAnnuelle",
+    "title" : "JDV ROR - Ouverture Annuelle (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R238-OuvertureAnnuelle pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R238-OuvertureAnnuelle/FHIR/TRE-R238-OuvertureAnnuelle"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-prestation-non-obligatoire",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORPrestationNonObligatoire",
+    "title" : "JDV ROR - Prestation Non Obligatoire Incluse (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R264-PrestationNonObligatoireIncluse pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R264-PrestationNonObligatoireIncluse/FHIR/TRE-R264-PrestationNonObligatoireIncluse"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-tarif-prestation-supplementaire.html" : "ROR - Tarif Prestation Supplémentaire",
+    "StructureDefinition-ror-forfait-socle-hebergement.html" : "ROR - Forfait Socle Hébergement"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-profession-sante",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORProfessionSante",
+    "title" : "JDV ROR - Profession de Santé (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_G15-ProfessionSante pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-exercice-professionnel.html" : "ROR - Exercice Professionnel"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-public-pris-en-charge",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORPublicPrisEnCharge",
+    "title" : "JDV ROR - Public Pris en Charge (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R239-PublicPrisEnCharge pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R239-PublicPrisEnCharge/FHIR/TRE-R239-PublicPrisEnCharge"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-patientele.html" : "ROR - Patientèle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-qualification-pac",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORQualificationPAC",
+    "title" : "JDV ROR - Qualification PAC (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R44-QualificationPAC pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R44-QualificationPAC/FHIR/TRE-R44-QualificationPAC"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-qualification-pac.html" : "ROR - Qualification PAC"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-secteur-conventionnement",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORSecteurConventionnement",
+    "title" : "JDV ROR - Secteur Conventionnement (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R282-CNAMAmeliSecteurConventionnement pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R282-CNAMAmeliSecteurConventionnement/FHIR/TRE-R282-CNAMAmeliSecteurConventionnement"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-situation-operationnelle.html" : "ROR - Situation Opérationnelle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-specialisation-pec",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORSpecialisationPriseEnCharge",
+    "title" : "JDV ROR - Spécialisation de Prise en Charge (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R245-SpecialisationDePriseEnCharge pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R245-SpecialisationDePriseEnCharge/FHIR/TRE-R245-SpecialisationDePriseEnCharge"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-specialite-ordinale",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORSpecialiteOrdinale",
+    "title" : "JDV ROR - Spécialité Ordinale (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R38-SpecialiteOrdinale pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-specialite.html" : "ROR - Spécialité"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-statut-capacite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORStatutCapacite",
+    "title" : "JDV ROR - Statut de Capacité (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R330-StatutCapacite pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R330-StatutCapacite/FHIR/TRE-R330-StatutCapacite"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-capacite-accueil-operationnelle.html" : "ROR - Capacité d'Accueil Opérationnelle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-surspecialite-transversale",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORSurspecialiteTransversale",
+    "title" : "JDV ROR - Surspécialité Transversale (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R359-SurspecialiteTransversale pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R359-SurspecialiteTransversale/FHIR/TRE-R359-SurspecialiteTransversale"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-surspecialite-transversale.html" : "ROR - Surspécialité Transversale"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTemporalite",
+    "title" : "JDV ROR - Temporalité (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R331-Temporalite pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R331-Temporalite/FHIR/TRE-R331-Temporalite"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-capacite-accueil-operationnelle.html" : "ROR - Capacité d'Accueil Opérationnelle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite-accueil",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTemporaliteAccueil",
+    "title" : "JDV ROR - Temporalité d'Accueil (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R240-TemporaliteAccueil pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/FHIR/TRE-R240-TemporaliteAccueil"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle",
+    "StructureDefinition-ror-tarif-dependance.html" : "ROR - Tarif Dépendance",
+    "StructureDefinition-ror-forfait-socle-hebergement.html" : "ROR - Forfait Socle Hébergement"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-crise",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTypeCrise",
+    "title" : "JDV ROR - Type de Crise (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R336-TypeCrise pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R336-TypeCrise/FHIR/TRE-R336-TypeCrise"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-capacite-accueil-operationnelle.html" : "ROR - Capacité d'Accueil Opérationnelle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-fermeture-capacite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTypeFermetureCapacite",
+    "title" : "JDV ROR - Type de Fermeture de Capacité (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R333-TypeFermetureCapacite pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R333-TypeFermetureCapacite/FHIR/TRE-R333-TypeFermetureCapacite"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-capacite-accueil-operationnelle.html" : "ROR - Capacité d'Accueil Opérationnelle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-habitation",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTypeHabitation",
+    "title" : "JDV ROR - Type d'Habitation (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R242-TypeHabitation pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R242-TypeHabitation/FHIR/TRE-R242-TypeHabitation"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-supplement-tarif-hebergement.html" : "ROR - Supplément Tarif Hébergement",
+    "StructureDefinition-ror-capacite-habitation.html" : "ROR - Capacité d'Habitation",
+    "StructureDefinition-ror-forfait-socle-hebergement.html" : "ROR - Forfait Socle Hébergement"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-lit-supplementaire",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTypeLitSupplementaire",
+    "title" : "JDV ROR - Type de Lit Supplémentaire (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R334-TypeLitSupplementaire pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R334-TypeLitSupplementaire/FHIR/TRE-R334-TypeLitSupplementaire"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-capacite-accueil-operationnelle.html" : "ROR - Capacité d'Accueil Opérationnelle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-organisation-interne",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTypeOrganisationInterne",
+    "title" : "JDV ROR - Type Organisation Interne (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R207-TypeOrganisationInterne pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R207-TypeOrganisationInterne/FHIR/TRE-R207-TypeOrganisationInterne"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-organisation-interne.html" : "ROR - Organisation Interne"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-savoir-faire",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTypeSavoirFaire",
+    "title" : "JDV ROR - Type de Savoir-Faire (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R04-TypeSavoirFaire pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R04-TypeSavoirFaire/FHIR/TRE-R04-TypeSavoirFaire"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-savoir-faire.html" : "ROR - Savoir-Faire"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-source",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTypeSource",
+    "title" : "JDV ROR - Type de Source (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R335-TypeSource pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R335-TypeSource/FHIR/TRE-R335-TypeSource"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-capacite-accueil-operationnelle.html" : "ROR - Capacité d'Accueil Opérationnelle"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-tarif",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTypeTarif",
+    "title" : "JDV ROR - Type de Tarif (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R246-TypeTarif pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R246-TypeTarif/FHIR/TRE-R246-TypeTarif"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-tarif.html" : "ROR - Tarif"
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-unite-prix",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORUnitePrix",
+    "title" : "JDV ROR - Unité de Prix (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R228-UnitePrix pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R228-UnitePrix/FHIR/TRE-R228-UnitePrix"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-tarif.html" : "ROR - Tarif"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J186-ProfessionRessource-ROR/FHIR/JDV-J186-ProfessionRessource-ROR",
+    "version" : "20250623120000",
+    "status" : "active",
+    "name" : "JDV_J186_ProfessionRessource_ROR",
+    "title" : null,
+    "description" : "Profession Ressource des offres dans le ROR",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+    "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre",
+    "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante",
+    "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial",
+    "https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire",
+    "https://mos.esante.gouv.fr/NOS/TRE_R356-ProfessionRessource/FHIR/TRE-R356-ProfessionRessource"],
+    "oids" : ["1.2.250.1.213.3.4.19"],
+    "sources" : ["1.2.250.1.213.3.4.19"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J227-NiveauExpertise-ROR/FHIR/JDV-J227-NiveauExpertise-ROR",
+    "version" : "20250425120000",
+    "status" : "active",
+    "name" : "JDV_J227_NiveauExpertise_ROR",
+    "title" : null,
+    "description" : "Niveau de ressources humaines et matérielles utiles pour la réalisation de l'offre",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R253-TypeMaternite/FHIR/TRE-R253-TypeMaternite",
+    "https://mos.esante.gouv.fr/NOS/TRE_R344-NiveauExpertise/FHIR/TRE-R344-NiveauExpertise"],
+    "oids" : ["1.2.250.1.213.3.4.59"],
+    "sources" : ["1.2.250.1.213.3.4.59"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J237-RegionOM-ROR/FHIR/JDV-J237-RegionOM-ROR",
+    "version" : "20240126120000",
+    "status" : "retired",
+    "name" : "JDV_J237_RegionOM_ROR",
+    "title" : null,
+    "description" : "Région Outre-Mer et Monaco",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R30-RegionOM/FHIR/TRE-R30-RegionOM"],
+    "oids" : ["1.2.250.1.213.3.4.64"],
+    "sources" : ["1.2.250.1.213.3.4.64"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-metadonnee.html" : "ROR - Métadonnée"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J238-TypeOffre-ROR/FHIR/JDV-J238-TypeOffre-ROR",
+    "version" : "20250625120000",
+    "status" : "active",
+    "name" : "JDV_J238_TypeOffre_ROR",
+    "title" : null,
+    "description" : "Prestations que peut réaliser une structure et qui permettent de répondre au besoin de santé d'une personne",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R244-CategorieOrganisation/FHIR/TRE-R244-CategorieOrganisation"],
+    "oids" : ["1.2.250.1.213.3.4.65"],
+    "sources" : ["1.2.250.1.213.3.4.65"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J51-FamilleActiviteOperationnelle-ROR/FHIR/JDV-J51-FamilleActiviteOperationnelle-ROR",
+    "version" : "20230127120000",
+    "status" : "active",
+    "name" : "JDV_J51_FamilleActiviteOperationnelle_ROR",
+    "title" : null,
+    "description" : "Famille Activité Opérationnelle",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R266-FamilleActiviteOperationnelleHorsSerafin/FHIR/TRE-R266-FamilleActiviteOperationnelleHorsSerafin",
+    "https://mos.esante.gouv.fr/NOS/TRE_R265-PrestationPilotageSerafin/FHIR/TRE-R265-PrestationPilotageSerafin"],
+    "oids" : ["1.2.250.1.213.3.3.62"],
+    "sources" : ["1.2.250.1.213.3.3.62"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-activite-operationnelle.html" : "ROR - Activité Opérationnelle"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/JDV_J55-CategorieEG-ROR/FHIR/JDV-J55-CategorieEG-ROR",
+    "version" : "20250425120000",
+    "status" : "active",
+    "name" : "JDV_J55_CategorieEG_ROR",
+    "title" : null,
+    "description" : "Catégories d'établissements FINESS ou hors FINESS et secteurs d'activité des cabinets",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
+    "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement"],
+    "oids" : ["1.2.250.1.213.3.3.65"],
+    "sources" : ["1.2.250.1.213.3.3.65"],
+    "uses" : {
+    },
+    "StructureDefinition-ror-entite-geographique.html" : "ROR - Entité Géographique"
+  }]
 }

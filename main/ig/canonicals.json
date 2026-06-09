@@ -4,4 +4,606 @@
   "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ImplementationGuide/ans.fhir.fr.test.ror",
   "version" : "0.1.0",
   "name" : "TestROR"
+},
+{
+  "id" : "ror-activite-operationnelle",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-activite-operationnelle",
+  "version" : "0.1.0",
+  "name" : "RORActiviteOperationnelle"
+},
+{
+  "id" : "ror-capacite-accueil-operationnelle",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-capacite-accueil-operationnelle",
+  "version" : "0.1.0",
+  "name" : "RORCapaciteAccueilOperationnelle"
+},
+{
+  "id" : "ror-capacite-habitation",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-capacite-habitation",
+  "version" : "0.1.0",
+  "name" : "RORCapaciteHabitation"
+},
+{
+  "id" : "ror-capacite-prise-charge",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-capacite-prise-charge",
+  "version" : "0.1.0",
+  "name" : "RORCapacitePriseCharge"
+},
+{
+  "id" : "ror-capacite-savoir-faire",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-capacite-savoir-faire",
+  "version" : "0.1.0",
+  "name" : "RORCapacite"
+},
+{
+  "id" : "ror-competence",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-competence",
+  "version" : "0.1.0",
+  "name" : "RORCompetence"
+},
+{
+  "id" : "ror-competence-exclusive",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-competence-exclusive",
+  "version" : "0.1.0",
+  "name" : "RORCompetenceExclusive"
+},
+{
+  "id" : "ror-desc-non-qualifiant",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-desc-non-qualifiant",
+  "version" : "0.1.0",
+  "name" : "RORDESCNonQualifiant"
+},
+{
+  "id" : "ror-droit-exercice-complementaire",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-droit-exercice-complementaire",
+  "version" : "0.1.0",
+  "name" : "RORDroitExerciceComplementaire"
+},
+{
+  "id" : "ror-entite-geographique",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique",
+  "version" : "0.1.0",
+  "name" : "ROREntiteGeographique"
+},
+{
+  "id" : "ror-entite-juridique",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-juridique",
+  "version" : "0.1.0",
+  "name" : "ROREntiteJuridique"
+},
+{
+  "id" : "ror-equipement-specifique",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-equipement-specifique",
+  "version" : "0.1.0",
+  "name" : "ROREquipementSpecifique"
+},
+{
+  "id" : "ror-exercice-professionnel",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-exercice-professionnel",
+  "version" : "0.1.0",
+  "name" : "RORExerciceProfessionnel"
+},
+{
+  "id" : "ror-forfait-socle-hebergement",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-forfait-socle-hebergement",
+  "version" : "0.1.0",
+  "name" : "RORForfaitSocleHebergement"
+},
+{
+  "id" : "ror-lieu-realisation-offre",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-lieu-realisation-offre",
+  "version" : "0.1.0",
+  "name" : "RORLieuRealisationOffre"
+},
+{
+  "id" : "ror-metadonnee",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee",
+  "version" : "0.1.0",
+  "name" : "RORMetadonnee"
+},
+{
+  "id" : "ror-offre-operationnelle",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle",
+  "version" : "0.1.0",
+  "name" : "ROROffreOperationnelle"
+},
+{
+  "id" : "ror-organisation-interne",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-organisation-interne",
+  "version" : "0.1.0",
+  "name" : "ROROrganisationInterne"
+},
+{
+  "id" : "ror-orientation-particuliere",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-orientation-particuliere",
+  "version" : "0.1.0",
+  "name" : "ROROrientationParticuliere"
+},
+{
+  "id" : "ror-patientele",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-patientele",
+  "version" : "0.1.0",
+  "name" : "RORPatientele"
+},
+{
+  "id" : "ror-personne-physique",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-personne-physique",
+  "version" : "0.1.0",
+  "name" : "RORPersonnePhysique"
+},
+{
+  "id" : "ror-pole",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-pole",
+  "version" : "0.1.0",
+  "name" : "RORPole"
+},
+{
+  "id" : "ror-professionnel",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-professionnel",
+  "version" : "0.1.0",
+  "name" : "RORProfessionnel"
+},
+{
+  "id" : "ror-qualification-pac",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-qualification-pac",
+  "version" : "0.1.0",
+  "name" : "RORQualificationPAC"
+},
+{
+  "id" : "ror-savoir-faire",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-savoir-faire",
+  "version" : "0.1.0",
+  "name" : "RORSavoirFaire"
+},
+{
+  "id" : "ror-situation-operationnelle",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-situation-operationnelle",
+  "version" : "0.1.0",
+  "name" : "RORSituationOperationnelle"
+},
+{
+  "id" : "ror-specialite",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-specialite",
+  "version" : "0.1.0",
+  "name" : "RORSpecialite"
+},
+{
+  "id" : "ror-structure-interne",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-structure-interne",
+  "version" : "0.1.0",
+  "name" : "RORStructureInterne"
+},
+{
+  "id" : "ror-supplement-tarif-hebergement",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-supplement-tarif-hebergement",
+  "version" : "0.1.0",
+  "name" : "RORSupplementTarifHebergement"
+},
+{
+  "id" : "ror-surspecialite-transversale",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-surspecialite-transversale",
+  "version" : "0.1.0",
+  "name" : "RORSurspecialiteTransversale"
+},
+{
+  "id" : "ror-tarif",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-tarif",
+  "version" : "0.1.0",
+  "name" : "RORTarif"
+},
+{
+  "id" : "ror-tarif-accueil-de-jour",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-tarif-accueil-de-jour",
+  "version" : "0.1.0",
+  "name" : "RORTarifAccueilDeJour"
+},
+{
+  "id" : "ror-tarif-aides-humaines",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-tarif-aides-humaines",
+  "version" : "0.1.0",
+  "name" : "RORTarifAidesHumaines"
+},
+{
+  "id" : "ror-tarif-dependance",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-tarif-dependance",
+  "version" : "0.1.0",
+  "name" : "RORTarifDependance"
+},
+{
+  "id" : "ror-tarif-portage-repas",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-tarif-portage-repas",
+  "version" : "0.1.0",
+  "name" : "RORTarifPortageRepas"
+},
+{
+  "id" : "ror-tarif-prestation-supplementaire",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-tarif-prestation-supplementaire",
+  "version" : "0.1.0",
+  "name" : "RORTarifPrestationSupplementaire"
+},
+{
+  "id" : "ror-unite-fonctionnelle",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-unite-fonctionnelle",
+  "version" : "0.1.0",
+  "name" : "RORUniteFonctionnelle"
+},
+{
+  "id" : "jdv-ror-accessibilite-lieu",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-accessibilite-lieu",
+  "version" : "0.1.0",
+  "name" : "JDVRORAccessibiliteLieu"
+},
+{
+  "id" : "jdv-ror-acte-specifique",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-acte-specifique",
+  "version" : "0.1.0",
+  "name" : "JDVRORActeSpecifique"
+},
+{
+  "id" : "jdv-ror-activite-operationnelle",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-activite-operationnelle",
+  "version" : "0.1.0",
+  "name" : "JDVRORActiviteOperationnelle"
+},
+{
+  "id" : "jdv-ror-affectation-temporaire",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-affectation-temporaire",
+  "version" : "0.1.0",
+  "name" : "JDVRORAffectationTemporaire"
+},
+{
+  "id" : "jdv-ror-agreg-statut-juridique-niv2",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-agreg-statut-juridique-niv2",
+  "version" : "0.1.0",
+  "name" : "JDVRORAgregatStatutJuridiqueNiv2"
+},
+{
+  "id" : "jdv-ror-aide-financiere",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-aide-financiere",
+  "version" : "0.1.0",
+  "name" : "JDVRORAideFinanciere"
+},
+{
+  "id" : "jdv-ror-capacite-savoir-faire",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-capacite-savoir-faire",
+  "version" : "0.1.0",
+  "name" : "JDVRORCapaciteSavoirFaire"
+},
+{
+  "id" : "jdv-ror-champ-activite",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-champ-activite",
+  "version" : "0.1.0",
+  "name" : "JDVRORChampActivite"
+},
+{
+  "id" : "jdv-ror-civilite",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite",
+  "version" : "0.1.0",
+  "name" : "JDVRORCivilite"
+},
+{
+  "id" : "jdv-ror-civilite-exercice",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite-exercice",
+  "version" : "0.1.0",
+  "name" : "JDVRORCiviliteExercice"
+},
+{
+  "id" : "jdv-ror-competence",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence",
+  "version" : "0.1.0",
+  "name" : "JDVRORCompetence"
+},
+{
+  "id" : "jdv-ror-competence-exclusive",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence-exclusive",
+  "version" : "0.1.0",
+  "name" : "JDVRORCompetenceExclusive"
+},
+{
+  "id" : "jdv-ror-competence-specifique",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence-specifique",
+  "version" : "0.1.0",
+  "name" : "JDVRORCompetenceSpecifique"
+},
+{
+  "id" : "jdv-ror-condition-tarifaire",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-condition-tarifaire",
+  "version" : "0.1.0",
+  "name" : "JDVRORConditionTarifaire"
+},
+{
+  "id" : "jdv-ror-desc-non-qualifiant",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-desc-non-qualifiant",
+  "version" : "0.1.0",
+  "name" : "JDVRORDESCNonQualifiant"
+},
+{
+  "id" : "jdv-ror-droit-exercice-complementaire",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-droit-exercice-complementaire",
+  "version" : "0.1.0",
+  "name" : "JDVRORDroitExerciceComplementaire"
+},
+{
+  "id" : "jdv-ror-equipement",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-equipement",
+  "version" : "0.1.0",
+  "name" : "JDVROREquipement"
+},
+{
+  "id" : "jdv-ror-espic",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-espic",
+  "version" : "0.1.0",
+  "name" : "JDVRORModaliteParticipationSPH"
+},
+{
+  "id" : "jdv-ror-finess-statut-juridique",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-finess-statut-juridique",
+  "version" : "0.1.0",
+  "name" : "JDVRORFinessStatutJuridique"
+},
+{
+  "id" : "jdv-ror-genre-capacite",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-genre-capacite",
+  "version" : "0.1.0",
+  "name" : "JDVRORGenreCapacite"
+},
+{
+  "id" : "jdv-ror-modalite-accueil",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-modalite-accueil",
+  "version" : "0.1.0",
+  "name" : "JDVRORModaliteAccueil"
+},
+{
+  "id" : "jdv-ror-mode-exercice",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-exercice",
+  "version" : "0.1.0",
+  "name" : "JDVRORModeExercice"
+},
+{
+  "id" : "jdv-ror-mode-gestion",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-gestion",
+  "version" : "0.1.0",
+  "name" : "JDVRORModeGestion"
+},
+{
+  "id" : "jdv-ror-mode-prise-en-charge",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-prise-en-charge",
+  "version" : "0.1.0",
+  "name" : "JDVRORModePriseEnCharge"
+},
+{
+  "id" : "jdv-ror-nature-capacite",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-nature-capacite",
+  "version" : "0.1.0",
+  "name" : "JDVRORNatureCapacite"
+},
+{
+  "id" : "jdv-ror-niveau-dependance",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-niveau-dependance",
+  "version" : "0.1.0",
+  "name" : "JDVRORNiveauDependance"
+},
+{
+  "id" : "jdv-ror-niveau-recours-orsan",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-niveau-recours-orsan",
+  "version" : "0.1.0",
+  "name" : "JDVRORNiveauRecoursORSAN"
+},
+{
+  "id" : "jdv-ror-orientation-particuliere",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-orientation-particuliere",
+  "version" : "0.1.0",
+  "name" : "JDVROROrientationParticuliere"
+},
+{
+  "id" : "jdv-ror-ouverture-annuelle",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-ouverture-annuelle",
+  "version" : "0.1.0",
+  "name" : "JDVROROuvertureAnnuelle"
+},
+{
+  "id" : "jdv-ror-prestation-non-obligatoire",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-prestation-non-obligatoire",
+  "version" : "0.1.0",
+  "name" : "JDVRORPrestationNonObligatoire"
+},
+{
+  "id" : "jdv-ror-profession-sante",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-profession-sante",
+  "version" : "0.1.0",
+  "name" : "JDVRORProfessionSante"
+},
+{
+  "id" : "jdv-ror-public-pris-en-charge",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-public-pris-en-charge",
+  "version" : "0.1.0",
+  "name" : "JDVRORPublicPrisEnCharge"
+},
+{
+  "id" : "jdv-ror-qualification-pac",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-qualification-pac",
+  "version" : "0.1.0",
+  "name" : "JDVRORQualificationPAC"
+},
+{
+  "id" : "jdv-ror-secteur-conventionnement",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-secteur-conventionnement",
+  "version" : "0.1.0",
+  "name" : "JDVRORSecteurConventionnement"
+},
+{
+  "id" : "jdv-ror-specialisation-pec",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-specialisation-pec",
+  "version" : "0.1.0",
+  "name" : "JDVRORSpecialisationPriseEnCharge"
+},
+{
+  "id" : "jdv-ror-specialite-ordinale",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-specialite-ordinale",
+  "version" : "0.1.0",
+  "name" : "JDVRORSpecialiteOrdinale"
+},
+{
+  "id" : "jdv-ror-statut-capacite",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-statut-capacite",
+  "version" : "0.1.0",
+  "name" : "JDVRORStatutCapacite"
+},
+{
+  "id" : "jdv-ror-surspecialite-transversale",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-surspecialite-transversale",
+  "version" : "0.1.0",
+  "name" : "JDVRORSurspecialiteTransversale"
+},
+{
+  "id" : "jdv-ror-temporalite",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite",
+  "version" : "0.1.0",
+  "name" : "JDVRORTemporalite"
+},
+{
+  "id" : "jdv-ror-temporalite-accueil",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite-accueil",
+  "version" : "0.1.0",
+  "name" : "JDVRORTemporaliteAccueil"
+},
+{
+  "id" : "jdv-ror-type-crise",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-crise",
+  "version" : "0.1.0",
+  "name" : "JDVRORTypeCrise"
+},
+{
+  "id" : "jdv-ror-type-fermeture-capacite",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-fermeture-capacite",
+  "version" : "0.1.0",
+  "name" : "JDVRORTypeFermetureCapacite"
+},
+{
+  "id" : "jdv-ror-type-habitation",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-habitation",
+  "version" : "0.1.0",
+  "name" : "JDVRORTypeHabitation"
+},
+{
+  "id" : "jdv-ror-type-lit-supplementaire",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-lit-supplementaire",
+  "version" : "0.1.0",
+  "name" : "JDVRORTypeLitSupplementaire"
+},
+{
+  "id" : "jdv-ror-type-organisation-interne",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-organisation-interne",
+  "version" : "0.1.0",
+  "name" : "JDVRORTypeOrganisationInterne"
+},
+{
+  "id" : "jdv-ror-type-savoir-faire",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-savoir-faire",
+  "version" : "0.1.0",
+  "name" : "JDVRORTypeSavoirFaire"
+},
+{
+  "id" : "jdv-ror-type-source",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-source",
+  "version" : "0.1.0",
+  "name" : "JDVRORTypeSource"
+},
+{
+  "id" : "jdv-ror-type-tarif",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-tarif",
+  "version" : "0.1.0",
+  "name" : "JDVRORTypeTarif"
+},
+{
+  "id" : "jdv-ror-unite-prix",
+  "type" : "ValueSet",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-unite-prix",
+  "version" : "0.1.0",
+  "name" : "JDVRORUnitePrix"
 }]

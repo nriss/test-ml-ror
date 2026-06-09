@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "TestROR"] ; # 
   fhir:title [ fhir:v "Démonstration - Modèle Logique ROR dérivant du MOS"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-06-01T10:02:18+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-09T14:33:17+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -1551,6 +1551,1813 @@
          fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
        ]
      ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-accessibilite-lieu> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-accessibilite-lieu" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Accessibilité Lieu (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R202-AccessibiliteLieu pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-acte-specifique> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-acte-specifique" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Acte Spécifique (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R210-ActeSpecifique pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-activite-operationnelle> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-activite-operationnelle" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Activité Opérationnelle (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R211-ActiviteOperationnelle pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-affectation-temporaire> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-affectation-temporaire" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Affectation Temporaire (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R337-AffectationTemporaire pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-agreg-statut-juridique-niv2> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-agreg-statut-juridique-niv2" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Agrégat Statut Juridique Niv2 (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R69-FinessAgregatStatutJuridiqueNiv2 pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-aide-financiere> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-aide-financiere" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Aide Financière (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R241-AideFinanciere pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-capacite-savoir-faire> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-capacite-savoir-faire" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Capacité de Savoir-Faire (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R43-CapaciteSavoirFaire pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-champ-activite> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-champ-activite" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Champ d'Activité (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R227-ChampActivite pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-civilite" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Civilité (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R81-Civilite pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite-exercice> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-civilite-exercice" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Civilité d'Exercice (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R11-CiviliteExercice pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-competence" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Compétence (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R39-Competence pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence-exclusive> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-competence-exclusive" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Compétence Exclusive (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R40-CompetenceExclusive pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence-specifique> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-competence-specifique" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Compétence Spécifique (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R243-CompetenceSpecifique pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-condition-tarifaire> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-condition-tarifaire" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Condition Tarifaire (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R250-ConditionTarifaire pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-desc-non-qualifiant> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-desc-non-qualifiant" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - DESC Non Qualifiant (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R42-DESCnonQualifiant pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-droit-exercice-complementaire> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-droit-exercice-complementaire" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Droit d'Exercice Complémentaire (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R97-DroitExerciceCompl pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-genre-capacite> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-genre-capacite" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Genre de Capacité (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R332-GenreCapacite pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-modalite-accueil> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-modalite-accueil" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Modalité d'Accueil (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R338-ModaliteAccueil pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-espic> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-espic" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Modalité Participation SPH / ESPIC (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R73-ESPIC pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-exercice> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-mode-exercice" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Mode d'Exercice (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R23-ModeExercice pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-gestion> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-mode-gestion" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Mode de Gestion (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R236-ModeGestion pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-prise-en-charge> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-mode-prise-en-charge" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Mode de Prise en Charge (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R213-ModePriseEnCharge pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-nature-capacite> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-nature-capacite" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Nature de Capacité (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R329-NatureCapacite pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-niveau-dependance> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-niveau-dependance" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Niveau de Dépendance (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R237-NiveauDependance pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-niveau-recours-orsan> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-niveau-recours-orsan" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Niveau Recours ORSAN (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R284-NiveauRecoursORSAN pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-orientation-particuliere> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-orientation-particuliere" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Orientation Particulière (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_G13-OrientationParticuliere pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-ouverture-annuelle> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-ouverture-annuelle" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Ouverture Annuelle (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R238-OuvertureAnnuelle pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-prestation-non-obligatoire> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-prestation-non-obligatoire" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Prestation Non Obligatoire Incluse (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R264-PrestationNonObligatoireIncluse pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-profession-sante> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-profession-sante" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Profession de Santé (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_G15-ProfessionSante pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-public-pris-en-charge> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-public-pris-en-charge" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Public Pris en Charge (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R239-PublicPrisEnCharge pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-qualification-pac> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-qualification-pac" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Qualification PAC (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R44-QualificationPAC pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-secteur-conventionnement> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-secteur-conventionnement" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Secteur Conventionnement (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R282-CNAMAmeliSecteurConventionnement pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-specialisation-pec> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-specialisation-pec" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Spécialisation de Prise en Charge (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R245-SpecialisationDePriseEnCharge pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-specialite-ordinale> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-specialite-ordinale" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Spécialité Ordinale (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R38-SpecialiteOrdinale pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-statut-capacite> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-statut-capacite" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Statut de Capacité (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R330-StatutCapacite pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-finess-statut-juridique> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-finess-statut-juridique" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Statut Juridique FINESS (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R72-FinessStatutJuridique pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-surspecialite-transversale> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-surspecialite-transversale" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Surspécialité Transversale (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R359-SurspecialiteTransversale pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-temporalite" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Temporalité (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R331-Temporalite pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite-accueil> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-temporalite-accueil" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Temporalité d'Accueil (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R240-TemporaliteAccueil pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-habitation> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-type-habitation" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Type d'Habitation (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R242-TypeHabitation pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-crise> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-type-crise" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Type de Crise (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R336-TypeCrise pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-fermeture-capacite> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-type-fermeture-capacite" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Type de Fermeture de Capacité (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R333-TypeFermetureCapacite pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-lit-supplementaire> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-type-lit-supplementaire" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Type de Lit Supplémentaire (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R334-TypeLitSupplementaire pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-savoir-faire> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-type-savoir-faire" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Type de Savoir-Faire (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R04-TypeSavoirFaire pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-source> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-type-source" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Type de Source (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R335-TypeSource pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-tarif> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-type-tarif" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Type de Tarif (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R246-TypeTarif pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-organisation-interne> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-type-organisation-interne" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Type Organisation Interne (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R207-TypeOrganisationInterne pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-unite-prix> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-unite-prix" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Unité de Prix (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R228-UnitePrix pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-equipement> ;
+         fhir:reference [ fhir:v "ValueSet/jdv-ror-equipement" ]
+       ] ;
+       fhir:name [ fhir:v "JDV ROR - Équipement (provisoire)" ] ;
+       fhir:description [ fhir:v "Jeu de valeurs provisoire incluant tous les codes de TRE_R212-Equipement pour le contexte ROR. En attente de création officielle." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-activite-operationnelle> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-activite-operationnelle" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Activité Opérationnelle" ] ;
+       fhir:description [ fhir:v "Ensemble cohérent d'actions et de pratiques mises en œuvre pour participer au rétablissement ou à l'entretien de la Santé d'une personne dans le contexte ROR. Les activités opérationnelles peuvent être regroupées au sein de familles d'activités." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-capacite-savoir-faire> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-capacite-savoir-faire" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Capacité (Savoir-Faire)" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de la CapaciteSavoirfaire du MOS. Reconnaissance par l'ordre d'un diplôme de capacité, complétant les savoir-faire principaux." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-capacite-accueil-operationnelle> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-capacite-accueil-operationnelle" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Capacité d'Accueil Opérationnelle" ] ;
+       fhir:description [ fhir:v "Précise la CapacitePriseCharge par une série d'enregistrements indiquant la quantité de lits (ou places) pour un statut et une temporalité donnée. Le cumul des enregistrements donne une vision complète de la capacité d'un lieu." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-capacite-habitation> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-capacite-habitation" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Capacité d'Habitation" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de la CapaciteHabitation du MOS. Décrit un type d'habitation adapté à la réalisation d'une offre et le nombre d'habitations associées." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-capacite-prise-charge> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-capacite-prise-charge" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Capacité de Prise en Charge" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de la CapacitePriseCharge du MOS. Indique l'affectation des lits d'une zone d'hébergement, notamment dans le cadre d'une gestion de crise." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-competence> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-competence" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Compétence" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de la Competence du MOS. Titre délivré par l'ordre national des médecins aux praticiens ayant débuté leurs études médicales avant la réforme de 1982." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-competence-exclusive> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-competence-exclusive" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Compétence Exclusive" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de la CompetenceExclusive du MOS. Compétence exercée à titre exclusif, incompatible avec l'exercice d'une spécialité." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-desc-non-qualifiant> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-desc-non-qualifiant" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - DESC Non Qualifiant" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR du DESCNonQualifiant du MOS. Diplôme d'études spécialisées complémentaires de groupe I, valable en complément de la spécialité." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-droit-exercice-complementaire> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-droit-exercice-complementaire" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Droit d'Exercice Complémentaire" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR du DroitExerciceComplementaire du MOS. Droit d'exercice dans une spécialité définie par un DESC de médecine du groupe I." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-entite-geographique" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Entité Géographique" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de l'EntiteGeographique du MOS. Correspond à un établissement ou lieu d'exercice dans le contexte du Répertoire Opérationnel des Ressources." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-juridique> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-entite-juridique" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Entité Juridique" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de l'EntiteJuridique du MOS. Correspond à la notion de personne morale dans le contexte du Répertoire Opérationnel des Ressources." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-exercice-professionnel> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-exercice-professionnel" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Exercice Professionnel" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de l'ExerciceProfessionnel du MOS. Informations décrivant la profession exercée et l'identité d'exercice d'un professionnel." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-forfait-socle-hebergement> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-forfait-socle-hebergement" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Forfait Socle Hébergement" ] ;
+       fhir:description [ fhir:v "Tarif journalier et par personne (majoritairement appliqué par l'établissement) pour un type d'hébergement donné. Inclut obligatoirement les prestations définies dans le décret n°2015-1868. Ce tarif peut être modulable pour les personnes bénéficiaires de l'aide sociale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-lieu-realisation-offre> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-lieu-realisation-offre" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Lieu de Réalisation de l'Offre" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR du LieuRealisationOffre du MOS. Espace disposant d'un ensemble de ressources pour réaliser une offre. Lorsque les ressources sont mobiles, le lieu correspond au lieu administratif où est organisée la prise en charge." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-metadonnee" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Métadonnée" ] ;
+       fhir:description [ fhir:v "Informations relatives à la gestion des classes et des données du ROR. Permet aux applications consommatrices de se synchroniser en identifiant les créations, modifications et suppressions d'objets." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-offre-operationnelle" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Offre Opérationnelle" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de l'OffreOperationnelle du MOS. Correspond aux prestations que peut réaliser une structure pour répondre au besoin de santé d'une personne dans le contexte ROR." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-organisation-interne> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-organisation-interne" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Organisation Interne" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de l'OrganisationInterne du MOS. Classe abstraite décrivant l'organisation opérationnelle interne d'une EG (pôles, services, unités fonctionnelles)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-orientation-particuliere> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-orientation-particuliere" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Orientation Particulière" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de l'OrientationParticuliere du MOS. Orientation d'exercice : acupuncture ou homéopathie." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-patientele> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-patientele" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Patientèle" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de la Patientele du MOS. Ensemble de personnes répondant à des critères leur permettant de bénéficier de la prestation décrite." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-personne-physique> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-personne-physique" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Personne Physique" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de la PersonnePhysique du MOS. Individu titulaire de droits et d'obligations caractérisé par une identité civile, dans le contexte ROR." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-professionnel> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-professionnel" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Professionnel" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR du Professionnel du MOS. Données d'identification pérennes d'une personne physique travaillant dans les domaines sanitaire, médico-social et social." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-pole> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-pole" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Pôle" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR du PoleActivite du MOS. Pôle d'activité au sens de la loi HPST, art.13. Organisation interne de premier niveau regroupant des structures internes." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-qualification-pac> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-qualification-pac" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Qualification PAC" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de la QualificationPAC du MOS. Qualification de praticien adjoint contractuel autorisant à exercer en établissement sans qualification ordinale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-savoir-faire> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-savoir-faire" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Savoir-Faire" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR du SavoirFaire du MOS. Prérogatives d'exercice d'un professionnel reconnues par une autorité d'enregistrement (spécialités, compétences, etc.)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-situation-operationnelle> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-situation-operationnelle" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Situation Opérationnelle" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de la SituationOperationnelle du MOS. Caractérise les conditions d'exercice du professionnel dans le cadre de l'offre décrite." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-specialite> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-specialite" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Spécialité" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de la Specialite du MOS. Spécialité médicale ou odontologique reconnue par une autorité d'enregistrement." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-structure-interne> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-structure-interne" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Structure Interne" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de la StructureInterne du MOS. Service, unité, centre ou département au sein d'un pôle. Synonymes : service, unité, centre, institut, département." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-supplement-tarif-hebergement> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-supplement-tarif-hebergement" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Supplément Tarif Hébergement" ] ;
+       fhir:description [ fhir:v "Caractéristiques des lieux d'hébergement en SSR qui entraînent le paiement d'un complément au tarif de base de l'hébergement." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-surspecialite-transversale> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-surspecialite-transversale" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Surspécialité Transversale" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de la SurspecialiteTransversale du MOS. Droit d'exercice complémentaire au sein de la spécialité du médecin, acquis par une formation spécialisée transversale (FST)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-tarif> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-tarif" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Tarif" ] ;
+       fhir:description [ fhir:v "Classe abstraite contenant les attributs communs aux classes décrivant les prix des prestations et services fournis par l'établissement dans le contexte ROR. Un type de tarif s'applique à une catégorie de services pour lesquels l'entité géographique a fixé un prix." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-tarif-accueil-de-jour> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-tarif-accueil-de-jour" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Tarif Accueil de Jour" ] ;
+       fhir:description [ fhir:v "Tarif journalier et par personne appliqué par l'établissement pour un accueil de jour." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-tarif-aides-humaines> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-tarif-aides-humaines" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Tarif Aides Humaines" ] ;
+       fhir:description [ fhir:v "Tarif horaire ou forfaitaire (avec charges) des intervenants à domicile." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-tarif-dependance> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-tarif-dependance" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Tarif Dépendance" ] ;
+       fhir:description [ fhir:v "Tarif correspondant au niveau de dépendance de la personne âgée accueillie. Il y a 3 niveaux de tarifs selon le GIR." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-tarif-portage-repas> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-tarif-portage-repas" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Tarif Portage Repas" ] ;
+       fhir:description [ fhir:v "Tarif unitaire ou forfaitaire (avec charges) d'un service de livraison de repas à domicile. Les conditions tarifaires précisent s'il s'agit d'un tarif aide sociale." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-tarif-prestation-supplementaire> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-tarif-prestation-supplementaire" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Tarif Prestation Supplémentaire" ] ;
+       fhir:description [ fhir:v "Tarifs des principales prestations supplémentaires qui ne sont pas comprises dans le tarif hébergement de l'établissement et qui peuvent avoir un impact sur l'orientation. Les attributs DOIVENT être mutuellement exclusifs." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-unite-fonctionnelle> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-unite-fonctionnelle" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Unité Fonctionnelle" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de l'UniteFonctionnelle du MOS. Plus petite unité compatible avec les contraintes de gestion présentant une activité médicale homogène." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-equipement-specifique> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-equipement-specifique" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Équipement Spécifique" ] ;
+       fhir:description [ fhir:v "Spécialisation ROR de l'EquipementSpecifique du MOS. Ressource matérielle discriminante pour la réalisation d'une prestation, propre à la structure ou mise à disposition via convention (sur site)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] ) ;
      fhir:page [
        fhir:extension ( [
          fhir:url [
@@ -1626,6 +3433,139 @@
            fhir:l fhir:fonctionnalites-ror.html
          ] ;
          fhir:title [ fhir:v "Fonctionnalités disponibles pour le ROR" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "classes-communes.html"^^xsd:anyURI ;
+             fhir:l fhir:classes-communes.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "classes-communes.html"^^xsd:anyURI ;
+           fhir:l fhir:classes-communes.html
+         ] ;
+         fhir:title [ fhir:v "Classes Communes" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "structure.html"^^xsd:anyURI ;
+             fhir:l fhir:structure.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "structure.html"^^xsd:anyURI ;
+           fhir:l fhir:structure.html
+         ] ;
+         fhir:title [ fhir:v "Structure" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "organisation.html"^^xsd:anyURI ;
+             fhir:l fhir:organisation.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "organisation.html"^^xsd:anyURI ;
+           fhir:l fhir:organisation.html
+         ] ;
+         fhir:title [ fhir:v "Organisation" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "offre-operationnelle.html"^^xsd:anyURI ;
+             fhir:l fhir:offre-operationnelle.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "offre-operationnelle.html"^^xsd:anyURI ;
+           fhir:l fhir:offre-operationnelle.html
+         ] ;
+         fhir:title [ fhir:v "Offre Opérationnelle" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "tarif.html"^^xsd:anyURI ;
+             fhir:l fhir:tarif.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "tarif.html"^^xsd:anyURI ;
+           fhir:l fhir:tarif.html
+         ] ;
+         fhir:title [ fhir:v "Tarif" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "ressources-operationnelles.html"^^xsd:anyURI ;
+             fhir:l fhir:ressources-operationnelles.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "ressources-operationnelles.html"^^xsd:anyURI ;
+           fhir:l fhir:ressources-operationnelles.html
+         ] ;
+         fhir:title [ fhir:v "Ressources Opérationnelles" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "professionnel.html"^^xsd:anyURI ;
+             fhir:l fhir:professionnel.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "professionnel.html"^^xsd:anyURI ;
+           fhir:l fhir:professionnel.html
+         ] ;
+         fhir:title [ fhir:v "Professionnel Ressource" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

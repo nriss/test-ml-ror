@@ -12,7 +12,7 @@
   <name value="TestROR"/>
   <title value="Démonstration - Modèle Logique ROR dérivant du MOS"/>
   <status value="draft"/>
-  <date value="2026-06-01T10:02:18+00:00"/>
+  <date value="2026-06-09T14:33:17+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -542,6 +542,952 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-accessibilite-lieu"/>
+      </reference>
+      <name value="JDV ROR - Accessibilité Lieu (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R202-AccessibiliteLieu pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-acte-specifique"/>
+      </reference>
+      <name value="JDV ROR - Acte Spécifique (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R210-ActeSpecifique pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-activite-operationnelle"/>
+      </reference>
+      <name value="JDV ROR - Activité Opérationnelle (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R211-ActiviteOperationnelle pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-affectation-temporaire"/>
+      </reference>
+      <name value="JDV ROR - Affectation Temporaire (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R337-AffectationTemporaire pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-agreg-statut-juridique-niv2"/>
+      </reference>
+      <name value="JDV ROR - Agrégat Statut Juridique Niv2 (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R69-FinessAgregatStatutJuridiqueNiv2 pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-aide-financiere"/>
+      </reference>
+      <name value="JDV ROR - Aide Financière (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R241-AideFinanciere pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-capacite-savoir-faire"/>
+      </reference>
+      <name value="JDV ROR - Capacité de Savoir-Faire (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R43-CapaciteSavoirFaire pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-champ-activite"/>
+      </reference>
+      <name value="JDV ROR - Champ d'Activité (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R227-ChampActivite pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-civilite"/>
+      </reference>
+      <name value="JDV ROR - Civilité (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R81-Civilite pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-civilite-exercice"/>
+      </reference>
+      <name value="JDV ROR - Civilité d'Exercice (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R11-CiviliteExercice pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-competence"/>
+      </reference>
+      <name value="JDV ROR - Compétence (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R39-Competence pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-competence-exclusive"/>
+      </reference>
+      <name value="JDV ROR - Compétence Exclusive (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R40-CompetenceExclusive pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-competence-specifique"/>
+      </reference>
+      <name value="JDV ROR - Compétence Spécifique (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R243-CompetenceSpecifique pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-condition-tarifaire"/>
+      </reference>
+      <name value="JDV ROR - Condition Tarifaire (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R250-ConditionTarifaire pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-desc-non-qualifiant"/>
+      </reference>
+      <name value="JDV ROR - DESC Non Qualifiant (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R42-DESCnonQualifiant pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-droit-exercice-complementaire"/>
+      </reference>
+      <name value="JDV ROR - Droit d'Exercice Complémentaire (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R97-DroitExerciceCompl pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-genre-capacite"/>
+      </reference>
+      <name value="JDV ROR - Genre de Capacité (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R332-GenreCapacite pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-modalite-accueil"/>
+      </reference>
+      <name value="JDV ROR - Modalité d'Accueil (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R338-ModaliteAccueil pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-espic"/>
+      </reference>
+      <name value="JDV ROR - Modalité Participation SPH / ESPIC (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R73-ESPIC pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-mode-exercice"/>
+      </reference>
+      <name value="JDV ROR - Mode d'Exercice (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R23-ModeExercice pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-mode-gestion"/>
+      </reference>
+      <name value="JDV ROR - Mode de Gestion (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R236-ModeGestion pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-mode-prise-en-charge"/>
+      </reference>
+      <name value="JDV ROR - Mode de Prise en Charge (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R213-ModePriseEnCharge pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-nature-capacite"/>
+      </reference>
+      <name value="JDV ROR - Nature de Capacité (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R329-NatureCapacite pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-niveau-dependance"/>
+      </reference>
+      <name value="JDV ROR - Niveau de Dépendance (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R237-NiveauDependance pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-niveau-recours-orsan"/>
+      </reference>
+      <name value="JDV ROR - Niveau Recours ORSAN (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R284-NiveauRecoursORSAN pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-orientation-particuliere"/>
+      </reference>
+      <name value="JDV ROR - Orientation Particulière (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_G13-OrientationParticuliere pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-ouverture-annuelle"/>
+      </reference>
+      <name value="JDV ROR - Ouverture Annuelle (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R238-OuvertureAnnuelle pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-prestation-non-obligatoire"/>
+      </reference>
+      <name value="JDV ROR - Prestation Non Obligatoire Incluse (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R264-PrestationNonObligatoireIncluse pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-profession-sante"/>
+      </reference>
+      <name value="JDV ROR - Profession de Santé (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_G15-ProfessionSante pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-public-pris-en-charge"/>
+      </reference>
+      <name value="JDV ROR - Public Pris en Charge (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R239-PublicPrisEnCharge pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-qualification-pac"/>
+      </reference>
+      <name value="JDV ROR - Qualification PAC (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R44-QualificationPAC pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-secteur-conventionnement"/>
+      </reference>
+      <name value="JDV ROR - Secteur Conventionnement (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R282-CNAMAmeliSecteurConventionnement pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-specialisation-pec"/>
+      </reference>
+      <name value="JDV ROR - Spécialisation de Prise en Charge (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R245-SpecialisationDePriseEnCharge pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-specialite-ordinale"/>
+      </reference>
+      <name value="JDV ROR - Spécialité Ordinale (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R38-SpecialiteOrdinale pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-statut-capacite"/>
+      </reference>
+      <name value="JDV ROR - Statut de Capacité (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R330-StatutCapacite pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-finess-statut-juridique"/>
+      </reference>
+      <name value="JDV ROR - Statut Juridique FINESS (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R72-FinessStatutJuridique pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-surspecialite-transversale"/>
+      </reference>
+      <name value="JDV ROR - Surspécialité Transversale (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R359-SurspecialiteTransversale pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-temporalite"/>
+      </reference>
+      <name value="JDV ROR - Temporalité (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R331-Temporalite pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-temporalite-accueil"/>
+      </reference>
+      <name value="JDV ROR - Temporalité d'Accueil (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R240-TemporaliteAccueil pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-type-habitation"/>
+      </reference>
+      <name value="JDV ROR - Type d'Habitation (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R242-TypeHabitation pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-type-crise"/>
+      </reference>
+      <name value="JDV ROR - Type de Crise (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R336-TypeCrise pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-type-fermeture-capacite"/>
+      </reference>
+      <name value="JDV ROR - Type de Fermeture de Capacité (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R333-TypeFermetureCapacite pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-type-lit-supplementaire"/>
+      </reference>
+      <name value="JDV ROR - Type de Lit Supplémentaire (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R334-TypeLitSupplementaire pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-type-savoir-faire"/>
+      </reference>
+      <name value="JDV ROR - Type de Savoir-Faire (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R04-TypeSavoirFaire pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-type-source"/>
+      </reference>
+      <name value="JDV ROR - Type de Source (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R335-TypeSource pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-type-tarif"/>
+      </reference>
+      <name value="JDV ROR - Type de Tarif (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R246-TypeTarif pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-type-organisation-interne"/>
+      </reference>
+      <name value="JDV ROR - Type Organisation Interne (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R207-TypeOrganisationInterne pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-unite-prix"/>
+      </reference>
+      <name value="JDV ROR - Unité de Prix (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R228-UnitePrix pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jdv-ror-equipement"/>
+      </reference>
+      <name value="JDV ROR - Équipement (provisoire)"/>
+      <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R212-Equipement pour le contexte ROR. En attente de création officielle."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-activite-operationnelle"/>
+      </reference>
+      <name value="ROR - Activité Opérationnelle"/>
+      <description value="Ensemble cohérent d'actions et de pratiques mises en œuvre pour participer au rétablissement ou à l'entretien de la Santé d'une personne dans le contexte ROR. Les activités opérationnelles peuvent être regroupées au sein de familles d'activités."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-capacite-savoir-faire"/>
+      </reference>
+      <name value="ROR - Capacité (Savoir-Faire)"/>
+      <description value="Spécialisation ROR de la CapaciteSavoirfaire du MOS. Reconnaissance par l'ordre d'un diplôme de capacité, complétant les savoir-faire principaux."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-capacite-accueil-operationnelle"/>
+      </reference>
+      <name value="ROR - Capacité d'Accueil Opérationnelle"/>
+      <description value="Précise la CapacitePriseCharge par une série d'enregistrements indiquant la quantité de lits (ou places) pour un statut et une temporalité donnée. Le cumul des enregistrements donne une vision complète de la capacité d'un lieu."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-capacite-habitation"/>
+      </reference>
+      <name value="ROR - Capacité d'Habitation"/>
+      <description value="Spécialisation ROR de la CapaciteHabitation du MOS. Décrit un type d'habitation adapté à la réalisation d'une offre et le nombre d'habitations associées."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-capacite-prise-charge"/>
+      </reference>
+      <name value="ROR - Capacité de Prise en Charge"/>
+      <description value="Spécialisation ROR de la CapacitePriseCharge du MOS. Indique l'affectation des lits d'une zone d'hébergement, notamment dans le cadre d'une gestion de crise."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-competence"/>
+      </reference>
+      <name value="ROR - Compétence"/>
+      <description value="Spécialisation ROR de la Competence du MOS. Titre délivré par l'ordre national des médecins aux praticiens ayant débuté leurs études médicales avant la réforme de 1982."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-competence-exclusive"/>
+      </reference>
+      <name value="ROR - Compétence Exclusive"/>
+      <description value="Spécialisation ROR de la CompetenceExclusive du MOS. Compétence exercée à titre exclusif, incompatible avec l'exercice d'une spécialité."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-desc-non-qualifiant"/>
+      </reference>
+      <name value="ROR - DESC Non Qualifiant"/>
+      <description value="Spécialisation ROR du DESCNonQualifiant du MOS. Diplôme d'études spécialisées complémentaires de groupe I, valable en complément de la spécialité."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-droit-exercice-complementaire"/>
+      </reference>
+      <name value="ROR - Droit d'Exercice Complémentaire"/>
+      <description value="Spécialisation ROR du DroitExerciceComplementaire du MOS. Droit d'exercice dans une spécialité définie par un DESC de médecine du groupe I."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-entite-geographique"/>
+      </reference>
+      <name value="ROR - Entité Géographique"/>
+      <description value="Spécialisation ROR de l'EntiteGeographique du MOS. Correspond à un établissement ou lieu d'exercice dans le contexte du Répertoire Opérationnel des Ressources."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-entite-juridique"/>
+      </reference>
+      <name value="ROR - Entité Juridique"/>
+      <description value="Spécialisation ROR de l'EntiteJuridique du MOS. Correspond à la notion de personne morale dans le contexte du Répertoire Opérationnel des Ressources."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-exercice-professionnel"/>
+      </reference>
+      <name value="ROR - Exercice Professionnel"/>
+      <description value="Spécialisation ROR de l'ExerciceProfessionnel du MOS. Informations décrivant la profession exercée et l'identité d'exercice d'un professionnel."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-forfait-socle-hebergement"/>
+      </reference>
+      <name value="ROR - Forfait Socle Hébergement"/>
+      <description value="Tarif journalier et par personne (majoritairement appliqué par l'établissement) pour un type d'hébergement donné. Inclut obligatoirement les prestations définies dans le décret n°2015-1868. Ce tarif peut être modulable pour les personnes bénéficiaires de l'aide sociale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-lieu-realisation-offre"/>
+      </reference>
+      <name value="ROR - Lieu de Réalisation de l'Offre"/>
+      <description value="Spécialisation ROR du LieuRealisationOffre du MOS. Espace disposant d'un ensemble de ressources pour réaliser une offre. Lorsque les ressources sont mobiles, le lieu correspond au lieu administratif où est organisée la prise en charge."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-metadonnee"/>
+      </reference>
+      <name value="ROR - Métadonnée"/>
+      <description value="Informations relatives à la gestion des classes et des données du ROR. Permet aux applications consommatrices de se synchroniser en identifiant les créations, modifications et suppressions d'objets."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-offre-operationnelle"/>
+      </reference>
+      <name value="ROR - Offre Opérationnelle"/>
+      <description value="Spécialisation ROR de l'OffreOperationnelle du MOS. Correspond aux prestations que peut réaliser une structure pour répondre au besoin de santé d'une personne dans le contexte ROR."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-organisation-interne"/>
+      </reference>
+      <name value="ROR - Organisation Interne"/>
+      <description value="Spécialisation ROR de l'OrganisationInterne du MOS. Classe abstraite décrivant l'organisation opérationnelle interne d'une EG (pôles, services, unités fonctionnelles)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-orientation-particuliere"/>
+      </reference>
+      <name value="ROR - Orientation Particulière"/>
+      <description value="Spécialisation ROR de l'OrientationParticuliere du MOS. Orientation d'exercice : acupuncture ou homéopathie."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-patientele"/>
+      </reference>
+      <name value="ROR - Patientèle"/>
+      <description value="Spécialisation ROR de la Patientele du MOS. Ensemble de personnes répondant à des critères leur permettant de bénéficier de la prestation décrite."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-personne-physique"/>
+      </reference>
+      <name value="ROR - Personne Physique"/>
+      <description value="Spécialisation ROR de la PersonnePhysique du MOS. Individu titulaire de droits et d'obligations caractérisé par une identité civile, dans le contexte ROR."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-professionnel"/>
+      </reference>
+      <name value="ROR - Professionnel"/>
+      <description value="Spécialisation ROR du Professionnel du MOS. Données d'identification pérennes d'une personne physique travaillant dans les domaines sanitaire, médico-social et social."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-pole"/>
+      </reference>
+      <name value="ROR - Pôle"/>
+      <description value="Spécialisation ROR du PoleActivite du MOS. Pôle d'activité au sens de la loi HPST, art.13. Organisation interne de premier niveau regroupant des structures internes."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-qualification-pac"/>
+      </reference>
+      <name value="ROR - Qualification PAC"/>
+      <description value="Spécialisation ROR de la QualificationPAC du MOS. Qualification de praticien adjoint contractuel autorisant à exercer en établissement sans qualification ordinale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-savoir-faire"/>
+      </reference>
+      <name value="ROR - Savoir-Faire"/>
+      <description value="Spécialisation ROR du SavoirFaire du MOS. Prérogatives d'exercice d'un professionnel reconnues par une autorité d'enregistrement (spécialités, compétences, etc.)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-situation-operationnelle"/>
+      </reference>
+      <name value="ROR - Situation Opérationnelle"/>
+      <description value="Spécialisation ROR de la SituationOperationnelle du MOS. Caractérise les conditions d'exercice du professionnel dans le cadre de l'offre décrite."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-specialite"/>
+      </reference>
+      <name value="ROR - Spécialité"/>
+      <description value="Spécialisation ROR de la Specialite du MOS. Spécialité médicale ou odontologique reconnue par une autorité d'enregistrement."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-structure-interne"/>
+      </reference>
+      <name value="ROR - Structure Interne"/>
+      <description value="Spécialisation ROR de la StructureInterne du MOS. Service, unité, centre ou département au sein d'un pôle. Synonymes : service, unité, centre, institut, département."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-supplement-tarif-hebergement"/>
+      </reference>
+      <name value="ROR - Supplément Tarif Hébergement"/>
+      <description value="Caractéristiques des lieux d'hébergement en SSR qui entraînent le paiement d'un complément au tarif de base de l'hébergement."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-surspecialite-transversale"/>
+      </reference>
+      <name value="ROR - Surspécialité Transversale"/>
+      <description value="Spécialisation ROR de la SurspecialiteTransversale du MOS. Droit d'exercice complémentaire au sein de la spécialité du médecin, acquis par une formation spécialisée transversale (FST)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-tarif"/>
+      </reference>
+      <name value="ROR - Tarif"/>
+      <description value="Classe abstraite contenant les attributs communs aux classes décrivant les prix des prestations et services fournis par l'établissement dans le contexte ROR. Un type de tarif s'applique à une catégorie de services pour lesquels l'entité géographique a fixé un prix."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-tarif-accueil-de-jour"/>
+      </reference>
+      <name value="ROR - Tarif Accueil de Jour"/>
+      <description value="Tarif journalier et par personne appliqué par l'établissement pour un accueil de jour."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-tarif-aides-humaines"/>
+      </reference>
+      <name value="ROR - Tarif Aides Humaines"/>
+      <description value="Tarif horaire ou forfaitaire (avec charges) des intervenants à domicile."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-tarif-dependance"/>
+      </reference>
+      <name value="ROR - Tarif Dépendance"/>
+      <description value="Tarif correspondant au niveau de dépendance de la personne âgée accueillie. Il y a 3 niveaux de tarifs selon le GIR."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-tarif-portage-repas"/>
+      </reference>
+      <name value="ROR - Tarif Portage Repas"/>
+      <description value="Tarif unitaire ou forfaitaire (avec charges) d'un service de livraison de repas à domicile. Les conditions tarifaires précisent s'il s'agit d'un tarif aide sociale."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-tarif-prestation-supplementaire"/>
+      </reference>
+      <name value="ROR - Tarif Prestation Supplémentaire"/>
+      <description value="Tarifs des principales prestations supplémentaires qui ne sont pas comprises dans le tarif hébergement de l'établissement et qui peuvent avoir un impact sur l'orientation. Les attributs DOIVENT être mutuellement exclusifs."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-unite-fonctionnelle"/>
+      </reference>
+      <name value="ROR - Unité Fonctionnelle"/>
+      <description value="Spécialisation ROR de l'UniteFonctionnelle du MOS. Plus petite unité compatible avec les contraintes de gestion présentant une activité médicale homogène."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-equipement-specifique"/>
+      </reference>
+      <name value="ROR - Équipement Spécifique"/>
+      <description value="Spécialisation ROR de l'EquipementSpecifique du MOS. Ressource matérielle discriminante pour la réalisation d'une prestation, propre à la structure ou mise à disposition via convention (sur site)."/>
+      <exampleBoolean value="false"/>
+    </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
         <valueUrl value="toc.html"/>
@@ -571,6 +1517,62 @@
         </extension>
         <nameUrl value="fonctionnalites-ror.html"/>
         <title value="Fonctionnalités disponibles pour le ROR"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="classes-communes.html"/>
+        </extension>
+        <nameUrl value="classes-communes.html"/>
+        <title value="Classes Communes"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="structure.html"/>
+        </extension>
+        <nameUrl value="structure.html"/>
+        <title value="Structure"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="organisation.html"/>
+        </extension>
+        <nameUrl value="organisation.html"/>
+        <title value="Organisation"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="offre-operationnelle.html"/>
+        </extension>
+        <nameUrl value="offre-operationnelle.html"/>
+        <title value="Offre Opérationnelle"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="tarif.html"/>
+        </extension>
+        <nameUrl value="tarif.html"/>
+        <title value="Tarif"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="ressources-operationnelles.html"/>
+        </extension>
+        <nameUrl value="ressources-operationnelles.html"/>
+        <title value="Ressources Opérationnelles"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="professionnel.html"/>
+        </extension>
+        <nameUrl value="professionnel.html"/>
+        <title value="Professionnel Ressource"/>
         <generation value="markdown"/>
       </page>
       <page>

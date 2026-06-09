@@ -1,0 +1,939 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>ROR - Lieu de Réalisation de l&#39;Offre - Démonstration - Modèle Logique ROR dérivant du MOS v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"12.14"}
+    h3,h4,h5,h6{--heading-prefix:"12.14"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" data-no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+    <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
+
+  <div id="ig-search">
+ </div>
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">Démonstration - Modèle Logique ROR dérivant du MOS</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+
+
+  <img alt="France (la) drapeau" src="../assets/images/fra.svg" height="16" title="France (la)"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Contexte
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="avantages-ml.html">Pourquoi le Modèle Logique HL7 ?</a>
+      </li>
+      <li>
+        <a href="fonctionnalites-ror.html">Fonctionnalités pour le ROR</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modèle d&apos;exposition
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="classes-communes.html">Classes Communes</a>
+      </li>
+      <li>
+        <a href="structure.html">Structure</a>
+      </li>
+      <li>
+        <a href="organisation.html">Organisation</a>
+      </li>
+      <li>
+        <a href="offre-operationnelle.html">Offre Opérationnelle</a>
+      </li>
+      <li>
+        <a href="tarif.html">Tarif</a>
+      </li>
+      <li>
+        <a href="ressources-operationnelles.html">Ressources Opérationnelles</a>
+      </li>
+      <li>
+        <a href="professionnel.html">Professionnel Ressource</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li>
+    <a href="change-log.html">Historique</a>
+  </li>
+  <li>
+    <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Résumé des artefacts</b></a></li><li><b>ROR - Lieu de Réalisation de l'Offre</b></li>
+
+          <span style="float: var(--ig-right);">
+
+            <a href="StructureDefinition-ror-forfait-socle-hebergement.profile.ttl.html">&lt; précédent</a> | 
+
+            <a href="#bottom">bas de page</a>
+
+          | <a href="StructureDefinition-ror-lieu-realisation-offre-definitions.html">suivant &gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<!-- layouts\layout-profile -->
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Démonstration - Modèle Logique ROR dérivant du MOS - version de développement local (intégration continue v0.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/test-ror/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Contenu</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-ror-lieu-realisation-offre-definitions.html">Descriptions détaillées</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-ror-lieu-realisation-offre-mappings.html">Mises en correspondance</a>
+    </li>
+  
+
+
+
+
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-ror-lieu-realisation-offre.profile.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-ror-lieu-realisation-offre.profile.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-ror-lieu-realisation-offre.profile.ttl.html">TTL</a>
+    </li>
+  
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+  <h2 id="root">Modèle logique:
+
+ROR - Lieu de Réalisation de l&#39;Offre
+
+
+
+
+
+  </h2>
+
+  <table class="colsd" data-fhir="generated">
+
+    <tr>
+      <td colspan="4"><i>URL officielle</i>: <span class="copy-text">https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-lieu-realisation-offre<button title="Cliquez pour copier l'URL" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-lieu-realisation-offre"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Cliquez pour copier l'URL versionnée" class="btn-copy" data-clipboard-text="https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-lieu-realisation-offre|0.1.0"/></span>
+      </td>
+      <td style="text-align: right;border-left-style: hidden" title="Activez ceci pour voir les modifications depuis la dernière version officielle">
+        <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Surligner les changements ?</label>
+  
+        <input style="margin:0" type="checkbox" id="showChanges" onchange="toggleChanges()"/>
+  
+      </span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="5">
+        
+          Draft
+          
+
+            à partir de 
+2026-06-09
+
+          
+        
+      </td>
+
+
+
+      <td><i>Nom computable</i>: <span style="font-family: monospace;">RORLieuRealisationOffre</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Spécialisation ROR du LieuRealisationOffre du MOS. Espace disposant d'un ensemble de ressources pour réaliser une offre. Lorsque les ressources sont mobiles, le lieu correspond au lieu administratif où est organisée la prise en charge.</p>
+
+</p>
+
+
+<!-- insert intro if present -->
+
+
+
+
+<p><b>Utilisations:</b></p>
+<ul>
+ <li>Ce Modèle logique n'est utilisé par aucun autre profil dans ce guide d'implémentation</li>
+</ul>
+<p>Vous pouvez également vérifier <a href="https://packages2.fhir.org/xig/ans.fhir.fr.test.ror|current/StructureDefinition/ror-lieu-realisation-offre">les usages dans le FHIR IG Statistics</a></p>
+
+
+  <!-- no uri -->
+  <a name="profile"> </a>
+  <h3 id="profile">Vues formelles du contenu du profil</h3>
+  <p>
+    <a href="http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions">Description des profils, des différentiels, des instantanés et de leurs représentations</a>.
+  </p>
+  <div id="tabs">
+    <ul>
+
+      <li>
+        <a href="#tabs-diff">Tableau différentiel (differential)</a>
+      </li>
+      <li>
+        <a href="#tabs-snap">Tableau récapitulatif (snapshot)</a>
+      </li>
+
+
+
+
+<!--      <li>
+        <a href="#tabs-xml">Pseudo XML</a>
+      </li>-->
+
+
+<!--      <li>
+        <a href="#tabs-json">Pseudo JSON</a>
+      </li>-->
+
+
+      <!--<li>
+        <a href="#tabs-ttl">Pseudo TTL</a>
+      </li>-->
+
+      <li>
+        <a href="#tabs-summ">Statistiques/Références</a>
+      </li>
+      <li>
+        <a href="#tabs-all">Tous</a>
+      </li>
+    </ul>
+
+    <a name="tabs-diff"> </a>
+    <div id="tabs-diff">
+      <div id="tbl-diff">
+        <p>Cette structure est dérivée de 
+  <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html">LieuRealisationOffre</a>
+</p>
+        <div id="tbl-diff-inner">
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="ror-lieu-realisation-offreD" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('ror-lieu-realisation-offreD'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('ror-lieu-realisation-offreD'), document.getElementById('ppror-lieu-realisation-offreD'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppror-lieu-realisation-offreD">Bindings <input onClick="filterDesc(document.getElementById('ror-lieu-realisation-offreD'), 'binding',event.target.checked, document.getElementById('ppror-lieu-realisation-offreD'))" size="1" name="binding" checked="true" id="cbror-lieu-realisation-offreD-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('ror-lieu-realisation-offreD'), 'constraint',event.target.checked, document.getElementById('ppror-lieu-realisation-offreD'))" size="1" name="constraint" checked="true" id="cbror-lieu-realisation-offreD-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('ror-lieu-realisation-offreD'), 'obligation',event.target.checked, document.getElementById('ppror-lieu-realisation-offreD'))" size="1" name="obligation" checked="true" id="cbror-lieu-realisation-offreD-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre" title="Spécialisation ROR du LieuRealisationOffre du MOS." data-no-external="true">ror-lieu-realisation-offre</a><a name="ror-lieu-realisation-offre"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html">LieuRealisationOffre(0.1.0-ballot)</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lieu de réalisation de l'offre dans le contexte ROR<br/><br/>Éléments définis dans les ancêtres :<a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="L’identifiant externe de synchronisation est l’identifiant défini par le porteur d’offre pour la zone d’hébergement des lits.">idExterneSynchro</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Nom de la zone d’hébergement des lits.">nomExterneSynchro</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe OffreOperationnelle">OffreOperationnelle</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe CapacitePriseCharge">CapacitePriseCharge</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe Lieu">Lieu</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe EquipementSpecifique">EquipementSpecifique</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe CapaciteHabitation">CapaciteHabitation</a><br/><span style="font-weight:bold">Les instances de ce modèle logique peuvent être la cible d'une référence</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.commentaire" title="Commentaire permettant de donner des informations complémentaires sur le lieu." data-no-external="true">commentaire</a><a name="ror-lieu-realisation-offre.commentaire"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Commentaire permettant de donner des informations complémentaires sur le lieu.</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.metadonnee" title="Informations relatives à la gestion des données du lieu de réalisation dans le ROR." data-no-external="true">metadonnee</a><a name="ror-lieu-realisation-offre.metadonnee"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-ror-metadonnee.html">ror-metadonnee</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Informations relatives à la gestion des données du lieu de réalisation dans le ROR.</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 2763cdb4-eb55-4071-aeaf-68cf6be48e3c
+document.getElementById('cbror-lieu-realisation-offreD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('ror-lieu-realisation-offreD'), 'binding', document.getElementById('cbror-lieu-realisation-offreD-binding').checked, document.getElementById('ppror-lieu-realisation-offreD'));
+document.getElementById('cbror-lieu-realisation-offreD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('ror-lieu-realisation-offreD'), 'constraint', document.getElementById('cbror-lieu-realisation-offreD-constraint').checked, document.getElementById('ppror-lieu-realisation-offreD'));
+document.getElementById('cbror-lieu-realisation-offreD-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('ror-lieu-realisation-offreD'), 'obligation', document.getElementById('cbror-lieu-realisation-offreD-obligation').checked, document.getElementById('ppror-lieu-realisation-offreD'));
+</script></table>
+
+
+        
+          <a name="tx"> </a>
+          <!--Terminology Bindings heading in the fragment -->
+          
+        
+          
+          <!-- 218 is size of empty table -->
+          
+        </div>
+      </div>
+    </div>
+    <a name="tabs-snap"> </a>
+    <div id="tabs-snap">
+      <div id="tbl-snap">
+        <div id="tbl-snap-inner">
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="ror-lieu-realisation-offreS" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('ror-lieu-realisation-offreS'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('ror-lieu-realisation-offreS'), document.getElementById('ppror-lieu-realisation-offreS'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppror-lieu-realisation-offreS">Bindings <input onClick="filterDesc(document.getElementById('ror-lieu-realisation-offreS'), 'binding',event.target.checked, document.getElementById('ppror-lieu-realisation-offreS'))" size="1" name="binding" checked="true" id="cbror-lieu-realisation-offreS-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('ror-lieu-realisation-offreS'), 'constraint',event.target.checked, document.getElementById('ppror-lieu-realisation-offreS'))" size="1" name="constraint" checked="true" id="cbror-lieu-realisation-offreS-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('ror-lieu-realisation-offreS'), 'obligation',event.target.checked, document.getElementById('ppror-lieu-realisation-offreS'))" size="1" name="obligation" checked="true" id="cbror-lieu-realisation-offreS-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre" title="Spécialisation ROR du LieuRealisationOffre du MOS." data-no-external="true">ror-lieu-realisation-offre</a><a name="s-ror-lieu-realisation-offre"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html">LieuRealisationOffre(0.1.0-ballot)</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lieu de réalisation de l'offre dans le contexte ROR<br/><br/>Éléments définis dans les ancêtres :<a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="L’identifiant externe de synchronisation est l’identifiant défini par le porteur d’offre pour la zone d’hébergement des lits.">idExterneSynchro</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Nom de la zone d’hébergement des lits.">nomExterneSynchro</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe OffreOperationnelle">OffreOperationnelle</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe CapacitePriseCharge">CapacitePriseCharge</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe Lieu">Lieu</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe EquipementSpecifique">EquipementSpecifique</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe CapaciteHabitation">CapaciteHabitation</a><br/><span style="font-weight:bold">Les instances de ce modèle logique peuvent être la cible d'une référence</span><br/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.idExterneSynchro" title="L’identifiant externe de synchronisation est l’identifiant défini par le porteur d’offre pour la zone d’hébergement des lits." data-no-external="true">idExterneSynchro</a><a name="s-ror-lieu-realisation-offre.idExterneSynchro"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">L’identifiant externe de synchronisation est l’identifiant défini par le porteur d’offre pour la zone d’hébergement des lits.</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.nomExterneSynchro" title="Nom de la zone d’hébergement des lits." data-no-external="true">nomExterneSynchro</a><a name="s-ror-lieu-realisation-offre.nomExterneSynchro"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nom de la zone d’hébergement des lits.</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.OffreOperationnelle" title="Lien vers la classe OffreOperationnelle" data-no-external="true">OffreOperationnelle</a><a name="s-ror-lieu-realisation-offre.OffreOperationnelle"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-OffreOperationnelle.html">OffreOperationnelle</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe OffreOperationnelle<br/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.CapacitePriseCharge" title="Lien vers la classe CapacitePriseCharge" data-no-external="true">CapacitePriseCharge</a><a name="s-ror-lieu-realisation-offre.CapacitePriseCharge"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-CapacitePriseCharge.html">CapacitePriseCharge</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe CapacitePriseCharge<br/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ae" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.Lieu" title="Lien vers la classe Lieu" data-no-external="true">Lieu</a><a name="s-ror-lieu-realisation-offre.Lieu"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-Lieu.html">Lieu</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe Lieu</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="af" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.EquipementSpecifique" title="Lien vers la classe EquipementSpecifique" data-no-external="true">EquipementSpecifique</a><a name="s-ror-lieu-realisation-offre.EquipementSpecifique"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-EquipementSpecifique.html">EquipementSpecifique</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe EquipementSpecifique<br/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ag" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.CapaciteHabitation" title="Lien vers la classe CapaciteHabitation" data-no-external="true">CapaciteHabitation</a><a name="s-ror-lieu-realisation-offre.CapaciteHabitation"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-CapaciteHabitation.html">CapaciteHabitation</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe CapaciteHabitation<br/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ah" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.commentaire" title="Commentaire permettant de donner des informations complémentaires sur le lieu." data-no-external="true">commentaire</a><a name="s-ror-lieu-realisation-offre.commentaire"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Commentaire permettant de donner des informations complémentaires sur le lieu.</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ai" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.metadonnee" title="Informations relatives à la gestion des données du lieu de réalisation dans le ROR." data-no-external="true">metadonnee</a><a name="s-ror-lieu-realisation-offre.metadonnee"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-ror-metadonnee.html">ror-metadonnee</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Informations relatives à la gestion des données du lieu de réalisation dans le ROR.</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 2763cdb4-eb55-4071-aeaf-68cf6be48e3c
+document.getElementById('cbror-lieu-realisation-offreS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('ror-lieu-realisation-offreS'), 'binding', document.getElementById('cbror-lieu-realisation-offreS-binding').checked, document.getElementById('ppror-lieu-realisation-offreS'));
+document.getElementById('cbror-lieu-realisation-offreS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('ror-lieu-realisation-offreS'), 'constraint', document.getElementById('cbror-lieu-realisation-offreS-constraint').checked, document.getElementById('ppror-lieu-realisation-offreS'));
+document.getElementById('cbror-lieu-realisation-offreS-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('ror-lieu-realisation-offreS'), 'obligation', document.getElementById('cbror-lieu-realisation-offreS-obligation').checked, document.getElementById('ppror-lieu-realisation-offreS'));
+</script></table>
+
+
+        
+          <!--Terminology Bindings heading in the fragment -->
+          
+        
+          
+          <!-- 218 is size of empty table -->
+          
+        </div>
+      </div>
+    </div>
+
+
+
+
+<!--    <a name="tabs-xml"> </a>
+    <div id="tabs-xml">
+      <div id="xml">
+        <div id="xml-inner">
+          <p><span style="color: maroon; font-weight: bold">yet to be done: Xml template</span></p>
+
+        </div>
+      </div>
+    </div>-->
+
+
+<!--    <a name="tabs-json"> </a>
+    <div id="tabs-json">
+      <div id="json">
+        <div id="json-inner">
+           // <span style="color: navy; opacity: 0.8">ROR - Lieu de Réalisation de l'Offre</span>
+ {
+// from Element: <a href="http://hl7.org/fhir/R4/extensibility.html">extension</a>
+    "<a href="StructureDefinition-ror-lieu-realisation-offre.html#ror-lieu-realisation-offre.idExterneSynchro" title="L’identifiant externe de synchronisation est l’identifiant défini par le porteur d’offre pour la zone d’hébergement des lits" class="dict"><span style="text-decoration: underline">idExterneSynchro</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">L’identifiant externe de synchronisation est l’identifiant défini par le porteur d’offre pour la zone d’hébergement des lits.</span>
+    "<a href="StructureDefinition-ror-lieu-realisation-offre.html#ror-lieu-realisation-offre.nomExterneSynchro" title="Nom de la zone d’hébergement des lits" class="dict"><span style="text-decoration: underline">nomExterneSynchro</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Nom de la zone d’hébergement des lits.</span>
+    "<a href="StructureDefinition-ror-lieu-realisation-offre.html#ror-lieu-realisation-offre.OffreOperationnelle" title="Lien vers la classe OffreOperationnelle" class="dict"><span style="text-decoration: underline">OffreOperationnelle</span></a>" : [{<span style="color: darkgreen"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-OffreOperationnelle.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OffreOperationnelle">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OffreOperationnelle</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="Cet élément est requis"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Lien vers la classe OffreOperationnelle</span>
+    "<a href="StructureDefinition-ror-lieu-realisation-offre.html#ror-lieu-realisation-offre.CapacitePriseCharge" title="Lien vers la classe CapacitePriseCharge" class="dict"><span style="text-decoration: underline">CapacitePriseCharge</span></a>" : [{<span style="color: darkgreen"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-CapacitePriseCharge.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapacitePriseCharge">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapacitePriseCharge</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Lien vers la classe CapacitePriseCharge</span>
+    "<a href="StructureDefinition-ror-lieu-realisation-offre.html#ror-lieu-realisation-offre.Lieu" title="Lien vers la classe Lieu" class="dict"><span style="text-decoration: underline">Lieu</span></a>" : {<span style="color: darkgreen"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-Lieu.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="Cet élément est requis"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Lien vers la classe Lieu</span>
+    "<a href="StructureDefinition-ror-lieu-realisation-offre.html#ror-lieu-realisation-offre.EquipementSpecifique" title="Lien vers la classe EquipementSpecifique" class="dict"><span style="text-decoration: underline">EquipementSpecifique</span></a>" : [{<span style="color: darkgreen"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-EquipementSpecifique.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EquipementSpecifique">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EquipementSpecifique</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Lien vers la classe EquipementSpecifique</span>
+    "<a href="StructureDefinition-ror-lieu-realisation-offre.html#ror-lieu-realisation-offre.CapaciteHabitation" title="Lien vers la classe CapaciteHabitation" class="dict"><span style="text-decoration: underline">CapaciteHabitation</span></a>" : [{<span style="color: darkgreen"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-CapaciteHabitation.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteHabitation">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteHabitation</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Lien vers la classe CapaciteHabitation</span>
+    "<a href="StructureDefinition-ror-lieu-realisation-offre.html#ror-lieu-realisation-offre.commentaire" title="Commentaire permettant de donner des informations complémentaires sur le lieu" class="dict"><span style="text-decoration: underline">commentaire</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Commentaire permettant de donner des informations complémentaires sur le lieu.</span>
+    "<a href="StructureDefinition-ror-lieu-realisation-offre.html#ror-lieu-realisation-offre.metadonnee" title="Informations relatives à la gestion des données du lieu de réalisation dans le ROR" class="dict"><span style="text-decoration: underline">metadonnee</span></a>" : {<span style="color: darkgreen"><a href="StructureDefinition-ror-metadonnee.html#https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee">https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title="Cet élément est requis"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Informations relatives à la gestion des données du lieu de réalisation dans le ROR.</span>
+  }
+
+        </div>
+      </div>
+    </div>-->
+
+
+    <!--<a name="tabs-ttl"> </a>
+    <div id="tabs-ttl">
+      <div id="ttl">
+        <div id="ttl-inner">
+          <p><span style="color: maroon; font-weight: bold">yet to be done: Turtle template</span></p>
+
+        </div>
+      </div>
+    </div>-->
+
+    <a name="tabs-summ"> </a>
+    <div id="tabs-summ">
+      <div id="tbl-summ">
+        <p>Cette structure est dérivée de 
+  <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html">LieuRealisationOffre</a>
+</p>
+        <div id="tbl-summ-inner">
+          <a name="summary"> </a>
+          <a name="s-summary"> </a>
+<p><b>
+Résumé
+</b></p>
+<p>Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))</p>
+        </div>
+      </div>
+    </div>
+    <a name="tabs-all"> </a>
+    <div id="tabs-all">
+
+      <div id="all-tbl-diff">
+        <p>
+          <b>Vue différentielle</b>
+        </p>
+        <p>Cette structure est dérivée de 
+  <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html">LieuRealisationOffre</a>
+</p>
+        <div id="all-tbl-diff-inner">
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="ror-lieu-realisation-offreDA" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('ror-lieu-realisation-offreDA'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('ror-lieu-realisation-offreDA'), document.getElementById('ppror-lieu-realisation-offreDA'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppror-lieu-realisation-offreDA">Bindings <input onClick="filterDesc(document.getElementById('ror-lieu-realisation-offreDA'), 'binding',event.target.checked, document.getElementById('ppror-lieu-realisation-offreDA'))" size="1" name="binding" checked="true" id="cbror-lieu-realisation-offreDA-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('ror-lieu-realisation-offreDA'), 'constraint',event.target.checked, document.getElementById('ppror-lieu-realisation-offreDA'))" size="1" name="constraint" checked="true" id="cbror-lieu-realisation-offreDA-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('ror-lieu-realisation-offreDA'), 'obligation',event.target.checked, document.getElementById('ppror-lieu-realisation-offreDA'))" size="1" name="obligation" checked="true" id="cbror-lieu-realisation-offreDA-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre" title="Spécialisation ROR du LieuRealisationOffre du MOS." data-no-external="true">ror-lieu-realisation-offre</a><a name="a-ror-lieu-realisation-offre"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html">LieuRealisationOffre(0.1.0-ballot)</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lieu de réalisation de l'offre dans le contexte ROR<br/><br/>Éléments définis dans les ancêtres :<a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="L’identifiant externe de synchronisation est l’identifiant défini par le porteur d’offre pour la zone d’hébergement des lits.">idExterneSynchro</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Nom de la zone d’hébergement des lits.">nomExterneSynchro</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe OffreOperationnelle">OffreOperationnelle</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe CapacitePriseCharge">CapacitePriseCharge</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe Lieu">Lieu</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe EquipementSpecifique">EquipementSpecifique</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe CapaciteHabitation">CapaciteHabitation</a><br/><span style="font-weight:bold">Les instances de ce modèle logique peuvent être la cible d'une référence</span></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.commentaire" title="Commentaire permettant de donner des informations complémentaires sur le lieu." data-no-external="true">commentaire</a><a name="a-ror-lieu-realisation-offre.commentaire"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Commentaire permettant de donner des informations complémentaires sur le lieu.</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.metadonnee" title="Informations relatives à la gestion des données du lieu de réalisation dans le ROR." data-no-external="true">metadonnee</a><a name="a-ror-lieu-realisation-offre.metadonnee"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-ror-metadonnee.html">ror-metadonnee</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Informations relatives à la gestion des données du lieu de réalisation dans le ROR.</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 2763cdb4-eb55-4071-aeaf-68cf6be48e3c
+document.getElementById('cbror-lieu-realisation-offreDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('ror-lieu-realisation-offreDA'), 'binding', document.getElementById('cbror-lieu-realisation-offreDA-binding').checked, document.getElementById('ppror-lieu-realisation-offreDA'));
+document.getElementById('cbror-lieu-realisation-offreDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('ror-lieu-realisation-offreDA'), 'constraint', document.getElementById('cbror-lieu-realisation-offreDA-constraint').checked, document.getElementById('ppror-lieu-realisation-offreDA'));
+document.getElementById('cbror-lieu-realisation-offreDA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('ror-lieu-realisation-offreDA'), 'obligation', document.getElementById('cbror-lieu-realisation-offreDA-obligation').checked, document.getElementById('ppror-lieu-realisation-offreDA'));
+</script></table>
+
+          <!--Terminology Bindings heading in the fragment -->
+          
+        
+          
+          <!-- 218 is size of empty table -->
+          
+        </div>
+      </div>
+      <div id="all-tbl-snap">
+        <p>
+          <b>Vue d'ensembleView</b>
+        </p>
+        <div id="all-tbl-snap-inner">
+          <table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="ror-lieu-realisation-offreSA" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Le nom logique de l'élément" data-no-external="true">Nom</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations sur l'utilisation de l'élément" data-no-external="true">Drapeaux</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance" data-no-external="true">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Référence au type de l'élément" data-no-external="true">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Informations supplémentaires sur l'élément" data-no-external="true">Description et contraintes</a>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-weight: normal">Filter: <input size="10" name="filter" style="border: 1px #F0F0F0 solid; background-color: rgb(254, 254, 231);" onInput="filterTree(document.getElementById('ror-lieu-realisation-offreSA'), event.target.value)" type="text"/> <img onClick="showPanel(event.target, document.getElementById('ror-lieu-realisation-offreSA'), document.getElementById('ppror-lieu-realisation-offreSA'))" src="tree-filter.png" alt="Filters"/><div style="display: none; position: fixed; opacity : 1.0; background-color: rgb(254, 254, 231); border: 1px solid #ccc; padding: 10px; boxShadow: 0 2px 5px rgba(0,0,0,0.2); zIndex: 1000; borderRadius: 4px" id="ppror-lieu-realisation-offreSA">Bindings <input onClick="filterDesc(document.getElementById('ror-lieu-realisation-offreSA'), 'binding',event.target.checked, document.getElementById('ppror-lieu-realisation-offreSA'))" size="1" name="binding" checked="true" id="cbror-lieu-realisation-offreSA-binding" type="checkbox"/><br/>Contraintes <input onClick="filterDesc(document.getElementById('ror-lieu-realisation-offreSA'), 'constraint',event.target.checked, document.getElementById('ppror-lieu-realisation-offreSA'))" size="1" name="constraint" checked="true" id="cbror-lieu-realisation-offreSA-constraint" type="checkbox"/><br/>Obligations <input onClick="filterDesc(document.getElementById('ror-lieu-realisation-offreSA'), 'obligation',event.target.checked, document.getElementById('ppror-lieu-realisation-offreSA'))" size="1" name="obligation" checked="true" id="cbror-lieu-realisation-offreSA-obligation" type="checkbox"/><br/></div></span><span style="float: right"><a no-external="true" href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format" data-no-external="true"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre" title="Spécialisation ROR du LieuRealisationOffre du MOS." data-no-external="true">ror-lieu-realisation-offre</a><a name="sa-ror-lieu-realisation-offre"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html">LieuRealisationOffre(0.1.0-ballot)</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lieu de réalisation de l'offre dans le contexte ROR<br/><br/>Éléments définis dans les ancêtres :<a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="L’identifiant externe de synchronisation est l’identifiant défini par le porteur d’offre pour la zone d’hébergement des lits.">idExterneSynchro</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Nom de la zone d’hébergement des lits.">nomExterneSynchro</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe OffreOperationnelle">OffreOperationnelle</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe CapacitePriseCharge">CapacitePriseCharge</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe Lieu">Lieu</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe EquipementSpecifique">EquipementSpecifique</a>, <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html" title="Lien vers la classe CapaciteHabitation">CapaciteHabitation</a><br/><span style="font-weight:bold">Les instances de ce modèle logique peuvent être la cible d'une référence</span><br/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.idExterneSynchro" title="L’identifiant externe de synchronisation est l’identifiant défini par le porteur d’offre pour la zone d’hébergement des lits." data-no-external="true">idExterneSynchro</a><a name="sa-ror-lieu-realisation-offre.idExterneSynchro"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">L’identifiant externe de synchronisation est l’identifiant défini par le porteur d’offre pour la zone d’hébergement des lits.</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.nomExterneSynchro" title="Nom de la zone d’hébergement des lits." data-no-external="true">nomExterneSynchro</a><a name="sa-ror-lieu-realisation-offre.nomExterneSynchro"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nom de la zone d’hébergement des lits.</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ac" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.OffreOperationnelle" title="Lien vers la classe OffreOperationnelle" data-no-external="true">OffreOperationnelle</a><a name="sa-ror-lieu-realisation-offre.OffreOperationnelle"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-OffreOperationnelle.html">OffreOperationnelle</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe OffreOperationnelle<br/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ad" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.CapacitePriseCharge" title="Lien vers la classe CapacitePriseCharge" data-no-external="true">CapacitePriseCharge</a><a name="sa-ror-lieu-realisation-offre.CapacitePriseCharge"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-CapacitePriseCharge.html">CapacitePriseCharge</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe CapacitePriseCharge<br/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ae" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.Lieu" title="Lien vers la classe Lieu" data-no-external="true">Lieu</a><a name="sa-ror-lieu-realisation-offre.Lieu"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-Lieu.html">Lieu</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe Lieu</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="af" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.EquipementSpecifique" title="Lien vers la classe EquipementSpecifique" data-no-external="true">EquipementSpecifique</a><a name="sa-ror-lieu-realisation-offre.EquipementSpecifique"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-EquipementSpecifique.html">EquipementSpecifique</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe EquipementSpecifique<br/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ag" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.CapaciteHabitation" title="Lien vers la classe CapaciteHabitation" data-no-external="true">CapaciteHabitation</a><a name="sa-ror-lieu-realisation-offre.CapaciteHabitation"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-CapaciteHabitation.html">CapaciteHabitation</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lien vers la classe CapaciteHabitation<br/></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="ah" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.commentaire" title="Commentaire permettant de donner des informations complémentaires sur le lieu." data-no-external="true">commentaire</a><a name="sa-ror-lieu-realisation-offre.commentaire"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Commentaire permettant de donner des informations complémentaires sur le lieu.</td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ai" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Ressource" class="hierarchy"/> <a no-external="true" href="StructureDefinition-ror-lieu-realisation-offre-definitions.html#ror-lieu-realisation-offre.metadonnee" title="Informations relatives à la gestion des données du lieu de réalisation dans le ROR." data-no-external="true">metadonnee</a><a name="sa-ror-lieu-realisation-offre.metadonnee"> </a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-ror-metadonnee.html">ror-metadonnee</a></td>
+<td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Informations relatives à la gestion des données du lieu de réalisation dans le ROR.</td></tr>
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Légende pour ce format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation pour ce format</a></td></tr><script type="text/javascript">  // 2763cdb4-eb55-4071-aeaf-68cf6be48e3c
+document.getElementById('cbror-lieu-realisation-offreSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
+filterDesc(document.getElementById('ror-lieu-realisation-offreSA'), 'binding', document.getElementById('cbror-lieu-realisation-offreSA-binding').checked, document.getElementById('ppror-lieu-realisation-offreSA'));
+document.getElementById('cbror-lieu-realisation-offreSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
+filterDesc(document.getElementById('ror-lieu-realisation-offreSA'), 'constraint', document.getElementById('cbror-lieu-realisation-offreSA-constraint').checked, document.getElementById('ppror-lieu-realisation-offreSA'));
+document.getElementById('cbror-lieu-realisation-offreSA-obligation').checked = 'false' != localStorage.getItem('ht-table-states-obligation');
+filterDesc(document.getElementById('ror-lieu-realisation-offreSA'), 'obligation', document.getElementById('cbror-lieu-realisation-offreSA-obligation').checked, document.getElementById('ppror-lieu-realisation-offreSA'));
+</script></table>
+
+          <!--Terminology Bindings heading in the fragment -->
+          
+        
+          
+          <!-- 218 is size of empty table -->
+          
+        </div>
+      </div>
+
+
+
+
+      <!--<div id="all-xml">
+        <p>
+          <b>Modèle XML</b>
+        </p>
+        <div id="all-xml-inner">
+          <p><span style="color: maroon; font-weight: bold">yet to be done: Xml template</span></p>
+
+        </div>
+      </div>-->
+
+
+      <!--<div id="all-json">
+        <p>
+          <b>Modèle JSON</b>
+        </p>
+        <div id="all-json-inner">
+           // <span style="color: navy; opacity: 0.8">ROR - Lieu de Réalisation de l'Offre</span>
+ {
+// from Element: <a href="http://hl7.org/fhir/R4/extensibility.html">extension</a>
+    "<a href="StructureDefinition-ror-lieu-realisation-offre.html#ror-lieu-realisation-offre.idExterneSynchro" title="L’identifiant externe de synchronisation est l’identifiant défini par le porteur d’offre pour la zone d’hébergement des lits" class="dict"><span style="text-decoration: underline">idExterneSynchro</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></span>}, <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">L’identifiant externe de synchronisation est l’identifiant défini par le porteur d’offre pour la zone d’hébergement des lits.</span>
+    "<a href="StructureDefinition-ror-lieu-realisation-offre.html#ror-lieu-realisation-offre.nomExterneSynchro" title="Nom de la zone d’hébergement des lits" class="dict"><span style="text-decoration: underline">nomExterneSynchro</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Nom de la zone d’hébergement des lits.</span>
+    "<a href="StructureDefinition-ror-lieu-realisation-offre.html#ror-lieu-realisation-offre.OffreOperationnelle" title="Lien vers la classe OffreOperationnelle" class="dict"><span style="text-decoration: underline">OffreOperationnelle</span></a>" : [{<span style="color: darkgreen"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-OffreOperationnelle.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OffreOperationnelle">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OffreOperationnelle</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="Cet élément est requis"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Lien vers la classe OffreOperationnelle</span>
+    "<a href="StructureDefinition-ror-lieu-realisation-offre.html#ror-lieu-realisation-offre.CapacitePriseCharge" title="Lien vers la classe CapacitePriseCharge" class="dict"><span style="text-decoration: underline">CapacitePriseCharge</span></a>" : [{<span style="color: darkgreen"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-CapacitePriseCharge.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapacitePriseCharge">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapacitePriseCharge</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Lien vers la classe CapacitePriseCharge</span>
+    "<a href="StructureDefinition-ror-lieu-realisation-offre.html#ror-lieu-realisation-offre.Lieu" title="Lien vers la classe Lieu" class="dict"><span style="text-decoration: underline">Lieu</span></a>" : {<span style="color: darkgreen"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-Lieu.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="Cet élément est requis"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Lien vers la classe Lieu</span>
+    "<a href="StructureDefinition-ror-lieu-realisation-offre.html#ror-lieu-realisation-offre.EquipementSpecifique" title="Lien vers la classe EquipementSpecifique" class="dict"><span style="text-decoration: underline">EquipementSpecifique</span></a>" : [{<span style="color: darkgreen"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-EquipementSpecifique.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EquipementSpecifique">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EquipementSpecifique</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Lien vers la classe EquipementSpecifique</span>
+    "<a href="StructureDefinition-ror-lieu-realisation-offre.html#ror-lieu-realisation-offre.CapaciteHabitation" title="Lien vers la classe CapaciteHabitation" class="dict"><span style="text-decoration: underline">CapaciteHabitation</span></a>" : [{<span style="color: darkgreen"><a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-CapaciteHabitation.html#https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteHabitation">https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteHabitation</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Lien vers la classe CapaciteHabitation</span>
+    "<a href="StructureDefinition-ror-lieu-realisation-offre.html#ror-lieu-realisation-offre.commentaire" title="Commentaire permettant de donner des informations complémentaires sur le lieu" class="dict"><span style="text-decoration: underline">commentaire</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Commentaire permettant de donner des informations complémentaires sur le lieu.</span>
+    "<a href="StructureDefinition-ror-lieu-realisation-offre.html#ror-lieu-realisation-offre.metadonnee" title="Informations relatives à la gestion des données du lieu de réalisation dans le ROR" class="dict"><span style="text-decoration: underline">metadonnee</span></a>" : {<span style="color: darkgreen"><a href="StructureDefinition-ror-metadonnee.html#https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee">https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee</a></span>} <span style="color: Gray">//</span> <span style="color: brown" title="Cet élément est requis"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Informations relatives à la gestion des données du lieu de réalisation dans le ROR.</span>
+  }
+
+        </div>
+      </div>-->
+
+
+      <!--<div id="all-ttl">
+        <p>
+          <b>Modèle TTL</b>
+        </p>
+        <div id="all-ttl-inner">
+          <p><span style="color: maroon; font-weight: bold">yet to be done: Turtle template</span></p>
+
+        </div>
+      </div>-->
+
+      <div id="all-summ">
+        <p>Cette structure est dérivée de 
+  <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-LieuRealisationOffre.html">LieuRealisationOffre</a>
+</p>
+        </p>
+        <div id="all-summ-inner">
+          <a name="a-summary"> </a>
+<p><b>
+Résumé
+</b></p>
+<p>Obligatoire : 0 élément(1 élément obligatoire(s) imbriqué(s))</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p>&#160;</p>
+  <p>Autres représentations du profil : <a href="../StructureDefinition-ror-lieu-realisation-offre.csv">CSV</a>, <a href="../StructureDefinition-ror-lieu-realisation-offre.xlsx">Excel</a> 
+  </p>
+
+  
+
+<!-- insert notes if present -->
+
+
+
+
+</div>
+
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/tabs.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:var(--ig-left);">&#xA0;
+
+                <a href="StructureDefinition-ror-forfait-socle-hebergement.profile.ttl.html">&lt; précédent</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">haut</a>
+              </td>
+              <td style="text-align:var(--ig-right);">&#xA0;
+
+                <a href="StructureDefinition-ror-lieu-realisation-offre-definitions.html">suivant ></a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
+          Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Date de génération : 
+  <span title="2026-06-09 14:33:00 +0000">
+    2026-06-09
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">Rapport de QA</a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/test-ror/history.html">Historique des versions</a>
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/documentation">Documentation</a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  <!-- AJOUT ANS -->
+
+<footer class="footer footer-principal" role="contentinfo">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>
+

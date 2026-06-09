@@ -1,3 +1,687 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [{
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_G13-OrientationParticuliere/FHIR/TRE-G13-OrientationParticuliere",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_G13_OrientationParticuliere",
+    "title" : null,
+    "description" : "Orientation particulière",
+    "oids" : ["1.2.250.1.213.2.31"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-orientation-particuliere.html" : "JDV ROR - Orientation Particulière (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante",
+    "version" : "20250328120000",
+    "status" : "active",
+    "name" : "TRE_G15_ProfessionSante",
+    "title" : null,
+    "description" : "Professions de santé définies par le code de la santé publique : professions médicales (art. L4111-1 à L4163-10), de la pharmacie et de la physique médicale (art. 4211-1 à 4252-3) et d’auxiliaires médicaux (art. 4311-1 à 4394-3)",
+    "oids" : ["1.2.250.1.71.1.2.7"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-profession-sante.html" : "JDV ROR - Profession de Santé (provisoire)",
+    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J186-ProfessionRessource-ROR.html" : "JDV_J186_ProfessionRessource_ROR"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",
+    "version" : "20250523120000",
+    "status" : "active",
+    "name" : "TRE_R02_SecteurActivite",
+    "title" : null,
+    "description" : "Le secteur d'activité de santé est une donnée RPPS et correspond au type de service fourni par une structure. Il sert principalement à déterminer les propriétés de facturation des professionnels de ces structures vis-à-vis de l'assurance maladie",
+    "oids" : ["1.2.250.1.71.4.2.4"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J55-CategorieEG-ROR.html" : "JDV_J55_CategorieEG_ROR"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R04-TypeSavoirFaire/FHIR/TRE-R04-TypeSavoirFaire",
+    "version" : "20250625120000",
+    "status" : "active",
+    "name" : "TRE_R04_TypeSavoirFaire",
+    "title" : null,
+    "description" : "Type de savoir-faire",
+    "oids" : ["1.2.250.1.213.1.6.1.16"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-type-savoir-faire.html" : "JDV ROR - Type de Savoir-Faire (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R11-CiviliteExercice/FHIR/TRE-R11-CiviliteExercice",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R11_CiviliteExercice",
+    "title" : null,
+    "description" : "Civilité d'exercice",
+    "oids" : ["1.2.250.1.213.1.6.1.11"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-civilite-exercice.html" : "JDV ROR - Civilité d'Exercice (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R202-AccessibiliteLieu/FHIR/TRE-R202-AccessibiliteLieu",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R202_AccessibiliteLieu",
+    "title" : null,
+    "description" : "Niveaux d'accessibilité d'un établissement recevant du public (ERP)",
+    "oids" : ["1.2.250.1.213.3.3.3"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-accessibilite-lieu.html" : "JDV ROR - Accessibilité Lieu (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R207-TypeOrganisationInterne/FHIR/TRE-R207-TypeOrganisationInterne",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R207_TypeOrganisationInterne",
+    "title" : null,
+    "description" : "Type organisation interne",
+    "oids" : ["1.2.250.1.213.3.3.8"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-type-organisation-interne.html" : "JDV ROR - Type Organisation Interne (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R210-ActeSpecifique/FHIR/TRE-R210-ActeSpecifique",
+    "version" : "20250623120000",
+    "status" : "active",
+    "name" : "TRE_R210_ActeSpecifique",
+    "title" : null,
+    "description" : "Action menée par un ou plusieurs acteur(s) de santé dans le cadre d'une activité. Cet acte peut correspondre à une technique spécialisée ou traduire une expertise discriminante dans le parcours de santé.",
+    "oids" : ["1.2.250.1.213.3.3.11"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-acte-specifique.html" : "JDV ROR - Acte Spécifique (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R211-ActiviteOperationnelle/FHIR/TRE-R211-ActiviteOperationnelle",
+    "version" : "20250623120000",
+    "status" : "active",
+    "name" : "TRE_R211_ActiviteOperationnelle",
+    "title" : null,
+    "description" : "Activite Operationnelle",
+    "oids" : ["1.2.250.1.213.3.3.12"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-activite-operationnelle.html" : "JDV ROR - Activité Opérationnelle (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R212-Equipement/FHIR/TRE-R212-Equipement",
+    "version" : "20250623120000",
+    "status" : "active",
+    "name" : "TRE_R212_Equipement",
+    "title" : null,
+    "description" : "Equipement",
+    "oids" : ["1.2.250.1.213.3.3.10"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-equipement.html" : "JDV ROR - Équipement (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R213-ModePriseEnCharge/FHIR/TRE-R213-ModePriseEnCharge",
+    "version" : "20240329120000",
+    "status" : "active",
+    "name" : "TRE_R213_ModePriseEnCharge",
+    "title" : null,
+    "description" : "Mode de la prise en charge",
+    "oids" : ["1.2.250.1.213.3.3.13"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-mode-prise-en-charge.html" : "JDV ROR - Mode de Prise en Charge (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R227-ChampActivite/FHIR/TRE-R227-ChampActivite",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R227_ChampActivite",
+    "title" : null,
+    "description" : "Champ d'activité",
+    "oids" : ["1.2.250.1.213.3.3.17"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-champ-activite.html" : "JDV ROR - Champ d'Activité (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R228-UnitePrix/FHIR/TRE-R228-UnitePrix",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R228_UnitePrix",
+    "title" : null,
+    "description" : "Unité de prix",
+    "oids" : ["1.2.250.1.213.3.3.18"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-unite-prix.html" : "JDV ROR - Unité de Prix (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R23_ModeExercice",
+    "title" : null,
+    "description" : "Mode d'exercice",
+    "oids" : ["1.2.250.1.213.1.6.1.18"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-mode-exercice.html" : "JDV ROR - Mode d'Exercice (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R236-ModeGestion/FHIR/TRE-R236-ModeGestion",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R236_ModeGestion",
+    "title" : null,
+    "description" : "Mode gestion",
+    "oids" : ["1.2.250.1.213.3.3.23"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-mode-gestion.html" : "JDV ROR - Mode de Gestion (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R238-OuvertureAnnuelle/FHIR/TRE-R238-OuvertureAnnuelle",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R238_OuvertureAnnuelle",
+    "title" : null,
+    "description" : "Ouverture annuelle",
+    "oids" : ["1.2.250.1.213.3.3.27"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-ouverture-annuelle.html" : "JDV ROR - Ouverture Annuelle (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R239-PublicPrisEnCharge/FHIR/TRE-R239-PublicPrisEnCharge",
+    "version" : "20250328120000",
+    "status" : "active",
+    "name" : "TRE_R239_PublicPrisEnCharge",
+    "title" : null,
+    "description" : "Public pris en charge",
+    "oids" : ["1.2.250.1.213.3.3.29"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-public-pris-en-charge.html" : "JDV ROR - Public Pris en Charge (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/FHIR/TRE-R240-TemporaliteAccueil",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R240_TemporaliteAccueil",
+    "title" : null,
+    "description" : "Temporalité accueil",
+    "oids" : ["1.2.250.1.213.3.3.31"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-temporalite-accueil.html" : "JDV ROR - Temporalité d'Accueil (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R241-AideFinanciere/FHIR/TRE-R241-AideFinanciere",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R241_AideFinanciere",
+    "title" : null,
+    "description" : "Habilit. de l'EG permettant aux pers. accueillies d'avoir des aides financières",
+    "oids" : ["1.2.250.1.213.3.3.33"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-aide-financiere.html" : "JDV ROR - Aide Financière (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R242-TypeHabitation/FHIR/TRE-R242-TypeHabitation",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R242_TypeHabitation",
+    "title" : null,
+    "description" : "Type habitation",
+    "oids" : ["1.2.250.1.213.3.3.35"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-type-habitation.html" : "JDV ROR - Type d'Habitation (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R243-CompetenceSpecifique/FHIR/TRE-R243-CompetenceSpecifique",
+    "version" : "20240426120000",
+    "status" : "active",
+    "name" : "TRE_R243_CompetenceSpecifique",
+    "title" : null,
+    "description" : "Compétence spécifique",
+    "oids" : ["1.2.250.1.213.3.3.37"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-competence-specifique.html" : "JDV ROR - Compétence Spécifique (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R244-CategorieOrganisation/FHIR/TRE-R244-CategorieOrganisation",
+    "version" : "20250625120000",
+    "status" : "active",
+    "name" : "TRE_R244_CategorieOrganisation",
+    "title" : null,
+    "description" : "Catégorie d'organisation",
+    "oids" : ["1.2.250.1.213.3.3.39"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J238-TypeOffre-ROR.html" : "JDV_J238_TypeOffre_ROR"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R245-SpecialisationDePriseEnCharge/FHIR/TRE-R245-SpecialisationDePriseEnCharge",
+    "version" : "20250425120000",
+    "status" : "active",
+    "name" : "TRE_R245_SpecialisationDePriseEnCharge",
+    "title" : null,
+    "description" : "Spécialisation de prise en charge",
+    "oids" : ["1.2.250.1.213.3.3.41"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-specialisation-pec.html" : "JDV ROR - Spécialisation de Prise en Charge (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R246-TypeTarif/FHIR/TRE-R246-TypeTarif",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R246_TypeTarif",
+    "title" : null,
+    "description" : "Type tarif",
+    "oids" : ["1.2.250.1.213.3.3.43"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-type-tarif.html" : "JDV ROR - Type de Tarif (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R250-ConditionTarifaire/FHIR/TRE-R250-ConditionTarifaire",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R250_ConditionTarifaire",
+    "title" : null,
+    "description" : "Les conditions d'accès à un tarif modulé",
+    "oids" : ["1.2.250.1.213.3.3.46"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-condition-tarifaire.html" : "JDV ROR - Condition Tarifaire (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R253-TypeMaternite/FHIR/TRE-R253-TypeMaternite",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R253_TypeMaternite",
+    "title" : null,
+    "description" : "Type de maternité",
+    "oids" : ["1.2.250.1.213.3.3.52"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J227-NiveauExpertise-ROR.html" : "JDV_J227_NiveauExpertise_ROR"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R264-PrestationNonObligatoireIncluse/FHIR/TRE-R264-PrestationNonObligatoireIncluse",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R264_PrestationNonObligatoireIncluse",
+    "title" : null,
+    "description" : "Prestations non obligatoire incluses",
+    "oids" : ["1.2.250.1.213.3.3.59"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-prestation-non-obligatoire.html" : "JDV ROR - Prestation Non Obligatoire Incluse (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R266-FamilleActiviteOperationnelleHorsSerafin/FHIR/TRE-R266-FamilleActiviteOperationnelleHorsSerafin",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R266_FamilleActiviteOperationnelleHorsSerafin",
+    "title" : null,
+    "description" : "Familles activités opérationnelles hors Serafin",
+    "oids" : ["1.2.250.1.213.3.3.61"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J51-FamilleActiviteOperationnelle-ROR.html" : "JDV_J51_FamilleActiviteOperationnelle_ROR"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R282-CNAMAmeliSecteurConventionnement/FHIR/TRE-R282-CNAMAmeliSecteurConventionnement",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R282_CNAMAmeliSecteurConventionnement",
+    "title" : null,
+    "description" : "Secteur de conventionnement du professionnel libéral par la CNAM extracts ameli",
+    "oids" : ["1.2.250.1.213.1.6.1.135"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-secteur-conventionnement.html" : "JDV ROR - Secteur Conventionnement (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R284-NiveauRecoursORSAN/FHIR/TRE-R284-NiveauRecoursORSAN",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R284_NiveauRecoursORSAN",
+    "title" : null,
+    "description" : "Hiérarchisation fonctionnelle des Éts pour accueil patients après le SAMU",
+    "oids" : ["1.2.250.1.213.1.1.4.345"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-niveau-recours-orsan.html" : "JDV ROR - Niveau Recours ORSAN (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R30-RegionOM/FHIR/TRE-R30-RegionOM",
+    "version" : "20240628120000",
+    "status" : "active",
+    "name" : "TRE_R30_RegionOM",
+    "title" : null,
+    "description" : "Référentiel des codes régions et collectivités d'outre-mer provenant du COG INSEE + Monaco",
+    "oids" : ["1.2.250.1.213.2.25"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J237-RegionOM-ROR.html" : "JDV_J237_RegionOM_ROR"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R329-NatureCapacite/FHIR/TRE-R329-NatureCapacite",
+    "version" : "20250328120000",
+    "status" : "active",
+    "name" : "TRE_R329_NatureCapacite",
+    "title" : null,
+    "description" : "Permet d'indiquer si la capacité est exprimée en lits ou en places",
+    "oids" : ["1.2.250.1.213.3.3.212"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-nature-capacite.html" : "JDV ROR - Nature de Capacité (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R332-GenreCapacite/FHIR/TRE-R332-GenreCapacite",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R332_GenreCapacite",
+    "title" : null,
+    "description" : "Permet d'indiquer le genre des patients qui peuvent être installés dans des lits disponibles",
+    "oids" : ["1.2.250.1.213.3.3.215"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-genre-capacite.html" : "JDV ROR - Genre de Capacité (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R333-TypeFermetureCapacite/FHIR/TRE-R333-TypeFermetureCapacite",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R333_TypeFermetureCapacite",
+    "title" : null,
+    "description" : "Permet d'indiquer le statut de lits fermés, afin d'identifier le nombre de lits fermés qui peuvent être réactivés en cas de besoin et le nombre de ceux qui ne peuvent pas l'être",
+    "oids" : ["1.2.250.1.213.3.3.216"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-type-fermeture-capacite.html" : "JDV ROR - Type de Fermeture de Capacité (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R334-TypeLitSupplementaire/FHIR/TRE-R334-TypeLitSupplementaire",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R334_TypeLitSupplementaire",
+    "title" : null,
+    "description" : "Permet d'indiquer le statut de lits supplémentaires, pour identifier le nombre de lits supplémentaires déjà mobilisés et, par typologie de mobilisation possible, le nombre de lits qui ne le sont pas encore",
+    "oids" : ["1.2.250.1.213.3.3.217"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-type-lit-supplementaire.html" : "JDV ROR - Type de Lit Supplémentaire (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R336-TypeCrise/FHIR/TRE-R336-TypeCrise",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R336_TypeCrise",
+    "title" : null,
+    "description" : "Permet d'indiquer le type de crise qui permet de mobiliser le nombre de lits supplémentaires décrits",
+    "oids" : ["1.2.250.1.213.3.3.219"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-type-crise.html" : "JDV ROR - Type de Crise (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R337-AffectationTemporaire/FHIR/TRE-R337-AffectationTemporaire",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R337_AffectationTemporaire",
+    "title" : null,
+    "description" : "Permet d'indiquer la réservation de tout ou partie des lits d'une zone d'hébergement pour des patients selon qu'ils soient -ou non- concernés par une pathologie (Covid+, Covid-, …) ou un évènement (catastrophe naturelle, attentat, …)",
+    "oids" : ["1.2.250.1.213.3.3.220"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-affectation-temporaire.html" : "JDV ROR - Affectation Temporaire (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R338-ModaliteAccueil/FHIR/TRE-R338-ModaliteAccueil",
+    "version" : "20250425120000",
+    "status" : "active",
+    "name" : "TRE_R338_ModaliteAccueil",
+    "title" : null,
+    "description" : "Modalités d'accueil",
+    "oids" : ["1.2.250.1.213.3.3.221"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-modalite-accueil.html" : "JDV ROR - Modalité d'Accueil (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R344-NiveauExpertise/FHIR/TRE-R344-NiveauExpertise",
+    "version" : "20250623120000",
+    "status" : "active",
+    "name" : "TRE_R344_NiveauExpertise",
+    "title" : null,
+    "description" : "Le niveau d'expertise atteste du niveau de ressources humaines et matérielles engagées dans la réalisation de l'offre et défini dans un cahier des charges officiel.",
+    "oids" : ["1.2.250.1.213.3.3.228"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J227-NiveauExpertise-ROR.html" : "JDV_J227_NiveauExpertise_ROR"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R356-ProfessionRessource/FHIR/TRE-R356-ProfessionRessource",
+    "version" : "20250623120000",
+    "status" : "active",
+    "name" : "TRE_R356_ProfessionRessource",
+    "title" : null,
+    "description" : "Profession Ressource",
+    "oids" : ["1.2.250.1.213.3.3.246"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J186-ProfessionRessource-ROR.html" : "JDV_J186_ProfessionRessource_ROR"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R359-SurspecialiteTransversale/FHIR/TRE-R359-SurspecialiteTransversale",
+    "version" : "20240531120000",
+    "status" : "active",
+    "name" : "TRE_R359_SurspecialiteTransversale",
+    "title" : null,
+    "description" : "Surspécialité (compétence) acquise par l'interne à l'issue d'une Formation Spécialisée Transversale (FST)",
+    "oids" : ["1.2.250.1.213.2.76"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-surspecialite-transversale.html" : "JDV ROR - Surspécialité Transversale (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale",
+    "version" : "20240531120000",
+    "status" : "active",
+    "name" : "TRE_R38_SpecialiteOrdinale",
+    "title" : null,
+    "description" : "Spécialité ordinale",
+    "oids" : ["1.2.250.1.213.2.28"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-specialite-ordinale.html" : "JDV ROR - Spécialité Ordinale (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R39-Competence/FHIR/TRE-R39-Competence",
+    "version" : "20240628120000",
+    "status" : "active",
+    "name" : "TRE_R39_Competence",
+    "title" : null,
+    "description" : "Compétence",
+    "oids" : ["1.2.250.1.213.2.29"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-competence.html" : "JDV ROR - Compétence (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R40-CompetenceExclusive/FHIR/TRE-R40-CompetenceExclusive",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R40_CompetenceExclusive",
+    "title" : null,
+    "description" : "Compétence exclusive",
+    "oids" : ["1.2.250.1.213.2.30"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-competence-exclusive.html" : "JDV ROR - Compétence Exclusive (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R42-DESCnonQualifiant/FHIR/TRE-R42-DESCnonQualifiant",
+    "version" : "20240628120000",
+    "status" : "active",
+    "name" : "TRE_R42_DESCnonQualifiant",
+    "title" : null,
+    "description" : "Savoir-faire liés aux DESC du groupe 1 non qualifiants",
+    "oids" : ["1.2.250.1.213.2.32"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-desc-non-qualifiant.html" : "JDV ROR - DESC Non Qualifiant (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R43-CapaciteSavoirFaire/FHIR/TRE-R43-CapaciteSavoirFaire",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R43_CapaciteSavoirFaire",
+    "title" : null,
+    "description" : "Capacité (savoir-faire)",
+    "oids" : ["1.2.250.1.213.2.33"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-capacite-savoir-faire.html" : "JDV ROR - Capacité de Savoir-Faire (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R44-QualificationPAC/FHIR/TRE-R44-QualificationPAC",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R44_QualificationPAC",
+    "title" : null,
+    "description" : "Qualification de praticien adjoint contractuel",
+    "oids" : ["1.2.250.1.213.2.34"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-qualification-pac.html" : "JDV ROR - Qualification PAC (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R66-CategorieEtablissement/FHIR/TRE-R66-CategorieEtablissement",
+    "version" : "20250425120000",
+    "status" : "active",
+    "name" : "TRE_R66_CategorieEtablissement",
+    "title" : null,
+    "description" : "Catégorie d'établissements",
+    "oids" : ["1.2.250.1.213.1.6.1.8"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J55-CategorieEG-ROR.html" : "JDV_J55_CategorieEG_ROR"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R69-FinessAgregatStatutJuridiqueNiv2/FHIR/TRE-R69-FinessAgregatStatutJuridiqueNiv2",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R69_FinessAgregatStatutJuridiqueNiv2",
+    "title" : null,
+    "description" : "Agrégats de statuts juridiques FINESS niveau 2",
+    "oids" : ["1.2.250.1.213.1.6.1.64"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-agreg-statut-juridique-niv2.html" : "JDV ROR - Agrégat Statut Juridique Niv2 (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R72-FinessStatutJuridique/FHIR/TRE-R72-FinessStatutJuridique",
+    "version" : "20240329120000",
+    "status" : "active",
+    "name" : "TRE_R72_FinessStatutJuridique",
+    "title" : null,
+    "description" : "Statuts juridiques provenant de FINESS, excepté pour les codes 000 et 100 à 110 qui ont été ajoutés pour les besoins du RPPS en 2017.",
+    "oids" : ["1.2.250.1.213.1.6.1.44"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-finess-statut-juridique.html" : "JDV ROR - Statut Juridique FINESS (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R73_ESPIC",
+    "title" : null,
+    "description" : "Etablissement de santé privé d'intérêt collectif",
+    "oids" : ["1.2.250.1.213.1.6.1.45"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-espic.html" : "JDV ROR - Modalité Participation SPH / ESPIC (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R81_Civilite",
+    "title" : null,
+    "description" : "Civilité",
+    "oids" : ["1.2.250.1.213.1.6.1.69"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-civilite.html" : "JDV ROR - Civilité (provisoire)"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R85-RolePriseCharge/FHIR/TRE-R85-RolePriseCharge",
+    "version" : "20250328120000",
+    "status" : "active",
+    "name" : "TRE_R85_RolePriseCharge",
+    "title" : null,
+    "description" : "Rôle dans la prise en charge des patients ou des usagers",
+    "oids" : ["1.2.250.1.213.1.6.1.107"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J186-ProfessionRessource-ROR.html" : "JDV_J186_ProfessionRessource_ROR"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R94-ProfessionSocial/FHIR/TRE-R94-ProfessionSocial",
+    "version" : "20241213120000",
+    "status" : "active",
+    "name" : "TRE_R94_ProfessionSocial",
+    "title" : null,
+    "description" : "Profession du social",
+    "oids" : ["1.2.250.1.213.1.6.1.4"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J186-ProfessionRessource-ROR.html" : "JDV_J186_ProfessionRessource_ROR"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R95-UsagerTitre/FHIR/TRE-R95-UsagerTitre",
+    "version" : "20241213120000",
+    "status" : "active",
+    "name" : "TRE_R95_UsagerTitre",
+    "title" : null,
+    "description" : "Usager de titre professionnel",
+    "oids" : ["1.2.250.1.213.1.6.1.109"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J186-ProfessionRessource-ROR.html" : "JDV_J186_ProfessionRessource_ROR"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R96-AutreFonctionSanitaire/FHIR/TRE-R96-AutreFonctionSanitaire",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R96_AutreFonctionSanitaire",
+    "title" : null,
+    "description" : "Autres fonctions du domaine sanitaire",
+    "oids" : ["1.2.250.1.213.1.6.1.110"],
+    "uses" : {
+    },
+    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J186-ProfessionRessource-ROR.html" : "JDV_J186_ProfessionRessource_ROR"
+  },
+  {
+    "url" : "https://mos.esante.gouv.fr/NOS/TRE_R97-DroitExerciceCompl/FHIR/TRE-R97-DroitExerciceCompl",
+    "version" : "20231215120000",
+    "status" : "active",
+    "name" : "TRE_R97_DroitExerciceCompl",
+    "title" : null,
+    "description" : "Droit d'exercice complémentaire",
+    "oids" : ["1.2.250.1.213.1.6.1.111"],
+    "uses" : {
+    },
+    "ValueSet-jdv-ror-droit-exercice-complementaire.html" : "JDV ROR - Droit d'Exercice Complémentaire (provisoire)"
+  }]
 }

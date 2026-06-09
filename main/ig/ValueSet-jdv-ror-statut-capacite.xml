@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="jdv-ror-statut-capacite"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs jdv-ror-statut-capacite</b></p><a name="jdv-ror-statut-capacite"> </a><a name="hcjdv-ror-statut-capacite"> </a><ul><li>Include tous les codes définis dans <code>https://mos.esante.gouv.fr/NOS/TRE_R330-StatutCapacite/FHIR/TRE-R330-StatutCapacite</code><span title="La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé"> version Non Précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span></li></ul></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-statut-capacite"/>
+  <version value="0.1.0"/>
+  <name value="JDVRORStatutCapacite"/>
+  <title value="JDV ROR - Statut de Capacité (provisoire)"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-06-09T14:33:17+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R330-StatutCapacite pour le contexte ROR. En attente de création officielle."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R330-StatutCapacite/FHIR/TRE-R330-StatutCapacite"/>
+    </include>
+  </compose>
+</ValueSet>

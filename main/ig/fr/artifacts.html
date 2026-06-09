@@ -46,8 +46,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5"}
-    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <style type="text/css">h2{--heading-prefix:"12"}
+    h3,h4,h5,h6{--heading-prefix:"12.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -117,6 +117,34 @@
       </li>
     </ul>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modèle d&apos;exposition
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="classes-communes.html">Classes Communes</a>
+      </li>
+      <li>
+        <a href="structure.html">Structure</a>
+      </li>
+      <li>
+        <a href="organisation.html">Organisation</a>
+      </li>
+      <li>
+        <a href="offre-operationnelle.html">Offre Opérationnelle</a>
+      </li>
+      <li>
+        <a href="tarif.html">Tarif</a>
+      </li>
+      <li>
+        <a href="ressources-operationnelles.html">Ressources Opérationnelles</a>
+      </li>
+      <li>
+        <a href="professionnel.html">Professionnel Ressource</a>
+      </li>
+    </ul>
+  </li>
   <li>
     <a href="artifacts.html">Ressources de conformité</a>
   </li>
@@ -149,6 +177,8 @@
 
             <a href="#bottom">bas de page</a>
 
+          | <a href="StructureDefinition-ror-activite-operationnelle.html">suivant &gt;</a>
+
           </span>
 
         </ul>
@@ -180,13 +210,1066 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      class="markdown-toc"
      data-fhir="generated">
    <p>Contenu:</p>
-   <ul/>
+   <ul>
+      <li>
+         <a href="#1">Structures: Modèles logiques</a>
+      </li>
+      <li>
+         <a href="#2">Terminologie: Jeux de valeurs (ValueSets)</a>
+      </li>
+   </ul>
 </div>
 <div xmlns="http://www.w3.org/1999/xhtml"
      xmlns:f="http://hl7.org/fhir"
      xmlns:html="http://www.w3.org/1999/xhtml"
      data-fhir="generated">
    <p>Cette page fournit une liste des artefacts FHIR définis dans le cadre de ce guide de mise en œuvre.</p>
+   <a name="1"> </a>
+   <h3>Structures: Modèles logiques </h3>
+    <p>Ils définissent des modèles de données qui représentent le domaine couvert par ce guide d'implémentation en termes plus conviviaux que les ressources FHIR sous-jacentes.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-activite-operationnelle.html"
+                  title="StructureDefinition/ror-activite-operationnelle">
+                  <span title="StructureDefinition/ror-activite-operationnelle">ROR - Activité Opérationnelle
+</span>
+               </a>
+            </td>
+            <td>
+<p>Ensemble cohérent d'actions et de pratiques mises en œuvre pour participer au rétablissement ou à l'entretien de la Santé d'une personne dans le contexte ROR. Les activités opérationnelles peuvent être regroupées au sein de familles d'activités.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-capacite-savoir-faire.html"
+                  title="StructureDefinition/ror-capacite-savoir-faire">
+                  <span title="StructureDefinition/ror-capacite-savoir-faire">ROR - Capacité (Savoir-Faire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de la CapaciteSavoirfaire du MOS. Reconnaissance par l'ordre d'un diplôme de capacité, complétant les savoir-faire principaux.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-capacite-accueil-operationnelle.html"
+                  title="StructureDefinition/ror-capacite-accueil-operationnelle">
+                  <span title="StructureDefinition/ror-capacite-accueil-operationnelle">ROR - Capacité d'Accueil Opérationnelle
+</span>
+               </a>
+            </td>
+            <td>
+<p>Précise la CapacitePriseCharge par une série d'enregistrements indiquant la quantité de lits (ou places) pour un statut et une temporalité donnée. Le cumul des enregistrements donne une vision complète de la capacité d'un lieu.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-capacite-habitation.html"
+                  title="StructureDefinition/ror-capacite-habitation">
+                  <span title="StructureDefinition/ror-capacite-habitation">ROR - Capacité d'Habitation
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de la CapaciteHabitation du MOS. Décrit un type d'habitation adapté à la réalisation d'une offre et le nombre d'habitations associées.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-capacite-prise-charge.html"
+                  title="StructureDefinition/ror-capacite-prise-charge">
+                  <span title="StructureDefinition/ror-capacite-prise-charge">ROR - Capacité de Prise en Charge
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de la CapacitePriseCharge du MOS. Indique l'affectation des lits d'une zone d'hébergement, notamment dans le cadre d'une gestion de crise.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-competence.html"
+                  title="StructureDefinition/ror-competence">
+                  <span title="StructureDefinition/ror-competence">ROR - Compétence
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de la Competence du MOS. Titre délivré par l'ordre national des médecins aux praticiens ayant débuté leurs études médicales avant la réforme de 1982.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-competence-exclusive.html"
+                  title="StructureDefinition/ror-competence-exclusive">
+                  <span title="StructureDefinition/ror-competence-exclusive">ROR - Compétence Exclusive
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de la CompetenceExclusive du MOS. Compétence exercée à titre exclusif, incompatible avec l'exercice d'une spécialité.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-desc-non-qualifiant.html"
+                  title="StructureDefinition/ror-desc-non-qualifiant">
+                  <span title="StructureDefinition/ror-desc-non-qualifiant">ROR - DESC Non Qualifiant
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR du DESCNonQualifiant du MOS. Diplôme d'études spécialisées complémentaires de groupe I, valable en complément de la spécialité.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-droit-exercice-complementaire.html"
+                  title="StructureDefinition/ror-droit-exercice-complementaire">
+                  <span title="StructureDefinition/ror-droit-exercice-complementaire">ROR - Droit d'Exercice Complémentaire
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR du DroitExerciceComplementaire du MOS. Droit d'exercice dans une spécialité définie par un DESC de médecine du groupe I.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-entite-geographique.html"
+                  title="StructureDefinition/ror-entite-geographique">
+                  <span title="StructureDefinition/ror-entite-geographique">ROR - Entité Géographique
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de l'EntiteGeographique du MOS. Correspond à un établissement ou lieu d'exercice dans le contexte du Répertoire Opérationnel des Ressources.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-entite-juridique.html"
+                  title="StructureDefinition/ror-entite-juridique">
+                  <span title="StructureDefinition/ror-entite-juridique">ROR - Entité Juridique
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de l'EntiteJuridique du MOS. Correspond à la notion de personne morale dans le contexte du Répertoire Opérationnel des Ressources.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-exercice-professionnel.html"
+                  title="StructureDefinition/ror-exercice-professionnel">
+                  <span title="StructureDefinition/ror-exercice-professionnel">ROR - Exercice Professionnel
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de l'ExerciceProfessionnel du MOS. Informations décrivant la profession exercée et l'identité d'exercice d'un professionnel.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-forfait-socle-hebergement.html"
+                  title="StructureDefinition/ror-forfait-socle-hebergement">
+                  <span title="StructureDefinition/ror-forfait-socle-hebergement">ROR - Forfait Socle Hébergement
+</span>
+               </a>
+            </td>
+            <td>
+<p>Tarif journalier et par personne (majoritairement appliqué par l'établissement) pour un type d'hébergement donné. Inclut obligatoirement les prestations définies dans le décret n°2015-1868. Ce tarif peut être modulable pour les personnes bénéficiaires de l'aide sociale.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-lieu-realisation-offre.html"
+                  title="StructureDefinition/ror-lieu-realisation-offre">
+                  <span title="StructureDefinition/ror-lieu-realisation-offre">ROR - Lieu de Réalisation de l'Offre
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR du LieuRealisationOffre du MOS. Espace disposant d'un ensemble de ressources pour réaliser une offre. Lorsque les ressources sont mobiles, le lieu correspond au lieu administratif où est organisée la prise en charge.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-metadonnee.html"
+                  title="StructureDefinition/ror-metadonnee">
+                  <span title="StructureDefinition/ror-metadonnee">ROR - Métadonnée
+</span>
+               </a>
+            </td>
+            <td>
+<p>Informations relatives à la gestion des classes et des données du ROR. Permet aux applications consommatrices de se synchroniser en identifiant les créations, modifications et suppressions d'objets.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-offre-operationnelle.html"
+                  title="StructureDefinition/ror-offre-operationnelle">
+                  <span title="StructureDefinition/ror-offre-operationnelle">ROR - Offre Opérationnelle
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de l'OffreOperationnelle du MOS. Correspond aux prestations que peut réaliser une structure pour répondre au besoin de santé d'une personne dans le contexte ROR.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-organisation-interne.html"
+                  title="StructureDefinition/ror-organisation-interne">
+                  <span title="StructureDefinition/ror-organisation-interne">ROR - Organisation Interne
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de l'OrganisationInterne du MOS. Classe abstraite décrivant l'organisation opérationnelle interne d'une EG (pôles, services, unités fonctionnelles).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-orientation-particuliere.html"
+                  title="StructureDefinition/ror-orientation-particuliere">
+                  <span title="StructureDefinition/ror-orientation-particuliere">ROR - Orientation Particulière
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de l'OrientationParticuliere du MOS. Orientation d'exercice : acupuncture ou homéopathie.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-patientele.html"
+                  title="StructureDefinition/ror-patientele">
+                  <span title="StructureDefinition/ror-patientele">ROR - Patientèle
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de la Patientele du MOS. Ensemble de personnes répondant à des critères leur permettant de bénéficier de la prestation décrite.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-personne-physique.html"
+                  title="StructureDefinition/ror-personne-physique">
+                  <span title="StructureDefinition/ror-personne-physique">ROR - Personne Physique
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de la PersonnePhysique du MOS. Individu titulaire de droits et d'obligations caractérisé par une identité civile, dans le contexte ROR.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-professionnel.html"
+                  title="StructureDefinition/ror-professionnel">
+                  <span title="StructureDefinition/ror-professionnel">ROR - Professionnel
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR du Professionnel du MOS. Données d'identification pérennes d'une personne physique travaillant dans les domaines sanitaire, médico-social et social.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-pole.html"
+                  title="StructureDefinition/ror-pole">
+                  <span title="StructureDefinition/ror-pole">ROR - Pôle
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR du PoleActivite du MOS. Pôle d'activité au sens de la loi HPST, art.13. Organisation interne de premier niveau regroupant des structures internes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-qualification-pac.html"
+                  title="StructureDefinition/ror-qualification-pac">
+                  <span title="StructureDefinition/ror-qualification-pac">ROR - Qualification PAC
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de la QualificationPAC du MOS. Qualification de praticien adjoint contractuel autorisant à exercer en établissement sans qualification ordinale.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-savoir-faire.html"
+                  title="StructureDefinition/ror-savoir-faire">
+                  <span title="StructureDefinition/ror-savoir-faire">ROR - Savoir-Faire
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR du SavoirFaire du MOS. Prérogatives d'exercice d'un professionnel reconnues par une autorité d'enregistrement (spécialités, compétences, etc.).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-situation-operationnelle.html"
+                  title="StructureDefinition/ror-situation-operationnelle">
+                  <span title="StructureDefinition/ror-situation-operationnelle">ROR - Situation Opérationnelle
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de la SituationOperationnelle du MOS. Caractérise les conditions d'exercice du professionnel dans le cadre de l'offre décrite.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-specialite.html"
+                  title="StructureDefinition/ror-specialite">
+                  <span title="StructureDefinition/ror-specialite">ROR - Spécialité
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de la Specialite du MOS. Spécialité médicale ou odontologique reconnue par une autorité d'enregistrement.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-structure-interne.html"
+                  title="StructureDefinition/ror-structure-interne">
+                  <span title="StructureDefinition/ror-structure-interne">ROR - Structure Interne
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de la StructureInterne du MOS. Service, unité, centre ou département au sein d'un pôle. Synonymes : service, unité, centre, institut, département.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-supplement-tarif-hebergement.html"
+                  title="StructureDefinition/ror-supplement-tarif-hebergement">
+                  <span title="StructureDefinition/ror-supplement-tarif-hebergement">ROR - Supplément Tarif Hébergement
+</span>
+               </a>
+            </td>
+            <td>
+<p>Caractéristiques des lieux d'hébergement en SSR qui entraînent le paiement d'un complément au tarif de base de l'hébergement.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-surspecialite-transversale.html"
+                  title="StructureDefinition/ror-surspecialite-transversale">
+                  <span title="StructureDefinition/ror-surspecialite-transversale">ROR - Surspécialité Transversale
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de la SurspecialiteTransversale du MOS. Droit d'exercice complémentaire au sein de la spécialité du médecin, acquis par une formation spécialisée transversale (FST).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-tarif.html"
+                  title="StructureDefinition/ror-tarif">
+                  <span title="StructureDefinition/ror-tarif">ROR - Tarif
+</span>
+               </a>
+            </td>
+            <td>
+<p>Classe abstraite contenant les attributs communs aux classes décrivant les prix des prestations et services fournis par l'établissement dans le contexte ROR. Un type de tarif s'applique à une catégorie de services pour lesquels l'entité géographique a fixé un prix.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-tarif-accueil-de-jour.html"
+                  title="StructureDefinition/ror-tarif-accueil-de-jour">
+                  <span title="StructureDefinition/ror-tarif-accueil-de-jour">ROR - Tarif Accueil de Jour
+</span>
+               </a>
+            </td>
+            <td>
+<p>Tarif journalier et par personne appliqué par l'établissement pour un accueil de jour.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-tarif-aides-humaines.html"
+                  title="StructureDefinition/ror-tarif-aides-humaines">
+                  <span title="StructureDefinition/ror-tarif-aides-humaines">ROR - Tarif Aides Humaines
+</span>
+               </a>
+            </td>
+            <td>
+<p>Tarif horaire ou forfaitaire (avec charges) des intervenants à domicile.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-tarif-dependance.html"
+                  title="StructureDefinition/ror-tarif-dependance">
+                  <span title="StructureDefinition/ror-tarif-dependance">ROR - Tarif Dépendance
+</span>
+               </a>
+            </td>
+            <td>
+<p>Tarif correspondant au niveau de dépendance de la personne âgée accueillie. Il y a 3 niveaux de tarifs selon le GIR.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-tarif-portage-repas.html"
+                  title="StructureDefinition/ror-tarif-portage-repas">
+                  <span title="StructureDefinition/ror-tarif-portage-repas">ROR - Tarif Portage Repas
+</span>
+               </a>
+            </td>
+            <td>
+<p>Tarif unitaire ou forfaitaire (avec charges) d'un service de livraison de repas à domicile. Les conditions tarifaires précisent s'il s'agit d'un tarif aide sociale.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-tarif-prestation-supplementaire.html"
+                  title="StructureDefinition/ror-tarif-prestation-supplementaire">
+                  <span title="StructureDefinition/ror-tarif-prestation-supplementaire">ROR - Tarif Prestation Supplémentaire
+</span>
+               </a>
+            </td>
+            <td>
+<p>Tarifs des principales prestations supplémentaires qui ne sont pas comprises dans le tarif hébergement de l'établissement et qui peuvent avoir un impact sur l'orientation. Les attributs DOIVENT être mutuellement exclusifs.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-unite-fonctionnelle.html"
+                  title="StructureDefinition/ror-unite-fonctionnelle">
+                  <span title="StructureDefinition/ror-unite-fonctionnelle">ROR - Unité Fonctionnelle
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de l'UniteFonctionnelle du MOS. Plus petite unité compatible avec les contraintes de gestion présentant une activité médicale homogène.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ror-equipement-specifique.html"
+                  title="StructureDefinition/ror-equipement-specifique">
+                  <span title="StructureDefinition/ror-equipement-specifique">ROR - Équipement Spécifique
+</span>
+               </a>
+            </td>
+            <td>
+<p>Spécialisation ROR de l'EquipementSpecifique du MOS. Ressource matérielle discriminante pour la réalisation d'une prestation, propre à la structure ou mise à disposition via convention (sur site).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Terminologie: Jeux de valeurs (ValueSets) </h3>
+    <p>Ils définissent des ensembles de codes utilisés par les systèmes conformes au présent guide d'implémentation.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-accessibilite-lieu.html"
+                  title="ValueSet/jdv-ror-accessibilite-lieu">
+                  <span title="ValueSet/jdv-ror-accessibilite-lieu">JDV ROR - Accessibilité Lieu (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R202-AccessibiliteLieu pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-acte-specifique.html"
+                  title="ValueSet/jdv-ror-acte-specifique">
+                  <span title="ValueSet/jdv-ror-acte-specifique">JDV ROR - Acte Spécifique (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R210-ActeSpecifique pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-activite-operationnelle.html"
+                  title="ValueSet/jdv-ror-activite-operationnelle">
+                  <span title="ValueSet/jdv-ror-activite-operationnelle">JDV ROR - Activité Opérationnelle (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R211-ActiviteOperationnelle pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-affectation-temporaire.html"
+                  title="ValueSet/jdv-ror-affectation-temporaire">
+                  <span title="ValueSet/jdv-ror-affectation-temporaire">JDV ROR - Affectation Temporaire (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R337-AffectationTemporaire pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-agreg-statut-juridique-niv2.html"
+                  title="ValueSet/jdv-ror-agreg-statut-juridique-niv2">
+                  <span title="ValueSet/jdv-ror-agreg-statut-juridique-niv2">JDV ROR - Agrégat Statut Juridique Niv2 (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R69-FinessAgregatStatutJuridiqueNiv2 pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-aide-financiere.html"
+                  title="ValueSet/jdv-ror-aide-financiere">
+                  <span title="ValueSet/jdv-ror-aide-financiere">JDV ROR - Aide Financière (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R241-AideFinanciere pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-capacite-savoir-faire.html"
+                  title="ValueSet/jdv-ror-capacite-savoir-faire">
+                  <span title="ValueSet/jdv-ror-capacite-savoir-faire">JDV ROR - Capacité de Savoir-Faire (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R43-CapaciteSavoirFaire pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-champ-activite.html"
+                  title="ValueSet/jdv-ror-champ-activite">
+                  <span title="ValueSet/jdv-ror-champ-activite">JDV ROR - Champ d'Activité (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R227-ChampActivite pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-civilite.html" title="ValueSet/jdv-ror-civilite">
+                  <span title="ValueSet/jdv-ror-civilite">JDV ROR - Civilité (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R81-Civilite pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-civilite-exercice.html"
+                  title="ValueSet/jdv-ror-civilite-exercice">
+                  <span title="ValueSet/jdv-ror-civilite-exercice">JDV ROR - Civilité d'Exercice (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R11-CiviliteExercice pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-competence.html"
+                  title="ValueSet/jdv-ror-competence">
+                  <span title="ValueSet/jdv-ror-competence">JDV ROR - Compétence (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R39-Competence pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-competence-exclusive.html"
+                  title="ValueSet/jdv-ror-competence-exclusive">
+                  <span title="ValueSet/jdv-ror-competence-exclusive">JDV ROR - Compétence Exclusive (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R40-CompetenceExclusive pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-competence-specifique.html"
+                  title="ValueSet/jdv-ror-competence-specifique">
+                  <span title="ValueSet/jdv-ror-competence-specifique">JDV ROR - Compétence Spécifique (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R243-CompetenceSpecifique pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-condition-tarifaire.html"
+                  title="ValueSet/jdv-ror-condition-tarifaire">
+                  <span title="ValueSet/jdv-ror-condition-tarifaire">JDV ROR - Condition Tarifaire (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R250-ConditionTarifaire pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-desc-non-qualifiant.html"
+                  title="ValueSet/jdv-ror-desc-non-qualifiant">
+                  <span title="ValueSet/jdv-ror-desc-non-qualifiant">JDV ROR - DESC Non Qualifiant (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R42-DESCnonQualifiant pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-droit-exercice-complementaire.html"
+                  title="ValueSet/jdv-ror-droit-exercice-complementaire">
+                  <span title="ValueSet/jdv-ror-droit-exercice-complementaire">JDV ROR - Droit d'Exercice Complémentaire (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R97-DroitExerciceCompl pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-genre-capacite.html"
+                  title="ValueSet/jdv-ror-genre-capacite">
+                  <span title="ValueSet/jdv-ror-genre-capacite">JDV ROR - Genre de Capacité (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R332-GenreCapacite pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-espic.html" title="ValueSet/jdv-ror-espic">
+                  <span title="ValueSet/jdv-ror-espic">JDV ROR - Modalité Participation SPH / ESPIC (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R73-ESPIC pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-modalite-accueil.html"
+                  title="ValueSet/jdv-ror-modalite-accueil">
+                  <span title="ValueSet/jdv-ror-modalite-accueil">JDV ROR - Modalité d'Accueil (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R338-ModaliteAccueil pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-mode-exercice.html"
+                  title="ValueSet/jdv-ror-mode-exercice">
+                  <span title="ValueSet/jdv-ror-mode-exercice">JDV ROR - Mode d'Exercice (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R23-ModeExercice pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-mode-gestion.html"
+                  title="ValueSet/jdv-ror-mode-gestion">
+                  <span title="ValueSet/jdv-ror-mode-gestion">JDV ROR - Mode de Gestion (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R236-ModeGestion pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-mode-prise-en-charge.html"
+                  title="ValueSet/jdv-ror-mode-prise-en-charge">
+                  <span title="ValueSet/jdv-ror-mode-prise-en-charge">JDV ROR - Mode de Prise en Charge (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R213-ModePriseEnCharge pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-nature-capacite.html"
+                  title="ValueSet/jdv-ror-nature-capacite">
+                  <span title="ValueSet/jdv-ror-nature-capacite">JDV ROR - Nature de Capacité (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R329-NatureCapacite pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-niveau-recours-orsan.html"
+                  title="ValueSet/jdv-ror-niveau-recours-orsan">
+                  <span title="ValueSet/jdv-ror-niveau-recours-orsan">JDV ROR - Niveau Recours ORSAN (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R284-NiveauRecoursORSAN pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-niveau-dependance.html"
+                  title="ValueSet/jdv-ror-niveau-dependance">
+                  <span title="ValueSet/jdv-ror-niveau-dependance">JDV ROR - Niveau de Dépendance (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R237-NiveauDependance pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-orientation-particuliere.html"
+                  title="ValueSet/jdv-ror-orientation-particuliere">
+                  <span title="ValueSet/jdv-ror-orientation-particuliere">JDV ROR - Orientation Particulière (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_G13-OrientationParticuliere pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-ouverture-annuelle.html"
+                  title="ValueSet/jdv-ror-ouverture-annuelle">
+                  <span title="ValueSet/jdv-ror-ouverture-annuelle">JDV ROR - Ouverture Annuelle (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R238-OuvertureAnnuelle pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-prestation-non-obligatoire.html"
+                  title="ValueSet/jdv-ror-prestation-non-obligatoire">
+                  <span title="ValueSet/jdv-ror-prestation-non-obligatoire">JDV ROR - Prestation Non Obligatoire Incluse (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R264-PrestationNonObligatoireIncluse pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-profession-sante.html"
+                  title="ValueSet/jdv-ror-profession-sante">
+                  <span title="ValueSet/jdv-ror-profession-sante">JDV ROR - Profession de Santé (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_G15-ProfessionSante pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-public-pris-en-charge.html"
+                  title="ValueSet/jdv-ror-public-pris-en-charge">
+                  <span title="ValueSet/jdv-ror-public-pris-en-charge">JDV ROR - Public Pris en Charge (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R239-PublicPrisEnCharge pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-qualification-pac.html"
+                  title="ValueSet/jdv-ror-qualification-pac">
+                  <span title="ValueSet/jdv-ror-qualification-pac">JDV ROR - Qualification PAC (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R44-QualificationPAC pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-secteur-conventionnement.html"
+                  title="ValueSet/jdv-ror-secteur-conventionnement">
+                  <span title="ValueSet/jdv-ror-secteur-conventionnement">JDV ROR - Secteur Conventionnement (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R282-CNAMAmeliSecteurConventionnement pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-specialisation-pec.html"
+                  title="ValueSet/jdv-ror-specialisation-pec">
+                  <span title="ValueSet/jdv-ror-specialisation-pec">JDV ROR - Spécialisation de Prise en Charge (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R245-SpecialisationDePriseEnCharge pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-specialite-ordinale.html"
+                  title="ValueSet/jdv-ror-specialite-ordinale">
+                  <span title="ValueSet/jdv-ror-specialite-ordinale">JDV ROR - Spécialité Ordinale (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R38-SpecialiteOrdinale pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-finess-statut-juridique.html"
+                  title="ValueSet/jdv-ror-finess-statut-juridique">
+                  <span title="ValueSet/jdv-ror-finess-statut-juridique">JDV ROR - Statut Juridique FINESS (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R72-FinessStatutJuridique pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-statut-capacite.html"
+                  title="ValueSet/jdv-ror-statut-capacite">
+                  <span title="ValueSet/jdv-ror-statut-capacite">JDV ROR - Statut de Capacité (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R330-StatutCapacite pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-surspecialite-transversale.html"
+                  title="ValueSet/jdv-ror-surspecialite-transversale">
+                  <span title="ValueSet/jdv-ror-surspecialite-transversale">JDV ROR - Surspécialité Transversale (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R359-SurspecialiteTransversale pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-temporalite.html"
+                  title="ValueSet/jdv-ror-temporalite">
+                  <span title="ValueSet/jdv-ror-temporalite">JDV ROR - Temporalité (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R331-Temporalite pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-temporalite-accueil.html"
+                  title="ValueSet/jdv-ror-temporalite-accueil">
+                  <span title="ValueSet/jdv-ror-temporalite-accueil">JDV ROR - Temporalité d'Accueil (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R240-TemporaliteAccueil pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-type-organisation-interne.html"
+                  title="ValueSet/jdv-ror-type-organisation-interne">
+                  <span title="ValueSet/jdv-ror-type-organisation-interne">JDV ROR - Type Organisation Interne (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R207-TypeOrganisationInterne pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-type-habitation.html"
+                  title="ValueSet/jdv-ror-type-habitation">
+                  <span title="ValueSet/jdv-ror-type-habitation">JDV ROR - Type d'Habitation (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R242-TypeHabitation pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-type-crise.html"
+                  title="ValueSet/jdv-ror-type-crise">
+                  <span title="ValueSet/jdv-ror-type-crise">JDV ROR - Type de Crise (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R336-TypeCrise pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-type-fermeture-capacite.html"
+                  title="ValueSet/jdv-ror-type-fermeture-capacite">
+                  <span title="ValueSet/jdv-ror-type-fermeture-capacite">JDV ROR - Type de Fermeture de Capacité (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R333-TypeFermetureCapacite pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-type-lit-supplementaire.html"
+                  title="ValueSet/jdv-ror-type-lit-supplementaire">
+                  <span title="ValueSet/jdv-ror-type-lit-supplementaire">JDV ROR - Type de Lit Supplémentaire (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R334-TypeLitSupplementaire pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-type-savoir-faire.html"
+                  title="ValueSet/jdv-ror-type-savoir-faire">
+                  <span title="ValueSet/jdv-ror-type-savoir-faire">JDV ROR - Type de Savoir-Faire (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R04-TypeSavoirFaire pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-type-source.html"
+                  title="ValueSet/jdv-ror-type-source">
+                  <span title="ValueSet/jdv-ror-type-source">JDV ROR - Type de Source (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R335-TypeSource pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-type-tarif.html"
+                  title="ValueSet/jdv-ror-type-tarif">
+                  <span title="ValueSet/jdv-ror-type-tarif">JDV ROR - Type de Tarif (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R246-TypeTarif pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-unite-prix.html"
+                  title="ValueSet/jdv-ror-unite-prix">
+                  <span title="ValueSet/jdv-ror-unite-prix">JDV ROR - Unité de Prix (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R228-UnitePrix pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-jdv-ror-equipement.html"
+                  title="ValueSet/jdv-ror-equipement">
+                  <span title="ValueSet/jdv-ror-equipement">JDV ROR - Équipement (provisoire)
+</span>
+               </a>
+            </td>
+            <td>
+<p>Jeu de valeurs provisoire incluant tous les codes de TRE_R212-Equipement pour le contexte ROR. En attente de création officielle.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
 </div>
 
 </div>
@@ -219,7 +1302,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:var(--ig-right);">&#xA0;
 
-                <span style="visibility:hidden">suivant ></span>
+                <a href="StructureDefinition-ror-activite-operationnelle.html">suivant ></a>
 
               </td>
             </tr>
@@ -233,10 +1316,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
-          Le papackagequet ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-01 10:02:00 +0000">
-    2026-06-01
+  <span title="2026-06-09 14:33:00 +0000">
+    2026-06-09
   </span>
 
           <br/>

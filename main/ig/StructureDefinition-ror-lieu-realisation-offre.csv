@@ -1,0 +1,21 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"ror-lieu-realisation-offre","ror-lieu-realisation-offre","","","",0,*,"","","","null {[]} {[]}
+","Lieu de réalisation de l'offre dans le contexte ROR","Spécialisation ROR du LieuRealisationOffre du MOS.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"ror-lieu-realisation-offre.idExterneSynchro","ror-lieu-realisation-offre.idExterneSynchro","","","",0,1,"","","","Identifier {[]} {[]}
+","L’identifiant externe de synchronisation est l’identifiant défini par le porteur d’offre pour la zone d’hébergement des lits.","L’identifiant externe de synchronisation est l’identifiant défini par le porteur d’offre pour la zone d’hébergement des lits.","","","","","","","","","",,,,,"",,,,"LieuRealisationOffre.idExterneSynchro",0,1,"",""
+"ror-lieu-realisation-offre.nomExterneSynchro","ror-lieu-realisation-offre.nomExterneSynchro","","","",0,1,"","","","string {[]} {[]}
+","Nom de la zone d’hébergement des lits.","Nom de la zone d’hébergement des lits.","","","","","","","","","",,,,,"",,,,"LieuRealisationOffre.nomExterneSynchro",0,1,"",""
+"ror-lieu-realisation-offre.OffreOperationnelle","ror-lieu-realisation-offre.OffreOperationnelle","","","",1,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OffreOperationnelle {[]} {[]}
+","Lien vers la classe OffreOperationnelle","Lien vers la classe OffreOperationnelle","","","","","","","","","",,,,,"",,,,"LieuRealisationOffre.OffreOperationnelle",1,*,"",""
+"ror-lieu-realisation-offre.CapacitePriseCharge","ror-lieu-realisation-offre.CapacitePriseCharge","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapacitePriseCharge {[]} {[]}
+","Lien vers la classe CapacitePriseCharge","Lien vers la classe CapacitePriseCharge","","","","","","","","","",,,,,"",,,,"LieuRealisationOffre.CapacitePriseCharge",0,*,"",""
+"ror-lieu-realisation-offre.Lieu","ror-lieu-realisation-offre.Lieu","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Lieu {[]} {[]}
+","Lien vers la classe Lieu","Lien vers la classe Lieu","","","","","","","","","",,,,,"",,,,"LieuRealisationOffre.Lieu",1,1,"",""
+"ror-lieu-realisation-offre.EquipementSpecifique","ror-lieu-realisation-offre.EquipementSpecifique","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/EquipementSpecifique {[]} {[]}
+","Lien vers la classe EquipementSpecifique","Lien vers la classe EquipementSpecifique","","","","","","","","","",,,,,"",,,,"LieuRealisationOffre.EquipementSpecifique",0,*,"",""
+"ror-lieu-realisation-offre.CapaciteHabitation","ror-lieu-realisation-offre.CapaciteHabitation","","","",0,*,"","","","https://interop.esante.gouv.fr/ig/mos/StructureDefinition/CapaciteHabitation {[]} {[]}
+","Lien vers la classe CapaciteHabitation","Lien vers la classe CapaciteHabitation","","","","","","","","","",,,,,"",,,,"LieuRealisationOffre.CapaciteHabitation",0,*,"",""
+"ror-lieu-realisation-offre.commentaire","ror-lieu-realisation-offre.commentaire","","","",0,1,"","","","string {[]} {[]}
+","Commentaire permettant de donner des informations complémentaires sur le lieu.","Commentaire permettant de donner des informations complémentaires sur le lieu.","","","","","","","","","",,,,,"",,,,"ror-lieu-realisation-offre.commentaire",0,1,"",""
+"ror-lieu-realisation-offre.metadonnee","ror-lieu-realisation-offre.metadonnee","","","",1,1,"","","","https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee {[]} {[]}
+","Informations relatives à la gestion des données du lieu de réalisation dans le ROR.","Informations relatives à la gestion des données du lieu de réalisation dans le ROR.","","","","","","","","","",,,,,"",,,,"ror-lieu-realisation-offre.metadonnee",1,1,"",""

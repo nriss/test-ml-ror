@@ -1,0 +1,62 @@
+# JDV ROR - Statut de Capacité (provisoire) - Démonstration - Modèle Logique ROR dérivant du MOS v0.1.0
+
+## ValueSet: JDV ROR - Statut de Capacité (provisoire) (Expérimental) 
+
+ 
+Jeu de valeurs provisoire incluant tous les codes de TRE_R330-StatutCapacite pour le contexte ROR. En attente de création officielle. 
+
+ **References** 
+
+* [ROR - Capacité d'Accueil Opérationnelle](StructureDefinition-ror-capacite-accueil-operationnelle.md)
+
+### Définition logique (CLD)
+
+ 
+
+### Expansion
+
+No Expansion for this valueset (Unknown Code System)
+
+-------
+
+ [Description du (des) tableau(x) ci-dessus](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ValueSet",
+  "id" : "jdv-ror-statut-capacite",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-statut-capacite",
+  "version" : "0.1.0",
+  "name" : "JDVRORStatutCapacite",
+  "title" : "JDV ROR - Statut de Capacité (provisoire)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-06-09T14:33:17+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R330-StatutCapacite pour le contexte ROR. En attente de création officielle.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R330-StatutCapacite/FHIR/TRE-R330-StatutCapacite"
+    }]
+  }
+}
+
+```
