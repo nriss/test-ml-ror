@@ -1,0 +1,38 @@
+<p>Ce Requirements regroupe les règles de gestion applicables aux classes transverses <strong>Contact</strong>, <strong>Telecommunication</strong> et <strong>Metadonnee</strong>.</p>
+
+<table class="grid">
+  <colgroup><col style="width:130px"/><col style="width:60px"/><col/><col style="width:200px"/></colgroup>
+  <thead><tr><th>Règle</th><th>Conf.</th><th>Exigence</th><th>Modèle(s)</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><code>RG_EXP_032</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Lors de la création d'un objet Contact, le niveau de confidentialité a la valeur par défaut « restreint ».</td>
+      <td>Contact (MOS)</td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_034</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Le niveau de confidentialité de l'objet Télécommunication doit être plus restrictif ou égal au niveau de confidentialité de l'objet Contact auquel il est rattaché.</td>
+      <td>Contact / Telecommunication (MOS)</td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_039</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Dans une unité sensible, le niveau de confidentialité des contacts doit être positionné à la valeur « très restreint ».</td>
+      <td>Contact (MOS)</td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_040</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Si <code>natureContact</code> est renseigné, il ne doit pas y avoir de <code>nom</code> ni de <code>fonctionContact</code>.</td>
+      <td>Contact (MOS)</td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_041</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Si <code>fonctionContact</code> est renseigné, il doit y avoir un <code>nom</code> et il ne doit pas y avoir de <code>natureContact</code>.</td>
+      <td>Contact (MOS)</td>
+    </tr>
+  </tbody>
+</table>

@@ -64,6 +64,8 @@ pages:
         title: Ressources Opérationnelles
     professionnel.md:
         title: Professionnel Ressource
+    regles-de-gestion.md:
+        title: Règles de gestion
     change-log.md:
         title: Historique des versions
 
@@ -80,6 +82,7 @@ menu:
         Tarif: tarif.html
         Ressources Opérationnelles: ressources-operationnelles.html
         Professionnel Ressource: professionnel.html
+    Règles de gestion: regles-de-gestion.html
     Ressources de conformité: artifacts.html
     Historique: change-log.html
     Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/

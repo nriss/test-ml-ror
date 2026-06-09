@@ -1,0 +1,32 @@
+<p>Ce Requirements regroupe les règles de gestion applicables aux classes <strong>OrganisationInterne</strong>, <strong>Pole</strong>, <strong>StructureInterne</strong> et <strong>UniteFonctionnelle</strong>.</p>
+
+<table class="grid">
+  <colgroup><col style="width:130px"/><col style="width:60px"/><col/><col style="width:200px"/></colgroup>
+  <thead><tr><th>Règle</th><th>Conf.</th><th>Exigence</th><th>Modèle(s)</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><code>RG_EXP_013</code></td>
+      <td><span class="badge text-bg-secondary">MAY</span></td>
+      <td>En fonction du type d'OI, les contacts PEUVENT inclure le contact du responsable du pôle, du service, de l'unité, du secrétariat ou du secrétariat de permanence.</td>
+      <td><a href="StructureDefinition-ror-organisation-interne.html">ROROrganisationInterne</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_043</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>La date de fermeture est obligatoire lorsqu'un type de fermeture est renseigné, sinon elle n'est jamais renseignée.</td>
+      <td><a href="StructureDefinition-ror-organisation-interne.html">ROROrganisationInterne</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_044</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Lorsqu'un niveau d'organisation est fermé, tous les niveaux inférieurs et toutes les offres opérationnelles rattachées sont également fermés avec le même type et la même date de fermeture.</td>
+      <td><a href="StructureDefinition-ror-organisation-interne.html">ROROrganisationInterne</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_045</code></td>
+      <td><span class="badge text-bg-secondary">MAY</span></td>
+      <td>La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire », sinon elle n'est jamais renseignée.</td>
+      <td><a href="StructureDefinition-ror-organisation-interne.html">ROROrganisationInterne</a></td>
+    </tr>
+  </tbody>
+</table>

@@ -16,7 +16,7 @@ Première version de l'IG de démonstration ROR.
 * Création de 7 pages de section : `structure`, `organisation`, `offre-operationnelle`, `tarif`, `ressources-operationnelles`, `professionnel`, `classes-communes`
 * Mise à jour de `index.md` : description du ROR, 4 cas d'usage, tableau des 5 sous-ensembles, vue d'ensemble du modèle, relation avec le MOS
 * Documentation de l'ensemble des 49 règles de gestion `RG_EXP_*` du modèle d'exposition, distribuées dans leur page de contexte
-* Remplacement des tableaux d'attributs codés en dur par les includes auto-générés `{% include StructureDefinition-*-class-table.xhtml %}` (évite la duplication avec les FSH)
+* Remplacement des tableaux d'attributs codés en dur par les includes auto-générés `StructureDefinition-[id]-class-table.xhtml` (évite la duplication avec les FSH)
 * Suppression des titres `###` en tête de page (le publisher génère le titre automatiquement depuis le menu)
 
 **Diagrammes PlantUML**

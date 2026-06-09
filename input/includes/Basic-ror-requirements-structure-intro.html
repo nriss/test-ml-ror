@@ -1,0 +1,74 @@
+<p>Ce Requirements regroupe les règles de gestion applicables aux classes <strong>EntiteJuridique</strong> et <strong>EntiteGeographique</strong>.</p>
+
+<table class="grid">
+  <colgroup><col style="width:130px"/><col style="width:60px"/><col/><col style="width:200px"/></colgroup>
+  <thead><tr><th>Règle</th><th>Conf.</th><th>Exigence</th><th>Modèle(s)</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><code>RG_EXP_002</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Si un élément obligatoire n'est pas renseigné dans le ROR interrogé, l'instance de l'entité NE DOIT PAS être transmise. Les entités hiérarchiquement inférieures NE DOIVENT PAS l'être non plus.</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_003</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Si la date de fermeture transmise est la date de fermeture définitive, <code>typeFermeture</code> DOIT être renseigné avec le code DEF issu du référentiel FINESS.</td>
+      <td><a href="StructureDefinition-ror-entite-geographique.html">ROREntiteGeographique</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_004</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>L'<code>idNat_Struct</code> DOIT être renseigné en priorité avec le numéro FINESS si l'établissement est immatriculé dans FINESS.</td>
+      <td><a href="StructureDefinition-ror-entite-juridique.html">ROREntiteJuridique</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_005</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>L'<code>idNat_Struct</code> de l'EG DOIT être renseigné en priorité avec le numéro FINESS si l'établissement est immatriculé dans FINESS.</td>
+      <td><a href="StructureDefinition-ror-entite-geographique.html">ROREntiteGeographique</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_006</code></td>
+      <td><span class="badge text-bg-secondary">MAY</span></td>
+      <td>Les contacts d'une EG PEUVENT contenir les contacts du directeur et de la cellule d'alerte.</td>
+      <td><a href="StructureDefinition-ror-entite-geographique.html">ROREntiteGeographique</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_030</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>L'attribut <code>territoireSante</code> est obligatoirement une division territoriale de type « Territoire de Santé ».</td>
+      <td><a href="StructureDefinition-ror-entite-geographique.html">ROREntiteGeographique</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_037</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Lorsque <code>numEJ_RPPS_ADELI_Rang</code> est renseigné, il doit être utilisé pour la construction de l'<code>idNat_Struct</code>.</td>
+      <td><a href="StructureDefinition-ror-entite-juridique.html">ROREntiteJuridique</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_038</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Lorsque <code>numEG_RPPS_ADELI_Rang</code> est renseigné, il doit être utilisé pour la construction de l'<code>idNat_Struct</code>.</td>
+      <td><a href="StructureDefinition-ror-entite-geographique.html">ROREntiteGeographique</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_043</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>La date de fermeture est obligatoire lorsqu'un type de fermeture est renseigné, sinon elle n'est jamais renseignée.</td>
+      <td><a href="StructureDefinition-ror-entite-juridique.html">ROREntiteJuridique</a>, <a href="StructureDefinition-ror-entite-geographique.html">ROREntiteGeographique</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_044</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Lorsqu'un niveau de structure est fermé, tous les niveaux inférieurs et toutes les offres opérationnelles rattachées sont également fermés avec le même type et la même date de fermeture.</td>
+      <td><a href="StructureDefinition-ror-entite-juridique.html">ROREntiteJuridique</a>, <a href="StructureDefinition-ror-entite-geographique.html">ROREntiteGeographique</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_045</code></td>
+      <td><span class="badge text-bg-secondary">MAY</span></td>
+      <td>La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire », sinon elle n'est jamais renseignée.</td>
+      <td><a href="StructureDefinition-ror-entite-juridique.html">ROREntiteJuridique</a>, <a href="StructureDefinition-ror-entite-geographique.html">ROREntiteGeographique</a></td>
+    </tr>
+  </tbody>
+</table>

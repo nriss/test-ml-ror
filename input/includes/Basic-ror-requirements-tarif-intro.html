@@ -1,0 +1,32 @@
+<p>Ce Requirements regroupe les règles de gestion applicables aux classes <strong>Tarif</strong> du modèle d'exposition ROR.</p>
+
+<table class="grid">
+  <colgroup><col style="width:130px"/><col style="width:60px"/><col/><col style="width:200px"/></colgroup>
+  <thead><tr><th>Règle</th><th>Conf.</th><th>Exigence</th><th>Modèle(s)</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><code>RG_EXP_026</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Un seul tarif de type « Forfait socle hébergement » PEUT être instancié pour chaque combinaison de <code>tarifMoins60Ans</code>, <code>typeHabitation</code>, <code>temporaliteAccueil</code>, <code>conditionTarifaire</code> pour une même EG.</td>
+      <td><a href="StructureDefinition-ror-forfait-socle-hebergement.html">RORForfaitSocleHebergement</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_027</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Pour les autres types de tarifs, un seul montant PEUT être exposé pour chaque combinaison des valeurs des attributs (hors montant) pour une même EG.</td>
+      <td><a href="StructureDefinition-ror-tarif.html">RORTarif</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_029</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>L'attribut <code>typeHabitation</code> d'un tarif de type « supplément tarif hébergement » DOIT prendre la valeur « chambre simple ».</td>
+      <td><a href="StructureDefinition-ror-supplement-tarif-hebergement.html">RORSupplementTarifHebergement</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_036</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Les attributs <code>nomPrestationSupp</code> et <code>nomAutrePrestationSupp</code> sont mutuellement exclusifs (l'un ou l'autre, pas les deux).</td>
+      <td><a href="StructureDefinition-ror-tarif-prestation-supplementaire.html">RORTarifPrestationSupplementaire</a></td>
+    </tr>
+  </tbody>
+</table>

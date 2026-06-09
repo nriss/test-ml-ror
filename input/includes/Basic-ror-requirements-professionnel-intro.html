@@ -1,0 +1,26 @@
+<p>Ce Requirements regroupe les règles de gestion applicables aux classes <strong>Professionnel</strong> et <strong>SituationOperationnelle</strong>.</p>
+
+<table class="grid">
+  <colgroup><col style="width:130px"/><col style="width:60px"/><col/><col style="width:200px"/></colgroup>
+  <thead><tr><th>Règle</th><th>Conf.</th><th>Exigence</th><th>Modèle(s)</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><code>RG_EXP_030</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>En cas de coexistence d'un identifiant RPPS et ADELI pour un même professionnel, l'identifiant RPPS est prioritaire.</td>
+      <td><a href="StructureDefinition-ror-professionnel.html">RORProfessionnel</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_031</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Les données issues du RPPS (profession, civilité d'exercice, etc.) ne sont pas modifiables dans le ROR.</td>
+      <td><a href="StructureDefinition-ror-professionnel.html">RORProfessionnel</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_049</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Uniquement les valeurs de <code>Horaire/typeHoraire</code> suivantes sont applicables pour les professionnels : <code>03</code> (garde), <code>06</code> (consultation sans RDV), <code>07</code> (consultation sur RDV).</td>
+      <td><a href="StructureDefinition-ror-situation-operationnelle.html">RORSituationOperationnelle</a></td>
+    </tr>
+  </tbody>
+</table>

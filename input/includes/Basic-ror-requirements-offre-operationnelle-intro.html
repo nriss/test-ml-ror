@@ -1,0 +1,128 @@
+<p>Ce Requirements regroupe les règles de gestion applicables aux classes <strong>OffreOperationnelle</strong>, <strong>ActiviteOperationnelle</strong> et <strong>Patientele</strong>.</p>
+
+<table class="grid">
+  <colgroup><col style="width:130px"/><col style="width:60px"/><col/><col style="width:200px"/></colgroup>
+  <thead><tr><th>Règle</th><th>Conf.</th><th>Exigence</th><th>Modèle(s)</th></tr></thead>
+  <tbody>
+    <tr>
+      <td><code>RG_EXP_007</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>La <code>familleActiviteOperationnelle</code> DOIT être renseignée pour toute Activité Opérationnelle liée à une offre dont le <code>champActivite</code> est « médico-social ».</td>
+      <td><a href="StructureDefinition-ror-activite-operationnelle.html">RORActiviteOperationnelle</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_008</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Si le <code>champActivite</code> est « médico-social », le <code>publicPrisEnCharge</code> DOIT être renseigné dans la Patientèle.</td>
+      <td><a href="StructureDefinition-ror-patientele.html">RORPatientele</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_009</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Chaque instance de la zone d'intervention DOIT être composée par des instances de <code>DivisionTerritoriale</code> de type Commune.</td>
+      <td><a href="StructureDefinition-ror-patientele.html">RORPatientele</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_010</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Une offre DOIT être renseignée avec un et un seul <code>champActivite</code>, qui est invariable.</td>
+      <td><a href="StructureDefinition-ror-offre-operationnelle.html">ROROffreOperationnelle</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_011</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Une offre DOIT être renseignée avec un seul <code>modePriseEnCharge</code>, invariable. Un changement implique la création d'une nouvelle offre.</td>
+      <td><a href="StructureDefinition-ror-offre-operationnelle.html">ROROffreOperationnelle</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_014</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Les horaires transmis DOIVENT inclure au minimum une période (date début, date fin) ou un jour de semaine.</td>
+      <td><a href="StructureDefinition-ror-offre-operationnelle.html">ROROffreOperationnelle</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_015</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Les horaires sans période s'appliquent à partir du jour de lecture dans le ROR (semaine glissante).</td>
+      <td><a href="StructureDefinition-ror-offre-operationnelle.html">ROROffreOperationnelle</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_016</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Les horaires de jours de semaine RESTENT les horaires de référence semaine après semaine TANT QU'aucun nouvel horaire n'est récupéré d'un ROR.</td>
+      <td><a href="StructureDefinition-ror-offre-operationnelle.html">ROROffreOperationnelle</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_017</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Les horaires portant sur une période DOIVENT être transmis si la période est en cours ou à venir.</td>
+      <td><a href="StructureDefinition-ror-offre-operationnelle.html">ROROffreOperationnelle</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_018</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Les horaires portant sur une période échue NE DOIVENT PAS être transmis.</td>
+      <td><a href="StructureDefinition-ror-offre-operationnelle.html">ROROffreOperationnelle</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_028</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Une offre ne peut pas avoir plusieurs types d'offre relevant de champs d'activité différents.</td>
+      <td><a href="StructureDefinition-ror-offre-operationnelle.html">ROROffreOperationnelle</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_035</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>L'indicateur <code>uniteSensible</code> a la valeur par défaut <code>false</code> lors de la diffusion d'une unité élémentaire.</td>
+      <td><a href="StructureDefinition-ror-offre-operationnelle.html">ROROffreOperationnelle</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_039</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Dans une unité sensible, le niveau de confidentialité des contacts doit être « très restreint ».</td>
+      <td><a href="StructureDefinition-ror-offre-operationnelle.html">ROROffreOperationnelle</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_042</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>L'identifiant d'une offre transférée d'un établissement vers un autre NE DOIT PAS changer.</td>
+      <td><a href="StructureDefinition-ror-offre-operationnelle.html">ROROffreOperationnelle</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_043</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>La date de fermeture est obligatoire lorsqu'un type de fermeture est renseigné, sinon elle n'est jamais renseignée.</td>
+      <td><a href="StructureDefinition-ror-offre-operationnelle.html">ROROffreOperationnelle</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_044</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Lorsqu'un niveau est fermé, tous les niveaux inférieurs et toutes les offres rattachées sont également fermés avec le même type et la même date de fermeture.</td>
+      <td><a href="StructureDefinition-ror-offre-operationnelle.html">ROROffreOperationnelle</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_045</code></td>
+      <td><span class="badge text-bg-secondary">MAY</span></td>
+      <td>La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire ».</td>
+      <td><a href="StructureDefinition-ror-offre-operationnelle.html">ROROffreOperationnelle</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_046</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>La date de réouverture est remise à nulle lorsque l'offre est ouverte de nouveau.</td>
+      <td><a href="StructureDefinition-ror-offre-operationnelle.html">ROROffreOperationnelle</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_047</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>Lorsqu'une offre est fermée, les ressources de type <code>statutCapacite</code> « disponible » doivent être à 0.</td>
+      <td><a href="StructureDefinition-ror-offre-operationnelle.html">ROROffreOperationnelle</a></td>
+    </tr>
+    <tr>
+      <td><code>RG_EXP_048</code></td>
+      <td><span class="badge text-bg-danger">SHALL</span></td>
+      <td>L'unité de mesure des attributs <code>ageMin</code> et <code>ageMax</code> accepte uniquement : <code>a</code> (année), <code>mo</code> (mois), <code>wk</code> (semaine), <code>d</code> (jour).</td>
+      <td><a href="StructureDefinition-ror-patientele.html">RORPatientele</a></td>
+    </tr>
+  </tbody>
+</table>
