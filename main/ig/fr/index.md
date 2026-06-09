@@ -42,7 +42,12 @@ Les données de description de l'offre de santé, échangées avec les ROR, sont
 | 4 | **Ressources Opérationnelles** | Moyens mis en œuvre pour réaliser la prestation | [Ressources Opérationnelles](ressources-operationnelles.md) |
 | 5 | **Professionnel** | Personnes physiques, professionnels, exercice professionnel et savoir-faire | [Professionnel Ressource](professionnel.md) |
 
-<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+🔍+
+🔍−
+↻
+⛶
+
+  
 
 -------
 

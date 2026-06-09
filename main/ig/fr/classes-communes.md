@@ -15,7 +15,12 @@ Les **Classes Communes** regroupent les éléments partagés par l'ensemble des 
 
 #### Diagramme
 
-<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+🔍+
+🔍−
+↻
+⛶
+
+  
 
 -------
 

@@ -27,7 +27,12 @@ Ces données pivots ne sont pas modifiables après création.
 
 #### Diagramme
 
-<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+🔍+
+🔍−
+↻
+⛶
+
+  
 
 -------
 

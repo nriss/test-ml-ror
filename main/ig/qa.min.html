@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 0, warn = 827, info = 237-->
+<!-- broken links = 0, errors = 0, warn = 828, info = 237-->
 <head>
   <title>TestROR : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for TestROR</h1>
- <p>Generated Tue Jun 09 15:12:44 UTC 2026, FHIR version 4.0.1 for ans.fhir.fr.test.ror#0.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/test-ror">https://interop.esante.gouv.fr/ig/fhir/test-ror</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/test-ror/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Tue Jun 09 15:35:22 UTC 2026, FHIR version 4.0.1 for ans.fhir.fr.test.ror#0.1.0 (canonical = <a href="https://interop.esante.gouv.fr/ig/fhir/test-ror">https://interop.esante.gouv.fr/ig/fhir/test-ror</a> (<a href="https://interop.esante.gouv.fr/ig/fhir/test-ror/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v2.2.8</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = ans.fhir.fr.test.ror, Canonical = https://interop.esante.gouv.fr/ig/fhir/test-ror</td></tr>
@@ -188,14 +188,14 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>IPS Comparison:</td><td> n/a</td></tr>
  <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
- <tr><td>Summary:</td><td> errors = 0, warn = 827, info = 237, broken links = 0, pinned = 236 (all).  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 828, info = 237, broken links = 0, pinned = 236 (all).  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_home_runner_work_test-ml-ror_test-ml-ror_igSource_fsh-generated_resources_StructureDefinition-ror-activite-operationnelle"><b>/home/runner/work/test-ml-ror/test-ml-ror/igSource/fsh-generated/resources/StructureDefinition-ror-activite-operationnelle</b></a></td><td><b>0</b></td><td><b>10</b></td><td><b>5</b></td>
@@ -326,6 +326,9 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
 <h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
  <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b>output&#8203;/fr&#8203;/classes-communes&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/script at Line 373, column 2</b></td><td><b>warning</b></td><td><b>The &lt;script&gt; containing the javascript '(function() {   // A'... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed) (also in 7 other files)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
 </table>
 <hr/>
 <a name="_home_runner_work_test-ml-ror_test-ml-ror_igSource_fsh-generated_resources_StructureDefinition-ror-activite-operationnelle"> </a>
@@ -3741,7 +3744,7 @@ hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-par
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet&#8203;.where(id = 'jdv-ror-niveau-dependance')</b></td><td><b>warning</b></td><td><b>Error from https://smt.esante.gouv.fr/fhir: Error: [cdf3b06b-1c6d-40fd-b121-2cd98acc339c]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R237-NiveauDependance/FHIR/TRE-R237-NiveauDependance could not be resolved.
-Information: X-Request-Id: f2a2252c-aaf9-4940-8adb-b3f600b1b21e</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l99">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
+Information: X-Request-Id: 5488732f-2c91-4e91-ba4b-32c95976e742</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l99">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
    </tr>
 </table>
 <hr/>
@@ -3758,7 +3761,7 @@ Information: X-Request-Id: f2a2252c-aaf9-4940-8adb-b3f600b1b21e</b> (from <a hre
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet&#8203;.where(id = 'jdv-ror-statut-capacite')</b></td><td><b>warning</b></td><td><b>Error from https://smt.esante.gouv.fr/fhir: Error: [834f53bd-1435-4866-abdf-5ea70bab79a5]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R330-StatutCapacite/FHIR/TRE-R330-StatutCapacite could not be resolved.
-Information: X-Request-Id: 75fc8cc3-02ba-45a2-b40f-957b6682e6d0</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l100">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
+Information: X-Request-Id: ad858a59-88f2-43e2-95c4-956357673ae2</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l100">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
    </tr>
 </table>
 <hr/>
@@ -3775,7 +3778,7 @@ Information: X-Request-Id: 75fc8cc3-02ba-45a2-b40f-957b6682e6d0</b> (from <a hre
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet&#8203;.where(id = 'jdv-ror-temporalite')</b></td><td><b>warning</b></td><td><b>Error from https://smt.esante.gouv.fr/fhir: Error: [a55c7972-e320-4f48-9828-037b20b69e4a]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R331-Temporalite/FHIR/TRE-R331-Temporalite could not be resolved.
-Information: X-Request-Id: 9053781f-de62-4bca-a78f-04625b6226c8</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l101">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
+Information: X-Request-Id: 6a139b76-eed0-4606-8b92-72c13b76ae22</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l101">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
    </tr>
 </table>
 <hr/>
@@ -3792,7 +3795,7 @@ Information: X-Request-Id: 9053781f-de62-4bca-a78f-04625b6226c8</b> (from <a hre
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet&#8203;.where(id = 'jdv-ror-type-source')</b></td><td><b>warning</b></td><td><b>Error from https://smt.esante.gouv.fr/fhir: Error: [73c25e25-4a25-40c9-a418-a5d70575c48f]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R335-TypeSource/FHIR/TRE-R335-TypeSource could not be resolved.
-Information: X-Request-Id: 81d7fbee-9b1c-4c04-b86e-00c1e5f7eb90</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l102">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
+Information: X-Request-Id: 7fbaf59f-3b91-4dcd-a6e5-3a81e7fa9c01</b> (from <a href="qa-txservers.html#server">server</a>, see <a href="qa-tx.html#l102">log</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td><td>--</td>
    </tr>
 </table>
 <a name="suppressed"> </a>

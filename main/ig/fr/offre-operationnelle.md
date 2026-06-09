@@ -16,7 +16,12 @@ L'**identifiantOffre** est l'identifiant de l'offre opérationnelle, unique et p
 
 #### Diagramme
 
-<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+🔍+
+🔍−
+↻
+⛶
+
+  
 
 -------
 

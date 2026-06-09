@@ -16,7 +16,12 @@ L'identifiant des organisations internes est généré par les ROR. Lorsqu'il es
 
 #### Diagramme
 
-<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+🔍+
+🔍−
+↻
+⛶
+
+  
 
 -------
 

@@ -14,7 +14,12 @@ La classe `RORTarif` est une **classe abstraite** dont héritent les différents
 
 #### Diagramme
 
-<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+🔍+
+🔍−
+↻
+⛶
+
+  
 
 -------
 

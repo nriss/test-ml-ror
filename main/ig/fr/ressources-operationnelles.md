@@ -16,7 +16,12 @@ L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette s
 
 #### Diagramme
 
-<?xml version="1.0" encoding="us-ascii" standalone="no"?>
+🔍+
+🔍−
+↻
+⛶
+
+  
 
 -------
 
