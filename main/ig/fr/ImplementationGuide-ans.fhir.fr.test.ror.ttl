@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "TestROR"] ; # 
   fhir:title [ fhir:v "Démonstration - Modèle Logique ROR dérivant du MOS"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-06-09T15:47:14+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-09T19:07:13+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -89,6 +89,14 @@
      ] ;
      fhir:packageId [ fhir:v "ans.fr.mos" ] ;
      fhir:version [ fhir:v "0.1.0-ballot" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_xver_r5_r4" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.xver-r5.r4" ] ;
+     fhir:version [ fhir:v "0.1.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -1550,6 +1558,11 @@
          fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ;
          fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-parameter>
        ]
+     ] ) ;
+     fhir:grouping ( [
+       fhir:id [ fhir:v "ReglesDéGestion" ] ;
+       fhir:name [ fhir:v "Règles de gestion" ] ;
+       fhir:description [ fhir:v "Instances Requirements regroupant les règles de gestion RG_EXP_* du modèle d'exposition ROR" ]
      ] ) ;
      fhir:resource ( [
        fhir:extension ( [
@@ -3357,6 +3370,160 @@
          a fhir:Boolean ;
          fhir:v false
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Basic"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/Basic/ror-requirements-classes-communes> ;
+         fhir:reference [ fhir:v "Basic/ror-requirements-classes-communes" ]
+       ] ;
+       fhir:name [ fhir:v "Règles de gestion - Classes Communes" ] ;
+       fhir:description [ fhir:v "Règles de gestion relatives aux classes communes (Contact, Telecommunication, Metadonnee)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "ReglesDéGestion" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Basic"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/Basic/ror-requirements-offre-operationnelle> ;
+         fhir:reference [ fhir:v "Basic/ror-requirements-offre-operationnelle" ]
+       ] ;
+       fhir:name [ fhir:v "Règles de gestion - Offre Opérationnelle" ] ;
+       fhir:description [ fhir:v "Règles de gestion relatives aux classes OffreOperationnelle, ActiviteOperationnelle et Patientele" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "ReglesDéGestion" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Basic"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/Basic/ror-requirements-organisation> ;
+         fhir:reference [ fhir:v "Basic/ror-requirements-organisation" ]
+       ] ;
+       fhir:name [ fhir:v "Règles de gestion - Organisation" ] ;
+       fhir:description [ fhir:v "Règles de gestion relatives aux classes Organisation (OrganisationInterne, Pole, StructureInterne, UniteFonctionnelle)" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "ReglesDéGestion" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Basic"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/Basic/ror-requirements-professionnel> ;
+         fhir:reference [ fhir:v "Basic/ror-requirements-professionnel" ]
+       ] ;
+       fhir:name [ fhir:v "Règles de gestion - Professionnel Ressource" ] ;
+       fhir:description [ fhir:v "Règles de gestion relatives aux classes Professionnel et SituationOperationnelle" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "ReglesDéGestion" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Basic"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/Basic/ror-requirements-ressources-operationnelles> ;
+         fhir:reference [ fhir:v "Basic/ror-requirements-ressources-operationnelles" ]
+       ] ;
+       fhir:name [ fhir:v "Règles de gestion - Ressources Opérationnelles" ] ;
+       fhir:description [ fhir:v "Règles de gestion relatives aux classes Ressources Opérationnelles du modèle d'exposition ROR" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "ReglesDéGestion" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Basic"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/Basic/ror-requirements-structure> ;
+         fhir:reference [ fhir:v "Basic/ror-requirements-structure" ]
+       ] ;
+       fhir:name [ fhir:v "Règles de gestion - Structure" ] ;
+       fhir:description [ fhir:v "Règles de gestion relatives aux classes EntiteJuridique et EntiteGeographique" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "ReglesDéGestion" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Basic"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/Basic/ror-requirements-tarif> ;
+         fhir:reference [ fhir:v "Basic/ror-requirements-tarif" ]
+       ] ;
+       fhir:name [ fhir:v "Règles de gestion - Tarif" ] ;
+       fhir:description [ fhir:v "Règles de gestion relatives aux classes Tarif du modèle d'exposition ROR" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "ReglesDéGestion" ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
@@ -3566,6 +3733,25 @@
            fhir:l fhir:professionnel.html
          ] ;
          fhir:title [ fhir:v "Professionnel Ressource" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "regles-de-gestion.html"^^xsd:anyURI ;
+             fhir:l fhir:regles-de-gestion.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "regles-de-gestion.html"^^xsd:anyURI ;
+           fhir:l fhir:regles-de-gestion.html
+         ] ;
+         fhir:title [ fhir:v "Règles de gestion" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

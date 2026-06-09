@@ -1,11 +1,18 @@
 TestROR : Validation Results
 =========================================
 
-err = 0, warn = 828, info = 237
+err = 28, warn = 835, info = 285
 $--
 Generated $--. FHIR version $-- for ans.fhir.fr.test.ror#$-- (canonical = https://interop.esante.gouv.fr/ig/fhir/test-ror)
- Build Errors : 0 / 1 / 0
- /home/runner/work/test-ml-ror/test-ml-ror/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.test.ror : 0 / 0 / 1
+ Build Errors : 7 / 1 / 0
+ /home/runner/work/test-ml-ror/test-ml-ror/igSource/fsh-generated/resources/Basic-ror-requirements-classes-communes : 3 / 1 / 6
+ /home/runner/work/test-ml-ror/test-ml-ror/igSource/fsh-generated/resources/Basic-ror-requirements-offre-operationnelle : 3 / 1 / 21
+ /home/runner/work/test-ml-ror/test-ml-ror/igSource/fsh-generated/resources/Basic-ror-requirements-organisation : 3 / 1 / 5
+ /home/runner/work/test-ml-ror/test-ml-ror/igSource/fsh-generated/resources/Basic-ror-requirements-professionnel : 3 / 1 / 4
+ /home/runner/work/test-ml-ror/test-ml-ror/igSource/fsh-generated/resources/Basic-ror-requirements-ressources-operationnelles : 3 / 1 / 2
+ /home/runner/work/test-ml-ror/test-ml-ror/igSource/fsh-generated/resources/Basic-ror-requirements-structure : 3 / 1 / 12
+ /home/runner/work/test-ml-ror/test-ml-ror/igSource/fsh-generated/resources/Basic-ror-requirements-tarif : 3 / 1 / 5
+ /home/runner/work/test-ml-ror/test-ml-ror/igSource/fsh-generated/resources/ImplementationGuide-ans.fhir.fr.test.ror : 7 / 0 / 1
  /home/runner/work/test-ml-ror/test-ml-ror/igSource/fsh-generated/resources/StructureDefinition-ror-activite-operationnelle : 0 / 10 / 6
  /home/runner/work/test-ml-ror/test-ml-ror/igSource/fsh-generated/resources/StructureDefinition-ror-capacite-accueil-operationnelle : 0 / 40 / 18
  /home/runner/work/test-ml-ror/test-ml-ror/igSource/fsh-generated/resources/StructureDefinition-ror-capacite-habitation : 0 / 12 / 4
@@ -94,8 +101,105 @@ Generated $--. FHIR version $-- for ans.fhir.fr.test.ror#$-- (canonical = https:
  /home/runner/work/test-ml-ror/test-ml-ror/igSource/fsh-generated/resources/ValueSet-jdv-ror-unite-prix : 0 / 0 / 2
 </table>
 == n/a ==
-WARNING: /home/runner/work/test-ml-ror/test-ml-ror/igSource/output/fr/classes-communes.html#/html/body/div/div/div/div/div/script at Line 367, column 2: The <script> containing the javascript '(function() {   if ('... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed) (also in 7 other files)
+ERROR: fr/Basic-ror-requirements-classes-communes.html#/html/body/div/div/div/div/div/div/p/a at Line 263, column 643: The link 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/classes-communes' for "https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/classes-communes" cannot be resolved
+ERROR: fr/Basic-ror-requirements-offre-operationnelle.html#/html/body/div/div/div/div/div/div/p/a at Line 263, column 651: The link 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/offre-operationnelle' for "https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/offre-operationnelle" cannot be resolved
+ERROR: fr/Basic-ror-requirements-organisation.html#/html/body/div/div/div/div/div/div/p/a at Line 263, column 635: The link 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/organisation' for "https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/organisation" cannot be resolved
+ERROR: fr/Basic-ror-requirements-professionnel.html#/html/body/div/div/div/div/div/div/p/a at Line 263, column 637: The link 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/professionnel' for "https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/professionnel" cannot be resolved
+ERROR: fr/Basic-ror-requirements-ressources-operationnelles.html#/html/body/div/div/div/div/div/div/p/a at Line 263, column 663: The link 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/ressources-operationnelles' for "https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/ressources-operationnelles" cannot be resolved
+ERROR: fr/Basic-ror-requirements-structure.html#/html/body/div/div/div/div/div/div/p/a at Line 263, column 629: The link 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/structure' for "https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/structure" cannot be resolved
+ERROR: fr/Basic-ror-requirements-tarif.html#/html/body/div/div/div/div/div/div/p/a at Line 263, column 621: The link 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/tarif' for "https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/tarif" cannot be resolved
+WARNING: /home/runner/work/test-ml-ror/test-ml-ror/igSource/output/fr/classes-communes.html#/html/body/div/div/div/div/div/script at Line 370, column 2: The <script> containing the javascript '(function() {   if ('... is illegal and not allowed on the HL7 ci-build - need to put the script in a  .js file in a trusted template if this IG is to build on the HL7 ci-build (if it is justified and needed) (also in 7 other files)
+== fsh-generated/resources/Basic-ror-requirements-classes-communes.json ==
+ERROR: Basic/ror-requirements-classes-communes: Basic: Slice 'Basic.modifierExtension:status' for extension 'http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status': a matching slice is required, but not found (from http://hl7.org/fhir/5.0/StructureDefinition/profile-Requirements|0.1.0). Note that other slices are allowed in addition to this required slice
+WARNING: Basic/ror-requirements-classes-communes: Basic.extension[0].value.ofType(uri): No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/classes-communes'
+INFORMATION: Basic/ror-requirements-classes-communes: Basic.extension[4].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-classes-communes: Basic.extension[5].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-classes-communes: Basic.extension[6].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-classes-communes: Basic.extension[7].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-classes-communes: Basic.extension[8].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+ERROR: Basic/ror-requirements-classes-communes: Basic.code.coding[0].code: Unknown code 'Requirements' in the CodeSystem 'http://hl7.org/fhir/resource-types' version '4.0.1'
+ERROR: Basic.text.div: Hyperlink 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/classes-communes' at 'div/p/a' for 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/classes-communes' does not resolve
+== fsh-generated/resources/Basic-ror-requirements-offre-operationnelle.json ==
+ERROR: Basic/ror-requirements-offre-operationnelle: Basic: Slice 'Basic.modifierExtension:status' for extension 'http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status': a matching slice is required, but not found (from http://hl7.org/fhir/5.0/StructureDefinition/profile-Requirements|0.1.0). Note that other slices are allowed in addition to this required slice
+WARNING: Basic/ror-requirements-offre-operationnelle: Basic.extension[0].value.ofType(uri): No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/offre-operationnelle'
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[4].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[5].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[6].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[7].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[8].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[9].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[10].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[11].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[12].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[13].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[14].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[15].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[16].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[17].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[18].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[19].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[20].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[21].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[22].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-offre-operationnelle: Basic.extension[23].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+ERROR: Basic/ror-requirements-offre-operationnelle: Basic.code.coding[0].code: Unknown code 'Requirements' in the CodeSystem 'http://hl7.org/fhir/resource-types' version '4.0.1'
+ERROR: Basic.text.div: Hyperlink 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/offre-operationnelle' at 'div/p/a' for 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/offre-operationnelle' does not resolve
+== fsh-generated/resources/Basic-ror-requirements-organisation.json ==
+ERROR: Basic/ror-requirements-organisation: Basic: Slice 'Basic.modifierExtension:status' for extension 'http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status': a matching slice is required, but not found (from http://hl7.org/fhir/5.0/StructureDefinition/profile-Requirements|0.1.0). Note that other slices are allowed in addition to this required slice
+WARNING: Basic/ror-requirements-organisation: Basic.extension[0].value.ofType(uri): No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/organisation'
+INFORMATION: Basic/ror-requirements-organisation: Basic.extension[4].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-organisation: Basic.extension[5].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-organisation: Basic.extension[6].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-organisation: Basic.extension[7].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+ERROR: Basic/ror-requirements-organisation: Basic.code.coding[0].code: Unknown code 'Requirements' in the CodeSystem 'http://hl7.org/fhir/resource-types' version '4.0.1'
+ERROR: Basic.text.div: Hyperlink 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/organisation' at 'div/p/a' for 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/organisation' does not resolve
+== fsh-generated/resources/Basic-ror-requirements-professionnel.json ==
+ERROR: Basic/ror-requirements-professionnel: Basic: Slice 'Basic.modifierExtension:status' for extension 'http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status': a matching slice is required, but not found (from http://hl7.org/fhir/5.0/StructureDefinition/profile-Requirements|0.1.0). Note that other slices are allowed in addition to this required slice
+WARNING: Basic/ror-requirements-professionnel: Basic.extension[0].value.ofType(uri): No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/professionnel'
+INFORMATION: Basic/ror-requirements-professionnel: Basic.extension[4].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-professionnel: Basic.extension[5].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-professionnel: Basic.extension[6].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+ERROR: Basic/ror-requirements-professionnel: Basic.code.coding[0].code: Unknown code 'Requirements' in the CodeSystem 'http://hl7.org/fhir/resource-types' version '4.0.1'
+ERROR: Basic.text.div: Hyperlink 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/professionnel' at 'div/p/a' for 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/professionnel' does not resolve
+== fsh-generated/resources/Basic-ror-requirements-ressources-operationnelles.json ==
+ERROR: Basic/ror-requirements-ressources-operationnelles: Basic: Slice 'Basic.modifierExtension:status' for extension 'http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status': a matching slice is required, but not found (from http://hl7.org/fhir/5.0/StructureDefinition/profile-Requirements|0.1.0). Note that other slices are allowed in addition to this required slice
+WARNING: Basic/ror-requirements-ressources-operationnelles: Basic.extension[0].value.ofType(uri): No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/ressources-operationnelles'
+INFORMATION: Basic/ror-requirements-ressources-operationnelles: Basic.extension[4].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+ERROR: Basic/ror-requirements-ressources-operationnelles: Basic.code.coding[0].code: Unknown code 'Requirements' in the CodeSystem 'http://hl7.org/fhir/resource-types' version '4.0.1'
+ERROR: Basic.text.div: Hyperlink 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/ressources-operationnelles' at 'div/p/a' for 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/ressources-operationnelles' does not resolve
+== fsh-generated/resources/Basic-ror-requirements-structure.json ==
+ERROR: Basic/ror-requirements-structure: Basic: Slice 'Basic.modifierExtension:status' for extension 'http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status': a matching slice is required, but not found (from http://hl7.org/fhir/5.0/StructureDefinition/profile-Requirements|0.1.0). Note that other slices are allowed in addition to this required slice
+WARNING: Basic/ror-requirements-structure: Basic.extension[0].value.ofType(uri): No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/structure'
+INFORMATION: Basic/ror-requirements-structure: Basic.extension[4].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-structure: Basic.extension[5].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-structure: Basic.extension[6].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-structure: Basic.extension[7].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-structure: Basic.extension[8].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-structure: Basic.extension[9].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-structure: Basic.extension[10].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-structure: Basic.extension[11].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-structure: Basic.extension[12].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-structure: Basic.extension[13].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-structure: Basic.extension[14].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+ERROR: Basic/ror-requirements-structure: Basic.code.coding[0].code: Unknown code 'Requirements' in the CodeSystem 'http://hl7.org/fhir/resource-types' version '4.0.1'
+ERROR: Basic.text.div: Hyperlink 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/structure' at 'div/p/a' for 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/structure' does not resolve
+== fsh-generated/resources/Basic-ror-requirements-tarif.json ==
+ERROR: Basic/ror-requirements-tarif: Basic: Slice 'Basic.modifierExtension:status' for extension 'http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status': a matching slice is required, but not found (from http://hl7.org/fhir/5.0/StructureDefinition/profile-Requirements|0.1.0). Note that other slices are allowed in addition to this required slice
+WARNING: Basic/ror-requirements-tarif: Basic.extension[0].value.ofType(uri): No definition could be found for URL value 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/tarif'
+INFORMATION: Basic/ror-requirements-tarif: Basic.extension[4].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-tarif: Basic.extension[5].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-tarif: Basic.extension[6].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+INFORMATION: Basic/ror-requirements-tarif: Basic.extension[7].extension[2].value.ofType(code): Reference to experimental CodeSystem http://hl7.org/fhir/conformance-expectation|5.0.0
+ERROR: Basic/ror-requirements-tarif: Basic.code.coding[0].code: Unknown code 'Requirements' in the CodeSystem 'http://hl7.org/fhir/resource-types' version '4.0.1'
+ERROR: Basic.text.div: Hyperlink 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/tarif' at 'div/p/a' for 'https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/tarif' does not resolve
 == fsh-generated/resources/ImplementationGuide-ans.fhir.fr.test.ror.json ==
+ERROR: ImplementationGuide/ans.fhir.fr.test.ror: ImplementationGuide.definition.resource[86].groupingId: id value 'ReglesDéGestion' is not valid
+ERROR: ImplementationGuide/ans.fhir.fr.test.ror: ImplementationGuide.definition.resource[87].groupingId: id value 'ReglesDéGestion' is not valid
+ERROR: ImplementationGuide/ans.fhir.fr.test.ror: ImplementationGuide.definition.resource[88].groupingId: id value 'ReglesDéGestion' is not valid
+ERROR: ImplementationGuide/ans.fhir.fr.test.ror: ImplementationGuide.definition.resource[89].groupingId: id value 'ReglesDéGestion' is not valid
+ERROR: ImplementationGuide/ans.fhir.fr.test.ror: ImplementationGuide.definition.resource[90].groupingId: id value 'ReglesDéGestion' is not valid
+ERROR: ImplementationGuide/ans.fhir.fr.test.ror: ImplementationGuide.definition.resource[91].groupingId: id value 'ReglesDéGestion' is not valid
+ERROR: ImplementationGuide/ans.fhir.fr.test.ror: ImplementationGuide.definition.resource[92].groupingId: id value 'ReglesDéGestion' is not valid
 == fsh-generated/resources/StructureDefinition-ror-activite-operationnelle.json ==
 INFORMATION: StructureDefinition.baseDefinition: Pinned the version of http://hl7.org/fhir/StructureDefinition/Base to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[1].binding.valueSet: Pinned the version of https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-activite-operationnelle to 0.1.0
@@ -1197,7 +1301,7 @@ INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://mos.esan
 == fsh-generated/resources/ValueSet-jdv-ror-niveau-dependance.json ==
 WARNING: ValueSet/jdv-ror-niveau-dependance: ValueSet.compose.include[0].system: No definition could be found for URL value 'https://mos.esante.gouv.fr/NOS/TRE_R237-NiveauDependance/FHIR/TRE-R237-NiveauDependance'
 WARNING: ValueSet.where(id = 'jdv-ror-niveau-dependance'): Error from https://smt.esante.gouv.fr/fhir: Error: [cdf3b06b-1c6d-40fd-b121-2cd98acc339c]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R237-NiveauDependance/FHIR/TRE-R237-NiveauDependance could not be resolved.
-Information: X-Request-Id: 7977f77e-6dca-4053-91fe-d9a78f184edd
+Information: X-Request-Id: b62b78b1-58a8-4a9e-9fd7-fc1b2857ba43
 == fsh-generated/resources/ValueSet-jdv-ror-niveau-recours-orsan.json ==
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://mos.esante.gouv.fr/NOS/TRE_R284-NiveauRecoursORSAN/FHIR/TRE-R284-NiveauRecoursORSAN to 20231215120000
 == fsh-generated/resources/ValueSet-jdv-ror-orientation-particuliere.json ==
@@ -1221,13 +1325,13 @@ INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://mos.esan
 == fsh-generated/resources/ValueSet-jdv-ror-statut-capacite.json ==
 WARNING: ValueSet/jdv-ror-statut-capacite: ValueSet.compose.include[0].system: No definition could be found for URL value 'https://mos.esante.gouv.fr/NOS/TRE_R330-StatutCapacite/FHIR/TRE-R330-StatutCapacite'
 WARNING: ValueSet.where(id = 'jdv-ror-statut-capacite'): Error from https://smt.esante.gouv.fr/fhir: Error: [834f53bd-1435-4866-abdf-5ea70bab79a5]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R330-StatutCapacite/FHIR/TRE-R330-StatutCapacite could not be resolved.
-Information: X-Request-Id: 7ada2ee4-6f82-4574-a32f-3d9fe7c9bb50
+Information: X-Request-Id: e31f365c-b813-4bf3-a7ab-6c6d7d3f2cef
 == fsh-generated/resources/ValueSet-jdv-ror-surspecialite-transversale.json ==
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://mos.esante.gouv.fr/NOS/TRE_R359-SurspecialiteTransversale/FHIR/TRE-R359-SurspecialiteTransversale to 20240531120000
 == fsh-generated/resources/ValueSet-jdv-ror-temporalite.json ==
 WARNING: ValueSet/jdv-ror-temporalite: ValueSet.compose.include[0].system: No definition could be found for URL value 'https://mos.esante.gouv.fr/NOS/TRE_R331-Temporalite/FHIR/TRE-R331-Temporalite'
 WARNING: ValueSet.where(id = 'jdv-ror-temporalite'): Error from https://smt.esante.gouv.fr/fhir: Error: [a55c7972-e320-4f48-9828-037b20b69e4a]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R331-Temporalite/FHIR/TRE-R331-Temporalite could not be resolved.
-Information: X-Request-Id: a2b33bb7-423c-4ace-9918-905e62ad2ae5
+Information: X-Request-Id: 24701a44-fe5c-47fd-a013-17df187124cc
 == fsh-generated/resources/ValueSet-jdv-ror-temporalite-accueil.json ==
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/FHIR/TRE-R240-TemporaliteAccueil to 20231215120000
 == fsh-generated/resources/ValueSet-jdv-ror-type-crise.json ==
@@ -1245,7 +1349,7 @@ INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://mos.esan
 == fsh-generated/resources/ValueSet-jdv-ror-type-source.json ==
 WARNING: ValueSet/jdv-ror-type-source: ValueSet.compose.include[0].system: No definition could be found for URL value 'https://mos.esante.gouv.fr/NOS/TRE_R335-TypeSource/FHIR/TRE-R335-TypeSource'
 WARNING: ValueSet.where(id = 'jdv-ror-type-source'): Error from https://smt.esante.gouv.fr/fhir: Error: [73c25e25-4a25-40c9-a418-a5d70575c48f]: A usable code system with URL https://mos.esante.gouv.fr/NOS/TRE_R335-TypeSource/FHIR/TRE-R335-TypeSource could not be resolved.
-Information: X-Request-Id: 237612b4-a372-42da-a299-5ba87e3ce822
+Information: X-Request-Id: 473b81e7-3790-4dc1-998e-e89de4b82514
 == fsh-generated/resources/ValueSet-jdv-ror-type-tarif.json ==
 INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://mos.esante.gouv.fr/NOS/TRE_R246-TypeTarif/FHIR/TRE-R246-TypeTarif to 20231215120000
 == fsh-generated/resources/ValueSet-jdv-ror-unite-prix.json ==

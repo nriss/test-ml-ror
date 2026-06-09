@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="ror-requirements-ressources-operationnelles"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/5.0/StructureDefinition/profile-Requirements"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Basique ror-requirements-ressources-operationnelles</b></p><a name="ror-requirements-ressources-operationnelles"> </a><a name="hcror-requirements-ressources-operationnelles"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-profile-Requirements.html">Cross-version Profile for R5.Requirements for use in FHIR R4</a></p></div><p><b>R5: Canonical identifier for this Requirements, represented as a URI (globally unique) (new)</b>: <a href="https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/ressources-operationnelles">https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/ressources-operationnelles</a></p><p><b>R5: Name for this Requirements (computer friendly) (new)</b>: RORRequirementsRessourcesOperationnelles</p><p><b>R5: Name for this Requirements (human friendly) (new)</b>: Règles de gestion - Ressources Opérationnelles</p><p><b>R5: Natural language description of the requirements (new)</b>: </p><div><p>Règles de gestion du modèle d'exposition ROR relatives aux classes CapaciteAccueilOperationnelle, LieuRealisationOffre, EquipementSpecifique.</p>
+</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-047</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href="StructureDefinition-ror-capacite-accueil-operationnelle.html">ROR - Capacité d'Accueil Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_047</strong> : Lorsque le <code>statutCapacite</code> est à « disponible » avec une valeur à 0, cela indique que l'offre est actuellement saturée mais reste ouverte.</p>
+</div><p><b>code</b>: <span title="Codes :{http://hl7.org/fhir/resource-types Requirements}">Requirements</span></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url">
+    <valueUri value="https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/ressources-operationnelles"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name">
+    <valueString value="RORRequirementsRessourcesOperationnelles"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title">
+    <valueString value="Règles de gestion - Ressources Opérationnelles"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description">
+    <valueMarkdown value="Règles de gestion du modèle d'exposition ROR relatives aux classes CapaciteAccueilOperationnelle, LieuRealisationOffre, EquipementSpecifique."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="key">
+      <valueId value="RG-EXP-047"/>
+    </extension>
+    <extension url="requirement">
+      <valueMarkdown value="**RG_EXP_047** : Lorsque le `statutCapacite` est à « disponible » avec une valeur à 0, cela indique que l'offre est actuellement saturée mais reste ouverte."/>
+    </extension>
+    <extension url="conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="satisfiedBy">
+      <valueUrl value="https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-capacite-accueil-operationnelle"/>
+    </extension>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/resource-types"/>
+      <code value="Requirements"/>
+    </coding>
+  </code>
+</Basic>

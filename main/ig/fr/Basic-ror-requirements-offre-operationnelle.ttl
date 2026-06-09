@@ -1,0 +1,932 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/test-ror/Basic/ror-requirements-offre-operationnelle> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ror-requirements-offre-operationnelle"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/profile-Requirements"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/profile-Requirements>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "fr"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Basique ror-requirements-offre-operationnelle</b></p><a name=\"ror-requirements-offre-operationnelle\"> </a><a name=\"hcror-requirements-offre-operationnelle\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-profile-Requirements.html\">Cross-version Profile for R5.Requirements for use in FHIR R4</a></p></div><p><b>R5: Canonical identifier for this Requirements, represented as a URI (globally unique) (new)</b>: <a href=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/offre-operationnelle\">https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/offre-operationnelle</a></p><p><b>R5: Name for this Requirements (computer friendly) (new)</b>: RORRequirementsOffreOperationnelle</p><p><b>R5: Name for this Requirements (human friendly) (new)</b>: Règles de gestion - Offre Opérationnelle</p><p><b>R5: Natural language description of the requirements (new)</b>: </p><div><p>Règles de gestion du modèle d'exposition ROR relatives aux classes OffreOperationnelle, ActiviteOperationnelle et Patientele.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-007</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-activite-operationnelle.html\">ROR - Activité Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_007</strong> : La <code>familleActiviteOperationnelle</code> DOIT être renseignée pour toute instance de la classe Activité Opérationnelle liée à une offre dont le <code>champActivite</code> est « médico-social ».</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-008</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-patientele.html\">ROR - Patientèle</a></li></ul></blockquote><div><p><strong>RG_EXP_008</strong> : Si le <code>champActivite</code> de l'offre est « médico-social », le public pris en charge (<code>publicPrisEnCharge</code>) DOIT être renseigné dans l'instance de la classe Patientèle.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-009</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-patientele.html\">ROR - Patientèle</a></li></ul></blockquote><div><p><strong>RG_EXP_009</strong> : Chaque instance de la zone d'intervention DOIT être composée par des instances de <code>DivisionTerritoriale</code> de type Commune.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-010</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-offre-operationnelle.html\">ROR - Offre Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_010</strong> : Une offre DOIT être renseignée avec un et un seul <code>champActivite</code>, qui est invariable.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-011</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-offre-operationnelle.html\">ROR - Offre Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_011</strong> : Une offre opérationnelle DOIT être renseignée avec un seul <code>modePriseEnCharge</code>, qui est invariable. Le changement de mode de prise en charge implique la création d'une nouvelle offre.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-014</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-offre-operationnelle.html\">ROR - Offre Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_014</strong> : Les horaires transmis DOIVENT inclure au minimum une période (date début, date fin) ou un jour de semaine.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-015</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-offre-operationnelle.html\">ROR - Offre Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_015</strong> : Si les horaires sont transmis sans période, ils s'appliquent aux jours de la semaine à partir du jour de la semaine de lecture de l'information dans le ROR (semaine glissante).</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-016</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-offre-operationnelle.html\">ROR - Offre Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_016</strong> : Les horaires de jours de semaine RESTENT les horaires de référence semaine après semaine TANT QU'aucun nouvel horaire n'est récupéré d'un ROR.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-017</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-offre-operationnelle.html\">ROR - Offre Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_017</strong> : Les horaires portant sur une période (date début, date fin) DOIVENT être transmis si la période est en cours ou à venir lors de la lecture de l'information dans le ROR.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-018</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-offre-operationnelle.html\">ROR - Offre Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_018</strong> : Les horaires portant sur une période échue (date de fin antérieure à la date du jour) NE DOIVENT PAS être transmis.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-028</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-offre-operationnelle.html\">ROR - Offre Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_028</strong> : Une offre opérationnelle ne peut pas avoir plusieurs types d'offre relevant de champs d'activité différents.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-035</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-offre-operationnelle.html\">ROR - Offre Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_035</strong> : Lors de la diffusion d'une unité élémentaire, l'indicateur <code>uniteSensible</code> a la valeur par défaut <code>false</code>.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-039</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-offre-operationnelle.html\">ROR - Offre Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_039</strong> : Dans une unité sensible, le niveau de confidentialité des contacts doit être positionné à la valeur « très restreint ».</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-042</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-offre-operationnelle.html\">ROR - Offre Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_042</strong> : Pour un transfert d'une offre d'un établissement vers un autre, l'identifiant de l'offre transférée NE DOIT PAS changer.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-043</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-offre-operationnelle.html\">ROR - Offre Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_043</strong> : La date de fermeture est obligatoire lorsqu'un type de fermeture est renseigné, sinon elle n'est jamais renseignée.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-044</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-offre-operationnelle.html\">ROR - Offre Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_044</strong> : Lorsqu'un niveau de structure ou d'organisation est fermé, tous les niveaux inférieurs ainsi que toutes les offres opérationnelles qui lui sont rattachées sont également fermés avec le même type, la même date de fermeture et, le cas échéant, la même date de réouverture prévisionnelle.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-045</li><li>requirement: </li><li>conformance: MAY</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-offre-operationnelle.html\">ROR - Offre Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_045</strong> : La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire », sinon elle n'est jamais renseignée.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-046</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-offre-operationnelle.html\">ROR - Offre Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_046</strong> : La date de réouverture est remise à nulle lorsque l'offre est ouverte de nouveau.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-047-offre</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-offre-operationnelle.html\">ROR - Offre Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_047</strong> : Lorsqu'une offre opérationnelle est fermée, les ressources de type <code>statutCapacite</code> « disponible » doivent être à 0.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-048</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-patientele.html\">ROR - Patientèle</a></li></ul></blockquote><div><p><strong>RG_EXP_048</strong> : L'unité de mesure des attributs <code>ageMin</code> et <code>ageMax</code> accepte uniquement les valeurs : <code>a</code> (année), <code>mo</code> (mois), <code>wk</code> (semaine), <code>d</code> (jour).</p>\n</div><p><b>code</b>: <span title=\"Codes :{http://hl7.org/fhir/resource-types Requirements}\">Requirements</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url>
+     ] ;
+     fhir:value [
+       a fhir:Uri ;
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/offre-operationnelle"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/offre-operationnelle>
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "RORRequirementsOffreOperationnelle"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "Règles de gestion - Offre Opérationnelle"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description>
+     ] ;
+     fhir:value [
+       a fhir:Markdown ;
+       fhir:v "Règles de gestion du modèle d'exposition ROR relatives aux classes OffreOperationnelle, ActiviteOperationnelle et Patientele."
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-007"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_007** : La `familleActiviteOperationnelle` DOIT être renseignée pour toute instance de la classe Activité Opérationnelle liée à une offre dont le `champActivite` est « médico-social »."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-activite-operationnelle"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-activite-operationnelle>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-008"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_008** : Si le `champActivite` de l'offre est « médico-social », le public pris en charge (`publicPrisEnCharge`) DOIT être renseigné dans l'instance de la classe Patientèle."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-patientele"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-patientele>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-009"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_009** : Chaque instance de la zone d'intervention DOIT être composée par des instances de `DivisionTerritoriale` de type Commune."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-patientele"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-patientele>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-010"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_010** : Une offre DOIT être renseignée avec un et un seul `champActivite`, qui est invariable."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-011"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_011** : Une offre opérationnelle DOIT être renseignée avec un seul `modePriseEnCharge`, qui est invariable. Le changement de mode de prise en charge implique la création d'une nouvelle offre."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-014"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_014** : Les horaires transmis DOIVENT inclure au minimum une période (date début, date fin) ou un jour de semaine."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-015"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_015** : Si les horaires sont transmis sans période, ils s'appliquent aux jours de la semaine à partir du jour de la semaine de lecture de l'information dans le ROR (semaine glissante)."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-016"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_016** : Les horaires de jours de semaine RESTENT les horaires de référence semaine après semaine TANT QU'aucun nouvel horaire n'est récupéré d'un ROR."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-017"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_017** : Les horaires portant sur une période (date début, date fin) DOIVENT être transmis si la période est en cours ou à venir lors de la lecture de l'information dans le ROR."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-018"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_018** : Les horaires portant sur une période échue (date de fin antérieure à la date du jour) NE DOIVENT PAS être transmis."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-028"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_028** : Une offre opérationnelle ne peut pas avoir plusieurs types d'offre relevant de champs d'activité différents."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-035"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_035** : Lors de la diffusion d'une unité élémentaire, l'indicateur `uniteSensible` a la valeur par défaut `false`."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-039"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_039** : Dans une unité sensible, le niveau de confidentialité des contacts doit être positionné à la valeur « très restreint »."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-042"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_042** : Pour un transfert d'une offre d'un établissement vers un autre, l'identifiant de l'offre transférée NE DOIT PAS changer."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-043"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_043** : La date de fermeture est obligatoire lorsqu'un type de fermeture est renseigné, sinon elle n'est jamais renseignée."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-044"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_044** : Lorsqu'un niveau de structure ou d'organisation est fermé, tous les niveaux inférieurs ainsi que toutes les offres opérationnelles qui lui sont rattachées sont également fermés avec le même type, la même date de fermeture et, le cas échéant, la même date de réouverture prévisionnelle."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-045"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_045** : La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire », sinon elle n'est jamais renseignée."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "MAY"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-046"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_046** : La date de réouverture est remise à nulle lorsque l'offre est ouverte de nouveau."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-047-offre"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_047** : Lorsqu'une offre opérationnelle est fermée, les ressources de type `statutCapacite` « disponible » doivent être à 0."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-offre-operationnelle>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-048"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_048** : L'unité de mesure des attributs `ageMin` et `ageMax` accepte uniquement les valeurs : `a` (année), `mo` (mois), `wk` (semaine), `d` (jour)."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-patientele"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-patientele>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/resource-types"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/resource-types>
+       ] ;
+       fhir:code [ fhir:v "Requirements" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

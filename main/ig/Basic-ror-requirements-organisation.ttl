@@ -1,0 +1,243 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/test-ror/Basic/ror-requirements-organisation> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ror-requirements-organisation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/profile-Requirements"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/profile-Requirements>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Basique ror-requirements-organisation</b></p><a name=\"ror-requirements-organisation\"> </a><a name=\"hcror-requirements-organisation\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-profile-Requirements.html\">Cross-version Profile for R5.Requirements for use in FHIR R4</a></p></div><p><b>R5: Canonical identifier for this Requirements, represented as a URI (globally unique) (new)</b>: <a href=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/organisation\">https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/organisation</a></p><p><b>R5: Name for this Requirements (computer friendly) (new)</b>: RORRequirementsOrganisation</p><p><b>R5: Name for this Requirements (human friendly) (new)</b>: Règles de gestion - Organisation</p><p><b>R5: Natural language description of the requirements (new)</b>: </p><div><p>Règles de gestion du modèle d'exposition ROR relatives aux classes Organisation interne.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-013</li><li>requirement: </li><li>conformance: MAY</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-organisation-interne.html\">ROR - Organisation Interne</a></li></ul></blockquote><div><p><strong>RG_EXP_013</strong> : En fonction du type d'OI, les contacts PEUVENT inclure le contact du responsable du pôle, le contact du responsable du service, le contact du responsable de l'unité, le contact du secrétariat, le contact du secrétariat de permanence.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-043</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-organisation-interne.html\">ROR - Organisation Interne</a></li></ul></blockquote><div><p><strong>RG_EXP_043</strong> : La date de fermeture est obligatoire lorsqu'un type de fermeture est renseigné, sinon elle n'est jamais renseignée.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-044</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-organisation-interne.html\">ROR - Organisation Interne</a></li></ul></blockquote><div><p><strong>RG_EXP_044</strong> : Lorsqu'un niveau de structure ou d'organisation est fermé, tous les niveaux inférieurs ainsi que toutes les offres opérationnelles qui lui sont rattachées sont également fermés avec le même type, la même date de fermeture et, le cas échéant, la même date de réouverture prévisionnelle.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-045</li><li>requirement: </li><li>conformance: MAY</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-organisation-interne.html\">ROR - Organisation Interne</a></li></ul></blockquote><div><p><strong>RG_EXP_045</strong> : La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire », sinon elle n'est jamais renseignée.</p>\n</div><p><b>code</b>: <span title=\"Codes :{http://hl7.org/fhir/resource-types Requirements}\">Requirements</span></p></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url>
+     ] ;
+     fhir:value [
+       a fhir:Uri ;
+       fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/organisation"^^xsd:anyURI ;
+       fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/organisation>
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "RORRequirementsOrganisation"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "Règles de gestion - Organisation"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description>
+     ] ;
+     fhir:value [
+       a fhir:Markdown ;
+       fhir:v "Règles de gestion du modèle d'exposition ROR relatives aux classes Organisation interne."
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-013"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_013** : En fonction du type d'OI, les contacts PEUVENT inclure le contact du responsable du pôle, le contact du responsable du service, le contact du responsable de l'unité, le contact du secrétariat, le contact du secrétariat de permanence."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "MAY"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-organisation-interne"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-organisation-interne>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-043"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_043** : La date de fermeture est obligatoire lorsqu'un type de fermeture est renseigné, sinon elle n'est jamais renseignée."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-organisation-interne"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-organisation-interne>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-044"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_044** : Lorsqu'un niveau de structure ou d'organisation est fermé, tous les niveaux inférieurs ainsi que toutes les offres opérationnelles qui lui sont rattachées sont également fermés avec le même type, la même date de fermeture et, le cas échéant, la même date de réouverture prévisionnelle."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "SHALL"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-organisation-interne"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-organisation-interne>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "key"^^xsd:anyURI ;
+         fhir:l fhir:key
+       ] ;
+       fhir:value [
+         a fhir:Id ;
+         fhir:v "RG-EXP-045"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "requirement"^^xsd:anyURI ;
+         fhir:l fhir:requirement
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "**RG_EXP_045** : La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire », sinon elle n'est jamais renseignée."
+       ]
+     ] [
+       fhir:url [
+         fhir:v "conformance"^^xsd:anyURI ;
+         fhir:l fhir:conformance
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "MAY"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "satisfiedBy"^^xsd:anyURI ;
+         fhir:l fhir:satisfiedBy
+       ] ;
+       fhir:value [
+         a fhir:Url ;
+         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-organisation-interne"^^xsd:anyURI ;
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-organisation-interne>
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
+     ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/resource-types"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/resource-types>
+       ] ;
+       fhir:code [ fhir:v "Requirements" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

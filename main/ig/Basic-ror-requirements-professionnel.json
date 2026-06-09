@@ -1,0 +1,90 @@
+{
+  "resourceType" : "Basic",
+  "id" : "ror-requirements-professionnel",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/profile-Requirements"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Basique ror-requirements-professionnel</b></p><a name=\"ror-requirements-professionnel\"> </a><a name=\"hcror-requirements-professionnel\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-profile-Requirements.html\">Cross-version Profile for R5.Requirements for use in FHIR R4</a></p></div><p><b>R5: Canonical identifier for this Requirements, represented as a URI (globally unique) (new)</b>: <a href=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/professionnel\">https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/professionnel</a></p><p><b>R5: Name for this Requirements (computer friendly) (new)</b>: RORRequirementsProfessionnel</p><p><b>R5: Name for this Requirements (human friendly) (new)</b>: Règles de gestion - Professionnel Ressource</p><p><b>R5: Natural language description of the requirements (new)</b>: </p><div><p>Règles de gestion du modèle d'exposition ROR relatives aux classes Professionnel Ressource.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-030</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-professionnel.html\">ROR - Professionnel</a></li></ul></blockquote><div><p><strong>RG_EXP_030</strong> : En cas de coexistence d'un identifiant RPPS et ADELI pour un même professionnel, l'identifiant RPPS est prioritaire.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-031</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-professionnel.html\">ROR - Professionnel</a></li></ul></blockquote><div><p><strong>RG_EXP_031</strong> : Les données issues du RPPS (profession, civilité d'exercice, etc.) ne sont pas modifiables dans le ROR.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-049</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-situation-operationnelle.html\">ROR - Situation Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_049</strong> : Uniquement les valeurs de <code>Horaire/typeHoraire</code> suivantes sont applicables pour les professionnels : <code>03</code> (Horaire de garde), <code>06</code> (Horaire de consultation sans RDV), <code>07</code> (Horaire de consultation sur RDV).</p>\n</div><p><b>code</b>: <span title=\"Codes :{http://hl7.org/fhir/resource-types Requirements}\">Requirements</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url",
+    "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/professionnel"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name",
+    "valueString" : "RORRequirementsProfessionnel"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title",
+    "valueString" : "Règles de gestion - Professionnel Ressource"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description",
+    "valueMarkdown" : "Règles de gestion du modèle d'exposition ROR relatives aux classes Professionnel Ressource."
+  },
+  {
+    "extension" : [{
+      "url" : "key",
+      "valueId" : "RG-EXP-030"
+    },
+    {
+      "url" : "requirement",
+      "valueMarkdown" : "**RG_EXP_030** : En cas de coexistence d'un identifiant RPPS et ADELI pour un même professionnel, l'identifiant RPPS est prioritaire."
+    },
+    {
+      "url" : "conformance",
+      "valueCode" : "SHALL"
+    },
+    {
+      "url" : "satisfiedBy",
+      "valueUrl" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-professionnel"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"
+  },
+  {
+    "extension" : [{
+      "url" : "key",
+      "valueId" : "RG-EXP-031"
+    },
+    {
+      "url" : "requirement",
+      "valueMarkdown" : "**RG_EXP_031** : Les données issues du RPPS (profession, civilité d'exercice, etc.) ne sont pas modifiables dans le ROR."
+    },
+    {
+      "url" : "conformance",
+      "valueCode" : "SHALL"
+    },
+    {
+      "url" : "satisfiedBy",
+      "valueUrl" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-professionnel"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"
+  },
+  {
+    "extension" : [{
+      "url" : "key",
+      "valueId" : "RG-EXP-049"
+    },
+    {
+      "url" : "requirement",
+      "valueMarkdown" : "**RG_EXP_049** : Uniquement les valeurs de `Horaire/typeHoraire` suivantes sont applicables pour les professionnels : `03` (Horaire de garde), `06` (Horaire de consultation sans RDV), `07` (Horaire de consultation sur RDV)."
+    },
+    {
+      "url" : "conformance",
+      "valueCode" : "SHALL"
+    },
+    {
+      "url" : "satisfiedBy",
+      "valueUrl" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-situation-operationnelle"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/resource-types",
+      "code" : "Requirements"
+    }]
+  }
+}

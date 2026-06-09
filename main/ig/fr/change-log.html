@@ -46,8 +46,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"11"}
-    h3,h4,h5,h6{--heading-prefix:"11"}</style>
+    <style type="text/css">h2{--heading-prefix:"12"}
+    h3,h4,h5,h6{--heading-prefix:"12"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -146,6 +146,9 @@
     </ul>
   </li>
   <li>
+    <a href="regles-de-gestion.html">Règles de gestion</a>
+  </li>
+  <li>
     <a href="artifacts.html">Ressources de conformité</a>
   </li>
   <li>
@@ -173,7 +176,7 @@
 
           <span style="float: var(--ig-right);">
 
-            <a href="professionnel.html">&lt; précédent</a> | 
+            <a href="regles-de-gestion.html">&lt; précédent</a> | 
 
             <a href="#bottom">bas de page</a>
 
@@ -224,7 +227,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Première version de l'IG de démonstration ROR.</p>
 
+<p><strong>Modèles logiques (37 LogicalModels)</strong></p>
+
 <ul>
+  <li>Création de l'ensemble des LogicalModels ROR couvrant les 5 sections du modèle d'exposition v3.0.1 : Structure, Organisation, Offre Opérationnelle, Tarif, Ressources Opérationnelles, Professionnel Ressource, Classes Communes</li>
+  <li>Héritage des LogicalModels MOS 0.1.0-ballot : chaque classe ROR dérive de sa contrepartie MOS et n'ajoute que les différences (attributs supplémentaires, cardinalités resserrées)</li>
+  <li>Création de 36 ValueSets JDV provisoires (enveloppes des TRE NOS) pour satisfaire les contraintes de binding FHIR ; redirection des alias vers les JDV officiels existants quand disponibles (ex. JDV_J185-typeFermeture-ROR)</li>
+  <li>Correction du chemin de binding <code class="language-plaintext highlighter-rouge">capaciteSavoirFaire</code> dans <code class="language-plaintext highlighter-rouge">RORCapacite</code> (alignement avec le nom réel dans le StructureDefinition MOS)</li>
+</ul>
+
+<p><strong>Pages narratives</strong></p>
+
+<ul>
+  <li>Création de 7 pages de section : <code class="language-plaintext highlighter-rouge">structure</code>, <code class="language-plaintext highlighter-rouge">organisation</code>, <code class="language-plaintext highlighter-rouge">offre-operationnelle</code>, <code class="language-plaintext highlighter-rouge">tarif</code>, <code class="language-plaintext highlighter-rouge">ressources-operationnelles</code>, <code class="language-plaintext highlighter-rouge">professionnel</code>, <code class="language-plaintext highlighter-rouge">classes-communes</code></li>
+  <li>Mise à jour de <code class="language-plaintext highlighter-rouge">index.md</code> : description du ROR, 4 cas d'usage, tableau des 5 sous-ensembles, vue d'ensemble du modèle, relation avec le MOS</li>
+  <li>Documentation de l'ensemble des 49 règles de gestion <code class="language-plaintext highlighter-rouge">RG_EXP_*</code> du modèle d'exposition, distribuées dans leur page de contexte</li>
+  <li>Remplacement des tableaux d'attributs codés en dur par les includes auto-générés <code class="language-plaintext highlighter-rouge">StructureDefinition-[id]-class-table.xhtml</code> (évite la duplication avec les FSH)</li>
+  <li>Suppression des titres <code class="language-plaintext highlighter-rouge">###</code> en tête de page (le publisher génère le titre automatiquement depuis le menu)</li>
+</ul>
+
+<p><strong>Diagrammes PlantUML</strong></p>
+
+<ul>
+  <li>Création de 8 diagrammes PlantUML (<code class="language-plaintext highlighter-rouge">input/images-source/</code>) : VueEnsemble, Structure, Organisation, OffreOperationnelle, Tarif, RessourcesOperationnelles, Professionnel, ClassesCommunes</li>
+  <li>Thème <code class="language-plaintext highlighter-rouge">carbon-gray</code>, liens cliquables vers les StructureDefinition, héritage MOS en package grisé</li>
+  <li>Intégration du composant interactif MOS (<code class="language-plaintext highlighter-rouge">svg-interactive-styles.html</code>, <code class="language-plaintext highlighter-rouge">svg-interactive-script.html</code>) avec zoom +/−/↺ actif en mode normal et plein écran</li>
+</ul>
+
+<p><strong>Configuration</strong></p>
+
+<ul>
+  <li>Ajout des 7 pages au menu <code class="language-plaintext highlighter-rouge">sushi-config.yaml</code> sous la section « Modèle d'exposition »</li>
   <li>Initialisation du projet à partir du template ANS</li>
   <li>Configuration de la dépendance vers le MOS 0.1.0-ballot</li>
 </ul>
@@ -254,7 +287,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:var(--ig-left);">&#xA0;
 
-                <a href="professionnel.html">&lt; précédent</a>
+                <a href="regles-de-gestion.html">&lt; précédent</a>
 
               </td>
               <td style="text-align:center">
@@ -278,7 +311,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-09 15:47:00 +0000">
+  <span title="2026-06-09 19:07:00 +0000">
     2026-06-09
   </span>
 

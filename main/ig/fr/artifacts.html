@@ -46,8 +46,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"12"}
-    h3,h4,h5,h6{--heading-prefix:"12.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"13"}
+    h3,h4,h5,h6{--heading-prefix:"13.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -146,6 +146,9 @@
     </ul>
   </li>
   <li>
+    <a href="regles-de-gestion.html">Règles de gestion</a>
+  </li>
+  <li>
     <a href="artifacts.html">Ressources de conformité</a>
   </li>
   <li>
@@ -177,7 +180,7 @@
 
             <a href="#bottom">bas de page</a>
 
-          | <a href="StructureDefinition-ror-activite-operationnelle.html">suivant &gt;</a>
+          | <a href="Basic-ror-requirements-classes-communes.html">suivant &gt;</a>
 
           </span>
 
@@ -212,10 +215,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contenu:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Modèles logiques</a>
+         <a href="#1">Règles de gestion</a>
       </li>
       <li>
-         <a href="#2">Terminologie: Jeux de valeurs (ValueSets)</a>
+         <a href="#2">Structures: Modèles logiques</a>
+      </li>
+      <li>
+         <a href="#3">Terminologie: Jeux de valeurs (ValueSets)</a>
       </li>
    </ul>
 </div>
@@ -225,6 +231,98 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      data-fhir="generated">
    <p>Cette page fournit une liste des artefacts FHIR définis dans le cadre de ce guide de mise en œuvre.</p>
    <a name="1"> </a>
+   <h3>Règles de gestion </h3>
+    <p>Instances Requirements regroupant les règles de gestion RG_EXP_* du modèle d'exposition ROR</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Basic-ror-requirements-classes-communes.html"
+                  title="Basic/ror-requirements-classes-communes">
+                  <span title="Basic/ror-requirements-classes-communes">Règles de gestion - Classes Communes
+</span>
+               </a>
+            </td>
+            <td>
+<p>Règles de gestion relatives aux classes communes (Contact, Telecommunication, Metadonnee)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Basic-ror-requirements-offre-operationnelle.html"
+                  title="Basic/ror-requirements-offre-operationnelle">
+                  <span title="Basic/ror-requirements-offre-operationnelle">Règles de gestion - Offre Opérationnelle
+</span>
+               </a>
+            </td>
+            <td>
+<p>Règles de gestion relatives aux classes OffreOperationnelle, ActiviteOperationnelle et Patientele</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Basic-ror-requirements-organisation.html"
+                  title="Basic/ror-requirements-organisation">
+                  <span title="Basic/ror-requirements-organisation">Règles de gestion - Organisation
+</span>
+               </a>
+            </td>
+            <td>
+<p>Règles de gestion relatives aux classes Organisation (OrganisationInterne, Pole, StructureInterne, UniteFonctionnelle)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Basic-ror-requirements-professionnel.html"
+                  title="Basic/ror-requirements-professionnel">
+                  <span title="Basic/ror-requirements-professionnel">Règles de gestion - Professionnel Ressource
+</span>
+               </a>
+            </td>
+            <td>
+<p>Règles de gestion relatives aux classes Professionnel et SituationOperationnelle</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Basic-ror-requirements-ressources-operationnelles.html"
+                  title="Basic/ror-requirements-ressources-operationnelles">
+                  <span title="Basic/ror-requirements-ressources-operationnelles">Règles de gestion - Ressources Opérationnelles
+</span>
+               </a>
+            </td>
+            <td>
+<p>Règles de gestion relatives aux classes Ressources Opérationnelles du modèle d'exposition ROR</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Basic-ror-requirements-structure.html"
+                  title="Basic/ror-requirements-structure">
+                  <span title="Basic/ror-requirements-structure">Règles de gestion - Structure
+</span>
+               </a>
+            </td>
+            <td>
+<p>Règles de gestion relatives aux classes EntiteJuridique et EntiteGeographique</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Basic-ror-requirements-tarif.html"
+                  title="Basic/ror-requirements-tarif">
+                  <span title="Basic/ror-requirements-tarif">Règles de gestion - Tarif
+</span>
+               </a>
+            </td>
+            <td>
+<p>Règles de gestion relatives aux classes Tarif du modèle d'exposition ROR</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
    <h3>Structures: Modèles logiques </h3>
     <p>Ils définissent des modèles de données qui représentent le domaine couvert par ce guide d'implémentation en termes plus conviviaux que les ressources FHIR sous-jacentes.</p>
 <table class="grid">
@@ -676,7 +774,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="2"> </a>
+   <a name="3"> </a>
    <h3>Terminologie: Jeux de valeurs (ValueSets) </h3>
     <p>Ils définissent des ensembles de codes utilisés par les systèmes conformes au présent guide d'implémentation.</p>
 <table class="grid">
@@ -1302,7 +1400,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:var(--ig-right);">&#xA0;
 
-                <a href="StructureDefinition-ror-activite-operationnelle.html">suivant ></a>
+                <a href="Basic-ror-requirements-classes-communes.html">suivant ></a>
 
               </td>
             </tr>
@@ -1318,7 +1416,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-09 15:47:00 +0000">
+  <span title="2026-06-09 19:07:00 +0000">
     2026-06-09
   </span>
 

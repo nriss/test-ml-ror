@@ -14,7 +14,7 @@
   "name" : "TestROR",
   "title" : "Démonstration - Modèle Logique ROR dérivant du MOS",
   "status" : "draft",
-  "date" : "2026-06-09T15:47:14+00:00",
+  "date" : "2026-06-09T19:07:13+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
@@ -59,6 +59,12 @@
     "uri" : "https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos",
     "packageId" : "ans.fr.mos",
     "version" : "0.1.0-ballot"
+  },
+  {
+    "id" : "hl7_fhir_uv_xver_r5_r4",
+    "uri" : "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4",
+    "packageId" : "hl7.fhir.uv.xver-r5.r4",
+    "version" : "0.1.0"
   }],
   "definition" : {
     "extension" : [{
@@ -730,6 +736,11 @@
         "valueString" : "true"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    }],
+    "grouping" : [{
+      "id" : "ReglesDéGestion",
+      "name" : "Règles de gestion",
+      "description" : "Instances Requirements regroupant les règles de gestion RG_EXP_* du modèle d'exposition ROR"
     }],
     "resource" : [{
       "extension" : [{
@@ -1762,6 +1773,97 @@
       "name" : "ROR - Équipement Spécifique",
       "description" : "Spécialisation ROR de l'EquipementSpecifique du MOS. Ressource matérielle discriminante pour la réalisation d'une prestation, propre à la structure ou mise à disposition via convention (sur site).",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Basic"
+      }],
+      "reference" : {
+        "reference" : "Basic/ror-requirements-classes-communes"
+      },
+      "name" : "Règles de gestion - Classes Communes",
+      "description" : "Règles de gestion relatives aux classes communes (Contact, Telecommunication, Metadonnee)",
+      "exampleBoolean" : false,
+      "groupingId" : "ReglesDéGestion"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Basic"
+      }],
+      "reference" : {
+        "reference" : "Basic/ror-requirements-offre-operationnelle"
+      },
+      "name" : "Règles de gestion - Offre Opérationnelle",
+      "description" : "Règles de gestion relatives aux classes OffreOperationnelle, ActiviteOperationnelle et Patientele",
+      "exampleBoolean" : false,
+      "groupingId" : "ReglesDéGestion"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Basic"
+      }],
+      "reference" : {
+        "reference" : "Basic/ror-requirements-organisation"
+      },
+      "name" : "Règles de gestion - Organisation",
+      "description" : "Règles de gestion relatives aux classes Organisation (OrganisationInterne, Pole, StructureInterne, UniteFonctionnelle)",
+      "exampleBoolean" : false,
+      "groupingId" : "ReglesDéGestion"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Basic"
+      }],
+      "reference" : {
+        "reference" : "Basic/ror-requirements-professionnel"
+      },
+      "name" : "Règles de gestion - Professionnel Ressource",
+      "description" : "Règles de gestion relatives aux classes Professionnel et SituationOperationnelle",
+      "exampleBoolean" : false,
+      "groupingId" : "ReglesDéGestion"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Basic"
+      }],
+      "reference" : {
+        "reference" : "Basic/ror-requirements-ressources-operationnelles"
+      },
+      "name" : "Règles de gestion - Ressources Opérationnelles",
+      "description" : "Règles de gestion relatives aux classes Ressources Opérationnelles du modèle d'exposition ROR",
+      "exampleBoolean" : false,
+      "groupingId" : "ReglesDéGestion"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Basic"
+      }],
+      "reference" : {
+        "reference" : "Basic/ror-requirements-structure"
+      },
+      "name" : "Règles de gestion - Structure",
+      "description" : "Règles de gestion relatives aux classes EntiteJuridique et EntiteGeographique",
+      "exampleBoolean" : false,
+      "groupingId" : "ReglesDéGestion"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Basic"
+      }],
+      "reference" : {
+        "reference" : "Basic/ror-requirements-tarif"
+      },
+      "name" : "Règles de gestion - Tarif",
+      "description" : "Règles de gestion relatives aux classes Tarif du modèle d'exposition ROR",
+      "exampleBoolean" : false,
+      "groupingId" : "ReglesDéGestion"
     }],
     "page" : {
       "extension" : [{
@@ -1859,6 +1961,15 @@
         }],
         "nameUrl" : "professionnel.html",
         "title" : "Professionnel Ressource",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "regles-de-gestion.html"
+        }],
+        "nameUrl" : "regles-de-gestion.html",
+        "title" : "Règles de gestion",
         "generation" : "markdown"
       },
       {

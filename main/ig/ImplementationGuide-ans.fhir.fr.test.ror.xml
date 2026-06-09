@@ -12,7 +12,7 @@
   <name value="TestROR"/>
   <title value="Démonstration - Modèle Logique ROR dérivant du MOS"/>
   <status value="draft"/>
-  <date value="2026-06-09T15:47:14+00:00"/>
+  <date value="2026-06-09T19:07:13+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -52,6 +52,11 @@
     <uri value="https://interop.esante.gouv.fr/ig/mos/ImplementationGuide/ans.fr.mos"/>
     <packageId value="ans.fr.mos"/>
     <version value="0.1.0-ballot"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_xver_r5_r4">
+    <uri value="http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4"/>
+    <packageId value="hl7.fhir.uv.xver-r5.r4"/>
+    <version value="0.1.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -542,6 +547,10 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <grouping id="ReglesDéGestion">
+      <name value="Règles de gestion"/>
+      <description value="Instances Requirements regroupant les règles de gestion RG_EXP_* du modèle d'exposition ROR"/>
+    </grouping>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
@@ -1488,6 +1497,90 @@
       <description value="Spécialisation ROR de l'EquipementSpecifique du MOS. Ressource matérielle discriminante pour la réalisation d'une prestation, propre à la structure ou mise à disposition via convention (sur site)."/>
       <exampleBoolean value="false"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Basic"/>
+      </extension>
+      <reference>
+        <reference value="Basic/ror-requirements-classes-communes"/>
+      </reference>
+      <name value="Règles de gestion - Classes Communes"/>
+      <description value="Règles de gestion relatives aux classes communes (Contact, Telecommunication, Metadonnee)"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="ReglesDéGestion"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Basic"/>
+      </extension>
+      <reference>
+        <reference value="Basic/ror-requirements-offre-operationnelle"/>
+      </reference>
+      <name value="Règles de gestion - Offre Opérationnelle"/>
+      <description value="Règles de gestion relatives aux classes OffreOperationnelle, ActiviteOperationnelle et Patientele"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="ReglesDéGestion"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Basic"/>
+      </extension>
+      <reference>
+        <reference value="Basic/ror-requirements-organisation"/>
+      </reference>
+      <name value="Règles de gestion - Organisation"/>
+      <description value="Règles de gestion relatives aux classes Organisation (OrganisationInterne, Pole, StructureInterne, UniteFonctionnelle)"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="ReglesDéGestion"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Basic"/>
+      </extension>
+      <reference>
+        <reference value="Basic/ror-requirements-professionnel"/>
+      </reference>
+      <name value="Règles de gestion - Professionnel Ressource"/>
+      <description value="Règles de gestion relatives aux classes Professionnel et SituationOperationnelle"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="ReglesDéGestion"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Basic"/>
+      </extension>
+      <reference>
+        <reference value="Basic/ror-requirements-ressources-operationnelles"/>
+      </reference>
+      <name value="Règles de gestion - Ressources Opérationnelles"/>
+      <description value="Règles de gestion relatives aux classes Ressources Opérationnelles du modèle d'exposition ROR"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="ReglesDéGestion"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Basic"/>
+      </extension>
+      <reference>
+        <reference value="Basic/ror-requirements-structure"/>
+      </reference>
+      <name value="Règles de gestion - Structure"/>
+      <description value="Règles de gestion relatives aux classes EntiteJuridique et EntiteGeographique"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="ReglesDéGestion"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Basic"/>
+      </extension>
+      <reference>
+        <reference value="Basic/ror-requirements-tarif"/>
+      </reference>
+      <name value="Règles de gestion - Tarif"/>
+      <description value="Règles de gestion relatives aux classes Tarif du modèle d'exposition ROR"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="ReglesDéGestion"/>
+    </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
         <valueUrl value="toc.html"/>
@@ -1573,6 +1666,14 @@
         </extension>
         <nameUrl value="professionnel.html"/>
         <title value="Professionnel Ressource"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="regles-de-gestion.html"/>
+        </extension>
+        <nameUrl value="regles-de-gestion.html"/>
+        <title value="Règles de gestion"/>
         <generation value="markdown"/>
       </page>
       <page>

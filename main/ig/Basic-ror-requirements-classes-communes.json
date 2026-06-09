@@ -1,0 +1,108 @@
+{
+  "resourceType" : "Basic",
+  "id" : "ror-requirements-classes-communes",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/5.0/StructureDefinition/profile-Requirements"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Basique ror-requirements-classes-communes</b></p><a name=\"ror-requirements-classes-communes\"> </a><a name=\"hcror-requirements-classes-communes\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-profile-Requirements.html\">Cross-version Profile for R5.Requirements for use in FHIR R4</a></p></div><p><b>R5: Canonical identifier for this Requirements, represented as a URI (globally unique) (new)</b>: <a href=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/classes-communes\">https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/classes-communes</a></p><p><b>R5: Name for this Requirements (computer friendly) (new)</b>: RORRequirementsClassesCommunes</p><p><b>R5: Name for this Requirements (human friendly) (new)</b>: Règles de gestion - Classes Communes</p><p><b>R5: Natural language description of the requirements (new)</b>: </p><div><p>Règles de gestion du modèle d'exposition ROR relatives aux classes transverses Contact, Telecommunication et Metadonnee.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-032</li><li>requirement: </li><li>conformance: SHALL</li></ul></blockquote><div><p><strong>RG_EXP_032</strong> : Lors de la création d'un objet Contact, le niveau de confidentialité a la valeur par défaut « restreint ».</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-034</li><li>requirement: </li><li>conformance: SHALL</li></ul></blockquote><div><p><strong>RG_EXP_034</strong> : Le niveau de confidentialité de l'objet Télécommunication doit être plus restrictif ou égal au niveau de confidentialité de l'objet Contact auquel il est rattaché.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-039</li><li>requirement: </li><li>conformance: SHALL</li></ul></blockquote><div><p><strong>RG_EXP_039</strong> : Dans une unité sensible, le niveau de confidentialité des contacts doit être positionné à la valeur « très restreint ».</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-040</li><li>requirement: </li><li>conformance: SHALL</li></ul></blockquote><div><p><strong>RG_EXP_040</strong> : Si l'attribut <code>natureContact</code> est renseigné dans l'objet Contact, alors il ne doit pas y avoir de <code>nom</code> de contact ni de <code>fonctionContact</code>.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-041</li><li>requirement: </li><li>conformance: SHALL</li></ul></blockquote><div><p><strong>RG_EXP_041</strong> : Si l'attribut <code>fonctionContact</code> est renseigné dans l'objet Contact, alors il doit y avoir un <code>nom</code> de contact et il ne doit pas y avoir de <code>natureContact</code>.</p>\n</div><p><b>code</b>: <span title=\"Codes :{http://hl7.org/fhir/resource-types Requirements}\">Requirements</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url",
+    "valueUri" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/classes-communes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name",
+    "valueString" : "RORRequirementsClassesCommunes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title",
+    "valueString" : "Règles de gestion - Classes Communes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description",
+    "valueMarkdown" : "Règles de gestion du modèle d'exposition ROR relatives aux classes transverses Contact, Telecommunication et Metadonnee."
+  },
+  {
+    "extension" : [{
+      "url" : "key",
+      "valueId" : "RG-EXP-032"
+    },
+    {
+      "url" : "requirement",
+      "valueMarkdown" : "**RG_EXP_032** : Lors de la création d'un objet Contact, le niveau de confidentialité a la valeur par défaut « restreint »."
+    },
+    {
+      "url" : "conformance",
+      "valueCode" : "SHALL"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"
+  },
+  {
+    "extension" : [{
+      "url" : "key",
+      "valueId" : "RG-EXP-034"
+    },
+    {
+      "url" : "requirement",
+      "valueMarkdown" : "**RG_EXP_034** : Le niveau de confidentialité de l'objet Télécommunication doit être plus restrictif ou égal au niveau de confidentialité de l'objet Contact auquel il est rattaché."
+    },
+    {
+      "url" : "conformance",
+      "valueCode" : "SHALL"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"
+  },
+  {
+    "extension" : [{
+      "url" : "key",
+      "valueId" : "RG-EXP-039"
+    },
+    {
+      "url" : "requirement",
+      "valueMarkdown" : "**RG_EXP_039** : Dans une unité sensible, le niveau de confidentialité des contacts doit être positionné à la valeur « très restreint »."
+    },
+    {
+      "url" : "conformance",
+      "valueCode" : "SHALL"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"
+  },
+  {
+    "extension" : [{
+      "url" : "key",
+      "valueId" : "RG-EXP-040"
+    },
+    {
+      "url" : "requirement",
+      "valueMarkdown" : "**RG_EXP_040** : Si l'attribut `natureContact` est renseigné dans l'objet Contact, alors il ne doit pas y avoir de `nom` de contact ni de `fonctionContact`."
+    },
+    {
+      "url" : "conformance",
+      "valueCode" : "SHALL"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"
+  },
+  {
+    "extension" : [{
+      "url" : "key",
+      "valueId" : "RG-EXP-041"
+    },
+    {
+      "url" : "requirement",
+      "valueMarkdown" : "**RG_EXP_041** : Si l'attribut `fonctionContact` est renseigné dans l'objet Contact, alors il doit y avoir un `nom` de contact et il ne doit pas y avoir de `natureContact`."
+    },
+    {
+      "url" : "conformance",
+      "valueCode" : "SHALL"
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/resource-types",
+      "code" : "Requirements"
+    }]
+  }
+}

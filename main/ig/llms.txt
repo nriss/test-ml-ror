@@ -12,6 +12,7 @@
 * [Offre Opérationnelle](fr/offre-operationnelle.md)
 * [Résumé des artefacts](fr/artifacts.md)
 * [Ressources Opérationnelles](fr/ressources-operationnelles.md)
+* [Règles de gestion](fr/regles-de-gestion.md)
 * [Professionnel Ressource](fr/professionnel.md)
 * [Tarif](fr/tarif.md)
 
@@ -108,6 +109,16 @@
 * [ROR - Tarif Prestation Supplémentaire](fr/StructureDefinition-ror-tarif-prestation-supplementaire.md)
 * [ROR - Tarif](fr/StructureDefinition-ror-tarif.md)
 * [ROR - Unité Fonctionnelle](fr/StructureDefinition-ror-unite-fonctionnelle.md)
+
+### Basics
+
+* [ror-requirements-classes-communes](fr/Basic-ror-requirements-classes-communes.md)
+* [ror-requirements-offre-operationnelle](fr/Basic-ror-requirements-offre-operationnelle.md)
+* [ror-requirements-organisation](fr/Basic-ror-requirements-organisation.md)
+* [ror-requirements-professionnel](fr/Basic-ror-requirements-professionnel.md)
+* [ror-requirements-ressources-operationnelles](fr/Basic-ror-requirements-ressources-operationnelles.md)
+* [ror-requirements-structure](fr/Basic-ror-requirements-structure.md)
+* [ror-requirements-tarif](fr/Basic-ror-requirements-tarif.md)
 
 ### ImplementationGuides
 

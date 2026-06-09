@@ -6,6 +6,21 @@
   "extensions": [],
   "profiles": {},
   "usage": {
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url": [
+      "Basic"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics": [
       "StructureDefinition"
     ],
