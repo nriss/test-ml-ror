@@ -115,4 +115,7 @@ Le **Savoir-Faire** est une classe abstraite décrivant la spécialité ou la co
 
 La **Situation Opérationnelle** caractérise les conditions d'exercice du professionnel dans le cadre d'une offre opérationnelle précise.
 
+**Règles de gestion :**
+- `RG_EXP_049` : Uniquement les valeurs de `Horaire/typeHoraire` suivantes sont applicables pour les professionnels : `03` (Horaire de garde), `06` (Horaire de consultation sans RDV), `07` (Horaire de consultation sur RDV).
+
 {% include StructureDefinition-ror-situation-operationnelle-dict.xhtml %}

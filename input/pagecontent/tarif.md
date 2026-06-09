@@ -85,11 +85,17 @@ Tarif journalier et par personne pour un type d'hébergement donné. Inclut obli
 
 #### RORTarifPrestationSupplementaire
 
+**Règles de gestion :**
+- `RG_EXP_036` : Les attributs de la classe `TarifPrestationSupplementaire` DOIVENT être mutuellement exclusifs : soit `nomPrestationSupp` (code d'une prestation connue), soit `nomAutrePrestationSupp` (libellé libre), mais pas les deux simultanément.
+
 {% include StructureDefinition-ror-tarif-prestation-supplementaire-dict.xhtml %}
 
 ---
 
 #### RORSupplementTarifHebergement
+
+**Règles de gestion :**
+- `RG_EXP_029` : L'attribut `typeHabitation` d'un tarif de type « supplément tarif hébergement » DOIT prendre la valeur « chambre simple ».
 
 {% include StructureDefinition-ror-supplement-tarif-hebergement-dict.xhtml %}
 
