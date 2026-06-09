@@ -10,6 +10,12 @@ La classe `RORTarif` est une **classe abstraite** dont héritent les différents
 
 ---
 
+#### Diagramme
+
+{% include Tarif.svg %}
+
+---
+
 #### Modèles logiques
 
 | Modèle ROR | Héritage | Description |
@@ -27,19 +33,13 @@ La classe `RORTarif` est une **classe abstraite** dont héritent les différents
 
 #### RORTarif (classe abstraite)
 
-Attributs communs à tous les types de tarifs :
-
-| Attribut | Card. | Type | Terminologie |
-|---|---|---|---|
-| typeTarif | 1..1 | Coding | TRE_R246-TypeTarif |
-| montantTarif | 1..1 | Money | — |
-| unitePrix | 1..1 | Coding | TRE_R228-UnitePrix |
-| dateDebutValiditeTarif | 0..1 | date | — |
-| metadonnee | 1..1 | [RORMetadonnee](StructureDefinition-ror-metadonnee.html) | — |
+Attributs communs à tous les types de tarifs. Cette classe n'est pas instanciée directement : seules ses sous-classes spécialisées sont utilisées.
 
 **Règles de gestion :**
 - `RG_EXP_026` : Un seul tarif de type « Forfait socle hébergement » PEUT être instancié pour chaque combinaison de `tarifMoins60Ans`, `typeHabitation`, `temporaliteAccueil`, `conditionTarifaire` pour une même EG.
 - `RG_EXP_027` : Pour les autres types de tarifs, un seul montant PEUT être exposé pour chaque combinaison des valeurs des attributs (hors montant) pour une même EG.
+
+{% include StructureDefinition-ror-tarif-dict.xhtml %}
 
 ---
 
@@ -47,24 +47,40 @@ Attributs communs à tous les types de tarifs :
 
 Tarif journalier et par personne pour un type d'hébergement donné. Inclut obligatoirement les prestations définies dans le décret n°2015-1868.
 
-| Attribut | Card. | Type | Terminologie |
-|---|---|---|---|
-| prestationsNonObligatoiresIncluses | 0..* | Coding | TRE_R264-PrestationNonObligatoireIncluse |
-| autresPrestationsNonObligatoiresIncluses | 0..* | string | — |
-| tarifMoins60Ans | 1..1 | boolean | — |
-| typeHabitation | 1..1 | Coding | TRE_R242-TypeHabitation |
-| conditionTarifaire | 0..1 | Coding | TRE_R250-ConditionTarifaire |
-| temporaliteAccueil | 1..1 | Coding | TRE_R240-TemporaliteAccueil |
+{% include StructureDefinition-ror-forfait-socle-hebergement-dict.xhtml %}
 
 ---
 
-#### Autres tarifs spécialisés
+#### RORTarifAccueilDeJour
 
-| Tarif | Attributs spécifiques |
-|---|---|
-| **TarifAccueilDeJour** | `conditionTarifaire` (TRE_R250) |
-| **TarifDependance** | `groupeTarifaireDependance` (TRE_R237-NiveauDependance), `temporaliteAccueil` (TRE_R240) |
-| **TarifAidesHumaines** | `conditionTarifaire` (TRE_R250), `modeGestion` (TRE_R236) |
-| **TarifPrestationSupplementaire** | `nomPrestationSupp` (TRE_R264) |
-| **SupplementTarifHebergement** | `typeHabitation` (TRE_R242) |
-| **TarifPortageRepas** | `conditionTarifaire` (TRE_R250) |
+{% include StructureDefinition-ror-tarif-accueil-de-jour-dict.xhtml %}
+
+---
+
+#### RORTarifDependance
+
+{% include StructureDefinition-ror-tarif-dependance-dict.xhtml %}
+
+---
+
+#### RORTarifAidesHumaines
+
+{% include StructureDefinition-ror-tarif-aides-humaines-dict.xhtml %}
+
+---
+
+#### RORTarifPrestationSupplementaire
+
+{% include StructureDefinition-ror-tarif-prestation-supplementaire-dict.xhtml %}
+
+---
+
+#### RORSupplementTarifHebergement
+
+{% include StructureDefinition-ror-supplement-tarif-hebergement-dict.xhtml %}
+
+---
+
+#### RORTarifPortageRepas
+
+{% include StructureDefinition-ror-tarif-portage-repas-dict.xhtml %}

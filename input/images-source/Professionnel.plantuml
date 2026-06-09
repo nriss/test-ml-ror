@@ -1,0 +1,78 @@
+@startuml
+!theme carbon-gray
+title Professionnel Ressource
+
+class "[[StructureDefinition-ror-personne-physique.html RORPersonnePhysique]]" as PP {
+  civilite : Coding [0..1]
+  nomFamille : string [1..1]
+  prenom : string [1..1]
+  metadonnee : RORMetadonnee [1..1]
+}
+
+class "[[StructureDefinition-ror-professionnel.html RORProfessionnel]]" as Pro {
+  idNatPS : Identifier [1..1]
+  metadonnee : RORMetadonnee [1..1]
+}
+
+class "[[StructureDefinition-ror-exercice-professionnel.html RORExerciceProfessionnel]]" as EP {
+  profession : Coding [1..1]
+  civiliteExercice : Coding [0..1]
+  metadonnee : RORMetadonnee [1..1]
+}
+
+abstract class "[[StructureDefinition-ror-savoir-faire.html RORSavoirFaire]]" as SF {
+  typeSavoirFaire : Coding [1..1]
+  metadonnee : RORMetadonnee [1..1]
+}
+
+class "[[StructureDefinition-ror-specialite.html RORSpecialite]]" as Spec {
+  specialite : Coding [1..1]
+}
+class "[[StructureDefinition-ror-competence.html RORCompetence]]" as Comp {
+  competence : Coding [1..1]
+}
+class "[[StructureDefinition-ror-competence-exclusive.html RORCompetenceExclusive]]" as CompExcl {
+  competenceExclusive : Coding [1..1]
+}
+class "[[StructureDefinition-ror-orientation-particuliere.html ROROrientationParticuliere]]" as OrPart {
+  orientationParticuliere : Coding [1..1]
+}
+class "[[StructureDefinition-ror-capacite-savoir-faire.html RORCapacite]]" as Cap {
+  capaciteSavoirFaire : Coding [1..1]
+}
+class "[[StructureDefinition-ror-qualification-pac.html RORQualificationPAC]]" as QPAC {
+  qualificationPAC : Coding [1..1]
+}
+class "[[StructureDefinition-ror-droit-exercice-complementaire.html RORDroitExerciceComplementaire]]" as DEC {
+  droitExerciceComplementaire : Coding [1..1]
+}
+class "[[StructureDefinition-ror-surspecialite-transversale.html RORSurspecialiteTransversale]]" as SST {
+  surspecialiteTransversale : Coding [1..1]
+}
+class "[[StructureDefinition-ror-desc-non-qualifiant.html RORDESCNonQualifiant]]" as DESC {
+  DESCNonQualifiant : Coding [1..1]
+}
+
+class "[[StructureDefinition-ror-situation-operationnelle.html RORSituationOperationnelle]]" as SitOp {
+  modeExerciceOffre : Coding [1..1]
+  competenceSpecifique : Coding [0..*]
+  secteurConventionnement : Coding [0..1]
+  metadonnee : RORMetadonnee [1..1]
+}
+
+PP "1" --> "1" Pro
+Pro "1" --> "0..*" EP
+EP "1" --> "0..*" SF
+SF <|-- Spec
+SF <|-- Comp
+SF <|-- CompExcl
+SF <|-- OrPart
+SF <|-- Cap
+SF <|-- QPAC
+SF <|-- DEC
+SF <|-- SST
+SF <|-- DESC
+
+EP "1" --> "0..*" SitOp : situation dans une offre
+
+@enduml

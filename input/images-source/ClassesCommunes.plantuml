@@ -1,0 +1,27 @@
+@startuml
+!theme carbon-gray
+title Classes Communes
+
+class "[[StructureDefinition-ror-metadonnee.html RORMetadonnee]]" as Meta {
+  dateCreation : dateTime [1..1]
+  dateMiseJour : dateTime [1..1]
+  identifiant : Identifier [0..1]
+  commentaire : string [0..1]
+  regionSource : Coding [0..1]
+  modeleSaisie : Identifier [0..1]
+}
+
+note "Présente dans toutes\nles classes ROR (1..1)" as N1
+Meta .. N1
+
+package "MOS - Classes communes (héritage)" as MOS_CC #LightGray {
+  class "Contact" as Contact #LightGray
+  class "Adresse" as Adresse #LightGray
+  class "BoiteLettreMSS" as MSS #LightGray
+  class "Horaire" as Horaire #LightGray
+  class "Lieu" as Lieu #LightGray
+  class "DivisionTerritoriale" as DT #LightGray
+  class "Telecommunication" as Tel #LightGray
+}
+
+@enduml

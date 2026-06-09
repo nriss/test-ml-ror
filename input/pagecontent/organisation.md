@@ -12,6 +12,12 @@ L'identifiant des organisations internes est généré par les ROR. Lorsqu'il es
 
 ---
 
+#### Diagramme
+
+{% include Organisation.svg %}
+
+---
+
 #### Modèles logiques
 
 | Modèle ROR | Héritage MOS | Description |
@@ -27,21 +33,7 @@ L'identifiant des organisations internes est généré par les ROR. Lorsqu'il es
 
 L'**Organisation Interne** (OI) représente l'organisation opérationnelle au sein d'un établissement : pôles, services, unités fonctionnelles, équipes de soins, etc. Elle est l'entité à laquelle sont rattachées les offres opérationnelles.
 
-Attributs spécifiques ROR :
-
-| Attribut | Card. | Type | Terminologie |
-|---|---|---|---|
-| identifiantOI | 1..1 | Identifier | — |
-| nomOI | 1..1 | string | — |
-| typeOI | 1..1 | Coding | TRE_R207-TypeOrganisationInterne |
-| typeFermeture | 0..1 | Coding | JDV_J185-typeFermeture-ROR |
-| metadonnee | 1..1 | [RORMetadonnee](StructureDefinition-ror-metadonnee.html) | — |
-
----
-
-#### Hiérarchie de l'organisation interne
-
-Dans le ROR, la hiérarchie organisationnelle est la suivante :
+La hiérarchie organisationnelle dans le ROR est la suivante :
 
 ```
 EntiteGeographique
@@ -50,3 +42,26 @@ EntiteGeographique
 ```
 
 Les classes `RORPole`, `RORStructureInterne` et `RORUniteFonctionnelle` sont des spécialisations de `ROROrganisationInterne` héritées du MOS, permettant de typer sémantiquement le niveau hiérarchique.
+
+**Règles de gestion :**
+- `RG_EXP_044` : Lorsqu'une organisation interne est fermée, toutes les offres opérationnelles rattachées sont également fermées avec le même type et la même date de fermeture.
+
+{% include StructureDefinition-ror-organisation-interne-dict.xhtml %}
+
+---
+
+#### RORPole
+
+{% include StructureDefinition-ror-pole-dict.xhtml %}
+
+---
+
+#### RORStructureInterne
+
+{% include StructureDefinition-ror-structure-interne-dict.xhtml %}
+
+---
+
+#### RORUniteFonctionnelle
+
+{% include StructureDefinition-ror-unite-fonctionnelle-dict.xhtml %}

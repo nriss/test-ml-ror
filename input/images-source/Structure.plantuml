@@ -1,0 +1,57 @@
+@startuml
+!theme carbon-gray
+title Structure
+
+package "MOS (héritage)" as MOS_pkg {
+  class "EntiteJuridique" as MOS_EJ #LightGray
+  class "EntiteGeographique" as MOS_EG #LightGray
+}
+
+class "[[StructureDefinition-ror-entite-juridique.html ROREntiteJuridique]]" as EJ {
+  idNatStruct : Identifier [1..1]
+  numFINESS : Identifier [0..1]
+  numSIREN : Identifier [0..1]
+  raisonSociale : string [1..1]
+  complementRaisonSociale : string [0..1]
+  statutJuridique : Coding [1..1]
+  agregatStatutJuridiqueNiv2 : Coding [0..1]
+  adresseEJ : Address [0..1]
+  contact : Contact [0..*]
+  dateCreation : date [0..1]
+  dateFermeture : date [0..1]
+  typeFermeture : Coding [0..1]
+  metadonnee : RORMetadonnee [1..1]
+}
+
+class "[[StructureDefinition-ror-entite-geographique.html ROREntiteGeographique]]" as EG {
+  idNatStruct : Identifier [1..1]
+  numFINESS : Identifier [0..1]
+  raisonSociale : string [1..1]
+  categorieEtablissement : Coding [0..*]
+  modaliteParticipationSPH : Coding [0..1]
+  accessibiliteLieu : Coding [0..*]
+  niveauRecoursORSAN : Coding [0..*]
+  aideFinanciere : Coding [0..*]
+  typeFermeture : Coding [0..1]
+  territoireSante : Identifier [0..1]
+  dateCreation : date [0..1]
+  dateFermeture : date [0..1]
+  metadonnee : RORMetadonnee [1..1]
+}
+
+package "Organisation" as O_pkg {
+  class "[[StructureDefinition-ror-organisation-interne.html ROROrganisationInterne]]" as OI
+}
+
+package "Tarif" as T_pkg {
+  abstract class "[[StructureDefinition-ror-tarif.html RORTarif]]" as Tarif
+}
+
+EJ --|> MOS_EJ
+EG --|> MOS_EG
+
+EJ "1" --> "1..*" EG
+EG "1" --> "0..*" OI
+EG "1" --> "0..*" Tarif
+
+@enduml

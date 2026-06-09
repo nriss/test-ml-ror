@@ -8,7 +8,13 @@ La section **Ressources Opérationnelles** décrit les moyens matériels et capa
 
 #### Donnée pivot
 
-L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette section.
+L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette section. Lorsqu'il est généré par une instance régionale, il est de la forme `code INSEE régional / code interne ROR`.
+
+---
+
+#### Diagramme
+
+{% include RessourcesOperationnelles.svg %}
 
 ---
 
@@ -16,11 +22,19 @@ L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette s
 
 | Modèle ROR | Héritage MOS | Description |
 |---|---|---|
+| [RORLieuRealisationOffre](StructureDefinition-ror-lieu-realisation-offre.html) | LieuRealisationOffre | Lieu où se réalise l'offre opérationnelle |
 | [ROREquipementSpecifique](StructureDefinition-ror-equipement-specifique.html) | EquipementSpecifique | Équipement spécialisé disponible dans la structure |
+| [RORCapacitePriseCharge](StructureDefinition-ror-capacite-prise-charge.html) | CapacitePriseCharge | Capacité de prise en charge par l'offre |
 | [RORCapaciteAccueilOperationnelle](StructureDefinition-ror-capacite-accueil-operationnelle.html) | Base | Capacité d'accueil disponible en temps réel |
 | [RORCapaciteHabitation](StructureDefinition-ror-capacite-habitation.html) | CapaciteHabitation | Capacité d'hébergement de l'établissement |
-| [RORCapacitePriseCharge](StructureDefinition-ror-capacite-prise-charge.html) | CapacitePriseCharge | Capacité de prise en charge par l'offre |
-| [RORLieuRealisationOffre](StructureDefinition-ror-lieu-realisation-offre.html) | LieuRealisationOffre | Lieu où se réalise l'offre opérationnelle |
+
+---
+
+#### RORLieuRealisationOffre
+
+Le **Lieu de Réalisation de l'Offre** indique le lieu précis où se déroule la prestation. Il hérite de la classe MOS `Lieu` (adresse, coordonnées géographiques, etc.) et ajoute les attributs spécifiques au contexte ROR.
+
+{% include StructureDefinition-ror-lieu-realisation-offre-dict.xhtml %}
 
 ---
 
@@ -28,46 +42,7 @@ L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette s
 
 L'**Équipement Spécifique** décrit les équipements matériels et installations spécialisés disponibles dans un établissement, susceptibles d'influencer l'orientation d'un patient.
 
-| Attribut | Card. | Type | Terminologie |
-|---|---|---|---|
-| typeEquipement | 1..1 | Coding | TRE_R212-Equipement |
-| nombreEquipement | 0..1 | integer | — |
-| metadonnee | 1..1 | [RORMetadonnee](StructureDefinition-ror-metadonnee.html) | — |
-
----
-
-#### RORCapaciteAccueilOperationnelle
-
-La **Capacité d'Accueil Opérationnelle** représente les disponibilités de prise en charge en temps réel ou à court terme. Elle permet aux outils d'orientation d'accéder aux disponibilités d'un établissement.
-
-| Attribut | Card. | Type | Terminologie |
-|---|---|---|---|
-| natureCapacite | 1..1 | Coding | TRE_R329-NatureCapacite |
-| nombreCapacite | 0..1 | integer | — |
-| statutCapacite | 1..1 | Coding | TRE_R330-StatutCapacite |
-| dateMAJ | 0..1 | dateTime | — |
-| temporaliteCapacite | 1..1 | Coding | TRE_R331-Temporalite |
-| horaireOuverture | 0..1 | string | — |
-| typeSourceCapacite | 0..1 | Coding | TRE_R335-TypeSource |
-| commentaire | 0..1 | string | — |
-| genreCapaciteDispo | 0..1 | Coding | TRE_R332-GenreCapacite |
-| capaciteJour | 0..1 | integer | — |
-| typeFermetureCapacite | 0..1 | Coding | TRE_R333-TypeFermetureCapacite |
-| typeLitSupplementaire | 0..* | Coding | TRE_R334-TypeLitSupplementaire |
-| typeCrise | 0..* | Coding | TRE_R336-TypeCrise |
-
----
-
-#### RORCapaciteHabitation
-
-La **Capacité Habitation** décrit le nombre de places ou de logements disponibles selon le type d'hébergement.
-
-| Attribut | Card. | Type | Terminologie |
-|---|---|---|---|
-| nombrePlaces | 1..1 | integer | — |
-| typeHabitation | 1..1 | Coding | TRE_R242-TypeHabitation |
-| temporaliteAccueil | 0..1 | Coding | TRE_R240-TemporaliteAccueil |
-| metadonnee | 1..1 | [RORMetadonnee](StructureDefinition-ror-metadonnee.html) | — |
+{% include StructureDefinition-ror-equipement-specifique-dict.xhtml %}
 
 ---
 
@@ -75,8 +50,23 @@ La **Capacité Habitation** décrit le nombre de places ou de logements disponib
 
 La **Capacité de Prise en Charge** décrit les capacités d'accueil en termes de places autorisées ou installées pour une offre donnée.
 
-| Attribut | Card. | Type | Terminologie |
-|---|---|---|---|
-| nombrePlaces | 0..1 | integer | — |
-| affectationTemporaire | 0..1 | Coding | TRE_R337-AffectationTemporaire |
-| metadonnee | 1..1 | [RORMetadonnee](StructureDefinition-ror-metadonnee.html) | — |
+{% include StructureDefinition-ror-capacite-prise-charge-dict.xhtml %}
+
+---
+
+#### RORCapaciteAccueilOperationnelle
+
+La **Capacité d'Accueil Opérationnelle** représente les disponibilités de prise en charge en temps réel ou à court terme. Elle permet aux outils d'orientation d'accéder aux disponibilités d'un établissement.
+
+**Règles de gestion :**
+- `RG_EXP_047` : Lorsque le `statutCapacite` est à « disponible » avec une valeur à 0, cela indique que l'offre est actuellement saturée mais reste ouverte.
+
+{% include StructureDefinition-ror-capacite-accueil-operationnelle-dict.xhtml %}
+
+---
+
+#### RORCapaciteHabitation
+
+La **Capacité Habitation** décrit le nombre de places ou de logements disponibles selon le type d'hébergement.
+
+{% include StructureDefinition-ror-capacite-habitation-dict.xhtml %}

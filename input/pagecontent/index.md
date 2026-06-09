@@ -1,6 +1,6 @@
 <div style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
 <b>IG de démonstration</b><br>
-Cet IG est un exemple illustrant comment des équipes projets (ici : ROR) peuvent définir leurs propres modèles logiques en dérivant des modèles du MOS.
+Cet IG illustre comment définir des modèles logiques ROR en dérivant des modèles du MOS (Modèle des Objets de Santé).
 </div>
 
 {% if site.data.info.releaselabel == 'ci-build' %}
@@ -11,23 +11,58 @@ Cet IG est un exemple illustrant comment des équipes projets (ici : ROR) peuven
 </div>
 {% endif %}
 
-### Contexte et objectif
+### Le Répertoire Opérationnel des Ressources (ROR)
 
-Le [MOS (Modèle des Objets de Santé)](https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/) définit un socle commun de modèles logiques pour représenter les entités du système de santé français : professionnels de santé, structures, offres de soins, etc.
+Le **Répertoire Opérationnel des Ressources (ROR)** est le référentiel national de description de l'offre de santé. Il constitue le gisement de données de référence pour les échanges entre systèmes d'information de santé.
 
-Cet IG de démonstration montre comment une équipe projet — ici l'équipe **ROR (Répertoire de l'Offre de soins et des Ressources)** — peut :
+Ce modèle d'exposition (version 3.0.1) répond aux besoins suivants :
+- **Recherche inter-ROR** en sanitaire et médico-social
+- **Orientation en aval de l'hospitalisation**
+- **Orientation d'une personne âgée** en perte d'autonomie ou en situation de handicap
+- **Orientation en soins non programmés**
 
-1. **Dériver** des modèles logiques existants du MOS pour les spécialiser à son contexte
-2. **Créer** de nouveaux modèles logiques propres au ROR, non couverts par le MOS
-3. **Documenter** les relations entre les objets via un schéma de liaison
+Les données sont modélisées en cohérence avec le [Modèle des Objets de Santé (MOS)](https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/) et les nomenclatures associées (NOS) gérés par l'ANS.
 
-### Modèles logiques définis
+---
 
-| Modèle | Type | Description |
-|---|---|---|
-| `RorOffreOperationnelle` | Dérivé du MOS | Offre de soins opérationnelle, spécialisée pour le ROR |
-| `RorEntiteGeographique` | Dérivé du MOS | Lieu de réalisation de l'offre, avec extensions ROR |
-| `RorOrganisationInterne` | Nouveau | Organisation interne d'une structure (pôle, unité, service) |
+### Description de l'offre de santé
+
+Les acteurs de santé ont convergé sur une vision commune de l'offre de santé autour de quatre composantes :
+
+- L'**organisation opérationnelle** au sein d'une structure,
+- Qui **mobilise des professionnels**,
+- Et dispose d'**équipements spécifiques**,
+- Pour réaliser des **activités opérationnelles**.
+
+Les données de description de l'offre de santé, échangées avec les ROR, sont structurées en **5 sous-ensembles** :
+
+| # | Sous-ensemble | Description | Pages |
+|---|---|---|---|
+| 1 | **Structure** | Entité Juridique et Entité Géographique, auxquelles sont rattachés les tarifs | [Structure](structure.html), [Tarif](tarif.html) |
+| 2 | **Organisation** | Organisation interne d'un établissement (pôles, services, unités fonctionnelles) | [Organisation](organisation.html) |
+| 3 | **Offre Opérationnelle** | Prestations que peut réaliser une structure pour répondre au besoin de santé | [Offre Opérationnelle](offre-operationnelle.html) |
+| 4 | **Ressources Opérationnelles** | Moyens mis en œuvre pour réaliser la prestation | [Ressources Opérationnelles](ressources-operationnelles.html) |
+| 5 | **Professionnel** | Personnes physiques, professionnels, exercice professionnel et savoir-faire | [Professionnel Ressource](professionnel.html) |
+
+{% include VueEnsemble.svg %}
+
+---
+
+### Relation avec le MOS
+
+Ce modèle ROR dérive du MOS. La stratégie appliquée est :
+
+- **Ne pas redéfinir** ce qui existe déjà dans le MOS
+- **Créer des LogicalModels ROR** qui héritent des LogicalModels MOS correspondants
+- **N'ajouter en FSH que les différences** : attributs supplémentaires, contraintes spécifiques au contexte ROR, cardinalités resserrées
+
+Différences notables par rapport au MOS :
+- Les attributs MOS ne répondant pas aux besoins métiers ROR ne sont pas repris.
+- Certaines cardinalités sont contraintes (ex. `idNatStruct 1..1`, `champActivite 1..1`).
+- De nouveaux concepts propres au ROR ont été ajoutés (ex. `RORMetadonnee`, `RORCapaciteAccueilOperationnelle`, hiérarchie `RORTarif`).
+- Les héritages UML sont traduits par des compositions conformément au [Guide UML-XML de l'État](https://references.modernisation.gouv.fr/sites/default/files/RGI-MDC%20Guide%20UML-XML.pdf).
+
+---
 
 ### Dépendances
 

@@ -12,6 +12,12 @@ L'**identifiantOffre** est l'identifiant de l'offre opérationnelle, unique et p
 
 ---
 
+#### Diagramme
+
+{% include OffreOperationnelle.svg %}
+
+---
+
 #### Modèles logiques
 
 | Modèle ROR | Héritage MOS | Description |
@@ -26,30 +32,10 @@ L'**identifiantOffre** est l'identifiant de l'offre opérationnelle, unique et p
 
 L'**Offre Opérationnelle** décrit les prestations que peut réaliser une structure. Elle est rattachée à une Organisation Interne et peut être réalisée par un ou plusieurs professionnels de santé.
 
-Attributs spécifiques ROR :
-
-| Attribut | Card. | Type | Terminologie |
-|---|---|---|---|
-| identifiantOffre | 1..1 | Identifier | — |
-| typeOffre | 0..* | Coding | JDV_J238-TypeOffre-ROR |
-| champActivite | 1..1 | Coding | TRE_R227-ChampActivite |
-| modePriseEnCharge | 1..1 | Coding | TRE_R213-ModePriseEnCharge |
-| uniteSensible | 1..1 | boolean | — |
-| temporaliteAccueil | 0..* | Coding | TRE_R240-TemporaliteAccueil |
-| modaliteAccueil | 0..* | Coding | TRE_R338-ModaliteAccueil |
-| modeGestion | 0..1 | Coding | TRE_R236-ModeGestion |
-| acteSpecifique | 0..* | Coding | TRE_R210-ActeSpecifique |
-| acteRealiseHorsCabinet | 0..* | Coding | TRE_R210-ActeSpecifique |
-| specialisationPriseEnCharge | 0..* | Coding | TRE_R245-SpecialisationDePriseEnCharge |
-| ouvertureAnnuelle | 0..* | Coding | TRE_R238-OuvertureAnnuelle |
-| professionRessource | 0..* | Coding | JDV_J186-ProfessionRessource-ROR |
-| competenceSpecifique | 0..* | Coding | TRE_R243-CompetenceSpecifique |
-| niveauExpertise | 0..* | Coding | JDV_J227-NiveauExpertise-ROR |
-| typeFermeture | 0..1 | Coding | JDV_J185-typeFermeture-ROR |
-| metadonnee | 1..1 | [RORMetadonnee](StructureDefinition-ror-metadonnee.html) | — |
-
 **Règles de gestion :**
 - `RG_EXP_028` : Une offre opérationnelle ne peut pas avoir plusieurs types d'offre relevant de champs d'activité différents.
+
+{% include StructureDefinition-ror-offre-operationnelle-dict.xhtml %}
 
 ---
 
@@ -57,11 +43,7 @@ Attributs spécifiques ROR :
 
 L'**Activité Opérationnelle** caractérise l'activité exercée dans le cadre d'une offre opérationnelle.
 
-| Attribut | Card. | Type | Terminologie |
-|---|---|---|---|
-| activiteOperationnelle | 1..1 | Coding | TRE_R211-ActiviteOperationnelle |
-| familleActiviteOperationnelle | 0..1 | Coding | JDV_J51-FamilleActiviteOperationnelle-ROR |
-| metadonnee | 1..1 | [RORMetadonnee](StructureDefinition-ror-metadonnee.html) | — |
+{% include StructureDefinition-ror-activite-operationnelle-dict.xhtml %}
 
 ---
 
@@ -69,8 +51,4 @@ L'**Activité Opérationnelle** caractérise l'activité exercée dans le cadre 
 
 La **Patientèle** décrit les caractéristiques de la population cible de l'offre opérationnelle.
 
-| Attribut | Card. | Type | Terminologie |
-|---|---|---|---|
-| ageMin | 1..1 | Quantity | — |
-| ageMax | 1..1 | Quantity | — |
-| publicPrisEnCharge | 0..* | Coding | TRE_R239-PublicPrisEnCharge |
+{% include StructureDefinition-ror-patientele-dict.xhtml %}

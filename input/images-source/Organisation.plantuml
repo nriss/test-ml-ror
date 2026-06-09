@@ -1,0 +1,39 @@
+@startuml
+!theme carbon-gray
+title Organisation Interne
+
+abstract class "[[StructureDefinition-ror-organisation-interne.html ROROrganisationInterne]]" as OI {
+  identifiantOI : Identifier [1..1]
+  nomOI : string [1..1]
+  typeOI : Coding [1..1]
+  contact : Contact [0..*]
+  boiteLettreMSS : BoiteLettreMSS [0..*]
+  dateOuverture : date [0..1]
+  dateFermeture : date [0..1]
+  typeFermeture : Coding [0..1]
+  datePrevisionnelleReouverture : date [0..1]
+  metadonnee : RORMetadonnee [1..1]
+}
+
+class "[[StructureDefinition-ror-pole.html RORPole]]" as Pole
+class "[[StructureDefinition-ror-structure-interne.html RORStructureInterne]]" as SI
+class "[[StructureDefinition-ror-unite-fonctionnelle.html RORUniteFonctionnelle]]" as UF
+
+OI <|-- Pole
+OI <|-- SI
+OI <|-- UF
+
+OI "*" --> "*" OI : contient
+
+package "Structure" as S_pkg {
+  class "[[StructureDefinition-ror-entite-geographique.html ROREntiteGeographique]]" as EG
+}
+
+package "Offre Opérationnelle" as Off_pkg {
+  class "[[StructureDefinition-ror-offre-operationnelle.html ROROffreOperationnelle]]" as Offre
+}
+
+OI "*" --> "1..*" EG : rattachée à
+OI "0..1" --> "1..*" Offre : porte
+
+@enduml
