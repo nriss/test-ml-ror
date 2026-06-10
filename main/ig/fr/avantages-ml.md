@@ -39,6 +39,15 @@ Aujourd'hui les `RG_EXP_*` ne vivent que dans un PDF. Dans cet IG, elles sont re
 * Les versionner et les faire évoluer en même temps que le modèle.
 * Les rendre interrogeables par des outils (validateurs, générateurs de tests).
 
+### Des publications versionnées et pérennes
+
+Avec le workflow PDF, chaque version du modèle d'exposition est un document figé, distribué par e-mail ou déposé sur un serveur. Les implémenteurs doivent gérer eux-mêmes quelle version ils ont intégrée. Avec un IG publié sur un serveur canonique :
+
+* Chaque version publiée est **accessible de façon permanente** à une URL stable (ex. `https://interop.esante.gouv.fr/ig/fhir/ror/1.0.0/`) — les liens dans les spécifications ou les contrats ne deviennent jamais obsolètes.
+* Le **package NPM** (`ans.fhir.fr.ror`) peut être déclaré comme dépendance dans les outils de validation : les implémenteurs savent exactement quelle version ils valident contre.
+* Un **historique des versions** est maintenu sur le serveur de publication, permettant de consulter n'importe quelle version antérieure et de comprendre l'évolution du modèle dans le temps.
+* Les **breaking changes** sont identifiables automatiquement entre deux versions via des outils de comparaison FHIR (`fhir-diff`), ce qui facilite la gestion des migrations côté éditeurs.
+
 ### Une collaboration ouverte
 
 Le passage sur GitHub transforme la manière de collaborer autour du modèle d'exposition :

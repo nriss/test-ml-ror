@@ -224,6 +224,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#une-documentation-toujours-synchronisée-avec-le-modèle" id="markdown-toc-une-documentation-toujours-synchronisée-avec-le-modèle">Une documentation toujours synchronisée avec le modèle</a></li>
   <li><a href="#lhéritage-automatique-depuis-le-mos" id="markdown-toc-lhéritage-automatique-depuis-le-mos">L'héritage automatique depuis le MOS</a></li>
   <li><a href="#des-règles-de-gestion-formalisées-comme-artefacts-fhir" id="markdown-toc-des-règles-de-gestion-formalisées-comme-artefacts-fhir">Des règles de gestion formalisées comme artefacts FHIR</a></li>
+  <li><a href="#des-publications-versionnées-et-pérennes" id="markdown-toc-des-publications-versionnées-et-pérennes">Des publications versionnées et pérennes</a></li>
   <li><a href="#une-collaboration-ouverte" id="markdown-toc-une-collaboration-ouverte">Une collaboration ouverte</a></li>
 </ul>
 
@@ -272,6 +273,17 @@ Cette page illustre la valeur ajoutée du Modèle Logique HL7 pour un projet com
   <li>Lier chaque règle au modèle logique qu'elle concerne (<code class="language-plaintext highlighter-rouge">satisfiedBy</code>).</li>
   <li>Les versionner et les faire évoluer en même temps que le modèle.</li>
   <li>Les rendre interrogeables par des outils (validateurs, générateurs de tests).</li>
+</ul>
+
+<h3 id="des-publications-versionnées-et-pérennes">Des publications versionnées et pérennes</h3>
+
+<p>Avec le workflow PDF, chaque version du modèle d'exposition est un document figé, distribué par e-mail ou déposé sur un serveur. Les implémenteurs doivent gérer eux-mêmes quelle version ils ont intégrée. Avec un IG publié sur un serveur canonique :</p>
+
+<ul>
+  <li>Chaque version publiée est <strong>accessible de façon permanente</strong> à une URL stable (ex. <code class="language-plaintext highlighter-rouge">https://interop.esante.gouv.fr/ig/fhir/ror/1.0.0/</code>) — les liens dans les spécifications ou les contrats ne deviennent jamais obsolètes.</li>
+  <li>Le <strong>package NPM</strong> (<code class="language-plaintext highlighter-rouge">ans.fhir.fr.ror</code>) peut être déclaré comme dépendance dans les outils de validation : les implémenteurs savent exactement quelle version ils valident contre.</li>
+  <li>Un <strong>historique des versions</strong> est maintenu sur le serveur de publication, permettant de consulter n'importe quelle version antérieure et de comprendre l'évolution du modèle dans le temps.</li>
+  <li>Les <strong>breaking changes</strong> sont identifiables automatiquement entre deux versions via des outils de comparaison FHIR (<code class="language-plaintext highlighter-rouge">fhir-diff</code>), ce qui facilite la gestion des migrations côté éditeurs.</li>
 </ul>
 
 <h3 id="une-collaboration-ouverte">Une collaboration ouverte</h3>
@@ -333,7 +345,7 @@ Cette page illustre la valeur ajoutée du Modèle Logique HL7 pour un projet com
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-10 10:03:00 +0000">
+  <span title="2026-06-10 10:05:00 +0000">
     2026-06-10
   </span>
 
