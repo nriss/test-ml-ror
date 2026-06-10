@@ -95,9 +95,9 @@
     "oids" : ["1.2.250.1.213.2.24"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-paysNationalite-vs.html" : "PaysnationaliteVs",
     "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-lieuNaissance-vs.html" : "LieunaissanceVs",
-    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-paysNaissance-vs.html" : "PaysnaissanceVs"
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-paysNaissance-vs.html" : "PaysnaissanceVs",
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-paysNationalite-vs.html" : "PaysnationaliteVs"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R202-AccessibiliteLieu/FHIR/TRE-R202-AccessibiliteLieu",
@@ -397,8 +397,8 @@
     "oids" : ["1.2.250.1.213.3.3.61"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J51-FamilleActiviteOperationnelle-ROR.html" : "JDV_J51_FamilleActiviteOperationnelle_ROR",
-    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-familleActiviteOperationnelle-vs.html" : "FamilleactiviteoperationnelleVs"
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-familleActiviteOperationnelle-vs.html" : "FamilleactiviteoperationnelleVs",
+    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J51-FamilleActiviteOperationnelle-ROR.html" : "JDV_J51_FamilleActiviteOperationnelle_ROR"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R267-SexeProvenanceISO/FHIR/TRE-R267-SexeProvenanceISO",
@@ -422,8 +422,8 @@
     "oids" : ["1.2.250.1.213.2.57"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-paysNationalite-vs.html" : "PaysnationaliteVs",
-    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-paysNaissance-vs.html" : "PaysnaissanceVs"
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-paysNaissance-vs.html" : "PaysnaissanceVs",
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-paysNationalite-vs.html" : "PaysnationaliteVs"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R282-CNAMAmeliSecteurConventionnement/FHIR/TRE-R282-CNAMAmeliSecteurConventionnement",

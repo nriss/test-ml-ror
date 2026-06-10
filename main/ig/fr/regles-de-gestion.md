@@ -11,7 +11,7 @@ Les **règles de gestion** (`RG_EXP_*`) définissent les contraintes applicables
 
 -------
 
-#### Structure
+### Structure
 
 [→ Ressource Requirements : Structure](Basic-ror-requirements-structure.md)
 
@@ -33,7 +33,7 @@ Ce Requirements regroupe les règles de gestion applicables aux classes **Entite
 
 -------
 
-#### Organisation
+### Organisation
 
 [→ Ressource Requirements : Organisation](Basic-ror-requirements-organisation.md)
 
@@ -48,7 +48,7 @@ Ce Requirements regroupe les règles de gestion applicables aux classes **Organi
 
 -------
 
-#### Offre Opérationnelle
+### Offre Opérationnelle
 
 [→ Ressource Requirements : Offre Opérationnelle](Basic-ror-requirements-offre-operationnelle.md)
 
@@ -79,7 +79,7 @@ Ce Requirements regroupe les règles de gestion applicables aux classes **OffreO
 
 -------
 
-#### Tarif
+### Tarif
 
 [→ Ressource Requirements : Tarif](Basic-ror-requirements-tarif.md)
 
@@ -94,7 +94,7 @@ Ce Requirements regroupe les règles de gestion applicables aux classes **Tarif*
 
 -------
 
-#### Ressources Opérationnelles
+### Ressources Opérationnelles
 
 [→ Ressource Requirements : Ressources Opérationnelles](Basic-ror-requirements-ressources-operationnelles.md)
 
@@ -106,7 +106,7 @@ Ce Requirements regroupe les règles de gestion applicables aux classes **Capaci
 
 -------
 
-#### Professionnel Ressource
+### Professionnel Ressource
 
 [→ Ressource Requirements : Professionnel Ressource](Basic-ror-requirements-professionnel.md)
 
@@ -120,7 +120,7 @@ Ce Requirements regroupe les règles de gestion applicables aux classes **Profes
 
 -------
 
-#### Classes Communes
+### Classes Communes
 
 [→ Ressource Requirements : Classes Communes](Basic-ror-requirements-classes-communes.md)
 

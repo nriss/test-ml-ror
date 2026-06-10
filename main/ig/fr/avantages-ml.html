@@ -220,56 +220,68 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#pourquoi-passer-de-modelio-au-modèle-logique-hl7-" id="markdown-toc-pourquoi-passer-de-modelio-au-modèle-logique-hl7-">Pourquoi passer de Modelio au Modèle Logique HL7 ?</a></li>
-  <li><a href="#collaboration-ouverte-avec-lécosystème" id="markdown-toc-collaboration-ouverte-avec-lécosystème">Collaboration ouverte avec l'écosystème</a></li>
-  <li><a href="#compétences-et-autonomie-à-lagence" id="markdown-toc-compétences-et-autonomie-à-lagence">Compétences et autonomie à l'agence</a></li>
-  <li><a href="#alignement-international-et-extensibilité" id="markdown-toc-alignement-international-et-extensibilité">Alignement international et extensibilité</a></li>
+  <li><a href="#un-modèle-versionné-et-traçable" id="markdown-toc-un-modèle-versionné-et-traçable">Un modèle versionné et traçable</a></li>
+  <li><a href="#une-documentation-toujours-synchronisée-avec-le-modèle" id="markdown-toc-une-documentation-toujours-synchronisée-avec-le-modèle">Une documentation toujours synchronisée avec le modèle</a></li>
+  <li><a href="#lhéritage-automatique-depuis-le-mos" id="markdown-toc-lhéritage-automatique-depuis-le-mos">L'héritage automatique depuis le MOS</a></li>
+  <li><a href="#des-règles-de-gestion-formalisées-comme-artefacts-fhir" id="markdown-toc-des-règles-de-gestion-formalisées-comme-artefacts-fhir">Des règles de gestion formalisées comme artefacts FHIR</a></li>
+  <li><a href="#une-collaboration-ouverte" id="markdown-toc-une-collaboration-ouverte">Une collaboration ouverte</a></li>
 </ul>
 
 </div>
-<h3 id="pourquoi-passer-de-modelio-au-modèle-logique-hl7-">Pourquoi passer de Modelio au Modèle Logique HL7 ?</h3>
-
-<p>Le MOS était jusqu'à présent publié via le site <a href="https://mos.esante.gouv.fr">mos.esante.gouv.fr</a>, accompagné d'exports Excel et PDF générés depuis Modelio. Ce passage vers un guide d'implémentation en Modèle Logique HL7 (écrit en FSH et hébergé sur GitHub) s'inscrit dans une démarche d'alignement sur les pratiques internationales, tout en ouvrant de nouvelles possibilités pour l'écosystème.</p>
-
-<div style="background-color: #fff9e6; border-left: 4px solid #ff9800; padding: 10px 15px; margin: 15px 0;">
-<b>Ce qui ne change pas</b><br />
-La gouvernance et le processus d'évolution du MOS restent inchangés. Le MOS conserve sa neutralité technologique : le Modèle Logique HL7 n'est pas FHIR. C'est un formalisme de modélisation indépendant de toute implémentation, qui peut servir de socle pour différents standards (FHIR, CDA, HL7 V2/V3, etc.).
+<div style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
+<b>Page à titre informatif — POC uniquement</b><br />
+Cette page illustre la valeur ajoutée du Modèle Logique HL7 pour un projet comme le ROR. Elle ne devra pas figurer dans la publication officielle de l'IG ROR.
 </div>
 
-<h3 id="collaboration-ouverte-avec-lécosystème">Collaboration ouverte avec l'écosystème</h3>
+<p>Le ROR publie son modèle d'exposition depuis des années sous forme de <strong>PDF et d'exports Excel</strong> générés depuis Modelio. Ce POC montre ce que change concrètement le passage à un <strong>Modèle Logique HL7</strong> — pour le projet ROR, pour ses implémenteurs, et pour son écosystème.</p>
 
-<p>L'hébergement sur <strong>GitHub</strong> transforme la manière de collaborer autour du MOS.</p>
+<h3 id="un-modèle-versionné-et-traçable">Un modèle versionné et traçable</h3>
 
-<p>Avec Modelio, les échanges se faisaient hors ligne, par email ou lors de réunions. Avec GitHub :</p>
+<p>Avec Modelio, le modèle d'exposition existe sous forme de fichier binaire dont les évolutions ne sont pas facilement traçables. Avec un IG en FSH hébergé sur GitHub :</p>
 
 <ul>
-  <li>Chaque acteur peut <strong>proposer une modification</strong> via une pull request, <strong>signaler un problème</strong> via une issue, ou <strong>commenter</strong> une proposition en cours — sans attendre une réunion de concertation.</li>
-  <li>L'<strong>historique complet</strong> des évolutions est traçable : qui a proposé quoi, pourquoi, quand, et quelle décision a été prise.</li>
-  <li>Les discussions sont <strong>publiques et indexées</strong>, ce qui facilite la réutilisation des décisions passées et évite de rejouer les mêmes débats.</li>
-  <li>La contribution externe est possible : une première proposition avait d'ailleurs déjà été soumise par un contributeur externe avant même la migration officielle.</li>
+  <li>Chaque modification est <strong>enregistrée avec son auteur, sa date et son contexte</strong> — on sait pourquoi un attribut a changé, pas seulement qu'il a changé.</li>
+  <li>Deux versions peuvent être <strong>comparées ligne à ligne</strong> (<code class="language-plaintext highlighter-rouge">git diff</code>).</li>
+  <li>La <strong>liste des évolutions entre versions</strong> est générée automatiquement depuis l'historique des commits et des pull requests.</li>
 </ul>
 
-<h3 id="compétences-et-autonomie-à-lagence">Compétences et autonomie à l'agence</h3>
+<h3 id="une-documentation-toujours-synchronisée-avec-le-modèle">Une documentation toujours synchronisée avec le modèle</h3>
 
-<p>Travailler en FSH sur un dépôt Git place le MOS dans le même outillage que tous les autres IGs de l'ANS. Concrètement, cela signifie que :</p>
+<p>Dans le workflow Modelio→PDF, la documentation peut diverger du modèle réel : un attribut renommé dans le fichier source n'est pas forcément mis à jour dans tous les documents narratifs. Dans un IG :</p>
 
 <ul>
-  <li>Les équipes de l'ANS peuvent <strong>modifier, valider et publier le MOS</strong> avec les mêmes outils et les mêmes compétences que pour n'importe quel autre guide d'implémentation.</li>
-  <li>La <strong>validation structurelle est automatique</strong> à chaque modification : les erreurs sont détectées avant la publication, pas après.</li>
-  <li>Les <strong>diagrammes sont générés automatiquement</strong> à partir du modèle source — ils sont toujours synchronisés avec le contenu réel, sans export manuel.</li>
-  <li>L'<strong>intégration continue</strong> permet une preview instantanée de chaque branche, ce qui facilite la revue des contributions avant merge.</li>
+  <li>Les <strong>tableaux d'attributs</strong> sont générés automatiquement depuis les définitions FSH — ils ne peuvent pas diverger.</li>
+  <li>Les <strong>diagrammes</strong> sont regénérés à chaque build depuis les sources PlantUML.</li>
+  <li>Une <strong>preview CI</strong> est disponible à chaque branche, permettant de relire avant toute publication.</li>
 </ul>
 
-<h3 id="alignement-international-et-extensibilité">Alignement international et extensibilité</h3>
+<h3 id="lhéritage-automatique-depuis-le-mos">L'héritage automatique depuis le MOS</h3>
 
-<p>De nombreux pays et organisations utilisent déjà les Modèles Logiques HL7 pour leurs modélisations nationales : le projet européen XT-EHR, la Belgique, la Suisse (CH-ELM), l'OMS (Smart Guidelines). Ce passage aligne la France sur ces pratiques.</p>
-
-<p>Le format ouvre également de nouvelles possibilités techniques :</p>
+<p>Le ROR dérive ses classes du MOS (Modèle des Objets de Santé). Avec le Modèle Logique HL7 :</p>
 
 <ul>
-  <li>Les projets peuvent <strong>hériter des Modèles Logiques du MOS</strong> (qui lui même peut dériver des objets européens) pour y ajouter leurs propres spécificités, en garantissant la cohérence avec le référentiel national (voir la <a href="fonctionnalites-ror.html">page des fonctionnalités disponibles</a>).</li>
-  <li>Les nomenclatures nationales (TRE du SMT) sont <strong>référencées directement</strong> dans le modèle via leurs packages FHIR, sans gestion manuelle.</li>
-  <li>Le format permet d'exploiter les datatypes FHIR et l'héritage depuis des modèles européens.</li>
+  <li>Quand le MOS fait évoluer <code class="language-plaintext highlighter-rouge">EntiteGeographique</code>, toutes les classes ROR qui en héritent (<code class="language-plaintext highlighter-rouge">ROREntiteGeographique</code>) <strong>bénéficient automatiquement</strong> de ces évolutions à la prochaine mise à jour de la dépendance — sans retravail manuel.</li>
+  <li>Le ROR n'expose dans son IG que ce qu'il <strong>ajoute ou restreint</strong> par rapport au MOS, ce qui réduit la surface de maintenance.</li>
+</ul>
+
+<h3 id="des-règles-de-gestion-formalisées-comme-artefacts-fhir">Des règles de gestion formalisées comme artefacts FHIR</h3>
+
+<p>Aujourd'hui les <code class="language-plaintext highlighter-rouge">RG_EXP_*</code> ne vivent que dans un PDF. Dans cet IG, elles sont représentées en tant que ressources FHIR <code class="language-plaintext highlighter-rouge">Requirements</code>, ce qui permet de :</p>
+
+<ul>
+  <li>Lier chaque règle au modèle logique qu'elle concerne (<code class="language-plaintext highlighter-rouge">satisfiedBy</code>).</li>
+  <li>Les versionner et les faire évoluer en même temps que le modèle.</li>
+  <li>Les rendre interrogeables par des outils (validateurs, générateurs de tests).</li>
+</ul>
+
+<h3 id="une-collaboration-ouverte">Une collaboration ouverte</h3>
+
+<p>Le passage sur GitHub transforme la manière de collaborer autour du modèle d'exposition :</p>
+
+<ul>
+  <li>Les acteurs de l'écosystème (éditeurs, régions, ANS) peuvent <strong>proposer des modifications</strong> via pull request ou <strong>signaler des incohérences</strong> via issue — sans attendre une réunion de concertation.</li>
+  <li>Les discussions sont <strong>publiques et indexées</strong>, ce qui évite de rejouer les mêmes débats à chaque mise à jour.</li>
+  <li>La <strong>validation structurelle est automatique</strong> : une erreur de modélisation est détectée avant la publication, pas après.</li>
 </ul>
 
 
@@ -321,8 +333,8 @@ La gouvernance et le processus d'évolution du MOS restent inchangés. Le MOS co
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-09 19:07:00 +0000">
-    2026-06-09
+  <span title="2026-06-10 09:59:00 +0000">
+    2026-06-10
   </span>
 
           <br/>

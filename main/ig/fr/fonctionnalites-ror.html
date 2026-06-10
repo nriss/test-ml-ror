@@ -220,7 +220,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#ce-que-le-modèle-logique-permet-pour-le-ror" id="markdown-toc-ce-que-le-modèle-logique-permet-pour-le-ror">Ce que le Modèle Logique permet pour le ROR</a></li>
   <li><a href="#dériver-depuis-un-objet-mos" id="markdown-toc-dériver-depuis-un-objet-mos">Dériver depuis un objet MOS</a></li>
   <li><a href="#créer-un-nouvel-objet" id="markdown-toc-créer-un-nouvel-objet">Créer un nouvel objet</a></li>
   <li><a href="#restreindre-un-jeu-de-valeurs" id="markdown-toc-restreindre-un-jeu-de-valeurs">Restreindre un jeu de valeurs</a></li>
@@ -228,8 +227,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<h3 id="ce-que-le-modèle-logique-permet-pour-le-ror">Ce que le Modèle Logique permet pour le ROR</h3>
-
 <p>Le passage du MOS en Modèle Logique HL7 ouvre quatre capacités concrètes pour une équipe projet comme le ROR. Chacune est illustrée par un exemple dans cet IG.</p>
 
 <h3 id="dériver-depuis-un-objet-mos">Dériver depuis un objet MOS</h3>
@@ -242,7 +239,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>hériter automatiquement</strong> de toutes les évolutions du MOS : si un objet MOS évolue, les objets ROR dérivés bénéficient de ces évolutions sans modification manuelle</li>
 </ul>
 
-<p><em>Exemples dans cet IG :</em> <code class="language-plaintext highlighter-rouge">RorOffreOperationnelle</code> (dérive de <code class="language-plaintext highlighter-rouge">OffreOperationnelle</code>) et <code class="language-plaintext highlighter-rouge">RorEntiteGeographique</code> (dérive de <code class="language-plaintext highlighter-rouge">EntiteGeographique</code>).</p>
+<p><em>Exemples dans cet IG :</em> <code class="language-plaintext highlighter-rouge">ROROffreOperationnelle</code> (dérive de <code class="language-plaintext highlighter-rouge">OffreOperationnelle</code>) et <code class="language-plaintext highlighter-rouge">ROREntiteGeographique</code> (dérive de <code class="language-plaintext highlighter-rouge">EntiteGeographique</code>).</p>
 
 <h3 id="créer-un-nouvel-objet">Créer un nouvel objet</h3>
 
@@ -254,7 +251,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>être proposé ultérieurement au MOS s'il s'avère pertinent pour d'autres projets</li>
 </ul>
 
-<p><em>Exemple dans cet IG :</em> <code class="language-plaintext highlighter-rouge">RorOrganisationInterne</code> (pôle, service, unité fonctionnelle) — concept propre au ROR, absent du MOS national.</p>
+<p><em>Exemple dans cet IG :</em> <code class="language-plaintext highlighter-rouge">ROROrganisationInterne</code> (pôle, service, unité fonctionnelle) — concept propre au ROR, absent du MOS national.</p>
 
 <h3 id="restreindre-un-jeu-de-valeurs">Restreindre un jeu de valeurs</h3>
 
@@ -328,8 +325,8 @@ Ces quatre mécanismes sont implémentés en FSH (FHIR Shorthand). Les fichiers 
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-09 19:07:00 +0000">
-    2026-06-09
+  <span title="2026-06-10 09:59:00 +0000">
+    2026-06-10
   </span>
 
           <br/>
