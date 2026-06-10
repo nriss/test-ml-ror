@@ -5,13 +5,13 @@ Cette section est transversale : elle décrit les prestations de soins qu'une st
 
 La section **Offre Opérationnelle** décrit les prestations qu'une structure peut réaliser pour répondre au besoin de santé d'une personne. C'est le cœur fonctionnel du ROR : l'offre opérationnelle permet d'orienter les patients vers les établissements adaptés à leurs besoins.
 
-#### Donnée pivot
+### Donnée pivot
 
 L'**identifiantOffre** est l'identifiant de l'offre opérationnelle, unique et persistant au niveau national, généré par une instance régionale du ROR ou par le ROR national. Lorsqu'il est généré par une instance régionale, il est de la forme `code INSEE régional / code interne ROR`.
 
 ---
 
-#### Diagramme
+### Diagramme
 
 {% include svg-interactive-styles.html %}
 
@@ -31,7 +31,7 @@ L'**identifiantOffre** est l'identifiant de l'offre opérationnelle, unique et p
 
 ---
 
-#### Modèles logiques
+### Modèles logiques
 
 | Modèle ROR | Héritage MOS | Description |
 |---|---|---|
@@ -41,7 +41,7 @@ L'**identifiantOffre** est l'identifiant de l'offre opérationnelle, unique et p
 
 ---
 
-#### ROROffreOperationnelle
+### ROROffreOperationnelle
 
 L'**Offre Opérationnelle** décrit les prestations que peut réaliser une structure. Elle est rattachée à une Organisation Interne et peut être réalisée par un ou plusieurs professionnels de santé.
 
@@ -69,7 +69,7 @@ L'**Offre Opérationnelle** décrit les prestations que peut réaliser une struc
 
 ---
 
-#### RORActiviteOperationnelle
+### RORActiviteOperationnelle
 
 L'**Activité Opérationnelle** caractérise l'activité exercée dans le cadre d'une offre opérationnelle.
 
@@ -80,7 +80,7 @@ L'**Activité Opérationnelle** caractérise l'activité exercée dans le cadre 
 
 ---
 
-#### RORPatientele
+### RORPatientele
 
 La **Patientèle** décrit les caractéristiques de la population cible de l'offre opérationnelle.
 

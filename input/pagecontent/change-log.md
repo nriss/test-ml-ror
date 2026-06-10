@@ -1,6 +1,6 @@
 ### Historique des versions
 
-#### version 0.1.0 (ci-build)
+### version 0.1.0 (ci-build)
 
 Première version de l'IG de démonstration ROR.
 

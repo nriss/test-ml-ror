@@ -5,7 +5,7 @@ Cette section est transversale : elle décrit les professionnels de santé parti
 
 La section **Professionnel Ressource** décrit les professionnels de santé qui réalisent les prestations dans le cadre d'une offre opérationnelle. La situation opérationnelle d'un professionnel est rattachée aux offres opérationnelles : le professionnel réalise une prestation dans un lieu de réalisation.
 
-#### Donnée pivot
+### Donnée pivot
 
 L'**idNat_PS** (numéro RPPS ou ADELI) est l'identifiant national du professionnel dans le cadre de l'interopérabilité.
 
@@ -15,7 +15,7 @@ L'**idNat_PS** (numéro RPPS ou ADELI) est l'identifiant national du professionn
 
 ---
 
-#### Diagramme
+### Diagramme
 
 {% include svg-interactive-styles.html %}
 
@@ -35,7 +35,7 @@ L'**idNat_PS** (numéro RPPS ou ADELI) est l'identifiant national du professionn
 
 ---
 
-#### Modèles logiques
+### Modèles logiques
 
 | Modèle ROR | Héritage MOS | Description |
 |---|---|---|
@@ -56,7 +56,7 @@ L'**idNat_PS** (numéro RPPS ou ADELI) est l'identifiant national du professionn
 
 ---
 
-#### RORPersonnePhysique
+### RORPersonnePhysique
 
 La **Personne Physique** porte les données d'identité du professionnel.
 
@@ -64,7 +64,7 @@ La **Personne Physique** porte les données d'identité du professionnel.
 
 ---
 
-#### RORProfessionnel
+### RORProfessionnel
 
 Le **Professionnel** représente le professionnel enregistré dans le RPPS ou ADELI.
 
@@ -72,7 +72,7 @@ Le **Professionnel** représente le professionnel enregistré dans le RPPS ou AD
 
 ---
 
-#### RORExerciceProfessionnel
+### RORExerciceProfessionnel
 
 L'**Exercice Professionnel** caractérise l'exercice d'une profession par un professionnel.
 
@@ -80,7 +80,7 @@ L'**Exercice Professionnel** caractérise l'exercice d'une profession par un pro
 
 ---
 
-#### RORSavoirFaire
+### RORSavoirFaire
 
 Le **Savoir-Faire** est une classe abstraite décrivant la spécialité ou la compétence principale du professionnel. Elle est spécialisée en 9 sous-classes.
 
@@ -88,7 +88,7 @@ Le **Savoir-Faire** est une classe abstraite décrivant la spécialité ou la co
 
 ---
 
-#### Sous-classes de RORSavoirFaire
+### Sous-classes de RORSavoirFaire
 
 {% include StructureDefinition-ror-specialite-class-table.xhtml %}
 
@@ -110,7 +110,7 @@ Le **Savoir-Faire** est une classe abstraite décrivant la spécialité ou la co
 
 ---
 
-#### RORSituationOperationnelle
+### RORSituationOperationnelle
 
 La **Situation Opérationnelle** caractérise les conditions d'exercice du professionnel dans le cadre d'une offre opérationnelle précise.
 

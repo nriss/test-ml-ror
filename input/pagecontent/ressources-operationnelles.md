@@ -5,13 +5,13 @@ Cette section est transversale : elle décrit les moyens mis en œuvre pour réa
 
 La section **Ressources Opérationnelles** décrit les moyens matériels et capacitaires qui peuvent être mis en œuvre pour réaliser une offre opérationnelle. Elle comprend les équipements spécifiques, les capacités d'accueil et le lieu de réalisation de l'offre.
 
-#### Donnée pivot
+### Donnée pivot
 
 L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette section. Lorsqu'il est généré par une instance régionale, il est de la forme `code INSEE régional / code interne ROR`.
 
 ---
 
-#### Diagramme
+### Diagramme
 
 {% include svg-interactive-styles.html %}
 
@@ -31,7 +31,7 @@ L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette s
 
 ---
 
-#### Modèles logiques
+### Modèles logiques
 
 | Modèle ROR | Héritage MOS | Description |
 |---|---|---|
@@ -43,7 +43,7 @@ L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette s
 
 ---
 
-#### RORLieuRealisationOffre
+### RORLieuRealisationOffre
 
 Le **Lieu de Réalisation de l'Offre** indique le lieu précis où se déroule la prestation. Il hérite de la classe MOS `Lieu` (adresse, coordonnées géographiques, etc.) et ajoute les attributs spécifiques au contexte ROR.
 
@@ -51,7 +51,7 @@ Le **Lieu de Réalisation de l'Offre** indique le lieu précis où se déroule l
 
 ---
 
-#### ROREquipementSpecifique
+### ROREquipementSpecifique
 
 L'**Équipement Spécifique** décrit les équipements matériels et installations spécialisés disponibles dans un établissement, susceptibles d'influencer l'orientation d'un patient.
 
@@ -59,7 +59,7 @@ L'**Équipement Spécifique** décrit les équipements matériels et installatio
 
 ---
 
-#### RORCapacitePriseCharge
+### RORCapacitePriseCharge
 
 La **Capacité de Prise en Charge** décrit les capacités d'accueil en termes de places autorisées ou installées pour une offre donnée.
 
@@ -67,7 +67,7 @@ La **Capacité de Prise en Charge** décrit les capacités d'accueil en termes d
 
 ---
 
-#### RORCapaciteAccueilOperationnelle
+### RORCapaciteAccueilOperationnelle
 
 La **Capacité d'Accueil Opérationnelle** représente les disponibilités de prise en charge en temps réel ou à court terme. Elle permet aux outils d'orientation d'accéder aux disponibilités d'un établissement.
 
@@ -78,7 +78,7 @@ La **Capacité d'Accueil Opérationnelle** représente les disponibilités de pr
 
 ---
 
-#### RORCapaciteHabitation
+### RORCapaciteHabitation
 
 La **Capacité Habitation** décrit le nombre de places ou de logements disponibles selon le type d'hébergement.
 

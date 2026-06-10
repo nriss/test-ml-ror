@@ -5,13 +5,13 @@ Cette section est transversale : elle décrit l'organisation interne des établi
 
 La section **Organisation** décrit l'organisation interne d'un établissement. Elle permet de représenter les pôles, services, unités fonctionnelles et autres organisations internes qui structurent les établissements de santé.
 
-#### Donnée pivot
+### Donnée pivot
 
 L'identifiant des organisations internes est généré par les ROR. Lorsqu'il est généré par une instance régionale, il est de la forme `code INSEE régional / code interne ROR`. Cet identifiant est unique et pérenne pour toute la France.
 
 ---
 
-#### Diagramme
+### Diagramme
 
 {% include svg-interactive-styles.html %}
 
@@ -31,7 +31,7 @@ L'identifiant des organisations internes est généré par les ROR. Lorsqu'il es
 
 ---
 
-#### Modèles logiques
+### Modèles logiques
 
 | Modèle ROR | Héritage MOS | Description |
 |---|---|---|
@@ -42,7 +42,7 @@ L'identifiant des organisations internes est généré par les ROR. Lorsqu'il es
 
 ---
 
-#### ROROrganisationInterne
+### ROROrganisationInterne
 
 L'**Organisation Interne** (OI) représente l'organisation opérationnelle au sein d'un établissement : pôles, services, unités fonctionnelles, équipes de soins, etc. Elle est l'entité à laquelle sont rattachées les offres opérationnelles.
 
@@ -66,18 +66,18 @@ Les classes `RORPole`, `RORStructureInterne` et `RORUniteFonctionnelle` sont des
 
 ---
 
-#### RORPole
+### RORPole
 
 {% include StructureDefinition-ror-pole-class-table.xhtml %}
 
 ---
 
-#### RORStructureInterne
+### RORStructureInterne
 
 {% include StructureDefinition-ror-structure-interne-class-table.xhtml %}
 
 ---
 
-#### RORUniteFonctionnelle
+### RORUniteFonctionnelle
 
 {% include StructureDefinition-ror-unite-fonctionnelle-class-table.xhtml %}
