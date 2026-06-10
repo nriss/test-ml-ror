@@ -6,7 +6,6 @@
 * [Historique des versions](change-log.md)
 * [Pourquoi le Modèle Logique HL7 ?](avantages-ml.md)
 * [Organisation](organisation.md)
-* [Fonctionnalités disponibles pour le ROR](fonctionnalites-ror.md)
 * [Structure](structure.md)
 * [Classes Communes](classes-communes.md)
 * [Offre Opérationnelle](offre-operationnelle.md)

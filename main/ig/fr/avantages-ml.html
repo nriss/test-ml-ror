@@ -104,18 +104,8 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Contexte
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="avantages-ml.html">Pourquoi le Modèle Logique HL7 ?</a>
-      </li>
-      <li>
-        <a href="fonctionnalites-ror.html">Fonctionnalités pour le ROR</a>
-      </li>
-    </ul>
+  <li>
+    <a href="avantages-ml.html">Contexte</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modèle d&apos;exposition
@@ -180,7 +170,7 @@
 
             <a href="#bottom">bas de page</a>
 
-          | <a href="fonctionnalites-ror.html">suivant &gt;</a>
+          | <a href="classes-communes.html">suivant &gt;</a>
 
           </span>
 
@@ -226,6 +216,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#des-règles-de-gestion-formalisées-comme-artefacts-fhir" id="markdown-toc-des-règles-de-gestion-formalisées-comme-artefacts-fhir">Des règles de gestion formalisées comme artefacts FHIR</a></li>
   <li><a href="#des-publications-versionnées-et-pérennes" id="markdown-toc-des-publications-versionnées-et-pérennes">Des publications versionnées et pérennes</a></li>
   <li><a href="#une-collaboration-ouverte" id="markdown-toc-une-collaboration-ouverte">Une collaboration ouverte</a></li>
+  <li><a href="#ce-que-le-modèle-logique-permet-concrètement" id="markdown-toc-ce-que-le-modèle-logique-permet-concrètement">Ce que le Modèle Logique permet concrètement</a></li>
 </ul>
 
 </div>
@@ -280,8 +271,7 @@ Cette page illustre la valeur ajoutée du Modèle Logique HL7 pour un projet com
 <p>Avec le workflow PDF, chaque version du modèle d'exposition est un document figé, distribué par e-mail ou déposé sur un serveur. Les implémenteurs doivent gérer eux-mêmes quelle version ils ont intégrée. Avec un IG publié sur un serveur canonique :</p>
 
 <ul>
-  <li>Chaque version publiée est <strong>accessible de façon permanente</strong> à une URL stable (ex. <code class="language-plaintext highlighter-rouge">https://interop.esante.gouv.fr/ig/fhir/ror/1.0.0/</code>) — les liens dans les spécifications ou les contrats ne deviennent jamais obsolètes.</li>
-  <li>Le <strong>package NPM</strong> (<code class="language-plaintext highlighter-rouge">ans.fhir.fr.ror</code>) peut être déclaré comme dépendance dans les outils de validation : les implémenteurs savent exactement quelle version ils valident contre.</li>
+  <li>Chaque version publiée est <strong>accessible de façon permanente</strong> à une URL stable (ex. <code class="language-plaintext highlighter-rouge">https://interop.esante.gouv.fr/ig/fhir/ror-modelexpo/1.0.0/</code>) — les liens dans les spécifications ou les contrats ne deviennent jamais obsolètes.</li>
   <li>Un <strong>historique des versions</strong> est maintenu sur le serveur de publication, permettant de consulter n'importe quelle version antérieure et de comprendre l'évolution du modèle dans le temps.</li>
   <li>Les <strong>breaking changes</strong> sont identifiables automatiquement entre deux versions via des outils de comparaison FHIR (<code class="language-plaintext highlighter-rouge">fhir-diff</code>), ce qui facilite la gestion des migrations côté éditeurs.</li>
 </ul>
@@ -295,6 +285,59 @@ Cette page illustre la valeur ajoutée du Modèle Logique HL7 pour un projet com
   <li>Les discussions sont <strong>publiques et indexées</strong>, ce qui évite de rejouer les mêmes débats à chaque mise à jour.</li>
   <li>La <strong>validation structurelle est automatique</strong> : une erreur de modélisation est détectée avant la publication, pas après.</li>
 </ul>
+
+<hr />
+
+<h3 id="ce-que-le-modèle-logique-permet-concrètement">Ce que le Modèle Logique permet concrètement</h3>
+
+<p>Le passage au Modèle Logique HL7 ouvre quatre capacités concrètes pour une équipe projet comme le ROR. Chacune est illustrée par un exemple dans cet IG.</p>
+
+<h4 id="dériver-depuis-un-objet-mos">Dériver depuis un objet MOS</h4>
+
+<p>Un projet peut <strong>partir d'un objet MOS existant</strong> et le spécialiser pour son contexte, sans tout réécrire. La dérivation permet de :</p>
+
+<ul>
+  <li><strong>renforcer des contraintes</strong> : rendre obligatoire un champ qui était optionnel dans le MOS (par exemple, <code class="language-plaintext highlighter-rouge">identifiantEG</code> devient <code class="language-plaintext highlighter-rouge">1..1</code> dans le ROR alors qu'il pouvait être absent dans le modèle national)</li>
+  <li><strong>ajouter des éléments supplémentaires</strong> : des champs propres au projet sont ajoutés au-dessus du socle MOS (coordonnées GPS, accessibilité PMR, etc.)</li>
+  <li><strong>hériter automatiquement</strong> de toutes les évolutions du MOS : si un objet MOS évolue, les objets ROR dérivés bénéficient de ces évolutions sans modification manuelle</li>
+</ul>
+
+<p><em>Exemples dans cet IG :</em> <code class="language-plaintext highlighter-rouge">ROROffreOperationnelle</code> (dérive de <code class="language-plaintext highlighter-rouge">OffreOperationnelle</code>) et <code class="language-plaintext highlighter-rouge">ROREntiteGeographique</code> (dérive de <code class="language-plaintext highlighter-rouge">EntiteGeographique</code>).</p>
+
+<h4 id="créer-un-nouvel-objet">Créer un nouvel objet</h4>
+
+<p>Quand le MOS ne couvre pas un concept métier, un projet peut <strong>définir un Modèle Logique entièrement nouveau</strong>. Ce nouvel objet peut :</p>
+
+<ul>
+  <li>référencer d'autres objets MOS ou objets projet via des types <code class="language-plaintext highlighter-rouge">Reference</code></li>
+  <li>être documenté et publié avec le même outillage que les objets dérivés</li>
+  <li>être proposé ultérieurement au MOS s'il s'avère pertinent pour d'autres projets</li>
+</ul>
+
+<p><em>Exemple dans cet IG :</em> <code class="language-plaintext highlighter-rouge">ROROrganisationInterne</code> (pôle, service, unité fonctionnelle) — concept propre au ROR, absent du MOS national.</p>
+
+<h4 id="restreindre-un-jeu-de-valeurs">Restreindre un jeu de valeurs</h4>
+
+<p>Le MOS référence des terminologies nationales larges (TRE du SMT). Un projet peut créer un <strong>ValueSet restreint</strong> qui ne retient que les codes pertinents pour son périmètre, et le lier à un champ avec une force de binding <code class="language-plaintext highlighter-rouge">required</code>.</p>
+
+<p>Cela garantit que les implémenteurs n'utilisent que les codes effectivement traités par le système, sans ambiguïté.</p>
+
+<p><em>Exemple dans cet IG :</em> <code class="language-plaintext highlighter-rouge">VS_RorSecteurActivite</code> restreint <code class="language-plaintext highlighter-rouge">TRE_R02-SecteurActivite</code> aux seuls secteurs couverts par le ROR (établissements de santé publics, ESPIC, privés lucratifs, LBM, ESMS, maisons de santé) — en excluant par exemple les transports sanitaires ou la médecine du travail.</p>
+
+<h4 id="modifier-les-cardinalités">Modifier les cardinalités</h4>
+
+<p>Un projet peut <strong>resserrer les cardinalités</strong> définies dans le MOS pour exprimer ses propres exigences de complétude. Un champ <code class="language-plaintext highlighter-rouge">0..1</code> dans le MOS peut devenir <code class="language-plaintext highlighter-rouge">1..1</code> dans le modèle ROR pour indiquer qu'il est obligatoire dans ce contexte.</p>
+
+<p>À l'inverse, un champ <code class="language-plaintext highlighter-rouge">0..1</code> peut rester <code class="language-plaintext highlighter-rouge">0..1</code> si le ROR ne l'utilise pas — il n'est pas nécessaire de tous les reprendre.</p>
+
+<p><em>Exemples dans cet IG :</em> <code class="language-plaintext highlighter-rouge">identifiantOffre</code>, <code class="language-plaintext highlighter-rouge">nomOffre</code>, <code class="language-plaintext highlighter-rouge">typeOffre</code> et <code class="language-plaintext highlighter-rouge">modePriseEnCharge</code> sont rendus obligatoires (<code class="language-plaintext highlighter-rouge">1..1</code> ou <code class="language-plaintext highlighter-rouge">1..*</code>) dans <code class="language-plaintext highlighter-rouge">ROROffreOperationnelle</code>.</p>
+
+<hr />
+
+<div style="background-color: #f0f0f0; border-left: 4px solid #666; padding: 10px 15px; margin: 15px 0;">
+<b>Note pour les développeurs</b><br />
+Ces mécanismes sont implémentés en FSH (FHIR Shorthand). Les fichiers sources sont dans <code>input/fsh/Logicals/</code> et <code>input/fsh/ValueSets/</code>. Le build est automatique via GitHub Actions à chaque push.
+</div>
 
 
 
@@ -329,7 +372,7 @@ Cette page illustre la valeur ajoutée du Modèle Logique HL7 pour un projet com
               </td>
               <td style="text-align:var(--ig-right);">&#xA0;
 
-                <a href="fonctionnalites-ror.html">suivant ></a>
+                <a href="classes-communes.html">suivant ></a>
 
               </td>
             </tr>
@@ -345,7 +388,7 @@ Cette page illustre la valeur ajoutée du Modèle Logique HL7 pour un projet com
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-10 10:05:00 +0000">
+  <span title="2026-06-10 10:08:00 +0000">
     2026-06-10
   </span>
 

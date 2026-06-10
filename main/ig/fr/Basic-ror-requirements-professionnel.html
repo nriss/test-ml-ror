@@ -44,8 +44,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"13.4"}
-    h3,h4,h5,h6{--heading-prefix:"13.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"12.4"}
+    h3,h4,h5,h6{--heading-prefix:"12.4"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -102,18 +102,8 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Contexte
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="avantages-ml.html">Pourquoi le Modèle Logique HL7 ?</a>
-      </li>
-      <li>
-        <a href="fonctionnalites-ror.html">Fonctionnalités pour le ROR</a>
-      </li>
-    </ul>
+  <li>
+    <a href="avantages-ml.html">Contexte</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modèle d'exposition
@@ -257,7 +247,7 @@
 
 
 
-  <div><a name="ror-requirements-professionnel"> </a><a name="hcror-requirements-professionnel"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"></p><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-profile-Requirements.html">Cross-version Profile for R5.Requirements for use in FHIR R4</a></p></div><p><a name="l404">​</a><b>R5: Canonical identifier for this Requirements, represented as a URI (globally unique) (new)</b>: <a href="https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/professionnel">https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/professionnel</a></p><p><b>R5: Name for this Requirements (computer friendly) (new)</b>: RORRequirementsProfessionnel</p><p><b>R5: Name for this Requirements (human friendly) (new)</b>: Règles de gestion - Professionnel Ressource</p><p><b>R5: Natural language description of the requirements (new)</b>: </p><div><p>Règles de gestion du modèle d'exposition ROR relatives aux classes Professionnel Ressource.</p>
+  <div><a name="ror-requirements-professionnel"> </a><a name="hcror-requirements-professionnel"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"></p><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-profile-Requirements.html">Cross-version Profile for R5.Requirements for use in FHIR R4</a></p></div><p><a name="l387">​</a><b>R5: Canonical identifier for this Requirements, represented as a URI (globally unique) (new)</b>: <a href="https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/professionnel">https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/professionnel</a></p><p><b>R5: Name for this Requirements (computer friendly) (new)</b>: RORRequirementsProfessionnel</p><p><b>R5: Name for this Requirements (human friendly) (new)</b>: Règles de gestion - Professionnel Ressource</p><p><b>R5: Natural language description of the requirements (new)</b>: </p><div><p>Règles de gestion du modèle d'exposition ROR relatives aux classes Professionnel Ressource.</p>
 </div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-030</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href="StructureDefinition-ror-professionnel.html">ROR - Professionnel</a></li></ul></blockquote><div><p><strong>RG_EXP_030</strong> : En cas de coexistence d'un identifiant RPPS et ADELI pour un même professionnel, l'identifiant RPPS est prioritaire.</p>
 </div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-031</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href="StructureDefinition-ror-professionnel.html">ROR - Professionnel</a></li></ul></blockquote><div><p><strong>RG_EXP_031</strong> : Les données issues du RPPS (profession, civilité d'exercice, etc.) ne sont pas modifiables dans le ROR.</p>
 </div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-049</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href="StructureDefinition-ror-situation-operationnelle.html">ROR - Situation Opérationnelle</a></li></ul></blockquote><div><p><strong>RG_EXP_049</strong> : Uniquement les valeurs de <code>Horaire/typeHoraire</code> suivantes sont applicables pour les professionnels : <code>03</code> (Horaire de garde), <code>06</code> (Horaire de consultation sans RDV), <code>07</code> (Horaire de consultation sur RDV).</p>
@@ -316,7 +306,7 @@
           IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-10 10:05:00 +0000">
+  <span title="2026-06-10 10:08:00 +0000">
     2026-06-10
   </span>
 
