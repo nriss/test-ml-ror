@@ -218,8 +218,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#donnée-pivot" id="markdown-toc-donnée-pivot">Donnée pivot</a></li>
+  <li><a href="#diagramme" id="markdown-toc-diagramme">Diagramme</a></li>
+  <li><a href="#modèles-logiques" id="markdown-toc-modèles-logiques">Modèles logiques</a></li>
+  <li><a href="#rorpersonnephysique" id="markdown-toc-rorpersonnephysique">RORPersonnePhysique</a></li>
+  <li><a href="#rorprofessionnel" id="markdown-toc-rorprofessionnel">RORProfessionnel</a></li>
+  <li><a href="#rorexerciceprofessionnel" id="markdown-toc-rorexerciceprofessionnel">RORExerciceProfessionnel</a></li>
+  <li><a href="#rorsavoirfaire" id="markdown-toc-rorsavoirfaire">RORSavoirFaire</a></li>
+  <li><a href="#sous-classes-de-rorsavoirfaire" id="markdown-toc-sous-classes-de-rorsavoirfaire">Sous-classes de RORSavoirFaire</a></li>
+  <li><a href="#rorsituationoperationnelle" id="markdown-toc-rorsituationoperationnelle">RORSituationOperationnelle</a></li>
+</ul>
+
 </div>
 
 <div style="background-color: #fff9e6; border-left: 4px solid #ff9800; padding: 12px 16px; margin-bottom: 16px;">
@@ -228,7 +239,7 @@ Cette section est transversale : elle décrit les professionnels de santé parti
 
 <p>La section <strong>Professionnel Ressource</strong> décrit les professionnels de santé qui réalisent les prestations dans le cadre d'une offre opérationnelle. La situation opérationnelle d'un professionnel est rattachée aux offres opérationnelles : le professionnel réalise une prestation dans un lieu de réalisation.</p>
 
-<h4 id="donnée-pivot">Donnée pivot</h4>
+<h3 id="donnée-pivot">Donnée pivot</h3>
 
 <p>L'<strong>idNat_PS</strong> (numéro RPPS ou ADELI) est l'identifiant national du professionnel dans le cadre de l'interopérabilité.</p>
 
@@ -240,7 +251,7 @@ Cette section est transversale : elle décrit les professionnels de santé parti
 
 <hr />
 
-<h4 id="diagramme">Diagramme</h4>
+<h3 id="diagramme">Diagramme</h3>
 
 <!-- CSS pour les contrôles SVG interactifs -->
 <style>
@@ -587,7 +598,7 @@ Cette section est transversale : elle décrit les professionnels de santé parti
 
 <hr />
 
-<h4 id="modèles-logiques">Modèles logiques</h4>
+<h3 id="modèles-logiques">Modèles logiques</h3>
 
 <table>
   <thead>
@@ -673,7 +684,7 @@ Cette section est transversale : elle décrit les professionnels de santé parti
 
 <hr />
 
-<h4 id="rorpersonnephysique">RORPersonnePhysique</h4>
+<h3 id="rorpersonnephysique">RORPersonnePhysique</h3>
 
 <p>La <strong>Personne Physique</strong> porte les données d'identité du professionnel.</p>
 
@@ -739,7 +750,7 @@ table.box td { border: none; font-size : 11px; }
 
 <hr />
 
-<h4 id="rorprofessionnel">RORProfessionnel</h4>
+<h3 id="rorprofessionnel">RORProfessionnel</h3>
 
 <p>Le <strong>Professionnel</strong> représente le professionnel enregistré dans le RPPS ou ADELI.</p>
 
@@ -795,7 +806,7 @@ table.box td { border: none; font-size : 11px; }
 
 <hr />
 
-<h4 id="rorexerciceprofessionnel">RORExerciceProfessionnel</h4>
+<h3 id="rorexerciceprofessionnel">RORExerciceProfessionnel</h3>
 
 <p>L'<strong>Exercice Professionnel</strong> caractérise l'exercice d'une profession par un professionnel.</p>
 
@@ -900,7 +911,7 @@ table.box td { border: none; font-size : 11px; }
 
 <hr />
 
-<h4 id="rorsavoirfaire">RORSavoirFaire</h4>
+<h3 id="rorsavoirfaire">RORSavoirFaire</h3>
 
 <p>Le <strong>Savoir-Faire</strong> est une classe abstraite décrivant la spécialité ou la compétence principale du professionnel. Elle est spécialisée en 9 sous-classes.</p>
 
@@ -963,7 +974,7 @@ table.box td { border: none; font-size : 11px; }
 
 <hr />
 
-<h4 id="sous-classes-de-rorsavoirfaire">Sous-classes de RORSavoirFaire</h4>
+<h3 id="sous-classes-de-rorsavoirfaire">Sous-classes de RORSavoirFaire</h3>
 
 <table class="box" data-fhir="generated">
   <tr>
@@ -1381,7 +1392,7 @@ table.box td { border: none; font-size : 11px; }
 
 <hr />
 
-<h4 id="rorsituationoperationnelle">RORSituationOperationnelle</h4>
+<h3 id="rorsituationoperationnelle">RORSituationOperationnelle</h3>
 
 <p>La <strong>Situation Opérationnelle</strong> caractérise les conditions d'exercice du professionnel dans le cadre d'une offre opérationnelle précise.</p>
 
@@ -1548,7 +1559,7 @@ table.box td { border: none; font-size : 11px; }
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-10 09:59:00 +0000">
+  <span title="2026-06-10 10:03:00 +0000">
     2026-06-10
   </span>
 

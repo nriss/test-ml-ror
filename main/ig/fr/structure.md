@@ -12,7 +12,7 @@ Les structures peuvent être immatriculées dans :
 * **RPPS / ADELI** (professionnels de santé exerçant en cabinet libéral),
 * **SIRENE** (autres types de structures).
 
-#### Données pivots
+### Données pivots
 
 Les données pivots de la section Structure permettent aux systèmes externes de se synchroniser avec le ROR :
 
@@ -23,7 +23,7 @@ Ces données pivots ne sont pas modifiables après création.
 
 -------
 
-#### Diagramme
+### Diagramme
 
 🔍+
 🔍−
@@ -34,7 +34,7 @@ Ces données pivots ne sont pas modifiables après création.
 
 -------
 
-#### Modèles logiques
+### Modèles logiques
 
 | | | |
 | :--- | :--- | :--- |
@@ -43,13 +43,13 @@ Ces données pivots ne sont pas modifiables après création.
 
 -------
 
-#### Règles générales de transmission
+### Règles générales de transmission
 
 * `RG_EXP_002` : Si un élément obligatoire dans la structure du flux d'échange n'est pas renseigné dans le ROR interrogé, alors l'instance de l'entité à laquelle appartient cet élément NE DOIT PAS être transmise. Les instances des entités hiérarchiquement inférieures NE DOIVENT PAS être transmises non plus. Les instances des entités hiérarchiquement supérieures DOIVENT être transmises en respectant la condition ci-dessus.
 
 -------
 
-#### ROREntiteJuridique
+### ROREntiteJuridique
 
 L'**Entité Juridique** (EJ) correspond à la notion de personne morale :
 
@@ -67,7 +67,7 @@ L'**Entité Juridique** (EJ) correspond à la notion de personne morale :
 
 -------
 
-#### ROREntiteGeographique
+### ROREntiteGeographique
 
 L'**Entité Géographique** (EG) correspond à la notion d'établissement d'une entité juridique :
 

@@ -11,7 +11,7 @@ Les **Classes Communes** regroupent les éléments partagés par l'ensemble des 
 
 -------
 
-#### Diagramme
+### Diagramme
 
 🔍+
 🔍−
@@ -22,7 +22,7 @@ Les **Classes Communes** regroupent les éléments partagés par l'ensemble des 
 
 -------
 
-#### RORMetadonnee
+### RORMetadonnee
 
 La **Métadonnée** est présente dans toutes les classes du modèle ROR (`metadonnee 1..1`). Elle permet de tracer les informations de gestion des données : date de création, date de mise à jour, identifiant de la donnée, commentaire, région source et modèle de saisie.
 
@@ -30,7 +30,7 @@ La **Métadonnée** est présente dans toutes les classes du modèle ROR (`metad
 
 -------
 
-#### Classes communes héritées du MOS
+### Classes communes héritées du MOS
 
 Les classes suivantes sont définies dans le [MOS (Modèle des Objets de Santé)](https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/) et réutilisées dans les modèles ROR sans redéfinition.
 
@@ -46,7 +46,7 @@ Les classes suivantes sont définies dans le [MOS (Modèle des Objets de Santé)
 
 Ces classes sont documentées dans le MOS et ne sont pas redéfinies dans cet IG. Se référer à la documentation MOS pour le détail de leurs attributs.
 
-#### Règles de gestion sur la classe Contact
+### Règles de gestion sur la classe Contact
 
 * `RG_EXP_032` : Lors de la création d'un objet Contact, le niveau de confidentialité a la valeur par défaut « restreint ».
 * `RG_EXP_034` : Le niveau de confidentialité de l'objet Télécommunication doit être plus restrictif ou égal au niveau de confidentialité de l'objet Contact auquel il est rattaché.

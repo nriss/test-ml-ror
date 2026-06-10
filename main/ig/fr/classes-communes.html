@@ -218,8 +218,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#diagramme" id="markdown-toc-diagramme">Diagramme</a></li>
+  <li><a href="#rormetadonnee" id="markdown-toc-rormetadonnee">RORMetadonnee</a></li>
+  <li><a href="#classes-communes-héritées-du-mos" id="markdown-toc-classes-communes-héritées-du-mos">Classes communes héritées du MOS</a></li>
+  <li><a href="#règles-de-gestion-sur-la-classe-contact" id="markdown-toc-règles-de-gestion-sur-la-classe-contact">Règles de gestion sur la classe Contact</a></li>
+</ul>
+
 </div>
 
 <div style="background-color: #e8f4f8; border-left: 4px solid #0077be; padding: 12px 16px; margin-bottom: 16px;">
@@ -235,7 +241,7 @@ Cette section est destinée aux développeurs et intégrateurs. Elle décrit les
 
 <hr />
 
-<h4 id="diagramme">Diagramme</h4>
+<h3 id="diagramme">Diagramme</h3>
 
 <!-- CSS pour les contrôles SVG interactifs -->
 <style>
@@ -582,7 +588,7 @@ Cette section est destinée aux développeurs et intégrateurs. Elle décrit les
 
 <hr />
 
-<h4 id="rormetadonnee">RORMetadonnee</h4>
+<h3 id="rormetadonnee">RORMetadonnee</h3>
 
 <p>La <strong>Métadonnée</strong> est présente dans toutes les classes du modèle ROR (<code class="language-plaintext highlighter-rouge">metadonnee 1..1</code>). Elle permet de tracer les informations de gestion des données : date de création, date de mise à jour, identifiant de la donnée, commentaire, région source et modèle de saisie.</p>
 
@@ -701,7 +707,7 @@ table.box td { border: none; font-size : 11px; }
 
 <hr />
 
-<h4 id="classes-communes-héritées-du-mos">Classes communes héritées du MOS</h4>
+<h3 id="classes-communes-héritées-du-mos">Classes communes héritées du MOS</h3>
 
 <p>Les classes suivantes sont définies dans le <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/">MOS (Modèle des Objets de Santé)</a> et réutilisées dans les modèles ROR sans redéfinition.</p>
 
@@ -746,7 +752,7 @@ table.box td { border: none; font-size : 11px; }
 
 <p>Ces classes sont documentées dans le MOS et ne sont pas redéfinies dans cet IG. Se référer à la documentation MOS pour le détail de leurs attributs.</p>
 
-<h4 id="règles-de-gestion-sur-la-classe-contact">Règles de gestion sur la classe Contact</h4>
+<h3 id="règles-de-gestion-sur-la-classe-contact">Règles de gestion sur la classe Contact</h3>
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">RG_EXP_032</code> : Lors de la création d'un objet Contact, le niveau de confidentialité a la valeur par défaut « restreint ».</li>
@@ -805,7 +811,7 @@ table.box td { border: none; font-size : 11px; }
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-10 09:59:00 +0000">
+  <span title="2026-06-10 10:03:00 +0000">
     2026-06-10
   </span>
 

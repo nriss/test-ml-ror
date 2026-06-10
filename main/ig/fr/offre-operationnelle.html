@@ -218,8 +218,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#donnée-pivot" id="markdown-toc-donnée-pivot">Donnée pivot</a></li>
+  <li><a href="#diagramme" id="markdown-toc-diagramme">Diagramme</a></li>
+  <li><a href="#modèles-logiques" id="markdown-toc-modèles-logiques">Modèles logiques</a></li>
+  <li><a href="#roroffreoperationnelle" id="markdown-toc-roroffreoperationnelle">ROROffreOperationnelle</a></li>
+  <li><a href="#roractiviteoperationnelle" id="markdown-toc-roractiviteoperationnelle">RORActiviteOperationnelle</a></li>
+  <li><a href="#rorpatientele" id="markdown-toc-rorpatientele">RORPatientele</a></li>
+</ul>
+
 </div>
 
 <div style="background-color: #fff9e6; border-left: 4px solid #ff9800; padding: 12px 16px; margin-bottom: 16px;">
@@ -228,13 +236,13 @@ Cette section est transversale : elle décrit les prestations de soins qu'une st
 
 <p>La section <strong>Offre Opérationnelle</strong> décrit les prestations qu'une structure peut réaliser pour répondre au besoin de santé d'une personne. C'est le cœur fonctionnel du ROR : l'offre opérationnelle permet d'orienter les patients vers les établissements adaptés à leurs besoins.</p>
 
-<h4 id="donnée-pivot">Donnée pivot</h4>
+<h3 id="donnée-pivot">Donnée pivot</h3>
 
 <p>L'<strong>identifiantOffre</strong> est l'identifiant de l'offre opérationnelle, unique et persistant au niveau national, généré par une instance régionale du ROR ou par le ROR national. Lorsqu'il est généré par une instance régionale, il est de la forme <code class="language-plaintext highlighter-rouge">code INSEE régional / code interne ROR</code>.</p>
 
 <hr />
 
-<h4 id="diagramme">Diagramme</h4>
+<h3 id="diagramme">Diagramme</h3>
 
 <!-- CSS pour les contrôles SVG interactifs -->
 <style>
@@ -581,7 +589,7 @@ Cette section est transversale : elle décrit les prestations de soins qu'une st
 
 <hr />
 
-<h4 id="modèles-logiques">Modèles logiques</h4>
+<h3 id="modèles-logiques">Modèles logiques</h3>
 
 <table>
   <thead>
@@ -612,7 +620,7 @@ Cette section est transversale : elle décrit les prestations de soins qu'une st
 
 <hr />
 
-<h4 id="roroffreoperationnelle">ROROffreOperationnelle</h4>
+<h3 id="roroffreoperationnelle">ROROffreOperationnelle</h3>
 
 <p>L'<strong>Offre Opérationnelle</strong> décrit les prestations que peut réaliser une structure. Elle est rattachée à une Organisation Interne et peut être réalisée par un ou plusieurs professionnels de santé.</p>
 
@@ -1066,7 +1074,7 @@ table.box td { border: none; font-size : 11px; }
 
 <hr />
 
-<h4 id="roractiviteoperationnelle">RORActiviteOperationnelle</h4>
+<h3 id="roractiviteoperationnelle">RORActiviteOperationnelle</h3>
 
 <p>L'<strong>Activité Opérationnelle</strong> caractérise l'activité exercée dans le cadre d'une offre opérationnelle.</p>
 
@@ -1153,7 +1161,7 @@ table.box td { border: none; font-size : 11px; }
 
 <hr />
 
-<h4 id="rorpatientele">RORPatientele</h4>
+<h3 id="rorpatientele">RORPatientele</h3>
 
 <p>La <strong>Patientèle</strong> décrit les caractéristiques de la population cible de l'offre opérationnelle.</p>
 
@@ -1305,7 +1313,7 @@ table.box td { border: none; font-size : 11px; }
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-10 09:59:00 +0000">
+  <span title="2026-06-10 10:03:00 +0000">
     2026-06-10
   </span>
 

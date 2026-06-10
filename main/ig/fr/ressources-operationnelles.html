@@ -218,8 +218,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#donnée-pivot" id="markdown-toc-donnée-pivot">Donnée pivot</a></li>
+  <li><a href="#diagramme" id="markdown-toc-diagramme">Diagramme</a></li>
+  <li><a href="#modèles-logiques" id="markdown-toc-modèles-logiques">Modèles logiques</a></li>
+  <li><a href="#rorlieurealisationoffre" id="markdown-toc-rorlieurealisationoffre">RORLieuRealisationOffre</a></li>
+  <li><a href="#rorequipementspecifique" id="markdown-toc-rorequipementspecifique">ROREquipementSpecifique</a></li>
+  <li><a href="#rorcapaciteprisecharge" id="markdown-toc-rorcapaciteprisecharge">RORCapacitePriseCharge</a></li>
+  <li><a href="#rorcapaciteaccueiloperationnelle" id="markdown-toc-rorcapaciteaccueiloperationnelle">RORCapaciteAccueilOperationnelle</a></li>
+  <li><a href="#rorcapacitehabitation" id="markdown-toc-rorcapacitehabitation">RORCapaciteHabitation</a></li>
+</ul>
+
 </div>
 
 <div style="background-color: #fff9e6; border-left: 4px solid #ff9800; padding: 12px 16px; margin-bottom: 16px;">
@@ -228,13 +238,13 @@ Cette section est transversale : elle décrit les moyens mis en œuvre pour réa
 
 <p>La section <strong>Ressources Opérationnelles</strong> décrit les moyens matériels et capacitaires qui peuvent être mis en œuvre pour réaliser une offre opérationnelle. Elle comprend les équipements spécifiques, les capacités d'accueil et le lieu de réalisation de l'offre.</p>
 
-<h4 id="donnée-pivot">Donnée pivot</h4>
+<h3 id="donnée-pivot">Donnée pivot</h3>
 
 <p>L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette section. Lorsqu'il est généré par une instance régionale, il est de la forme <code class="language-plaintext highlighter-rouge">code INSEE régional / code interne ROR</code>.</p>
 
 <hr />
 
-<h4 id="diagramme">Diagramme</h4>
+<h3 id="diagramme">Diagramme</h3>
 
 <!-- CSS pour les contrôles SVG interactifs -->
 <style>
@@ -581,7 +591,7 @@ Cette section est transversale : elle décrit les moyens mis en œuvre pour réa
 
 <hr />
 
-<h4 id="modèles-logiques">Modèles logiques</h4>
+<h3 id="modèles-logiques">Modèles logiques</h3>
 
 <table>
   <thead>
@@ -622,7 +632,7 @@ Cette section est transversale : elle décrit les moyens mis en œuvre pour réa
 
 <hr />
 
-<h4 id="rorlieurealisationoffre">RORLieuRealisationOffre</h4>
+<h3 id="rorlieurealisationoffre">RORLieuRealisationOffre</h3>
 
 <p>Le <strong>Lieu de Réalisation de l'Offre</strong> indique le lieu précis où se déroule la prestation. Il hérite de la classe MOS <code class="language-plaintext highlighter-rouge">Lieu</code> (adresse, coordonnées géographiques, etc.) et ajoute les attributs spécifiques au contexte ROR.</p>
 
@@ -676,7 +686,7 @@ table.box td { border: none; font-size : 11px; }
 
 <hr />
 
-<h4 id="rorequipementspecifique">ROREquipementSpecifique</h4>
+<h3 id="rorequipementspecifique">ROREquipementSpecifique</h3>
 
 <p>L'<strong>Équipement Spécifique</strong> décrit les équipements matériels et installations spécialisés disponibles dans un établissement, susceptibles d'influencer l'orientation d'un patient.</p>
 
@@ -739,7 +749,7 @@ table.box td { border: none; font-size : 11px; }
 
 <hr />
 
-<h4 id="rorcapaciteprisecharge">RORCapacitePriseCharge</h4>
+<h3 id="rorcapaciteprisecharge">RORCapacitePriseCharge</h3>
 
 <p>La <strong>Capacité de Prise en Charge</strong> décrit les capacités d'accueil en termes de places autorisées ou installées pour une offre donnée.</p>
 
@@ -816,7 +826,7 @@ table.box td { border: none; font-size : 11px; }
 
 <hr />
 
-<h4 id="rorcapaciteaccueiloperationnelle">RORCapaciteAccueilOperationnelle</h4>
+<h3 id="rorcapaciteaccueiloperationnelle">RORCapaciteAccueilOperationnelle</h3>
 
 <p>La <strong>Capacité d'Accueil Opérationnelle</strong> représente les disponibilités de prise en charge en temps réel ou à court terme. Elle permet aux outils d'orientation d'accéder aux disponibilités d'un établissement.</p>
 
@@ -1057,7 +1067,7 @@ table.box td { border: none; font-size : 11px; }
 
 <hr />
 
-<h4 id="rorcapacitehabitation">RORCapaciteHabitation</h4>
+<h3 id="rorcapacitehabitation">RORCapaciteHabitation</h3>
 
 <p>La <strong>Capacité Habitation</strong> décrit le nombre de places ou de logements disponibles selon le type d'hébergement.</p>
 
@@ -1167,7 +1177,7 @@ table.box td { border: none; font-size : 11px; }
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-10 09:59:00 +0000">
+  <span title="2026-06-10 10:03:00 +0000">
     2026-06-10
   </span>
 

@@ -218,8 +218,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#diagramme" id="markdown-toc-diagramme">Diagramme</a></li>
+  <li><a href="#modèles-logiques" id="markdown-toc-modèles-logiques">Modèles logiques</a></li>
+  <li><a href="#rortarif-classe-abstraite" id="markdown-toc-rortarif-classe-abstraite">RORTarif (classe abstraite)</a></li>
+  <li><a href="#rorforfaitsoclehebergement" id="markdown-toc-rorforfaitsoclehebergement">RORForfaitSocleHebergement</a></li>
+  <li><a href="#rortarifaccueildejour" id="markdown-toc-rortarifaccueildejour">RORTarifAccueilDeJour</a></li>
+  <li><a href="#rortarifdependance" id="markdown-toc-rortarifdependance">RORTarifDependance</a></li>
+  <li><a href="#rortarifaideshumaines" id="markdown-toc-rortarifaideshumaines">RORTarifAidesHumaines</a></li>
+  <li><a href="#rortarifprestationsupplementaire" id="markdown-toc-rortarifprestationsupplementaire">RORTarifPrestationSupplementaire</a></li>
+  <li><a href="#rorsupplementtarifhebergement" id="markdown-toc-rorsupplementtarifhebergement">RORSupplementTarifHebergement</a></li>
+  <li><a href="#rortarifportagerepas" id="markdown-toc-rortarifportagerepas">RORTarifPortageRepas</a></li>
+</ul>
+
 </div>
 
 <div style="background-color: #fff9e6; border-left: 4px solid #ff9800; padding: 12px 16px; margin-bottom: 16px;">
@@ -232,7 +244,7 @@ Cette section est transversale : les tarifs intéressent les patients et les pro
 
 <hr />
 
-<h4 id="diagramme">Diagramme</h4>
+<h3 id="diagramme">Diagramme</h3>
 
 <!-- CSS pour les contrôles SVG interactifs -->
 <style>
@@ -579,7 +591,7 @@ Cette section est transversale : les tarifs intéressent les patients et les pro
 
 <hr />
 
-<h4 id="modèles-logiques">Modèles logiques</h4>
+<h3 id="modèles-logiques">Modèles logiques</h3>
 
 <table>
   <thead>
@@ -635,7 +647,7 @@ Cette section est transversale : les tarifs intéressent les patients et les pro
 
 <hr />
 
-<h4 id="rortarif-classe-abstraite">RORTarif (classe abstraite)</h4>
+<h3 id="rortarif-classe-abstraite">RORTarif (classe abstraite)</h3>
 
 <p>Attributs communs à tous les types de tarifs. Cette classe n'est pas instanciée directement : seules ses sous-classes spécialisées sont utilisées.</p>
 
@@ -751,7 +763,7 @@ table.box td { border: none; font-size : 11px; }
 
 <hr />
 
-<h4 id="rorforfaitsoclehebergement">RORForfaitSocleHebergement</h4>
+<h3 id="rorforfaitsoclehebergement">RORForfaitSocleHebergement</h3>
 
 <p>Tarif journalier et par personne pour un type d'hébergement donné. Inclut obligatoirement les prestations définies dans le décret n°2015-1868.</p>
 
@@ -892,7 +904,7 @@ table.box td { border: none; font-size : 11px; }
 
 <hr />
 
-<h4 id="rortarifaccueildejour">RORTarifAccueilDeJour</h4>
+<h3 id="rortarifaccueildejour">RORTarifAccueilDeJour</h3>
 
 <table class="box" data-fhir="generated">
   <tr>
@@ -937,7 +949,7 @@ table.box td { border: none; font-size : 11px; }
 
 <hr />
 
-<h4 id="rortarifdependance">RORTarifDependance</h4>
+<h3 id="rortarifdependance">RORTarifDependance</h3>
 
 <table class="box" data-fhir="generated">
   <tr>
@@ -1003,7 +1015,7 @@ table.box td { border: none; font-size : 11px; }
 
 <hr />
 
-<h4 id="rortarifaideshumaines">RORTarifAidesHumaines</h4>
+<h3 id="rortarifaideshumaines">RORTarifAidesHumaines</h3>
 
 <table class="box" data-fhir="generated">
   <tr>
@@ -1083,7 +1095,7 @@ table.box td { border: none; font-size : 11px; }
 
 <hr />
 
-<h4 id="rortarifprestationsupplementaire">RORTarifPrestationSupplementaire</h4>
+<h3 id="rortarifprestationsupplementaire">RORTarifPrestationSupplementaire</h3>
 
 <p><strong>Règles de gestion :</strong></p>
 <ul>
@@ -1147,7 +1159,7 @@ table.box td { border: none; font-size : 11px; }
 
 <hr />
 
-<h4 id="rorsupplementtarifhebergement">RORSupplementTarifHebergement</h4>
+<h3 id="rorsupplementtarifhebergement">RORSupplementTarifHebergement</h3>
 
 <p><strong>Règles de gestion :</strong></p>
 <ul>
@@ -1197,7 +1209,7 @@ table.box td { border: none; font-size : 11px; }
 
 <hr />
 
-<h4 id="rortarifportagerepas">RORTarifPortageRepas</h4>
+<h3 id="rortarifportagerepas">RORTarifPortageRepas</h3>
 
 <table class="box" data-fhir="generated">
   <tr>
@@ -1303,7 +1315,7 @@ table.box td { border: none; font-size : 11px; }
           IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-10 09:59:00 +0000">
+  <span title="2026-06-10 10:03:00 +0000">
     2026-06-10
   </span>
 
