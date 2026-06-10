@@ -2,7 +2,7 @@
 
 id: ans.fhir.fr.test.ror
 canonical: https://interop.esante.gouv.fr/ig/fhir/test-ror
-name: TestROR
+name: MExROR
 title: "Modèle d'exposition du ROR dérivant du MOS (POC)"
 description: "IG de démonstration illustrant comment définir des modèles logiques ROR qui dérivent des modèles logiques du MOS (Modèle des Objets de Santé)."
 publisher:
