@@ -69,7 +69,7 @@ pages:
 
 menu:
     Accueil: index.html
-    Contexte: avantages-ml.html
+    À propos de ce POC: avantages-ml.html
     Modèle d'exposition:
         Classes Communes: classes-communes.html
         Structure: structure.html
