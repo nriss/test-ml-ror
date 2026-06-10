@@ -8,13 +8,14 @@ Cette page illustre la valeur ajoutée du Modèle Logique HL7 pour un projet com
 
 Le ROR publie son modèle d'exposition depuis des années sous forme de **PDF et d'exports Excel** générés depuis Modelio. Ce POC montre ce que change concrètement le passage à un **Modèle Logique HL7** — pour le projet ROR, pour ses implémenteurs, et pour son écosystème.
 
-### Un modèle versionné et traçable
+### Un modèle versionné, traçable et pérenne
 
-Avec Modelio, le modèle d'exposition existe sous forme de fichier binaire dont les évolutions ne sont pas facilement traçables. Avec un IG en FSH hébergé sur GitHub :
+Avec Modelio, le modèle d'exposition existe sous forme de fichier binaire dont les évolutions ne sont pas facilement traçables, et chaque version publiée est un PDF figé distribué par e-mail. Avec un IG en FSH hébergé sur GitHub et publié sur un serveur canonique :
 
 * Chaque modification est **enregistrée avec son auteur, sa date et son contexte** — on sait pourquoi un attribut a changé, pas seulement qu'il a changé.
-* Deux versions peuvent être **comparées ligne à ligne** (`git diff`).
-* La **liste des évolutions entre versions** est générée automatiquement depuis l'historique des commits et des pull requests.
+* Deux versions peuvent être **comparées ligne à ligne** (`git diff`) ; les **breaking changes** sont identifiables automatiquement via `fhir-diff`.
+* Chaque version publiée est **accessible de façon permanente** à une URL stable (ex. `https://interop.esante.gouv.fr/ig/fhir/ror-modelexpo/1.0.0/`) — les liens dans les spécifications ou les contrats ne deviennent jamais obsolètes.
+* Un **historique des versions** est maintenu sur le serveur de publication, permettant de consulter n'importe quelle version antérieure.
 
 ### Une documentation toujours synchronisée avec le modèle
 
@@ -38,14 +39,6 @@ Aujourd'hui les `RG_EXP_*` ne vivent que dans un PDF. Dans cet IG, elles sont re
 * Lier chaque règle au modèle logique qu'elle concerne (`satisfiedBy`).
 * Les versionner et les faire évoluer en même temps que le modèle.
 * Les rendre interrogeables par des outils (validateurs, générateurs de tests).
-
-### Des publications versionnées et pérennes
-
-Avec le workflow PDF, chaque version du modèle d'exposition est un document figé, distribué par e-mail ou déposé sur un serveur. Les implémenteurs doivent gérer eux-mêmes quelle version ils ont intégrée. Avec un IG publié sur un serveur canonique :
-
-* Chaque version publiée est **accessible de façon permanente** à une URL stable (ex. `https://interop.esante.gouv.fr/ig/fhir/ror-modelexpo/1.0.0/`) — les liens dans les spécifications ou les contrats ne deviennent jamais obsolètes.
-* Un **historique des versions** est maintenu sur le serveur de publication, permettant de consulter n'importe quelle version antérieure et de comprendre l'évolution du modèle dans le temps.
-* Les **breaking changes** sont identifiables automatiquement entre deux versions via des outils de comparaison FHIR (`fhir-diff`), ce qui facilite la gestion des migrations côté éditeurs.
 
 ### Une collaboration ouverte
 
