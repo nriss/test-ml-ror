@@ -81,4 +81,5 @@ menu:
     Règles de gestion: regles-de-gestion.html
     Ressources de conformité: artifacts.html
     Historique: change-log.html
+    IG FHIR ROR: new-tab https://interop.esante.gouv.fr/ig/fhir/ror/
     Documentation: new-tab https://interop.esante.gouv.fr/ig/documentation/
