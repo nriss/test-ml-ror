@@ -1,4 +1,4 @@
-# Historique des versions - Démonstration - Modèle Logique ROR dérivant du MOS v0.1.0
+# Historique des versions - Modèle d'exposition du ROR dérivant du MOS (POC) v0.1.0
 
 ## Historique des versions
 

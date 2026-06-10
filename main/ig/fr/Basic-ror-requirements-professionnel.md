@@ -1,4 +1,4 @@
-# Règles de gestion - Professionnel Ressource - Démonstration - Modèle Logique ROR dérivant du MOS v0.1.0
+# Règles de gestion - Professionnel Ressource - Modèle d'exposition du ROR dérivant du MOS (POC) v0.1.0
 
 ## Basic: Règles de gestion - Professionnel Ressource
 

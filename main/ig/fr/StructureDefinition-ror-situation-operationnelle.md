@@ -1,4 +1,4 @@
-# ROR - Situation Opérationnelle - Démonstration - Modèle Logique ROR dérivant du MOS v0.1.0
+# ROR - Situation Opérationnelle - Modèle d'exposition du ROR dérivant du MOS (POC) v0.1.0
 
 ## Modèle logique: ROR - Situation Opérationnelle 
 
@@ -69,7 +69,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-ror-situation-o
   "name" : "RORSituationOperationnelle",
   "title" : "ROR - Situation Opérationnelle",
   "status" : "draft",
-  "date" : "2026-06-10T12:26:33+00:00",
+  "date" : "2026-06-10T12:45:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

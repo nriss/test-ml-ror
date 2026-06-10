@@ -1,4 +1,4 @@
-# ROR - DESC Non Qualifiant - Démonstration - Modèle Logique ROR dérivant du MOS v0.1.0
+# ROR - DESC Non Qualifiant - Modèle d'exposition du ROR dérivant du MOS (POC) v0.1.0
 
 ## Modèle logique: ROR - DESC Non Qualifiant 
 
@@ -65,7 +65,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-ror-desc-non-qu
   "name" : "RORDESCNonQualifiant",
   "title" : "ROR - DESC Non Qualifiant",
   "status" : "draft",
-  "date" : "2026-06-10T12:26:33+00:00",
+  "date" : "2026-06-10T12:45:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

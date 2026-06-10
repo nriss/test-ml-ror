@@ -1,4 +1,4 @@
-# Ressources Opérationnelles - Démonstration - Modèle Logique ROR dérivant du MOS v0.1.0
+# Ressources Opérationnelles - Modèle d'exposition du ROR dérivant du MOS (POC) v0.1.0
 
 ## Ressources Opérationnelles
 

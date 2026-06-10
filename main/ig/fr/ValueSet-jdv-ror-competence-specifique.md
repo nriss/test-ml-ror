@@ -1,4 +1,4 @@
-# JDV ROR - Compétence Spécifique (provisoire) - Démonstration - Modèle Logique ROR dérivant du MOS v0.1.0
+# JDV ROR - Compétence Spécifique (provisoire) - Modèle d'exposition du ROR dérivant du MOS (POC) v0.1.0
 
 ## ValueSet: JDV ROR - Compétence Spécifique (provisoire) (Expérimental) 
 
@@ -34,7 +34,7 @@ Jeu de valeurs provisoire incluant tous les codes de TRE_R243-CompetenceSpecifiq
   "title" : "JDV ROR - Compétence Spécifique (provisoire)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-06-10T12:26:33+00:00",
+  "date" : "2026-06-10T12:45:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

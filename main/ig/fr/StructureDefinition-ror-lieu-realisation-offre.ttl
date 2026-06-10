@@ -32,7 +32,7 @@
   fhir:name [ fhir:v "RORLieuRealisationOffre"] ; # 
   fhir:title [ fhir:v "ROR - Lieu de Réalisation de l'Offre"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-06-10T12:26:33+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-10T12:45:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;

@@ -1,4 +1,4 @@
-# Règles de gestion - Classes Communes - Démonstration - Modèle Logique ROR dérivant du MOS v0.1.0
+# Règles de gestion - Classes Communes - Modèle d'exposition du ROR dérivant du MOS (POC) v0.1.0
 
 ## Basic: Règles de gestion - Classes Communes
 

@@ -1,4 +1,4 @@
-# ans.fhir.fr.test.ror#0.1.0: Démonstration - Modèle Logique ROR dérivant du MOS(fr)
+# ans.fhir.fr.test.ror#0.1.0: Modèle d'exposition du ROR dérivant du MOS (POC)(fr)
 
 ## Pages
 
@@ -122,4 +122,4 @@
 
 ### ImplementationGuides
 
-* [Démonstration - Modèle Logique ROR dérivant du MOS](ImplementationGuide-ans.fhir.fr.test.ror.md)
+* [Modèle d'exposition du ROR dérivant du MOS (POC)](ImplementationGuide-ans.fhir.fr.test.ror.md)

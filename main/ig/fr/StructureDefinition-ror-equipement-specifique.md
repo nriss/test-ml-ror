@@ -1,4 +1,4 @@
-# ROR - Équipement Spécifique - Démonstration - Modèle Logique ROR dérivant du MOS v0.1.0
+# ROR - Équipement Spécifique - Modèle d'exposition du ROR dérivant du MOS (POC) v0.1.0
 
 ## Modèle logique: ROR - Équipement Spécifique 
 
@@ -69,7 +69,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-ror-equipement-
   "name" : "ROREquipementSpecifique",
   "title" : "ROR - Équipement Spécifique",
   "status" : "draft",
-  "date" : "2026-06-10T12:26:33+00:00",
+  "date" : "2026-06-10T12:45:37+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

@@ -1,4 +1,4 @@
-# Pourquoi le Modèle Logique HL7 ? - Démonstration - Modèle Logique ROR dérivant du MOS v0.1.0
+# Pourquoi le Modèle Logique HL7 ? - Modèle d'exposition du ROR dérivant du MOS (POC) v0.1.0
 
 ## Pourquoi le Modèle Logique HL7 ?
 
