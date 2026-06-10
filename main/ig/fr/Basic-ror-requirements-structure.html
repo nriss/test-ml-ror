@@ -142,11 +142,18 @@
   <li>
     <a href="change-log.html">Historique</a>
   </li>
-  <li>
-    <a href="https://interop.esante.gouv.fr/ig/fhir/ror/" target="_blank">IG FHIR ROR</a>
-  </li>
-  <li>
-    <a href="https://interop.esante.gouv.fr/ig/documentation/" target="_blank">Documentation</a>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Documentations
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="https://interop.esante.gouv.fr/ig/documentation/" target="_blank">Documentation des IGs</a>
+      </li>
+      <li>
+        <a href="https://interop.esante.gouv.fr/ig/fhir/ror/" target="_blank">Documentation de l'API</a>
+      </li>
+    </ul>
   </li>
 </ul>
             </div>    <!-- /.nav-collapse -->
@@ -250,7 +257,7 @@
 
 
 
-  <div><a name="ror-requirements-structure"> </a><a name="hcror-requirements-structure"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"></p><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-profile-Requirements.html">Cross-version Profile for R5.Requirements for use in FHIR R4</a></p></div><p><a name="l393">​</a><b>R5: Canonical identifier for this Requirements, represented as a URI (globally unique) (new)</b>: <a href="https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/structure">https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/structure</a></p><p><b>R5: Name for this Requirements (computer friendly) (new)</b>: RORRequirementsStructure</p><p><b>R5: Name for this Requirements (human friendly) (new)</b>: Règles de gestion - Structure</p><p><b>R5: Natural language description of the requirements (new)</b>: </p><div><p>Règles de gestion du modèle d'exposition ROR relatives aux classes Structure (EntiteJuridique, EntiteGeographique).</p>
+  <div><a name="ror-requirements-structure"> </a><a name="hcror-requirements-structure"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"></p><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-profile-Requirements.html">Cross-version Profile for R5.Requirements for use in FHIR R4</a></p></div><p><a name="l404">​</a><b>R5: Canonical identifier for this Requirements, represented as a URI (globally unique) (new)</b>: <a href="https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/structure">https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/structure</a></p><p><b>R5: Name for this Requirements (computer friendly) (new)</b>: RORRequirementsStructure</p><p><b>R5: Name for this Requirements (human friendly) (new)</b>: Règles de gestion - Structure</p><p><b>R5: Natural language description of the requirements (new)</b>: </p><div><p>Règles de gestion du modèle d'exposition ROR relatives aux classes Structure (EntiteJuridique, EntiteGeographique).</p>
 </div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-002</li><li>requirement: </li><li>conformance: SHALL</li></ul></blockquote><div><p><strong>RG_EXP_002</strong> : Si un élément obligatoire dans la structure du flux d'échange n'est pas renseigné dans le ROR interrogé, alors l'instance de l'entité à laquelle appartient cet élément NE DOIT PAS être transmise. Les instances des entités hiérarchiquement inférieures NE DOIVENT PAS être transmises non plus.</p>
 </div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-003</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href="StructureDefinition-ror-entite-geographique.html">ROR - Entité Géographique</a></li></ul></blockquote><div><p><strong>RG_EXP_003</strong> : Si la date de fermeture transmise est la date de fermeture définitive, alors <code>typeFermeture</code> DOIT être renseigné avec l'OID correspondant au code DEF issu du référentiel FINESS.</p>
 </div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-004</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href="StructureDefinition-ror-entite-juridique.html">ROR - Entité Juridique</a></li></ul></blockquote><div><p><strong>RG_EXP_004</strong> : L'<code>idNat_Struct</code> DOIT être renseigné en priorité avec le numéro FINESS si l'établissement est immatriculé dans FINESS.</p>
@@ -317,7 +324,7 @@
           IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-10 12:24:00 +0000">
+  <span title="2026-06-10 12:26:00 +0000">
     2026-06-10
   </span>
 
