@@ -48,8 +48,6 @@ pages:
         title: Accueil
     avantages-ml.md:
         title: Pourquoi le Modèle Logique HL7 ?
-    fonctionnalites-ror.md:
-        title: Fonctionnalités disponibles pour le ROR
     classes-communes.md:
         title: Classes Communes
     structure.md:
@@ -71,9 +69,7 @@ pages:
 
 menu:
     Accueil: index.html
-    Contexte:
-        Pourquoi le Modèle Logique HL7 ?: avantages-ml.html
-        Fonctionnalités pour le ROR: fonctionnalites-ror.html
+    Contexte: avantages-ml.html
     Modèle d'exposition:
         Classes Communes: classes-communes.html
         Structure: structure.html
