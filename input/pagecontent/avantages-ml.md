@@ -1,38 +1,45 @@
-### Pourquoi passer de Modelio au Modèle Logique HL7 ?
-
-Le MOS était jusqu'à présent publié via le site [mos.esante.gouv.fr](https://mos.esante.gouv.fr), accompagné d'exports Excel et PDF générés depuis Modelio. Ce passage vers un guide d'implémentation en Modèle Logique HL7 (écrit en FSH et hébergé sur GitHub) s'inscrit dans une démarche d'alignement sur les pratiques internationales, tout en ouvrant de nouvelles possibilités pour l'écosystème.
-
-<div style="background-color: #fff9e6; border-left: 4px solid #ff9800; padding: 10px 15px; margin: 15px 0;">
-<b>Ce qui ne change pas</b><br>
-La gouvernance et le processus d'évolution du MOS restent inchangés. Le MOS conserve sa neutralité technologique : le Modèle Logique HL7 n'est pas FHIR. C'est un formalisme de modélisation indépendant de toute implémentation, qui peut servir de socle pour différents standards (FHIR, CDA, HL7 V2/V3, etc.).
+<div style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
+<b>Page à titre informatif — POC uniquement</b><br>
+Cette page illustre la valeur ajoutée du Modèle Logique HL7 pour un projet comme le ROR. Elle ne devra pas figurer dans la publication officielle de l'IG ROR.
 </div>
 
-### Collaboration ouverte avec l'écosystème
+Le ROR publie son modèle d'exposition depuis des années sous forme de **PDF et d'exports Excel** générés depuis Modelio. Ce POC montre ce que change concrètement le passage à un **Modèle Logique HL7** — pour le projet ROR, pour ses implémenteurs, et pour son écosystème.
 
-L'hébergement sur **GitHub** transforme la manière de collaborer autour du MOS.
+### Un modèle versionné et traçable
 
-Avec Modelio, les échanges se faisaient hors ligne, par email ou lors de réunions. Avec GitHub :
+Avec Modelio, le modèle d'exposition existe sous forme de fichier binaire dont les évolutions ne sont pas facilement traçables. Avec un IG en FSH hébergé sur GitHub :
 
-- Chaque acteur peut **proposer une modification** via une pull request, **signaler un problème** via une issue, ou **commenter** une proposition en cours — sans attendre une réunion de concertation.
-- L'**historique complet** des évolutions est traçable : qui a proposé quoi, pourquoi, quand, et quelle décision a été prise.
-- Les discussions sont **publiques et indexées**, ce qui facilite la réutilisation des décisions passées et évite de rejouer les mêmes débats.
-- La contribution externe est possible : une première proposition avait d'ailleurs déjà été soumise par un contributeur externe avant même la migration officielle.
+- Chaque modification est **enregistrée avec son auteur, sa date et son contexte** — on sait pourquoi un attribut a changé, pas seulement qu'il a changé.
+- Deux versions peuvent être **comparées ligne à ligne** (`git diff`).
+- La **liste des évolutions entre versions** est générée automatiquement depuis l'historique des commits et des pull requests.
 
-### Compétences et autonomie à l'agence
+### Une documentation toujours synchronisée avec le modèle
 
-Travailler en FSH sur un dépôt Git place le MOS dans le même outillage que tous les autres IGs de l'ANS. Concrètement, cela signifie que :
+Dans le workflow Modelio→PDF, la documentation peut diverger du modèle réel : un attribut renommé dans le fichier source n'est pas forcément mis à jour dans tous les documents narratifs. Dans un IG :
 
-- Les équipes de l'ANS peuvent **modifier, valider et publier le MOS** avec les mêmes outils et les mêmes compétences que pour n'importe quel autre guide d'implémentation.
-- La **validation structurelle est automatique** à chaque modification : les erreurs sont détectées avant la publication, pas après.
-- Les **diagrammes sont générés automatiquement** à partir du modèle source — ils sont toujours synchronisés avec le contenu réel, sans export manuel.
-- L'**intégration continue** permet une preview instantanée de chaque branche, ce qui facilite la revue des contributions avant merge.
+- Les **tableaux d'attributs** sont générés automatiquement depuis les définitions FSH — ils ne peuvent pas diverger.
+- Les **diagrammes** sont regénérés à chaque build depuis les sources PlantUML.
+- Une **preview CI** est disponible à chaque branche, permettant de relire avant toute publication.
 
-### Alignement international et extensibilité
+### L'héritage automatique depuis le MOS
 
-De nombreux pays et organisations utilisent déjà les Modèles Logiques HL7 pour leurs modélisations nationales : le projet européen XT-EHR, la Belgique, la Suisse (CH-ELM), l'OMS (Smart Guidelines). Ce passage aligne la France sur ces pratiques.
+Le ROR dérive ses classes du MOS (Modèle des Objets de Santé). Avec le Modèle Logique HL7 :
 
-Le format ouvre également de nouvelles possibilités techniques :
+- Quand le MOS fait évoluer `EntiteGeographique`, toutes les classes ROR qui en héritent (`ROREntiteGeographique`) **bénéficient automatiquement** de ces évolutions à la prochaine mise à jour de la dépendance — sans retravail manuel.
+- Le ROR n'expose dans son IG que ce qu'il **ajoute ou restreint** par rapport au MOS, ce qui réduit la surface de maintenance.
 
-- Les projets peuvent **hériter des Modèles Logiques du MOS** (qui lui même peut dériver des objets européens) pour y ajouter leurs propres spécificités, en garantissant la cohérence avec le référentiel national (voir la [page des fonctionnalités disponibles](fonctionnalites-ror.html)).
-- Les nomenclatures nationales (TRE du SMT) sont **référencées directement** dans le modèle via leurs packages FHIR, sans gestion manuelle.
-- Le format permet d'exploiter les datatypes FHIR et l'héritage depuis des modèles européens.
+### Des règles de gestion formalisées comme artefacts FHIR
+
+Aujourd'hui les `RG_EXP_*` ne vivent que dans un PDF. Dans cet IG, elles sont représentées en tant que ressources FHIR `Requirements`, ce qui permet de :
+
+- Lier chaque règle au modèle logique qu'elle concerne (`satisfiedBy`).
+- Les versionner et les faire évoluer en même temps que le modèle.
+- Les rendre interrogeables par des outils (validateurs, générateurs de tests).
+
+### Une collaboration ouverte
+
+Le passage sur GitHub transforme la manière de collaborer autour du modèle d'exposition :
+
+- Les acteurs de l'écosystème (éditeurs, régions, ANS) peuvent **proposer des modifications** via pull request ou **signaler des incohérences** via issue — sans attendre une réunion de concertation.
+- Les discussions sont **publiques et indexées**, ce qui évite de rejouer les mêmes débats à chaque mise à jour.
+- La **validation structurelle est automatique** : une erreur de modélisation est détectée avant la publication, pas après.

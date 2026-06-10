@@ -6,7 +6,7 @@ Les **règles de gestion** (`RG_EXP_*`) définissent les contraintes applicables
 
 ---
 
-#### Structure
+### Structure
 
 <p><a href="Basic-ror-requirements-structure.html">→ Ressource Requirements : Structure</a></p>
 
@@ -14,7 +14,7 @@ Les **règles de gestion** (`RG_EXP_*`) définissent les contraintes applicables
 
 ---
 
-#### Organisation
+### Organisation
 
 <p><a href="Basic-ror-requirements-organisation.html">→ Ressource Requirements : Organisation</a></p>
 
@@ -22,7 +22,7 @@ Les **règles de gestion** (`RG_EXP_*`) définissent les contraintes applicables
 
 ---
 
-#### Offre Opérationnelle
+### Offre Opérationnelle
 
 <p><a href="Basic-ror-requirements-offre-operationnelle.html">→ Ressource Requirements : Offre Opérationnelle</a></p>
 
@@ -30,7 +30,7 @@ Les **règles de gestion** (`RG_EXP_*`) définissent les contraintes applicables
 
 ---
 
-#### Tarif
+### Tarif
 
 <p><a href="Basic-ror-requirements-tarif.html">→ Ressource Requirements : Tarif</a></p>
 
@@ -38,7 +38,7 @@ Les **règles de gestion** (`RG_EXP_*`) définissent les contraintes applicables
 
 ---
 
-#### Ressources Opérationnelles
+### Ressources Opérationnelles
 
 <p><a href="Basic-ror-requirements-ressources-operationnelles.html">→ Ressource Requirements : Ressources Opérationnelles</a></p>
 
@@ -46,7 +46,7 @@ Les **règles de gestion** (`RG_EXP_*`) définissent les contraintes applicables
 
 ---
 
-#### Professionnel Ressource
+### Professionnel Ressource
 
 <p><a href="Basic-ror-requirements-professionnel.html">→ Ressource Requirements : Professionnel Ressource</a></p>
 
@@ -54,7 +54,7 @@ Les **règles de gestion** (`RG_EXP_*`) définissent les contraintes applicables
 
 ---
 
-#### Classes Communes
+### Classes Communes
 
 <p><a href="Basic-ror-requirements-classes-communes.html">→ Ressource Requirements : Classes Communes</a></p>
 
