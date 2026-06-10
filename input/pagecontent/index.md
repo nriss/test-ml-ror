@@ -58,6 +58,18 @@ Les données de description de l'offre de santé, échangées avec les ROR, sont
 
 {% include svg-interactive-script.html %}
 
+### Données pivots
+
+Chaque sous-ensemble possède des **données pivots** — identifiants uniques et persistants au niveau national — permettant aux applications externes de se synchroniser avec le ROR. Ces données ne sont pas modifiables après création.
+
+| Sous-ensemble | Donnée pivot |
+|---|---|
+| **Structure** | `idNat_Struct` — n° FINESS juridique/géographique, SIREN ou SIRET selon le type de structure |
+| **Organisation** | Identifiant généré par le ROR, de la forme `code INSEE régional / code interne ROR` |
+| **Offre Opérationnelle** | `identifiantOffre` — unique au niveau national, généré par une instance régionale ou le ROR national |
+| **Ressources Opérationnelles** | Identifiant du lieu de réalisation de l'offre |
+| **Professionnel** | `idNat_PS` — n° RPPS ou ADELI du professionnel |
+
 ---
 
 ### Relation avec le MOS
