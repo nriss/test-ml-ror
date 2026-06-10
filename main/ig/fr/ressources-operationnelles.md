@@ -32,6 +32,7 @@ L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette s
 | [RORCapacitePriseCharge](StructureDefinition-ror-capacite-prise-charge.md) | CapacitePriseCharge | Capacité de prise en charge par l'offre |
 | [RORCapaciteAccueilOperationnelle](StructureDefinition-ror-capacite-accueil-operationnelle.md) | Base | Capacité d'accueil disponible en temps réel |
 | [RORCapaciteHabitation](StructureDefinition-ror-capacite-habitation.md) | CapaciteHabitation | Capacité d'hébergement de l'établissement |
+| [RORLimiteCaracteristiqueEquipement](StructureDefinition-ror-limite-caracteristique-equipement.md) | **(nouveau)** | Valeur limite d'une caractéristique pour les équipements d'un même type |
 
 -------
 
@@ -66,4 +67,10 @@ La **Capacité d'Accueil Opérationnelle** représente les disponibilités de pr
 ### RORCapaciteHabitation
 
 La **Capacité Habitation** décrit le nombre de places ou de logements disponibles selon le type d'hébergement.
+
+-------
+
+### RORLimiteCaracteristiqueEquipement
+
+La **Limite de Caractéristique d'Équipement** précise les limites que peut supporter l'équipement le plus tolérant parmi les équipements spécifiques de même type dans une organisation. Par exemple, si une organisation possède trois tables de bloc opératoire supportant respectivement 180 kg, 190 kg et 200 kg, seule la valeur de 200 kg est retenue.
 

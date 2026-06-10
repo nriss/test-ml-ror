@@ -111,6 +111,13 @@
   "name" : "RORLieuRealisationOffre"
 },
 {
+  "id" : "ror-limite-caracteristique-equipement",
+  "type" : "StructureDefinition",
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-limite-caracteristique-equipement",
+  "version" : "0.1.0",
+  "name" : "RORLimiteCaracteristiqueEquipement"
+},
+{
   "id" : "ror-metadonnee",
   "type" : "StructureDefinition",
   "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee",

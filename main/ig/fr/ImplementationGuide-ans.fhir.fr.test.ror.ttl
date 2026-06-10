@@ -22,7 +22,7 @@
   fhir:name [ fhir:v "TestROR"] ; # 
   fhir:title [ fhir:v "Démonstration - Modèle Logique ROR dérivant du MOS"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-06-10T10:27:53+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-10T12:22:45+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
@@ -2883,6 +2883,27 @@
        ] ;
        fhir:name [ fhir:v "ROR - Lieu de Réalisation de l'Offre" ] ;
        fhir:description [ fhir:v "Spécialisation ROR du LieuRealisationOffre du MOS. Espace disposant d'un ensemble de ressources pour réaliser une offre. Lorsque les ressources sont mobiles, le lieu correspond au lieu administratif où est organisée la prise en charge." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:logical"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-limite-caracteristique-equipement> ;
+         fhir:reference [ fhir:v "StructureDefinition/ror-limite-caracteristique-equipement" ]
+       ] ;
+       fhir:name [ fhir:v "ROR - Limite de Caractéristique d'Équipement" ] ;
+       fhir:description [ fhir:v "Précise les limites que peut supporter l'équipement le plus tolérant parmi les équipements spécifiques de même type dans cette organisation. Par exemple, si une organisation possède 3 tables de bloc opératoire pouvant accueillir des patients d'un poids maximum de 180 kg, 190 kg et 200 kg, seule la valeur limite de 200 kg sera identifiée dans cette classe." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false

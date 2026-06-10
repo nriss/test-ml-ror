@@ -12,7 +12,7 @@
   <name value="TestROR"/>
   <title value="Démonstration - Modèle Logique ROR dérivant du MOS"/>
   <status value="draft"/>
-  <date value="2026-06-10T10:27:53+00:00"/>
+  <date value="2026-06-10T12:22:45+00:00"/>
   <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
   <contact>
     <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
@@ -1242,6 +1242,17 @@
       </reference>
       <name value="ROR - Lieu de Réalisation de l'Offre"/>
       <description value="Spécialisation ROR du LieuRealisationOffre du MOS. Espace disposant d'un ensemble de ressources pour réaliser une offre. Lorsque les ressources sont mobiles, le lieu correspond au lieu administratif où est organisée la prise en charge."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ror-limite-caracteristique-equipement"/>
+      </reference>
+      <name value="ROR - Limite de Caractéristique d'Équipement"/>
+      <description value="Précise les limites que peut supporter l'équipement le plus tolérant parmi les équipements spécifiques de même type dans cette organisation. Par exemple, si une organisation possède 3 tables de bloc opératoire pouvant accueillir des patients d'un poids maximum de 180 kg, 190 kg et 200 kg, seule la valeur limite de 200 kg sera identifiée dans cette classe."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

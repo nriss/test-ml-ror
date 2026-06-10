@@ -21,8 +21,8 @@
     "oids" : ["1.2.250.1.71.1.2.7"],
     "uses" : {
     },
-    "ValueSet-jdv-ror-profession-sante.html" : "JDV ROR - Profession de Santé (provisoire)",
-    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J186-ProfessionRessource-ROR.html" : "JDV_J186_ProfessionRessource_ROR"
+    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J186-ProfessionRessource-ROR.html" : "JDV_J186_ProfessionRessource_ROR",
+    "ValueSet-jdv-ror-profession-sante.html" : "JDV ROR - Profession de Santé (provisoire)"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R02-SecteurActivite/FHIR/TRE-R02-SecteurActivite",

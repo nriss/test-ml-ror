@@ -86,6 +86,7 @@
 * [ROR - Exercice Professionnel](StructureDefinition-ror-exercice-professionnel.md)
 * [ROR - Forfait Socle Hébergement](StructureDefinition-ror-forfait-socle-hebergement.md)
 * [ROR - Lieu de Réalisation de l'Offre](StructureDefinition-ror-lieu-realisation-offre.md)
+* [ROR - Limite de Caractéristique d'Équipement](StructureDefinition-ror-limite-caracteristique-equipement.md)
 * [ROR - Métadonnée](StructureDefinition-ror-metadonnee.md)
 * [ROR - Offre Opérationnelle](StructureDefinition-ror-offre-operationnelle.md)
 * [ROR - Organisation Interne](StructureDefinition-ror-organisation-interne.md)
