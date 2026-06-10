@@ -21,8 +21,8 @@
     "oids" : ["1.2.250.1.71.1.2.7"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J186-ProfessionRessource-ROR.html" : "JDV_J186_ProfessionRessource_ROR",
-    "ValueSet-jdv-ror-profession-sante.html" : "JDV ROR - Profession de Santé (provisoire)"
+    "ValueSet-jdv-ror-profession-sante.html" : "JDV ROR - Profession de Santé (provisoire)",
+    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J186-ProfessionRessource-ROR.html" : "JDV_J186_ProfessionRessource_ROR"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_G19-SecteurActiviteADELI/FHIR/TRE-G19-SecteurActiviteADELI",
@@ -46,8 +46,8 @@
     "oids" : ["1.2.250.1.71.4.2.4"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J55-CategorieEG-ROR.html" : "JDV_J55_CategorieEG_ROR",
-    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-secteurActivite-vs.html" : "SecteuractiviteVs"
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-secteurActivite-vs.html" : "SecteuractiviteVs",
+    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J55-CategorieEG-ROR.html" : "JDV_J55_CategorieEG_ROR"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R04-TypeSavoirFaire/FHIR/TRE-R04-TypeSavoirFaire",
@@ -95,9 +95,9 @@
     "oids" : ["1.2.250.1.213.2.24"],
     "uses" : {
     },
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-lieuNaissance-vs.html" : "LieunaissanceVs",
     "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-paysNationalite-vs.html" : "PaysnationaliteVs",
-    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-paysNaissance-vs.html" : "PaysnaissanceVs",
-    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-lieuNaissance-vs.html" : "LieunaissanceVs"
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-paysNaissance-vs.html" : "PaysnaissanceVs"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R202-AccessibiliteLieu/FHIR/TRE-R202-AccessibiliteLieu",
@@ -397,8 +397,8 @@
     "oids" : ["1.2.250.1.213.3.3.61"],
     "uses" : {
     },
-    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J51-FamilleActiviteOperationnelle-ROR.html" : "JDV_J51_FamilleActiviteOperationnelle_ROR",
-    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-familleActiviteOperationnelle-vs.html" : "FamilleactiviteoperationnelleVs"
+    "https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/ValueSet-familleActiviteOperationnelle-vs.html" : "FamilleactiviteoperationnelleVs",
+    "https://interop.esante.gouv.fr/terminologies/1.1.0/ValueSet-JDV-J51-FamilleActiviteOperationnelle-ROR.html" : "JDV_J51_FamilleActiviteOperationnelle_ROR"
   },
   {
     "url" : "https://mos.esante.gouv.fr/NOS/TRE_R267-SexeProvenanceISO/FHIR/TRE-R267-SexeProvenanceISO",

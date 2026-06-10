@@ -4,14 +4,14 @@
   "language" : "fr",
   "text" : {
     "status" : "generated",
-    "div" : "<div xml:lang=\"fr\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"fr\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.fhir.fr.test.ror</b></p><a name=\"ans.fhir.fr.test.ror\"> </a><a name=\"hcans.fhir.fr.test.ror\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Langue : fr</p></div><h2>TestROR</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/test-ror/ImplementationGuide/ans.fhir.fr.test.ror</pre><div><p>IG de démonstration illustrant comment définir des modèles logiques ROR qui dérivent des modèles logiques du MOS (Modèle des Objets de Santé).</p>\n</div></div>"
+    "div" : "<div xml:lang=\"fr\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"fr\"><p class=\"res-header-id\"><b>Narratif généré : ImplementationGuide ans.fhir.fr.test.ror</b></p><a name=\"ans.fhir.fr.test.ror\"> </a><a name=\"hcans.fhir.fr.test.ror\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Langue : fr</p></div><h2>MExROR</h2><p>L'URL officielle pour ce guide d'implémentation est : </p><pre>https://interop.esante.gouv.fr/ig/fhir/test-ror/ImplementationGuide/ans.fhir.fr.test.ror</pre><div><p>IG de démonstration illustrant comment définir des modèles logiques ROR qui dérivent des modèles logiques du MOS (Modèle des Objets de Santé).</p>\n</div></div>"
   },
   "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ImplementationGuide/ans.fhir.fr.test.ror",
   "version" : "0.1.0",
-  "name" : "TestROR",
+  "name" : "MExROR",
   "title" : "Modèle d'exposition du ROR dérivant du MOS (POC)",
   "status" : "draft",
-  "date" : "2026-06-10T12:45:37+00:00",
+  "date" : "2026-06-10T12:57:58+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
