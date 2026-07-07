@@ -1,0 +1,643 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "ror-personne-physique",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DéfinitionStructure ror-personne-physique</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-personne-physique-definitions.html#ror-personne-physique\" title=\"Spécialisation ROR de la PersonnePhysique du MOS.\">ror-personne-physique</a><a name=\"ror-personne-physique\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\">PersonnePhysique(0.1.0-ballot)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Personne physique dans le contexte ROR<br/><br/>Éléments définis dans les ancêtres :<a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Civilité de la personne physique.\">civilite</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Toute personne possède un nom de naissance (appelé auparavant nom de famille ou nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Ref.: Service-public.frSynonymes : nom de naissance, nom patronymique\">nomFamille</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Un nom d'usage de la personne.Rappel: Toute personne possède un nom de naissance  (appelé auparavant nom de famille ou nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Il est néanmoins possible d'utiliser, dans la vie quotidienne, un autre nom (par exemple le nom marital) appelé nom d'usage. Ce nom d'usage ne remplace en aucun cas le nom de naissance qui reste le seul nom mentionné sur les actes d'état civil (acte de naissance ou de mariage, livret de famille, etc.).Ref.: Service-public.fr\">nomUsage</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Prénom(s) de la personne déclarés à sa naissance.\">prenom</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Le prénom usuel est un des prénoms inscrit dans l'acte de naissance.\">prenomUsuel</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Un nom de fantaisie librement choisi par une personne dans l'exercice d'une activité particulière, afin de dissimuler au public son identité véritable.\">pseudonyme</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Un nom ajouté par le public au nom de naissance d'une personne, afin de la distinguer des autres personnes portant le même nom de naissance et, qui se déférencie du pseudonyme en ce qu'il n'est pas choisi par celui qui le porte et qu'il n'a pas pour but de dissimuler son identité mais au contraire de la préciser.\">surnom</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Sexe administratif de la personne physique, au sens de l'état civil, masculin ou féminin.\">sexeAdministratif</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Sexe de la personne physique, notamment masculin, féminin, inconnu.Attribut associé aux nomenclatures suivantes : ** CodeSystem-TRE-R249-Sexe : représentation des sexes humains par un code alphabétique** CodeSystem-TRE-R267-SexeProvenanceISO : norme ISO 5218 qui définit la représentation des sexes humains par un code numérique** CodeSystem-TRE-R303-HL7v3AdministrativeGender : reprise de la terminologie HL7 v3 AdministrativeGender** ConceptMap-ASS-A15-SexeProvenanceISO-Sexe : table d'association entre les nomenclatures CodeSystem-TRE-R267-SexeProvenanceISO, CodeSystem-TRE-R249-Sexe\">sexe</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Langue parlée par la personne, y compris le français.\">langueParlee</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Situation familiale de la personne (célibataire, divorcée, etc.).Les valeurs de ce code sont répertoriées dans plusieurs nomenclatures notamment:- la liste de la Déclaration Automatisée des Données Sociales Unifiée (DADS-U):01: célibataire02: marié(e)03: divorcé(e)04: séparé(e)05: veuf, veuve06: vie maritale07: PACS90: non connueetc.- Liste de codes HL7 &quot;MaritalStatus&quot;:A: Annulled, marriage contract has been declared null and to not have existedD: Divorced, marriage contract has been declared dissolved and inactiveI: Interlocutory, subject to an Interlocutory DecreeL: Legally separatedM: Married, a current marriage contract is activeP: Polygamous, more than 1 current spouseS: Never Married, no marriage contract has ever been enteredT: Domestic partner, person declares that a domestic partner relationship exists.U: Unmarried, currently not in a marriage contract.W: Widowed, the spouse has died\">situationFamiliale</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Date de naissance de la personne.A noter que l'âge de la personne ne figure pas dans le MOS. Cette information peut être calculée à partir de la date de naissance.\">dateNaissance</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Date de décès de la personne.\">dateDeces</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Commune de naissance de la personne.Code officiel géographique (COG) de la commune.\">communeNaissance</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Département de naissance de la personne.Code officiel géographique (COG) du département.\">departementNaissance</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Pays de naissance de la personne.Code officiel géographique (COG) du pays.\">paysNaissance</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Lieu de naissance de la personne.Code officiel géographique (COG) de la commune (France) ou du pays.\">lieuNaissance</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Statut de la demande de certification auprès de l'organisme certificateur.\">statutEtatCivil</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Date de transmission du statut d’état civil de la personne par l’organisme certificateur d’état-civil.\">dateStatutEtatCivil</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Date d'acquisition de la nationalité française, renseignée uniquement si la nationalité actuelle est française et qu'elle n’a pas été acquise à la naissance.\">dateAcquisitionNatFR</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.Attribut associé aux nomenclatures suivantes :**CodeSystem-TRE-R268-PaysProvenanceISO : provient de la norme ISO 3166-1 (code alpha-2) qui définit la représentation des noms de pays par un code à deux lettres**CodeSystem-TRE-R20-Pays : provient du code officiel géographique (COG)**CodeSystem-TRE-R89-RegroupementPays : espace de pays conventionné\">paysNationalite</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Pays où séjourne la personne de façon permanente.\">paysResidence</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Profession et catégorie socio-professionnelle de la personne (PCS). Ce code provient de la nomenclature des professions et catégories socioprofessionnelles (PCS) de l'INSEE.\">professionCategorieSocioProfessionnelle</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Une ou plusieurs causes ayant entraîné la mort de la personne. La liste des codes est en cours de constitution. Certains codes proviennent des niveaux 3 et 4 de la CIM 10, en cas de décès dû à une pathologie.\">causeMortalite</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Taille du corps de la personne exprimée dans une unité de mesure (m, cm, etc.).Synonymes: grandeur corporelle, grandeur du corps, hauteur corporelle, hauteur du corps, longueur corporelle.\">tailleCorporelle</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Masse du corps de la personne exprimée dans une unité de mesure (kg, g, etc.).\">poidsCorporel</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Surface du corps de la personne, c'est à dire la mesure en deux dimensions de la surface externe de la peau recouvrant le corps, exprimée dans une unité de mesure (par exemple, en m2).Calcul de la surface corporelle:** Calcul de la surface corporelle chez un adulte (&gt;= à 40 Kg + taille renseignée) :La surface corporelle est calculée selon la formule suivante (Formule de BOYD) :SC = 0,0001 x (3,207) x (P0,7285-0,0188logP) x (T0,3) avec T en cm, P en grammes et Log le logarithme décimal.** Calcul de la surface corporelle chez un petit enfant (poids &lt; 40 Kg):Il convient d'utiliser une formule adaptée au calcul de la surface corporelle chez le petit enfant car elle s'affranchit de la taille. La formule est à utiliser pour tous les enfants dont le poids est inférieur à 40 Kg.La surface corporelle est alors calculée selon la formule suivante :SC = (4 x P + 7) / (P + 90) avec P en Kg, le résultat SC est donné en m2.\">surfaceCorporelle</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Indice de masse corporelle (IMC).L'IMC résulte du calcul suivant: IMC = poids (kg) / taille (m)²L'affichage du résultat de l'IMC varie selon la valeur obtenue :** IMC &lt; 18.5 : maigreur** 18.5 &lt;= IMC &lt;= 25 : corpulence normale** 25 &lt; IMC &lt;= 30 : surpoids** IMC &gt; 30 : obésité\">indiceMasseCorporelle</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Lien vers la classe Parent\">Parent</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Lien vers la classe MesureProtection\">MesureProtection</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Lien vers la classe AidantDemarche\">AidantDemarche</a><br/><span style=\"font-weight:bold\">Les instances de ce modèle logique peuvent être la cible d'une référence</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-personne-physique-definitions.html#ror-personne-physique.civilite\">civilite</a><a name=\"ror-personne-physique.civilite\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Civilité de la personne physique.</span><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-civilite.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite\" class=\"binding\">JDVRORCivilite (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-personne-physique-definitions.html#ror-personne-physique.metadonnee\" title=\"Informations relatives à la gestion des données de la personne physique dans le ROR.\">metadonnee</a><a name=\"ror-personne-physique.metadonnee\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-ror-metadonnee.html\">ror-metadonnee</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Informations relatives à la gestion des données de la personne physique dans le ROR.</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+    "valueCode" : "can-be-target"
+  }],
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-personne-physique",
+  "version" : "0.1.0",
+  "name" : "RORPersonnePhysique",
+  "title" : "ROR - Personne Physique",
+  "status" : "draft",
+  "date" : "2026-07-07T16:28:25+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Spécialisation ROR de la PersonnePhysique du MOS. Individu titulaire de droits et d'obligations caractérisé par une identité civile, dans le contexte ROR.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-personne-physique",
+  "baseDefinition" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePhysique|0.1.0-ballot",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "0.1.0-ballot"
+    }],
+    "element" : [{
+      "id" : "ror-personne-physique",
+      "path" : "ror-personne-physique",
+      "short" : "Personne physique dans le contexte ROR",
+      "definition" : "Spécialisation ROR de la PersonnePhysique du MOS.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
+    {
+      "id" : "ror-personne-physique.civilite",
+      "path" : "ror-personne-physique.civilite",
+      "short" : "Civilité de la personne physique.",
+      "definition" : "Civilité de la personne physique.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.civilite",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite|0.1.0"
+      }
+    },
+    {
+      "id" : "ror-personne-physique.nomFamille",
+      "path" : "ror-personne-physique.nomFamille",
+      "short" : "Toute personne possède un nom de naissance (appelé auparavant nom de famille ou nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Ref.: Service-public.frSynonymes : nom de naissance, nom patronymique",
+      "definition" : "Toute personne possède un nom de naissance (appelé auparavant nom de famille ou nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Ref.: Service-public.frSynonymes : nom de naissance, nom patronymique",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.nomFamille",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.nomUsage",
+      "path" : "ror-personne-physique.nomUsage",
+      "short" : "Un nom d'usage de la personne.Rappel: Toute personne possède un nom de naissance  (appelé auparavant nom de famille ou nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Il est néanmoins possible d'utiliser, dans la vie quotidienne, un autre nom (par exemple le nom marital) appelé nom d'usage. Ce nom d'usage ne remplace en aucun cas le nom de naissance qui reste le seul nom mentionné sur les actes d'état civil (acte de naissance ou de mariage, livret de famille, etc.).Ref.: Service-public.fr",
+      "definition" : "Un nom d'usage de la personne.Rappel: Toute personne possède un nom de naissance  (appelé auparavant nom de famille ou nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Il est néanmoins possible d'utiliser, dans la vie quotidienne, un autre nom (par exemple le nom marital) appelé nom d'usage. Ce nom d'usage ne remplace en aucun cas le nom de naissance qui reste le seul nom mentionné sur les actes d'état civil (acte de naissance ou de mariage, livret de famille, etc.).Ref.: Service-public.fr",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.nomUsage",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.prenom",
+      "path" : "ror-personne-physique.prenom",
+      "short" : "Prénom(s) de la personne déclarés à sa naissance.",
+      "definition" : "Prénom(s) de la personne déclarés à sa naissance.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "PersonnePhysique.prenom",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.prenomUsuel",
+      "path" : "ror-personne-physique.prenomUsuel",
+      "short" : "Le prénom usuel est un des prénoms inscrit dans l'acte de naissance.",
+      "definition" : "Le prénom usuel est un des prénoms inscrit dans l'acte de naissance.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.prenomUsuel",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.pseudonyme",
+      "path" : "ror-personne-physique.pseudonyme",
+      "short" : "Un nom de fantaisie librement choisi par une personne dans l'exercice d'une activité particulière, afin de dissimuler au public son identité véritable.",
+      "definition" : "Un nom de fantaisie librement choisi par une personne dans l'exercice d'une activité particulière, afin de dissimuler au public son identité véritable.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.pseudonyme",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.surnom",
+      "path" : "ror-personne-physique.surnom",
+      "short" : "Un nom ajouté par le public au nom de naissance d'une personne, afin de la distinguer des autres personnes portant le même nom de naissance et, qui se déférencie du pseudonyme en ce qu'il n'est pas choisi par celui qui le porte et qu'il n'a pas pour but de dissimuler son identité mais au contraire de la préciser.",
+      "definition" : "Un nom ajouté par le public au nom de naissance d'une personne, afin de la distinguer des autres personnes portant le même nom de naissance et, qui se déférencie du pseudonyme en ce qu'il n'est pas choisi par celui qui le porte et qu'il n'a pas pour but de dissimuler son identité mais au contraire de la préciser.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.surnom",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.sexeAdministratif",
+      "path" : "ror-personne-physique.sexeAdministratif",
+      "short" : "Sexe administratif de la personne physique, au sens de l'état civil, masculin ou féminin.",
+      "definition" : "Sexe administratif de la personne physique, au sens de l'état civil, masculin ou féminin.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.sexeAdministratif",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/TRE_R10-SexeAdministratif/FHIR/TRE-R10-SexeAdministratif?vs"
+      }
+    },
+    {
+      "id" : "ror-personne-physique.sexe",
+      "path" : "ror-personne-physique.sexe",
+      "short" : "Sexe de la personne physique, notamment masculin, féminin, inconnu.Attribut associé aux nomenclatures suivantes : ** CodeSystem-TRE-R249-Sexe : représentation des sexes humains par un code alphabétique** CodeSystem-TRE-R267-SexeProvenanceISO : norme ISO 5218 qui définit la représentation des sexes humains par un code numérique** CodeSystem-TRE-R303-HL7v3AdministrativeGender : reprise de la terminologie HL7 v3 AdministrativeGender** ConceptMap-ASS-A15-SexeProvenanceISO-Sexe : table d'association entre les nomenclatures CodeSystem-TRE-R267-SexeProvenanceISO, CodeSystem-TRE-R249-Sexe",
+      "definition" : "Sexe de la personne physique, notamment masculin, féminin, inconnu.Attribut associé aux nomenclatures suivantes : ** CodeSystem-TRE-R249-Sexe : représentation des sexes humains par un code alphabétique** CodeSystem-TRE-R267-SexeProvenanceISO : norme ISO 5218 qui définit la représentation des sexes humains par un code numérique** CodeSystem-TRE-R303-HL7v3AdministrativeGender : reprise de la terminologie HL7 v3 AdministrativeGender** ConceptMap-ASS-A15-SexeProvenanceISO-Sexe : table d'association entre les nomenclatures CodeSystem-TRE-R267-SexeProvenanceISO, CodeSystem-TRE-R249-Sexe",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.sexe",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/sexe-vs|0.1.0-ballot"
+      }
+    },
+    {
+      "id" : "ror-personne-physique.langueParlee",
+      "path" : "ror-personne-physique.langueParlee",
+      "short" : "Langue parlée par la personne, y compris le français.",
+      "definition" : "Langue parlée par la personne, y compris le français.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "PersonnePhysique.langueParlee",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LangueParlee"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.situationFamiliale",
+      "path" : "ror-personne-physique.situationFamiliale",
+      "short" : "Situation familiale de la personne (célibataire, divorcée, etc.).Les valeurs de ce code sont répertoriées dans plusieurs nomenclatures notamment:- la liste de la Déclaration Automatisée des Données Sociales Unifiée (DADS-U):01: célibataire02: marié(e)03: divorcé(e)04: séparé(e)05: veuf, veuve06: vie maritale07: PACS90: non connueetc.- Liste de codes HL7 \"MaritalStatus\":A: Annulled, marriage contract has been declared null and to not have existedD: Divorced, marriage contract has been declared dissolved and inactiveI: Interlocutory, subject to an Interlocutory DecreeL: Legally separatedM: Married, a current marriage contract is activeP: Polygamous, more than 1 current spouseS: Never Married, no marriage contract has ever been enteredT: Domestic partner, person declares that a domestic partner relationship exists.U: Unmarried, currently not in a marriage contract.W: Widowed, the spouse has died",
+      "definition" : "Situation familiale de la personne (célibataire, divorcée, etc.).Les valeurs de ce code sont répertoriées dans plusieurs nomenclatures notamment:- la liste de la Déclaration Automatisée des Données Sociales Unifiée (DADS-U):01: célibataire02: marié(e)03: divorcé(e)04: séparé(e)05: veuf, veuve06: vie maritale07: PACS90: non connueetc.- Liste de codes HL7 \"MaritalStatus\":A: Annulled, marriage contract has been declared null and to not have existedD: Divorced, marriage contract has been declared dissolved and inactiveI: Interlocutory, subject to an Interlocutory DecreeL: Legally separatedM: Married, a current marriage contract is activeP: Polygamous, more than 1 current spouseS: Never Married, no marriage contract has ever been enteredT: Domestic partner, person declares that a domestic partner relationship exists.U: Unmarried, currently not in a marriage contract.W: Widowed, the spouse has died",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.situationFamiliale",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.dateNaissance",
+      "path" : "ror-personne-physique.dateNaissance",
+      "short" : "Date de naissance de la personne.A noter que l'âge de la personne ne figure pas dans le MOS. Cette information peut être calculée à partir de la date de naissance.",
+      "definition" : "Date de naissance de la personne.A noter que l'âge de la personne ne figure pas dans le MOS. Cette information peut être calculée à partir de la date de naissance.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.dateNaissance",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.dateDeces",
+      "path" : "ror-personne-physique.dateDeces",
+      "short" : "Date de décès de la personne.",
+      "definition" : "Date de décès de la personne.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.dateDeces",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.communeNaissance",
+      "path" : "ror-personne-physique.communeNaissance",
+      "short" : "Commune de naissance de la personne.Code officiel géographique (COG) de la commune.",
+      "definition" : "Commune de naissance de la personne.Code officiel géographique (COG) de la commune.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.communeNaissance",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM?vs"
+      }
+    },
+    {
+      "id" : "ror-personne-physique.departementNaissance",
+      "path" : "ror-personne-physique.departementNaissance",
+      "short" : "Département de naissance de la personne.Code officiel géographique (COG) du département.",
+      "definition" : "Département de naissance de la personne.Code officiel géographique (COG) du département.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.departementNaissance",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/TRE_G09-DepartementOM/FHIR/TRE-G09-DepartementOM?vs"
+      }
+    },
+    {
+      "id" : "ror-personne-physique.paysNaissance",
+      "path" : "ror-personne-physique.paysNaissance",
+      "short" : "Pays de naissance de la personne.Code officiel géographique (COG) du pays.",
+      "definition" : "Pays de naissance de la personne.Code officiel géographique (COG) du pays.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.paysNaissance",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/paysNaissance-vs|0.1.0-ballot"
+      }
+    },
+    {
+      "id" : "ror-personne-physique.lieuNaissance",
+      "path" : "ror-personne-physique.lieuNaissance",
+      "short" : "Lieu de naissance de la personne.Code officiel géographique (COG) de la commune (France) ou du pays.",
+      "definition" : "Lieu de naissance de la personne.Code officiel géographique (COG) de la commune (France) ou du pays.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.lieuNaissance",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/lieuNaissance-vs|0.1.0-ballot"
+      }
+    },
+    {
+      "id" : "ror-personne-physique.statutEtatCivil",
+      "path" : "ror-personne-physique.statutEtatCivil",
+      "short" : "Statut de la demande de certification auprès de l'organisme certificateur.",
+      "definition" : "Statut de la demande de certification auprès de l'organisme certificateur.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.statutEtatCivil",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/TRE_R31-StatutEtatCivil/FHIR/TRE-R31-StatutEtatCivil?vs"
+      }
+    },
+    {
+      "id" : "ror-personne-physique.dateStatutEtatCivil",
+      "path" : "ror-personne-physique.dateStatutEtatCivil",
+      "short" : "Date de transmission du statut d’état civil de la personne par l’organisme certificateur d’état-civil.",
+      "definition" : "Date de transmission du statut d’état civil de la personne par l’organisme certificateur d’état-civil.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.dateStatutEtatCivil",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.dateAcquisitionNatFR",
+      "path" : "ror-personne-physique.dateAcquisitionNatFR",
+      "short" : "Date d'acquisition de la nationalité française, renseignée uniquement si la nationalité actuelle est française et qu'elle n’a pas été acquise à la naissance.",
+      "definition" : "Date d'acquisition de la nationalité française, renseignée uniquement si la nationalité actuelle est française et qu'elle n’a pas été acquise à la naissance.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.dateAcquisitionNatFR",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "date"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.paysNationalite",
+      "path" : "ror-personne-physique.paysNationalite",
+      "short" : "Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.Attribut associé aux nomenclatures suivantes :**CodeSystem-TRE-R268-PaysProvenanceISO : provient de la norme ISO 3166-1 (code alpha-2) qui définit la représentation des noms de pays par un code à deux lettres**CodeSystem-TRE-R20-Pays : provient du code officiel géographique (COG)**CodeSystem-TRE-R89-RegroupementPays : espace de pays conventionné",
+      "definition" : "Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.Attribut associé aux nomenclatures suivantes :**CodeSystem-TRE-R268-PaysProvenanceISO : provient de la norme ISO 3166-1 (code alpha-2) qui définit la représentation des noms de pays par un code à deux lettres**CodeSystem-TRE-R20-Pays : provient du code officiel géographique (COG)**CodeSystem-TRE-R89-RegroupementPays : espace de pays conventionné",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.paysNationalite",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/paysNationalite-vs|0.1.0-ballot"
+      }
+    },
+    {
+      "id" : "ror-personne-physique.paysResidence",
+      "path" : "ror-personne-physique.paysResidence",
+      "short" : "Pays où séjourne la personne de façon permanente.",
+      "definition" : "Pays où séjourne la personne de façon permanente.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.paysResidence",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays?vs"
+      }
+    },
+    {
+      "id" : "ror-personne-physique.professionCategorieSocioProfessionnelle",
+      "path" : "ror-personne-physique.professionCategorieSocioProfessionnelle",
+      "short" : "Profession et catégorie socio-professionnelle de la personne (PCS). Ce code provient de la nomenclature des professions et catégories socioprofessionnelles (PCS) de l'INSEE.",
+      "definition" : "Profession et catégorie socio-professionnelle de la personne (PCS). Ce code provient de la nomenclature des professions et catégories socioprofessionnelles (PCS) de l'INSEE.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.professionCategorieSocioProfessionnelle",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }],
+      "binding" : {
+        "strength" : "preferred",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/mos/ValueSet/professionCategorieSocioProfessionnelle-vs|0.1.0-ballot"
+      }
+    },
+    {
+      "id" : "ror-personne-physique.causeMortalite",
+      "path" : "ror-personne-physique.causeMortalite",
+      "short" : "Une ou plusieurs causes ayant entraîné la mort de la personne. La liste des codes est en cours de constitution. Certains codes proviennent des niveaux 3 et 4 de la CIM 10, en cas de décès dû à une pathologie.",
+      "definition" : "Une ou plusieurs causes ayant entraîné la mort de la personne. La liste des codes est en cours de constitution. Certains codes proviennent des niveaux 3 et 4 de la CIM 10, en cas de décès dû à une pathologie.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.causeMortalite",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Coding"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.tailleCorporelle",
+      "path" : "ror-personne-physique.tailleCorporelle",
+      "short" : "Taille du corps de la personne exprimée dans une unité de mesure (m, cm, etc.).Synonymes: grandeur corporelle, grandeur du corps, hauteur corporelle, hauteur du corps, longueur corporelle.",
+      "definition" : "Taille du corps de la personne exprimée dans une unité de mesure (m, cm, etc.).Synonymes: grandeur corporelle, grandeur du corps, hauteur corporelle, hauteur du corps, longueur corporelle.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.tailleCorporelle",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.poidsCorporel",
+      "path" : "ror-personne-physique.poidsCorporel",
+      "short" : "Masse du corps de la personne exprimée dans une unité de mesure (kg, g, etc.).",
+      "definition" : "Masse du corps de la personne exprimée dans une unité de mesure (kg, g, etc.).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.poidsCorporel",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.surfaceCorporelle",
+      "path" : "ror-personne-physique.surfaceCorporelle",
+      "short" : "Surface du corps de la personne, c'est à dire la mesure en deux dimensions de la surface externe de la peau recouvrant le corps, exprimée dans une unité de mesure (par exemple, en m2).Calcul de la surface corporelle:** Calcul de la surface corporelle chez un adulte (>= à 40 Kg + taille renseignée) :La surface corporelle est calculée selon la formule suivante (Formule de BOYD) :SC = 0,0001 x (3,207) x (P0,7285-0,0188logP) x (T0,3) avec T en cm, P en grammes et Log le logarithme décimal.** Calcul de la surface corporelle chez un petit enfant (poids < 40 Kg):Il convient d'utiliser une formule adaptée au calcul de la surface corporelle chez le petit enfant car elle s'affranchit de la taille. La formule est à utiliser pour tous les enfants dont le poids est inférieur à 40 Kg.La surface corporelle est alors calculée selon la formule suivante :SC = (4 x P + 7) / (P + 90) avec P en Kg, le résultat SC est donné en m2.",
+      "definition" : "Surface du corps de la personne, c'est à dire la mesure en deux dimensions de la surface externe de la peau recouvrant le corps, exprimée dans une unité de mesure (par exemple, en m2).Calcul de la surface corporelle:** Calcul de la surface corporelle chez un adulte (>= à 40 Kg + taille renseignée) :La surface corporelle est calculée selon la formule suivante (Formule de BOYD) :SC = 0,0001 x (3,207) x (P0,7285-0,0188logP) x (T0,3) avec T en cm, P en grammes et Log le logarithme décimal.** Calcul de la surface corporelle chez un petit enfant (poids < 40 Kg):Il convient d'utiliser une formule adaptée au calcul de la surface corporelle chez le petit enfant car elle s'affranchit de la taille. La formule est à utiliser pour tous les enfants dont le poids est inférieur à 40 Kg.La surface corporelle est alors calculée selon la formule suivante :SC = (4 x P + 7) / (P + 90) avec P en Kg, le résultat SC est donné en m2.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.surfaceCorporelle",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.indiceMasseCorporelle",
+      "path" : "ror-personne-physique.indiceMasseCorporelle",
+      "short" : "Indice de masse corporelle (IMC).L'IMC résulte du calcul suivant: IMC = poids (kg) / taille (m)²L'affichage du résultat de l'IMC varie selon la valeur obtenue :** IMC < 18.5 : maigreur** 18.5 <= IMC <= 25 : corpulence normale** 25 < IMC <= 30 : surpoids** IMC > 30 : obésité",
+      "definition" : "Indice de masse corporelle (IMC).L'IMC résulte du calcul suivant: IMC = poids (kg) / taille (m)²L'affichage du résultat de l'IMC varie selon la valeur obtenue :** IMC < 18.5 : maigreur** 18.5 <= IMC <= 25 : corpulence normale** 25 < IMC <= 30 : surpoids** IMC > 30 : obésité",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.indiceMasseCorporelle",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Quantity"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.Parent",
+      "path" : "ror-personne-physique.Parent",
+      "short" : "Lien vers la classe Parent",
+      "definition" : "Lien vers la classe Parent",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "PersonnePhysique.Parent",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Parent"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.MesureProtection",
+      "path" : "ror-personne-physique.MesureProtection",
+      "short" : "Lien vers la classe MesureProtection",
+      "definition" : "Lien vers la classe MesureProtection",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.MesureProtection",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/MesureProtection"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.AidantDemarche",
+      "path" : "ror-personne-physique.AidantDemarche",
+      "short" : "Lien vers la classe AidantDemarche",
+      "definition" : "Lien vers la classe AidantDemarche",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PersonnePhysique.AidantDemarche",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AidantDemarche"
+      }]
+    },
+    {
+      "id" : "ror-personne-physique.metadonnee",
+      "path" : "ror-personne-physique.metadonnee",
+      "short" : "Informations relatives à la gestion des données de la personne physique dans le ROR.",
+      "definition" : "Informations relatives à la gestion des données de la personne physique dans le ROR.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "ror-personne-physique.metadonnee",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "ror-personne-physique",
+      "path" : "ror-personne-physique",
+      "short" : "Personne physique dans le contexte ROR",
+      "definition" : "Spécialisation ROR de la PersonnePhysique du MOS."
+    },
+    {
+      "id" : "ror-personne-physique.civilite",
+      "path" : "ror-personne-physique.civilite",
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite|0.1.0"
+      }
+    },
+    {
+      "id" : "ror-personne-physique.metadonnee",
+      "path" : "ror-personne-physique.metadonnee",
+      "short" : "Informations relatives à la gestion des données de la personne physique dans le ROR.",
+      "definition" : "Informations relatives à la gestion des données de la personne physique dans le ROR.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee"
+      }]
+    }]
+  }
+}

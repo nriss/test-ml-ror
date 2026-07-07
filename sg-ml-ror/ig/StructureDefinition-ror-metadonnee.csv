@@ -1,0 +1,15 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"ror-metadonnee","ror-metadonnee","","","",0,*,"","","","null {[]} {[]}
+","Métadonnées de gestion et de synchronisation ROR","Informations relatives à la gestion des classes et des données du ROR. Permet aux applications consommatrices de se synchroniser en identifiant les créations, modifications et suppressions d'objets.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"ror-metadonnee.dateCreation","ror-metadonnee.dateCreation","","","",1,1,"","","","dateTime {[]} {[]}
+","Date de création de la plus ancienne donnée de l'objet.","Date de création de la plus ancienne donnée de l'objet.","","","","","","","","","",,,,,"",,,,"ror-metadonnee.dateCreation",1,1,"",""
+"ror-metadonnee.dateMiseJour","ror-metadonnee.dateMiseJour","","","",1,1,"","","","dateTime {[]} {[]}
+","Date de mise à jour de la dernière donnée mise à jour de l'objet.","Date de mise à jour de la dernière donnée mise à jour de l'objet.","","","","","","","","","",,,,,"",,,,"ror-metadonnee.dateMiseJour",1,1,"",""
+"ror-metadonnee.identifiant","ror-metadonnee.identifiant","","","",0,1,"","","","Identifier {[]} {[]}
+","Identifiant technique permettant à un consommateur de réconcilier les données dans un contexte spécifique d'échange.","Identifiant technique permettant à un consommateur de réconcilier les données dans un contexte spécifique d'échange.","","","","","","","","","",,,,,"",,,,"ror-metadonnee.identifiant",0,1,"",""
+"ror-metadonnee.commentaire","ror-metadonnee.commentaire","","","",0,1,"","","","string {[]} {[]}
+","Commentaire associé à l'objet.","Commentaire associé à l'objet.","","","","","","","","","",,,,,"",,,,"ror-metadonnee.commentaire",0,1,"",""
+"ror-metadonnee.regionSource","ror-metadonnee.regionSource","","","",0,1,"","","","Coding {[]} {[]}
+","Code région de la source de la donnée.","Code région de la source de la donnée.","","","","","","","","","",,"required","","https://mos.esante.gouv.fr/NOS/JDV_J237-RegionOM-ROR/FHIR/JDV-J237-RegionOM-ROR|20240126120000","",,,,"ror-metadonnee.regionSource",0,1,"",""
+"ror-metadonnee.modeleSaisie","ror-metadonnee.modeleSaisie","","","",0,1,"","","","Identifier {[]} {[]}
+","Identifiant du modèle de saisie de l'objet ainsi que la version de ce modèle (format : identifiant modèle | version).","Identifiant du modèle de saisie de l'objet ainsi que la version de ce modèle (format : identifiant modèle | version).","","","","","","","","","",,,,,"",,,,"ror-metadonnee.modeleSaisie",0,1,"",""

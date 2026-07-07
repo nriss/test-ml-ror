@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="ror-requirements-tarif"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/5.0/StructureDefinition/profile-Requirements"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : Basique ror-requirements-tarif</b></p><a name="ror-requirements-tarif"> </a><a name="hcror-requirements-tarif"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-profile-Requirements.html">Cross-version Profile for R5.Requirements for use in FHIR R4</a></p></div><p><b>R5: Canonical identifier for this Requirements, represented as a URI (globally unique) (new)</b>: <a href="https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/tarif">https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/tarif</a></p><p><b>R5: Name for this Requirements (computer friendly) (new)</b>: RORRequirementsTarif</p><p><b>R5: Name for this Requirements (human friendly) (new)</b>: Règles de gestion - Tarif</p><p><b>R5: Natural language description of the requirements (new)</b>: </p><div><p>Règles de gestion du modèle d'exposition ROR relatives aux classes Tarif.</p>
+</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-026</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href="StructureDefinition-ror-forfait-socle-hebergement.html">ROR - Forfait Socle Hébergement</a></li></ul></blockquote><div><p><strong>RG_EXP_026</strong> : Un seul tarif de type « Forfait socle hébergement » PEUT être instancié pour chaque combinaison de <code>tarifMoins60Ans</code>, <code>typeHabitation</code>, <code>temporaliteAccueil</code>, <code>conditionTarifaire</code> pour une même EG.</p>
+</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-027</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href="StructureDefinition-ror-tarif.html">ROR - Tarif</a></li></ul></blockquote><div><p><strong>RG_EXP_027</strong> : Pour les autres types de tarifs, un seul montant PEUT être exposé pour chaque combinaison des valeurs des attributs (hors montant) pour une même EG.</p>
+</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-029</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href="StructureDefinition-ror-supplement-tarif-hebergement.html">ROR - Supplément Tarif Hébergement</a></li></ul></blockquote><div><p><strong>RG_EXP_029</strong> : L'attribut <code>typeHabitation</code> d'un tarif de type « supplément tarif hébergement » DOIT prendre la valeur « chambre simple ».</p>
+</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-036</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href="StructureDefinition-ror-tarif-prestation-supplementaire.html">ROR - Tarif Prestation Supplémentaire</a></li></ul></blockquote><div><p><strong>RG_EXP_036</strong> : Les attributs <code>nomPrestationSupp</code> et <code>nomAutrePrestationSupp</code> de la classe <code>TarifPrestationSupplementaire</code> sont mutuellement exclusifs.</p>
+</div><p><b>code</b>: <span title="Codes :{http://hl7.org/fhir/resource-types Requirements}">Requirements</span></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url">
+    <valueUri value="https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/tarif"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name">
+    <valueString value="RORRequirementsTarif"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title">
+    <valueString value="Règles de gestion - Tarif"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description">
+    <valueMarkdown value="Règles de gestion du modèle d'exposition ROR relatives aux classes Tarif."/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="key">
+      <valueId value="RG-EXP-026"/>
+    </extension>
+    <extension url="requirement">
+      <valueMarkdown value="**RG_EXP_026** : Un seul tarif de type « Forfait socle hébergement » PEUT être instancié pour chaque combinaison de `tarifMoins60Ans`, `typeHabitation`, `temporaliteAccueil`, `conditionTarifaire` pour une même EG."/>
+    </extension>
+    <extension url="conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="satisfiedBy">
+      <valueUrl value="https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-forfait-socle-hebergement"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="key">
+      <valueId value="RG-EXP-027"/>
+    </extension>
+    <extension url="requirement">
+      <valueMarkdown value="**RG_EXP_027** : Pour les autres types de tarifs, un seul montant PEUT être exposé pour chaque combinaison des valeurs des attributs (hors montant) pour une même EG."/>
+    </extension>
+    <extension url="conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="satisfiedBy">
+      <valueUrl value="https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-tarif"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="key">
+      <valueId value="RG-EXP-029"/>
+    </extension>
+    <extension url="requirement">
+      <valueMarkdown value="**RG_EXP_029** : L'attribut `typeHabitation` d'un tarif de type « supplément tarif hébergement » DOIT prendre la valeur « chambre simple »."/>
+    </extension>
+    <extension url="conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="satisfiedBy">
+      <valueUrl value="https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-supplement-tarif-hebergement"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
+    <extension url="key">
+      <valueId value="RG-EXP-036"/>
+    </extension>
+    <extension url="requirement">
+      <valueMarkdown value="**RG_EXP_036** : Les attributs `nomPrestationSupp` et `nomAutrePrestationSupp` de la classe `TarifPrestationSupplementaire` sont mutuellement exclusifs."/>
+    </extension>
+    <extension url="conformance">
+      <valueCode value="SHALL"/>
+    </extension>
+    <extension url="satisfiedBy">
+      <valueUrl value="https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-tarif-prestation-supplementaire"/>
+    </extension>
+  </extension>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/resource-types"/>
+      <code value="Requirements"/>
+    </coding>
+  </code>
+</Basic>

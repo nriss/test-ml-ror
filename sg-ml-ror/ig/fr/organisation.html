@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Organisation - Modèle d&#39;exposition du ROR dérivant du MOS (POC) v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+        <link rel="stylesheet" href="assets/css/style-ans.css"/>
+    <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+<div id="family-nav">
+    <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+  </div>
+  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
+    <a id="hl7-logo" data-no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
+    <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  </div>
+
+  <div id="ig-search">
+ </div>
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">Modèle d&#39;exposition du ROR dérivant du MOS (POC)</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+
+
+
+  <img alt="France (la) drapeau" src="../assets/images/fra.svg" height="16" title="France (la)"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Accueil</a>
+  </li>
+  <li>
+    <a href="avantages-ml.html">À propos de ce POC</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modèle d&apos;exposition
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="classes-communes.html">Classes Communes</a>
+      </li>
+      <li>
+        <a href="structure.html">Structure</a>
+      </li>
+      <li>
+        <a href="organisation.html">Organisation</a>
+      </li>
+      <li>
+        <a href="offre-operationnelle.html">Offre Opérationnelle</a>
+      </li>
+      <li>
+        <a href="tarif.html">Tarif</a>
+      </li>
+      <li>
+        <a href="ressources-operationnelles.html">Ressources Opérationnelles</a>
+      </li>
+      <li>
+        <a href="professionnel.html">Professionnel Ressource</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="regles-de-gestion.html">Règles de gestion</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Ressources de conformité</a>
+  </li>
+  <li>
+    <a href="change-log.html">Historique</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Documentations
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation des IGs</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/ror/">Documentation de l&apos;API</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Organisation</b></li>
+
+          <span style="float: var(--ig-right);">
+
+            <a href="structure.html">&lt; précédent</a> | 
+
+            <a href="#bottom">bas de page</a>
+
+          | <a href="offre-operationnelle.html">suivant &gt;</a>
+
+          </span>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Modèle d'exposition du ROR dérivant du MOS (POC) - version de développement local (intégration continue v0.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/test-ror/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+  <h2>Organisation</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#donnée-pivot" id="markdown-toc-donnée-pivot">Donnée pivot</a></li>
+  <li><a href="#diagramme" id="markdown-toc-diagramme">Diagramme</a></li>
+  <li><a href="#modèles-logiques" id="markdown-toc-modèles-logiques">Modèles logiques</a></li>
+  <li><a href="#rororganisationinterne" id="markdown-toc-rororganisationinterne">ROROrganisationInterne</a></li>
+  <li><a href="#rorpole" id="markdown-toc-rorpole">RORPole</a></li>
+  <li><a href="#rorstructureinterne" id="markdown-toc-rorstructureinterne">RORStructureInterne</a></li>
+  <li><a href="#rorunitefonctionnelle" id="markdown-toc-rorunitefonctionnelle">RORUniteFonctionnelle</a></li>
+</ul>
+
+</div>
+
+<div style="background-color: #fff9e6; border-left: 4px solid #ff9800; padding: 12px 16px; margin-bottom: 16px;">
+Cette section est transversale : elle décrit l'organisation interne des établissements, utile pour les professionnels de santé (compréhension des structures de soins) et pour les développeurs (implémentation des modèles logiques).
+</div>
+
+<p>La section <strong>Organisation</strong> décrit l'organisation interne d'un établissement. Elle permet de représenter les pôles, services, unités fonctionnelles et autres organisations internes qui structurent les établissements de santé.</p>
+
+<h3 id="donnée-pivot">Donnée pivot</h3>
+
+<p>L'identifiant des organisations internes est généré par les ROR. Lorsqu'il est généré par une instance régionale, il est de la forme <code class="language-plaintext highlighter-rouge">code INSEE régional / code interne ROR</code>. Cet identifiant est unique et pérenne pour toute la France.</p>
+
+<hr />
+
+<h3 id="diagramme">Diagramme</h3>
+
+<!-- CSS pour les contrôles SVG interactifs -->
+<style>
+/* ===========================
+   CONTENEUR SVG - MODE NORMAL
+   =========================== */
+.svg-wrap {
+  position: relative;
+  cursor: default;
+  overflow: auto !important;
+  text-align: center;
+}
+
+.svg-wrap > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: min-content;
+}
+
+.svg-wrap svg {
+  transition: transform 0.1s ease-out;
+  display: block;
+  margin: 0 auto;
+  max-width: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  transform-origin: center top;
+}
+
+/* ===========================
+   CONTENEUR SVG - FULLSCREEN
+   =========================== */
+.svg-wrap:is(:fullscreen, :-webkit-full-screen, :-moz-full-screen) {
+  background: white;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.svg-wrap:is(:fullscreen, :-webkit-full-screen, :-moz-full-screen) > p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-wrap:is(:fullscreen, :-webkit-full-screen, :-moz-full-screen) svg {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain;
+}
+
+/* Curseur grabbing pendant le drag */
+.svg-wrap:is(:fullscreen, :-webkit-full-screen, :-moz-full-screen).grabbing {
+  cursor: grabbing;
+}
+
+.svg-wrap:is(:fullscreen, :-webkit-full-screen, :-moz-full-screen).grabbing * {
+  user-select: none !important;
+  -webkit-user-select: none !important;
+}
+
+/* ===========================
+   BOUTONS DE CONTRÔLE
+   =========================== */
+.svg-controls {
+  z-index: 99999 !important;
+  position: absolute !important;
+  top: 8px !important;
+  right: 8px !important;
+}
+
+.svg-controls .btn {
+  opacity: 0.9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
+  transition: none !important;
+  z-index: 99999 !important;
+  border-radius: 0.25rem !important;
+  position: relative;
+  background: white;
+  color: var(--body-color);
+}
+
+/* Surcharge Bootstrap btn-group-vertical */
+.svg-controls.btn-group-vertical .btn {
+  border-radius: 0.25rem !important;
+  margin-top: 2px;
+}
+
+/* Boutons zoom visibles en mode normal ET en fullscreen */
+.svg-controls .svg-zoom-in,
+.svg-controls .svg-zoom-out,
+.svg-controls .svg-zoom-reset {
+  display: block;
+}
+
+/* Z-index élevé pour les contrôles en fullscreen */
+.svg-wrap:is(:fullscreen, :-webkit-full-screen, :-moz-full-screen) .svg-controls {
+  z-index: 99999 !important;
+}
+
+.svg-wrap:is(:fullscreen, :-webkit-full-screen, :-moz-full-screen) .svg-controls .btn {
+  z-index: 99999 !important;
+}
+
+.svg-wrap:is(:fullscreen, :-webkit-full-screen, :-moz-full-screen) .svg-controls .btn:is(:hover, :focus, :active) {
+  z-index: 99999 !important;
+}
+</style>
+
+<div class="figure svg-wrap" style="width:100%;">
+  <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
+    <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>
+    <button class="btn btn-light btn-sm svg-zoom-out" title="Zoom arrière">🔍−</button>
+    <button class="btn btn-light btn-sm svg-zoom-reset" title="Réinitialiser">↻</button>
+    <button class="btn btn-light btn-sm svg-fullscreen" title="Plein écran">⛶</button>
+  </div>
+  <p style="margin: 0; padding: 0;">
+    <?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="673px" preserveAspectRatio="none" style="width:1008px;height:673px;" version="1.1" viewBox="0 0 1008 673" width="1008px" zoomAndPan="magnify"><defs><linearGradient id="g1afcp9qhxhxmt0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#F4F4F4" /><stop offset="100%" stop-color="#F4F4F4" /></linearGradient></defs><g><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="20" font-weight="bold" lengthAdjust="spacing" textLength="237" x="378.75" y="38.5645">Organisation Interne</text><!--cluster S_pkg--><g id="cluster_S_pkg"><polygon fill="#FFFFFF" points="535.5,539.2813,628.5,539.2813,635.5,579.25,751.5,579.25,751.5,666.2813,535.5,666.2813,535.5,539.2813" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="535.5" x2="635.5" y1="579.25" y2="579.25" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="67" x="549.5" y="562.4199">Structure</text></g><!--cluster Off_pkg--><g id="cluster_Off_pkg"><polygon fill="#FFFFFF" points="775.5,539.2813,948.5,539.2813,955.5,579.25,991.5,579.25,991.5,666.2813,775.5,666.2813,775.5,539.2813" style="stroke:#C6C6C6;stroke-width:1.0;" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="775.5" x2="955.5" y1="579.25" y2="579.25" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="147" x="789.5" y="562.4199">Offre Op&#233;rationnelle</text></g><!--class EG--><g id="elem_EG"><rect codeLine="28" fill="url(#g1afcp9qhxhxmt0)" height="58.8047" id="EG" style="stroke:#C6C6C6;stroke-width:1.0;" width="185" x="551" y="591.2813" /><rect fill="url(#g1afcp9qhxhxmt0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="185" x="551" y="591.2813" /><ellipse cx="565" cy="612.6836" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M566.8281,616.9336 Q566.4219,617.1367 565.9688,617.2461 Q565.5156,617.3555 565.0313,617.3555 Q563.25,617.3555 562.3125,616.1992 Q561.3906,615.0273 561.3906,612.8242 Q561.3906,610.6055 562.3125,609.4492 Q563.25,608.2773 565.0313,608.2773 Q565.5156,608.2773 565.9688,608.3867 Q566.4375,608.4805 566.8281,608.6992 L566.8281,610.6211 Q566.3906,610.2148 565.9688,610.0273 Q565.5469,609.8242 565.1094,609.8242 Q564.1563,609.8242 563.6719,610.5898 Q563.1875,611.3398 563.1875,612.8242 Q563.1875,614.293 563.6719,615.043 Q564.1563,615.793 565.1094,615.793 Q565.5469,615.793 565.9688,615.6055 Q566.3906,615.418 566.8281,615.0117 L566.8281,616.9336 Z " fill="#000000" /><a href="StructureDefinition-ror-entite-geographique.html" target="_top" title="StructureDefinition-ror-entite-geographique.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ror-entite-geographique.html" xlink:show="new" xlink:title="StructureDefinition-ror-entite-geographique.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="135" x="588" y="616.4917">ROREntiteGeographique</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="552" x2="735" y1="634.0859" y2="634.0859" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="552" x2="735" y1="642.0859" y2="642.0859" /></g><!--class Offre--><g id="elem_Offre"><rect codeLine="32" fill="url(#g1afcp9qhxhxmt0)" height="58.8047" id="Offre" style="stroke:#C6C6C6;stroke-width:1.0;" width="185" x="791" y="591.2813" /><rect fill="url(#g1afcp9qhxhxmt0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="185" x="791" y="591.2813" /><ellipse cx="805" cy="612.6836" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M806.8281,616.9336 Q806.4219,617.1367 805.9688,617.2461 Q805.5156,617.3555 805.0313,617.3555 Q803.25,617.3555 802.3125,616.1992 Q801.3906,615.0273 801.3906,612.8242 Q801.3906,610.6055 802.3125,609.4492 Q803.25,608.2773 805.0313,608.2773 Q805.5156,608.2773 805.9688,608.3867 Q806.4375,608.4805 806.8281,608.6992 L806.8281,610.6211 Q806.3906,610.2148 805.9688,610.0273 Q805.5469,609.8242 805.1094,609.8242 Q804.1563,609.8242 803.6719,610.5898 Q803.1875,611.3398 803.1875,612.8242 Q803.1875,614.293 803.6719,615.043 Q804.1563,615.793 805.1094,615.793 Q805.5469,615.793 805.9688,615.6055 Q806.3906,615.418 806.8281,615.0117 L806.8281,616.9336 Z " fill="#000000" /><a href="StructureDefinition-ror-offre-operationnelle.html" target="_top" title="StructureDefinition-ror-offre-operationnelle.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ror-offre-operationnelle.html" xlink:show="new" xlink:title="StructureDefinition-ror-offre-operationnelle.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="135" x="828" y="616.4917">ROROffreOperationnelle</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="792" x2="975" y1="634.0859" y2="634.0859" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="792" x2="975" y1="642.0859" y2="642.0859" /></g><!--class OI--><g id="elem_OI"><rect codeLine="4" fill="url(#g1afcp9qhxhxmt0)" height="386.8516" id="OI" style="stroke:#C6C6C6;stroke-width:1.0;" width="276" x="290.5" y="71.2813" /><rect fill="url(#g1afcp9qhxhxmt0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="276" x="290.5" y="71.2813" /><ellipse cx="346.5" cy="92.6836" fill="#A9DCDF" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M346.1094,89.7617 L345.2969,93.3398 L346.9375,93.3398 L346.1094,89.7617 Z M345.0625,88.1836 L347.1719,88.1836 L349.5313,96.9336 L347.7969,96.9336 L347.2656,94.7773 L344.9531,94.7773 L344.4219,96.9336 L342.6875,96.9336 L345.0625,88.1836 Z " fill="#000000" /><a href="StructureDefinition-ror-organisation-interne.html" target="_top" title="StructureDefinition-ror-organisation-interne.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ror-organisation-interne.html" xlink:show="new" xlink:title="StructureDefinition-ror-organisation-interne.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" font-style="italic" lengthAdjust="spacing" text-decoration="underline" textLength="136" x="375.5" y="96.4917">ROROrganisationInterne</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="291.5" x2="565.5" y1="114.0859" y2="114.0859" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="164" x="306.5" y="138.2964">identifiantOI : Identifier [1..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="116" x="306.5" y="171.1011">nomOI : string [1..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="121" x="306.5" y="203.9058">typeOI : Coding [1..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="129" x="306.5" y="236.7104">contact : Contact [0..*]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="218" x="306.5" y="269.5151">boiteLettreMSS : BoiteLettreMSS [0..*]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="153" x="306.5" y="302.3198">dateOuverture : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="155" x="306.5" y="335.1245">dateFermeture : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="168" x="306.5" y="367.9292">typeFermeture : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="244" x="306.5" y="400.7339">datePrevisionnelleReouverture : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="209" x="306.5" y="433.5386">metadonnee : RORMetadonnee [1..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="291.5" x2="565.5" y1="450.1328" y2="450.1328" /></g><!--class Pole--><g id="elem_Pole"><rect codeLine="17" fill="url(#g1afcp9qhxhxmt0)" height="58.8047" id="Pole" style="stroke:#C6C6C6;stroke-width:1.0;" width="97" x="7" y="591.2813" /><rect fill="url(#g1afcp9qhxhxmt0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="97" x="7" y="591.2813" /><ellipse cx="21" cy="612.6836" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M22.8281,616.9336 Q22.4219,617.1367 21.9688,617.2461 Q21.5156,617.3555 21.0313,617.3555 Q19.25,617.3555 18.3125,616.1992 Q17.3906,615.0273 17.3906,612.8242 Q17.3906,610.6055 18.3125,609.4492 Q19.25,608.2773 21.0313,608.2773 Q21.5156,608.2773 21.9688,608.3867 Q22.4375,608.4805 22.8281,608.6992 L22.8281,610.6211 Q22.3906,610.2148 21.9688,610.0273 Q21.5469,609.8242 21.1094,609.8242 Q20.1563,609.8242 19.6719,610.5898 Q19.1875,611.3398 19.1875,612.8242 Q19.1875,614.293 19.6719,615.043 Q20.1563,615.793 21.1094,615.793 Q21.5469,615.793 21.9688,615.6055 Q22.3906,615.418 22.8281,615.0117 L22.8281,616.9336 Z " fill="#000000" /><a href="StructureDefinition-ror-pole.html" target="_top" title="StructureDefinition-ror-pole.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ror-pole.html" xlink:show="new" xlink:title="StructureDefinition-ror-pole.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="47" x="44" y="616.4917">RORPole</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="8" x2="103" y1="634.0859" y2="634.0859" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="8" x2="103" y1="642.0859" y2="642.0859" /></g><!--class SI--><g id="elem_SI"><rect codeLine="18" fill="url(#g1afcp9qhxhxmt0)" height="58.8047" id="SI" style="stroke:#C6C6C6;stroke-width:1.0;" width="166" x="139.5" y="591.2813" /><rect fill="url(#g1afcp9qhxhxmt0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="166" x="139.5" y="591.2813" /><ellipse cx="153.5" cy="612.6836" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M155.3281,616.9336 Q154.9219,617.1367 154.4688,617.2461 Q154.0156,617.3555 153.5313,617.3555 Q151.75,617.3555 150.8125,616.1992 Q149.8906,615.0273 149.8906,612.8242 Q149.8906,610.6055 150.8125,609.4492 Q151.75,608.2773 153.5313,608.2773 Q154.0156,608.2773 154.4688,608.3867 Q154.9375,608.4805 155.3281,608.6992 L155.3281,610.6211 Q154.8906,610.2148 154.4688,610.0273 Q154.0469,609.8242 153.6094,609.8242 Q152.6563,609.8242 152.1719,610.5898 Q151.6875,611.3398 151.6875,612.8242 Q151.6875,614.293 152.1719,615.043 Q152.6563,615.793 153.6094,615.793 Q154.0469,615.793 154.4688,615.6055 Q154.8906,615.418 155.3281,615.0117 L155.3281,616.9336 Z " fill="#000000" /><a href="StructureDefinition-ror-structure-interne.html" target="_top" title="StructureDefinition-ror-structure-interne.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ror-structure-interne.html" xlink:show="new" xlink:title="StructureDefinition-ror-structure-interne.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="116" x="176.5" y="616.4917">RORStructureInterne</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="140.5" x2="304.5" y1="634.0859" y2="634.0859" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="140.5" x2="304.5" y1="642.0859" y2="642.0859" /></g><!--class UF--><g id="elem_UF"><rect codeLine="19" fill="url(#g1afcp9qhxhxmt0)" height="58.8047" id="UF" style="stroke:#C6C6C6;stroke-width:1.0;" width="176" x="340.5" y="591.2813" /><rect fill="url(#g1afcp9qhxhxmt0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="176" x="340.5" y="591.2813" /><ellipse cx="354.5" cy="612.6836" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M356.3281,616.9336 Q355.9219,617.1367 355.4688,617.2461 Q355.0156,617.3555 354.5313,617.3555 Q352.75,617.3555 351.8125,616.1992 Q350.8906,615.0273 350.8906,612.8242 Q350.8906,610.6055 351.8125,609.4492 Q352.75,608.2773 354.5313,608.2773 Q355.0156,608.2773 355.4688,608.3867 Q355.9375,608.4805 356.3281,608.6992 L356.3281,610.6211 Q355.8906,610.2148 355.4688,610.0273 Q355.0469,609.8242 354.6094,609.8242 Q353.6563,609.8242 353.1719,610.5898 Q352.6875,611.3398 352.6875,612.8242 Q352.6875,614.293 353.1719,615.043 Q353.6563,615.793 354.6094,615.793 Q355.0469,615.793 355.4688,615.6055 Q355.8906,615.418 356.3281,615.0117 L356.3281,616.9336 Z " fill="#000000" /><a href="StructureDefinition-ror-unite-fonctionnelle.html" target="_top" title="StructureDefinition-ror-unite-fonctionnelle.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ror-unite-fonctionnelle.html" xlink:show="new" xlink:title="StructureDefinition-ror-unite-fonctionnelle.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="126" x="377.5" y="616.4917">RORUniteFonctionnelle</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="341.5" x2="515.5" y1="634.0859" y2="634.0859" /><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="341.5" x2="515.5" y1="642.0859" y2="642.0859" /></g><!--reverse link OI to Pole--><g id="link_OI_Pole"><path codeLine="21" d="M274.51,387.6413 C223.63,430.7913 168.15,481.1313 121.5,531.2813 C104.14,549.9413 87,573.1012 74.54,591.0513 " fill="none" id="OI-backto-Pole" style="stroke:#C6C6C6;stroke-width:1.0;" /><polygon fill="none" points="270.33,382.0013,290.14,374.4813,279.34,392.7213,270.33,382.0013" style="stroke:#C6C6C6;stroke-width:1.0;" /></g><!--reverse link OI to SI--><g id="link_OI_SI"><path codeLine="22" d="M306.36,475.6713 C279.69,521.5113 254.79,564.3013 239.16,591.1513 " fill="none" id="OI-backto-SI" style="stroke:#C6C6C6;stroke-width:1.0;" /><polygon fill="none" points="300.35,472.0813,316.46,458.3212,312.45,479.1313,300.35,472.0813" style="stroke:#C6C6C6;stroke-width:1.0;" /></g><!--reverse link OI to UF--><g id="link_OI_UF"><path codeLine="23" d="M428.5,478.3813 C428.5,523.1913 428.5,564.8313 428.5,591.1513 " fill="none" id="OI-backto-UF" style="stroke:#C6C6C6;stroke-width:1.0;" /><polygon fill="none" points="421.5,478.3212,428.5,458.3212,435.5,478.3212,421.5,478.3212" style="stroke:#C6C6C6;stroke-width:1.0;" /></g><!--link OI to OI--><g id="link_OI_OI"><path codeLine="25" d="M566.6,223.8513 C587.4,230.1613 601.5,243.8012 601.5,264.7813 C601.5,284.1213 589.52,297.2213 571.35,304.1013 " fill="none" id="OI-to-OI" style="stroke:#C6C6C6;stroke-width:1.0;" /><polygon fill="#C6C6C6" points="566.6,305.7113,576.4089,306.598,571.3333,304.1002,573.8312,299.0247,566.6,305.7113" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="52" x="617.5" y="269.4199">contient</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="584.3911" y="209.0575">*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="584.3911" y="295.1384">*</text></g><!--link OI to EG--><g id="link_OI_EG"><path codeLine="35" d="M545.44,458.3212 C575.66,508.0913 604.89,556.2113 623.45,586.7713 " fill="none" id="OI-to-EG" style="stroke:#C6C6C6;stroke-width:1.0;" /><polygon fill="#C6C6C6" points="626.11,591.1513,624.8473,581.3837,623.5103,586.8803,618.0137,585.5433,626.11,591.1513" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="74" x="590.5" y="510.4199">rattach&#233;e &#224;</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="6" x="533.1753" y="487.0283">*</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="22" x="586.552" y="570.3227">1..*</text></g><!--link OI to Offre--><g id="link_OI_Offre"><path codeLine="36" d="M566.56,373.1913 C661.49,447.0513 781.14,540.1413 842.73,588.0613 " fill="none" id="OI-to-Offre" style="stroke:#C6C6C6;stroke-width:1.0;" /><polygon fill="#C6C6C6" points="846.7,591.1513,842.0581,582.4649,842.7555,588.0786,837.1419,588.776,846.7,591.1513" style="stroke:#C6C6C6;stroke-width:1.0;" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="34" x="759.5" y="510.4199">porte</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="24" x="584.3129" y="365.8089">0..1</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="12" lengthAdjust="spacing" textLength="22" x="803.3206" y="570.3227">1..*</text></g></g></svg>
+  </p>
+</div>
+
+<!-- Script pour les contrôles SVG interactifs -->
+<script>
+(function() {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAllSvgWrappers);
+  } else {
+    initAllSvgWrappers();
+  }
+
+  function initAllSvgWrappers() {
+    const wrappers = document.querySelectorAll('.svg-wrap');
+    wrappers.forEach(wrap => initSvgWrapper(wrap));
+  }
+
+  function initSvgWrapper(wrap) {
+    if (!wrap) return;
+
+    const svg = wrap.querySelector('svg');
+    if (!svg) {
+      console.warn('SVG non trouvé dans', wrap);
+      return;
+    }
+
+    let scale = 1;
+    let translateX = 0;
+    let translateY = 0;
+    const zoomStep = 0.15;
+    const minScale = 0.3;
+    const maxScale = 5;
+    const panSpeed = 1;
+
+    let isPanning = false;
+    let startX = 0;
+    let startY = 0;
+
+    function isFullscreen() {
+      return document.fullscreenElement === wrap;
+    }
+
+    function applyTransform() {
+      if (isFullscreen()) {
+        svg.style.transformOrigin = "center center";
+        svg.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+      } else {
+        // En mode normal : zoom centré en haut
+        svg.style.transformOrigin = "center top";
+        svg.style.transform = scale !== 1 ? `scale(${scale})` : '';
+      }
+    }
+
+    const zoomInBtn = wrap.querySelector('.svg-zoom-in');
+    const zoomOutBtn = wrap.querySelector('.svg-zoom-out');
+    const zoomResetBtn = wrap.querySelector('.svg-zoom-reset');
+    const fsBtn = wrap.querySelector('.svg-fullscreen');
+
+    /* ZOOM PAR BOUTONS — actif en mode normal et fullscreen */
+    if (zoomInBtn) {
+      zoomInBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        scale = Math.min(maxScale, scale + zoomStep);
+        applyTransform();
+      });
+    }
+
+    if (zoomOutBtn) {
+      zoomOutBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        scale = Math.max(minScale, scale - zoomStep);
+        applyTransform();
+      });
+    }
+
+    if (zoomResetBtn) {
+      zoomResetBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        scale = 1;
+        translateX = 0;
+        translateY = 0;
+        applyTransform();
+      });
+    }
+
+    /* ZOOM À LA MOLETTE — actif en fullscreen uniquement */
+    wrap.addEventListener('wheel', (e) => {
+      if (!isFullscreen()) return;
+      e.preventDefault();
+      const delta = e.deltaY < 0 ? zoomStep : -zoomStep;
+      scale = Math.min(maxScale, Math.max(minScale, scale + delta));
+      applyTransform();
+    }, { passive: false });
+
+    /* PAN — actif en fullscreen uniquement */
+    wrap.addEventListener('mousedown', (e) => {
+      if (!isFullscreen()) return;
+      if (e.target.closest('.svg-controls')) return;
+      if (e.target.tagName === 'A' || e.target.closest('a')) return;
+      if (e.target.hasAttribute('href') || e.target.getAttribute('xlink:href')) return;
+      if (e.button !== 0) return;
+
+      e.preventDefault();
+      isPanning = true;
+      startX = e.clientX - (translateX / panSpeed);
+      startY = e.clientY - (translateY / panSpeed);
+      wrap.classList.add('grabbing');
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isPanning) return;
+      e.preventDefault();
+      translateX = (e.clientX - startX) * panSpeed;
+      translateY = (e.clientY - startY) * panSpeed;
+      applyTransform();
+    });
+
+    document.addEventListener('mouseup', () => {
+      if (isPanning) {
+        isPanning = false;
+        wrap.classList.remove('grabbing');
+      }
+    });
+
+    document.addEventListener('mouseleave', () => {
+      if (isPanning) {
+        isPanning = false;
+        wrap.classList.remove('grabbing');
+      }
+    });
+
+    /* PINCH ZOOM (mobile) — fullscreen uniquement */
+    let touchDistance = null;
+    let lastTouchX = 0;
+    let lastTouchY = 0;
+
+    wrap.addEventListener('touchstart', (e) => {
+      if (!isFullscreen()) return;
+      if (e.touches.length === 2) {
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        touchDistance = Math.sqrt(dx*dx + dy*dy);
+        lastTouchX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+        lastTouchY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+      } else if (e.touches.length === 1) {
+        lastTouchX = e.touches[0].clientX;
+        lastTouchY = e.touches[0].clientY;
+      }
+    });
+
+    wrap.addEventListener('touchmove', (e) => {
+      if (!isFullscreen()) return;
+      if (e.touches.length === 2) {
+        e.preventDefault();
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        const newDist = Math.sqrt(dx*dx + dy*dy);
+        if (touchDistance) {
+          const diff = newDist - touchDistance;
+          scale += diff * 0.005;
+          scale = Math.min(maxScale, Math.max(minScale, scale));
+          applyTransform();
+        }
+        touchDistance = newDist;
+      } else if (e.touches.length === 1 && scale > 1) {
+        e.preventDefault();
+        const touchX = e.touches[0].clientX;
+        const touchY = e.touches[0].clientY;
+        translateX += touchX - lastTouchX;
+        translateY += touchY - lastTouchY;
+        applyTransform();
+        lastTouchX = touchX;
+        lastTouchY = touchY;
+      }
+    }, { passive: false });
+
+    wrap.addEventListener('touchend', () => {
+      touchDistance = null;
+    });
+
+    /* FULLSCREEN */
+    if (fsBtn) {
+      fsBtn.addEventListener('click', async (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        e.stopImmediatePropagation();
+        try {
+          if (!document.fullscreenElement) {
+            scale = 1;
+            translateX = 0;
+            translateY = 0;
+            applyTransform();
+            await wrap.requestFullscreen();
+          } else {
+            await document.exitFullscreen();
+          }
+        } catch (err) {
+          console.error('Erreur fullscreen:', err);
+        }
+      });
+    }
+
+    document.addEventListener('fullscreenchange', () => {
+      if (!isFullscreen()) {
+        scale = 1;
+        translateX = 0;
+        translateY = 0;
+        applyTransform();
+      }
+    });
+  }
+})();
+</script>
+
+<hr />
+
+<h3 id="modèles-logiques">Modèles logiques</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Modèle ROR</th>
+      <th>Héritage MOS</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-ror-organisation-interne.html">ROROrganisationInterne</a></td>
+      <td>OrganisationInterne</td>
+      <td>Organisation opérationnelle au sein d'un établissement</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ror-pole.html">RORPole</a></td>
+      <td>PoleActivite</td>
+      <td>Pôle d'activité regroupant des services</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ror-structure-interne.html">RORStructureInterne</a></td>
+      <td>StructureInterne</td>
+      <td>Structure interne de l'établissement</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-ror-unite-fonctionnelle.html">RORUniteFonctionnelle</a></td>
+      <td>UniteFonctionnelle</td>
+      <td>Unité fonctionnelle de soins</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h3 id="rororganisationinterne">ROROrganisationInterne</h3>
+
+<p>L'<strong>Organisation Interne</strong> (OI) représente l'organisation opérationnelle au sein d'un établissement : pôles, services, unités fonctionnelles, équipes de soins, etc. Elle est l'entité à laquelle sont rattachées les offres opérationnelles.</p>
+
+<p>La hiérarchie organisationnelle dans le ROR est la suivante :</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>EntiteGeographique
+  └── OrganisationInterne (typeOI = Pôle)
+        └── OrganisationInterne (typeOI = Service / Unité fonctionnelle)
+</code></pre></div></div>
+
+<p>Les classes <code class="language-plaintext highlighter-rouge">RORPole</code>, <code class="language-plaintext highlighter-rouge">RORStructureInterne</code> et <code class="language-plaintext highlighter-rouge">RORUniteFonctionnelle</code> sont des spécialisations de <code class="language-plaintext highlighter-rouge">ROROrganisationInterne</code> héritées du MOS, permettant de typer sémantiquement le niveau hiérarchique.</p>
+
+<p><strong>Règles de gestion :</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_013</code> : En fonction du type d'OI, les contacts PEUVENT inclure le contact du responsable du pôle, le contact du responsable du service, le contact du responsable de l'unité, le contact du secrétariat, le contact du secrétariat de permanence…</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_043</code> : La date de fermeture est obligatoire lorsqu'un type de fermeture est renseigné, sinon elle n'est jamais renseignée.</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_044</code> : Lorsqu'un niveau de structure ou d'organisation est fermé, tous les niveaux inférieurs ainsi que toutes les offres opérationnelles qui lui sont rattachées sont également fermés avec le même type, la même date de fermeture et, le cas échéant, la même date de réouverture prévisionnelle.</li>
+  <li><code class="language-plaintext highlighter-rouge">RG_EXP_045</code> : La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire », sinon elle n'est jamais renseignée.</li>
+</ul>
+
+<table class="box" data-fhir="generated">
+  <tr>
+    <td colspan="5" style="text-align: center">
+      <b>ror-organisation-interne</b>
+ :       <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-OrganisationInterne.html">OrganisationInterne</a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="5" style="border-bottom: 1px solid #666">Spécialisation ROR de l'OrganisationInterne du MOS. Classe abstraite décrivant l'organisation opérationnelle interne d'une EG (pôles, services, unités fonctionnelles).
+</td>
+  </tr>
+  <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy" />
+       <a no-external="true" href="StructureDefinition-ror-organisation-interne-definitions.html#ror-organisation-interne.identifiantOI" data-no-external="true">identifiantOI</a>
+      <a name="ror-organisation-interne.identifiantOI"> </a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+1..      <span style="opacity: 0.5">1</span>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identifiant de l'organisation interne (obligatoire dans le ROR, format : codeINSEE/identifiant)</td>
+  </tr>
+
+  <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy" />
+       <a no-external="true" href="StructureDefinition-ror-organisation-interne-definitions.html#ror-organisation-interne.nomOI" data-no-external="true">nomOI</a>
+      <a name="ror-organisation-interne.nomOI"> </a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+1..      <span style="opacity: 0.5">1</span>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nom de l'organisation interne (obligatoire dans le ROR)</td>
+  </tr>
+
+  <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy" />
+       <a no-external="true" href="StructureDefinition-ror-organisation-interne-definitions.html#ror-organisation-interne.typeOI" data-no-external="true">typeOI</a>
+      <a name="ror-organisation-interne.typeOI"> </a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+1..      <span style="opacity: 0.5">1</span>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+Type d'organisation interne (obligatoire dans le ROR)      <br class="binding" />
+      <span style="font-weight:bold" title="null" class="binding">Binding: </span>
+      <a href="ValueSet-jdv-ror-type-organisation-interne.html" title="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-organisation-interne" class="binding">JDVRORTypeOrganisationInterne (0.1.0)</a>
+      <span title="null" class="binding"> (</span>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a>
+      <span title="null" class="binding">)</span>
+    </td>
+  </tr>
+
+  <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy" />
+       <a no-external="true" href="StructureDefinition-ror-organisation-interne-definitions.html#ror-organisation-interne.typeFermeture" data-no-external="true">typeFermeture</a>
+      <a name="ror-organisation-interne.typeFermeture"> </a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <span style="opacity: 0.5">0</span>
+      <span style="opacity: 0.5">..</span>
+      <span style="opacity: 0.5">1</span>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+      <span style="opacity: 0.5">Le type de fermeture d'un niveau organisationnel indique la temporalité de la fermeture. Le type de fermeture s'applique au niveau organisationnel sur lequel la fermeture est déclarée, ainsi que tous les niveaux inférieurs rattachés à ce niveau organisationnel. Par exemple, si un service est fermé temporairement, toutes les unités fonctionnelles qui lui sont rattachées sont également fermées temporairement.</span>
+      <br class="binding" />
+      <span style="font-weight:bold" title="null" class="binding">Binding: </span>
+      <a href="https://mos.esante.gouv.fr/NOS/JDV_J185-typeFermeture-ROR/FHIR/JDV-J185-typeFermeture-ROR" class="binding">https://mos.esante.gouv.fr/NOS/JDV_J185-typeFermeture-ROR/FHIR/JDV-J185-typeFermeture-ROR</a>
+      <span title="null" class="binding"> (</span>
+      <a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a>
+      <span title="null" class="binding">)</span>
+    </td>
+  </tr>
+
+  <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
+      <img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy" />
+       <a no-external="true" href="StructureDefinition-ror-organisation-interne-definitions.html#ror-organisation-interne.metadonnee" title="Informations relatives à la gestion des données de l'organisation interne dans le ROR." data-no-external="true">metadonnee</a>
+      <a name="ror-organisation-interne.metadonnee"> </a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">1..1</td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
+      <a href="StructureDefinition-ror-metadonnee.html">ror-metadonnee</a>
+    </td>
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">Informations relatives à la gestion des données de l'organisation interne dans le ROR.</td>
+  </tr>
+
+
+</table>
+<style>
+table.box { margin-bottom: 10px; border: 1px black solid;  margin-right: inherit; }
+table.box th { border: none; }
+table.box td { border: none; font-size : 11px; }
+
+</style>
+
+<hr />
+
+<h3 id="rorpole">RORPole</h3>
+
+<table class="box" data-fhir="generated">
+  <tr>
+    <td colspan="5" style="text-align: center">
+      <b>ror-pole</b>
+ :       <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PoleActivite.html">PoleActivite</a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="5" style="border-bottom: 1px solid #666">Spécialisation ROR du PoleActivite du MOS. Pôle d'activité au sens de la loi HPST, art.13. Organisation interne de premier niveau regroupant des structures internes.
+</td>
+  </tr>
+</table>
+<style>
+table.box { margin-bottom: 10px; border: 1px black solid;  margin-right: inherit; }
+table.box th { border: none; }
+table.box td { border: none; font-size : 11px; }
+
+</style>
+
+<hr />
+
+<h3 id="rorstructureinterne">RORStructureInterne</h3>
+
+<table class="box" data-fhir="generated">
+  <tr>
+    <td colspan="5" style="text-align: center">
+      <b>ror-structure-interne</b>
+ :       <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-StructureInterne.html">StructureInterne</a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="5" style="border-bottom: 1px solid #666">Spécialisation ROR de la StructureInterne du MOS. Service, unité, centre ou département au sein d'un pôle. Synonymes : service, unité, centre, institut, département.
+</td>
+  </tr>
+</table>
+<style>
+table.box { margin-bottom: 10px; border: 1px black solid;  margin-right: inherit; }
+table.box th { border: none; }
+table.box td { border: none; font-size : 11px; }
+
+</style>
+
+<hr />
+
+<h3 id="rorunitefonctionnelle">RORUniteFonctionnelle</h3>
+
+<table class="box" data-fhir="generated">
+  <tr>
+    <td colspan="5" style="text-align: center">
+      <b>ror-unite-fonctionnelle</b>
+ :       <a href="https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-UniteFonctionnelle.html">UniteFonctionnelle</a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="5" style="border-bottom: 1px solid #666">Spécialisation ROR de l'UniteFonctionnelle du MOS. Plus petite unité compatible avec les contraintes de gestion présentant une activité médicale homogène.
+</td>
+  </tr>
+</table>
+<style>
+table.box { margin-bottom: 10px; border: 1px black solid;  margin-right: inherit; }
+table.box th { border: none; }
+table.box td { border: none; font-size : 11px; }
+
+</style>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:var(--ig-left);">&#xA0;
+
+                <a href="structure.html">&lt; précédent</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">haut</a>
+              </td>
+              <td style="text-align:var(--ig-right);">&#xA0;
+
+                <a href="offre-operationnelle.html">suivant ></a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
+          Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Date de génération : 
+  <span title="2026-07-07 16:28:00 +0000">
+    2026-07-07
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">Rapport de QA</a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/test-ror/history.html">Historique des versions</a>
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/documentation">Documentation</a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+
+  <!-- Ajout ANS -->
+  <script src="assets/js/app.js" type="text/javascript"> </script>
+  <script src="assets/js/vendor.js" type="text/javascript"> </script>
+  <!-- Fin ajout ANS -->
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  <!-- AJOUT ANS -->
+
+<footer class="footer footer-principal" role="contentinfo">
+  <div class="footer__region1">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <div class="logos">        
+            <div class="logo logo--0">
+              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
+                
+              </a>
+            </div>
+        
+            <div class="logo logo--1">
+              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+                
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 text-center text-md-left">
+          <p class="footer__title">Agence du Numérique en Santé</p>
+          <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
+
+          <!-- <div class="m-social">
+            <ul class="m-social__list">        
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-linkedin" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#linkedin"></use></svg>
+                  </div>
+                  <span class="sr-only">linkedin</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://twitter.com/esante_gouv_fr" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-twitter" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#twitter"></use></svg>
+                  </div>
+                  <span class="sr-only">twitter</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://www.youtube.com/channel/UCd1zuSaU5cE1lRCpwv_HSMA" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-youtube" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#youtube"></use></svg>
+                  </div>
+                  <span class="sr-only">youtube</span>
+                </a>
+              </li>
+              <li class="m-social__item">
+                <a class="m-social__link" href="https://esante.gouv.fr/rss.xml" target="_blank" rel="nofollow">
+                  <div class="m-social__icon">
+                    <svg class="svg-icon svg-rss" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#rss"></use></svg>
+                  </div>
+                  <span class="sr-only">rss</span>
+                </a>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+        
+        <div class="col-6 col-lg-4">
+          <ul class="footer-list">
+            <li class="footer-list__item footer-list__item--hasIcon">
+              <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
+                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+              </li>
+              <!-- <li class="footer-list__item">
+                <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
+              </li>
+               -->
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="footer__region2">
+      <div class="container">
+        <div class="footer-contentinfo">
+          <ul class="footer-list footer-list--inline">
+
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+  </body>
+</html>
+

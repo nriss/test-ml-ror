@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="jdv-ror-public-pris-en-charge"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs jdv-ror-public-pris-en-charge</b></p><a name="jdv-ror-public-pris-en-charge"> </a><a name="hcjdv-ror-public-pris-en-charge"> </a><ul><li>Include tous les codes définis dans <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R239-PublicPrisEnCharge.html"><code>https://mos.esante.gouv.fr/NOS/TRE_R239-PublicPrisEnCharge/FHIR/TRE-R239-PublicPrisEnCharge</code></a><span title="La version est explicitement indiquée comme étant 20250328120000"> version &#x1F4CD;20250328120000</span></li></ul></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-public-pris-en-charge"/>
+  <version value="0.1.0"/>
+  <name value="JDVRORPublicPrisEnCharge"/>
+  <title value="JDV ROR - Public Pris en Charge (provisoire)"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-07-07T16:28:25+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R239-PublicPrisEnCharge pour le contexte ROR. En attente de création officielle."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R239-PublicPrisEnCharge/FHIR/TRE-R239-PublicPrisEnCharge"/>
+      <version value="20250328120000"/>
+    </include>
+  </compose>
+</ValueSet>

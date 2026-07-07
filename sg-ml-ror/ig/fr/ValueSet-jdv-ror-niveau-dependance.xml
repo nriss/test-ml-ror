@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="jdv-ror-niveau-dependance"/>
+  <language value="fr"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs jdv-ror-niveau-dependance</b></p><a name="jdv-ror-niveau-dependance"> </a><a name="hcjdv-ror-niveau-dependance"> </a><ul><li>Include tous les codes définis dans <code>https://mos.esante.gouv.fr/NOS/TRE_R237-NiveauDependance/FHIR/TRE-R237-NiveauDependance</code><span title="La version n'est pas explicitement indiquée. Aucun Système de codes (Code System) correspondant trouvé"> version Non Précisé(e) (utilise la dernière version provenant du serveur de terminologie)</span></li></ul></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-niveau-dependance"/>
+  <version value="0.1.0"/>
+  <name value="JDVRORNiveauDependance"/>
+  <title value="JDV ROR - Niveau de Dépendance (provisoire)"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-07-07T16:28:25+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R237-NiveauDependance pour le contexte ROR. En attente de création officielle."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R237-NiveauDependance/FHIR/TRE-R237-NiveauDependance"/>
+    </include>
+  </compose>
+</ValueSet>

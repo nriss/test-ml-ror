@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "jdv-ror-niveau-recours-orsan",
+  "language" : "fr",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs jdv-ror-niveau-recours-orsan</b></p><a name=\"jdv-ror-niveau-recours-orsan\"> </a><a name=\"hcjdv-ror-niveau-recours-orsan\"> </a><ul><li>Include tous les codes définis dans <a href=\"https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R284-NiveauRecoursORSAN.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R284-NiveauRecoursORSAN/FHIR/TRE-R284-NiveauRecoursORSAN</code></a><span title=\"La version est explicitement indiquée comme étant 20231215120000\"> version &#x1F4CD;20231215120000</span></li></ul></div>"
+  },
+  "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-niveau-recours-orsan",
+  "version" : "0.1.0",
+  "name" : "JDVRORNiveauRecoursORSAN",
+  "title" : "JDV ROR - Niveau Recours ORSAN (provisoire)",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-07-07T16:28:25+00:00",
+  "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+  "contact" : [{
+    "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://esante.gouv.fr"
+    }]
+  }],
+  "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R284-NiveauRecoursORSAN pour le contexte ROR. En attente de création officielle.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://mos.esante.gouv.fr/NOS/TRE_R284-NiveauRecoursORSAN/FHIR/TRE-R284-NiveauRecoursORSAN",
+      "version" : "20231215120000"
+    }]
+  }
+}

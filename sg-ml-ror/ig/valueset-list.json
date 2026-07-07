@@ -1,0 +1,443 @@
+{
+  "codeSystems" : [{
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-accessibilite-lieu",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORAccessibiliteLieu",
+    "title" : "JDV ROR - Accessibilité Lieu (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R202-AccessibiliteLieu pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R202-AccessibiliteLieu/FHIR/TRE-R202-AccessibiliteLieu"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-acte-specifique",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORActeSpecifique",
+    "title" : "JDV ROR - Acte Spécifique (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R210-ActeSpecifique pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R210-ActeSpecifique/FHIR/TRE-R210-ActeSpecifique"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-activite-operationnelle",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORActiviteOperationnelle",
+    "title" : "JDV ROR - Activité Opérationnelle (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R211-ActiviteOperationnelle pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R211-ActiviteOperationnelle/FHIR/TRE-R211-ActiviteOperationnelle"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-affectation-temporaire",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORAffectationTemporaire",
+    "title" : "JDV ROR - Affectation Temporaire (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R337-AffectationTemporaire pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R337-AffectationTemporaire/FHIR/TRE-R337-AffectationTemporaire"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-agreg-statut-juridique-niv2",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORAgregatStatutJuridiqueNiv2",
+    "title" : "JDV ROR - Agrégat Statut Juridique Niv2 (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R69-FinessAgregatStatutJuridiqueNiv2 pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R69-FinessAgregatStatutJuridiqueNiv2/FHIR/TRE-R69-FinessAgregatStatutJuridiqueNiv2"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-aide-financiere",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORAideFinanciere",
+    "title" : "JDV ROR - Aide Financière (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R241-AideFinanciere pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R241-AideFinanciere/FHIR/TRE-R241-AideFinanciere"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-capacite-savoir-faire",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORCapaciteSavoirFaire",
+    "title" : "JDV ROR - Capacité de Savoir-Faire (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R43-CapaciteSavoirFaire pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R43-CapaciteSavoirFaire/FHIR/TRE-R43-CapaciteSavoirFaire"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-champ-activite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORChampActivite",
+    "title" : "JDV ROR - Champ d'Activité (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R227-ChampActivite pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R227-ChampActivite/FHIR/TRE-R227-ChampActivite"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORCivilite",
+    "title" : "JDV ROR - Civilité (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R81-Civilite pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R81-Civilite/FHIR/TRE-R81-Civilite"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite-exercice",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORCiviliteExercice",
+    "title" : "JDV ROR - Civilité d'Exercice (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R11-CiviliteExercice pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R11-CiviliteExercice/FHIR/TRE-R11-CiviliteExercice"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORCompetence",
+    "title" : "JDV ROR - Compétence (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R39-Competence pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R39-Competence/FHIR/TRE-R39-Competence"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence-exclusive",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORCompetenceExclusive",
+    "title" : "JDV ROR - Compétence Exclusive (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R40-CompetenceExclusive pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R40-CompetenceExclusive/FHIR/TRE-R40-CompetenceExclusive"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence-specifique",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORCompetenceSpecifique",
+    "title" : "JDV ROR - Compétence Spécifique (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R243-CompetenceSpecifique pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R243-CompetenceSpecifique/FHIR/TRE-R243-CompetenceSpecifique"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-condition-tarifaire",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORConditionTarifaire",
+    "title" : "JDV ROR - Condition Tarifaire (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R250-ConditionTarifaire pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R250-ConditionTarifaire/FHIR/TRE-R250-ConditionTarifaire"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-desc-non-qualifiant",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORDESCNonQualifiant",
+    "title" : "JDV ROR - DESC Non Qualifiant (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R42-DESCnonQualifiant pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R42-DESCnonQualifiant/FHIR/TRE-R42-DESCnonQualifiant"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-droit-exercice-complementaire",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORDroitExerciceComplementaire",
+    "title" : "JDV ROR - Droit d'Exercice Complémentaire (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R97-DroitExerciceCompl pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R97-DroitExerciceCompl/FHIR/TRE-R97-DroitExerciceCompl"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-equipement",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVROREquipement",
+    "title" : "JDV ROR - Équipement (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R212-Equipement pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R212-Equipement/FHIR/TRE-R212-Equipement"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-espic",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORModaliteParticipationSPH",
+    "title" : "JDV ROR - Modalité Participation SPH / ESPIC (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R73-ESPIC pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R73-ESPIC/FHIR/TRE-R73-ESPIC"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-finess-statut-juridique",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORFinessStatutJuridique",
+    "title" : "JDV ROR - Statut Juridique FINESS (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R72-FinessStatutJuridique pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R72-FinessStatutJuridique/FHIR/TRE-R72-FinessStatutJuridique"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-genre-capacite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORGenreCapacite",
+    "title" : "JDV ROR - Genre de Capacité (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R332-GenreCapacite pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R332-GenreCapacite/FHIR/TRE-R332-GenreCapacite"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-modalite-accueil",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORModaliteAccueil",
+    "title" : "JDV ROR - Modalité d'Accueil (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R338-ModaliteAccueil pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R338-ModaliteAccueil/FHIR/TRE-R338-ModaliteAccueil"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-exercice",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORModeExercice",
+    "title" : "JDV ROR - Mode d'Exercice (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R23-ModeExercice pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R23-ModeExercice/FHIR/TRE-R23-ModeExercice"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-gestion",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORModeGestion",
+    "title" : "JDV ROR - Mode de Gestion (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R236-ModeGestion pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R236-ModeGestion/FHIR/TRE-R236-ModeGestion"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-prise-en-charge",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORModePriseEnCharge",
+    "title" : "JDV ROR - Mode de Prise en Charge (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R213-ModePriseEnCharge pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R213-ModePriseEnCharge/FHIR/TRE-R213-ModePriseEnCharge"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-nature-capacite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORNatureCapacite",
+    "title" : "JDV ROR - Nature de Capacité (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R329-NatureCapacite pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R329-NatureCapacite/FHIR/TRE-R329-NatureCapacite"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-niveau-dependance",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORNiveauDependance",
+    "title" : "JDV ROR - Niveau de Dépendance (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R237-NiveauDependance pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R237-NiveauDependance/FHIR/TRE-R237-NiveauDependance"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-niveau-recours-orsan",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORNiveauRecoursORSAN",
+    "title" : "JDV ROR - Niveau Recours ORSAN (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R284-NiveauRecoursORSAN pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R284-NiveauRecoursORSAN/FHIR/TRE-R284-NiveauRecoursORSAN"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-orientation-particuliere",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVROROrientationParticuliere",
+    "title" : "JDV ROR - Orientation Particulière (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_G13-OrientationParticuliere pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_G13-OrientationParticuliere/FHIR/TRE-G13-OrientationParticuliere"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-ouverture-annuelle",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVROROuvertureAnnuelle",
+    "title" : "JDV ROR - Ouverture Annuelle (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R238-OuvertureAnnuelle pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R238-OuvertureAnnuelle/FHIR/TRE-R238-OuvertureAnnuelle"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-prestation-non-obligatoire",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORPrestationNonObligatoire",
+    "title" : "JDV ROR - Prestation Non Obligatoire Incluse (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R264-PrestationNonObligatoireIncluse pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R264-PrestationNonObligatoireIncluse/FHIR/TRE-R264-PrestationNonObligatoireIncluse"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-profession-sante",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORProfessionSante",
+    "title" : "JDV ROR - Profession de Santé (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_G15-ProfessionSante pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_G15-ProfessionSante/FHIR/TRE-G15-ProfessionSante"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-public-pris-en-charge",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORPublicPrisEnCharge",
+    "title" : "JDV ROR - Public Pris en Charge (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R239-PublicPrisEnCharge pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R239-PublicPrisEnCharge/FHIR/TRE-R239-PublicPrisEnCharge"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-qualification-pac",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORQualificationPAC",
+    "title" : "JDV ROR - Qualification PAC (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R44-QualificationPAC pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R44-QualificationPAC/FHIR/TRE-R44-QualificationPAC"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-secteur-conventionnement",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORSecteurConventionnement",
+    "title" : "JDV ROR - Secteur Conventionnement (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R282-CNAMAmeliSecteurConventionnement pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R282-CNAMAmeliSecteurConventionnement/FHIR/TRE-R282-CNAMAmeliSecteurConventionnement"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-specialisation-pec",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORSpecialisationPriseEnCharge",
+    "title" : "JDV ROR - Spécialisation de Prise en Charge (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R245-SpecialisationDePriseEnCharge pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R245-SpecialisationDePriseEnCharge/FHIR/TRE-R245-SpecialisationDePriseEnCharge"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-specialite-ordinale",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORSpecialiteOrdinale",
+    "title" : "JDV ROR - Spécialité Ordinale (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R38-SpecialiteOrdinale pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-statut-capacite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORStatutCapacite",
+    "title" : "JDV ROR - Statut de Capacité (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R330-StatutCapacite pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R330-StatutCapacite/FHIR/TRE-R330-StatutCapacite"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-surspecialite-transversale",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORSurspecialiteTransversale",
+    "title" : "JDV ROR - Surspécialité Transversale (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R359-SurspecialiteTransversale pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R359-SurspecialiteTransversale/FHIR/TRE-R359-SurspecialiteTransversale"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTemporalite",
+    "title" : "JDV ROR - Temporalité (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R331-Temporalite pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R331-Temporalite/FHIR/TRE-R331-Temporalite"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite-accueil",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTemporaliteAccueil",
+    "title" : "JDV ROR - Temporalité d'Accueil (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R240-TemporaliteAccueil pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/FHIR/TRE-R240-TemporaliteAccueil"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-crise",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTypeCrise",
+    "title" : "JDV ROR - Type de Crise (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R336-TypeCrise pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R336-TypeCrise/FHIR/TRE-R336-TypeCrise"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-fermeture-capacite",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTypeFermetureCapacite",
+    "title" : "JDV ROR - Type de Fermeture de Capacité (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R333-TypeFermetureCapacite pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R333-TypeFermetureCapacite/FHIR/TRE-R333-TypeFermetureCapacite"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-habitation",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTypeHabitation",
+    "title" : "JDV ROR - Type d'Habitation (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R242-TypeHabitation pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R242-TypeHabitation/FHIR/TRE-R242-TypeHabitation"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-lit-supplementaire",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTypeLitSupplementaire",
+    "title" : "JDV ROR - Type de Lit Supplémentaire (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R334-TypeLitSupplementaire pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R334-TypeLitSupplementaire/FHIR/TRE-R334-TypeLitSupplementaire"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-organisation-interne",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTypeOrganisationInterne",
+    "title" : "JDV ROR - Type Organisation Interne (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R207-TypeOrganisationInterne pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R207-TypeOrganisationInterne/FHIR/TRE-R207-TypeOrganisationInterne"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-savoir-faire",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTypeSavoirFaire",
+    "title" : "JDV ROR - Type de Savoir-Faire (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R04-TypeSavoirFaire pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R04-TypeSavoirFaire/FHIR/TRE-R04-TypeSavoirFaire"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-source",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTypeSource",
+    "title" : "JDV ROR - Type de Source (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R335-TypeSource pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R335-TypeSource/FHIR/TRE-R335-TypeSource"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-tarif",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORTypeTarif",
+    "title" : "JDV ROR - Type de Tarif (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R246-TypeTarif pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R246-TypeTarif/FHIR/TRE-R246-TypeTarif"]
+  },
+  {
+    "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-unite-prix",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JDVRORUnitePrix",
+    "title" : "JDV ROR - Unité de Prix (provisoire)",
+    "description" : "Jeu de valeurs provisoire incluant tous les codes de TRE_R228-UnitePrix pour le contexte ROR. En attente de création officielle.",
+    "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R228-UnitePrix/FHIR/TRE-R228-UnitePrix"]
+  }]
+}

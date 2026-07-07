@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="jdv-ror-champ-activite"/>
+  <language value="fr"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Narratif généré : EnsembleValeurs jdv-ror-champ-activite</b></p><a name="jdv-ror-champ-activite"> </a><a name="hcjdv-ror-champ-activite"> </a><ul><li>Include tous les codes définis dans <a href="https://interop.esante.gouv.fr/terminologies/1.1.0/CodeSystem-TRE-R227-ChampActivite.html"><code>https://mos.esante.gouv.fr/NOS/TRE_R227-ChampActivite/FHIR/TRE-R227-ChampActivite</code></a><span title="La version est explicitement indiquée comme étant 20231215120000"> version &#x1F4CD;20231215120000</span></li></ul></div>
+  </text>
+  <url value="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-champ-activite"/>
+  <version value="0.1.0"/>
+  <name value="JDVRORChampActivite"/>
+  <title value="JDV ROR - Champ d'Activité (provisoire)"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-07-07T16:28:25+00:00"/>
+  <publisher value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+  <contact>
+    <name value="Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://esante.gouv.fr"/>
+    </telecom>
+  </contact>
+  <description value="Jeu de valeurs provisoire incluant tous les codes de TRE_R227-ChampActivite pour le contexte ROR. En attente de création officielle."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FR"/>
+      <display value="France (la)"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://mos.esante.gouv.fr/NOS/TRE_R227-ChampActivite/FHIR/TRE-R227-ChampActivite"/>
+      <version value="20231215120000"/>
+    </include>
+  </compose>
+</ValueSet>
