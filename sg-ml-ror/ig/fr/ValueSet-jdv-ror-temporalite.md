@@ -35,7 +35,7 @@ No Expansion for this valueset (Unknown Code System)
   "title" : "JDV ROR - Temporalité (provisoire)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-07T16:28:25+00:00",
+  "date" : "2026-07-07T16:30:55+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

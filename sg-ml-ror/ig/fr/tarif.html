@@ -1,65 +1,63 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
-
-
 <html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr" dir="ltr">
   <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Tarif - Modèle d&#39;exposition du ROR dérivant du MOS (POC) v0.1.0</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Tarif - Modèle d'exposition du ROR dérivant du MOS (POC) v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link href="fhir.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="fhir.css"/>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
-    <!-- Project extras -->
-    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
-    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-  	<link href="assets/css/prism.css" rel="stylesheet" />
-    <link href="assets/css/project.css" rel="stylesheet"/>
-  	<link href="assets/css/cqf.css" rel="stylesheet" />
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+    <link rel="stylesheet" href="assets/css/project.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
         <link rel="stylesheet" href="assets/css/style-ans.css"/>
     <link rel="stylesheet" href="assets/css/style-add-ans.css"/>
-    <!-- Placeholder for child template CSS declarations -->
+      <!-- Placeholder for child template CSS declarations -->
 
-    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
-    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+    <script src="assets/js/direction-management.js" type="text/javascript"> </script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+    <![endif] -->
 
-    <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
     <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script type="text/javascript" src="assets/js/prism.js"></script>
-	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
-	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid.js"></script>
-    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+	  <script src="assets/js/prism.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-fhirpath.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-cql.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
     <style type="text/css">h2{--heading-prefix:"7"}
     h3,h4,h5,h6{--heading-prefix:"7"}</style>
-    <div id="segment-header" class="segment">  <!-- segment-header -->
-      <div class="container">  <!-- container -->
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
 
-        <!-- Placeholder for child template header declarations -->
+          <!-- Placeholder for child template header declarations -->
 <div id="family-nav">
-    <a id="hl7-search-lnk" data-no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+    <a id="hl7-search-lnk" href="http://hl7.org/fhir" data-no-external="true"><img src="assets/images/fhir-logo-www.png" alt="Visit the FHIR website" height="50"/> </a>
   </div>
-  <div id="ans-nav" style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; ">
-    <a id="hl7-logo" data-no-external="true" href="https://esante.gouv.fr/"><img height="50" alt="ANS Logo" src="assets/images/logo-ANS.svg"/></a>
-    <a id="hl7-search-lnk" data-no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+  <div style="line-height: 50px; float: left; margin-top: 4px; margin-bottom: 8px; color: #808080; " id="ans-nav">
+    <a id="hl7-logo" href="https://esante.gouv.fr/" data-no-external="true"><img src="assets/images/logo-ANS.svg" alt="ANS Logo" height="50"/></a>
+    <a id="hl7-search-lnk" href="searchform.html" data-no-external="true"><img src="assets/images/search.png" alt="Search FHIR"/></a>
   </div>
 
   <div id="ig-search">
@@ -67,7 +65,7 @@
 
 
         <div id="ig-status" data-fhir="generated">
-          <p><span style="font-size:12pt;font-weight:bold">Modèle d&#39;exposition du ROR dérivant du MOS (POC)</span>
+          <p><span style="font-size:12pt;font-weight:bold">Modèle d'exposition du ROR dérivant du MOS (POC)</span>
             <br/>
             <span style="display:inline-block;">0.1.0 - ci-build
 
@@ -75,65 +73,200 @@
 
 
 
-  <img alt="France (la) drapeau" src="../assets/images/fra.svg" height="16" title="France (la)"/>
+  <img src="../assets/images/fra.svg" alt="France (la) drapeau" title="France (la)" height="16"/>
 
 
             </span>
           </p>
         </div>
-      </div> <!-- /container -->
-    </div>  <!-- /segment-header -->
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment" data-fhir="generated">    <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">  <!-- container -->
-        <!-- HEADER CONTENT -->
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-          <!--status-bar-->
+            <!-- status-bar -->
           <div class="container">
 
-            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <!-- menu.xml  -->
+                <!-- menu.xml -->
 
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+<ul class="nav navbar-nav">
   <li>
-    <a href="index.html">Accueil</a>
+    <a href="index.html">Introduction</a>
   </li>
   <li>
     <a href="avantages-ml.html">À propos de ce POC</a>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modèle d&apos;exposition
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Structure
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="classes-communes.html">Classes Communes</a>
+        <a href="structure.html">Vue d'ensemble</a>
+      </li>
+      <li><a name="l196">​</a>
+        <a href="structure.html#entite-juridique">Entité Juridique</a>
+      </li>
+      <li><a name="l202">​</a>
+        <a href="structure.html#entite-geographique">Entité Géographique</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Tarif
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="tarif.html">Vue d'ensemble</a>
       </li>
       <li>
-        <a href="structure.html">Structure</a>
+        <a href="tarif.html#tarif">Tarif (classe abstraite)</a>
       </li>
-      <li>
-        <a href="organisation.html">Organisation</a>
+      <li><a name="l231">​</a>
+        <a href="tarif.html#forfait-socle-hebergement">Forfait Socle Hébergement</a>
       </li>
-      <li>
-        <a href="offre-operationnelle.html">Offre Opérationnelle</a>
+      <li><a name="l237">​</a>
+        <a href="tarif.html#tarif-accueil-de-jour">Tarif Accueil de Jour</a>
       </li>
-      <li>
-        <a href="tarif.html">Tarif</a>
+      <li><a name="l243">​</a>
+        <a href="tarif.html#tarif-dependance">Tarif Dépendance</a>
       </li>
-      <li>
-        <a href="ressources-operationnelles.html">Ressources Opérationnelles</a>
+      <li><a name="l249">​</a>
+        <a href="tarif.html#tarif-aides-humaines">Tarif Aides Humaines</a>
       </li>
+      <li><a name="l255">​</a>
+        <a href="tarif.html#tarif-prestation-supplementaire">Tarif Prestation Supplémentaire</a>
+      </li>
+      <li><a name="l261">​</a>
+        <a href="tarif.html#supplement-tarif-hebergement">Supplément Tarif Hébergement</a>
+      </li>
+      <li><a name="l267">​</a>
+        <a href="tarif.html#tarif-portage-repas">Tarif Portage Repas</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Organisation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
       <li>
-        <a href="professionnel.html">Professionnel Ressource</a>
+        <a href="organisation.html">Vue d'ensemble</a>
+      </li>
+      <li><a name="l290">​</a>
+        <a href="organisation.html#organisation-interne">Organisation Interne</a>
+      </li>
+      <li><a name="l296">​</a>
+        <a href="organisation.html#pole">Pôle</a>
+      </li>
+      <li><a name="l302">​</a>
+        <a href="organisation.html#structure-interne">Structure Interne</a>
+      </li>
+      <li><a name="l308">​</a>
+        <a href="organisation.html#unite-fonctionnelle">Unité Fonctionnelle</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Offre Opérationnelle
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="offre-operationnelle.html">Vue d'ensemble</a>
+      </li>
+      <li><a name="l331">​</a>
+        <a href="offre-operationnelle.html#offre-operationnelle">Offre Opérationnelle</a>
+      </li>
+      <li><a name="l337">​</a>
+        <a href="offre-operationnelle.html#activite-operationnelle">Activité Opérationnelle</a>
+      </li>
+      <li><a name="l343">​</a>
+        <a href="offre-operationnelle.html#patientele">Patientèle</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Ressources Opérationnelles
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="ressources-operationnelles.html">Vue d'ensemble</a>
+      </li>
+      <li><a name="l366">​</a>
+        <a href="ressources-operationnelles.html#lieu-realisation-offre">Lieu de Réalisation de l'Offre</a>
+      </li>
+      <li><a name="l372">​</a>
+        <a href="ressources-operationnelles.html#equipement-specifique">Équipement Spécifique</a>
+      </li>
+      <li><a name="l378">​</a>
+        <a href="ressources-operationnelles.html#capacite-prise-charge">Capacité de Prise en Charge</a>
+      </li>
+      <li><a name="l384">​</a>
+        <a href="ressources-operationnelles.html#capacite-accueil-operationnelle">Capacité d'Accueil Opérationnelle</a>
+      </li>
+      <li><a name="l390">​</a>
+        <a href="ressources-operationnelles.html#capacite-habitation">Capacité Habitation</a>
+      </li>
+      <li><a name="l396">​</a>
+        <a href="ressources-operationnelles.html#limite-caracteristique-equipement">Limite Caractéristique Équipement</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Professionnel Ressource
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="professionnel.html">Vue d'ensemble</a>
+      </li>
+      <li><a name="l419">​</a>
+        <a href="professionnel.html#personne-physique">Personne Physique</a>
+      </li>
+      <li><a name="l425">​</a>
+        <a href="professionnel.html#professionnel">Professionnel</a>
+      </li>
+      <li><a name="l431">​</a>
+        <a href="professionnel.html#exercice-professionnel">Exercice Professionnel</a>
+      </li>
+      <li><a name="l437">​</a>
+        <a href="professionnel.html#savoir-faire">Savoir-Faire</a>
+      </li>
+      <li><a name="l443">​</a>
+        <a href="professionnel.html#sous-classes-savoir-faire">Sous-classes de Savoir-Faire</a>
+      </li>
+      <li><a name="l449">​</a>
+        <a href="professionnel.html#situation-operationnelle">Situation Opérationnelle</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Classes Communes
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="classes-communes.html">Vue d'ensemble</a>
+      </li>
+      <li><a name="l472">​</a>
+        <a href="classes-communes.html#metadonnee">Métadonnée</a>
+      </li>
+      <li><a name="l478">​</a>
+        <a href="classes-communes.html#classes-mos">Classes héritées du MOS</a>
       </li>
     </ul>
   </li>
@@ -152,29 +285,29 @@
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a target="_blank" href="https://interop.esante.gouv.fr/ig/documentation/">Documentation des IGs</a>
+        <a href="https://interop.esante.gouv.fr/ig/documentation/" target="_blank">Documentation des IGs</a>
       </li>
       <li>
-        <a target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/ror/">Documentation de l&apos;API</a>
+        <a href="https://interop.esante.gouv.fr/ig/fhir/ror/" target="_blank">Documentation de l'API</a>
       </li>
     </ul>
   </li>
 </ul>
-            </div>  <!-- /.nav-collapse -->
+            </div>    <!-- /.nav-collapse -->
 
               
 
-          </div>  <!-- /.container -->
-        </nav>  <!-- /.navbar -->
-      <!-- /HEADER CONTENT -->
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-navbar -->
-    <!--status-bar-->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
 
-    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
-      <div class="container">  <!-- container -->
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Tarif</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Tarif</b></li>
 
           <span style="float: var(--ig-right);">
 
@@ -187,12 +320,12 @@
           </span>
 
         </ul>
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-breadcrumb -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">  <!-- segment-content -->
-      <div class="container">  <!-- container -->
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
@@ -204,7 +337,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Modèle d'exposition du ROR dérivant du MOS (POC) - version de développement local (intégration continue v0.1.0) construite par les outils de publication FHIR (HL7® FHIR® Standard). Voir le <a href='https://interop.esante.gouv.fr/ig/fhir/test-ror/history.html'>répertoire des versions publiées</a></p><!--EndReleaseHeader-->
+    <!-- ReleaseHeader --><p id="publish-box">Modèle d'exposition du ROR dérivant du MOS (POC) - version de développement local (intégration continue v0.1.0) construite par les outils de publication FHIR (HL7&reg; FHIR&reg; Standard). Voir le <a href="https://interop.esante.gouv.fr/ig/fhir/test-ror/history.html">répertoire des versions publiées</a></p>  <!-- EndReleaseHeader -->
   <h2>Tarif</h2>
   
 
@@ -220,19 +353,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-    <p><!-- white space is critical inside of capture --></p>
+    <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#diagramme" id="markdown-toc-diagramme">Diagramme</a></li>
   <li><a href="#modèles-logiques" id="markdown-toc-modèles-logiques">Modèles logiques</a></li>
-  <li><a href="#rortarif-classe-abstraite" id="markdown-toc-rortarif-classe-abstraite">RORTarif (classe abstraite)</a></li>
-  <li><a href="#rorforfaitsoclehebergement" id="markdown-toc-rorforfaitsoclehebergement">RORForfaitSocleHebergement</a></li>
-  <li><a href="#rortarifaccueildejour" id="markdown-toc-rortarifaccueildejour">RORTarifAccueilDeJour</a></li>
-  <li><a href="#rortarifdependance" id="markdown-toc-rortarifdependance">RORTarifDependance</a></li>
-  <li><a href="#rortarifaideshumaines" id="markdown-toc-rortarifaideshumaines">RORTarifAidesHumaines</a></li>
-  <li><a href="#rortarifprestationsupplementaire" id="markdown-toc-rortarifprestationsupplementaire">RORTarifPrestationSupplementaire</a></li>
-  <li><a href="#rorsupplementtarifhebergement" id="markdown-toc-rorsupplementtarifhebergement">RORSupplementTarifHebergement</a></li>
-  <li><a href="#rortarifportagerepas" id="markdown-toc-rortarifportagerepas">RORTarifPortageRepas</a></li>
+  <li><a href="#rortarif-classe-abstraite--tarif" id="markdown-toc-rortarif-classe-abstraite--tarif">RORTarif (classe abstraite) {: #tarif}</a></li>
+  <li><a href="#rorforfaitsoclehebergement--forfait-socle-hebergement" id="markdown-toc-rorforfaitsoclehebergement--forfait-socle-hebergement">RORForfaitSocleHebergement {: #forfait-socle-hebergement}</a></li>
+  <li><a href="#rortarifaccueildejour--tarif-accueil-de-jour" id="markdown-toc-rortarifaccueildejour--tarif-accueil-de-jour">RORTarifAccueilDeJour {: #tarif-accueil-de-jour}</a></li>
+  <li><a href="#rortarifdependance--tarif-dependance" id="markdown-toc-rortarifdependance--tarif-dependance">RORTarifDependance {: #tarif-dependance}</a></li>
+  <li><a href="#rortarifaideshumaines--tarif-aides-humaines" id="markdown-toc-rortarifaideshumaines--tarif-aides-humaines">RORTarifAidesHumaines {: #tarif-aides-humaines}</a></li>
+  <li><a href="#rortarifprestationsupplementaire--tarif-prestation-supplementaire" id="markdown-toc-rortarifprestationsupplementaire--tarif-prestation-supplementaire">RORTarifPrestationSupplementaire {: #tarif-prestation-supplementaire}</a></li>
+  <li><a href="#rorsupplementtarifhebergement--supplement-tarif-hebergement" id="markdown-toc-rorsupplementtarifhebergement--supplement-tarif-hebergement">RORSupplementTarifHebergement {: #supplement-tarif-hebergement}</a></li>
+  <li><a href="#rortarifportagerepas--tarif-portage-repas" id="markdown-toc-rortarifportagerepas--tarif-portage-repas">RORTarifPortageRepas {: #tarif-portage-repas}</a></li>
 </ul>
 
 </div>
@@ -245,11 +378,11 @@ Cette section est transversale : les tarifs intéressent les patients et les pro
 
 <p>La classe <code class="language-plaintext highlighter-rouge">RORTarif</code> est une <strong>classe abstraite</strong> dont héritent les différents types de tarifs spécialisés.</p>
 
-<hr />
+<hr/>
 
 <h3 id="diagramme">Diagramme</h3>
 
-<!-- CSS pour les contrôles SVG interactifs -->
+  <!-- CSS pour les contrôles SVG interactifs -->
 <style>
 /* ===========================
    CONTENEUR SVG - MODE NORMAL
@@ -366,19 +499,19 @@ Cette section est transversale : les tarifs intéressent les patients et les pro
 }
 </style>
 
-<div class="figure svg-wrap" style="width:100%;">
+<div style="width:100%;" class="figure svg-wrap">
   <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
-    <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>
-    <button class="btn btn-light btn-sm svg-zoom-out" title="Zoom arrière">🔍−</button>
-    <button class="btn btn-light btn-sm svg-zoom-reset" title="Réinitialiser">↻</button>
-    <button class="btn btn-light btn-sm svg-fullscreen" title="Plein écran">⛶</button>
+    <button title="Zoom avant" class="btn btn-light btn-sm svg-zoom-in">&#x1F50D;+</button>
+    <button title="Zoom arrière" class="btn btn-light btn-sm svg-zoom-out">&#x1F50D;−</button>
+    <button title="Réinitialiser" class="btn btn-light btn-sm svg-zoom-reset">↻</button>
+    <button title="Plein écran" class="btn btn-light btn-sm svg-fullscreen">⛶</button>
   </div>
   <p style="margin: 0; padding: 0;">
-    <?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="616px" preserveAspectRatio="none" style="width:2055px;height:616px;" version="1.1" viewBox="0 0 2055 616" width="2055px" zoomAndPan="magnify"><defs><linearGradient id="gciqmpm7hb7lj0" x1="50%" x2="50%" y1="0%" y2="100%"><stop offset="0%" stop-color="#F4F4F4" /><stop offset="100%" stop-color="#F4F4F4" /></linearGradient></defs><g><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="20" font-weight="bold" lengthAdjust="spacing" textLength="54" x="993.75" y="38.5645">Tarif</text><!--class Tarif--><g id="elem_Tarif"><rect codeLine="4" fill="url(#gciqmpm7hb7lj0)" height="222.8281" id="Tarif" style="stroke:#C6C6C6;stroke-width:1.0;" width="241" x="958.5" y="71.2813" /><rect fill="url(#gciqmpm7hb7lj0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="241" x="958.5" y="71.2813" /><ellipse cx="1040.5" cy="92.6836" fill="#A9DCDF" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M1040.1094,89.7617 L1039.2969,93.3398 L1040.9375,93.3398 L1040.1094,89.7617 Z M1039.0625,88.1836 L1041.1719,88.1836 L1043.5313,96.9336 L1041.7969,96.9336 L1041.2656,94.7773 L1038.9531,94.7773 L1038.4219,96.9336 L1036.6875,96.9336 L1039.0625,88.1836 Z " fill="#000000" /><a href="StructureDefinition-ror-tarif.html" target="_top" title="StructureDefinition-ror-tarif.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ror-tarif.html" xlink:show="new" xlink:title="StructureDefinition-ror-tarif.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" font-style="italic" lengthAdjust="spacing" text-decoration="underline" textLength="49" x="1069.5" y="96.4917">RORTarif</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="959.5" x2="1198.5" y1="114.0859" y2="114.0859" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="135" x="974.5" y="138.2964">typeTarif : Coding [1..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="155" x="974.5" y="171.1011">montantTarif : Money [1..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="134" x="974.5" y="203.9058">unitePrix : Coding [1..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="196" x="974.5" y="236.7104">dateDebutValiditeTarif : date [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="209" x="974.5" y="269.5151">metadonnee : RORMetadonnee [1..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="959.5" x2="1198.5" y1="286.1094" y2="286.1094" /></g><!--class FSH--><g id="elem_FSH"><rect codeLine="12" fill="url(#gciqmpm7hb7lj0)" height="255.6328" id="FSH" style="stroke:#C6C6C6;stroke-width:1.0;" width="350" x="7" y="354.2813" /><rect fill="url(#gciqmpm7hb7lj0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="350" x="7" y="354.2813" /><ellipse cx="84.5" cy="375.6836" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M86.3281,379.9336 Q85.9219,380.1367 85.4688,380.2461 Q85.0156,380.3555 84.5313,380.3555 Q82.75,380.3555 81.8125,379.1992 Q80.8906,378.0273 80.8906,375.8242 Q80.8906,373.6055 81.8125,372.4492 Q82.75,371.2773 84.5313,371.2773 Q85.0156,371.2773 85.4688,371.3867 Q85.9375,371.4805 86.3281,371.6992 L86.3281,373.6211 Q85.8906,373.2148 85.4688,373.0273 Q85.0469,372.8242 84.6094,372.8242 Q83.6563,372.8242 83.1719,373.5898 Q82.6875,374.3398 82.6875,375.8242 Q82.6875,377.293 83.1719,378.043 Q83.6563,378.793 84.6094,378.793 Q85.0469,378.793 85.4688,378.6055 Q85.8906,378.418 86.3281,378.0117 L86.3281,379.9336 Z " fill="#000000" /><a href="StructureDefinition-ror-forfait-socle-hebergement.html" target="_top" title="StructureDefinition-ror-forfait-socle-hebergement.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ror-forfait-socle-hebergement.html" xlink:show="new" xlink:title="StructureDefinition-ror-forfait-socle-hebergement.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="167" x="113.5" y="379.4917">RORForfaitSocleHebergement</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="8" x2="356" y1="397.0859" y2="397.0859" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="287" x="23" y="421.2964">prestationsNonObligatoiresIncluses : Coding [0..*]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="318" x="23" y="454.1011">autresPrestationsNonObligatoiresIncluses : string [0..*]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="182" x="23" y="486.9058">tarifMoins60Ans : boolean [1..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="166" x="23" y="519.7104">typeHabitation : Coding [1..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="184" x="23" y="552.5151">conditionTarifaire : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="189" x="23" y="585.3198">temporaliteAccueil : Coding [1..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="8" x2="356" y1="601.9141" y2="601.9141" /></g><!--class TAJ--><g id="elem_TAJ"><rect codeLine="21" fill="url(#gciqmpm7hb7lj0)" height="91.6094" id="TAJ" style="stroke:#C6C6C6;stroke-width:1.0;" width="216" x="392" y="436.2813" /><rect fill="url(#gciqmpm7hb7lj0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="216" x="392" y="436.2813" /><ellipse cx="424.45" cy="457.6836" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M426.2781,461.9336 Q425.8719,462.1367 425.4188,462.2461 Q424.9656,462.3555 424.4813,462.3555 Q422.7,462.3555 421.7625,461.1992 Q420.8406,460.0273 420.8406,457.8242 Q420.8406,455.6055 421.7625,454.4492 Q422.7,453.2773 424.4813,453.2773 Q424.9656,453.2773 425.4188,453.3867 Q425.8875,453.4805 426.2781,453.6992 L426.2781,455.6211 Q425.8406,455.2148 425.4188,455.0273 Q424.9969,454.8242 424.5594,454.8242 Q423.6063,454.8242 423.1219,455.5898 Q422.6375,456.3398 422.6375,457.8242 Q422.6375,459.293 423.1219,460.043 Q423.6063,460.793 424.5594,460.793 Q424.9969,460.793 425.4188,460.6055 Q425.8406,460.418 426.2781,460.0117 L426.2781,461.9336 Z " fill="#000000" /><a href="StructureDefinition-ror-tarif-accueil-de-jour.html" target="_top" title="StructureDefinition-ror-tarif-accueil-de-jour.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ror-tarif-accueil-de-jour.html" xlink:show="new" xlink:title="StructureDefinition-ror-tarif-accueil-de-jour.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="125" x="451.55" y="461.4917">RORTarifAccueilDeJour</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="393" x2="607" y1="479.0859" y2="479.0859" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="184" x="408" y="503.2964">conditionTarifaire : Coding [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="393" x2="607" y1="519.8906" y2="519.8906" /></g><!--class TD--><g id="elem_TD"><rect codeLine="25" fill="url(#gciqmpm7hb7lj0)" height="124.4141" id="TD" style="stroke:#C6C6C6;stroke-width:1.0;" width="275" x="643.5" y="420.2813" /><rect fill="url(#gciqmpm7hb7lj0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="275" x="643.5" y="420.2813" /><ellipse cx="707.5" cy="441.6836" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M709.3281,445.9336 Q708.9219,446.1367 708.4688,446.2461 Q708.0156,446.3555 707.5313,446.3555 Q705.75,446.3555 704.8125,445.1992 Q703.8906,444.0273 703.8906,441.8242 Q703.8906,439.6055 704.8125,438.4492 Q705.75,437.2773 707.5313,437.2773 Q708.0156,437.2773 708.4688,437.3867 Q708.9375,437.4805 709.3281,437.6992 L709.3281,439.6211 Q708.8906,439.2148 708.4688,439.0273 Q708.0469,438.8242 707.6094,438.8242 Q706.6563,438.8242 706.1719,439.5898 Q705.6875,440.3398 705.6875,441.8242 Q705.6875,443.293 706.1719,444.043 Q706.6563,444.793 707.6094,444.793 Q708.0469,444.793 708.4688,444.6055 Q708.8906,444.418 709.3281,444.0117 L709.3281,445.9336 Z " fill="#000000" /><a href="StructureDefinition-ror-tarif-dependance.html" target="_top" title="StructureDefinition-ror-tarif-dependance.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ror-tarif-dependance.html" xlink:show="new" xlink:title="StructureDefinition-ror-tarif-dependance.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="119" x="736.5" y="445.4917">RORTarifDependance</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="644.5" x2="917.5" y1="463.0859" y2="463.0859" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="243" x="659.5" y="487.2964">groupeTarifaireDependance : Coding [1..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="189" x="659.5" y="520.1011">temporaliteAccueil : Coding [1..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="644.5" x2="917.5" y1="536.6953" y2="536.6953" /></g><!--class TAH--><g id="elem_TAH"><rect codeLine="30" fill="url(#gciqmpm7hb7lj0)" height="157.2188" id="TAH" style="stroke:#C6C6C6;stroke-width:1.0;" width="250" x="954" y="403.7813" /><rect fill="url(#gciqmpm7hb7lj0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="250" x="954" y="403.7813" /><ellipse cx="996.5" cy="425.1836" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M998.3281,429.4336 Q997.9219,429.6367 997.4688,429.7461 Q997.0156,429.8555 996.5313,429.8555 Q994.75,429.8555 993.8125,428.6992 Q992.8906,427.5273 992.8906,425.3242 Q992.8906,423.1055 993.8125,421.9492 Q994.75,420.7773 996.5313,420.7773 Q997.0156,420.7773 997.4688,420.8867 Q997.9375,420.9805 998.3281,421.1992 L998.3281,423.1211 Q997.8906,422.7148 997.4688,422.5273 Q997.0469,422.3242 996.6094,422.3242 Q995.6563,422.3242 995.1719,423.0898 Q994.6875,423.8398 994.6875,425.3242 Q994.6875,426.793 995.1719,427.543 Q995.6563,428.293 996.6094,428.293 Q997.0469,428.293 997.4688,428.1055 Q997.8906,427.918 998.3281,427.5117 L998.3281,429.4336 Z " fill="#000000" /><a href="StructureDefinition-ror-tarif-aides-humaines.html" target="_top" title="StructureDefinition-ror-tarif-aides-humaines.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ror-tarif-aides-humaines.html" xlink:show="new" xlink:title="StructureDefinition-ror-tarif-aides-humaines.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="137" x="1025.5" y="428.9917">RORTarifAidesHumaines</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="955" x2="1203" y1="446.5859" y2="446.5859" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="218" x="970" y="470.7964">nomTarifAidesHumaines : string [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="184" x="970" y="503.6011">conditionTarifaire : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="161" x="970" y="536.4058">modeGestion : Coding [1..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="955" x2="1203" y1="553" y2="553" /></g><!--class TPS--><g id="elem_TPS"><rect codeLine="36" fill="url(#gciqmpm7hb7lj0)" height="124.4141" id="TPS" style="stroke:#C6C6C6;stroke-width:1.0;" width="253" x="1239.5" y="420.2813" /><rect fill="url(#gciqmpm7hb7lj0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="253" x="1239.5" y="420.2813" /><ellipse cx="1256.2" cy="441.6836" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M1258.0281,445.9336 Q1257.6219,446.1367 1257.1688,446.2461 Q1256.7156,446.3555 1256.2313,446.3555 Q1254.45,446.3555 1253.5125,445.1992 Q1252.5906,444.0273 1252.5906,441.8242 Q1252.5906,439.6055 1253.5125,438.4492 Q1254.45,437.2773 1256.2313,437.2773 Q1256.7156,437.2773 1257.1688,437.3867 Q1257.6375,437.4805 1258.0281,437.6992 L1258.0281,439.6211 Q1257.5906,439.2148 1257.1688,439.0273 Q1256.7469,438.8242 1256.3094,438.8242 Q1255.3563,438.8242 1254.8719,439.5898 Q1254.3875,440.3398 1254.3875,441.8242 Q1254.3875,443.293 1254.8719,444.043 Q1255.3563,444.793 1256.3094,444.793 Q1256.7469,444.793 1257.1688,444.6055 Q1257.5906,444.418 1258.0281,444.0117 L1258.0281,445.9336 Z " fill="#000000" /><a href="StructureDefinition-ror-tarif-prestation-supplementaire.html" target="_top" title="StructureDefinition-ror-tarif-prestation-supplementaire.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ror-tarif-prestation-supplementaire.html" xlink:show="new" xlink:title="StructureDefinition-ror-tarif-prestation-supplementaire.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="197" x="1279.8" y="445.4917">RORTarifPrestationSupplementaire</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1240.5" x2="1491.5" y1="463.0859" y2="463.0859" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="221" x="1255.5" y="487.2964">nomAutrePrestationSupp : string [1..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="197" x="1255.5" y="520.1011">nomPrestationSupp : Coding [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1240.5" x2="1491.5" y1="536.6953" y2="536.6953" /></g><!--class STH--><g id="elem_STH"><rect codeLine="41" fill="url(#gciqmpm7hb7lj0)" height="91.6094" id="STH" style="stroke:#C6C6C6;stroke-width:1.0;" width="244" x="1528" y="436.2813" /><rect fill="url(#gciqmpm7hb7lj0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="244" x="1528" y="436.2813" /><ellipse cx="1542" cy="457.6836" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M1543.8281,461.9336 Q1543.4219,462.1367 1542.9688,462.2461 Q1542.5156,462.3555 1542.0313,462.3555 Q1540.25,462.3555 1539.3125,461.1992 Q1538.3906,460.0273 1538.3906,457.8242 Q1538.3906,455.6055 1539.3125,454.4492 Q1540.25,453.2773 1542.0313,453.2773 Q1542.5156,453.2773 1542.9688,453.3867 Q1543.4375,453.4805 1543.8281,453.6992 L1543.8281,455.6211 Q1543.3906,455.2148 1542.9688,455.0273 Q1542.5469,454.8242 1542.1094,454.8242 Q1541.1563,454.8242 1540.6719,455.5898 Q1540.1875,456.3398 1540.1875,457.8242 Q1540.1875,459.293 1540.6719,460.043 Q1541.1563,460.793 1542.1094,460.793 Q1542.5469,460.793 1542.9688,460.6055 Q1543.3906,460.418 1543.8281,460.0117 L1543.8281,461.9336 Z " fill="#000000" /><a href="StructureDefinition-ror-supplement-tarif-hebergement.html" target="_top" title="StructureDefinition-ror-supplement-tarif-hebergement.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ror-supplement-tarif-hebergement.html" xlink:show="new" xlink:title="StructureDefinition-ror-supplement-tarif-hebergement.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="194" x="1565" y="461.4917">RORSupplementTarifHebergement</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1529" x2="1771" y1="479.0859" y2="479.0859" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="166" x="1544" y="503.2964">typeHabitation : Coding [1..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1529" x2="1771" y1="519.8906" y2="519.8906" /></g><!--class TPR--><g id="elem_TPR"><rect codeLine="45" fill="url(#gciqmpm7hb7lj0)" height="124.4141" id="TPR" style="stroke:#C6C6C6;stroke-width:1.0;" width="241" x="1807.5" y="420.2813" /><rect fill="url(#gciqmpm7hb7lj0)" height="42.8047" style="stroke:#C6C6C6;stroke-width:1.0;" width="241" x="1807.5" y="420.2813" /><ellipse cx="1850" cy="441.6836" fill="#ADD1B2" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><path d="M1851.8281,445.9336 Q1851.4219,446.1367 1850.9688,446.2461 Q1850.5156,446.3555 1850.0313,446.3555 Q1848.25,446.3555 1847.3125,445.1992 Q1846.3906,444.0273 1846.3906,441.8242 Q1846.3906,439.6055 1847.3125,438.4492 Q1848.25,437.2773 1850.0313,437.2773 Q1850.5156,437.2773 1850.9688,437.3867 Q1851.4375,437.4805 1851.8281,437.6992 L1851.8281,439.6211 Q1851.3906,439.2148 1850.9688,439.0273 Q1850.5469,438.8242 1850.1094,438.8242 Q1849.1563,438.8242 1848.6719,439.5898 Q1848.1875,440.3398 1848.1875,441.8242 Q1848.1875,443.293 1848.6719,444.043 Q1849.1563,444.793 1850.1094,444.793 Q1850.5469,444.793 1850.9688,444.6055 Q1851.3906,444.418 1851.8281,444.0117 L1851.8281,445.9336 Z " fill="#000000" /><a href="StructureDefinition-ror-tarif-portage-repas.html" target="_top" title="StructureDefinition-ror-tarif-portage-repas.html" xlink:actuate="onRequest" xlink:href="StructureDefinition-ror-tarif-portage-repas.html" xlink:show="new" xlink:title="StructureDefinition-ror-tarif-portage-repas.html" xlink:type="simple"><text fill="#0000FF" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" text-decoration="underline" textLength="128" x="1879" y="445.4917">RORTarifPortageRepas</text></a><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1808.5" x2="2047.5" y1="463.0859" y2="463.0859" /><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="184" x="1823.5" y="487.2964">conditionTarifaire : Coding [0..1]</text><text fill="#262626" font-family="IBM Plex Sans, Noto Sans, Verdana" font-size="11" lengthAdjust="spacing" textLength="209" x="1823.5" y="520.1011">nomTarifPortageRepas : string [0..1]</text><line style="stroke:#C6C6C6;stroke-width:1.0;" x1="1808.5" x2="2047.5" y1="536.6953" y2="536.6953" /></g><!--reverse link Tarif to FSH--><g id="link_Tarif_FSH"><path codeLine="50" d="M938.34,203.0612 C792.65,226.3813 560.61,272.9913 374,354.2813 C368.41,356.7113 362.81,359.3113 357.21,362.0413 " fill="none" id="Tarif-backto-FSH" style="stroke:#C6C6C6;stroke-width:1.0;" /><polygon fill="none" points="937.47,196.1112,958.31,199.9213,939.64,209.9413,937.47,196.1112" style="stroke:#C6C6C6;stroke-width:1.0;" /></g><!--reverse link Tarif to TAJ--><g id="link_Tarif_TAJ"><path codeLine="51" d="M939,219.4912 C845.58,247.2713 722.64,291.7013 626,354.2813 C591.72,376.4813 559.41,409.3813 536.09,436.1413 " fill="none" id="Tarif-backto-TAJ" style="stroke:#C6C6C6;stroke-width:1.0;" /><polygon fill="none" points="937.31,212.6913,958.47,213.8112,941.23,226.1313,937.31,212.6913" style="stroke:#C6C6C6;stroke-width:1.0;" /></g><!--reverse link Tarif to TD--><g id="link_Tarif_TD"><path codeLine="52" d="M953.69,308.8813 C915.18,347.3213 874.52,387.9213 842.32,420.0613 " fill="none" id="Tarif-backto-TD" style="stroke:#C6C6C6;stroke-width:1.0;" /><polygon fill="none" points="948.94,303.7313,968.04,294.5613,958.83,313.6413,948.94,303.7313" style="stroke:#C6C6C6;stroke-width:1.0;" /></g><!--reverse link Tarif to TAH--><g id="link_Tarif_TAH"><path codeLine="53" d="M1079,314.7513 C1079,344.9913 1079,376.2313 1079,403.3613 " fill="none" id="Tarif-backto-TAH" style="stroke:#C6C6C6;stroke-width:1.0;" /><polygon fill="none" points="1072,314.5613,1079,294.5613,1086,314.5613,1072,314.5613" style="stroke:#C6C6C6;stroke-width:1.0;" /></g><!--reverse link Tarif to TPS--><g id="link_Tarif_TPS"><path codeLine="54" d="M1199.93,309.1413 C1236.94,347.5013 1276,387.9913 1306.94,420.0613 " fill="none" id="Tarif-backto-TPS" style="stroke:#C6C6C6;stroke-width:1.0;" /><polygon fill="none" points="1194.72,313.8113,1185.87,294.5613,1204.79,304.0913,1194.72,313.8113" style="stroke:#C6C6C6;stroke-width:1.0;" /></g><!--reverse link Tarif to STH--><g id="link_Tarif_STH"><path codeLine="55" d="M1218.79,224.8213 C1306.21,253.8612 1419.08,297.6913 1510,354.2813 C1546.5,377.0013 1582.3,409.7213 1608.57,436.2613 " fill="none" id="Tarif-backto-STH" style="stroke:#C6C6C6;stroke-width:1.0;" /><polygon fill="none" points="1216.52,231.4413,1199.69,218.5713,1220.87,218.1313,1216.52,231.4413" style="stroke:#C6C6C6;stroke-width:1.0;" /></g><!--reverse link Tarif to TPR--><g id="link_Tarif_TPR"><path codeLine="56" d="M1219.68,196.3712 C1368.71,214.3913 1607.26,256.8913 1790,354.2813 C1821.32,370.9713 1850.99,396.4713 1874.73,420.2613 " fill="none" id="Tarif-backto-TPR" style="stroke:#C6C6C6;stroke-width:1.0;" /><polygon fill="none" points="1218.77,203.3112,1199.71,194.0313,1220.39,189.4013,1218.77,203.3112" style="stroke:#C6C6C6;stroke-width:1.0;" /></g></g></svg>
+      <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 2055 616" zoomAndPan="magnify" preserveAspectRatio="none" width="2055px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:2055px;height:616px;" version="1.1" height="616px"><defs><linearGradient y1="0%" x1="50%" y2="100%" x2="50%" id="gciqmpm7hb7lj0"><stop offset="0%" stop-color="#F4F4F4"></stop><stop offset="100%" stop-color="#F4F4F4"></stop></linearGradient></defs><g><text font-weight="bold" lengthAdjust="spacing" x="993.75" font-size="20" textLength="54" y="38.5645" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">Tarif</text>  <!-- class Tarif --><g id="elem_Tarif"><rect codeLine="4" width="241" x="958.5" y="71.2813" style="stroke:#C6C6C6;stroke-width:1.0;" id="Tarif" fill="url(#gciqmpm7hb7lj0)" height="222.8281"></rect><rect width="241" x="958.5" y="71.2813" style="stroke:#C6C6C6;stroke-width:1.0;" fill="url(#gciqmpm7hb7lj0)" height="42.8047"></rect><ellipse cx="1040.5" cy="92.6836" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" fill="#A9DCDF"></ellipse><path d="M1040.1094,89.7617 L1039.2969,93.3398 L1040.9375,93.3398 L1040.1094,89.7617 Z M1039.0625,88.1836 L1041.1719,88.1836 L1043.5313,96.9336 L1041.7969,96.9336 L1041.2656,94.7773 L1038.9531,94.7773 L1038.4219,96.9336 L1036.6875,96.9336 L1039.0625,88.1836 Z " fill="#000000"></path><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-ror-tarif.html" href="StructureDefinition-ror-tarif.html" xlink:actuate="onRequest" title="StructureDefinition-ror-tarif.html" xlink:href="StructureDefinition-ror-tarif.html" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="1069.5" font-size="11" textLength="49" y="96.4917" font-family="IBM Plex Sans, Noto Sans, Verdana" font-style="italic" fill="#0000FF">RORTarif</text></a><line y1="114.0859" x1="959.5" y2="114.0859" style="stroke:#C6C6C6;stroke-width:1.0;" x2="1198.5"></line><text lengthAdjust="spacing" x="974.5" font-size="11" textLength="135" y="138.2964" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">typeTarif : Coding [1..1]</text><text lengthAdjust="spacing" x="974.5" font-size="11" textLength="155" y="171.1011" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">montantTarif : Money [1..1]</text><text lengthAdjust="spacing" x="974.5" font-size="11" textLength="134" y="203.9058" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">unitePrix : Coding [1..1]</text><text lengthAdjust="spacing" x="974.5" font-size="11" textLength="196" y="236.7104" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">dateDebutValiditeTarif : date [0..1]</text><text lengthAdjust="spacing" x="974.5" font-size="11" textLength="209" y="269.5151" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">metadonnee : RORMetadonnee [1..1]</text><line y1="286.1094" x1="959.5" y2="286.1094" style="stroke:#C6C6C6;stroke-width:1.0;" x2="1198.5"></line></g>  <!-- class FSH --><g id="elem_FSH"><rect codeLine="12" width="350" x="7" y="354.2813" style="stroke:#C6C6C6;stroke-width:1.0;" id="FSH" fill="url(#gciqmpm7hb7lj0)" height="255.6328"></rect><rect width="350" x="7" y="354.2813" style="stroke:#C6C6C6;stroke-width:1.0;" fill="url(#gciqmpm7hb7lj0)" height="42.8047"></rect><ellipse cx="84.5" cy="375.6836" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" fill="#ADD1B2"></ellipse><path d="M86.3281,379.9336 Q85.9219,380.1367 85.4688,380.2461 Q85.0156,380.3555 84.5313,380.3555 Q82.75,380.3555 81.8125,379.1992 Q80.8906,378.0273 80.8906,375.8242 Q80.8906,373.6055 81.8125,372.4492 Q82.75,371.2773 84.5313,371.2773 Q85.0156,371.2773 85.4688,371.3867 Q85.9375,371.4805 86.3281,371.6992 L86.3281,373.6211 Q85.8906,373.2148 85.4688,373.0273 Q85.0469,372.8242 84.6094,372.8242 Q83.6563,372.8242 83.1719,373.5898 Q82.6875,374.3398 82.6875,375.8242 Q82.6875,377.293 83.1719,378.043 Q83.6563,378.793 84.6094,378.793 Q85.0469,378.793 85.4688,378.6055 Q85.8906,378.418 86.3281,378.0117 L86.3281,379.9336 Z " fill="#000000"></path><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-ror-forfait-socle-hebergement.html" href="StructureDefinition-ror-forfait-socle-hebergement.html" xlink:actuate="onRequest" title="StructureDefinition-ror-forfait-socle-hebergement.html" xlink:href="StructureDefinition-ror-forfait-socle-hebergement.html" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="113.5" font-size="11" textLength="167" y="379.4917" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#0000FF">RORForfaitSocleHebergement</text></a><line y1="397.0859" x1="8" y2="397.0859" style="stroke:#C6C6C6;stroke-width:1.0;" x2="356"></line><text lengthAdjust="spacing" x="23" font-size="11" textLength="287" y="421.2964" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">prestationsNonObligatoiresIncluses : Coding [0..*]</text><text lengthAdjust="spacing" x="23" font-size="11" textLength="318" y="454.1011" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">autresPrestationsNonObligatoiresIncluses : string [0..*]</text><text lengthAdjust="spacing" x="23" font-size="11" textLength="182" y="486.9058" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">tarifMoins60Ans : boolean [1..1]</text><text lengthAdjust="spacing" x="23" font-size="11" textLength="166" y="519.7104" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">typeHabitation : Coding [1..1]</text><text lengthAdjust="spacing" x="23" font-size="11" textLength="184" y="552.5151" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">conditionTarifaire : Coding [0..1]</text><text lengthAdjust="spacing" x="23" font-size="11" textLength="189" y="585.3198" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">temporaliteAccueil : Coding [1..1]</text><line y1="601.9141" x1="8" y2="601.9141" style="stroke:#C6C6C6;stroke-width:1.0;" x2="356"></line></g>  <!-- class TAJ --><g id="elem_TAJ"><rect codeLine="21" width="216" x="392" y="436.2813" style="stroke:#C6C6C6;stroke-width:1.0;" id="TAJ" fill="url(#gciqmpm7hb7lj0)" height="91.6094"></rect><rect width="216" x="392" y="436.2813" style="stroke:#C6C6C6;stroke-width:1.0;" fill="url(#gciqmpm7hb7lj0)" height="42.8047"></rect><ellipse cx="424.45" cy="457.6836" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" fill="#ADD1B2"></ellipse><path d="M426.2781,461.9336 Q425.8719,462.1367 425.4188,462.2461 Q424.9656,462.3555 424.4813,462.3555 Q422.7,462.3555 421.7625,461.1992 Q420.8406,460.0273 420.8406,457.8242 Q420.8406,455.6055 421.7625,454.4492 Q422.7,453.2773 424.4813,453.2773 Q424.9656,453.2773 425.4188,453.3867 Q425.8875,453.4805 426.2781,453.6992 L426.2781,455.6211 Q425.8406,455.2148 425.4188,455.0273 Q424.9969,454.8242 424.5594,454.8242 Q423.6063,454.8242 423.1219,455.5898 Q422.6375,456.3398 422.6375,457.8242 Q422.6375,459.293 423.1219,460.043 Q423.6063,460.793 424.5594,460.793 Q424.9969,460.793 425.4188,460.6055 Q425.8406,460.418 426.2781,460.0117 L426.2781,461.9336 Z " fill="#000000"></path><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-ror-tarif-accueil-de-jour.html" href="StructureDefinition-ror-tarif-accueil-de-jour.html" xlink:actuate="onRequest" title="StructureDefinition-ror-tarif-accueil-de-jour.html" xlink:href="StructureDefinition-ror-tarif-accueil-de-jour.html" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="451.55" font-size="11" textLength="125" y="461.4917" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#0000FF">RORTarifAccueilDeJour</text></a><line y1="479.0859" x1="393" y2="479.0859" style="stroke:#C6C6C6;stroke-width:1.0;" x2="607"></line><text lengthAdjust="spacing" x="408" font-size="11" textLength="184" y="503.2964" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">conditionTarifaire : Coding [0..1]</text><line y1="519.8906" x1="393" y2="519.8906" style="stroke:#C6C6C6;stroke-width:1.0;" x2="607"></line></g>  <!-- class TD --><g id="elem_TD"><rect codeLine="25" width="275" x="643.5" y="420.2813" style="stroke:#C6C6C6;stroke-width:1.0;" id="TD" fill="url(#gciqmpm7hb7lj0)" height="124.4141"></rect><rect width="275" x="643.5" y="420.2813" style="stroke:#C6C6C6;stroke-width:1.0;" fill="url(#gciqmpm7hb7lj0)" height="42.8047"></rect><ellipse cx="707.5" cy="441.6836" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" fill="#ADD1B2"></ellipse><path d="M709.3281,445.9336 Q708.9219,446.1367 708.4688,446.2461 Q708.0156,446.3555 707.5313,446.3555 Q705.75,446.3555 704.8125,445.1992 Q703.8906,444.0273 703.8906,441.8242 Q703.8906,439.6055 704.8125,438.4492 Q705.75,437.2773 707.5313,437.2773 Q708.0156,437.2773 708.4688,437.3867 Q708.9375,437.4805 709.3281,437.6992 L709.3281,439.6211 Q708.8906,439.2148 708.4688,439.0273 Q708.0469,438.8242 707.6094,438.8242 Q706.6563,438.8242 706.1719,439.5898 Q705.6875,440.3398 705.6875,441.8242 Q705.6875,443.293 706.1719,444.043 Q706.6563,444.793 707.6094,444.793 Q708.0469,444.793 708.4688,444.6055 Q708.8906,444.418 709.3281,444.0117 L709.3281,445.9336 Z " fill="#000000"></path><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-ror-tarif-dependance.html" href="StructureDefinition-ror-tarif-dependance.html" xlink:actuate="onRequest" title="StructureDefinition-ror-tarif-dependance.html" xlink:href="StructureDefinition-ror-tarif-dependance.html" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="736.5" font-size="11" textLength="119" y="445.4917" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#0000FF">RORTarifDependance</text></a><line y1="463.0859" x1="644.5" y2="463.0859" style="stroke:#C6C6C6;stroke-width:1.0;" x2="917.5"></line><text lengthAdjust="spacing" x="659.5" font-size="11" textLength="243" y="487.2964" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">groupeTarifaireDependance : Coding [1..1]</text><text lengthAdjust="spacing" x="659.5" font-size="11" textLength="189" y="520.1011" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">temporaliteAccueil : Coding [1..1]</text><line y1="536.6953" x1="644.5" y2="536.6953" style="stroke:#C6C6C6;stroke-width:1.0;" x2="917.5"></line></g>  <!-- class TAH --><g id="elem_TAH"><rect codeLine="30" width="250" x="954" y="403.7813" style="stroke:#C6C6C6;stroke-width:1.0;" id="TAH" fill="url(#gciqmpm7hb7lj0)" height="157.2188"></rect><rect width="250" x="954" y="403.7813" style="stroke:#C6C6C6;stroke-width:1.0;" fill="url(#gciqmpm7hb7lj0)" height="42.8047"></rect><ellipse cx="996.5" cy="425.1836" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" fill="#ADD1B2"></ellipse><path d="M998.3281,429.4336 Q997.9219,429.6367 997.4688,429.7461 Q997.0156,429.8555 996.5313,429.8555 Q994.75,429.8555 993.8125,428.6992 Q992.8906,427.5273 992.8906,425.3242 Q992.8906,423.1055 993.8125,421.9492 Q994.75,420.7773 996.5313,420.7773 Q997.0156,420.7773 997.4688,420.8867 Q997.9375,420.9805 998.3281,421.1992 L998.3281,423.1211 Q997.8906,422.7148 997.4688,422.5273 Q997.0469,422.3242 996.6094,422.3242 Q995.6563,422.3242 995.1719,423.0898 Q994.6875,423.8398 994.6875,425.3242 Q994.6875,426.793 995.1719,427.543 Q995.6563,428.293 996.6094,428.293 Q997.0469,428.293 997.4688,428.1055 Q997.8906,427.918 998.3281,427.5117 L998.3281,429.4336 Z " fill="#000000"></path><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-ror-tarif-aides-humaines.html" href="StructureDefinition-ror-tarif-aides-humaines.html" xlink:actuate="onRequest" title="StructureDefinition-ror-tarif-aides-humaines.html" xlink:href="StructureDefinition-ror-tarif-aides-humaines.html" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="1025.5" font-size="11" textLength="137" y="428.9917" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#0000FF">RORTarifAidesHumaines</text></a><line y1="446.5859" x1="955" y2="446.5859" style="stroke:#C6C6C6;stroke-width:1.0;" x2="1203"></line><text lengthAdjust="spacing" x="970" font-size="11" textLength="218" y="470.7964" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">nomTarifAidesHumaines : string [0..1]</text><text lengthAdjust="spacing" x="970" font-size="11" textLength="184" y="503.6011" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">conditionTarifaire : Coding [0..1]</text><text lengthAdjust="spacing" x="970" font-size="11" textLength="161" y="536.4058" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">modeGestion : Coding [1..1]</text><line y1="553" x1="955" y2="553" style="stroke:#C6C6C6;stroke-width:1.0;" x2="1203"></line></g>  <!-- class TPS --><g id="elem_TPS"><rect codeLine="36" width="253" x="1239.5" y="420.2813" style="stroke:#C6C6C6;stroke-width:1.0;" id="TPS" fill="url(#gciqmpm7hb7lj0)" height="124.4141"></rect><rect width="253" x="1239.5" y="420.2813" style="stroke:#C6C6C6;stroke-width:1.0;" fill="url(#gciqmpm7hb7lj0)" height="42.8047"></rect><ellipse cx="1256.2" cy="441.6836" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" fill="#ADD1B2"></ellipse><path d="M1258.0281,445.9336 Q1257.6219,446.1367 1257.1688,446.2461 Q1256.7156,446.3555 1256.2313,446.3555 Q1254.45,446.3555 1253.5125,445.1992 Q1252.5906,444.0273 1252.5906,441.8242 Q1252.5906,439.6055 1253.5125,438.4492 Q1254.45,437.2773 1256.2313,437.2773 Q1256.7156,437.2773 1257.1688,437.3867 Q1257.6375,437.4805 1258.0281,437.6992 L1258.0281,439.6211 Q1257.5906,439.2148 1257.1688,439.0273 Q1256.7469,438.8242 1256.3094,438.8242 Q1255.3563,438.8242 1254.8719,439.5898 Q1254.3875,440.3398 1254.3875,441.8242 Q1254.3875,443.293 1254.8719,444.043 Q1255.3563,444.793 1256.3094,444.793 Q1256.7469,444.793 1257.1688,444.6055 Q1257.5906,444.418 1258.0281,444.0117 L1258.0281,445.9336 Z " fill="#000000"></path><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-ror-tarif-prestation-supplementaire.html" href="StructureDefinition-ror-tarif-prestation-supplementaire.html" xlink:actuate="onRequest" title="StructureDefinition-ror-tarif-prestation-supplementaire.html" xlink:href="StructureDefinition-ror-tarif-prestation-supplementaire.html" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="1279.8" font-size="11" textLength="197" y="445.4917" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#0000FF">RORTarifPrestationSupplementaire</text></a><line y1="463.0859" x1="1240.5" y2="463.0859" style="stroke:#C6C6C6;stroke-width:1.0;" x2="1491.5"></line><text lengthAdjust="spacing" x="1255.5" font-size="11" textLength="221" y="487.2964" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">nomAutrePrestationSupp : string [1..1]</text><text lengthAdjust="spacing" x="1255.5" font-size="11" textLength="197" y="520.1011" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">nomPrestationSupp : Coding [0..1]</text><line y1="536.6953" x1="1240.5" y2="536.6953" style="stroke:#C6C6C6;stroke-width:1.0;" x2="1491.5"></line></g>  <!-- class STH --><g id="elem_STH"><rect codeLine="41" width="244" x="1528" y="436.2813" style="stroke:#C6C6C6;stroke-width:1.0;" id="STH" fill="url(#gciqmpm7hb7lj0)" height="91.6094"></rect><rect width="244" x="1528" y="436.2813" style="stroke:#C6C6C6;stroke-width:1.0;" fill="url(#gciqmpm7hb7lj0)" height="42.8047"></rect><ellipse cx="1542" cy="457.6836" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" fill="#ADD1B2"></ellipse><path d="M1543.8281,461.9336 Q1543.4219,462.1367 1542.9688,462.2461 Q1542.5156,462.3555 1542.0313,462.3555 Q1540.25,462.3555 1539.3125,461.1992 Q1538.3906,460.0273 1538.3906,457.8242 Q1538.3906,455.6055 1539.3125,454.4492 Q1540.25,453.2773 1542.0313,453.2773 Q1542.5156,453.2773 1542.9688,453.3867 Q1543.4375,453.4805 1543.8281,453.6992 L1543.8281,455.6211 Q1543.3906,455.2148 1542.9688,455.0273 Q1542.5469,454.8242 1542.1094,454.8242 Q1541.1563,454.8242 1540.6719,455.5898 Q1540.1875,456.3398 1540.1875,457.8242 Q1540.1875,459.293 1540.6719,460.043 Q1541.1563,460.793 1542.1094,460.793 Q1542.5469,460.793 1542.9688,460.6055 Q1543.3906,460.418 1543.8281,460.0117 L1543.8281,461.9336 Z " fill="#000000"></path><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-ror-supplement-tarif-hebergement.html" href="StructureDefinition-ror-supplement-tarif-hebergement.html" xlink:actuate="onRequest" title="StructureDefinition-ror-supplement-tarif-hebergement.html" xlink:href="StructureDefinition-ror-supplement-tarif-hebergement.html" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="1565" font-size="11" textLength="194" y="461.4917" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#0000FF">RORSupplementTarifHebergement</text></a><line y1="479.0859" x1="1529" y2="479.0859" style="stroke:#C6C6C6;stroke-width:1.0;" x2="1771"></line><text lengthAdjust="spacing" x="1544" font-size="11" textLength="166" y="503.2964" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">typeHabitation : Coding [1..1]</text><line y1="519.8906" x1="1529" y2="519.8906" style="stroke:#C6C6C6;stroke-width:1.0;" x2="1771"></line></g>  <!-- class TPR --><g id="elem_TPR"><rect codeLine="45" width="241" x="1807.5" y="420.2813" style="stroke:#C6C6C6;stroke-width:1.0;" id="TPR" fill="url(#gciqmpm7hb7lj0)" height="124.4141"></rect><rect width="241" x="1807.5" y="420.2813" style="stroke:#C6C6C6;stroke-width:1.0;" fill="url(#gciqmpm7hb7lj0)" height="42.8047"></rect><ellipse cx="1850" cy="441.6836" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" fill="#ADD1B2"></ellipse><path d="M1851.8281,445.9336 Q1851.4219,446.1367 1850.9688,446.2461 Q1850.5156,446.3555 1850.0313,446.3555 Q1848.25,446.3555 1847.3125,445.1992 Q1846.3906,444.0273 1846.3906,441.8242 Q1846.3906,439.6055 1847.3125,438.4492 Q1848.25,437.2773 1850.0313,437.2773 Q1850.5156,437.2773 1850.9688,437.3867 Q1851.4375,437.4805 1851.8281,437.6992 L1851.8281,439.6211 Q1851.3906,439.2148 1850.9688,439.0273 Q1850.5469,438.8242 1850.1094,438.8242 Q1849.1563,438.8242 1848.6719,439.5898 Q1848.1875,440.3398 1848.1875,441.8242 Q1848.1875,443.293 1848.6719,444.043 Q1849.1563,444.793 1850.1094,444.793 Q1850.5469,444.793 1850.9688,444.6055 Q1851.3906,444.418 1851.8281,444.0117 L1851.8281,445.9336 Z " fill="#000000"></path><a xlink:type="simple" xlink:show="new" xlink:title="StructureDefinition-ror-tarif-portage-repas.html" href="StructureDefinition-ror-tarif-portage-repas.html" xlink:actuate="onRequest" title="StructureDefinition-ror-tarif-portage-repas.html" xlink:href="StructureDefinition-ror-tarif-portage-repas.html" target="_top"><text lengthAdjust="spacing" text-decoration="underline" x="1879" font-size="11" textLength="128" y="445.4917" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#0000FF">RORTarifPortageRepas</text></a><line y1="463.0859" x1="1808.5" y2="463.0859" style="stroke:#C6C6C6;stroke-width:1.0;" x2="2047.5"></line><text lengthAdjust="spacing" x="1823.5" font-size="11" textLength="184" y="487.2964" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">conditionTarifaire : Coding [0..1]</text><text lengthAdjust="spacing" x="1823.5" font-size="11" textLength="209" y="520.1011" font-family="IBM Plex Sans, Noto Sans, Verdana" fill="#262626">nomTarifPortageRepas : string [0..1]</text><line y1="536.6953" x1="1808.5" y2="536.6953" style="stroke:#C6C6C6;stroke-width:1.0;" x2="2047.5"></line></g>  <!-- reverse link Tarif to FSH --><g id="link_Tarif_FSH"><path codeLine="50" d="M938.34,203.0612 C792.65,226.3813 560.61,272.9913 374,354.2813 C368.41,356.7113 362.81,359.3113 357.21,362.0413 " style="stroke:#C6C6C6;stroke-width:1.0;" id="Tarif-backto-FSH" fill="none"></path><polygon style="stroke:#C6C6C6;stroke-width:1.0;" fill="none" points="937.47,196.1112,958.31,199.9213,939.64,209.9413,937.47,196.1112"></polygon></g>  <!-- reverse link Tarif to TAJ --><g id="link_Tarif_TAJ"><path codeLine="51" d="M939,219.4912 C845.58,247.2713 722.64,291.7013 626,354.2813 C591.72,376.4813 559.41,409.3813 536.09,436.1413 " style="stroke:#C6C6C6;stroke-width:1.0;" id="Tarif-backto-TAJ" fill="none"></path><polygon style="stroke:#C6C6C6;stroke-width:1.0;" fill="none" points="937.31,212.6913,958.47,213.8112,941.23,226.1313,937.31,212.6913"></polygon></g>  <!-- reverse link Tarif to TD --><g id="link_Tarif_TD"><path codeLine="52" d="M953.69,308.8813 C915.18,347.3213 874.52,387.9213 842.32,420.0613 " style="stroke:#C6C6C6;stroke-width:1.0;" id="Tarif-backto-TD" fill="none"></path><polygon style="stroke:#C6C6C6;stroke-width:1.0;" fill="none" points="948.94,303.7313,968.04,294.5613,958.83,313.6413,948.94,303.7313"></polygon></g>  <!-- reverse link Tarif to TAH --><g id="link_Tarif_TAH"><path codeLine="53" d="M1079,314.7513 C1079,344.9913 1079,376.2313 1079,403.3613 " style="stroke:#C6C6C6;stroke-width:1.0;" id="Tarif-backto-TAH" fill="none"></path><polygon style="stroke:#C6C6C6;stroke-width:1.0;" fill="none" points="1072,314.5613,1079,294.5613,1086,314.5613,1072,314.5613"></polygon></g>  <!-- reverse link Tarif to TPS --><g id="link_Tarif_TPS"><path codeLine="54" d="M1199.93,309.1413 C1236.94,347.5013 1276,387.9913 1306.94,420.0613 " style="stroke:#C6C6C6;stroke-width:1.0;" id="Tarif-backto-TPS" fill="none"></path><polygon style="stroke:#C6C6C6;stroke-width:1.0;" fill="none" points="1194.72,313.8113,1185.87,294.5613,1204.79,304.0913,1194.72,313.8113"></polygon></g>  <!-- reverse link Tarif to STH --><g id="link_Tarif_STH"><path codeLine="55" d="M1218.79,224.8213 C1306.21,253.8612 1419.08,297.6913 1510,354.2813 C1546.5,377.0013 1582.3,409.7213 1608.57,436.2613 " style="stroke:#C6C6C6;stroke-width:1.0;" id="Tarif-backto-STH" fill="none"></path><polygon style="stroke:#C6C6C6;stroke-width:1.0;" fill="none" points="1216.52,231.4413,1199.69,218.5713,1220.87,218.1313,1216.52,231.4413"></polygon></g>  <!-- reverse link Tarif to TPR --><g id="link_Tarif_TPR"><path codeLine="56" d="M1219.68,196.3712 C1368.71,214.3913 1607.26,256.8913 1790,354.2813 C1821.32,370.9713 1850.99,396.4713 1874.73,420.2613 " style="stroke:#C6C6C6;stroke-width:1.0;" id="Tarif-backto-TPR" fill="none"></path><polygon style="stroke:#C6C6C6;stroke-width:1.0;" fill="none" points="1218.77,203.3112,1199.71,194.0313,1220.39,189.4013,1218.77,203.3112"></polygon></g></g></svg>
   </p>
 </div>
 
-<!-- Script pour les contrôles SVG interactifs -->
+  <!-- Script pour les contrôles SVG interactifs -->
 <script>
 (function() {
   if (document.readyState === 'loading') {
@@ -592,7 +725,7 @@ Cette section est transversale : les tarifs intéressent les patients et les pro
 })();
 </script>
 
-<hr />
+<hr/>
 
 <h3 id="modèles-logiques">Modèles logiques</h3>
 
@@ -648,9 +781,9 @@ Cette section est transversale : les tarifs intéressent les patients et les pro
   </tbody>
 </table>
 
-<hr />
+<hr/>
 
-<h3 id="rortarif-classe-abstraite">RORTarif (classe abstraite)</h3>
+<h3 id="rortarif-classe-abstraite--tarif">RORTarif (classe abstraite) {: #tarif}</h3>
 
 <p>Attributs communs à tous les types de tarifs. Cette classe n'est pas instanciée directement : seules ses sous-classes spécialisées sont utilisées.</p>
 
@@ -673,17 +806,17 @@ Cette section est transversale : les tarifs intéressent les patients et les pro
   </tr>
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-      <img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy" />
+      <img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-tarif-definitions.html#ror-tarif.typeTarif" title="Type de tarif (ex : Forfait socle hébergement). Catégorie de services pour lesquels l'entité géographique a fixé un prix." data-no-external="true">typeTarif</a>
       <a name="ror-tarif.typeTarif"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>
     </td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-Type de tarif (ex : Forfait socle hébergement). Catégorie de services pour lesquels l'entité géographique a fixé un prix.      <br class="binding" />
+Type de tarif (ex : Forfait socle hébergement). Catégorie de services pour lesquels l'entité géographique a fixé un prix.      <br class="binding"/>
       <span style="font-weight:bold" title="null" class="binding">Binding: </span>
       <a href="ValueSet-jdv-ror-type-tarif.html" title="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-tarif" class="binding">JDVRORTypeTarif (0.1.0)</a>
       <span title="null" class="binding"> (</span>
@@ -694,11 +827,11 @@ Type de tarif (ex : Forfait socle hébergement). Catégorie de services pour les
 
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-      <img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy" />
+      <img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-tarif-definitions.html#ror-tarif.montantTarif" title="Montant du tarif des prestations et services. Prix en euros, majoritairement appliqué par l'établissement pour un service." data-no-external="true">montantTarif</a>
       <a name="ror-tarif.montantTarif"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#Quantity">Quantity</a>
@@ -708,17 +841,17 @@ Type de tarif (ex : Forfait socle hébergement). Catégorie de services pour les
 
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-      <img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy" />
+      <img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-tarif-definitions.html#ror-tarif.unitePrix" title="Unité de référence pour évaluer le prix des prestations et services." data-no-external="true">unitePrix</a>
       <a name="ror-tarif.unitePrix"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>
     </td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-Unité de référence pour évaluer le prix des prestations et services.      <br class="binding" />
+Unité de référence pour évaluer le prix des prestations et services.      <br class="binding"/>
       <span style="font-weight:bold" title="null" class="binding">Binding: </span>
       <a href="ValueSet-jdv-ror-unite-prix.html" title="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-unite-prix" class="binding">JDVRORUnitePrix (0.1.0)</a>
       <span title="null" class="binding"> (</span>
@@ -729,11 +862,11 @@ Unité de référence pour évaluer le prix des prestations et services.      <b
 
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-      <img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy" />
+      <img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-tarif-definitions.html#ror-tarif.dateDebutValiditeTarif" title="Dernière date de début de validité du tarif indiqué." data-no-external="true">dateDebutValiditeTarif</a>
       <a name="ror-tarif.dateDebutValiditeTarif"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a>
@@ -743,11 +876,11 @@ Unité de référence pour évaluer le prix des prestations et services.      <b
 
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
-      <img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy" />
+      <img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Ressource" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-tarif-definitions.html#ror-tarif.metadonnee" title="Informations relatives à la gestion des données du tarif dans le ROR." data-no-external="true">metadonnee</a>
       <a name="ror-tarif.metadonnee"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">1..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
       <a href="StructureDefinition-ror-metadonnee.html">ror-metadonnee</a>
@@ -764,9 +897,9 @@ table.box td { border: none; font-size : 11px; }
 
 </style>
 
-<hr />
+<hr/>
 
-<h3 id="rorforfaitsoclehebergement">RORForfaitSocleHebergement</h3>
+<h3 id="rorforfaitsoclehebergement--forfait-socle-hebergement">RORForfaitSocleHebergement {: #forfait-socle-hebergement}</h3>
 
 <p>Tarif journalier et par personne pour un type d'hébergement donné. Inclut obligatoirement les prestations définies dans le décret n°2015-1868.</p>
 
@@ -783,49 +916,49 @@ table.box td { border: none; font-size : 11px; }
   </tr>
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-      <img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy" />
+      <img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-forfait-socle-hebergement-definitions.html#ror-forfait-socle-hebergement.prestationsNonObligatoiresIncluses" title="Service(s) non obligatoires inclus dans les prestations." data-no-external="true">prestationsNonObligatoiresIncluses</a>
       <a name="ror-forfait-socle-hebergement.prestationsNonObligatoiresIncluses"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>
     </td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-Service(s) non obligatoires inclus dans les prestations.      <br class="binding" />
+Service(s) non obligatoires inclus dans les prestations.      <br class="binding"/>
       <span style="font-weight:bold" title="null" class="binding">Binding: </span>
       <a href="ValueSet-jdv-ror-prestation-non-obligatoire.html" title="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-prestation-non-obligatoire" class="binding">JDVRORPrestationNonObligatoire (0.1.0)</a>
       <span title="null" class="binding"> (</span>
       <a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a>
       <span title="null" class="binding">)</span>
-      <br />
+      <br/>
     </td>
   </tr>
 
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-      <img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy" />
+      <img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-forfait-socle-hebergement-definitions.html#ror-forfait-socle-hebergement.autresPrestationsNonObligatoiresIncluses" title="Autres prestations incluses dans le tarif socle hébergement, non proposées dans la nomenclature." data-no-external="true">autresPrestationsNonObligatoiresIncluses</a>
       <a name="ror-forfait-socle-hebergement.autresPrestationsNonObligatoiresIncluses"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>
     </td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-Autres prestations incluses dans le tarif socle hébergement, non proposées dans la nomenclature.      <br />
+Autres prestations incluses dans le tarif socle hébergement, non proposées dans la nomenclature.      <br/>
     </td>
   </tr>
 
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-      <img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy" />
+      <img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-forfait-socle-hebergement-definitions.html#ror-forfait-socle-hebergement.tarifMoins60Ans" title="Indicateur précisant que le tarif hébergement est spécifiquement appliqué aux personnes de moins de 60 ans." data-no-external="true">tarifMoins60Ans</a>
       <a name="ror-forfait-socle-hebergement.tarifMoins60Ans"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a>
@@ -835,17 +968,17 @@ Autres prestations incluses dans le tarif socle hébergement, non proposées dan
 
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-      <img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy" />
+      <img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-forfait-socle-hebergement-definitions.html#ror-forfait-socle-hebergement.typeHabitation" title="Précise les caractéristiques de l'hébergement." data-no-external="true">typeHabitation</a>
       <a name="ror-forfait-socle-hebergement.typeHabitation"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>
     </td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-Précise les caractéristiques de l'hébergement.      <br class="binding" />
+Précise les caractéristiques de l'hébergement.      <br class="binding"/>
       <span style="font-weight:bold" title="null" class="binding">Binding: </span>
       <a href="ValueSet-jdv-ror-type-habitation.html" title="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-habitation" class="binding">JDVRORTypeHabitation (0.1.0)</a>
       <span title="null" class="binding"> (</span>
@@ -856,17 +989,17 @@ Précise les caractéristiques de l'hébergement.      <br class="binding" />
 
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-      <img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy" />
+      <img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-forfait-socle-hebergement-definitions.html#ror-forfait-socle-hebergement.conditionTarifaire" title="Condition tarifaire précisant les conditions d'accès à un tarif, modulées en fonction des critères relatifs à la personne." data-no-external="true">conditionTarifaire</a>
       <a name="ror-forfait-socle-hebergement.conditionTarifaire"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>
     </td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-Condition tarifaire précisant les conditions d'accès à un tarif, modulées en fonction des critères relatifs à la personne.      <br class="binding" />
+Condition tarifaire précisant les conditions d'accès à un tarif, modulées en fonction des critères relatifs à la personne.      <br class="binding"/>
       <span style="font-weight:bold" title="null" class="binding">Binding: </span>
       <a href="ValueSet-jdv-ror-condition-tarifaire.html" title="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-condition-tarifaire" class="binding">JDVRORConditionTarifaire (0.1.0)</a>
       <span title="null" class="binding"> (</span>
@@ -877,17 +1010,17 @@ Condition tarifaire précisant les conditions d'accès à un tarif, modulées en
 
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
-      <img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy" />
+      <img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-forfait-socle-hebergement-definitions.html#ror-forfait-socle-hebergement.temporaliteAccueil" title="Le tarif peut s'appliquer à un hébergement permanent ou à un hébergement temporaire (90 jours maximum par an)." data-no-external="true">temporaliteAccueil</a>
       <a name="ror-forfait-socle-hebergement.temporaliteAccueil"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">1..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>
     </td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
-Le tarif peut s'appliquer à un hébergement permanent ou à un hébergement temporaire (90 jours maximum par an).      <br class="binding" />
+Le tarif peut s'appliquer à un hébergement permanent ou à un hébergement temporaire (90 jours maximum par an).      <br class="binding"/>
       <span style="font-weight:bold" title="null" class="binding">Binding: </span>
       <a href="ValueSet-jdv-ror-temporalite-accueil.html" title="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite-accueil" class="binding">JDVRORTemporaliteAccueil (0.1.0)</a>
       <span title="null" class="binding"> (</span>
@@ -905,9 +1038,9 @@ table.box td { border: none; font-size : 11px; }
 
 </style>
 
-<hr />
+<hr/>
 
-<h3 id="rortarifaccueildejour">RORTarifAccueilDeJour</h3>
+<h3 id="rortarifaccueildejour--tarif-accueil-de-jour">RORTarifAccueilDeJour {: #tarif-accueil-de-jour}</h3>
 
 <table class="box" data-fhir="generated">
   <tr>
@@ -922,17 +1055,17 @@ table.box td { border: none; font-size : 11px; }
   </tr>
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
-      <img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy" />
+      <img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-tarif-accueil-de-jour-definitions.html#ror-tarif-accueil-de-jour.conditionTarifaire" title="Condition tarifaire précisant les conditions d'accès à un tarif, modulées en fonction des critères relatifs à la personne." data-no-external="true">conditionTarifaire</a>
       <a name="ror-tarif-accueil-de-jour.conditionTarifaire"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">0..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>
     </td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
-Condition tarifaire précisant les conditions d'accès à un tarif, modulées en fonction des critères relatifs à la personne.      <br class="binding" />
+Condition tarifaire précisant les conditions d'accès à un tarif, modulées en fonction des critères relatifs à la personne.      <br class="binding"/>
       <span style="font-weight:bold" title="null" class="binding">Binding: </span>
       <a href="ValueSet-jdv-ror-condition-tarifaire.html" title="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-condition-tarifaire" class="binding">JDVRORConditionTarifaire (0.1.0)</a>
       <span title="null" class="binding"> (</span>
@@ -950,9 +1083,9 @@ table.box td { border: none; font-size : 11px; }
 
 </style>
 
-<hr />
+<hr/>
 
-<h3 id="rortarifdependance">RORTarifDependance</h3>
+<h3 id="rortarifdependance--tarif-dependance">RORTarifDependance {: #tarif-dependance}</h3>
 
 <table class="box" data-fhir="generated">
   <tr>
@@ -967,17 +1100,17 @@ table.box td { border: none; font-size : 11px; }
   </tr>
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-      <img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy" />
+      <img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-tarif-dependance-definitions.html#ror-tarif-dependance.groupeTarifaireDependance" title="Niveau de dépendance de la personne âgée accueillie associé à un tarif (3 niveaux selon le GIR)." data-no-external="true">groupeTarifaireDependance</a>
       <a name="ror-tarif-dependance.groupeTarifaireDependance"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>
     </td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-Niveau de dépendance de la personne âgée accueillie associé à un tarif (3 niveaux selon le GIR).      <br class="binding" />
+Niveau de dépendance de la personne âgée accueillie associé à un tarif (3 niveaux selon le GIR).      <br class="binding"/>
       <span style="font-weight:bold" title="null" class="binding">Binding: </span>
       <a href="ValueSet-jdv-ror-niveau-dependance.html" title="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-niveau-dependance" class="binding">JDVRORNiveauDependance (0.1.0)</a>
       <span title="null" class="binding"> (</span>
@@ -988,17 +1121,17 @@ Niveau de dépendance de la personne âgée accueillie associé à un tarif (3 n
 
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
-      <img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy" />
+      <img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-tarif-dependance-definitions.html#ror-tarif-dependance.temporaliteAccueil" title="Le tarif peut s'appliquer à un hébergement permanent ou à un hébergement temporaire (90 jours maximum par an)." data-no-external="true">temporaliteAccueil</a>
       <a name="ror-tarif-dependance.temporaliteAccueil"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">1..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>
     </td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
-Le tarif peut s'appliquer à un hébergement permanent ou à un hébergement temporaire (90 jours maximum par an).      <br class="binding" />
+Le tarif peut s'appliquer à un hébergement permanent ou à un hébergement temporaire (90 jours maximum par an).      <br class="binding"/>
       <span style="font-weight:bold" title="null" class="binding">Binding: </span>
       <a href="ValueSet-jdv-ror-temporalite-accueil.html" title="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite-accueil" class="binding">JDVRORTemporaliteAccueil (0.1.0)</a>
       <span title="null" class="binding"> (</span>
@@ -1016,9 +1149,9 @@ table.box td { border: none; font-size : 11px; }
 
 </style>
 
-<hr />
+<hr/>
 
-<h3 id="rortarifaideshumaines">RORTarifAidesHumaines</h3>
+<h3 id="rortarifaideshumaines--tarif-aides-humaines">RORTarifAidesHumaines {: #tarif-aides-humaines}</h3>
 
 <table class="box" data-fhir="generated">
   <tr>
@@ -1033,11 +1166,11 @@ table.box td { border: none; font-size : 11px; }
   </tr>
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-      <img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy" />
+      <img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-tarif-aides-humaines-definitions.html#ror-tarif-aides-humaines.nomTarifAidesHumaines" title="Nom du tarif aides humaines." data-no-external="true">nomTarifAidesHumaines</a>
       <a name="ror-tarif-aides-humaines.nomTarifAidesHumaines"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>
@@ -1047,17 +1180,17 @@ table.box td { border: none; font-size : 11px; }
 
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-      <img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy" />
+      <img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-tarif-aides-humaines-definitions.html#ror-tarif-aides-humaines.conditionTarifaire" title="Condition tarifaire précisant les conditions d'accès à un tarif, modulées en fonction des critères relatifs à la personne." data-no-external="true">conditionTarifaire</a>
       <a name="ror-tarif-aides-humaines.conditionTarifaire"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>
     </td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-Condition tarifaire précisant les conditions d'accès à un tarif, modulées en fonction des critères relatifs à la personne.      <br class="binding" />
+Condition tarifaire précisant les conditions d'accès à un tarif, modulées en fonction des critères relatifs à la personne.      <br class="binding"/>
       <span style="font-weight:bold" title="null" class="binding">Binding: </span>
       <a href="ValueSet-jdv-ror-condition-tarifaire.html" title="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-condition-tarifaire" class="binding">JDVRORConditionTarifaire (0.1.0)</a>
       <span title="null" class="binding"> (</span>
@@ -1068,17 +1201,17 @@ Condition tarifaire précisant les conditions d'accès à un tarif, modulées en
 
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
-      <img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy" />
+      <img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-tarif-aides-humaines-definitions.html#ror-tarif-aides-humaines.modeGestion" title="Mode de gestion indiquant le mode d'intervention des aides à domicile en fonction de la nature de la relation contractuelle (prestataire, mandataire)." data-no-external="true">modeGestion</a>
       <a name="ror-tarif-aides-humaines.modeGestion"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">1..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>
     </td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
-Mode de gestion indiquant le mode d'intervention des aides à domicile en fonction de la nature de la relation contractuelle (prestataire, mandataire).      <br class="binding" />
+Mode de gestion indiquant le mode d'intervention des aides à domicile en fonction de la nature de la relation contractuelle (prestataire, mandataire).      <br class="binding"/>
       <span style="font-weight:bold" title="null" class="binding">Binding: </span>
       <a href="ValueSet-jdv-ror-mode-gestion.html" title="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-gestion" class="binding">JDVRORModeGestion (0.1.0)</a>
       <span title="null" class="binding"> (</span>
@@ -1096,9 +1229,9 @@ table.box td { border: none; font-size : 11px; }
 
 </style>
 
-<hr />
+<hr/>
 
-<h3 id="rortarifprestationsupplementaire">RORTarifPrestationSupplementaire</h3>
+<h3 id="rortarifprestationsupplementaire--tarif-prestation-supplementaire">RORTarifPrestationSupplementaire {: #tarif-prestation-supplementaire}</h3>
 
 <p><strong>Règles de gestion :</strong></p>
 <ul>
@@ -1118,11 +1251,11 @@ table.box td { border: none; font-size : 11px; }
   </tr>
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-      <img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy" />
+      <img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-tarif-prestation-supplementaire-definitions.html#ror-tarif-prestation-supplementaire.nomAutrePrestationSupp" title="Nom du tarif d'une prestation supplémentaire." data-no-external="true">nomAutrePrestationSupp</a>
       <a name="ror-tarif-prestation-supplementaire.nomAutrePrestationSupp"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>
@@ -1132,17 +1265,17 @@ table.box td { border: none; font-size : 11px; }
 
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
-      <img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy" />
+      <img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-tarif-prestation-supplementaire-definitions.html#ror-tarif-prestation-supplementaire.nomPrestationSupp" title="Nom codé de la prestation supplémentaire. Mutuellement exclusif avec nomAutrePrestationSupp." data-no-external="true">nomPrestationSupp</a>
       <a name="ror-tarif-prestation-supplementaire.nomPrestationSupp"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">0..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>
     </td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
-Nom codé de la prestation supplémentaire. Mutuellement exclusif avec nomAutrePrestationSupp.      <br class="binding" />
+Nom codé de la prestation supplémentaire. Mutuellement exclusif avec nomAutrePrestationSupp.      <br class="binding"/>
       <span style="font-weight:bold" title="null" class="binding">Binding: </span>
       <a href="ValueSet-jdv-ror-prestation-non-obligatoire.html" title="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-prestation-non-obligatoire" class="binding">JDVRORPrestationNonObligatoire (0.1.0)</a>
       <span title="null" class="binding"> (</span>
@@ -1160,9 +1293,9 @@ table.box td { border: none; font-size : 11px; }
 
 </style>
 
-<hr />
+<hr/>
 
-<h3 id="rorsupplementtarifhebergement">RORSupplementTarifHebergement</h3>
+<h3 id="rorsupplementtarifhebergement--supplement-tarif-hebergement">RORSupplementTarifHebergement {: #supplement-tarif-hebergement}</h3>
 
 <p><strong>Règles de gestion :</strong></p>
 <ul>
@@ -1182,17 +1315,17 @@ table.box td { border: none; font-size : 11px; }
   </tr>
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
-      <img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy" />
+      <img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-supplement-tarif-hebergement-definitions.html#ror-supplement-tarif-hebergement.typeHabitation" title="Précise les caractéristiques de l'hébergement. Doit prendre la valeur chambre simple." data-no-external="true">typeHabitation</a>
       <a name="ror-supplement-tarif-hebergement.typeHabitation"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">1..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>
     </td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
-Précise les caractéristiques de l'hébergement. Doit prendre la valeur chambre simple.      <br class="binding" />
+Précise les caractéristiques de l'hébergement. Doit prendre la valeur chambre simple.      <br class="binding"/>
       <span style="font-weight:bold" title="null" class="binding">Binding: </span>
       <a href="ValueSet-jdv-ror-type-habitation.html" title="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-habitation" class="binding">JDVRORTypeHabitation (0.1.0)</a>
       <span title="null" class="binding"> (</span>
@@ -1210,9 +1343,9 @@ table.box td { border: none; font-size : 11px; }
 
 </style>
 
-<hr />
+<hr/>
 
-<h3 id="rortarifportagerepas">RORTarifPortageRepas</h3>
+<h3 id="rortarifportagerepas--tarif-portage-repas">RORTarifPortageRepas {: #tarif-portage-repas}</h3>
 
 <table class="box" data-fhir="generated">
   <tr>
@@ -1227,17 +1360,17 @@ table.box td { border: none; font-size : 11px; }
   </tr>
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-      <img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy" />
+      <img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Type de donnée" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-tarif-portage-repas-definitions.html#ror-tarif-portage-repas.conditionTarifaire" title="Condition tarifaire précisant les conditions d'accès à un tarif, modulées en fonction des critères relatifs à la personne." data-no-external="true">conditionTarifaire</a>
       <a name="ror-tarif-portage-repas.conditionTarifaire"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>
     </td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
-Condition tarifaire précisant les conditions d'accès à un tarif, modulées en fonction des critères relatifs à la personne.      <br class="binding" />
+Condition tarifaire précisant les conditions d'accès à un tarif, modulées en fonction des critères relatifs à la personne.      <br class="binding"/>
       <span style="font-weight:bold" title="null" class="binding">Binding: </span>
       <a href="ValueSet-jdv-ror-condition-tarifaire.html" title="https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-condition-tarifaire" class="binding">JDVRORConditionTarifaire (0.1.0)</a>
       <span title="null" class="binding"> (</span>
@@ -1248,11 +1381,11 @@ Condition tarifaire précisant les conditions d'accès à un tarif, modulées en
 
   <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
-      <img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy" />
+      <img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Type de donnée primitif" class="hierarchy"/>
        <a no-external="true" href="StructureDefinition-ror-tarif-portage-repas-definitions.html#ror-tarif-portage-repas.nomTarifPortageRepas" title="Nom du tarif de portage de repas." data-no-external="true">nomTarifPortageRepas</a>
       <a name="ror-tarif-portage-repas.nomTarifPortageRepas"> </a>
     </td>
-    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy" />
+    <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy"></td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">0..1</td>
     <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; border-bottom: 1px solid #666" class="hierarchy">
       <a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a>
@@ -1273,26 +1406,26 @@ table.box td { border: none; font-size : 11px; }
 
 
 </div>
-        </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /row -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-content -->
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-  <script type="text/javascript" src="assets/js/flags.js"> </script>
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script src="assets/js/flags.js" type="text/javascript"> </script>
 
-  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
 
   <a name="bottom"> </a>
-  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-    <div class="container" data-fhir="generated">  <!-- container -->
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container" data-fhir="generated">    <!-- container -->
 
       <div style="background-color:var(--footer-nav-bg-color)">
         <table style="width:100%">
           <tbody>
             <tr>
-              <td style="text-align:var(--ig-left);">&#xA0;
+              <td style="text-align:var(--ig-left);">&nbsp;
 
                 <a href="offre-operationnelle.html">&lt; précédent</a>
 
@@ -1300,9 +1433,9 @@ table.box td { border: none; font-size : 11px; }
               <td style="text-align:center">
                 <a href="#top">haut</a>
               </td>
-              <td style="text-align:var(--ig-right);">&#xA0;
+              <td style="text-align:var(--ig-right);">&nbsp;
 
-                <a href="ressources-operationnelles.html">suivant ></a>
+                <a href="ressources-operationnelles.html">suivant &gt;</a>
 
               </td>
             </tr>
@@ -1315,10 +1448,10 @@ table.box td { border: none; font-size : 11px; }
 
 
 
-          IG © 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d&#39;Oradour-sur-Glane, 75015 Paris</a>.  
+          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-07-07 16:28:00 +0000">
+  <span title="2026-07-07 16:30:00 +0000">
     2026-07-07
   </span>
 
@@ -1326,41 +1459,41 @@ table.box td { border: none; font-size : 11px; }
           <span style="color: var(--footer-highlight-text-color)">
             Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">Rapport de QA</a> |
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/test-ror/history.html">Historique des versions</a>
-<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interop.esante.gouv.fr/ig/documentation">Documentation</a>
- | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new">New Issue</a>
+<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/fhir/test-ror/history.html" target="_blank">Historique des versions</a>
+<a style="color: var(--footer-hyperlink-text-color)" href="https://interop.esante.gouv.fr/ig/documentation" target="_blank">Documentation</a>
+ | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/ansforge/FIG_ans-ig-sample/issues/new" target="_blank">New Issue</a>
 
           </span>
         </p>
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-    <div class="container">  <!-- container -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
 
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
   ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
 
-  <!-- Ajout ANS -->
+    <!-- Ajout ANS -->
   <script src="assets/js/app.js" type="text/javascript"> </script>
   <script src="assets/js/vendor.js" type="text/javascript"> </script>
-  <!-- Fin ajout ANS -->
-  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
-  <!-- Analytics Below
+    <!-- Fin ajout ANS -->
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
   ================================================== -->
-  <!-- AJOUT ANS -->
+    <!-- AJOUT ANS -->
 
-<footer class="footer footer-principal" role="contentinfo">
+<footer role="contentinfo" class="footer footer-principal">
   <div class="footer__region1">
     <div class="container">
       <div class="row">
@@ -1368,17 +1501,17 @@ table.box td { border: none; font-size : 11px; }
         <div class="col-md-6 col-lg-4 text-center text-md-left">
           <div class="logos">        
             <div class="logo logo--0">
-              <a href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+              <a rel="nofollow" href="https://solidarites-sante.gouv.fr" title="Ministère des Solidarités et de la Santé (nouvelle fenêtre)" target="_blank">
                 
-                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" height="77" loading="lazy" />
+                <img src="assets/images/logo-ministere.svg" alt="Ministère des Solidarités et de la Santé" width="133" loading="lazy" height="77"/>
                 
               </a>
             </div>
         
             <div class="logo logo--1">
-              <a href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank" rel="nofollow">
+              <a rel="nofollow" href="https://esante.gouv.fr/" title="Agence du numérique en santé (nouvelle fenêtre)" target="_blank">
                 
-                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" height="74" loading="lazy" />
+                <img src="assets/images/logo-ANS-footer.svg" alt="Agence du numérique en santé" width="106" loading="lazy" height="74"/>
               </a>
             </div>
           </div>
@@ -1388,7 +1521,7 @@ table.box td { border: none; font-size : 11px; }
           <p class="footer__title">Agence du Numérique en Santé</p>
           <p>2-10 Rue d'Oradour-sur-Glane 75015 Paris</p>
 
-          <!-- <div class="m-social">
+            <!-- <div class="m-social">
             <ul class="m-social__list">        
               <li class="m-social__item">
                 <a class="m-social__link" href="https://www.linkedin.com/company/agence-du-numerique-en-sante/" target="_blank" rel="nofollow">
@@ -1430,12 +1563,11 @@ table.box td { border: none; font-size : 11px; }
           <ul class="footer-list">
             <li class="footer-list__item footer-list__item--hasIcon">
               <a href="mailto:ci-sis@esante.gouv.fr" class="mailto-link">
-                <svg class="svg-icon svg-angle-right" aria-hidden="true" focusable="false"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
+                <svg aria-hidden="true" focusable="false" class="svg-icon svg-angle-right"><use href="assets/images/icon-sprite.svg#angle-right"></use></svg>Contact</a>
               </li>
-              <!-- <li class="footer-list__item">
+                <!-- <li class="footer-list__item">
                 <a href="https://interop-pprod.esante.gouv.fr/ci-sis-specifications/wp-content/uploads/CGU_espace_de_tests_v1.1.pdf" class="file-link">Mentions légales</a>
-              </li>
-               -->
+              </li> -->
             </ul>
           </div>
 
@@ -1443,7 +1575,7 @@ table.box td { border: none; font-size : 11px; }
       </div>
     </div>
     
-    <!-- <div class="footer__region2">
+      <!-- <div class="footer__region2">
       <div class="container">
         <div class="footer-contentinfo">
           <ul class="footer-list footer-list--inline">
@@ -1455,4 +1587,3 @@ table.box td { border: none; font-size : 11px; }
   </footer>
   </body>
 </html>
-

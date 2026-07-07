@@ -33,7 +33,7 @@ L'**identifiantOffre** est l'identifiant de l'offre opérationnelle, unique et p
 
 -------
 
-### ROROffreOperationnelle
+### ROROffreOperationnelle {: #offre-operationnelle}
 
 L'**Offre Opérationnelle** décrit les prestations que peut réaliser une structure. Elle est rattachée à une Organisation Interne et peut être réalisée par un ou plusieurs professionnels de santé.
 
@@ -61,7 +61,7 @@ L'**Offre Opérationnelle** décrit les prestations que peut réaliser une struc
 
 -------
 
-### RORActiviteOperationnelle
+### RORActiviteOperationnelle {: #activite-operationnelle}
 
 L'**Activité Opérationnelle** caractérise l'activité exercée dans le cadre d'une offre opérationnelle.
 
@@ -71,7 +71,7 @@ L'**Activité Opérationnelle** caractérise l'activité exercée dans le cadre 
 
 -------
 
-### RORPatientele
+### RORPatientele {: #patientele}
 
 La **Patientèle** décrit les caractéristiques de la population cible de l'offre opérationnelle.
 
