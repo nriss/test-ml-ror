@@ -41,7 +41,9 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script src="assets/js/prism.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-fhirpath.js" type="text/javascript"></script>
+	  <script src="assets/js/prism-cql.js" type="text/javascript"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
     <style type="text/css">h2{--heading-prefix:"12.7"}
@@ -191,6 +193,7 @@
       <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
   <!-- layouts\layout-instance-base -->
 <div class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">Modèle d'exposition du ROR dérivant du MOS (POC) - version de développement local (intégration continue v0.1.0) construite par les outils de publication FHIR (HL7&reg; FHIR&reg; Standard). Voir le <a href="https://interop.esante.gouv.fr/ig/fhir/test-ror/history.html">répertoire des versions publiées</a></p>  <!-- EndReleaseHeader -->
@@ -257,7 +260,7 @@
 
 
 
-  <div><a name="ror-requirements-tarif"> </a><a name="hcror-requirements-tarif"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"></p><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-profile-Requirements.html">Cross-version Profile for R5.Requirements for use in FHIR R4</a></p></div><p><a name="l404">​</a><b>R5: Canonical identifier for this Requirements, represented as a URI (globally unique) (new)</b>: <a href="https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/tarif">https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/tarif</a></p><p><b>R5: Name for this Requirements (computer friendly) (new)</b>: RORRequirementsTarif</p><p><b>R5: Name for this Requirements (human friendly) (new)</b>: Règles de gestion - Tarif</p><p><b>R5: Natural language description of the requirements (new)</b>: </p><div><p>Règles de gestion du modèle d'exposition ROR relatives aux classes Tarif.</p>
+  <div><a name="ror-requirements-tarif"> </a><a name="hcror-requirements-tarif"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"></p><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-profile-Requirements.html">Cross-version Profile for R5.Requirements for use in FHIR R4</a></p></div><p><a name="l408">​</a><b>R5: Canonical identifier for this Requirements, represented as a URI (globally unique) (new)</b>: <a href="https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/tarif">https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/tarif</a></p><p><b>R5: Name for this Requirements (computer friendly) (new)</b>: RORRequirementsTarif</p><p><b>R5: Name for this Requirements (human friendly) (new)</b>: Règles de gestion - Tarif</p><p><b>R5: Natural language description of the requirements (new)</b>: </p><div><p>Règles de gestion du modèle d'exposition ROR relatives aux classes Tarif.</p>
 </div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-026</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href="StructureDefinition-ror-forfait-socle-hebergement.html">ROR - Forfait Socle Hébergement</a></li></ul></blockquote><div><p><strong>RG_EXP_026</strong> : Un seul tarif de type « Forfait socle hébergement » PEUT être instancié pour chaque combinaison de <code>tarifMoins60Ans</code>, <code>typeHabitation</code>, <code>temporaliteAccueil</code>, <code>conditionTarifaire</code> pour une même EG.</p>
 </div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-027</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href="StructureDefinition-ror-tarif.html">ROR - Tarif</a></li></ul></blockquote><div><p><strong>RG_EXP_027</strong> : Pour les autres types de tarifs, un seul montant PEUT être exposé pour chaque combinaison des valeurs des attributs (hors montant) pour une même EG.</p>
 </div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-029</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href="StructureDefinition-ror-supplement-tarif-hebergement.html">ROR - Supplément Tarif Hébergement</a></li></ul></blockquote><div><p><strong>RG_EXP_029</strong> : L'attribut <code>typeHabitation</code> d'un tarif de type « supplément tarif hébergement » DOIT prendre la valeur « chambre simple ».</p>
@@ -317,8 +320,8 @@
           IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-06-10 12:57:00 +0000">
-    2026-06-10
+  <span title="2026-07-07 12:24:00 +0000">
+    2026-07-07
   </span>
 
           <br/>

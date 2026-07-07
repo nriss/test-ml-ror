@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,558 +7,276 @@
 
 <https://interop.esante.gouv.fr/ig/fhir/test-ror/Basic/ror-requirements-structure> a fhir:Basic ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "ror-requirements-structure"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/profile-Requirements"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/profile-Requirements>
-     ] )
-  ] ; # 
-  fhir:language [ fhir:v "fr"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Basique ror-requirements-structure</b></p><a name=\"ror-requirements-structure\"> </a><a name=\"hcror-requirements-structure\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-profile-Requirements.html\">Cross-version Profile for R5.Requirements for use in FHIR R4</a></p></div><p><b>R5: Canonical identifier for this Requirements, represented as a URI (globally unique) (new)</b>: <a href=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/structure\">https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/structure</a></p><p><b>R5: Name for this Requirements (computer friendly) (new)</b>: RORRequirementsStructure</p><p><b>R5: Name for this Requirements (human friendly) (new)</b>: Règles de gestion - Structure</p><p><b>R5: Natural language description of the requirements (new)</b>: </p><div><p>Règles de gestion du modèle d'exposition ROR relatives aux classes Structure (EntiteJuridique, EntiteGeographique).</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-002</li><li>requirement: </li><li>conformance: SHALL</li></ul></blockquote><div><p><strong>RG_EXP_002</strong> : Si un élément obligatoire dans la structure du flux d'échange n'est pas renseigné dans le ROR interrogé, alors l'instance de l'entité à laquelle appartient cet élément NE DOIT PAS être transmise. Les instances des entités hiérarchiquement inférieures NE DOIVENT PAS être transmises non plus.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-003</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-geographique.html\">ROR - Entité Géographique</a></li></ul></blockquote><div><p><strong>RG_EXP_003</strong> : Si la date de fermeture transmise est la date de fermeture définitive, alors <code>typeFermeture</code> DOIT être renseigné avec l'OID correspondant au code DEF issu du référentiel FINESS.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-004</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-juridique.html\">ROR - Entité Juridique</a></li></ul></blockquote><div><p><strong>RG_EXP_004</strong> : L'<code>idNat_Struct</code> DOIT être renseigné en priorité avec le numéro FINESS si l'établissement est immatriculé dans FINESS.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-005</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-geographique.html\">ROR - Entité Géographique</a></li></ul></blockquote><div><p><strong>RG_EXP_005</strong> : L'<code>idNat_Struct</code> de l'EG DOIT être renseigné en priorité avec le numéro FINESS si l'établissement est immatriculé dans FINESS.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-006</li><li>requirement: </li><li>conformance: MAY</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-geographique.html\">ROR - Entité Géographique</a></li></ul></blockquote><div><p><strong>RG_EXP_006</strong> : Les contacts d'une EG PEUVENT contenir les contacts du directeur et de la cellule d'alerte.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-030-eg</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-geographique.html\">ROR - Entité Géographique</a></li></ul></blockquote><div><p><strong>RG_EXP_030</strong> : L'attribut <code>territoireSante</code> est obligatoirement une division territoriale de type « Territoire de Santé ».</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-037</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-juridique.html\">ROR - Entité Juridique</a></li></ul></blockquote><div><p><strong>RG_EXP_037</strong> : Lorsque <code>numEJ_RPPS_ADELI_Rang</code> est renseigné, il doit être utilisé pour la construction de l'<code>idNat_Struct</code>.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-038</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-geographique.html\">ROR - Entité Géographique</a></li></ul></blockquote><div><p><strong>RG_EXP_038</strong> : Lorsque <code>numEG_RPPS_ADELI_Rang</code> est renseigné, il doit être utilisé pour la construction de l'<code>idNat_Struct</code>.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-043</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-juridique.html\">ROR - Entité Juridique</a></li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-geographique.html\">ROR - Entité Géographique</a></li></ul></blockquote><div><p><strong>RG_EXP_043</strong> : La date de fermeture est obligatoire lorsqu'un type de fermeture est renseigné, sinon elle n'est jamais renseignée.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-044</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-juridique.html\">ROR - Entité Juridique</a></li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-geographique.html\">ROR - Entité Géographique</a></li></ul></blockquote><div><p><strong>RG_EXP_044</strong> : Lorsqu'un niveau de structure ou d'organisation est fermé, tous les niveaux inférieurs ainsi que toutes les offres opérationnelles qui lui sont rattachées sont également fermés avec le même type, la même date de fermeture et, le cas échéant, la même date de réouverture prévisionnelle.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-045</li><li>requirement: </li><li>conformance: MAY</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-juridique.html\">ROR - Entité Juridique</a></li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-geographique.html\">ROR - Entité Géographique</a></li></ul></blockquote><div><p><strong>RG_EXP_045</strong> : La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire », sinon elle n'est jamais renseignée.</p>\n</div><p><b>code</b>: <span title=\"Codes :{http://hl7.org/fhir/resource-types Requirements}\">Requirements</span></p></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:extension ( [
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url>
+  fhir:Resource.id [ fhir:value "ror-requirements-structure"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/profile-Requirements" ;
+       fhir:index -1 ;
+       fhir:link <http://hl7.org/fhir/5.0/StructureDefinition/profile-Requirements>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : Basique ror-requirements-structure</b></p><a name=\"ror-requirements-structure\"> </a><a name=\"hcror-requirements-structure\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/uv/xver-r5.r4/0.1.0/StructureDefinition-profile-Requirements.html\">Cross-version Profile for R5.Requirements for use in FHIR R4</a></p></div><p><b>R5: Canonical identifier for this Requirements, represented as a URI (globally unique) (new)</b>: <a href=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/structure\">https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/structure</a></p><p><b>R5: Name for this Requirements (computer friendly) (new)</b>: RORRequirementsStructure</p><p><b>R5: Name for this Requirements (human friendly) (new)</b>: Règles de gestion - Structure</p><p><b>R5: Natural language description of the requirements (new)</b>: </p><div><p>Règles de gestion du modèle d'exposition ROR relatives aux classes Structure (EntiteJuridique, EntiteGeographique).</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-002</li><li>requirement: </li><li>conformance: SHALL</li></ul></blockquote><div><p><strong>RG_EXP_002</strong> : Si un élément obligatoire dans la structure du flux d'échange n'est pas renseigné dans le ROR interrogé, alors l'instance de l'entité à laquelle appartient cet élément NE DOIT PAS être transmise. Les instances des entités hiérarchiquement inférieures NE DOIVENT PAS être transmises non plus.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-003</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-geographique.html\">ROR - Entité Géographique</a></li></ul></blockquote><div><p><strong>RG_EXP_003</strong> : Si la date de fermeture transmise est la date de fermeture définitive, alors <code>typeFermeture</code> DOIT être renseigné avec l'OID correspondant au code DEF issu du référentiel FINESS.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-004</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-juridique.html\">ROR - Entité Juridique</a></li></ul></blockquote><div><p><strong>RG_EXP_004</strong> : L'<code>idNat_Struct</code> DOIT être renseigné en priorité avec le numéro FINESS si l'établissement est immatriculé dans FINESS.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-005</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-geographique.html\">ROR - Entité Géographique</a></li></ul></blockquote><div><p><strong>RG_EXP_005</strong> : L'<code>idNat_Struct</code> de l'EG DOIT être renseigné en priorité avec le numéro FINESS si l'établissement est immatriculé dans FINESS.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-006</li><li>requirement: </li><li>conformance: MAY</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-geographique.html\">ROR - Entité Géographique</a></li></ul></blockquote><div><p><strong>RG_EXP_006</strong> : Les contacts d'une EG PEUVENT contenir les contacts du directeur et de la cellule d'alerte.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-030-eg</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-geographique.html\">ROR - Entité Géographique</a></li></ul></blockquote><div><p><strong>RG_EXP_030</strong> : L'attribut <code>territoireSante</code> est obligatoirement une division territoriale de type « Territoire de Santé ».</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-037</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-juridique.html\">ROR - Entité Juridique</a></li></ul></blockquote><div><p><strong>RG_EXP_037</strong> : Lorsque <code>numEJ_RPPS_ADELI_Rang</code> est renseigné, il doit être utilisé pour la construction de l'<code>idNat_Struct</code>.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-038</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-geographique.html\">ROR - Entité Géographique</a></li></ul></blockquote><div><p><strong>RG_EXP_038</strong> : Lorsque <code>numEG_RPPS_ADELI_Rang</code> est renseigné, il doit être utilisé pour la construction de l'<code>idNat_Struct</code>.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-043</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-juridique.html\">ROR - Entité Juridique</a></li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-geographique.html\">ROR - Entité Géographique</a></li></ul></blockquote><div><p><strong>RG_EXP_043</strong> : La date de fermeture est obligatoire lorsqu'un type de fermeture est renseigné, sinon elle n'est jamais renseignée.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-044</li><li>requirement: </li><li>conformance: SHALL</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-juridique.html\">ROR - Entité Juridique</a></li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-geographique.html\">ROR - Entité Géographique</a></li></ul></blockquote><div><p><strong>RG_EXP_044</strong> : Lorsqu'un niveau de structure ou d'organisation est fermé, tous les niveaux inférieurs ainsi que toutes les offres opérationnelles qui lui sont rattachées sont également fermés avec le même type, la même date de fermeture et, le cas échéant, la même date de réouverture prévisionnelle.</p>\n</div><blockquote><p><b>R5: Actual statement as markdown (new)</b></p><ul><li>key: RG-EXP-045</li><li>requirement: </li><li>conformance: MAY</li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-juridique.html\">ROR - Entité Juridique</a></li><li>satisfiedBy: <a href=\"StructureDefinition-ror-entite-geographique.html\">ROR - Entité Géographique</a></li></ul></blockquote><div><p><strong>RG_EXP_045</strong> : La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire », sinon elle n'est jamais renseignée.</p>\n</div><p><b>code</b>: <span title=\"Codes :{http://hl7.org/fhir/resource-types Requirements}\">Requirements</span></p></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url" ] ;
+     fhir:Extension.valueUri [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/structure" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name" ] ;
+     fhir:Extension.valueString [ fhir:value "RORRequirementsStructure" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title" ] ;
+     fhir:Extension.valueString [ fhir:value "Règles de gestion - Structure" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description" ] ;
+     fhir:Extension.valueMarkdown [ fhir:value "Règles de gestion du modèle d'exposition ROR relatives aux classes Structure (EntiteJuridique, EntiteGeographique)." ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "key" ] ;
+       fhir:Extension.valueId [ fhir:value "RG-EXP-002" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "**RG_EXP_002** : Si un élément obligatoire dans la structure du flux d'échange n'est pas renseigné dans le ROR interrogé, alors l'instance de l'entité à laquelle appartient cet élément NE DOIT PAS être transmise. Les instances des entités hiérarchiquement inférieures NE DOIVENT PAS être transmises non plus." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
      ] ;
-     fhir:value [
-       a fhir:Uri ;
-       fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/structure"^^xsd:anyURI ;
-       fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/Requirements/structure>
-     ]
-  ] [
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name>
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "key" ] ;
+       fhir:Extension.valueId [ fhir:value "RG-EXP-003" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "**RG_EXP_003** : Si la date de fermeture transmise est la date de fermeture définitive, alors `typeFermeture` DOIT être renseigné avec l'OID correspondant au code DEF issu du référentiel FINESS." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "satisfiedBy" ] ;
+       fhir:Extension.valueUrl [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique" ]
      ] ;
-     fhir:value [
-       a fhir:String ;
-       fhir:v "RORRequirementsStructure"
-     ]
-  ] [
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title>
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "key" ] ;
+       fhir:Extension.valueId [ fhir:value "RG-EXP-004" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "**RG_EXP_004** : L'`idNat_Struct` DOIT être renseigné en priorité avec le numéro FINESS si l'établissement est immatriculé dans FINESS." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "satisfiedBy" ] ;
+       fhir:Extension.valueUrl [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-juridique" ]
      ] ;
-     fhir:value [
-       a fhir:String ;
-       fhir:v "Règles de gestion - Structure"
-     ]
-  ] [
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description>
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "key" ] ;
+       fhir:Extension.valueId [ fhir:value "RG-EXP-005" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "**RG_EXP_005** : L'`idNat_Struct` de l'EG DOIT être renseigné en priorité avec le numéro FINESS si l'établissement est immatriculé dans FINESS." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "satisfiedBy" ] ;
+       fhir:Extension.valueUrl [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique" ]
      ] ;
-     fhir:value [
-       a fhir:Markdown ;
-       fhir:v "Règles de gestion du modèle d'exposition ROR relatives aux classes Structure (EntiteJuridique, EntiteGeographique)."
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "key" ] ;
+       fhir:Extension.valueId [ fhir:value "RG-EXP-006" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "**RG_EXP_006** : Les contacts d'une EG PEUVENT contenir les contacts du directeur et de la cellule d'alerte." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "MAY" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "satisfiedBy" ] ;
+       fhir:Extension.valueUrl [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "key" ] ;
+       fhir:Extension.valueId [ fhir:value "RG-EXP-030-eg" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "**RG_EXP_030** : L'attribut `territoireSante` est obligatoirement une division territoriale de type « Territoire de Santé »." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "satisfiedBy" ] ;
+       fhir:Extension.valueUrl [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "key" ] ;
+       fhir:Extension.valueId [ fhir:value "RG-EXP-037" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "**RG_EXP_037** : Lorsque `numEJ_RPPS_ADELI_Rang` est renseigné, il doit être utilisé pour la construction de l'`idNat_Struct`." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "satisfiedBy" ] ;
+       fhir:Extension.valueUrl [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-juridique" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "key" ] ;
+       fhir:Extension.valueId [ fhir:value "RG-EXP-038" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "**RG_EXP_038** : Lorsque `numEG_RPPS_ADELI_Rang` est renseigné, il doit être utilisé pour la construction de l'`idNat_Struct`." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "satisfiedBy" ] ;
+       fhir:Extension.valueUrl [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "key" ] ;
+       fhir:Extension.valueId [ fhir:value "RG-EXP-043" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "**RG_EXP_043** : La date de fermeture est obligatoire lorsqu'un type de fermeture est renseigné, sinon elle n'est jamais renseignée." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "satisfiedBy" ] ;
+       fhir:Extension.valueUrl [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-juridique" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "satisfiedBy" ] ;
+       fhir:Extension.valueUrl [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "key" ] ;
+       fhir:Extension.valueId [ fhir:value "RG-EXP-044" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "**RG_EXP_044** : Lorsqu'un niveau de structure ou d'organisation est fermé, tous les niveaux inférieurs ainsi que toutes les offres opérationnelles qui lui sont rattachées sont également fermés avec le même type, la même date de fermeture et, le cas échéant, la même date de réouverture prévisionnelle." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "SHALL" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "satisfiedBy" ] ;
+       fhir:Extension.valueUrl [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-juridique" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "satisfiedBy" ] ;
+       fhir:Extension.valueUrl [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "key" ] ;
+       fhir:Extension.valueId [ fhir:value "RG-EXP-045" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "requirement" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "**RG_EXP_045** : La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire », sinon elle n'est jamais renseignée." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "conformance" ] ;
+       fhir:Extension.valueCode [ fhir:value "MAY" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "satisfiedBy" ] ;
+       fhir:Extension.valueUrl [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-juridique" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "satisfiedBy" ] ;
+       fhir:Extension.valueUrl [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique" ]
+     ] ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement" ]
+  ] ;
+  fhir:Basic.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/resource-types" ] ;
+       fhir:Coding.code [ fhir:value "Requirements" ]
      ]
-  ] [
-     fhir:extension ( [
-       fhir:url [
-         fhir:v "key"^^xsd:anyURI ;
-         fhir:l fhir:key
-       ] ;
-       fhir:value [
-         a fhir:Id ;
-         fhir:v "RG-EXP-002"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "requirement"^^xsd:anyURI ;
-         fhir:l fhir:requirement
-       ] ;
-       fhir:value [
-         a fhir:Markdown ;
-         fhir:v "**RG_EXP_002** : Si un élément obligatoire dans la structure du flux d'échange n'est pas renseigné dans le ROR interrogé, alors l'instance de l'entité à laquelle appartient cet élément NE DOIT PAS être transmise. Les instances des entités hiérarchiquement inférieures NE DOIVENT PAS être transmises non plus."
-       ]
-     ] [
-       fhir:url [
-         fhir:v "conformance"^^xsd:anyURI ;
-         fhir:l fhir:conformance
-       ] ;
-       fhir:value [
-         a fhir:Code ;
-         fhir:v "SHALL"
-       ]
-     ] ) ;
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
-     ]
-  ] [
-     fhir:extension ( [
-       fhir:url [
-         fhir:v "key"^^xsd:anyURI ;
-         fhir:l fhir:key
-       ] ;
-       fhir:value [
-         a fhir:Id ;
-         fhir:v "RG-EXP-003"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "requirement"^^xsd:anyURI ;
-         fhir:l fhir:requirement
-       ] ;
-       fhir:value [
-         a fhir:Markdown ;
-         fhir:v "**RG_EXP_003** : Si la date de fermeture transmise est la date de fermeture définitive, alors `typeFermeture` DOIT être renseigné avec l'OID correspondant au code DEF issu du référentiel FINESS."
-       ]
-     ] [
-       fhir:url [
-         fhir:v "conformance"^^xsd:anyURI ;
-         fhir:l fhir:conformance
-       ] ;
-       fhir:value [
-         a fhir:Code ;
-         fhir:v "SHALL"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "satisfiedBy"^^xsd:anyURI ;
-         fhir:l fhir:satisfiedBy
-       ] ;
-       fhir:value [
-         a fhir:Url ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique>
-       ]
-     ] ) ;
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
-     ]
-  ] [
-     fhir:extension ( [
-       fhir:url [
-         fhir:v "key"^^xsd:anyURI ;
-         fhir:l fhir:key
-       ] ;
-       fhir:value [
-         a fhir:Id ;
-         fhir:v "RG-EXP-004"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "requirement"^^xsd:anyURI ;
-         fhir:l fhir:requirement
-       ] ;
-       fhir:value [
-         a fhir:Markdown ;
-         fhir:v "**RG_EXP_004** : L'`idNat_Struct` DOIT être renseigné en priorité avec le numéro FINESS si l'établissement est immatriculé dans FINESS."
-       ]
-     ] [
-       fhir:url [
-         fhir:v "conformance"^^xsd:anyURI ;
-         fhir:l fhir:conformance
-       ] ;
-       fhir:value [
-         a fhir:Code ;
-         fhir:v "SHALL"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "satisfiedBy"^^xsd:anyURI ;
-         fhir:l fhir:satisfiedBy
-       ] ;
-       fhir:value [
-         a fhir:Url ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-juridique"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-juridique>
-       ]
-     ] ) ;
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
-     ]
-  ] [
-     fhir:extension ( [
-       fhir:url [
-         fhir:v "key"^^xsd:anyURI ;
-         fhir:l fhir:key
-       ] ;
-       fhir:value [
-         a fhir:Id ;
-         fhir:v "RG-EXP-005"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "requirement"^^xsd:anyURI ;
-         fhir:l fhir:requirement
-       ] ;
-       fhir:value [
-         a fhir:Markdown ;
-         fhir:v "**RG_EXP_005** : L'`idNat_Struct` de l'EG DOIT être renseigné en priorité avec le numéro FINESS si l'établissement est immatriculé dans FINESS."
-       ]
-     ] [
-       fhir:url [
-         fhir:v "conformance"^^xsd:anyURI ;
-         fhir:l fhir:conformance
-       ] ;
-       fhir:value [
-         a fhir:Code ;
-         fhir:v "SHALL"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "satisfiedBy"^^xsd:anyURI ;
-         fhir:l fhir:satisfiedBy
-       ] ;
-       fhir:value [
-         a fhir:Url ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique>
-       ]
-     ] ) ;
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
-     ]
-  ] [
-     fhir:extension ( [
-       fhir:url [
-         fhir:v "key"^^xsd:anyURI ;
-         fhir:l fhir:key
-       ] ;
-       fhir:value [
-         a fhir:Id ;
-         fhir:v "RG-EXP-006"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "requirement"^^xsd:anyURI ;
-         fhir:l fhir:requirement
-       ] ;
-       fhir:value [
-         a fhir:Markdown ;
-         fhir:v "**RG_EXP_006** : Les contacts d'une EG PEUVENT contenir les contacts du directeur et de la cellule d'alerte."
-       ]
-     ] [
-       fhir:url [
-         fhir:v "conformance"^^xsd:anyURI ;
-         fhir:l fhir:conformance
-       ] ;
-       fhir:value [
-         a fhir:Code ;
-         fhir:v "MAY"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "satisfiedBy"^^xsd:anyURI ;
-         fhir:l fhir:satisfiedBy
-       ] ;
-       fhir:value [
-         a fhir:Url ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique>
-       ]
-     ] ) ;
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
-     ]
-  ] [
-     fhir:extension ( [
-       fhir:url [
-         fhir:v "key"^^xsd:anyURI ;
-         fhir:l fhir:key
-       ] ;
-       fhir:value [
-         a fhir:Id ;
-         fhir:v "RG-EXP-030-eg"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "requirement"^^xsd:anyURI ;
-         fhir:l fhir:requirement
-       ] ;
-       fhir:value [
-         a fhir:Markdown ;
-         fhir:v "**RG_EXP_030** : L'attribut `territoireSante` est obligatoirement une division territoriale de type « Territoire de Santé »."
-       ]
-     ] [
-       fhir:url [
-         fhir:v "conformance"^^xsd:anyURI ;
-         fhir:l fhir:conformance
-       ] ;
-       fhir:value [
-         a fhir:Code ;
-         fhir:v "SHALL"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "satisfiedBy"^^xsd:anyURI ;
-         fhir:l fhir:satisfiedBy
-       ] ;
-       fhir:value [
-         a fhir:Url ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique>
-       ]
-     ] ) ;
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
-     ]
-  ] [
-     fhir:extension ( [
-       fhir:url [
-         fhir:v "key"^^xsd:anyURI ;
-         fhir:l fhir:key
-       ] ;
-       fhir:value [
-         a fhir:Id ;
-         fhir:v "RG-EXP-037"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "requirement"^^xsd:anyURI ;
-         fhir:l fhir:requirement
-       ] ;
-       fhir:value [
-         a fhir:Markdown ;
-         fhir:v "**RG_EXP_037** : Lorsque `numEJ_RPPS_ADELI_Rang` est renseigné, il doit être utilisé pour la construction de l'`idNat_Struct`."
-       ]
-     ] [
-       fhir:url [
-         fhir:v "conformance"^^xsd:anyURI ;
-         fhir:l fhir:conformance
-       ] ;
-       fhir:value [
-         a fhir:Code ;
-         fhir:v "SHALL"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "satisfiedBy"^^xsd:anyURI ;
-         fhir:l fhir:satisfiedBy
-       ] ;
-       fhir:value [
-         a fhir:Url ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-juridique"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-juridique>
-       ]
-     ] ) ;
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
-     ]
-  ] [
-     fhir:extension ( [
-       fhir:url [
-         fhir:v "key"^^xsd:anyURI ;
-         fhir:l fhir:key
-       ] ;
-       fhir:value [
-         a fhir:Id ;
-         fhir:v "RG-EXP-038"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "requirement"^^xsd:anyURI ;
-         fhir:l fhir:requirement
-       ] ;
-       fhir:value [
-         a fhir:Markdown ;
-         fhir:v "**RG_EXP_038** : Lorsque `numEG_RPPS_ADELI_Rang` est renseigné, il doit être utilisé pour la construction de l'`idNat_Struct`."
-       ]
-     ] [
-       fhir:url [
-         fhir:v "conformance"^^xsd:anyURI ;
-         fhir:l fhir:conformance
-       ] ;
-       fhir:value [
-         a fhir:Code ;
-         fhir:v "SHALL"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "satisfiedBy"^^xsd:anyURI ;
-         fhir:l fhir:satisfiedBy
-       ] ;
-       fhir:value [
-         a fhir:Url ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique>
-       ]
-     ] ) ;
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
-     ]
-  ] [
-     fhir:extension ( [
-       fhir:url [
-         fhir:v "key"^^xsd:anyURI ;
-         fhir:l fhir:key
-       ] ;
-       fhir:value [
-         a fhir:Id ;
-         fhir:v "RG-EXP-043"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "requirement"^^xsd:anyURI ;
-         fhir:l fhir:requirement
-       ] ;
-       fhir:value [
-         a fhir:Markdown ;
-         fhir:v "**RG_EXP_043** : La date de fermeture est obligatoire lorsqu'un type de fermeture est renseigné, sinon elle n'est jamais renseignée."
-       ]
-     ] [
-       fhir:url [
-         fhir:v "conformance"^^xsd:anyURI ;
-         fhir:l fhir:conformance
-       ] ;
-       fhir:value [
-         a fhir:Code ;
-         fhir:v "SHALL"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "satisfiedBy"^^xsd:anyURI ;
-         fhir:l fhir:satisfiedBy
-       ] ;
-       fhir:value [
-         a fhir:Url ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-juridique"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-juridique>
-       ]
-     ] [
-       fhir:url [
-         fhir:v "satisfiedBy"^^xsd:anyURI ;
-         fhir:l fhir:satisfiedBy
-       ] ;
-       fhir:value [
-         a fhir:Url ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique>
-       ]
-     ] ) ;
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
-     ]
-  ] [
-     fhir:extension ( [
-       fhir:url [
-         fhir:v "key"^^xsd:anyURI ;
-         fhir:l fhir:key
-       ] ;
-       fhir:value [
-         a fhir:Id ;
-         fhir:v "RG-EXP-044"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "requirement"^^xsd:anyURI ;
-         fhir:l fhir:requirement
-       ] ;
-       fhir:value [
-         a fhir:Markdown ;
-         fhir:v "**RG_EXP_044** : Lorsqu'un niveau de structure ou d'organisation est fermé, tous les niveaux inférieurs ainsi que toutes les offres opérationnelles qui lui sont rattachées sont également fermés avec le même type, la même date de fermeture et, le cas échéant, la même date de réouverture prévisionnelle."
-       ]
-     ] [
-       fhir:url [
-         fhir:v "conformance"^^xsd:anyURI ;
-         fhir:l fhir:conformance
-       ] ;
-       fhir:value [
-         a fhir:Code ;
-         fhir:v "SHALL"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "satisfiedBy"^^xsd:anyURI ;
-         fhir:l fhir:satisfiedBy
-       ] ;
-       fhir:value [
-         a fhir:Url ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-juridique"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-juridique>
-       ]
-     ] [
-       fhir:url [
-         fhir:v "satisfiedBy"^^xsd:anyURI ;
-         fhir:l fhir:satisfiedBy
-       ] ;
-       fhir:value [
-         a fhir:Url ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique>
-       ]
-     ] ) ;
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
-     ]
-  ] [
-     fhir:extension ( [
-       fhir:url [
-         fhir:v "key"^^xsd:anyURI ;
-         fhir:l fhir:key
-       ] ;
-       fhir:value [
-         a fhir:Id ;
-         fhir:v "RG-EXP-045"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "requirement"^^xsd:anyURI ;
-         fhir:l fhir:requirement
-       ] ;
-       fhir:value [
-         a fhir:Markdown ;
-         fhir:v "**RG_EXP_045** : La date de réouverture peut être renseignée lorsque le type de fermeture est « Fermeture temporaire », sinon elle n'est jamais renseignée."
-       ]
-     ] [
-       fhir:url [
-         fhir:v "conformance"^^xsd:anyURI ;
-         fhir:l fhir:conformance
-       ] ;
-       fhir:value [
-         a fhir:Code ;
-         fhir:v "MAY"
-       ]
-     ] [
-       fhir:url [
-         fhir:v "satisfiedBy"^^xsd:anyURI ;
-         fhir:l fhir:satisfiedBy
-       ] ;
-       fhir:value [
-         a fhir:Url ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-juridique"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-juridique>
-       ]
-     ] [
-       fhir:url [
-         fhir:v "satisfiedBy"^^xsd:anyURI ;
-         fhir:l fhir:satisfiedBy
-       ] ;
-       fhir:value [
-         a fhir:Url ;
-         fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique"^^xsd:anyURI ;
-         fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-entite-geographique>
-       ]
-     ] ) ;
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement>
-     ]
-  ] ) ; # 
-  fhir:code [
-     fhir:coding ( [
-       fhir:system [
-         fhir:v "http://hl7.org/fhir/resource-types"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/resource-types>
-       ] ;
-       fhir:code [ fhir:v "Requirements" ]
-     ] )
-  ] . # 
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/test-ror/Basic/ror-requirements-structure.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,772 +7,732 @@
 
 <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-personne-physique> a fhir:StructureDefinition ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "ror-personne-physique"] ; # 
-  fhir:language [ fhir:v "fr"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DéfinitionStructure ror-personne-physique</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-personne-physique-definitions.html#ror-personne-physique\" title=\"Spécialisation ROR de la PersonnePhysique du MOS.\">ror-personne-physique</a><a name=\"ror-personne-physique\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\">PersonnePhysique(0.1.0-ballot)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Personne physique dans le contexte ROR<br/><br/>Éléments définis dans les ancêtres :<a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Civilité de la personne physique.\">civilite</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Toute personne possède un nom de naissance (appelé auparavant nom de famille ou nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Ref.: Service-public.frSynonymes : nom de naissance, nom patronymique\">nomFamille</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Un nom d'usage de la personne.Rappel: Toute personne possède un nom de naissance  (appelé auparavant nom de famille ou nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Il est néanmoins possible d'utiliser, dans la vie quotidienne, un autre nom (par exemple le nom marital) appelé nom d'usage. Ce nom d'usage ne remplace en aucun cas le nom de naissance qui reste le seul nom mentionné sur les actes d'état civil (acte de naissance ou de mariage, livret de famille, etc.).Ref.: Service-public.fr\">nomUsage</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Prénom(s) de la personne déclarés à sa naissance.\">prenom</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Le prénom usuel est un des prénoms inscrit dans l'acte de naissance.\">prenomUsuel</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Un nom de fantaisie librement choisi par une personne dans l'exercice d'une activité particulière, afin de dissimuler au public son identité véritable.\">pseudonyme</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Un nom ajouté par le public au nom de naissance d'une personne, afin de la distinguer des autres personnes portant le même nom de naissance et, qui se déférencie du pseudonyme en ce qu'il n'est pas choisi par celui qui le porte et qu'il n'a pas pour but de dissimuler son identité mais au contraire de la préciser.\">surnom</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Sexe administratif de la personne physique, au sens de l'état civil, masculin ou féminin.\">sexeAdministratif</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Sexe de la personne physique, notamment masculin, féminin, inconnu.Attribut associé aux nomenclatures suivantes : ** CodeSystem-TRE-R249-Sexe : représentation des sexes humains par un code alphabétique** CodeSystem-TRE-R267-SexeProvenanceISO : norme ISO 5218 qui définit la représentation des sexes humains par un code numérique** CodeSystem-TRE-R303-HL7v3AdministrativeGender : reprise de la terminologie HL7 v3 AdministrativeGender** ConceptMap-ASS-A15-SexeProvenanceISO-Sexe : table d'association entre les nomenclatures CodeSystem-TRE-R267-SexeProvenanceISO, CodeSystem-TRE-R249-Sexe\">sexe</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Langue parlée par la personne, y compris le français.\">langueParlee</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Situation familiale de la personne (célibataire, divorcée, etc.).Les valeurs de ce code sont répertoriées dans plusieurs nomenclatures notamment:- la liste de la Déclaration Automatisée des Données Sociales Unifiée (DADS-U):01: célibataire02: marié(e)03: divorcé(e)04: séparé(e)05: veuf, veuve06: vie maritale07: PACS90: non connueetc.- Liste de codes HL7 &quot;MaritalStatus&quot;:A: Annulled, marriage contract has been declared null and to not have existedD: Divorced, marriage contract has been declared dissolved and inactiveI: Interlocutory, subject to an Interlocutory DecreeL: Legally separatedM: Married, a current marriage contract is activeP: Polygamous, more than 1 current spouseS: Never Married, no marriage contract has ever been enteredT: Domestic partner, person declares that a domestic partner relationship exists.U: Unmarried, currently not in a marriage contract.W: Widowed, the spouse has died\">situationFamiliale</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Date de naissance de la personne.A noter que l'âge de la personne ne figure pas dans le MOS. Cette information peut être calculée à partir de la date de naissance.\">dateNaissance</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Date de décès de la personne.\">dateDeces</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Commune de naissance de la personne.Code officiel géographique (COG) de la commune.\">communeNaissance</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Département de naissance de la personne.Code officiel géographique (COG) du département.\">departementNaissance</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Pays de naissance de la personne.Code officiel géographique (COG) du pays.\">paysNaissance</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Lieu de naissance de la personne.Code officiel géographique (COG) de la commune (France) ou du pays.\">lieuNaissance</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Statut de la demande de certification auprès de l'organisme certificateur.\">statutEtatCivil</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Date de transmission du statut d’état civil de la personne par l’organisme certificateur d’état-civil.\">dateStatutEtatCivil</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Date d'acquisition de la nationalité française, renseignée uniquement si la nationalité actuelle est française et qu'elle n’a pas été acquise à la naissance.\">dateAcquisitionNatFR</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.Attribut associé aux nomenclatures suivantes :**CodeSystem-TRE-R268-PaysProvenanceISO : provient de la norme ISO 3166-1 (code alpha-2) qui définit la représentation des noms de pays par un code à deux lettres**CodeSystem-TRE-R20-Pays : provient du code officiel géographique (COG)**CodeSystem-TRE-R89-RegroupementPays : espace de pays conventionné\">paysNationalite</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Pays où séjourne la personne de façon permanente.\">paysResidence</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Profession et catégorie socio-professionnelle de la personne (PCS). Ce code provient de la nomenclature des professions et catégories socioprofessionnelles (PCS) de l'INSEE.\">professionCategorieSocioProfessionnelle</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Une ou plusieurs causes ayant entraîné la mort de la personne. La liste des codes est en cours de constitution. Certains codes proviennent des niveaux 3 et 4 de la CIM 10, en cas de décès dû à une pathologie.\">causeMortalite</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Taille du corps de la personne exprimée dans une unité de mesure (m, cm, etc.).Synonymes: grandeur corporelle, grandeur du corps, hauteur corporelle, hauteur du corps, longueur corporelle.\">tailleCorporelle</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Masse du corps de la personne exprimée dans une unité de mesure (kg, g, etc.).\">poidsCorporel</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Surface du corps de la personne, c'est à dire la mesure en deux dimensions de la surface externe de la peau recouvrant le corps, exprimée dans une unité de mesure (par exemple, en m2).Calcul de la surface corporelle:** Calcul de la surface corporelle chez un adulte (>= à 40 Kg + taille renseignée) :La surface corporelle est calculée selon la formule suivante (Formule de BOYD) :SC = 0,0001 x (3,207) x (P0,7285-0,0188logP) x (T0,3) avec T en cm, P en grammes et Log le logarithme décimal.** Calcul de la surface corporelle chez un petit enfant (poids &lt; 40 Kg):Il convient d'utiliser une formule adaptée au calcul de la surface corporelle chez le petit enfant car elle s'affranchit de la taille. La formule est à utiliser pour tous les enfants dont le poids est inférieur à 40 Kg.La surface corporelle est alors calculée selon la formule suivante :SC = (4 x P + 7) / (P + 90) avec P en Kg, le résultat SC est donné en m2.\">surfaceCorporelle</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Indice de masse corporelle (IMC).L'IMC résulte du calcul suivant: IMC = poids (kg) / taille (m)²L'affichage du résultat de l'IMC varie selon la valeur obtenue :** IMC &lt; 18.5 : maigreur** 18.5 &lt;= IMC &lt;= 25 : corpulence normale** 25 &lt; IMC &lt;= 30 : surpoids** IMC > 30 : obésité\">indiceMasseCorporelle</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Lien vers la classe Parent\">Parent</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Lien vers la classe MesureProtection\">MesureProtection</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Lien vers la classe AidantDemarche\">AidantDemarche</a><br/><span style=\"font-weight:bold\">Les instances de ce modèle logique peuvent être la cible d'une référence</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-personne-physique-definitions.html#ror-personne-physique.civilite\">civilite</a><a name=\"ror-personne-physique.civilite\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Civilité de la personne physique.</span><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-civilite.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite\" class=\"binding\">JDVRORCivilite (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-personne-physique-definitions.html#ror-personne-physique.metadonnee\" title=\"Informations relatives à la gestion des données de la personne physique dans le ROR.\">metadonnee</a><a name=\"ror-personne-physique.metadonnee\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-ror-metadonnee.html\">ror-metadonnee</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Informations relatives à la gestion des données de la personne physique dans le ROR.</td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:extension ( [
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics>
-     ] ;
-     fhir:value [
-       a fhir:Code ;
-       fhir:v "can-be-target"
+  fhir:Resource.id [ fhir:value "ror-personne-physique"] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DéfinitionStructure ror-personne-physique</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-personne-physique-definitions.html#ror-personne-physique\" title=\"Spécialisation ROR de la PersonnePhysique du MOS.\">ror-personne-physique</a><a name=\"ror-personne-physique\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\">PersonnePhysique(0.1.0-ballot)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Personne physique dans le contexte ROR<br/><br/>Éléments définis dans les ancêtres :<a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Civilité de la personne physique.\">civilite</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Toute personne possède un nom de naissance (appelé auparavant nom de famille ou nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Ref.: Service-public.frSynonymes : nom de naissance, nom patronymique\">nomFamille</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Un nom d'usage de la personne.Rappel: Toute personne possède un nom de naissance  (appelé auparavant nom de famille ou nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Il est néanmoins possible d'utiliser, dans la vie quotidienne, un autre nom (par exemple le nom marital) appelé nom d'usage. Ce nom d'usage ne remplace en aucun cas le nom de naissance qui reste le seul nom mentionné sur les actes d'état civil (acte de naissance ou de mariage, livret de famille, etc.).Ref.: Service-public.fr\">nomUsage</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Prénom(s) de la personne déclarés à sa naissance.\">prenom</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Le prénom usuel est un des prénoms inscrit dans l'acte de naissance.\">prenomUsuel</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Un nom de fantaisie librement choisi par une personne dans l'exercice d'une activité particulière, afin de dissimuler au public son identité véritable.\">pseudonyme</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Un nom ajouté par le public au nom de naissance d'une personne, afin de la distinguer des autres personnes portant le même nom de naissance et, qui se déférencie du pseudonyme en ce qu'il n'est pas choisi par celui qui le porte et qu'il n'a pas pour but de dissimuler son identité mais au contraire de la préciser.\">surnom</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Sexe administratif de la personne physique, au sens de l'état civil, masculin ou féminin.\">sexeAdministratif</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Sexe de la personne physique, notamment masculin, féminin, inconnu.Attribut associé aux nomenclatures suivantes : ** CodeSystem-TRE-R249-Sexe : représentation des sexes humains par un code alphabétique** CodeSystem-TRE-R267-SexeProvenanceISO : norme ISO 5218 qui définit la représentation des sexes humains par un code numérique** CodeSystem-TRE-R303-HL7v3AdministrativeGender : reprise de la terminologie HL7 v3 AdministrativeGender** ConceptMap-ASS-A15-SexeProvenanceISO-Sexe : table d'association entre les nomenclatures CodeSystem-TRE-R267-SexeProvenanceISO, CodeSystem-TRE-R249-Sexe\">sexe</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Langue parlée par la personne, y compris le français.\">langueParlee</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Situation familiale de la personne (célibataire, divorcée, etc.).Les valeurs de ce code sont répertoriées dans plusieurs nomenclatures notamment:- la liste de la Déclaration Automatisée des Données Sociales Unifiée (DADS-U):01: célibataire02: marié(e)03: divorcé(e)04: séparé(e)05: veuf, veuve06: vie maritale07: PACS90: non connueetc.- Liste de codes HL7 &quot;MaritalStatus&quot;:A: Annulled, marriage contract has been declared null and to not have existedD: Divorced, marriage contract has been declared dissolved and inactiveI: Interlocutory, subject to an Interlocutory DecreeL: Legally separatedM: Married, a current marriage contract is activeP: Polygamous, more than 1 current spouseS: Never Married, no marriage contract has ever been enteredT: Domestic partner, person declares that a domestic partner relationship exists.U: Unmarried, currently not in a marriage contract.W: Widowed, the spouse has died\">situationFamiliale</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Date de naissance de la personne.A noter que l'âge de la personne ne figure pas dans le MOS. Cette information peut être calculée à partir de la date de naissance.\">dateNaissance</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Date de décès de la personne.\">dateDeces</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Commune de naissance de la personne.Code officiel géographique (COG) de la commune.\">communeNaissance</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Département de naissance de la personne.Code officiel géographique (COG) du département.\">departementNaissance</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Pays de naissance de la personne.Code officiel géographique (COG) du pays.\">paysNaissance</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Lieu de naissance de la personne.Code officiel géographique (COG) de la commune (France) ou du pays.\">lieuNaissance</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Statut de la demande de certification auprès de l'organisme certificateur.\">statutEtatCivil</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Date de transmission du statut d’état civil de la personne par l’organisme certificateur d’état-civil.\">dateStatutEtatCivil</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Date d'acquisition de la nationalité française, renseignée uniquement si la nationalité actuelle est française et qu'elle n’a pas été acquise à la naissance.\">dateAcquisitionNatFR</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.Attribut associé aux nomenclatures suivantes :**CodeSystem-TRE-R268-PaysProvenanceISO : provient de la norme ISO 3166-1 (code alpha-2) qui définit la représentation des noms de pays par un code à deux lettres**CodeSystem-TRE-R20-Pays : provient du code officiel géographique (COG)**CodeSystem-TRE-R89-RegroupementPays : espace de pays conventionné\">paysNationalite</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Pays où séjourne la personne de façon permanente.\">paysResidence</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Profession et catégorie socio-professionnelle de la personne (PCS). Ce code provient de la nomenclature des professions et catégories socioprofessionnelles (PCS) de l'INSEE.\">professionCategorieSocioProfessionnelle</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Une ou plusieurs causes ayant entraîné la mort de la personne. La liste des codes est en cours de constitution. Certains codes proviennent des niveaux 3 et 4 de la CIM 10, en cas de décès dû à une pathologie.\">causeMortalite</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Taille du corps de la personne exprimée dans une unité de mesure (m, cm, etc.).Synonymes: grandeur corporelle, grandeur du corps, hauteur corporelle, hauteur du corps, longueur corporelle.\">tailleCorporelle</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Masse du corps de la personne exprimée dans une unité de mesure (kg, g, etc.).\">poidsCorporel</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Surface du corps de la personne, c'est à dire la mesure en deux dimensions de la surface externe de la peau recouvrant le corps, exprimée dans une unité de mesure (par exemple, en m2).Calcul de la surface corporelle:** Calcul de la surface corporelle chez un adulte (>= à 40 Kg + taille renseignée) :La surface corporelle est calculée selon la formule suivante (Formule de BOYD) :SC = 0,0001 x (3,207) x (P0,7285-0,0188logP) x (T0,3) avec T en cm, P en grammes et Log le logarithme décimal.** Calcul de la surface corporelle chez un petit enfant (poids &lt; 40 Kg):Il convient d'utiliser une formule adaptée au calcul de la surface corporelle chez le petit enfant car elle s'affranchit de la taille. La formule est à utiliser pour tous les enfants dont le poids est inférieur à 40 Kg.La surface corporelle est alors calculée selon la formule suivante :SC = (4 x P + 7) / (P + 90) avec P en Kg, le résultat SC est donné en m2.\">surfaceCorporelle</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Indice de masse corporelle (IMC).L'IMC résulte du calcul suivant: IMC = poids (kg) / taille (m)²L'affichage du résultat de l'IMC varie selon la valeur obtenue :** IMC &lt; 18.5 : maigreur** 18.5 &lt;= IMC &lt;= 25 : corpulence normale** 25 &lt; IMC &lt;= 30 : surpoids** IMC > 30 : obésité\">indiceMasseCorporelle</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Lien vers la classe Parent\">Parent</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Lien vers la classe MesureProtection\">MesureProtection</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-PersonnePhysique.html\" title=\"Lien vers la classe AidantDemarche\">AidantDemarche</a><br/><span style=\"font-weight:bold\">Les instances de ce modèle logique peuvent être la cible d'une référence</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-personne-physique-definitions.html#ror-personne-physique.civilite\">civilite</a><a name=\"ror-personne-physique.civilite\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Civilité de la personne physique.</span><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-civilite.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite\" class=\"binding\">JDVRORCivilite (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-personne-physique-definitions.html#ror-personne-physique.metadonnee\" title=\"Informations relatives à la gestion des données de la personne physique dans le ROR.\">metadonnee</a><a name=\"ror-personne-physique.metadonnee\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-ror-metadonnee.html\">ror-metadonnee</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Informations relatives à la gestion des données de la personne physique dans le ROR.</td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics" ] ;
+     fhir:Extension.valueCode [ fhir:value "can-be-target" ]
+  ] ;
+  fhir:StructureDefinition.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-personne-physique"] ;
+  fhir:StructureDefinition.version [ fhir:value "0.1.0"] ;
+  fhir:StructureDefinition.name [ fhir:value "RORPersonnePhysique"] ;
+  fhir:StructureDefinition.title [ fhir:value "ROR - Personne Physique"] ;
+  fhir:StructureDefinition.status [ fhir:value "draft"] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-07T12:24:33+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
+  fhir:StructureDefinition.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
      ]
-  ] ) ; # 
-  fhir:url [
-     fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-personne-physique"^^xsd:anyURI ;
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-personne-physique>
-  ] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
-  fhir:name [ fhir:v "RORPersonnePhysique"] ; # 
-  fhir:title [ fhir:v "ROR - Personne Physique"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-06-10T12:57:58+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://esante.gouv.fr" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Spécialisation ROR de la PersonnePhysique du MOS. Individu titulaire de droits et d'obligations caractérisé par une identité civile, dans le contexte ROR."] ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [
-         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
-         fhir:l <urn:iso:std:iso:3166>
+  ] ;
+  fhir:StructureDefinition.description [ fhir:value "Spécialisation ROR de la PersonnePhysique du MOS. Individu titulaire de droits et d'obligations caractérisé par une identité civile, dans le contexte ROR."] ;
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
+  fhir:StructureDefinition.kind [ fhir:value "logical"] ;
+  fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean] ;
+  fhir:StructureDefinition.type [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-personne-physique"] ;
+  fhir:StructureDefinition.baseDefinition [
+     fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePhysique|0.1.0-ballot" ;
+     fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePhysique|0.1.0-ballot>
+  ] ;
+  fhir:StructureDefinition.derivation [ fhir:value "specialization"] ;
+  fhir:StructureDefinition.snapshot [
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version" ] ;
+       fhir:Extension.valueString [ fhir:value "0.1.0-ballot" ]
+     ] ;
+     fhir:StructureDefinition.snapshot.element [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Personne physique dans le contexte ROR" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Spécialisation ROR de la PersonnePhysique du MOS." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Base" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
        ] ;
-       fhir:code [ fhir:v "FR" ] ;
-       fhir:display [ fhir:v "France (la)" ]
-     ] )
-  ] ) ; # 
-  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
-  fhir:kind [ fhir:v "logical"] ; # 
-  fhir:abstract [ fhir:v false] ; # 
-  fhir:type [
-     fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-personne-physique"^^xsd:anyURI ;
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-personne-physique>
-  ] ; # 
-  fhir:baseDefinition [
-     fhir:v "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePhysique|0.1.0-ballot"^^xsd:anyURI ;
-     fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/PersonnePhysique?version=0.1.0-ballot>
-  ] ; # 
-  fhir:derivation [ fhir:v "specialization"] ; # 
-  fhir:snapshot [
-     fhir:extension ( [
-       fhir:url [
-         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version>
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.civilite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.civilite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Civilité de la personne physique." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Civilité de la personne physique." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.civilite" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:value [
-         a fhir:String ;
-         fhir:v "0.1.0-ballot"
-       ]
-     ] ) ;
-     fhir:element ( [
-       fhir:id [ fhir:v "ror-personne-physique" ] ;
-       fhir:path [ fhir:v "ror-personne-physique" ] ;
-       fhir:short [ fhir:v "Personne physique dans le contexte ROR" ] ;
-       fhir:definition [ fhir:v "Spécialisation ROR de la PersonnePhysique du MOS." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "*" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "Base" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "*" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
        ] ;
-       fhir:isModifier [ fhir:v false ]
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.civilite" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.civilite" ] ;
-       fhir:short [ fhir:v "Civilité de la personne physique." ] ;
-       fhir:definition [ fhir:v "Civilité de la personne physique." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.civilite" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
-       ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite?version=0.1.0>
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite|0.1.0>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.nomFamille" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.nomFamille" ] ;
-       fhir:short [ fhir:v "Toute personne possède un nom de naissance (appelé auparavant nom de famille ou nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Ref.: Service-public.frSynonymes : nom de naissance, nom patronymique" ] ;
-       fhir:definition [ fhir:v "Toute personne possède un nom de naissance (appelé auparavant nom de famille ou nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Ref.: Service-public.frSynonymes : nom de naissance, nom patronymique" ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.nomFamille" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.nomFamille" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.nomFamille" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Toute personne possède un nom de naissance (appelé auparavant nom de famille ou nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Ref.: Service-public.frSynonymes : nom de naissance, nom patronymique" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Toute personne possède un nom de naissance (appelé auparavant nom de famille ou nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Ref.: Service-public.frSynonymes : nom de naissance, nom patronymique" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.nomFamille" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "string"^^xsd:anyURI ;
-           fhir:l fhir:string
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.nomUsage" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.nomUsage" ] ;
-       fhir:short [ fhir:v "Un nom d'usage de la personne.Rappel: Toute personne possède un nom de naissance  (appelé auparavant nom de famille ou nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Il est néanmoins possible d'utiliser, dans la vie quotidienne, un autre nom (par exemple le nom marital) appelé nom d'usage. Ce nom d'usage ne remplace en aucun cas le nom de naissance qui reste le seul nom mentionné sur les actes d'état civil (acte de naissance ou de mariage, livret de famille, etc.).Ref.: Service-public.fr" ] ;
-       fhir:definition [ fhir:v "Un nom d'usage de la personne.Rappel: Toute personne possède un nom de naissance  (appelé auparavant nom de famille ou nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Il est néanmoins possible d'utiliser, dans la vie quotidienne, un autre nom (par exemple le nom marital) appelé nom d'usage. Ce nom d'usage ne remplace en aucun cas le nom de naissance qui reste le seul nom mentionné sur les actes d'état civil (acte de naissance ou de mariage, livret de famille, etc.).Ref.: Service-public.fr" ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.nomUsage" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.nomUsage" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.nomUsage" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Un nom d'usage de la personne.Rappel: Toute personne possède un nom de naissance  (appelé auparavant nom de famille ou nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Il est néanmoins possible d'utiliser, dans la vie quotidienne, un autre nom (par exemple le nom marital) appelé nom d'usage. Ce nom d'usage ne remplace en aucun cas le nom de naissance qui reste le seul nom mentionné sur les actes d'état civil (acte de naissance ou de mariage, livret de famille, etc.).Ref.: Service-public.fr" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Un nom d'usage de la personne.Rappel: Toute personne possède un nom de naissance  (appelé auparavant nom de famille ou nom patronymique). Ce nom figure sur l'acte de naissance. Il peut s'agir par exemple du nom du père.Il est néanmoins possible d'utiliser, dans la vie quotidienne, un autre nom (par exemple le nom marital) appelé nom d'usage. Ce nom d'usage ne remplace en aucun cas le nom de naissance qui reste le seul nom mentionné sur les actes d'état civil (acte de naissance ou de mariage, livret de famille, etc.).Ref.: Service-public.fr" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.nomUsage" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "string"^^xsd:anyURI ;
-           fhir:l fhir:string
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.prenom" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.prenom" ] ;
-       fhir:short [ fhir:v "Prénom(s) de la personne déclarés à sa naissance." ] ;
-       fhir:definition [ fhir:v "Prénom(s) de la personne déclarés à sa naissance." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "*" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.prenom" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "*" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.prenom" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.prenom" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Prénom(s) de la personne déclarés à sa naissance." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Prénom(s) de la personne déclarés à sa naissance." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.prenom" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "string"^^xsd:anyURI ;
-           fhir:l fhir:string
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.prenomUsuel" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.prenomUsuel" ] ;
-       fhir:short [ fhir:v "Le prénom usuel est un des prénoms inscrit dans l'acte de naissance." ] ;
-       fhir:definition [ fhir:v "Le prénom usuel est un des prénoms inscrit dans l'acte de naissance." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.prenomUsuel" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.prenomUsuel" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.prenomUsuel" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Le prénom usuel est un des prénoms inscrit dans l'acte de naissance." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Le prénom usuel est un des prénoms inscrit dans l'acte de naissance." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.prenomUsuel" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "string"^^xsd:anyURI ;
-           fhir:l fhir:string
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.pseudonyme" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.pseudonyme" ] ;
-       fhir:short [ fhir:v "Un nom de fantaisie librement choisi par une personne dans l'exercice d'une activité particulière, afin de dissimuler au public son identité véritable." ] ;
-       fhir:definition [ fhir:v "Un nom de fantaisie librement choisi par une personne dans l'exercice d'une activité particulière, afin de dissimuler au public son identité véritable." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.pseudonyme" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.pseudonyme" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.pseudonyme" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Un nom de fantaisie librement choisi par une personne dans l'exercice d'une activité particulière, afin de dissimuler au public son identité véritable." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Un nom de fantaisie librement choisi par une personne dans l'exercice d'une activité particulière, afin de dissimuler au public son identité véritable." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.pseudonyme" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "string"^^xsd:anyURI ;
-           fhir:l fhir:string
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.surnom" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.surnom" ] ;
-       fhir:short [ fhir:v "Un nom ajouté par le public au nom de naissance d'une personne, afin de la distinguer des autres personnes portant le même nom de naissance et, qui se déférencie du pseudonyme en ce qu'il n'est pas choisi par celui qui le porte et qu'il n'a pas pour but de dissimuler son identité mais au contraire de la préciser." ] ;
-       fhir:definition [ fhir:v "Un nom ajouté par le public au nom de naissance d'une personne, afin de la distinguer des autres personnes portant le même nom de naissance et, qui se déférencie du pseudonyme en ce qu'il n'est pas choisi par celui qui le porte et qu'il n'a pas pour but de dissimuler son identité mais au contraire de la préciser." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.surnom" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.surnom" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.surnom" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Un nom ajouté par le public au nom de naissance d'une personne, afin de la distinguer des autres personnes portant le même nom de naissance et, qui se déférencie du pseudonyme en ce qu'il n'est pas choisi par celui qui le porte et qu'il n'a pas pour but de dissimuler son identité mais au contraire de la préciser." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Un nom ajouté par le public au nom de naissance d'une personne, afin de la distinguer des autres personnes portant le même nom de naissance et, qui se déférencie du pseudonyme en ce qu'il n'est pas choisi par celui qui le porte et qu'il n'a pas pour but de dissimuler son identité mais au contraire de la préciser." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.surnom" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "string"^^xsd:anyURI ;
-           fhir:l fhir:string
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.sexeAdministratif" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.sexeAdministratif" ] ;
-       fhir:short [ fhir:v "Sexe administratif de la personne physique, au sens de l'état civil, masculin ou féminin." ] ;
-       fhir:definition [ fhir:v "Sexe administratif de la personne physique, au sens de l'état civil, masculin ou féminin." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.sexeAdministratif" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.sexeAdministratif" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.sexeAdministratif" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Sexe administratif de la personne physique, au sens de l'état civil, masculin ou féminin." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Sexe administratif de la personne physique, au sens de l'état civil, masculin ou féminin." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.sexeAdministratif" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "preferred" ] ;
-         fhir:valueSet [
-           fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R10-SexeAdministratif/FHIR/TRE-R10-SexeAdministratif?vs"^^xsd:anyURI ;
-           fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R10-SexeAdministratif/FHIR/TRE-R10-SexeAdministratif?vs>
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R10-SexeAdministratif/FHIR/TRE-R10-SexeAdministratif?vs" ;
+           fhir:link <https://mos.esante.gouv.fr/NOS/TRE_R10-SexeAdministratif/FHIR/TRE-R10-SexeAdministratif?vs>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.sexe" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.sexe" ] ;
-       fhir:short [ fhir:v "Sexe de la personne physique, notamment masculin, féminin, inconnu.Attribut associé aux nomenclatures suivantes : ** CodeSystem-TRE-R249-Sexe : représentation des sexes humains par un code alphabétique** CodeSystem-TRE-R267-SexeProvenanceISO : norme ISO 5218 qui définit la représentation des sexes humains par un code numérique** CodeSystem-TRE-R303-HL7v3AdministrativeGender : reprise de la terminologie HL7 v3 AdministrativeGender** ConceptMap-ASS-A15-SexeProvenanceISO-Sexe : table d'association entre les nomenclatures CodeSystem-TRE-R267-SexeProvenanceISO, CodeSystem-TRE-R249-Sexe" ] ;
-       fhir:definition [ fhir:v "Sexe de la personne physique, notamment masculin, féminin, inconnu.Attribut associé aux nomenclatures suivantes : ** CodeSystem-TRE-R249-Sexe : représentation des sexes humains par un code alphabétique** CodeSystem-TRE-R267-SexeProvenanceISO : norme ISO 5218 qui définit la représentation des sexes humains par un code numérique** CodeSystem-TRE-R303-HL7v3AdministrativeGender : reprise de la terminologie HL7 v3 AdministrativeGender** ConceptMap-ASS-A15-SexeProvenanceISO-Sexe : table d'association entre les nomenclatures CodeSystem-TRE-R267-SexeProvenanceISO, CodeSystem-TRE-R249-Sexe" ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.sexe" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.sexe" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.sexe" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Sexe de la personne physique, notamment masculin, féminin, inconnu.Attribut associé aux nomenclatures suivantes : ** CodeSystem-TRE-R249-Sexe : représentation des sexes humains par un code alphabétique** CodeSystem-TRE-R267-SexeProvenanceISO : norme ISO 5218 qui définit la représentation des sexes humains par un code numérique** CodeSystem-TRE-R303-HL7v3AdministrativeGender : reprise de la terminologie HL7 v3 AdministrativeGender** ConceptMap-ASS-A15-SexeProvenanceISO-Sexe : table d'association entre les nomenclatures CodeSystem-TRE-R267-SexeProvenanceISO, CodeSystem-TRE-R249-Sexe" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Sexe de la personne physique, notamment masculin, féminin, inconnu.Attribut associé aux nomenclatures suivantes : ** CodeSystem-TRE-R249-Sexe : représentation des sexes humains par un code alphabétique** CodeSystem-TRE-R267-SexeProvenanceISO : norme ISO 5218 qui définit la représentation des sexes humains par un code numérique** CodeSystem-TRE-R303-HL7v3AdministrativeGender : reprise de la terminologie HL7 v3 AdministrativeGender** ConceptMap-ASS-A15-SexeProvenanceISO-Sexe : table d'association entre les nomenclatures CodeSystem-TRE-R267-SexeProvenanceISO, CodeSystem-TRE-R249-Sexe" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.sexe" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "preferred" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/mos/ValueSet/sexe-vs|0.1.0-ballot"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/mos/ValueSet/sexe-vs?version=0.1.0-ballot>
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/mos/ValueSet/sexe-vs|0.1.0-ballot" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/sexe-vs|0.1.0-ballot>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.langueParlee" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.langueParlee" ] ;
-       fhir:short [ fhir:v "Langue parlée par la personne, y compris le français." ] ;
-       fhir:definition [ fhir:v "Langue parlée par la personne, y compris le français." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "*" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.langueParlee" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "*" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.langueParlee" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.langueParlee" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Langue parlée par la personne, y compris le français." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Langue parlée par la personne, y compris le français." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.langueParlee" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LangueParlee"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LangueParlee>
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.situationFamiliale" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.situationFamiliale" ] ;
-       fhir:short [ fhir:v "Situation familiale de la personne (célibataire, divorcée, etc.).Les valeurs de ce code sont répertoriées dans plusieurs nomenclatures notamment:- la liste de la Déclaration Automatisée des Données Sociales Unifiée (DADS-U):01: célibataire02: marié(e)03: divorcé(e)04: séparé(e)05: veuf, veuve06: vie maritale07: PACS90: non connueetc.- Liste de codes HL7 \"MaritalStatus\":A: Annulled, marriage contract has been declared null and to not have existedD: Divorced, marriage contract has been declared dissolved and inactiveI: Interlocutory, subject to an Interlocutory DecreeL: Legally separatedM: Married, a current marriage contract is activeP: Polygamous, more than 1 current spouseS: Never Married, no marriage contract has ever been enteredT: Domestic partner, person declares that a domestic partner relationship exists.U: Unmarried, currently not in a marriage contract.W: Widowed, the spouse has died" ] ;
-       fhir:definition [ fhir:v "Situation familiale de la personne (célibataire, divorcée, etc.).Les valeurs de ce code sont répertoriées dans plusieurs nomenclatures notamment:- la liste de la Déclaration Automatisée des Données Sociales Unifiée (DADS-U):01: célibataire02: marié(e)03: divorcé(e)04: séparé(e)05: veuf, veuve06: vie maritale07: PACS90: non connueetc.- Liste de codes HL7 \"MaritalStatus\":A: Annulled, marriage contract has been declared null and to not have existedD: Divorced, marriage contract has been declared dissolved and inactiveI: Interlocutory, subject to an Interlocutory DecreeL: Legally separatedM: Married, a current marriage contract is activeP: Polygamous, more than 1 current spouseS: Never Married, no marriage contract has ever been enteredT: Domestic partner, person declares that a domestic partner relationship exists.U: Unmarried, currently not in a marriage contract.W: Widowed, the spouse has died" ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.situationFamiliale" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/LangueParlee" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.situationFamiliale" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.situationFamiliale" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Situation familiale de la personne (célibataire, divorcée, etc.).Les valeurs de ce code sont répertoriées dans plusieurs nomenclatures notamment:- la liste de la Déclaration Automatisée des Données Sociales Unifiée (DADS-U):01: célibataire02: marié(e)03: divorcé(e)04: séparé(e)05: veuf, veuve06: vie maritale07: PACS90: non connueetc.- Liste de codes HL7 \"MaritalStatus\":A: Annulled, marriage contract has been declared null and to not have existedD: Divorced, marriage contract has been declared dissolved and inactiveI: Interlocutory, subject to an Interlocutory DecreeL: Legally separatedM: Married, a current marriage contract is activeP: Polygamous, more than 1 current spouseS: Never Married, no marriage contract has ever been enteredT: Domestic partner, person declares that a domestic partner relationship exists.U: Unmarried, currently not in a marriage contract.W: Widowed, the spouse has died" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Situation familiale de la personne (célibataire, divorcée, etc.).Les valeurs de ce code sont répertoriées dans plusieurs nomenclatures notamment:- la liste de la Déclaration Automatisée des Données Sociales Unifiée (DADS-U):01: célibataire02: marié(e)03: divorcé(e)04: séparé(e)05: veuf, veuve06: vie maritale07: PACS90: non connueetc.- Liste de codes HL7 \"MaritalStatus\":A: Annulled, marriage contract has been declared null and to not have existedD: Divorced, marriage contract has been declared dissolved and inactiveI: Interlocutory, subject to an Interlocutory DecreeL: Legally separatedM: Married, a current marriage contract is activeP: Polygamous, more than 1 current spouseS: Never Married, no marriage contract has ever been enteredT: Domestic partner, person declares that a domestic partner relationship exists.U: Unmarried, currently not in a marriage contract.W: Widowed, the spouse has died" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.situationFamiliale" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.dateNaissance" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.dateNaissance" ] ;
-       fhir:short [ fhir:v "Date de naissance de la personne.A noter que l'âge de la personne ne figure pas dans le MOS. Cette information peut être calculée à partir de la date de naissance." ] ;
-       fhir:definition [ fhir:v "Date de naissance de la personne.A noter que l'âge de la personne ne figure pas dans le MOS. Cette information peut être calculée à partir de la date de naissance." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.dateNaissance" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.dateNaissance" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.dateNaissance" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date de naissance de la personne.A noter que l'âge de la personne ne figure pas dans le MOS. Cette information peut être calculée à partir de la date de naissance." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date de naissance de la personne.A noter que l'âge de la personne ne figure pas dans le MOS. Cette information peut être calculée à partir de la date de naissance." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.dateNaissance" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "date"^^xsd:anyURI ;
-           fhir:l fhir:date
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.dateDeces" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.dateDeces" ] ;
-       fhir:short [ fhir:v "Date de décès de la personne." ] ;
-       fhir:definition [ fhir:v "Date de décès de la personne." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.dateDeces" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.dateDeces" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.dateDeces" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date de décès de la personne." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date de décès de la personne." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.dateDeces" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "date"^^xsd:anyURI ;
-           fhir:l fhir:date
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.communeNaissance" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.communeNaissance" ] ;
-       fhir:short [ fhir:v "Commune de naissance de la personne.Code officiel géographique (COG) de la commune." ] ;
-       fhir:definition [ fhir:v "Commune de naissance de la personne.Code officiel géographique (COG) de la commune." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.communeNaissance" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.communeNaissance" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.communeNaissance" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Commune de naissance de la personne.Code officiel géographique (COG) de la commune." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Commune de naissance de la personne.Code officiel géographique (COG) de la commune." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.communeNaissance" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "preferred" ] ;
-         fhir:valueSet [
-           fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM?vs"^^xsd:anyURI ;
-           fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM?vs>
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM?vs" ;
+           fhir:link <https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM?vs>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.departementNaissance" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.departementNaissance" ] ;
-       fhir:short [ fhir:v "Département de naissance de la personne.Code officiel géographique (COG) du département." ] ;
-       fhir:definition [ fhir:v "Département de naissance de la personne.Code officiel géographique (COG) du département." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.departementNaissance" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.departementNaissance" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.departementNaissance" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Département de naissance de la personne.Code officiel géographique (COG) du département." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Département de naissance de la personne.Code officiel géographique (COG) du département." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.departementNaissance" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "preferred" ] ;
-         fhir:valueSet [
-           fhir:v "https://mos.esante.gouv.fr/NOS/TRE_G09-DepartementOM/FHIR/TRE-G09-DepartementOM?vs"^^xsd:anyURI ;
-           fhir:l <https://mos.esante.gouv.fr/NOS/TRE_G09-DepartementOM/FHIR/TRE-G09-DepartementOM?vs>
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://mos.esante.gouv.fr/NOS/TRE_G09-DepartementOM/FHIR/TRE-G09-DepartementOM?vs" ;
+           fhir:link <https://mos.esante.gouv.fr/NOS/TRE_G09-DepartementOM/FHIR/TRE-G09-DepartementOM?vs>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.paysNaissance" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.paysNaissance" ] ;
-       fhir:short [ fhir:v "Pays de naissance de la personne.Code officiel géographique (COG) du pays." ] ;
-       fhir:definition [ fhir:v "Pays de naissance de la personne.Code officiel géographique (COG) du pays." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.paysNaissance" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.paysNaissance" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.paysNaissance" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Pays de naissance de la personne.Code officiel géographique (COG) du pays." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Pays de naissance de la personne.Code officiel géographique (COG) du pays." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.paysNaissance" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "preferred" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/mos/ValueSet/paysNaissance-vs|0.1.0-ballot"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/mos/ValueSet/paysNaissance-vs?version=0.1.0-ballot>
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/mos/ValueSet/paysNaissance-vs|0.1.0-ballot" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/paysNaissance-vs|0.1.0-ballot>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.lieuNaissance" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.lieuNaissance" ] ;
-       fhir:short [ fhir:v "Lieu de naissance de la personne.Code officiel géographique (COG) de la commune (France) ou du pays." ] ;
-       fhir:definition [ fhir:v "Lieu de naissance de la personne.Code officiel géographique (COG) de la commune (France) ou du pays." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.lieuNaissance" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.lieuNaissance" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.lieuNaissance" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lieu de naissance de la personne.Code officiel géographique (COG) de la commune (France) ou du pays." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lieu de naissance de la personne.Code officiel géographique (COG) de la commune (France) ou du pays." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.lieuNaissance" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "preferred" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/mos/ValueSet/lieuNaissance-vs|0.1.0-ballot"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/mos/ValueSet/lieuNaissance-vs?version=0.1.0-ballot>
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/mos/ValueSet/lieuNaissance-vs|0.1.0-ballot" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/lieuNaissance-vs|0.1.0-ballot>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.statutEtatCivil" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.statutEtatCivil" ] ;
-       fhir:short [ fhir:v "Statut de la demande de certification auprès de l'organisme certificateur." ] ;
-       fhir:definition [ fhir:v "Statut de la demande de certification auprès de l'organisme certificateur." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.statutEtatCivil" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.statutEtatCivil" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.statutEtatCivil" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Statut de la demande de certification auprès de l'organisme certificateur." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Statut de la demande de certification auprès de l'organisme certificateur." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.statutEtatCivil" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "preferred" ] ;
-         fhir:valueSet [
-           fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R31-StatutEtatCivil/FHIR/TRE-R31-StatutEtatCivil?vs"^^xsd:anyURI ;
-           fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R31-StatutEtatCivil/FHIR/TRE-R31-StatutEtatCivil?vs>
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R31-StatutEtatCivil/FHIR/TRE-R31-StatutEtatCivil?vs" ;
+           fhir:link <https://mos.esante.gouv.fr/NOS/TRE_R31-StatutEtatCivil/FHIR/TRE-R31-StatutEtatCivil?vs>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.dateStatutEtatCivil" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.dateStatutEtatCivil" ] ;
-       fhir:short [ fhir:v "Date de transmission du statut d’état civil de la personne par l’organisme certificateur d’état-civil." ] ;
-       fhir:definition [ fhir:v "Date de transmission du statut d’état civil de la personne par l’organisme certificateur d’état-civil." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.dateStatutEtatCivil" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.dateStatutEtatCivil" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.dateStatutEtatCivil" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date de transmission du statut d’état civil de la personne par l’organisme certificateur d’état-civil." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date de transmission du statut d’état civil de la personne par l’organisme certificateur d’état-civil." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.dateStatutEtatCivil" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "date"^^xsd:anyURI ;
-           fhir:l fhir:date
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.dateAcquisitionNatFR" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.dateAcquisitionNatFR" ] ;
-       fhir:short [ fhir:v "Date d'acquisition de la nationalité française, renseignée uniquement si la nationalité actuelle est française et qu'elle n’a pas été acquise à la naissance." ] ;
-       fhir:definition [ fhir:v "Date d'acquisition de la nationalité française, renseignée uniquement si la nationalité actuelle est française et qu'elle n’a pas été acquise à la naissance." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.dateAcquisitionNatFR" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.dateAcquisitionNatFR" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.dateAcquisitionNatFR" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date d'acquisition de la nationalité française, renseignée uniquement si la nationalité actuelle est française et qu'elle n’a pas été acquise à la naissance." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date d'acquisition de la nationalité française, renseignée uniquement si la nationalité actuelle est française et qu'elle n’a pas été acquise à la naissance." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.dateAcquisitionNatFR" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "date"^^xsd:anyURI ;
-           fhir:l fhir:date
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.paysNationalite" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.paysNationalite" ] ;
-       fhir:short [ fhir:v "Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.Attribut associé aux nomenclatures suivantes :**CodeSystem-TRE-R268-PaysProvenanceISO : provient de la norme ISO 3166-1 (code alpha-2) qui définit la représentation des noms de pays par un code à deux lettres**CodeSystem-TRE-R20-Pays : provient du code officiel géographique (COG)**CodeSystem-TRE-R89-RegroupementPays : espace de pays conventionné" ] ;
-       fhir:definition [ fhir:v "Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.Attribut associé aux nomenclatures suivantes :**CodeSystem-TRE-R268-PaysProvenanceISO : provient de la norme ISO 3166-1 (code alpha-2) qui définit la représentation des noms de pays par un code à deux lettres**CodeSystem-TRE-R20-Pays : provient du code officiel géographique (COG)**CodeSystem-TRE-R89-RegroupementPays : espace de pays conventionné" ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.paysNationalite" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.paysNationalite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.paysNationalite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.Attribut associé aux nomenclatures suivantes :**CodeSystem-TRE-R268-PaysProvenanceISO : provient de la norme ISO 3166-1 (code alpha-2) qui définit la représentation des noms de pays par un code à deux lettres**CodeSystem-TRE-R20-Pays : provient du code officiel géographique (COG)**CodeSystem-TRE-R89-RegroupementPays : espace de pays conventionné" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Pays de nationalité actuelle ou rattachement de la nationalité à un espace de pays conventionné.Attribut associé aux nomenclatures suivantes :**CodeSystem-TRE-R268-PaysProvenanceISO : provient de la norme ISO 3166-1 (code alpha-2) qui définit la représentation des noms de pays par un code à deux lettres**CodeSystem-TRE-R20-Pays : provient du code officiel géographique (COG)**CodeSystem-TRE-R89-RegroupementPays : espace de pays conventionné" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.paysNationalite" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "preferred" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/mos/ValueSet/paysNationalite-vs|0.1.0-ballot"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/mos/ValueSet/paysNationalite-vs?version=0.1.0-ballot>
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/mos/ValueSet/paysNationalite-vs|0.1.0-ballot" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/paysNationalite-vs|0.1.0-ballot>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.paysResidence" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.paysResidence" ] ;
-       fhir:short [ fhir:v "Pays où séjourne la personne de façon permanente." ] ;
-       fhir:definition [ fhir:v "Pays où séjourne la personne de façon permanente." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.paysResidence" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.paysResidence" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.paysResidence" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Pays où séjourne la personne de façon permanente." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Pays où séjourne la personne de façon permanente." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.paysResidence" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "preferred" ] ;
-         fhir:valueSet [
-           fhir:v "https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays?vs"^^xsd:anyURI ;
-           fhir:l <https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays?vs>
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays?vs" ;
+           fhir:link <https://mos.esante.gouv.fr/NOS/TRE_R20-Pays/FHIR/TRE-R20-Pays?vs>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.professionCategorieSocioProfessionnelle" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.professionCategorieSocioProfessionnelle" ] ;
-       fhir:short [ fhir:v "Profession et catégorie socio-professionnelle de la personne (PCS). Ce code provient de la nomenclature des professions et catégories socioprofessionnelles (PCS) de l'INSEE." ] ;
-       fhir:definition [ fhir:v "Profession et catégorie socio-professionnelle de la personne (PCS). Ce code provient de la nomenclature des professions et catégories socioprofessionnelles (PCS) de l'INSEE." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.professionCategorieSocioProfessionnelle" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.professionCategorieSocioProfessionnelle" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.professionCategorieSocioProfessionnelle" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Profession et catégorie socio-professionnelle de la personne (PCS). Ce code provient de la nomenclature des professions et catégories socioprofessionnelles (PCS) de l'INSEE." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Profession et catégorie socio-professionnelle de la personne (PCS). Ce code provient de la nomenclature des professions et catégories socioprofessionnelles (PCS) de l'INSEE." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.professionCategorieSocioProfessionnelle" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "preferred" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/mos/ValueSet/professionCategorieSocioProfessionnelle-vs|0.1.0-ballot"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/mos/ValueSet/professionCategorieSocioProfessionnelle-vs?version=0.1.0-ballot>
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/mos/ValueSet/professionCategorieSocioProfessionnelle-vs|0.1.0-ballot" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/mos/ValueSet/professionCategorieSocioProfessionnelle-vs|0.1.0-ballot>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.causeMortalite" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.causeMortalite" ] ;
-       fhir:short [ fhir:v "Une ou plusieurs causes ayant entraîné la mort de la personne. La liste des codes est en cours de constitution. Certains codes proviennent des niveaux 3 et 4 de la CIM 10, en cas de décès dû à une pathologie." ] ;
-       fhir:definition [ fhir:v "Une ou plusieurs causes ayant entraîné la mort de la personne. La liste des codes est en cours de constitution. Certains codes proviennent des niveaux 3 et 4 de la CIM 10, en cas de décès dû à une pathologie." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.causeMortalite" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.causeMortalite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.causeMortalite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Une ou plusieurs causes ayant entraîné la mort de la personne. La liste des codes est en cours de constitution. Certains codes proviennent des niveaux 3 et 4 de la CIM 10, en cas de décès dû à une pathologie." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Une ou plusieurs causes ayant entraîné la mort de la personne. La liste des codes est en cours de constitution. Certains codes proviennent des niveaux 3 et 4 de la CIM 10, en cas de décès dû à une pathologie." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.causeMortalite" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.tailleCorporelle" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.tailleCorporelle" ] ;
-       fhir:short [ fhir:v "Taille du corps de la personne exprimée dans une unité de mesure (m, cm, etc.).Synonymes: grandeur corporelle, grandeur du corps, hauteur corporelle, hauteur du corps, longueur corporelle." ] ;
-       fhir:definition [ fhir:v "Taille du corps de la personne exprimée dans une unité de mesure (m, cm, etc.).Synonymes: grandeur corporelle, grandeur du corps, hauteur corporelle, hauteur du corps, longueur corporelle." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.tailleCorporelle" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.tailleCorporelle" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.tailleCorporelle" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Taille du corps de la personne exprimée dans une unité de mesure (m, cm, etc.).Synonymes: grandeur corporelle, grandeur du corps, hauteur corporelle, hauteur du corps, longueur corporelle." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Taille du corps de la personne exprimée dans une unité de mesure (m, cm, etc.).Synonymes: grandeur corporelle, grandeur du corps, hauteur corporelle, hauteur du corps, longueur corporelle." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.tailleCorporelle" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Quantity"^^xsd:anyURI ;
-           fhir:l fhir:Quantity
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.poidsCorporel" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.poidsCorporel" ] ;
-       fhir:short [ fhir:v "Masse du corps de la personne exprimée dans une unité de mesure (kg, g, etc.)." ] ;
-       fhir:definition [ fhir:v "Masse du corps de la personne exprimée dans une unité de mesure (kg, g, etc.)." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.poidsCorporel" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.poidsCorporel" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.poidsCorporel" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Masse du corps de la personne exprimée dans une unité de mesure (kg, g, etc.)." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Masse du corps de la personne exprimée dans une unité de mesure (kg, g, etc.)." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.poidsCorporel" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Quantity"^^xsd:anyURI ;
-           fhir:l fhir:Quantity
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.surfaceCorporelle" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.surfaceCorporelle" ] ;
-       fhir:short [ fhir:v "Surface du corps de la personne, c'est à dire la mesure en deux dimensions de la surface externe de la peau recouvrant le corps, exprimée dans une unité de mesure (par exemple, en m2).Calcul de la surface corporelle:** Calcul de la surface corporelle chez un adulte (>= à 40 Kg + taille renseignée) :La surface corporelle est calculée selon la formule suivante (Formule de BOYD) :SC = 0,0001 x (3,207) x (P0,7285-0,0188logP) x (T0,3) avec T en cm, P en grammes et Log le logarithme décimal.** Calcul de la surface corporelle chez un petit enfant (poids < 40 Kg):Il convient d'utiliser une formule adaptée au calcul de la surface corporelle chez le petit enfant car elle s'affranchit de la taille. La formule est à utiliser pour tous les enfants dont le poids est inférieur à 40 Kg.La surface corporelle est alors calculée selon la formule suivante :SC = (4 x P + 7) / (P + 90) avec P en Kg, le résultat SC est donné en m2." ] ;
-       fhir:definition [ fhir:v "Surface du corps de la personne, c'est à dire la mesure en deux dimensions de la surface externe de la peau recouvrant le corps, exprimée dans une unité de mesure (par exemple, en m2).Calcul de la surface corporelle:** Calcul de la surface corporelle chez un adulte (>= à 40 Kg + taille renseignée) :La surface corporelle est calculée selon la formule suivante (Formule de BOYD) :SC = 0,0001 x (3,207) x (P0,7285-0,0188logP) x (T0,3) avec T en cm, P en grammes et Log le logarithme décimal.** Calcul de la surface corporelle chez un petit enfant (poids < 40 Kg):Il convient d'utiliser une formule adaptée au calcul de la surface corporelle chez le petit enfant car elle s'affranchit de la taille. La formule est à utiliser pour tous les enfants dont le poids est inférieur à 40 Kg.La surface corporelle est alors calculée selon la formule suivante :SC = (4 x P + 7) / (P + 90) avec P en Kg, le résultat SC est donné en m2." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.surfaceCorporelle" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.surfaceCorporelle" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.surfaceCorporelle" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Surface du corps de la personne, c'est à dire la mesure en deux dimensions de la surface externe de la peau recouvrant le corps, exprimée dans une unité de mesure (par exemple, en m2).Calcul de la surface corporelle:** Calcul de la surface corporelle chez un adulte (>= à 40 Kg + taille renseignée) :La surface corporelle est calculée selon la formule suivante (Formule de BOYD) :SC = 0,0001 x (3,207) x (P0,7285-0,0188logP) x (T0,3) avec T en cm, P en grammes et Log le logarithme décimal.** Calcul de la surface corporelle chez un petit enfant (poids < 40 Kg):Il convient d'utiliser une formule adaptée au calcul de la surface corporelle chez le petit enfant car elle s'affranchit de la taille. La formule est à utiliser pour tous les enfants dont le poids est inférieur à 40 Kg.La surface corporelle est alors calculée selon la formule suivante :SC = (4 x P + 7) / (P + 90) avec P en Kg, le résultat SC est donné en m2." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Surface du corps de la personne, c'est à dire la mesure en deux dimensions de la surface externe de la peau recouvrant le corps, exprimée dans une unité de mesure (par exemple, en m2).Calcul de la surface corporelle:** Calcul de la surface corporelle chez un adulte (>= à 40 Kg + taille renseignée) :La surface corporelle est calculée selon la formule suivante (Formule de BOYD) :SC = 0,0001 x (3,207) x (P0,7285-0,0188logP) x (T0,3) avec T en cm, P en grammes et Log le logarithme décimal.** Calcul de la surface corporelle chez un petit enfant (poids < 40 Kg):Il convient d'utiliser une formule adaptée au calcul de la surface corporelle chez le petit enfant car elle s'affranchit de la taille. La formule est à utiliser pour tous les enfants dont le poids est inférieur à 40 Kg.La surface corporelle est alors calculée selon la formule suivante :SC = (4 x P + 7) / (P + 90) avec P en Kg, le résultat SC est donné en m2." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.surfaceCorporelle" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Quantity"^^xsd:anyURI ;
-           fhir:l fhir:Quantity
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.indiceMasseCorporelle" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.indiceMasseCorporelle" ] ;
-       fhir:short [ fhir:v "Indice de masse corporelle (IMC).L'IMC résulte du calcul suivant: IMC = poids (kg) / taille (m)²L'affichage du résultat de l'IMC varie selon la valeur obtenue :** IMC < 18.5 : maigreur** 18.5 <= IMC <= 25 : corpulence normale** 25 < IMC <= 30 : surpoids** IMC > 30 : obésité" ] ;
-       fhir:definition [ fhir:v "Indice de masse corporelle (IMC).L'IMC résulte du calcul suivant: IMC = poids (kg) / taille (m)²L'affichage du résultat de l'IMC varie selon la valeur obtenue :** IMC < 18.5 : maigreur** 18.5 <= IMC <= 25 : corpulence normale** 25 < IMC <= 30 : surpoids** IMC > 30 : obésité" ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.indiceMasseCorporelle" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.indiceMasseCorporelle" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.indiceMasseCorporelle" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Indice de masse corporelle (IMC).L'IMC résulte du calcul suivant: IMC = poids (kg) / taille (m)²L'affichage du résultat de l'IMC varie selon la valeur obtenue :** IMC < 18.5 : maigreur** 18.5 <= IMC <= 25 : corpulence normale** 25 < IMC <= 30 : surpoids** IMC > 30 : obésité" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Indice de masse corporelle (IMC).L'IMC résulte du calcul suivant: IMC = poids (kg) / taille (m)²L'affichage du résultat de l'IMC varie selon la valeur obtenue :** IMC < 18.5 : maigreur** 18.5 <= IMC <= 25 : corpulence normale** 25 < IMC <= 30 : surpoids** IMC > 30 : obésité" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.indiceMasseCorporelle" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Quantity"^^xsd:anyURI ;
-           fhir:l fhir:Quantity
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.Parent" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.Parent" ] ;
-       fhir:short [ fhir:v "Lien vers la classe Parent" ] ;
-       fhir:definition [ fhir:v "Lien vers la classe Parent" ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "*" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.Parent" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "*" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Quantity" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.Parent" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.Parent" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe Parent" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe Parent" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.Parent" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Parent"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Parent>
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.MesureProtection" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.MesureProtection" ] ;
-       fhir:short [ fhir:v "Lien vers la classe MesureProtection" ] ;
-       fhir:definition [ fhir:v "Lien vers la classe MesureProtection" ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.MesureProtection" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Parent" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.MesureProtection" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.MesureProtection" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe MesureProtection" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe MesureProtection" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.MesureProtection" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/MesureProtection"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/MesureProtection>
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.AidantDemarche" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.AidantDemarche" ] ;
-       fhir:short [ fhir:v "Lien vers la classe AidantDemarche" ] ;
-       fhir:definition [ fhir:v "Lien vers la classe AidantDemarche" ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "PersonnePhysique.AidantDemarche" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/MesureProtection" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.AidantDemarche" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.AidantDemarche" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe AidantDemarche" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe AidantDemarche" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "PersonnePhysique.AidantDemarche" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AidantDemarche"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AidantDemarche>
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.metadonnee" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.metadonnee" ] ;
-       fhir:short [ fhir:v "Informations relatives à la gestion des données de la personne physique dans le ROR." ] ;
-       fhir:definition [ fhir:v "Informations relatives à la gestion des données de la personne physique dans le ROR." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "ror-personne-physique.metadonnee" ] ;
-         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/AidantDemarche" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.metadonnee" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.metadonnee" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Informations relatives à la gestion des données de la personne physique dans le ROR." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Informations relatives à la gestion des données de la personne physique dans le ROR." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ror-personne-physique.metadonnee" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee>
-         ]
-       ] )
-     ] )
-  ] ; # 
-  fhir:differential [
-     fhir:element ( [
-       fhir:id [ fhir:v "ror-personne-physique" ] ;
-       fhir:path [ fhir:v "ror-personne-physique" ] ;
-       fhir:short [ fhir:v "Personne physique dans le contexte ROR" ] ;
-       fhir:definition [ fhir:v "Spécialisation ROR de la PersonnePhysique du MOS." ]
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.civilite" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.civilite" ] ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite?version=0.1.0>
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee" ]
+       ]
+     ]
+  ] ;
+  fhir:StructureDefinition.differential [
+     fhir:StructureDefinition.differential.element [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Personne physique dans le contexte ROR" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Spécialisation ROR de la PersonnePhysique du MOS." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.civilite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.civilite" ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-civilite|0.1.0>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-personne-physique.metadonnee" ] ;
-       fhir:path [ fhir:v "ror-personne-physique.metadonnee" ] ;
-       fhir:short [ fhir:v "Informations relatives à la gestion des données de la personne physique dans le ROR." ] ;
-       fhir:definition [ fhir:v "Informations relatives à la gestion des données de la personne physique dans le ROR." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee>
-         ]
-       ] )
-     ] )
-  ] . # 
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-personne-physique.metadonnee" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-personne-physique.metadonnee" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Informations relatives à la gestion des données de la personne physique dans le ROR." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Informations relatives à la gestion des données de la personne physique dans le ROR." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-personne-physique.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

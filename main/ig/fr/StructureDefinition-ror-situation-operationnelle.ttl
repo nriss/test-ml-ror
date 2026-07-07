@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,360 +7,343 @@
 
 <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-situation-operationnelle> a fhir:StructureDefinition ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "ror-situation-operationnelle"] ; # 
-  fhir:language [ fhir:v "fr"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DéfinitionStructure ror-situation-operationnelle</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-situation-operationnelle-definitions.html#ror-situation-operationnelle\" title=\"Spécialisation ROR de la SituationOperationnelle du MOS.\">ror-situation-operationnelle</a><a name=\"ror-situation-operationnelle\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\">SituationOperationnelle(0.1.0-ballot)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Situation opérationnelle d'un professionnel dans le contexte ROR<br/><br/>Éléments définis dans les ancêtres :<a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"Identifiant de la situation opérationnelle, unique et persistant au niveau national, obtenu par l’association de l’identifiant de l’offre opérationnelle suivi du caractère « / » puis de l’identifiant du professionnel.\">identifiantSituationOperationnelle</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"Le mode d'exercice correspond au statut du professionnel lorsqu'il exerce dans le cadre de l'offre décrite.\">modeExerciceOffre</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"La compétence spécifique correspond à une capacité ou connaissance reconnue qui permet ou facilite l’accueil d’une personne. La compétence spécifique n’est ni une spécialité ordinale, ni une profession.\">competenceSpecifique</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"Décrit le planning d'activité du professionnel.\">precisionHoraire</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"Secteur de conventionnement du professionnel libéral auquel il a adhéré auprès de l'Assurance Maladie.\">secteurConventionnement</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"L'Option pratique tarifaire maîtrisée (OPTAM) a remplacé le Contrat d'accès aux soins (CAS) en 2017.L’Option pratique tarifaire maîtrisée (OPTAM) est un dispositif proposé par l’Assurance Maladie aux médecins conventionnés ayant pour objectif principal de faciliter l’accès aux soins en limitant, sans les supprimer, les dépassements d’honoraires.Les médecins exerçant une spécialité chirurgicale ou de chirurgie obstétrique, qui ont réalisé au moins 50 actes de chirurgie ou d'obstérique ont la possibilité d'adhérer à l'Option pratique tarifaire maîtrisée chirurgie et obstétrique (OPTAM-CO).Synonyme : optionPratiqueTarifaireMaîtrisée\">optionContratAccesAuxSoins</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"L’indicateur Carte Vitale acceptée précise si le professionnel, dans le cadre de cette situation opérationnelle, dispose des moyens techniques pour prendre en charge la carte vitale ou pas. 0 : pas de prise en charge de la carte vitale1 : prise en charge de la carte vitale.\">carteVitaleAcceptee</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"Adresse de télécommunication du professionnel dans le cadre de l'offre décrite.\">telecommunication</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"Lien vers la classe ExerciceProfessionnel\">ExerciceProfessionnel</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"Lien vers la classe OffreOperationnelle\">OffreOperationnelle</a><br/><span style=\"font-weight:bold\">Les instances de ce modèle logique peuvent être la cible d'une référence</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-situation-operationnelle-definitions.html#ror-situation-operationnelle.modeExerciceOffre\">modeExerciceOffre</a><a name=\"ror-situation-operationnelle.modeExerciceOffre\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Mode d'exercice du professionnel dans le cadre de l'offre (obligatoire dans le ROR)<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-mode-exercice.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-exercice\" class=\"binding\">JDVRORModeExercice (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-situation-operationnelle-definitions.html#ror-situation-operationnelle.competenceSpecifique\">competenceSpecifique</a><a name=\"ror-situation-operationnelle.competenceSpecifique\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">La compétence spécifique correspond à une capacité ou connaissance reconnue qui permet ou facilite l’accueil d’une personne. La compétence spécifique n’est ni une spécialité ordinale, ni une profession.</span><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-competence-specifique.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence-specifique\" class=\"binding\">JDVRORCompetenceSpecifique (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-situation-operationnelle-definitions.html#ror-situation-operationnelle.secteurConventionnement\">secteurConventionnement</a><a name=\"ror-situation-operationnelle.secteurConventionnement\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Secteur de conventionnement du professionnel libéral auquel il a adhéré auprès de l'Assurance Maladie.</span><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-secteur-conventionnement.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-secteur-conventionnement\" class=\"binding\">JDVRORSecteurConventionnement (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-situation-operationnelle-definitions.html#ror-situation-operationnelle.metadonnee\" title=\"Informations relatives à la gestion des données de la situation opérationnelle dans le ROR.\">metadonnee</a><a name=\"ror-situation-operationnelle.metadonnee\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-ror-metadonnee.html\">ror-metadonnee</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Informations relatives à la gestion des données de la situation opérationnelle dans le ROR.</td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:extension ( [
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics>
-     ] ;
-     fhir:value [
-       a fhir:Code ;
-       fhir:v "can-be-target"
+  fhir:Resource.id [ fhir:value "ror-situation-operationnelle"] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DéfinitionStructure ror-situation-operationnelle</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-situation-operationnelle-definitions.html#ror-situation-operationnelle\" title=\"Spécialisation ROR de la SituationOperationnelle du MOS.\">ror-situation-operationnelle</a><a name=\"ror-situation-operationnelle\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\">SituationOperationnelle(0.1.0-ballot)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Situation opérationnelle d'un professionnel dans le contexte ROR<br/><br/>Éléments définis dans les ancêtres :<a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"Identifiant de la situation opérationnelle, unique et persistant au niveau national, obtenu par l’association de l’identifiant de l’offre opérationnelle suivi du caractère « / » puis de l’identifiant du professionnel.\">identifiantSituationOperationnelle</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"Le mode d'exercice correspond au statut du professionnel lorsqu'il exerce dans le cadre de l'offre décrite.\">modeExerciceOffre</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"La compétence spécifique correspond à une capacité ou connaissance reconnue qui permet ou facilite l’accueil d’une personne. La compétence spécifique n’est ni une spécialité ordinale, ni une profession.\">competenceSpecifique</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"Décrit le planning d'activité du professionnel.\">precisionHoraire</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"Secteur de conventionnement du professionnel libéral auquel il a adhéré auprès de l'Assurance Maladie.\">secteurConventionnement</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"L'Option pratique tarifaire maîtrisée (OPTAM) a remplacé le Contrat d'accès aux soins (CAS) en 2017.L’Option pratique tarifaire maîtrisée (OPTAM) est un dispositif proposé par l’Assurance Maladie aux médecins conventionnés ayant pour objectif principal de faciliter l’accès aux soins en limitant, sans les supprimer, les dépassements d’honoraires.Les médecins exerçant une spécialité chirurgicale ou de chirurgie obstétrique, qui ont réalisé au moins 50 actes de chirurgie ou d'obstérique ont la possibilité d'adhérer à l'Option pratique tarifaire maîtrisée chirurgie et obstétrique (OPTAM-CO).Synonyme : optionPratiqueTarifaireMaîtrisée\">optionContratAccesAuxSoins</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"L’indicateur Carte Vitale acceptée précise si le professionnel, dans le cadre de cette situation opérationnelle, dispose des moyens techniques pour prendre en charge la carte vitale ou pas. 0 : pas de prise en charge de la carte vitale1 : prise en charge de la carte vitale.\">carteVitaleAcceptee</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"Adresse de télécommunication du professionnel dans le cadre de l'offre décrite.\">telecommunication</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"Lien vers la classe ExerciceProfessionnel\">ExerciceProfessionnel</a>, <a href=\"https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/StructureDefinition-SituationOperationnelle.html\" title=\"Lien vers la classe OffreOperationnelle\">OffreOperationnelle</a><br/><span style=\"font-weight:bold\">Les instances de ce modèle logique peuvent être la cible d'une référence</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-situation-operationnelle-definitions.html#ror-situation-operationnelle.modeExerciceOffre\">modeExerciceOffre</a><a name=\"ror-situation-operationnelle.modeExerciceOffre\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Mode d'exercice du professionnel dans le cadre de l'offre (obligatoire dans le ROR)<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-mode-exercice.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-exercice\" class=\"binding\">JDVRORModeExercice (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-situation-operationnelle-definitions.html#ror-situation-operationnelle.competenceSpecifique\">competenceSpecifique</a><a name=\"ror-situation-operationnelle.competenceSpecifique\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">La compétence spécifique correspond à une capacité ou connaissance reconnue qui permet ou facilite l’accueil d’une personne. La compétence spécifique n’est ni une spécialité ordinale, ni une profession.</span><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-competence-specifique.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence-specifique\" class=\"binding\">JDVRORCompetenceSpecifique (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-situation-operationnelle-definitions.html#ror-situation-operationnelle.secteurConventionnement\">secteurConventionnement</a><a name=\"ror-situation-operationnelle.secteurConventionnement\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Secteur de conventionnement du professionnel libéral auquel il a adhéré auprès de l'Assurance Maladie.</span><br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-secteur-conventionnement.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-secteur-conventionnement\" class=\"binding\">JDVRORSecteurConventionnement (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-situation-operationnelle-definitions.html#ror-situation-operationnelle.metadonnee\" title=\"Informations relatives à la gestion des données de la situation opérationnelle dans le ROR.\">metadonnee</a><a name=\"ror-situation-operationnelle.metadonnee\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-ror-metadonnee.html\">ror-metadonnee</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Informations relatives à la gestion des données de la situation opérationnelle dans le ROR.</td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics" ] ;
+     fhir:Extension.valueCode [ fhir:value "can-be-target" ]
+  ] ;
+  fhir:StructureDefinition.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-situation-operationnelle"] ;
+  fhir:StructureDefinition.version [ fhir:value "0.1.0"] ;
+  fhir:StructureDefinition.name [ fhir:value "RORSituationOperationnelle"] ;
+  fhir:StructureDefinition.title [ fhir:value "ROR - Situation Opérationnelle"] ;
+  fhir:StructureDefinition.status [ fhir:value "draft"] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-07T12:24:33+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
+  fhir:StructureDefinition.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
      ]
-  ] ) ; # 
-  fhir:url [
-     fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-situation-operationnelle"^^xsd:anyURI ;
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-situation-operationnelle>
-  ] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
-  fhir:name [ fhir:v "RORSituationOperationnelle"] ; # 
-  fhir:title [ fhir:v "ROR - Situation Opérationnelle"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-06-10T12:57:58+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://esante.gouv.fr" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Spécialisation ROR de la SituationOperationnelle du MOS. Caractérise les conditions d'exercice du professionnel dans le cadre de l'offre décrite."] ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [
-         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
-         fhir:l <urn:iso:std:iso:3166>
+  ] ;
+  fhir:StructureDefinition.description [ fhir:value "Spécialisation ROR de la SituationOperationnelle du MOS. Caractérise les conditions d'exercice du professionnel dans le cadre de l'offre décrite."] ;
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
+  fhir:StructureDefinition.kind [ fhir:value "logical"] ;
+  fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean] ;
+  fhir:StructureDefinition.type [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-situation-operationnelle"] ;
+  fhir:StructureDefinition.baseDefinition [
+     fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SituationOperationnelle|0.1.0-ballot" ;
+     fhir:link <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SituationOperationnelle|0.1.0-ballot>
+  ] ;
+  fhir:StructureDefinition.derivation [ fhir:value "specialization"] ;
+  fhir:StructureDefinition.snapshot [
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version" ] ;
+       fhir:Extension.valueString [ fhir:value "0.1.0-ballot" ]
+     ] ;
+     fhir:StructureDefinition.snapshot.element [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-situation-operationnelle" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-situation-operationnelle" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Situation opérationnelle d'un professionnel dans le contexte ROR" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Spécialisation ROR de la SituationOperationnelle du MOS." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Base" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
        ] ;
-       fhir:code [ fhir:v "FR" ] ;
-       fhir:display [ fhir:v "France (la)" ]
-     ] )
-  ] ) ; # 
-  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
-  fhir:kind [ fhir:v "logical"] ; # 
-  fhir:abstract [ fhir:v false] ; # 
-  fhir:type [
-     fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-situation-operationnelle"^^xsd:anyURI ;
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-situation-operationnelle>
-  ] ; # 
-  fhir:baseDefinition [
-     fhir:v "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SituationOperationnelle|0.1.0-ballot"^^xsd:anyURI ;
-     fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/SituationOperationnelle?version=0.1.0-ballot>
-  ] ; # 
-  fhir:derivation [ fhir:v "specialization"] ; # 
-  fhir:snapshot [
-     fhir:extension ( [
-       fhir:url [
-         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version>
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-situation-operationnelle.identifiantSituationOperationnelle" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-situation-operationnelle.identifiantSituationOperationnelle" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Identifiant de la situation opérationnelle, unique et persistant au niveau national, obtenu par l’association de l’identifiant de l’offre opérationnelle suivi du caractère « / » puis de l’identifiant du professionnel." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Identifiant de la situation opérationnelle, unique et persistant au niveau national, obtenu par l’association de l’identifiant de l’offre opérationnelle suivi du caractère « / » puis de l’identifiant du professionnel." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "SituationOperationnelle.identifiantSituationOperationnelle" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:value [
-         a fhir:String ;
-         fhir:v "0.1.0-ballot"
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
        ]
-     ] ) ;
-     fhir:element ( [
-       fhir:id [ fhir:v "ror-situation-operationnelle" ] ;
-       fhir:path [ fhir:v "ror-situation-operationnelle" ] ;
-       fhir:short [ fhir:v "Situation opérationnelle d'un professionnel dans le contexte ROR" ] ;
-       fhir:definition [ fhir:v "Spécialisation ROR de la SituationOperationnelle du MOS." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "*" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "Base" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "*" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-situation-operationnelle.modeExerciceOffre" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-situation-operationnelle.modeExerciceOffre" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Mode d'exercice du professionnel dans le cadre de l'offre (obligatoire dans le ROR)" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Le mode d'exercice correspond au statut du professionnel lorsqu'il exerce dans le cadre de l'offre décrite." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "SituationOperationnelle.modeExerciceOffre" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:isModifier [ fhir:v false ]
-     ] [
-       fhir:id [ fhir:v "ror-situation-operationnelle.identifiantSituationOperationnelle" ] ;
-       fhir:path [ fhir:v "ror-situation-operationnelle.identifiantSituationOperationnelle" ] ;
-       fhir:short [ fhir:v "Identifiant de la situation opérationnelle, unique et persistant au niveau national, obtenu par l’association de l’identifiant de l’offre opérationnelle suivi du caractère « / » puis de l’identifiant du professionnel." ] ;
-       fhir:definition [ fhir:v "Identifiant de la situation opérationnelle, unique et persistant au niveau national, obtenu par l’association de l’identifiant de l’offre opérationnelle suivi du caractère « / » puis de l’identifiant du professionnel." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "SituationOperationnelle.identifiantSituationOperationnelle" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Identifier"^^xsd:anyURI ;
-           fhir:l fhir:Identifier
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-situation-operationnelle.modeExerciceOffre" ] ;
-       fhir:path [ fhir:v "ror-situation-operationnelle.modeExerciceOffre" ] ;
-       fhir:short [ fhir:v "Mode d'exercice du professionnel dans le cadre de l'offre (obligatoire dans le ROR)" ] ;
-       fhir:definition [ fhir:v "Le mode d'exercice correspond au statut du professionnel lorsqu'il exerce dans le cadre de l'offre décrite." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "SituationOperationnelle.modeExerciceOffre" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
-       ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-exercice|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-exercice?version=0.1.0>
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-exercice|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-exercice|0.1.0>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-situation-operationnelle.competenceSpecifique" ] ;
-       fhir:path [ fhir:v "ror-situation-operationnelle.competenceSpecifique" ] ;
-       fhir:short [ fhir:v "La compétence spécifique correspond à une capacité ou connaissance reconnue qui permet ou facilite l’accueil d’une personne. La compétence spécifique n’est ni une spécialité ordinale, ni une profession." ] ;
-       fhir:definition [ fhir:v "La compétence spécifique correspond à une capacité ou connaissance reconnue qui permet ou facilite l’accueil d’une personne. La compétence spécifique n’est ni une spécialité ordinale, ni une profession." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "*" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "SituationOperationnelle.competenceSpecifique" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "*" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-situation-operationnelle.competenceSpecifique" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-situation-operationnelle.competenceSpecifique" ] ;
+       fhir:ElementDefinition.short [ fhir:value "La compétence spécifique correspond à une capacité ou connaissance reconnue qui permet ou facilite l’accueil d’une personne. La compétence spécifique n’est ni une spécialité ordinale, ni une profession." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "La compétence spécifique correspond à une capacité ou connaissance reconnue qui permet ou facilite l’accueil d’une personne. La compétence spécifique n’est ni une spécialité ordinale, ni une profession." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "SituationOperationnelle.competenceSpecifique" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence-specifique|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence-specifique?version=0.1.0>
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence-specifique|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence-specifique|0.1.0>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-situation-operationnelle.precisionHoraire" ] ;
-       fhir:path [ fhir:v "ror-situation-operationnelle.precisionHoraire" ] ;
-       fhir:short [ fhir:v "Décrit le planning d'activité du professionnel." ] ;
-       fhir:definition [ fhir:v "Décrit le planning d'activité du professionnel." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "SituationOperationnelle.precisionHoraire" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-situation-operationnelle.precisionHoraire" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-situation-operationnelle.precisionHoraire" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Décrit le planning d'activité du professionnel." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Décrit le planning d'activité du professionnel." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "SituationOperationnelle.precisionHoraire" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Horaire"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Horaire>
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-situation-operationnelle.secteurConventionnement" ] ;
-       fhir:path [ fhir:v "ror-situation-operationnelle.secteurConventionnement" ] ;
-       fhir:short [ fhir:v "Secteur de conventionnement du professionnel libéral auquel il a adhéré auprès de l'Assurance Maladie." ] ;
-       fhir:definition [ fhir:v "Secteur de conventionnement du professionnel libéral auquel il a adhéré auprès de l'Assurance Maladie." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "SituationOperationnelle.secteurConventionnement" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Horaire" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-situation-operationnelle.secteurConventionnement" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-situation-operationnelle.secteurConventionnement" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Secteur de conventionnement du professionnel libéral auquel il a adhéré auprès de l'Assurance Maladie." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Secteur de conventionnement du professionnel libéral auquel il a adhéré auprès de l'Assurance Maladie." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "SituationOperationnelle.secteurConventionnement" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-secteur-conventionnement|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-secteur-conventionnement?version=0.1.0>
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-secteur-conventionnement|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-secteur-conventionnement|0.1.0>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-situation-operationnelle.optionContratAccesAuxSoins" ] ;
-       fhir:path [ fhir:v "ror-situation-operationnelle.optionContratAccesAuxSoins" ] ;
-       fhir:short [ fhir:v "L'Option pratique tarifaire maîtrisée (OPTAM) a remplacé le Contrat d'accès aux soins (CAS) en 2017.L’Option pratique tarifaire maîtrisée (OPTAM) est un dispositif proposé par l’Assurance Maladie aux médecins conventionnés ayant pour objectif principal de faciliter l’accès aux soins en limitant, sans les supprimer, les dépassements d’honoraires.Les médecins exerçant une spécialité chirurgicale ou de chirurgie obstétrique, qui ont réalisé au moins 50 actes de chirurgie ou d'obstérique ont la possibilité d'adhérer à l'Option pratique tarifaire maîtrisée chirurgie et obstétrique (OPTAM-CO).Synonyme : optionPratiqueTarifaireMaîtrisée" ] ;
-       fhir:definition [ fhir:v "L'Option pratique tarifaire maîtrisée (OPTAM) a remplacé le Contrat d'accès aux soins (CAS) en 2017.L’Option pratique tarifaire maîtrisée (OPTAM) est un dispositif proposé par l’Assurance Maladie aux médecins conventionnés ayant pour objectif principal de faciliter l’accès aux soins en limitant, sans les supprimer, les dépassements d’honoraires.Les médecins exerçant une spécialité chirurgicale ou de chirurgie obstétrique, qui ont réalisé au moins 50 actes de chirurgie ou d'obstérique ont la possibilité d'adhérer à l'Option pratique tarifaire maîtrisée chirurgie et obstétrique (OPTAM-CO).Synonyme : optionPratiqueTarifaireMaîtrisée" ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "SituationOperationnelle.optionContratAccesAuxSoins" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-situation-operationnelle.optionContratAccesAuxSoins" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-situation-operationnelle.optionContratAccesAuxSoins" ] ;
+       fhir:ElementDefinition.short [ fhir:value "L'Option pratique tarifaire maîtrisée (OPTAM) a remplacé le Contrat d'accès aux soins (CAS) en 2017.L’Option pratique tarifaire maîtrisée (OPTAM) est un dispositif proposé par l’Assurance Maladie aux médecins conventionnés ayant pour objectif principal de faciliter l’accès aux soins en limitant, sans les supprimer, les dépassements d’honoraires.Les médecins exerçant une spécialité chirurgicale ou de chirurgie obstétrique, qui ont réalisé au moins 50 actes de chirurgie ou d'obstérique ont la possibilité d'adhérer à l'Option pratique tarifaire maîtrisée chirurgie et obstétrique (OPTAM-CO).Synonyme : optionPratiqueTarifaireMaîtrisée" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "L'Option pratique tarifaire maîtrisée (OPTAM) a remplacé le Contrat d'accès aux soins (CAS) en 2017.L’Option pratique tarifaire maîtrisée (OPTAM) est un dispositif proposé par l’Assurance Maladie aux médecins conventionnés ayant pour objectif principal de faciliter l’accès aux soins en limitant, sans les supprimer, les dépassements d’honoraires.Les médecins exerçant une spécialité chirurgicale ou de chirurgie obstétrique, qui ont réalisé au moins 50 actes de chirurgie ou d'obstérique ont la possibilité d'adhérer à l'Option pratique tarifaire maîtrisée chirurgie et obstétrique (OPTAM-CO).Synonyme : optionPratiqueTarifaireMaîtrisée" ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "SituationOperationnelle.optionContratAccesAuxSoins" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "boolean"^^xsd:anyURI ;
-           fhir:l fhir:boolean
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-situation-operationnelle.carteVitaleAcceptee" ] ;
-       fhir:path [ fhir:v "ror-situation-operationnelle.carteVitaleAcceptee" ] ;
-       fhir:short [ fhir:v "L’indicateur Carte Vitale acceptée précise si le professionnel, dans le cadre de cette situation opérationnelle, dispose des moyens techniques pour prendre en charge la carte vitale ou pas. 0 : pas de prise en charge de la carte vitale1 : prise en charge de la carte vitale." ] ;
-       fhir:definition [ fhir:v "L’indicateur Carte Vitale acceptée précise si le professionnel, dans le cadre de cette situation opérationnelle, dispose des moyens techniques pour prendre en charge la carte vitale ou pas. 0 : pas de prise en charge de la carte vitale1 : prise en charge de la carte vitale." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "SituationOperationnelle.carteVitaleAcceptee" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-situation-operationnelle.carteVitaleAcceptee" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-situation-operationnelle.carteVitaleAcceptee" ] ;
+       fhir:ElementDefinition.short [ fhir:value "L’indicateur Carte Vitale acceptée précise si le professionnel, dans le cadre de cette situation opérationnelle, dispose des moyens techniques pour prendre en charge la carte vitale ou pas. 0 : pas de prise en charge de la carte vitale1 : prise en charge de la carte vitale." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "L’indicateur Carte Vitale acceptée précise si le professionnel, dans le cadre de cette situation opérationnelle, dispose des moyens techniques pour prendre en charge la carte vitale ou pas. 0 : pas de prise en charge de la carte vitale1 : prise en charge de la carte vitale." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "SituationOperationnelle.carteVitaleAcceptee" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "boolean"^^xsd:anyURI ;
-           fhir:l fhir:boolean
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-situation-operationnelle.telecommunication" ] ;
-       fhir:path [ fhir:v "ror-situation-operationnelle.telecommunication" ] ;
-       fhir:short [ fhir:v "Adresse de télécommunication du professionnel dans le cadre de l'offre décrite." ] ;
-       fhir:definition [ fhir:v "Adresse de télécommunication du professionnel dans le cadre de l'offre décrite." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "SituationOperationnelle.telecommunication" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "boolean" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-situation-operationnelle.telecommunication" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-situation-operationnelle.telecommunication" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Adresse de télécommunication du professionnel dans le cadre de l'offre décrite." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Adresse de télécommunication du professionnel dans le cadre de l'offre décrite." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "SituationOperationnelle.telecommunication" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication>
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-situation-operationnelle.ExerciceProfessionnel" ] ;
-       fhir:path [ fhir:v "ror-situation-operationnelle.ExerciceProfessionnel" ] ;
-       fhir:short [ fhir:v "Lien vers la classe ExerciceProfessionnel" ] ;
-       fhir:definition [ fhir:v "Lien vers la classe ExerciceProfessionnel" ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "SituationOperationnelle.ExerciceProfessionnel" ] ;
-         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/Telecommunication" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-situation-operationnelle.ExerciceProfessionnel" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-situation-operationnelle.ExerciceProfessionnel" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe ExerciceProfessionnel" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe ExerciceProfessionnel" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "SituationOperationnelle.ExerciceProfessionnel" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel>
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-situation-operationnelle.OffreOperationnelle" ] ;
-       fhir:path [ fhir:v "ror-situation-operationnelle.OffreOperationnelle" ] ;
-       fhir:short [ fhir:v "Lien vers la classe OffreOperationnelle" ] ;
-       fhir:definition [ fhir:v "Lien vers la classe OffreOperationnelle" ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "SituationOperationnelle.OffreOperationnelle" ] ;
-         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/ExerciceProfessionnel" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-situation-operationnelle.OffreOperationnelle" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-situation-operationnelle.OffreOperationnelle" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Lien vers la classe OffreOperationnelle" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Lien vers la classe OffreOperationnelle" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "SituationOperationnelle.OffreOperationnelle" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OffreOperationnelle"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OffreOperationnelle>
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-situation-operationnelle.metadonnee" ] ;
-       fhir:path [ fhir:v "ror-situation-operationnelle.metadonnee" ] ;
-       fhir:short [ fhir:v "Informations relatives à la gestion des données de la situation opérationnelle dans le ROR." ] ;
-       fhir:definition [ fhir:v "Informations relatives à la gestion des données de la situation opérationnelle dans le ROR." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "ror-situation-operationnelle.metadonnee" ] ;
-         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/mos/StructureDefinition/OffreOperationnelle" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-situation-operationnelle.metadonnee" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-situation-operationnelle.metadonnee" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Informations relatives à la gestion des données de la situation opérationnelle dans le ROR." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Informations relatives à la gestion des données de la situation opérationnelle dans le ROR." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ror-situation-operationnelle.metadonnee" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee>
-         ]
-       ] )
-     ] )
-  ] ; # 
-  fhir:differential [
-     fhir:element ( [
-       fhir:id [ fhir:v "ror-situation-operationnelle" ] ;
-       fhir:path [ fhir:v "ror-situation-operationnelle" ] ;
-       fhir:short [ fhir:v "Situation opérationnelle d'un professionnel dans le contexte ROR" ] ;
-       fhir:definition [ fhir:v "Spécialisation ROR de la SituationOperationnelle du MOS." ]
-     ] [
-       fhir:id [ fhir:v "ror-situation-operationnelle.modeExerciceOffre" ] ;
-       fhir:path [ fhir:v "ror-situation-operationnelle.modeExerciceOffre" ] ;
-       fhir:short [ fhir:v "Mode d'exercice du professionnel dans le cadre de l'offre (obligatoire dans le ROR)" ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-exercice|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-exercice?version=0.1.0>
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee" ]
+       ]
+     ]
+  ] ;
+  fhir:StructureDefinition.differential [
+     fhir:StructureDefinition.differential.element [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-situation-operationnelle" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-situation-operationnelle" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Situation opérationnelle d'un professionnel dans le contexte ROR" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Spécialisation ROR de la SituationOperationnelle du MOS." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-situation-operationnelle.modeExerciceOffre" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-situation-operationnelle.modeExerciceOffre" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Mode d'exercice du professionnel dans le cadre de l'offre (obligatoire dans le ROR)" ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-exercice|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-exercice|0.1.0>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-situation-operationnelle.competenceSpecifique" ] ;
-       fhir:path [ fhir:v "ror-situation-operationnelle.competenceSpecifique" ] ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence-specifique|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence-specifique?version=0.1.0>
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-situation-operationnelle.competenceSpecifique" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-situation-operationnelle.competenceSpecifique" ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence-specifique|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-competence-specifique|0.1.0>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-situation-operationnelle.secteurConventionnement" ] ;
-       fhir:path [ fhir:v "ror-situation-operationnelle.secteurConventionnement" ] ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-secteur-conventionnement|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-secteur-conventionnement?version=0.1.0>
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-situation-operationnelle.secteurConventionnement" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-situation-operationnelle.secteurConventionnement" ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-secteur-conventionnement|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-secteur-conventionnement|0.1.0>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-situation-operationnelle.metadonnee" ] ;
-       fhir:path [ fhir:v "ror-situation-operationnelle.metadonnee" ] ;
-       fhir:short [ fhir:v "Informations relatives à la gestion des données de la situation opérationnelle dans le ROR." ] ;
-       fhir:definition [ fhir:v "Informations relatives à la gestion des données de la situation opérationnelle dans le ROR." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee>
-         ]
-       ] )
-     ] )
-  ] . # 
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-situation-operationnelle.metadonnee" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-situation-operationnelle.metadonnee" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Informations relatives à la gestion des données de la situation opérationnelle dans le ROR." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Informations relatives à la gestion des données de la situation opérationnelle dans le ROR." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-situation-operationnelle.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

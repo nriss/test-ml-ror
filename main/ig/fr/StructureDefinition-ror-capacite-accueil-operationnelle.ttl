@@ -1,6 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -8,549 +7,519 @@
 
 <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-capacite-accueil-operationnelle> a fhir:StructureDefinition ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "ror-capacite-accueil-operationnelle"] ; # 
-  fhir:language [ fhir:v "fr"] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "extensions" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DéfinitionStructure ror-capacite-accueil-operationnelle</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle\" title=\"Précise la CapacitePriseCharge par des enregistrements quantitatifs de lits ou places pour un statut et une temporalité donnée.\">ror-capacite-accueil-operationnelle</a><a name=\"ror-capacite-accueil-operationnelle\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/types.html#Base\">Base(4.0.1)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Capacité d'accueil opérationnelle (lits/places) dans le contexte ROR<br/><span style=\"font-weight:bold\">Les instances de ce modèle logique peuvent être la cible d'une référence</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.natureCapacite\" title=\"Indique si la capacité est exprimée en lits ou en places.\">natureCapacite</a><a name=\"ror-capacite-accueil-operationnelle.natureCapacite\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Indique si la capacité est exprimée en lits ou en places.<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-nature-capacite.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-nature-capacite\" class=\"binding\">JDVRORNatureCapacite (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.statutCapacite\" title=\"Caractérise la capacité d'accueil et précise le statut des lits décrits.\">statutCapacite</a><a name=\"ror-capacite-accueil-operationnelle.statutCapacite\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Caractérise la capacité d'accueil et précise le statut des lits décrits.<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-statut-capacite.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-statut-capacite\" class=\"binding\">JDVRORStatutCapacite (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.temporaliteCapacite\" title=\"Indique le moment où cette capacité sera effective.\">temporaliteCapacite</a><a name=\"ror-capacite-accueil-operationnelle.temporaliteCapacite\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Indique le moment où cette capacité sera effective (situation immédiate ou prospective).<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-temporalite.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite\" class=\"binding\">JDVRORTemporalite (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée primitif\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.nombreCapacite\" title=\"Quantité de lits ou places de la capacité exprimée.\">nombreCapacite</a><a name=\"ror-capacite-accueil-operationnelle.nombreCapacite\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Quantité de lits ou places de la capacité exprimée.</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.typeSourceCapacite\" title=\"Indique quel type de source est à l'origine de l'information de capacité.\">typeSourceCapacite</a><a name=\"ror-capacite-accueil-operationnelle.typeSourceCapacite\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Indique quel type de source est à l'origine de l'information de capacité.<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-type-source.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-source\" class=\"binding\">JDVRORTypeSource (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée primitif\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.dateMAJCapacite\" title=\"Date à laquelle la capacité d'accueil a été mise à jour dans la source.\">dateMAJCapacite</a><a name=\"ror-capacite-accueil-operationnelle.dateMAJCapacite\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date à laquelle la capacité d'accueil a été mise à jour dans la source.</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.genreCapaciteDispo\" title=\"Genre des patients pouvant être installés dans des lits disponibles.\">genreCapaciteDispo</a><a name=\"ror-capacite-accueil-operationnelle.genreCapaciteDispo\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Genre des patients pouvant être installés dans des lits disponibles.<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-genre-capacite.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-genre-capacite\" class=\"binding\">JDVRORGenreCapacite (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.typeFermetureCapacite\" title=\"Statut des lits fermés.\">typeFermetureCapacite</a><a name=\"ror-capacite-accueil-operationnelle.typeFermetureCapacite\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Statut des lits fermés permettant d'identifier lesquels peuvent être réactivés.<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-type-fermeture-capacite.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-fermeture-capacite\" class=\"binding\">JDVRORTypeFermetureCapacite (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.typeLitSupplementaire\" title=\"Statut des lits supplémentaires.\">typeLitSupplementaire</a><a name=\"ror-capacite-accueil-operationnelle.typeLitSupplementaire\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Statut des lits supplémentaires identifiant lesquels sont déjà mobilisés.<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-type-lit-supplementaire.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-lit-supplementaire\" class=\"binding\">JDVRORTypeLitSupplementaire (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.typeCrise\" title=\"Type de crise permettant de mobiliser les lits supplémentaires.\">typeCrise</a><a name=\"ror-capacite-accueil-operationnelle.typeCrise\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Type de crise permettant de mobiliser le nombre de lits supplémentaires décrits.<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-type-crise.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-crise\" class=\"binding\">JDVRORTypeCrise (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.metadonnee\" title=\"Informations relatives à la gestion des données de capacité dans le ROR.\">metadonnee</a><a name=\"ror-capacite-accueil-operationnelle.metadonnee\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-ror-metadonnee.html\">ror-metadonnee</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Informations relatives à la gestion des données de capacité dans le ROR.</td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"^^rdf:XMLLiteral ]
-  ] ; # 
-  fhir:extension ( [
-     fhir:url [
-       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics"^^xsd:anyURI ;
-       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics>
-     ] ;
-     fhir:value [
-       a fhir:Code ;
-       fhir:v "can-be-target"
+  fhir:Resource.id [ fhir:value "ror-capacite-accueil-operationnelle"] ;
+  fhir:Resource.language [ fhir:value "fr"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Narratif généré : DéfinitionStructure ror-capacite-accueil-operationnelle</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Le nom logique de l'élément\">Nom</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations sur l'utilisation de l'élément\">Drapeaux</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Nombre minimum et maximum de fois que l'élément peut apparaître dans l'instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Référence au type de l'élément\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Informations supplémentaires sur l'élément\">Description et contraintes</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle\" title=\"Précise la CapacitePriseCharge par des enregistrements quantitatifs de lits ou places pour un statut et une temporalité donnée.\">ror-capacite-accueil-operationnelle</a><a name=\"ror-capacite-accueil-operationnelle\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/types.html#Base\">Base(4.0.1)</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Capacité d'accueil opérationnelle (lits/places) dans le contexte ROR<br/><span style=\"font-weight:bold\">Les instances de ce modèle logique peuvent être la cible d'une référence</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.natureCapacite\" title=\"Indique si la capacité est exprimée en lits ou en places.\">natureCapacite</a><a name=\"ror-capacite-accueil-operationnelle.natureCapacite\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Indique si la capacité est exprimée en lits ou en places.<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-nature-capacite.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-nature-capacite\" class=\"binding\">JDVRORNatureCapacite (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.statutCapacite\" title=\"Caractérise la capacité d'accueil et précise le statut des lits décrits.\">statutCapacite</a><a name=\"ror-capacite-accueil-operationnelle.statutCapacite\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Caractérise la capacité d'accueil et précise le statut des lits décrits.<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-statut-capacite.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-statut-capacite\" class=\"binding\">JDVRORStatutCapacite (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.temporaliteCapacite\" title=\"Indique le moment où cette capacité sera effective.\">temporaliteCapacite</a><a name=\"ror-capacite-accueil-operationnelle.temporaliteCapacite\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Indique le moment où cette capacité sera effective (situation immédiate ou prospective).<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-temporalite.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite\" class=\"binding\">JDVRORTemporalite (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée primitif\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.nombreCapacite\" title=\"Quantité de lits ou places de la capacité exprimée.\">nombreCapacite</a><a name=\"ror-capacite-accueil-operationnelle.nombreCapacite\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#integer\">integer</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Quantité de lits ou places de la capacité exprimée.</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.typeSourceCapacite\" title=\"Indique quel type de source est à l'origine de l'information de capacité.\">typeSourceCapacite</a><a name=\"ror-capacite-accueil-operationnelle.typeSourceCapacite\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Indique quel type de source est à l'origine de l'information de capacité.<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-type-source.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-source\" class=\"binding\">JDVRORTypeSource (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée primitif\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.dateMAJCapacite\" title=\"Date à laquelle la capacité d'accueil a été mise à jour dans la source.\">dateMAJCapacite</a><a name=\"ror-capacite-accueil-operationnelle.dateMAJCapacite\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date à laquelle la capacité d'accueil a été mise à jour dans la source.</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.genreCapaciteDispo\" title=\"Genre des patients pouvant être installés dans des lits disponibles.\">genreCapaciteDispo</a><a name=\"ror-capacite-accueil-operationnelle.genreCapaciteDispo\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Genre des patients pouvant être installés dans des lits disponibles.<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-genre-capacite.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-genre-capacite\" class=\"binding\">JDVRORGenreCapacite (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.typeFermetureCapacite\" title=\"Statut des lits fermés.\">typeFermetureCapacite</a><a name=\"ror-capacite-accueil-operationnelle.typeFermetureCapacite\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Statut des lits fermés permettant d'identifier lesquels peuvent être réactivés.<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-type-fermeture-capacite.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-fermeture-capacite\" class=\"binding\">JDVRORTypeFermetureCapacite (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.typeLitSupplementaire\" title=\"Statut des lits supplémentaires.\">typeLitSupplementaire</a><a name=\"ror-capacite-accueil-operationnelle.typeLitSupplementaire\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Statut des lits supplémentaires identifiant lesquels sont déjà mobilisés.<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-type-lit-supplementaire.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-lit-supplementaire\" class=\"binding\">JDVRORTypeLitSupplementaire (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Type de donnée\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.typeCrise\" title=\"Type de crise permettant de mobiliser les lits supplémentaires.\">typeCrise</a><a name=\"ror-capacite-accueil-operationnelle.typeCrise\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Type de crise permettant de mobiliser le nombre de lits supplémentaires décrits.<br class=\"binding\"/><span style=\"font-weight:bold\" title=\"null\" class=\"binding\">Binding: </span><a href=\"ValueSet-jdv-ror-type-crise.html\" title=\"https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-crise\" class=\"binding\">JDVRORTypeCrise (0.1.0)</a><span title=\"null\" class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span title=\"null\" class=\"binding\">)</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Ressource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-ror-capacite-accueil-operationnelle-definitions.html#ror-capacite-accueil-operationnelle.metadonnee\" title=\"Informations relatives à la gestion des données de capacité dans le ROR.\">metadonnee</a><a name=\"ror-capacite-accueil-operationnelle.metadonnee\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-ror-metadonnee.html\">ror-metadonnee</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Informations relatives à la gestion des données de capacité dans le ROR.</td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Légende pour ce format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation pour ce format</a></td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics" ] ;
+     fhir:Extension.valueCode [ fhir:value "can-be-target" ]
+  ] ;
+  fhir:StructureDefinition.url [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-capacite-accueil-operationnelle"] ;
+  fhir:StructureDefinition.version [ fhir:value "0.1.0"] ;
+  fhir:StructureDefinition.name [ fhir:value "RORCapaciteAccueilOperationnelle"] ;
+  fhir:StructureDefinition.title [ fhir:value "ROR - Capacité d'Accueil Opérationnelle"] ;
+  fhir:StructureDefinition.status [ fhir:value "draft"] ;
+  fhir:StructureDefinition.date [ fhir:value "2026-07-07T12:24:33+00:00"^^xsd:dateTime] ;
+  fhir:StructureDefinition.publisher [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ;
+  fhir:StructureDefinition.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://esante.gouv.fr" ]
      ]
-  ] ) ; # 
-  fhir:url [
-     fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-capacite-accueil-operationnelle"^^xsd:anyURI ;
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-capacite-accueil-operationnelle>
-  ] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
-  fhir:name [ fhir:v "RORCapaciteAccueilOperationnelle"] ; # 
-  fhir:title [ fhir:v "ROR - Capacité d'Accueil Opérationnelle"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-06-10T12:57:58+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris"] ; # 
-  fhir:contact ( [
-     fhir:name [ fhir:v "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris" ] ;
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://esante.gouv.fr" ]
-     ] )
-  ] ) ; # 
-  fhir:description [ fhir:v "Précise la CapacitePriseCharge par une série d'enregistrements indiquant la quantité de lits (ou places) pour un statut et une temporalité donnée. Le cumul des enregistrements donne une vision complète de la capacité d'un lieu."] ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [
-         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
-         fhir:l <urn:iso:std:iso:3166>
+  ] ;
+  fhir:StructureDefinition.description [ fhir:value "Précise la CapacitePriseCharge par une série d'enregistrements indiquant la quantité de lits (ou places) pour un statut et une temporalité donnée. Le cumul des enregistrements donne une vision complète de la capacité d'un lieu."] ;
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FR" ] ;
+       fhir:Coding.display [ fhir:value "France (la)" ]
+     ]
+  ] ;
+  fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"] ;
+  fhir:StructureDefinition.kind [ fhir:value "logical"] ;
+  fhir:StructureDefinition.abstract [ fhir:value "false"^^xsd:boolean] ;
+  fhir:StructureDefinition.type [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-capacite-accueil-operationnelle"] ;
+  fhir:StructureDefinition.baseDefinition [
+     fhir:value "http://hl7.org/fhir/StructureDefinition/Base|4.0.1" ;
+     fhir:link <http://hl7.org/fhir/StructureDefinition/Base|4.0.1>
+  ] ;
+  fhir:StructureDefinition.derivation [ fhir:value "specialization"] ;
+  fhir:StructureDefinition.snapshot [
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version" ] ;
+       fhir:Extension.valueString [ fhir:value "4.0.1" ]
+     ] ;
+     fhir:StructureDefinition.snapshot.element [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Capacité d'accueil opérationnelle (lits/places) dans le contexte ROR" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Précise la CapacitePriseCharge par des enregistrements quantitatifs de lits ou places pour un statut et une temporalité donnée." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "*" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Base" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
        ] ;
-       fhir:code [ fhir:v "FR" ] ;
-       fhir:display [ fhir:v "France (la)" ]
-     ] )
-  ] ) ; # 
-  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
-  fhir:kind [ fhir:v "logical"] ; # 
-  fhir:abstract [ fhir:v false] ; # 
-  fhir:type [
-     fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-capacite-accueil-operationnelle"^^xsd:anyURI ;
-     fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-capacite-accueil-operationnelle>
-  ] ; # 
-  fhir:baseDefinition [
-     fhir:v "http://hl7.org/fhir/StructureDefinition/Base|4.0.1"^^xsd:anyURI ;
-     fhir:l <http://hl7.org/fhir/StructureDefinition/Base?version=4.0.1>
-  ] ; # 
-  fhir:derivation [ fhir:v "specialization"] ; # 
-  fhir:snapshot [
-     fhir:extension ( [
-       fhir:url [
-         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version"^^xsd:anyURI ;
-         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version>
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.natureCapacite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.natureCapacite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Indique si la capacité est exprimée en lits ou en places." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Indique si la capacité est exprimée en lits ou en places." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ror-capacite-accueil-operationnelle.natureCapacite" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:value [
-         a fhir:String ;
-         fhir:v "4.0.1"
-       ]
-     ] ) ;
-     fhir:element ( [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle" ] ;
-       fhir:short [ fhir:v "Capacité d'accueil opérationnelle (lits/places) dans le contexte ROR" ] ;
-       fhir:definition [ fhir:v "Précise la CapacitePriseCharge par des enregistrements quantitatifs de lits ou places pour un statut et une temporalité donnée." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "*" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "Base" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "*" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
        ] ;
-       fhir:isModifier [ fhir:v false ]
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.natureCapacite" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.natureCapacite" ] ;
-       fhir:short [ fhir:v "Indique si la capacité est exprimée en lits ou en places." ] ;
-       fhir:definition [ fhir:v "Indique si la capacité est exprimée en lits ou en places." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.natureCapacite" ] ;
-         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-nature-capacite|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-nature-capacite|0.1.0>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.statutCapacite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.statutCapacite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Caractérise la capacité d'accueil et précise le statut des lits décrits." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Caractérise la capacité d'accueil et précise le statut des lits décrits." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ror-capacite-accueil-operationnelle.statutCapacite" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-nature-capacite|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-nature-capacite?version=0.1.0>
-         ]
-       ]
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.statutCapacite" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.statutCapacite" ] ;
-       fhir:short [ fhir:v "Caractérise la capacité d'accueil et précise le statut des lits décrits." ] ;
-       fhir:definition [ fhir:v "Caractérise la capacité d'accueil et précise le statut des lits décrits." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.statutCapacite" ] ;
-         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-statut-capacite|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-statut-capacite?version=0.1.0>
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-statut-capacite|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-statut-capacite|0.1.0>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.temporaliteCapacite" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.temporaliteCapacite" ] ;
-       fhir:short [ fhir:v "Indique le moment où cette capacité sera effective (situation immédiate ou prospective)." ] ;
-       fhir:definition [ fhir:v "Indique le moment où cette capacité sera effective." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.temporaliteCapacite" ] ;
-         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.temporaliteCapacite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.temporaliteCapacite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Indique le moment où cette capacité sera effective (situation immédiate ou prospective)." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Indique le moment où cette capacité sera effective." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ror-capacite-accueil-operationnelle.temporaliteCapacite" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite?version=0.1.0>
-         ]
-       ]
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.nombreCapacite" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.nombreCapacite" ] ;
-       fhir:short [ fhir:v "Quantité de lits ou places de la capacité exprimée." ] ;
-       fhir:definition [ fhir:v "Quantité de lits ou places de la capacité exprimée." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.nombreCapacite" ] ;
-         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "integer"^^xsd:anyURI ;
-           fhir:l fhir:integer
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite|0.1.0>
          ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.typeSourceCapacite" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.typeSourceCapacite" ] ;
-       fhir:short [ fhir:v "Indique quel type de source est à l'origine de l'information de capacité." ] ;
-       fhir:definition [ fhir:v "Indique quel type de source est à l'origine de l'information de capacité." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.typeSourceCapacite" ] ;
-         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.nombreCapacite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.nombreCapacite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Quantité de lits ou places de la capacité exprimée." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Quantité de lits ou places de la capacité exprimée." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ror-capacite-accueil-operationnelle.nombreCapacite" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-source|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-source?version=0.1.0>
-         ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "integer" ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.dateMAJCapacite" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.dateMAJCapacite" ] ;
-       fhir:short [ fhir:v "Date à laquelle la capacité d'accueil a été mise à jour dans la source." ] ;
-       fhir:definition [ fhir:v "Date à laquelle la capacité d'accueil a été mise à jour dans la source." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.dateMAJCapacite" ] ;
-         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.typeSourceCapacite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.typeSourceCapacite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Indique quel type de source est à l'origine de l'information de capacité." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Indique quel type de source est à l'origine de l'information de capacité." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ror-capacite-accueil-operationnelle.typeSourceCapacite" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "dateTime"^^xsd:anyURI ;
-           fhir:l fhir:dateTime
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.genreCapaciteDispo" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.genreCapaciteDispo" ] ;
-       fhir:short [ fhir:v "Genre des patients pouvant être installés dans des lits disponibles." ] ;
-       fhir:definition [ fhir:v "Genre des patients pouvant être installés dans des lits disponibles." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.genreCapaciteDispo" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-genre-capacite|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-genre-capacite?version=0.1.0>
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-source|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-source|0.1.0>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.typeFermetureCapacite" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.typeFermetureCapacite" ] ;
-       fhir:short [ fhir:v "Statut des lits fermés permettant d'identifier lesquels peuvent être réactivés." ] ;
-       fhir:definition [ fhir:v "Statut des lits fermés." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.typeFermetureCapacite" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.dateMAJCapacite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.dateMAJCapacite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date à laquelle la capacité d'accueil a été mise à jour dans la source." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date à laquelle la capacité d'accueil a été mise à jour dans la source." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ror-capacite-accueil-operationnelle.dateMAJCapacite" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-fermeture-capacite|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-fermeture-capacite?version=0.1.0>
-         ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.typeLitSupplementaire" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.typeLitSupplementaire" ] ;
-       fhir:short [ fhir:v "Statut des lits supplémentaires identifiant lesquels sont déjà mobilisés." ] ;
-       fhir:definition [ fhir:v "Statut des lits supplémentaires." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.typeLitSupplementaire" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.genreCapaciteDispo" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.genreCapaciteDispo" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Genre des patients pouvant être installés dans des lits disponibles." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Genre des patients pouvant être installés dans des lits disponibles." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ror-capacite-accueil-operationnelle.genreCapaciteDispo" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-lit-supplementaire|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-lit-supplementaire?version=0.1.0>
-         ]
-       ]
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.typeCrise" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.typeCrise" ] ;
-       fhir:short [ fhir:v "Type de crise permettant de mobiliser le nombre de lits supplémentaires décrits." ] ;
-       fhir:definition [ fhir:v "Type de crise permettant de mobiliser les lits supplémentaires." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.typeCrise" ] ;
-         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-crise|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-crise?version=0.1.0>
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-genre-capacite|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-genre-capacite|0.1.0>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.metadonnee" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.metadonnee" ] ;
-       fhir:short [ fhir:v "Informations relatives à la gestion des données de capacité dans le ROR." ] ;
-       fhir:definition [ fhir:v "Informations relatives à la gestion des données de capacité dans le ROR." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:base [
-         fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.metadonnee" ] ;
-         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-         fhir:max [ fhir:v "1" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.typeFermetureCapacite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.typeFermetureCapacite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Statut des lits fermés permettant d'identifier lesquels peuvent être réactivés." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Statut des lits fermés." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ror-capacite-accueil-operationnelle.typeFermetureCapacite" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee>
-         ]
-       ] )
-     ] )
-  ] ; # 
-  fhir:differential [
-     fhir:element ( [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle" ] ;
-       fhir:short [ fhir:v "Capacité d'accueil opérationnelle (lits/places) dans le contexte ROR" ] ;
-       fhir:definition [ fhir:v "Précise la CapacitePriseCharge par des enregistrements quantitatifs de lits ou places pour un statut et une temporalité donnée." ]
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.natureCapacite" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.natureCapacite" ] ;
-       fhir:short [ fhir:v "Indique si la capacité est exprimée en lits ou en places." ] ;
-       fhir:definition [ fhir:v "Indique si la capacité est exprimée en lits ou en places." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-nature-capacite|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-nature-capacite?version=0.1.0>
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-fermeture-capacite|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-fermeture-capacite|0.1.0>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.statutCapacite" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.statutCapacite" ] ;
-       fhir:short [ fhir:v "Caractérise la capacité d'accueil et précise le statut des lits décrits." ] ;
-       fhir:definition [ fhir:v "Caractérise la capacité d'accueil et précise le statut des lits décrits." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-statut-capacite|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-statut-capacite?version=0.1.0>
-         ]
-       ]
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.temporaliteCapacite" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.temporaliteCapacite" ] ;
-       fhir:short [ fhir:v "Indique le moment où cette capacité sera effective (situation immédiate ou prospective)." ] ;
-       fhir:definition [ fhir:v "Indique le moment où cette capacité sera effective." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite?version=0.1.0>
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.typeLitSupplementaire" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.typeLitSupplementaire" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Statut des lits supplémentaires identifiant lesquels sont déjà mobilisés." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Statut des lits supplémentaires." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ror-capacite-accueil-operationnelle.typeLitSupplementaire" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-lit-supplementaire|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-lit-supplementaire|0.1.0>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.nombreCapacite" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.nombreCapacite" ] ;
-       fhir:short [ fhir:v "Quantité de lits ou places de la capacité exprimée." ] ;
-       fhir:definition [ fhir:v "Quantité de lits ou places de la capacité exprimée." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "integer"^^xsd:anyURI ;
-           fhir:l fhir:integer
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.typeSourceCapacite" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.typeSourceCapacite" ] ;
-       fhir:short [ fhir:v "Indique quel type de source est à l'origine de l'information de capacité." ] ;
-       fhir:definition [ fhir:v "Indique quel type de source est à l'origine de l'information de capacité." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-source|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-source?version=0.1.0>
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.typeCrise" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.typeCrise" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Type de crise permettant de mobiliser le nombre de lits supplémentaires décrits." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Type de crise permettant de mobiliser les lits supplémentaires." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ror-capacite-accueil-operationnelle.typeCrise" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-crise|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-crise|0.1.0>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.dateMAJCapacite" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.dateMAJCapacite" ] ;
-       fhir:short [ fhir:v "Date à laquelle la capacité d'accueil a été mise à jour dans la source." ] ;
-       fhir:definition [ fhir:v "Date à laquelle la capacité d'accueil a été mise à jour dans la source." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "dateTime"^^xsd:anyURI ;
-           fhir:l fhir:dateTime
-         ]
-       ] )
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.genreCapaciteDispo" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.genreCapaciteDispo" ] ;
-       fhir:short [ fhir:v "Genre des patients pouvant être installés dans des lits disponibles." ] ;
-       fhir:definition [ fhir:v "Genre des patients pouvant être installés dans des lits disponibles." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-genre-capacite|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-genre-capacite?version=0.1.0>
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.metadonnee" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.metadonnee" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Informations relatives à la gestion des données de capacité dans le ROR." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Informations relatives à la gestion des données de capacité dans le ROR." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "ror-capacite-accueil-operationnelle.metadonnee" ] ;
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee" ]
+       ]
+     ]
+  ] ;
+  fhir:StructureDefinition.differential [
+     fhir:StructureDefinition.differential.element [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Capacité d'accueil opérationnelle (lits/places) dans le contexte ROR" ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Précise la CapacitePriseCharge par des enregistrements quantitatifs de lits ou places pour un statut et une temporalité donnée." ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.natureCapacite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.natureCapacite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Indique si la capacité est exprimée en lits ou en places." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Indique si la capacité est exprimée en lits ou en places." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-nature-capacite|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-nature-capacite|0.1.0>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.typeFermetureCapacite" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.typeFermetureCapacite" ] ;
-       fhir:short [ fhir:v "Statut des lits fermés permettant d'identifier lesquels peuvent être réactivés." ] ;
-       fhir:definition [ fhir:v "Statut des lits fermés." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-fermeture-capacite|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-fermeture-capacite?version=0.1.0>
-         ]
-       ]
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.typeLitSupplementaire" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.typeLitSupplementaire" ] ;
-       fhir:short [ fhir:v "Statut des lits supplémentaires identifiant lesquels sont déjà mobilisés." ] ;
-       fhir:definition [ fhir:v "Statut des lits supplémentaires." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-lit-supplementaire|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-lit-supplementaire?version=0.1.0>
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.statutCapacite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.statutCapacite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Caractérise la capacité d'accueil et précise le statut des lits décrits." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Caractérise la capacité d'accueil et précise le statut des lits décrits." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-statut-capacite|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-statut-capacite|0.1.0>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.typeCrise" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.typeCrise" ] ;
-       fhir:short [ fhir:v "Type de crise permettant de mobiliser le nombre de lits supplémentaires décrits." ] ;
-       fhir:definition [ fhir:v "Type de crise permettant de mobiliser les lits supplémentaires." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "Coding"^^xsd:anyURI ;
-           fhir:l fhir:Coding
-         ]
-       ] ) ;
-       fhir:binding [
-         fhir:strength [ fhir:v "required" ] ;
-         fhir:valueSet [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-crise|0.1.0"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-crise?version=0.1.0>
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.temporaliteCapacite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.temporaliteCapacite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Indique le moment où cette capacité sera effective (situation immédiate ou prospective)." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Indique le moment où cette capacité sera effective." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-temporalite|0.1.0>
          ]
        ]
-     ] [
-       fhir:id [ fhir:v "ror-capacite-accueil-operationnelle.metadonnee" ] ;
-       fhir:path [ fhir:v "ror-capacite-accueil-operationnelle.metadonnee" ] ;
-       fhir:short [ fhir:v "Informations relatives à la gestion des données de capacité dans le ROR." ] ;
-       fhir:definition [ fhir:v "Informations relatives à la gestion des données de capacité dans le ROR." ] ;
-       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
-       fhir:type ( [
-         fhir:code [
-           fhir:v "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee"^^xsd:anyURI ;
-           fhir:l <https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee>
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.nombreCapacite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.nombreCapacite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Quantité de lits ou places de la capacité exprimée." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Quantité de lits ou places de la capacité exprimée." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "integer" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.typeSourceCapacite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.typeSourceCapacite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Indique quel type de source est à l'origine de l'information de capacité." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Indique quel type de source est à l'origine de l'information de capacité." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-source|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-source|0.1.0>
          ]
-       ] )
-     ] )
-  ] . # 
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.dateMAJCapacite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.dateMAJCapacite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Date à laquelle la capacité d'accueil a été mise à jour dans la source." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Date à laquelle la capacité d'accueil a été mise à jour dans la source." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.genreCapaciteDispo" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.genreCapaciteDispo" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Genre des patients pouvant être installés dans des lits disponibles." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Genre des patients pouvant être installés dans des lits disponibles." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-genre-capacite|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-genre-capacite|0.1.0>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.typeFermetureCapacite" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.typeFermetureCapacite" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Statut des lits fermés permettant d'identifier lesquels peuvent être réactivés." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Statut des lits fermés." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-fermeture-capacite|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-fermeture-capacite|0.1.0>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.typeLitSupplementaire" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.typeLitSupplementaire" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Statut des lits supplémentaires identifiant lesquels sont déjà mobilisés." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Statut des lits supplémentaires." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-lit-supplementaire|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-lit-supplementaire|0.1.0>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.typeCrise" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.typeCrise" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Type de crise permettant de mobiliser le nombre de lits supplémentaires décrits." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Type de crise permettant de mobiliser les lits supplémentaires." ] ;
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ] ;
+       fhir:ElementDefinition.binding [
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ] ;
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-crise|0.1.0" ;
+           fhir:link <https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-crise|0.1.0>
+         ]
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.id [ fhir:value "ror-capacite-accueil-operationnelle.metadonnee" ] ;
+       fhir:ElementDefinition.path [ fhir:value "ror-capacite-accueil-operationnelle.metadonnee" ] ;
+       fhir:ElementDefinition.short [ fhir:value "Informations relatives à la gestion des données de capacité dans le ROR." ] ;
+       fhir:ElementDefinition.definition [ fhir:value "Informations relatives à la gestion des données de capacité dans le ROR." ] ;
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ] ;
+       fhir:ElementDefinition.max [ fhir:value "1" ] ;
+       fhir:ElementDefinition.type [
+         fhir:index -1 ;
+         fhir:ElementDefinition.type.code [ fhir:value "https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-metadonnee" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://interop.esante.gouv.fr/ig/fhir/test-ror/StructureDefinition/ror-capacite-accueil-operationnelle.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 
