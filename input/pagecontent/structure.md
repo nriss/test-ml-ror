@@ -55,7 +55,7 @@ Ces données pivots ne sont pas modifiables après création.
 
 ---
 
-### ROREntiteJuridique
+### ROREntiteJuridique {: #entite-juridique}
 
 L'**Entité Juridique** (EJ) correspond à la notion de personne morale :
 - Pour les établissements FINESS : une EJ détient des droits lui permettant d'exercer ses activités dans des entités géographiques.
@@ -73,7 +73,7 @@ L'**Entité Juridique** (EJ) correspond à la notion de personne morale :
 
 ---
 
-### ROREntiteGeographique
+### ROREntiteGeographique {: #entite-geographique}
 
 L'**Entité Géographique** (EG) correspond à la notion d'établissement d'une entité juridique :
 - Pour les entités FINESS : l'EG correspond à une implantation géographique caractérisée par une catégorie d'établissement.

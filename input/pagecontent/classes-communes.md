@@ -30,7 +30,7 @@ Les **Classes Communes** regroupent les éléments partagés par l'ensemble des 
 
 ---
 
-### RORMetadonnee
+### RORMetadonnee {: #metadonnee}
 
 La **Métadonnée** est présente dans toutes les classes du modèle ROR (`metadonnee 1..1`). Elle permet de tracer les informations de gestion des données : date de création, date de mise à jour, identifiant de la donnée, commentaire, région source et modèle de saisie.
 
@@ -40,7 +40,7 @@ La **Métadonnée** est présente dans toutes les classes du modèle ROR (`metad
 
 ---
 
-### Classes communes héritées du MOS
+### Classes communes héritées du MOS {: #classes-mos}
 
 Les classes suivantes sont définies dans le [MOS (Modèle des Objets de Santé)](https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/) et réutilisées dans les modèles ROR sans redéfinition.
 

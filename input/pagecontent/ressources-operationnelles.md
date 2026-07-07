@@ -44,7 +44,7 @@ L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette s
 
 ---
 
-### RORLieuRealisationOffre
+### RORLieuRealisationOffre {: #lieu-realisation-offre}
 
 Le **Lieu de Réalisation de l'Offre** indique le lieu précis où se déroule la prestation. Il hérite de la classe MOS `Lieu` (adresse, coordonnées géographiques, etc.) et ajoute les attributs spécifiques au contexte ROR.
 
@@ -52,7 +52,7 @@ Le **Lieu de Réalisation de l'Offre** indique le lieu précis où se déroule l
 
 ---
 
-### ROREquipementSpecifique
+### ROREquipementSpecifique {: #equipement-specifique}
 
 L'**Équipement Spécifique** décrit les équipements matériels et installations spécialisés disponibles dans un établissement, susceptibles d'influencer l'orientation d'un patient.
 
@@ -60,7 +60,7 @@ L'**Équipement Spécifique** décrit les équipements matériels et installatio
 
 ---
 
-### RORCapacitePriseCharge
+### RORCapacitePriseCharge {: #capacite-prise-charge}
 
 La **Capacité de Prise en Charge** décrit les capacités d'accueil en termes de places autorisées ou installées pour une offre donnée.
 
@@ -68,7 +68,7 @@ La **Capacité de Prise en Charge** décrit les capacités d'accueil en termes d
 
 ---
 
-### RORCapaciteAccueilOperationnelle
+### RORCapaciteAccueilOperationnelle {: #capacite-accueil-operationnelle}
 
 La **Capacité d'Accueil Opérationnelle** représente les disponibilités de prise en charge en temps réel ou à court terme. Elle permet aux outils d'orientation d'accéder aux disponibilités d'un établissement.
 
@@ -79,7 +79,7 @@ La **Capacité d'Accueil Opérationnelle** représente les disponibilités de pr
 
 ---
 
-### RORCapaciteHabitation
+### RORCapaciteHabitation {: #capacite-habitation}
 
 La **Capacité Habitation** décrit le nombre de places ou de logements disponibles selon le type d'hébergement.
 
@@ -87,7 +87,7 @@ La **Capacité Habitation** décrit le nombre de places ou de logements disponib
 
 ---
 
-### RORLimiteCaracteristiqueEquipement
+### RORLimiteCaracteristiqueEquipement {: #limite-caracteristique-equipement}
 
 La **Limite de Caractéristique d'Équipement** précise les limites que peut supporter l'équipement le plus tolérant parmi les équipements spécifiques de même type dans une organisation. Par exemple, si une organisation possède trois tables de bloc opératoire supportant respectivement 180 kg, 190 kg et 200 kg, seule la valeur de 200 kg est retenue.
 

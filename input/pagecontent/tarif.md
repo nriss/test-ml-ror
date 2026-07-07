@@ -44,7 +44,7 @@ La classe `RORTarif` est une **classe abstraite** dont héritent les différents
 
 ---
 
-### RORTarif (classe abstraite)
+### RORTarif (classe abstraite) {: #tarif}
 
 Attributs communs à tous les types de tarifs. Cette classe n'est pas instanciée directement : seules ses sous-classes spécialisées sont utilisées.
 
@@ -56,7 +56,7 @@ Attributs communs à tous les types de tarifs. Cette classe n'est pas instancié
 
 ---
 
-### RORForfaitSocleHebergement
+### RORForfaitSocleHebergement {: #forfait-socle-hebergement}
 
 Tarif journalier et par personne pour un type d'hébergement donné. Inclut obligatoirement les prestations définies dans le décret n°2015-1868.
 
@@ -64,25 +64,25 @@ Tarif journalier et par personne pour un type d'hébergement donné. Inclut obli
 
 ---
 
-### RORTarifAccueilDeJour
+### RORTarifAccueilDeJour {: #tarif-accueil-de-jour}
 
 {% include StructureDefinition-ror-tarif-accueil-de-jour-class-table.xhtml %}
 
 ---
 
-### RORTarifDependance
+### RORTarifDependance {: #tarif-dependance}
 
 {% include StructureDefinition-ror-tarif-dependance-class-table.xhtml %}
 
 ---
 
-### RORTarifAidesHumaines
+### RORTarifAidesHumaines {: #tarif-aides-humaines}
 
 {% include StructureDefinition-ror-tarif-aides-humaines-class-table.xhtml %}
 
 ---
 
-### RORTarifPrestationSupplementaire
+### RORTarifPrestationSupplementaire {: #tarif-prestation-supplementaire}
 
 **Règles de gestion :**
 - `RG_EXP_036` : Les attributs de la classe `TarifPrestationSupplementaire` DOIVENT être mutuellement exclusifs : soit `nomPrestationSupp` (code d'une prestation connue), soit `nomAutrePrestationSupp` (libellé libre), mais pas les deux simultanément.
@@ -91,7 +91,7 @@ Tarif journalier et par personne pour un type d'hébergement donné. Inclut obli
 
 ---
 
-### RORSupplementTarifHebergement
+### RORSupplementTarifHebergement {: #supplement-tarif-hebergement}
 
 **Règles de gestion :**
 - `RG_EXP_029` : L'attribut `typeHabitation` d'un tarif de type « supplément tarif hébergement » DOIT prendre la valeur « chambre simple ».
@@ -100,6 +100,6 @@ Tarif journalier et par personne pour un type d'hébergement donné. Inclut obli
 
 ---
 
-### RORTarifPortageRepas
+### RORTarifPortageRepas {: #tarif-portage-repas}
 
 {% include StructureDefinition-ror-tarif-portage-repas-class-table.xhtml %}

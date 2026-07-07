@@ -56,7 +56,7 @@ L'**idNat_PS** (numéro RPPS ou ADELI) est l'identifiant national du professionn
 
 ---
 
-### RORPersonnePhysique
+### RORPersonnePhysique {: #personne-physique}
 
 La **Personne Physique** porte les données d'identité du professionnel.
 
@@ -64,7 +64,7 @@ La **Personne Physique** porte les données d'identité du professionnel.
 
 ---
 
-### RORProfessionnel
+### RORProfessionnel {: #professionnel}
 
 Le **Professionnel** représente le professionnel enregistré dans le RPPS ou ADELI.
 
@@ -72,7 +72,7 @@ Le **Professionnel** représente le professionnel enregistré dans le RPPS ou AD
 
 ---
 
-### RORExerciceProfessionnel
+### RORExerciceProfessionnel {: #exercice-professionnel}
 
 L'**Exercice Professionnel** caractérise l'exercice d'une profession par un professionnel.
 
@@ -80,7 +80,7 @@ L'**Exercice Professionnel** caractérise l'exercice d'une profession par un pro
 
 ---
 
-### RORSavoirFaire
+### RORSavoirFaire {: #savoir-faire}
 
 Le **Savoir-Faire** est une classe abstraite décrivant la spécialité ou la compétence principale du professionnel. Elle est spécialisée en 9 sous-classes.
 
@@ -88,7 +88,7 @@ Le **Savoir-Faire** est une classe abstraite décrivant la spécialité ou la co
 
 ---
 
-### Sous-classes de RORSavoirFaire
+### Sous-classes de RORSavoirFaire {: #sous-classes-savoir-faire}
 
 {% include StructureDefinition-ror-specialite-class-table.xhtml %}
 
@@ -110,7 +110,7 @@ Le **Savoir-Faire** est une classe abstraite décrivant la spécialité ou la co
 
 ---
 
-### RORSituationOperationnelle
+### RORSituationOperationnelle {: #situation-operationnelle}
 
 La **Situation Opérationnelle** caractérise les conditions d'exercice du professionnel dans le cadre d'une offre opérationnelle précise.
 
