@@ -81,6 +81,7 @@ Ce modèle ROR dérive du MOS. La stratégie appliquée est :
 - **N'ajouter en FSH que les différences** : attributs supplémentaires, contraintes spécifiques au contexte ROR, cardinalités resserrées
 
 Différences notables par rapport au MOS :
+
 - Les attributs MOS ne répondant pas aux besoins métiers ROR ne sont pas repris.
 - Certaines cardinalités sont contraintes (ex. `idNatStruct 1..1`, `champActivite 1..1`).
 - De nouveaux concepts propres au ROR ont été ajoutés (ex. `RORMetadonnee`, `RORCapaciteAccueilOperationnelle`, hiérarchie `RORTarif`).
@@ -92,17 +93,18 @@ Différences notables par rapport au MOS :
 
 {% include dependency-table.xhtml %}
 
-### Analyse cross-version
+### Analyse inter-version FHIR
 
 {% include cross-version-analysis.xhtml %}
 
-### Profils globaux
+<!--### Profils globaux
 
 {% include globals-table.xhtml %}
+-->
 
-### Paramètres d'expansion
+<!-- ### Paramètres d'expansion
 
-{% include expansion-params.xhtml %}
+{% include expansion-params.xhtml %} -->
 
 ### Propriété intellectuelle
 

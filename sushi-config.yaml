@@ -72,49 +72,49 @@ menu:
     À propos de ce POC: avantages-ml.html
     Structure:
         Vue d'ensemble: structure.html
-        Entité Juridique: structure.html#entite-juridique
-        Entité Géographique: structure.html#entite-geographique
+        Entité Juridique: structure.html#rorentitejuridique
+        Entité Géographique: structure.html#rorentitegeographique
     Tarif:
         Vue d'ensemble: tarif.html
-        Tarif (classe abstraite): tarif.html#tarif
-        Forfait Socle Hébergement: tarif.html#forfait-socle-hebergement
-        Tarif Accueil de Jour: tarif.html#tarif-accueil-de-jour
-        Tarif Dépendance: tarif.html#tarif-dependance
-        Tarif Aides Humaines: tarif.html#tarif-aides-humaines
-        Tarif Prestation Supplémentaire: tarif.html#tarif-prestation-supplementaire
-        Supplément Tarif Hébergement: tarif.html#supplement-tarif-hebergement
-        Tarif Portage Repas: tarif.html#tarif-portage-repas
+        Tarif (classe abstraite): tarif.html#rortarif-classe-abstraite
+        Forfait Socle Hébergement: tarif.html#rorforfaitsoclehebergement
+        Tarif Accueil de Jour: tarif.html#rortarifaccueildejour
+        Tarif Dépendance: tarif.html#rortarifdependance
+        Tarif Aides Humaines: tarif.html#rortarifaideshumaines
+        Tarif Prestation Supplémentaire: tarif.html#rortarifprestationsupplementaire
+        Supplément Tarif Hébergement: tarif.html#rorsupplementtarifhebergement
+        Tarif Portage Repas: tarif.html#rortarifportagerepas
     Organisation:
         Vue d'ensemble: organisation.html
-        Organisation Interne: organisation.html#organisation-interne
-        Pôle: organisation.html#pole
-        Structure Interne: organisation.html#structure-interne
-        Unité Fonctionnelle: organisation.html#unite-fonctionnelle
+        Organisation Interne: organisation.html#rororganisationinterne
+        Pôle: organisation.html#rorpole
+        Structure Interne: organisation.html#rorstructureinterne
+        Unité Fonctionnelle: organisation.html#rorunitefonctionnelle
     Offre Opérationnelle:
         Vue d'ensemble: offre-operationnelle.html
-        Offre Opérationnelle: offre-operationnelle.html#offre-operationnelle
-        Activité Opérationnelle: offre-operationnelle.html#activite-operationnelle
-        Patientèle: offre-operationnelle.html#patientele
+        Offre Opérationnelle: offre-operationnelle.html#roroffreoperationnelle
+        Activité Opérationnelle: offre-operationnelle.html#roractiviteoperationnelle
+        Patientèle: offre-operationnelle.html#rorpatientele
     Ressources Opérationnelles:
         Vue d'ensemble: ressources-operationnelles.html
-        Lieu de Réalisation de l'Offre: ressources-operationnelles.html#lieu-realisation-offre
-        Équipement Spécifique: ressources-operationnelles.html#equipement-specifique
-        Capacité de Prise en Charge: ressources-operationnelles.html#capacite-prise-charge
-        Capacité d'Accueil Opérationnelle: ressources-operationnelles.html#capacite-accueil-operationnelle
-        Capacité Habitation: ressources-operationnelles.html#capacite-habitation
-        Limite Caractéristique Équipement: ressources-operationnelles.html#limite-caracteristique-equipement
+        Lieu de Réalisation de l'Offre: ressources-operationnelles.html#rorlieurealisationoffre
+        Équipement Spécifique: ressources-operationnelles.html#rorequipementspecifique
+        Capacité de Prise en Charge: ressources-operationnelles.html#rorcapaciteprisecharge
+        Capacité d'Accueil Opérationnelle: ressources-operationnelles.html#rorcapaciteaccueiloperationnelle
+        Capacité Habitation: ressources-operationnelles.html#rorcapacitehabitation
+        Limite Caractéristique Équipement: ressources-operationnelles.html#rorlimitecaracteristiqueequipement
     Professionnel Ressource:
         Vue d'ensemble: professionnel.html
-        Personne Physique: professionnel.html#personne-physique
-        Professionnel: professionnel.html#professionnel
-        Exercice Professionnel: professionnel.html#exercice-professionnel
-        Savoir-Faire: professionnel.html#savoir-faire
-        Sous-classes de Savoir-Faire: professionnel.html#sous-classes-savoir-faire
-        Situation Opérationnelle: professionnel.html#situation-operationnelle
+        Personne Physique: professionnel.html#rorpersonnephysique
+        Professionnel: professionnel.html#rorprofessionnel
+        Exercice Professionnel: professionnel.html#rorexerciceprofessionnel
+        Savoir-Faire: professionnel.html#rorsavoirfaire
+        Sous-classes de Savoir-Faire: professionnel.html#sous-classes-de-rorsavoirfaire
+        Situation Opérationnelle: professionnel.html#rorsituationoperationnelle
     Classes Communes:
         Vue d'ensemble: classes-communes.html
-        Métadonnée: classes-communes.html#metadonnee
-        Classes héritées du MOS: classes-communes.html#classes-mos
+        Métadonnée: classes-communes.html#rormetadonnee
+        Classes héritées du MOS: classes-communes.html#classes-communes-hrites-du-mos
     Règles de gestion: regles-de-gestion.html
     Ressources de conformité: artifacts.html
     Historique: change-log.html

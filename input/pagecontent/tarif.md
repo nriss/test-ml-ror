@@ -44,8 +44,7 @@ La classe `RORTarif` est une **classe abstraite** dont héritent les différents
 
 ---
 
-### RORTarif (classe abstraite) {: #tarif}
-
+### RORTarif (classe abstraite)
 Attributs communs à tous les types de tarifs. Cette classe n'est pas instanciée directement : seules ses sous-classes spécialisées sont utilisées.
 
 **Règles de gestion :**
@@ -56,34 +55,29 @@ Attributs communs à tous les types de tarifs. Cette classe n'est pas instancié
 
 ---
 
-### RORForfaitSocleHebergement {: #forfait-socle-hebergement}
-
+### RORForfaitSocleHebergement
 Tarif journalier et par personne pour un type d'hébergement donné. Inclut obligatoirement les prestations définies dans le décret n°2015-1868.
 
 {% include StructureDefinition-ror-forfait-socle-hebergement-class-table.xhtml %}
 
 ---
 
-### RORTarifAccueilDeJour {: #tarif-accueil-de-jour}
-
+### RORTarifAccueilDeJour
 {% include StructureDefinition-ror-tarif-accueil-de-jour-class-table.xhtml %}
 
 ---
 
-### RORTarifDependance {: #tarif-dependance}
-
+### RORTarifDependance
 {% include StructureDefinition-ror-tarif-dependance-class-table.xhtml %}
 
 ---
 
-### RORTarifAidesHumaines {: #tarif-aides-humaines}
-
+### RORTarifAidesHumaines
 {% include StructureDefinition-ror-tarif-aides-humaines-class-table.xhtml %}
 
 ---
 
-### RORTarifPrestationSupplementaire {: #tarif-prestation-supplementaire}
-
+### RORTarifPrestationSupplementaire
 **Règles de gestion :**
 - `RG_EXP_036` : Les attributs de la classe `TarifPrestationSupplementaire` DOIVENT être mutuellement exclusifs : soit `nomPrestationSupp` (code d'une prestation connue), soit `nomAutrePrestationSupp` (libellé libre), mais pas les deux simultanément.
 
@@ -91,8 +85,7 @@ Tarif journalier et par personne pour un type d'hébergement donné. Inclut obli
 
 ---
 
-### RORSupplementTarifHebergement {: #supplement-tarif-hebergement}
-
+### RORSupplementTarifHebergement
 **Règles de gestion :**
 - `RG_EXP_029` : L'attribut `typeHabitation` d'un tarif de type « supplément tarif hébergement » DOIT prendre la valeur « chambre simple ».
 
@@ -100,6 +93,5 @@ Tarif journalier et par personne pour un type d'hébergement donné. Inclut obli
 
 ---
 
-### RORTarifPortageRepas {: #tarif-portage-repas}
-
+### RORTarifPortageRepas
 {% include StructureDefinition-ror-tarif-portage-repas-class-table.xhtml %}
