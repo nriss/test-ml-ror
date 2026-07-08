@@ -45,7 +45,11 @@ Les données de description de l'offre de santé, échangées avec les ROR, sont
 ↻
 ⛶
 
-  
+ 
+
+classDiagram class EJ["ROREntiteJuridique"] class EG["ROREntiteGeographique"] class OI["ROROrganisationInterne"] class Tarif["RORTarif"] { <<abstract>> } class Offre["ROROffreOperationnelle"] class Lieu["RORLieuRealisationOffre"] class SitOp["RORSituationOperationnelle"] class EP["RORExerciceProfessionnel"] EJ "1" --> "1..*" EG EG "1" --> "0..*" OI EG "1" --> "0..*" Tarif OI "0..1" --> "1..*" Offre OI "*" --> "*" OI : contient Offre "1" --> "1" Lieu Offre "1" --> "0..*" SitOp SitOp "0..*" --> "1" EP : réalisée par click EJ href "StructureDefinition-ror-entite-juridique.html" "ROREntiteJuridique" click EG href "StructureDefinition-ror-entite-geographique.html" "ROREntiteGeographique" click OI href "StructureDefinition-ror-organisation-interne.html" "ROROrganisationInterne" click Tarif href "StructureDefinition-ror-tarif.html" "RORTarif" click Offre href "StructureDefinition-ror-offre-operationnelle.html" "ROROffreOperationnelle" click Lieu href "StructureDefinition-ror-lieu-realisation-offre.html" "RORLieuRealisationOffre" click SitOp href "StructureDefinition-ror-situation-operationnelle.html" "RORSituationOperationnelle" click EP href "StructureDefinition-ror-exercice-professionnel.html" "RORExerciceProfessionnel"
+
+ 
 
 ### Données pivots
 

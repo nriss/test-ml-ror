@@ -153,8 +153,8 @@
     "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R243-CompetenceSpecifique/FHIR/TRE-R243-CompetenceSpecifique"],
     "uses" : {
     },
-    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle",
-    "StructureDefinition-ror-situation-operationnelle.html" : "ROR - Situation Opérationnelle"
+    "StructureDefinition-ror-situation-operationnelle.html" : "ROR - Situation Opérationnelle",
+    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-condition-tarifaire",
@@ -166,9 +166,9 @@
     "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R250-ConditionTarifaire/FHIR/TRE-R250-ConditionTarifaire"],
     "uses" : {
     },
-    "StructureDefinition-ror-forfait-socle-hebergement.html" : "ROR - Forfait Socle Hébergement",
     "StructureDefinition-ror-tarif-portage-repas.html" : "ROR - Tarif Portage Repas",
     "StructureDefinition-ror-tarif-aides-humaines.html" : "ROR - Tarif Aides Humaines",
+    "StructureDefinition-ror-forfait-socle-hebergement.html" : "ROR - Forfait Socle Hébergement",
     "StructureDefinition-ror-tarif-accueil-de-jour.html" : "ROR - Tarif Accueil de Jour"
   },
   {
@@ -277,8 +277,8 @@
     "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R236-ModeGestion/FHIR/TRE-R236-ModeGestion"],
     "uses" : {
     },
-    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle",
-    "StructureDefinition-ror-tarif-aides-humaines.html" : "ROR - Tarif Aides Humaines"
+    "StructureDefinition-ror-tarif-aides-humaines.html" : "ROR - Tarif Aides Humaines",
+    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-mode-prise-en-charge",
@@ -362,8 +362,8 @@
     "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R264-PrestationNonObligatoireIncluse/FHIR/TRE-R264-PrestationNonObligatoireIncluse"],
     "uses" : {
     },
-    "StructureDefinition-ror-forfait-socle-hebergement.html" : "ROR - Forfait Socle Hébergement",
-    "StructureDefinition-ror-tarif-prestation-supplementaire.html" : "ROR - Tarif Prestation Supplémentaire"
+    "StructureDefinition-ror-tarif-prestation-supplementaire.html" : "ROR - Tarif Prestation Supplémentaire",
+    "StructureDefinition-ror-forfait-socle-hebergement.html" : "ROR - Forfait Socle Hébergement"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-profession-sante",
@@ -483,9 +483,9 @@
     "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R240-TemporaliteAccueil/FHIR/TRE-R240-TemporaliteAccueil"],
     "uses" : {
     },
+    "StructureDefinition-ror-tarif-dependance.html" : "ROR - Tarif Dépendance",
     "StructureDefinition-ror-forfait-socle-hebergement.html" : "ROR - Forfait Socle Hébergement",
-    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle",
-    "StructureDefinition-ror-tarif-dependance.html" : "ROR - Tarif Dépendance"
+    "StructureDefinition-ror-offre-operationnelle.html" : "ROR - Offre Opérationnelle"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-crise",
@@ -522,8 +522,8 @@
     "uses" : {
     },
     "StructureDefinition-ror-forfait-socle-hebergement.html" : "ROR - Forfait Socle Hébergement",
-    "StructureDefinition-ror-capacite-habitation.html" : "ROR - Capacité d'Habitation",
-    "StructureDefinition-ror-supplement-tarif-hebergement.html" : "ROR - Supplément Tarif Hébergement"
+    "StructureDefinition-ror-supplement-tarif-hebergement.html" : "ROR - Supplément Tarif Hébergement",
+    "StructureDefinition-ror-capacite-habitation.html" : "ROR - Capacité d'Habitation"
   },
   {
     "url" : "https://interop.esante.gouv.fr/ig/fhir/test-ror/ValueSet/jdv-ror-type-lit-supplementaire",
@@ -583,13 +583,13 @@
     "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R246-TypeTarif/FHIR/TRE-R246-TypeTarif"],
     "uses" : {
     },
-    "StructureDefinition-ror-forfait-socle-hebergement.html" : "ROR - Forfait Socle Hébergement",
+    "StructureDefinition-ror-tarif.html" : "ROR - Tarif",
+    "StructureDefinition-ror-tarif-dependance.html" : "ROR - Tarif Dépendance",
     "StructureDefinition-ror-tarif-portage-repas.html" : "ROR - Tarif Portage Repas",
-    "StructureDefinition-ror-supplement-tarif-hebergement.html" : "ROR - Supplément Tarif Hébergement",
     "StructureDefinition-ror-tarif-prestation-supplementaire.html" : "ROR - Tarif Prestation Supplémentaire",
     "StructureDefinition-ror-tarif-aides-humaines.html" : "ROR - Tarif Aides Humaines",
-    "StructureDefinition-ror-tarif-dependance.html" : "ROR - Tarif Dépendance",
-    "StructureDefinition-ror-tarif.html" : "ROR - Tarif",
+    "StructureDefinition-ror-forfait-socle-hebergement.html" : "ROR - Forfait Socle Hébergement",
+    "StructureDefinition-ror-supplement-tarif-hebergement.html" : "ROR - Supplément Tarif Hébergement",
     "StructureDefinition-ror-tarif-accueil-de-jour.html" : "ROR - Tarif Accueil de Jour"
   },
   {
@@ -602,13 +602,13 @@
     "systems" : ["https://mos.esante.gouv.fr/NOS/TRE_R228-UnitePrix/FHIR/TRE-R228-UnitePrix"],
     "uses" : {
     },
-    "StructureDefinition-ror-forfait-socle-hebergement.html" : "ROR - Forfait Socle Hébergement",
+    "StructureDefinition-ror-tarif.html" : "ROR - Tarif",
+    "StructureDefinition-ror-tarif-dependance.html" : "ROR - Tarif Dépendance",
     "StructureDefinition-ror-tarif-portage-repas.html" : "ROR - Tarif Portage Repas",
-    "StructureDefinition-ror-supplement-tarif-hebergement.html" : "ROR - Supplément Tarif Hébergement",
     "StructureDefinition-ror-tarif-prestation-supplementaire.html" : "ROR - Tarif Prestation Supplémentaire",
     "StructureDefinition-ror-tarif-aides-humaines.html" : "ROR - Tarif Aides Humaines",
-    "StructureDefinition-ror-tarif-dependance.html" : "ROR - Tarif Dépendance",
-    "StructureDefinition-ror-tarif.html" : "ROR - Tarif",
+    "StructureDefinition-ror-forfait-socle-hebergement.html" : "ROR - Forfait Socle Hébergement",
+    "StructureDefinition-ror-supplement-tarif-hebergement.html" : "ROR - Supplément Tarif Hébergement",
     "StructureDefinition-ror-tarif-accueil-de-jour.html" : "ROR - Tarif Accueil de Jour"
   },
   {

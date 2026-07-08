@@ -69,7 +69,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-ror-capacite-pr
   "name" : "RORCapacitePriseCharge",
   "title" : "ROR - Capacité de Prise en Charge",
   "status" : "draft",
-  "date" : "2026-07-08T15:14:17+00:00",
+  "date" : "2026-07-08T16:19:56+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

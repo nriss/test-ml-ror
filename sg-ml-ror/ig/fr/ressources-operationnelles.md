@@ -19,7 +19,11 @@ L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette s
 ↻
 ⛶
 
-  
+ 
+
+classDiagram class Offre["ROROffreOperationnelle"] class Lieu["RORLieuRealisationOffre"] { idExterneSynchro : Identifier [0..1] nomExterneSynchro : string [0..1] commentaire : string [0..1] metadonnee : RORMetadonnee [1..1] } class Equip["ROREquipementSpecifique"] { typeEquipement : Coding [1..1] nbEquipementEnService : integer [0..1] metadonnee : RORMetadonnee [1..1] } class CPC["RORCapacitePriseCharge"] { affectationTemporaire : Coding [1..1] commentaire : string [0..1] metadonnee : RORMetadonnee [1..1] } class CAO["RORCapaciteAccueilOperationnelle"] { natureCapacite : Coding [1..1] nombreCapacite : integer [0..1] statutCapacite : Coding [1..1] temporaliteCapacite : Coding [1..1] typeSourceCapacite : Coding [0..1] genreCapaciteDispo : Coding [0..1] typeFermetureCapacite : Coding [0..1] typeLitSupplementaire : Coding [0..*] typeCrise : Coding [0..*] } class CH["RORCapaciteHabitation"] { typeHabitation : Coding [1..1] nbHabitation : integer [0..1] metadonnee : RORMetadonnee [1..1] } Offre "1" --> "1" Lieu : réalisée dans Lieu "1" --> "0..*" Equip : dispose de Lieu "1" --> "0..*" CPC : capacité de CPC "1" --> "0..*" CAO : détaillée par Offre "1" --> "0..*" CH : hébergement click Offre href "StructureDefinition-ror-offre-operationnelle.html" "ROROffreOperationnelle" click Lieu href "StructureDefinition-ror-lieu-realisation-offre.html" "RORLieuRealisationOffre" click Equip href "StructureDefinition-ror-equipement-specifique.html" "ROREquipementSpecifique" click CPC href "StructureDefinition-ror-capacite-prise-charge.html" "RORCapacitePriseCharge" click CAO href "StructureDefinition-ror-capacite-accueil-operationnelle.html" "RORCapaciteAccueilOperationnelle" click CH href "StructureDefinition-ror-capacite-habitation.html" "RORCapaciteHabitation"
+
+ 
 
 -------
 

@@ -23,11 +23,12 @@ Première version de l'IG de démonstration ROR.
 * Remplacement des tableaux d'attributs codés en dur par les includes auto-générés `StructureDefinition-[id]-class-table.xhtml` (évite la duplication avec les FSH)
 * Suppression des titres `###` en tête de page (le publisher génère le titre automatiquement depuis le menu)
 
-**Diagrammes PlantUML**
+**Diagrammes Mermaid**
 
-* Création de 8 diagrammes PlantUML (`input/images-source/`) : VueEnsemble, Structure, Organisation, OffreOperationnelle, Tarif, RessourcesOperationnelles, Professionnel, ClassesCommunes
-* Thème `carbon-gray`, liens cliquables vers les StructureDefinition, héritage MOS en package grisé
+* Création de 8 diagrammes de classes Mermaid (intégrés directement dans les pages `pagecontent`) : VueEnsemble, Structure, Organisation, OffreOperationnelle, Tarif, RessourcesOperationnelles, Professionnel, ClassesCommunes
+* Liens cliquables vers les StructureDefinition, héritage MOS mis en évidence par un style grisé
 * Intégration du composant interactif MOS (`svg-interactive-styles.html`, `svg-interactive-script.html`) avec zoom +/−/↺ actif en mode normal et plein écran
+* Remplacement des diagrammes PlantUML (`input/images-source/`) par des diagrammes Mermaid, rendus côté client sans étape de compilation à la publication
 
 **Configuration**
 

@@ -383,12 +383,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Suppression des titres <code class="language-plaintext highlighter-rouge">###</code> en tête de page (le publisher génère le titre automatiquement depuis le menu)</li>
 </ul>
 
-<p><strong>Diagrammes PlantUML</strong></p>
+<p><strong>Diagrammes Mermaid</strong></p>
 
 <ul>
-  <li>Création de 8 diagrammes PlantUML (<code class="language-plaintext highlighter-rouge">input/images-source/</code>) : VueEnsemble, Structure, Organisation, OffreOperationnelle, Tarif, RessourcesOperationnelles, Professionnel, ClassesCommunes</li>
-  <li>Thème <code class="language-plaintext highlighter-rouge">carbon-gray</code>, liens cliquables vers les StructureDefinition, héritage MOS en package grisé</li>
+  <li>Création de 8 diagrammes de classes Mermaid (intégrés directement dans les pages <code class="language-plaintext highlighter-rouge">pagecontent</code>) : VueEnsemble, Structure, Organisation, OffreOperationnelle, Tarif, RessourcesOperationnelles, Professionnel, ClassesCommunes</li>
+  <li>Liens cliquables vers les StructureDefinition, héritage MOS mis en évidence par un style grisé</li>
   <li>Intégration du composant interactif MOS (<code class="language-plaintext highlighter-rouge">svg-interactive-styles.html</code>, <code class="language-plaintext highlighter-rouge">svg-interactive-script.html</code>) avec zoom +/−/↺ actif en mode normal et plein écran</li>
+  <li>Remplacement des diagrammes PlantUML (<code class="language-plaintext highlighter-rouge">input/images-source/</code>) par des diagrammes Mermaid, rendus côté client sans étape de compilation à la publication</li>
 </ul>
 
 <p><strong>Configuration</strong></p>
@@ -448,7 +449,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-07-08 15:14:00 +0000">
+  <span title="2026-07-08 16:19:00 +0000">
     2026-07-08
   </span>
 
