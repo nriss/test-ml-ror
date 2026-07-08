@@ -22,7 +22,7 @@ Ces données pivots ne sont pas modifiables après création.
 
 ### Diagramme
 
-<div class="mermaid">
+<div class="mermaid" markdown="0">
 classDiagram
     class MOS_EJ["EntiteJuridique"]
     class MOS_EG["EntiteGeographique"]

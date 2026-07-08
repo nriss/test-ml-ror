@@ -11,7 +11,7 @@ La classe `RORTarif` est une **classe abstraite** dont héritent les différents
 
 ### Diagramme
 
-<div class="mermaid">
+<div class="mermaid" markdown="0">
 classDiagram
     class Tarif["RORTarif"] {
         &lt;&lt;abstract&gt;&gt;

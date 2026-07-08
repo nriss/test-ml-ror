@@ -12,7 +12,7 @@ Les **Classes Communes** regroupent les éléments partagés par l'ensemble des 
 
 ### Diagramme
 
-<div class="mermaid">
+<div class="mermaid" markdown="0">
 classDiagram
     class Meta["RORMetadonnee"] {
         dateCreation : dateTime [1..1]

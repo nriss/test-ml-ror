@@ -17,7 +17,7 @@ L'**idNat_PS** (numéro RPPS ou ADELI) est l'identifiant national du professionn
 
 ### Diagramme
 
-<div class="mermaid">
+<div class="mermaid" markdown="0">
 classDiagram
     class PP["RORPersonnePhysique"] {
         civilite : Coding [0..1]

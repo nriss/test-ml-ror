@@ -13,7 +13,7 @@ L'**identifiantOffre** est l'identifiant de l'offre opérationnelle, unique et p
 
 ### Diagramme
 
-<div class="mermaid">
+<div class="mermaid" markdown="0">
 classDiagram
     class Offre["ROROffreOperationnelle"] {
         identifiantOffre : Identifier [1..1]

@@ -42,7 +42,7 @@ Les données de description de l'offre de santé, échangées avec les ROR, sont
 | 4 | **Ressources Opérationnelles** | Moyens mis en œuvre pour réaliser la prestation | [Ressources Opérationnelles](ressources-operationnelles.html) |
 | 5 | **Professionnel** | Personnes physiques, professionnels, exercice professionnel et savoir-faire | [Professionnel Ressource](professionnel.html) |
 
-<div class="mermaid">
+<div class="mermaid" markdown="0">
 classDiagram
     class EJ["ROREntiteJuridique"]
     class EG["ROREntiteGeographique"]

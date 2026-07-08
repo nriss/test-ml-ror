@@ -13,7 +13,7 @@ L'identifiant des organisations internes est généré par les ROR. Lorsqu'il es
 
 ### Diagramme
 
-<div class="mermaid">
+<div class="mermaid" markdown="0">
 classDiagram
     class OI["ROROrganisationInterne"] {
         &lt;&lt;abstract&gt;&gt;

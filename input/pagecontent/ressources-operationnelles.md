@@ -13,7 +13,7 @@ L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette s
 
 ### Diagramme
 
-<div class="mermaid">
+<div class="mermaid" markdown="0">
 classDiagram
     class Offre["ROROffreOperationnelle"]
 
