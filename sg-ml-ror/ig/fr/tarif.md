@@ -12,16 +12,7 @@ La classe `RORTarif` est une **classe abstraite** dont héritent les différents
 
 ### Diagramme
 
-🔍+
-🔍−
-↻
-⛶
-
- 
-
 classDiagram class Tarif["RORTarif"] { <<abstract>> typeTarif : Coding [1..1] montantTarif : Money [1..1] unitePrix : Coding [1..1] dateDebutValiditeTarif : date [0..1] metadonnee : RORMetadonnee [1..1] } class FSH["RORForfaitSocleHebergement"] { prestationsNonObligatoiresIncluses : Coding [0..*] autresPrestationsNonObligatoiresIncluses : string [0..*] tarifMoins60Ans : boolean [1..1] typeHabitation : Coding [1..1] conditionTarifaire : Coding [0..1] temporaliteAccueil : Coding [1..1] } class TAJ["RORTarifAccueilDeJour"] { conditionTarifaire : Coding [0..1] } class TD["RORTarifDependance"] { groupeTarifaireDependance : Coding [1..1] temporaliteAccueil : Coding [1..1] } class TAH["RORTarifAidesHumaines"] { nomTarifAidesHumaines : string [0..1] conditionTarifaire : Coding [0..1] modeGestion : Coding [1..1] } class TPS["RORTarifPrestationSupplementaire"] { nomAutrePrestationSupp : string [1..1] nomPrestationSupp : Coding [0..1] } class STH["RORSupplementTarifHebergement"] { typeHabitation : Coding [1..1] } class TPR["RORTarifPortageRepas"] { conditionTarifaire : Coding [0..1] nomTarifPortageRepas : string [0..1] } Tarif <|-- FSH Tarif <|-- TAJ Tarif <|-- TD Tarif <|-- TAH Tarif <|-- TPS Tarif <|-- STH Tarif <|-- TPR click Tarif href "StructureDefinition-ror-tarif.html" "RORTarif" click FSH href "StructureDefinition-ror-forfait-socle-hebergement.html" "RORForfaitSocleHebergement" click TAJ href "StructureDefinition-ror-tarif-accueil-de-jour.html" "RORTarifAccueilDeJour" click TD href "StructureDefinition-ror-tarif-dependance.html" "RORTarifDependance" click TAH href "StructureDefinition-ror-tarif-aides-humaines.html" "RORTarifAidesHumaines" click TPS href "StructureDefinition-ror-tarif-prestation-supplementaire.html" "RORTarifPrestationSupplementaire" click STH href "StructureDefinition-ror-supplement-tarif-hebergement.html" "RORSupplementTarifHebergement" click TPR href "StructureDefinition-ror-tarif-portage-repas.html" "RORTarifPortageRepas"
-
- 
 
 -------
 
