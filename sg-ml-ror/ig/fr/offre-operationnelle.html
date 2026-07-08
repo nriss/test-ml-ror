@@ -414,12 +414,8 @@ classDiagram
         publicPrisEnCharge : Coding [0..*]
     }
 
-    namespace RessourcesOperationnelles["Ressources Opérationnelles"] {
-        class Lieu["RORLieuRealisationOffre"]
-    }
-    namespace Professionnel["Professionnel"] {
-        class SitOp["RORSituationOperationnelle"]
-    }
+    class Lieu["RORLieuRealisationOffre"]
+    class SitOp["RORSituationOperationnelle"]
 
     Offre "1" --&gt; "0..*" AO : décrit par
     Offre "1" --&gt; "0..1" Pat : pour
@@ -431,6 +427,11 @@ classDiagram
     click Pat href "StructureDefinition-ror-patientele.html" "RORPatientele"
     click Lieu href "StructureDefinition-ror-lieu-realisation-offre.html" "RORLieuRealisationOffre"
     click SitOp href "StructureDefinition-ror-situation-operationnelle.html" "RORSituationOperationnelle"
+
+    classDef externalRef fill:#E3F2FD
+    classDef externalRef stroke:#1976D2
+    classDef externalRef color:#333
+    cssClass "Lieu,SitOp" externalRef
 </div>
 
 <hr/>
@@ -1156,7 +1157,7 @@ table.box td { border: none; font-size : 11px; }
           IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-07-08 16:59:00 +0000">
+  <span title="2026-07-08 17:09:00 +0000">
     2026-07-08
   </span>
 
