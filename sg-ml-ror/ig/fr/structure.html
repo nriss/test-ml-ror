@@ -392,8 +392,10 @@ Cette section est transversale : elle intéresse les professionnels de santé (c
 
 <div class="mermaid">
 classDiagram
-    class MOS_EJ["EntiteJuridique"]
-    class MOS_EG["EntiteGeographique"]
+    namespace MOS["MOS (héritage)"] {
+        class MOS_EJ["EntiteJuridique"]
+        class MOS_EG["EntiteGeographique"]
+    }
 
     class EJ["ROREntiteJuridique"] {
         idNatStruct : Identifier [1..1]
@@ -427,9 +429,13 @@ classDiagram
         metadonnee : RORMetadonnee [1..1]
     }
 
-    class OI["ROROrganisationInterne"]
-    class Tarif["RORTarif"] {
-        &lt;&lt;abstract&gt;&gt;
+    namespace Organisation["Organisation"] {
+        class OI["ROROrganisationInterne"]
+    }
+    namespace Tarif["Tarif"] {
+        class Tarif["RORTarif"] {
+            &lt;&lt;abstract&gt;&gt;
+        }
     }
 
     EJ --|&gt; MOS_EJ
@@ -946,7 +952,7 @@ table.box td { border: none; font-size : 11px; }
           IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-07-08 16:50:00 +0000">
+  <span title="2026-07-08 16:54:00 +0000">
     2026-07-08
   </span>
 
