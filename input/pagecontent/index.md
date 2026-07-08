@@ -93,18 +93,23 @@ Différences notables par rapport au MOS :
 
 {% include dependency-table.xhtml %}
 
+<!--
 ### Analyse inter-version FHIR
 
 {% include cross-version-analysis.xhtml %}
+-->
 
-<!--### Profils globaux
+<!--
+### Profils globaux
 
 {% include globals-table.xhtml %}
 -->
 
-<!-- ### Paramètres d'expansion
+<!-- 
+### Paramètres d'expansion
 
-{% include expansion-params.xhtml %} -->
+{% include expansion-params.xhtml %} 
+-->
 
 ### Propriété intellectuelle
 
