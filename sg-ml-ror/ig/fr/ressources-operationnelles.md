@@ -36,25 +36,25 @@ L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette s
 
 -------
 
-### RORLieuRealisationOffre {: #lieu-realisation-offre}
+### RORLieuRealisationOffre
 
 Le **Lieu de Réalisation de l'Offre** indique le lieu précis où se déroule la prestation. Il hérite de la classe MOS `Lieu` (adresse, coordonnées géographiques, etc.) et ajoute les attributs spécifiques au contexte ROR.
 
 -------
 
-### ROREquipementSpecifique {: #equipement-specifique}
+### ROREquipementSpecifique
 
 L'**Équipement Spécifique** décrit les équipements matériels et installations spécialisés disponibles dans un établissement, susceptibles d'influencer l'orientation d'un patient.
 
 -------
 
-### RORCapacitePriseCharge {: #capacite-prise-charge}
+### RORCapacitePriseCharge
 
 La **Capacité de Prise en Charge** décrit les capacités d'accueil en termes de places autorisées ou installées pour une offre donnée.
 
 -------
 
-### RORCapaciteAccueilOperationnelle {: #capacite-accueil-operationnelle}
+### RORCapaciteAccueilOperationnelle
 
 La **Capacité d'Accueil Opérationnelle** représente les disponibilités de prise en charge en temps réel ou à court terme. Elle permet aux outils d'orientation d'accéder aux disponibilités d'un établissement.
 
@@ -64,13 +64,13 @@ La **Capacité d'Accueil Opérationnelle** représente les disponibilités de pr
 
 -------
 
-### RORCapaciteHabitation {: #capacite-habitation}
+### RORCapaciteHabitation
 
 La **Capacité Habitation** décrit le nombre de places ou de logements disponibles selon le type d'hébergement.
 
 -------
 
-### RORLimiteCaracteristiqueEquipement {: #limite-caracteristique-equipement}
+### RORLimiteCaracteristiqueEquipement
 
 La **Limite de Caractéristique d'Équipement** précise les limites que peut supporter l'équipement le plus tolérant parmi les équipements spécifiques de même type dans une organisation. Par exemple, si une organisation possède trois tables de bloc opératoire supportant respectivement 180 kg, 190 kg et 200 kg, seule la valeur de 200 kg est retenue.
 

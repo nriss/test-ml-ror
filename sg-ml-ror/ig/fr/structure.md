@@ -49,7 +49,7 @@ Ces données pivots ne sont pas modifiables après création.
 
 -------
 
-### ROREntiteJuridique {: #entite-juridique}
+### ROREntiteJuridique
 
 L'**Entité Juridique** (EJ) correspond à la notion de personne morale :
 
@@ -67,7 +67,7 @@ L'**Entité Juridique** (EJ) correspond à la notion de personne morale :
 
 -------
 
-### ROREntiteGeographique {: #entite-geographique}
+### ROREntiteGeographique
 
 L'**Entité Géographique** (EG) correspond à la notion d'établissement d'une entité juridique :
 

@@ -49,35 +49,35 @@ L'**idNat_PS** (numéro RPPS ou ADELI) est l'identifiant national du professionn
 
 -------
 
-### RORPersonnePhysique {: #personne-physique}
+### RORPersonnePhysique
 
 La **Personne Physique** porte les données d'identité du professionnel.
 
 -------
 
-### RORProfessionnel {: #professionnel}
+### RORProfessionnel
 
 Le **Professionnel** représente le professionnel enregistré dans le RPPS ou ADELI.
 
 -------
 
-### RORExerciceProfessionnel {: #exercice-professionnel}
+### RORExerciceProfessionnel
 
 L'**Exercice Professionnel** caractérise l'exercice d'une profession par un professionnel.
 
 -------
 
-### RORSavoirFaire {: #savoir-faire}
+### RORSavoirFaire
 
 Le **Savoir-Faire** est une classe abstraite décrivant la spécialité ou la compétence principale du professionnel. Elle est spécialisée en 9 sous-classes.
 
 -------
 
-### Sous-classes de RORSavoirFaire {: #sous-classes-savoir-faire}
+### Sous-classes de RORSavoirFaire
 
 -------
 
-### RORSituationOperationnelle {: #situation-operationnelle}
+### RORSituationOperationnelle
 
 La **Situation Opérationnelle** caractérise les conditions d'exercice du professionnel dans le cadre d'une offre opérationnelle précise.
 

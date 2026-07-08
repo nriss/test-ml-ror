@@ -86,20 +86,13 @@ Différences notables par rapport au MOS :
 
 
 
-### Analyse cross-version
+### Analyse inter-version FHIR
 
 Ceci est un IG R4. Aucune des fonctionnalités qu'il utilise n'est modifiée dans R4B, il peut donc être utilisé tel quel avec les systèmes R4B. Les packages pour [R4 (ans.fhir.fr.test.ror.r4)](../package.r4.tgz) et [R4B (ans.fhir.fr.test.ror.r4b)](../package.r4b.tgz) sont disponibles.
 
-### Profils globaux
+–>
 
-*There are no Global profiles defined*
-
-### Paramètres d'expansion
-
-* Parameter: system-version
-  * Value: SNOMED CT[??]
-* Parameter: displayLanguage
-  * Value: fr-FR
+–>
 
 ### Propriété intellectuelle
 

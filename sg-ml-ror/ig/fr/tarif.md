@@ -36,7 +36,7 @@ La classe `RORTarif` est une **classe abstraite** dont héritent les différents
 
 -------
 
-### RORTarif (classe abstraite) {: #tarif}
+### RORTarif (classe abstraite)
 
 Attributs communs à tous les types de tarifs. Cette classe n'est pas instanciée directement : seules ses sous-classes spécialisées sont utilisées.
 
@@ -47,25 +47,25 @@ Attributs communs à tous les types de tarifs. Cette classe n'est pas instancié
 
 -------
 
-### RORForfaitSocleHebergement {: #forfait-socle-hebergement}
+### RORForfaitSocleHebergement
 
 Tarif journalier et par personne pour un type d'hébergement donné. Inclut obligatoirement les prestations définies dans le décret n°2015-1868.
 
 -------
 
-### RORTarifAccueilDeJour {: #tarif-accueil-de-jour}
+### RORTarifAccueilDeJour
 
 -------
 
-### RORTarifDependance {: #tarif-dependance}
+### RORTarifDependance
 
 -------
 
-### RORTarifAidesHumaines {: #tarif-aides-humaines}
+### RORTarifAidesHumaines
 
 -------
 
-### RORTarifPrestationSupplementaire {: #tarif-prestation-supplementaire}
+### RORTarifPrestationSupplementaire
 
 **Règles de gestion :**
 
@@ -73,7 +73,7 @@ Tarif journalier et par personne pour un type d'hébergement donné. Inclut obli
 
 -------
 
-### RORSupplementTarifHebergement {: #supplement-tarif-hebergement}
+### RORSupplementTarifHebergement
 
 **Règles de gestion :**
 
@@ -81,5 +81,5 @@ Tarif journalier et par personne pour un type d'hébergement donné. Inclut obli
 
 -------
 
-### RORTarifPortageRepas {: #tarif-portage-repas}
+### RORTarifPortageRepas
 

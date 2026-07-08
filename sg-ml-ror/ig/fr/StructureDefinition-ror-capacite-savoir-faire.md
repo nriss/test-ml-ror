@@ -65,7 +65,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-ror-capacite-sa
   "name" : "RORCapacite",
   "title" : "ROR - Capacité (Savoir-Faire)",
   "status" : "draft",
-  "date" : "2026-07-07T16:30:55+00:00",
+  "date" : "2026-07-08T14:05:48+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
