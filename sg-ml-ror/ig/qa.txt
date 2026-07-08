@@ -3,7 +3,7 @@ MExROR : Validation Results
 
 err = 32, warn = 844, info = 327
 IG Publisher Version: 2.2.10
-Generated Wed Jul 08 17:11:01 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.test.ror#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/test-ror)
+Generated Wed Jul 08 17:18:54 UTC 2026. FHIR version 4.0.1 for ans.fhir.fr.test.ror#0.1.0 (canonical = https://interop.esante.gouv.fr/ig/fhir/test-ror)
  Build Errors : 691 / 0 / 0
  /__w/test-ml-ror/test-ml-ror/igSource/fsh-generated/resources/Basic-ror-requirements-classes-communes : 3 / 1 / 6
  /__w/test-ml-ror/test-ml-ror/igSource/fsh-generated/resources/Basic-ror-requirements-offre-operationnelle : 3 / 1 / 21
