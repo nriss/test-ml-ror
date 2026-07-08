@@ -69,7 +69,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-ror-equipement-
   "name" : "ROREquipementSpecifique",
   "title" : "ROR - Équipement Spécifique",
   "status" : "draft",
-  "date" : "2026-07-08T14:05:48+00:00",
+  "date" : "2026-07-08T15:14:17+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",

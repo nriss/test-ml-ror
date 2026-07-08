@@ -2,7 +2,7 @@
 
 ## Pages
 
-* [Accueil](fr/index.md)
+* [Introduction](fr/index.md)
 * [Règles de gestion](fr/regles-de-gestion.md)
 * [Structure](fr/structure.md)
 * [Ressources Opérationnelles](fr/ressources-operationnelles.md)
