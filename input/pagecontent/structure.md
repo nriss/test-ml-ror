@@ -24,10 +24,8 @@ Ces données pivots ne sont pas modifiables après création.
 
 <div class="mermaid">
 classDiagram
-    namespace MOS["MOS (héritage)"] {
-        class MOS_EJ["EntiteJuridique"]
-        class MOS_EG["EntiteGeographique"]
-    }
+    class MOS_EJ["EntiteJuridique"]
+    class MOS_EG["EntiteGeographique"]
 
     class EJ["ROREntiteJuridique"] {
         idNatStruct : Identifier [1..1]
@@ -61,13 +59,9 @@ classDiagram
         metadonnee : RORMetadonnee [1..1]
     }
 
-    namespace Organisation["Organisation"] {
-        class OI["ROROrganisationInterne"]
-    }
-    namespace TarifPkg["Tarif"] {
-        class Tarif["RORTarif"] {
-            &lt;&lt;abstract&gt;&gt;
-        }
+    class OI["ROROrganisationInterne"]
+    class Tarif["RORTarif"] {
+        &lt;&lt;abstract&gt;&gt;
     }
 
     EJ --|> MOS_EJ
@@ -82,8 +76,14 @@ classDiagram
     click OI href "StructureDefinition-ror-organisation-interne.html" "ROROrganisationInterne"
     click Tarif href "StructureDefinition-ror-tarif.html" "RORTarif"
 
+    classDef mosClass fill:#D3D3D3
+    classDef mosClass stroke:#888
+    classDef mosClass color:#333
     cssClass "MOS_EJ,MOS_EG" mosClass
-    classDef mosClass fill:#D3D3D3,stroke:#888,color:#333
+    classDef externalRef fill:#E3F2FD
+    classDef externalRef stroke:#1976D2
+    classDef externalRef color:#333
+    cssClass "OI,Tarif" externalRef
 </div>
 
 ---

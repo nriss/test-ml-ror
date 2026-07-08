@@ -50,12 +50,8 @@ classDiagram
         publicPrisEnCharge : Coding [0..*]
     }
 
-    namespace RessourcesOperationnelles["Ressources Opérationnelles"] {
-        class Lieu["RORLieuRealisationOffre"]
-    }
-    namespace Professionnel["Professionnel"] {
-        class SitOp["RORSituationOperationnelle"]
-    }
+    class Lieu["RORLieuRealisationOffre"]
+    class SitOp["RORSituationOperationnelle"]
 
     Offre "1" --> "0..*" AO : décrit par
     Offre "1" --> "0..1" Pat : pour
@@ -67,6 +63,11 @@ classDiagram
     click Pat href "StructureDefinition-ror-patientele.html" "RORPatientele"
     click Lieu href "StructureDefinition-ror-lieu-realisation-offre.html" "RORLieuRealisationOffre"
     click SitOp href "StructureDefinition-ror-situation-operationnelle.html" "RORSituationOperationnelle"
+
+    classDef externalRef fill:#E3F2FD
+    classDef externalRef stroke:#1976D2
+    classDef externalRef color:#333
+    cssClass "Lieu,SitOp" externalRef
 </div>
 
 ---

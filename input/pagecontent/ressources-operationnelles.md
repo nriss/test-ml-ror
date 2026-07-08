@@ -15,9 +15,7 @@ L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette s
 
 <div class="mermaid">
 classDiagram
-    namespace OffreOperationnelle["Offre Opérationnelle"] {
-        class Offre["ROROffreOperationnelle"]
-    }
+    class Offre["ROROffreOperationnelle"]
 
     class Lieu["RORLieuRealisationOffre"] {
         idExterneSynchro : Identifier [0..1]
@@ -68,6 +66,11 @@ classDiagram
     click CPC href "StructureDefinition-ror-capacite-prise-charge.html" "RORCapacitePriseCharge"
     click CAO href "StructureDefinition-ror-capacite-accueil-operationnelle.html" "RORCapaciteAccueilOperationnelle"
     click CH href "StructureDefinition-ror-capacite-habitation.html" "RORCapaciteHabitation"
+
+    classDef externalRef fill:#E3F2FD
+    classDef externalRef stroke:#1976D2
+    classDef externalRef color:#333
+    cssClass "Offre" externalRef
 </div>
 
 ---

@@ -25,20 +25,20 @@ classDiagram
 
     note for Meta "Présente dans toutes\nles classes ROR (1..1)"
 
-    namespace MOS["MOS - Classes communes (héritage)"] {
-        class Contact["Contact"]
-        class Adresse["Adresse"]
-        class MSS["BoiteLettreMSS"]
-        class Horaire["Horaire"]
-        class Lieu["Lieu"]
-        class DT["DivisionTerritoriale"]
-        class Tel["Telecommunication"]
-    }
+    class Contact["Contact"]
+    class Adresse["Adresse"]
+    class MSS["BoiteLettreMSS"]
+    class Horaire["Horaire"]
+    class Lieu["Lieu"]
+    class DT["DivisionTerritoriale"]
+    class Tel["Telecommunication"]
 
     click Meta href "StructureDefinition-ror-metadonnee.html" "RORMetadonnee"
 
+    classDef mosClass fill:#D3D3D3
+    classDef mosClass stroke:#888
+    classDef mosClass color:#333
     cssClass "Contact,Adresse,MSS,Horaire,Lieu,DT,Tel" mosClass
-    classDef mosClass fill:#D3D3D3,stroke:#888,color:#333
 </div>
 
 ---

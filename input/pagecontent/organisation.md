@@ -39,12 +39,8 @@ classDiagram
 
     OI "*" --> "*" OI : contient
 
-    namespace Structure["Structure"] {
-        class EG["ROREntiteGeographique"]
-    }
-    namespace OffreOperationnelle["Offre Opérationnelle"] {
-        class Offre["ROROffreOperationnelle"]
-    }
+    class EG["ROREntiteGeographique"]
+    class Offre["ROROffreOperationnelle"]
 
     OI "*" --> "1..*" EG : rattachée à
     OI "0..1" --> "1..*" Offre : porte
@@ -55,6 +51,11 @@ classDiagram
     click UF href "StructureDefinition-ror-unite-fonctionnelle.html" "RORUniteFonctionnelle"
     click EG href "StructureDefinition-ror-entite-geographique.html" "ROREntiteGeographique"
     click Offre href "StructureDefinition-ror-offre-operationnelle.html" "ROROffreOperationnelle"
+
+    classDef externalRef fill:#E3F2FD
+    classDef externalRef stroke:#1976D2
+    classDef externalRef color:#333
+    cssClass "EG,Offre" externalRef
 </div>
 
 ---
