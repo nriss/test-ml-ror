@@ -17,17 +17,7 @@ L'**idNat_PS** (numéro RPPS ou ADELI) est l'identifiant national du professionn
 
 ### Diagramme
 
-{% include svg-interactive-styles.html %}
-
-<div class="figure svg-wrap" style="width:100%;">
-  <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
-    <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>
-    <button class="btn btn-light btn-sm svg-zoom-out" title="Zoom arrière">🔍−</button>
-    <button class="btn btn-light btn-sm svg-zoom-reset" title="Réinitialiser">↻</button>
-    <button class="btn btn-light btn-sm svg-fullscreen" title="Plein écran">⛶</button>
-  </div>
-  <p style="margin: 0; padding: 0;">
-    <div class="mermaid">
+<div class="mermaid">
 classDiagram
     class PP["RORPersonnePhysique"] {
         civilite : Coding [0..1]
@@ -117,11 +107,7 @@ classDiagram
     click SST href "StructureDefinition-ror-surspecialite-transversale.html" "RORSurspecialiteTransversale"
     click DESC href "StructureDefinition-ror-desc-non-qualifiant.html" "RORDESCNonQualifiant"
     click SitOp href "StructureDefinition-ror-situation-operationnelle.html" "RORSituationOperationnelle"
-    </div>
-  </p>
 </div>
-
-{% include svg-interactive-script.html %}
 
 ---
 

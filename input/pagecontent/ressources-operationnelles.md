@@ -13,17 +13,7 @@ L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette s
 
 ### Diagramme
 
-{% include svg-interactive-styles.html %}
-
-<div class="figure svg-wrap" style="width:100%;">
-  <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
-    <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>
-    <button class="btn btn-light btn-sm svg-zoom-out" title="Zoom arrière">🔍−</button>
-    <button class="btn btn-light btn-sm svg-zoom-reset" title="Réinitialiser">↻</button>
-    <button class="btn btn-light btn-sm svg-fullscreen" title="Plein écran">⛶</button>
-  </div>
-  <p style="margin: 0; padding: 0;">
-    <div class="mermaid">
+<div class="mermaid">
 classDiagram
     class Offre["ROROffreOperationnelle"]
 
@@ -76,11 +66,7 @@ classDiagram
     click CPC href "StructureDefinition-ror-capacite-prise-charge.html" "RORCapacitePriseCharge"
     click CAO href "StructureDefinition-ror-capacite-accueil-operationnelle.html" "RORCapaciteAccueilOperationnelle"
     click CH href "StructureDefinition-ror-capacite-habitation.html" "RORCapaciteHabitation"
-    </div>
-  </p>
 </div>
-
-{% include svg-interactive-script.html %}
 
 ---
 

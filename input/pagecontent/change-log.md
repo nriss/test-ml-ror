@@ -23,8 +23,8 @@ Première version de l'IG de démonstration ROR.
 
 * Création de 8 diagrammes de classes Mermaid (intégrés directement dans les pages `pagecontent`) : VueEnsemble, Structure, Organisation, OffreOperationnelle, Tarif, RessourcesOperationnelles, Professionnel, ClassesCommunes
 * Liens cliquables vers les StructureDefinition, héritage MOS mis en évidence par un style grisé
-* Intégration du composant interactif MOS (`svg-interactive-styles.html`, `svg-interactive-script.html`) avec zoom +/−/↺ actif en mode normal et plein écran
 * Remplacement des diagrammes PlantUML (`input/images-source/`) par des diagrammes Mermaid, rendus côté client sans étape de compilation à la publication
+* Suppression du composant interactif de zoom/plein écran (`svg-interactive-styles.html`, `svg-interactive-script.html`), devenu obsolète : le SVG généré par Mermaid s'adapte déjà à la largeur de la page
 
 **Configuration**
 

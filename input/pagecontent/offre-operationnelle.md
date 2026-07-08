@@ -13,17 +13,7 @@ L'**identifiantOffre** est l'identifiant de l'offre opérationnelle, unique et p
 
 ### Diagramme
 
-{% include svg-interactive-styles.html %}
-
-<div class="figure svg-wrap" style="width:100%;">
-  <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
-    <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>
-    <button class="btn btn-light btn-sm svg-zoom-out" title="Zoom arrière">🔍−</button>
-    <button class="btn btn-light btn-sm svg-zoom-reset" title="Réinitialiser">↻</button>
-    <button class="btn btn-light btn-sm svg-fullscreen" title="Plein écran">⛶</button>
-  </div>
-  <p style="margin: 0; padding: 0;">
-    <div class="mermaid">
+<div class="mermaid">
 classDiagram
     class Offre["ROROffreOperationnelle"] {
         identifiantOffre : Identifier [1..1]
@@ -73,11 +63,7 @@ classDiagram
     click Pat href "StructureDefinition-ror-patientele.html" "RORPatientele"
     click Lieu href "StructureDefinition-ror-lieu-realisation-offre.html" "RORLieuRealisationOffre"
     click SitOp href "StructureDefinition-ror-situation-operationnelle.html" "RORSituationOperationnelle"
-    </div>
-  </p>
 </div>
-
-{% include svg-interactive-script.html %}
 
 ---
 
