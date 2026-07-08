@@ -22,7 +22,32 @@ Les **Classes Communes** regroupent les éléments partagés par l'ensemble des 
     <button class="btn btn-light btn-sm svg-fullscreen" title="Plein écran">⛶</button>
   </div>
   <p style="margin: 0; padding: 0;">
-    {%include ClassesCommunes.svg%}
+    <div class="mermaid">
+classDiagram
+    class Meta["RORMetadonnee"] {
+        dateCreation : dateTime [1..1]
+        dateMiseJour : dateTime [1..1]
+        identifiant : Identifier [0..1]
+        commentaire : string [0..1]
+        regionSource : Coding [0..1]
+        modeleSaisie : Identifier [0..1]
+    }
+
+    note for Meta "Présente dans toutes\nles classes ROR (1..1)"
+
+    class Contact["Contact"]
+    class Adresse["Adresse"]
+    class MSS["BoiteLettreMSS"]
+    class Horaire["Horaire"]
+    class Lieu["Lieu"]
+    class DT["DivisionTerritoriale"]
+    class Tel["Telecommunication"]
+
+    click Meta href "StructureDefinition-ror-metadonnee.html" "RORMetadonnee"
+
+    cssClass "Contact,Adresse,MSS,Horaire,Lieu,DT,Tel" mosClass
+    classDef mosClass fill:#D3D3D3,stroke:#888,color:#333
+    </div>
   </p>
 </div>
 

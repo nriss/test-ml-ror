@@ -17,7 +17,15 @@
 
     const svg = wrap.querySelector('svg');
     if (!svg) {
-      console.warn('SVG non trouvé dans', wrap);
+      // Les diagrammes Mermaid sont rendus de façon asynchrone : le <svg>
+      // n'existe pas encore au chargement de la page, on attend son insertion.
+      const observer = new MutationObserver(() => {
+        if (wrap.querySelector('svg')) {
+          observer.disconnect();
+          initSvgWrapper(wrap);
+        }
+      });
+      observer.observe(wrap, { childList: true, subtree: true });
       return;
     }
 
