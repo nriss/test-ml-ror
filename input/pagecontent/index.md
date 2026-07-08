@@ -51,7 +51,7 @@ classDiagram
     namespace Organisation["Organisation"] {
         class OI["ROROrganisationInterne"]
     }
-    namespace Tarif["Tarif"] {
+    namespace TarifPkg["Tarif"] {
         class Tarif["RORTarif"] {
             &lt;&lt;abstract&gt;&gt;
         }
