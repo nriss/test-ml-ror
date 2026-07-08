@@ -39,8 +39,12 @@ classDiagram
 
     OI "*" --> "*" OI : contient
 
-    class EG["ROREntiteGeographique"]
-    class Offre["ROROffreOperationnelle"]
+    namespace Structure["Structure"] {
+        class EG["ROREntiteGeographique"]
+    }
+    namespace OffreOperationnelle["Offre Opérationnelle"] {
+        class Offre["ROROffreOperationnelle"]
+    }
 
     OI "*" --> "1..*" EG : rattachée à
     OI "0..1" --> "1..*" Offre : porte

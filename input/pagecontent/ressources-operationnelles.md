@@ -15,7 +15,9 @@ L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette s
 
 <div class="mermaid">
 classDiagram
-    class Offre["ROROffreOperationnelle"]
+    namespace OffreOperationnelle["Offre Opérationnelle"] {
+        class Offre["ROROffreOperationnelle"]
+    }
 
     class Lieu["RORLieuRealisationOffre"] {
         idExterneSynchro : Identifier [0..1]

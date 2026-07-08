@@ -50,8 +50,12 @@ classDiagram
         publicPrisEnCharge : Coding [0..*]
     }
 
-    class Lieu["RORLieuRealisationOffre"]
-    class SitOp["RORSituationOperationnelle"]
+    namespace RessourcesOperationnelles["Ressources Opérationnelles"] {
+        class Lieu["RORLieuRealisationOffre"]
+    }
+    namespace Professionnel["Professionnel"] {
+        class SitOp["RORSituationOperationnelle"]
+    }
 
     Offre "1" --> "0..*" AO : décrit par
     Offre "1" --> "0..1" Pat : pour
