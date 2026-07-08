@@ -44,16 +44,28 @@ Les données de description de l'offre de santé, échangées avec les ROR, sont
 
 <div class="mermaid">
 classDiagram
-    class EJ["ROREntiteJuridique"]
-    class EG["ROREntiteGeographique"]
-    class OI["ROROrganisationInterne"]
-    class Tarif["RORTarif"] {
-        &lt;&lt;abstract&gt;&gt;
+    namespace Structure["Structure"] {
+        class EJ["ROREntiteJuridique"]
+        class EG["ROREntiteGeographique"]
     }
-    class Offre["ROROffreOperationnelle"]
-    class Lieu["RORLieuRealisationOffre"]
-    class SitOp["RORSituationOperationnelle"]
-    class EP["RORExerciceProfessionnel"]
+    namespace Organisation["Organisation"] {
+        class OI["ROROrganisationInterne"]
+    }
+    namespace Tarif["Tarif"] {
+        class Tarif["RORTarif"] {
+            &lt;&lt;abstract&gt;&gt;
+        }
+    }
+    namespace OffreOperationnelle["Offre Opérationnelle"] {
+        class Offre["ROROffreOperationnelle"]
+    }
+    namespace RessourcesOperationnelles["Ressources Opérationnelles"] {
+        class Lieu["RORLieuRealisationOffre"]
+    }
+    namespace Professionnel["Professionnel"] {
+        class SitOp["RORSituationOperationnelle"]
+        class EP["RORExerciceProfessionnel"]
+    }
 
     EJ "1" --> "1..*" EG
     EG "1" --> "0..*" OI
