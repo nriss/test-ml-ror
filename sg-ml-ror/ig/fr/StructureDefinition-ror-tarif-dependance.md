@@ -73,7 +73,7 @@ Autres représentations du profil : [CSV](../StructureDefinition-ror-tarif-depen
   "name" : "RORTarifDependance",
   "title" : "ROR - Tarif Dépendance",
   "status" : "draft",
-  "date" : "2026-07-09T08:06:43+00:00",
+  "date" : "2026-07-09T12:48:10+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
