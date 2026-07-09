@@ -14,47 +14,7 @@ L'identifiant des organisations internes est généré par les ROR. Lorsqu'il es
 ### Diagramme
 
 <div class="mermaid" markdown="0">
-classDiagram
-    class OI["ROROrganisationInterne"] {
-        &lt;&lt;abstract&gt;&gt;
-        identifiantOI : Identifier [1..1]
-        nomOI : string [1..1]
-        typeOI : Coding [1..1]
-        contact : Contact [0..*]
-        boiteLettreMSS : BoiteLettreMSS [0..*]
-        dateOuverture : date [0..1]
-        dateFermeture : date [0..1]
-        typeFermeture : Coding [0..1]
-        datePrevisionnelleReouverture : date [0..1]
-        metadonnee : RORMetadonnee [1..1]
-    }
-
-    class Pole["RORPole"]
-    class SI["RORStructureInterne"]
-    class UF["RORUniteFonctionnelle"]
-
-    OI <|-- Pole
-    OI <|-- SI
-    OI <|-- UF
-
-    OI "*" --> "*" OI : contient
-
-    namespace Structure {
-        class EG["ROREntiteGeographique"]
-    }
-    namespace OffreOperationnelle {
-        class Offre["ROROffreOperationnelle"]
-    }
-
-    OI "*" --> "1..*" EG : rattachée à
-    OI "0..1" --> "1..*" Offre : porte
-
-    click OI href "StructureDefinition-ror-organisation-interne.html" "ROROrganisationInterne"
-    click Pole href "StructureDefinition-ror-pole.html" "RORPole"
-    click SI href "StructureDefinition-ror-structure-interne.html" "RORStructureInterne"
-    click UF href "StructureDefinition-ror-unite-fonctionnelle.html" "RORUniteFonctionnelle"
-    click EG href "StructureDefinition-ror-entite-geographique.html" "ROREntiteGeographique"
-    click Offre href "StructureDefinition-ror-offre-operationnelle.html" "ROROffreOperationnelle"
+{% include Organisation.mmd %}
 </div>
 
 ---
