@@ -389,13 +389,15 @@ classDiagram
 
     note for Meta "Présente dans toutes\nles classes ROR (1..1)"
 
-    class Contact["Contact"]
-    class Adresse["Adresse"]
-    class MSS["BoiteLettreMSS"]
-    class Horaire["Horaire"]
-    class Lieu["Lieu"]
-    class DT["DivisionTerritoriale"]
-    class Tel["Telecommunication"]
+    namespace MOS {
+        class Contact["Contact"]
+        class Adresse["Adresse"]
+        class MSS["BoiteLettreMSS"]
+        class Horaire["Horaire"]
+        class Lieu["Lieu"]
+        class DT["DivisionTerritoriale"]
+        class Tel["Telecommunication"]
+    }
 
     click Meta href "StructureDefinition-ror-metadonnee.html" "RORMetadonnee"
 
@@ -628,8 +630,8 @@ table.box td { border: none; font-size : 11px; }
           IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-07-08 17:17:00 +0000">
-    2026-07-08
+  <span title="2026-07-09 08:06:00 +0000">
+    2026-07-09
   </span>
 
           <br/>

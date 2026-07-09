@@ -13,7 +13,7 @@ Les **Classes Communes** regroupent les éléments partagés par l'ensemble des 
 
 ### Diagramme
 
-classDiagram class Meta["RORMetadonnee"] { dateCreation : dateTime [1..1] dateMiseJour : dateTime [1..1] identifiant : Identifier [0..1] commentaire : string [0..1] regionSource : Coding [0..1] modeleSaisie : Identifier [0..1] } note for Meta "Présente dans toutes\nles classes ROR (1..1)" class Contact["Contact"] class Adresse["Adresse"] class MSS["BoiteLettreMSS"] class Horaire["Horaire"] class Lieu["Lieu"] class DT["DivisionTerritoriale"] class Tel["Telecommunication"] click Meta href "StructureDefinition-ror-metadonnee.html" "RORMetadonnee" classDef mosClass fill:#D3D3D3 classDef mosClass stroke:#888 classDef mosClass color:#333 cssClass "Contact,Adresse,MSS,Horaire,Lieu,DT,Tel" mosClass
+classDiagram class Meta["RORMetadonnee"] { dateCreation : dateTime [1..1] dateMiseJour : dateTime [1..1] identifiant : Identifier [0..1] commentaire : string [0..1] regionSource : Coding [0..1] modeleSaisie : Identifier [0..1] } note for Meta "Présente dans toutes\nles classes ROR (1..1)" namespace MOS { class Contact["Contact"] class Adresse["Adresse"] class MSS["BoiteLettreMSS"] class Horaire["Horaire"] class Lieu["Lieu"] class DT["DivisionTerritoriale"] class Tel["Telecommunication"] } click Meta href "StructureDefinition-ror-metadonnee.html" "RORMetadonnee" classDef mosClass fill:#D3D3D3 classDef mosClass stroke:#888 classDef mosClass color:#333 cssClass "Contact,Adresse,MSS,Horaire,Lieu,DT,Tel" mosClass
 
 -------
 

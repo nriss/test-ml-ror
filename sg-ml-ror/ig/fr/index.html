@@ -372,7 +372,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           
 
             à partir de 
-2026-07-08
+2026-07-09
 
           
         
@@ -493,16 +493,28 @@ Cet IG illustre comment définir des modèles logiques ROR en dérivant des mod�
 
 <div class="mermaid">
 classDiagram
-    class EJ["ROREntiteJuridique"]
-    class EG["ROREntiteGeographique"]
-    class OI["ROROrganisationInterne"]
-    class Tarif["RORTarif"] {
-        &lt;&lt;abstract&gt;&gt;
+    namespace Structure {
+        class EJ["ROREntiteJuridique"]
+        class EG["ROREntiteGeographique"]
     }
-    class Offre["ROROffreOperationnelle"]
-    class Lieu["RORLieuRealisationOffre"]
-    class SitOp["RORSituationOperationnelle"]
-    class EP["RORExerciceProfessionnel"]
+    namespace Organisation {
+        class OI["ROROrganisationInterne"]
+    }
+    namespace TarifPkg {
+        class Tarif["RORTarif"] {
+            &lt;&lt;abstract&gt;&gt;
+        }
+    }
+    namespace OffreOperationnelle {
+        class Offre["ROROffreOperationnelle"]
+    }
+    namespace RessourcesOperationnelles {
+        class Lieu["RORLieuRealisationOffre"]
+    }
+    namespace Professionnel {
+        class SitOp["RORSituationOperationnelle"]
+        class EP["RORExerciceProfessionnel"]
+    }
 
     EJ "1" --&gt; "1..*" EG
     EG "1" --&gt; "0..*" OI
@@ -521,31 +533,6 @@ classDiagram
     click Lieu href "StructureDefinition-ror-lieu-realisation-offre.html" "RORLieuRealisationOffre"
     click SitOp href "StructureDefinition-ror-situation-operationnelle.html" "RORSituationOperationnelle"
     click EP href "StructureDefinition-ror-exercice-professionnel.html" "RORExerciceProfessionnel"
-
-    classDef pkgStructure fill:#E3F2FD
-    classDef pkgStructure stroke:#1976D2
-    classDef pkgStructure color:#333
-    cssClass "EJ,EG" pkgStructure
-    classDef pkgOrganisation fill:#E8F5E9
-    classDef pkgOrganisation stroke:#388E3C
-    classDef pkgOrganisation color:#333
-    cssClass "OI" pkgOrganisation
-    classDef pkgTarif fill:#FFF3E0
-    classDef pkgTarif stroke:#F57C00
-    classDef pkgTarif color:#333
-    cssClass "Tarif" pkgTarif
-    classDef pkgOffre fill:#F3E5F5
-    classDef pkgOffre stroke:#7B1FA2
-    classDef pkgOffre color:#333
-    cssClass "Offre" pkgOffre
-    classDef pkgRessources fill:#FCE4EC
-    classDef pkgRessources stroke:#C2185B
-    classDef pkgRessources color:#333
-    cssClass "Lieu" pkgRessources
-    classDef pkgProfessionnel fill:#E0F7FA
-    classDef pkgProfessionnel stroke:#00838F
-    classDef pkgProfessionnel color:#333
-    cssClass "SitOp,EP" pkgProfessionnel
 </div>
 
 <h3 id="données-pivots">Données pivots</h3>
@@ -734,8 +721,8 @@ classDiagram
           IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://esante.gouv.fr">Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris</a>.  
           Le package ans.fhir.fr.test.ror#0.1.0 est basé sur <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Date de génération : 
-  <span title="2026-07-08 17:17:00 +0000">
-    2026-07-08
+  <span title="2026-07-09 08:06:00 +0000">
+    2026-07-09
   </span>
 
           <br/>
