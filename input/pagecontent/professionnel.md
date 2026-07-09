@@ -17,21 +17,9 @@ L'**idNat_PS** (numéro RPPS ou ADELI) est l'identifiant national du professionn
 
 ### Diagramme
 
-{% include svg-interactive-styles.html %}
-
-<div class="figure svg-wrap" style="width:100%;">
-  <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
-    <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>
-    <button class="btn btn-light btn-sm svg-zoom-out" title="Zoom arrière">🔍−</button>
-    <button class="btn btn-light btn-sm svg-zoom-reset" title="Réinitialiser">↻</button>
-    <button class="btn btn-light btn-sm svg-fullscreen" title="Plein écran">⛶</button>
-  </div>
-  <p style="margin: 0; padding: 0;">
-    {%include Professionnel.svg%}
-  </p>
+<div class="mermaid" markdown="0">
+{% include Professionnel.mmd %}
 </div>
-
-{% include svg-interactive-script.html %}
 
 ---
 
@@ -57,7 +45,6 @@ L'**idNat_PS** (numéro RPPS ou ADELI) est l'identifiant national du professionn
 ---
 
 ### RORPersonnePhysique
-
 La **Personne Physique** porte les données d'identité du professionnel.
 
 {% include StructureDefinition-ror-personne-physique-class-table.xhtml %}
@@ -65,7 +52,6 @@ La **Personne Physique** porte les données d'identité du professionnel.
 ---
 
 ### RORProfessionnel
-
 Le **Professionnel** représente le professionnel enregistré dans le RPPS ou ADELI.
 
 {% include StructureDefinition-ror-professionnel-class-table.xhtml %}
@@ -73,7 +59,6 @@ Le **Professionnel** représente le professionnel enregistré dans le RPPS ou AD
 ---
 
 ### RORExerciceProfessionnel
-
 L'**Exercice Professionnel** caractérise l'exercice d'une profession par un professionnel.
 
 {% include StructureDefinition-ror-exercice-professionnel-class-table.xhtml %}
@@ -81,7 +66,6 @@ L'**Exercice Professionnel** caractérise l'exercice d'une profession par un pro
 ---
 
 ### RORSavoirFaire
-
 Le **Savoir-Faire** est une classe abstraite décrivant la spécialité ou la compétence principale du professionnel. Elle est spécialisée en 9 sous-classes.
 
 {% include StructureDefinition-ror-savoir-faire-class-table.xhtml %}
@@ -89,7 +73,6 @@ Le **Savoir-Faire** est une classe abstraite décrivant la spécialité ou la co
 ---
 
 ### Sous-classes de RORSavoirFaire
-
 {% include StructureDefinition-ror-specialite-class-table.xhtml %}
 
 {% include StructureDefinition-ror-competence-class-table.xhtml %}
@@ -111,7 +94,6 @@ Le **Savoir-Faire** est une classe abstraite décrivant la spécialité ou la co
 ---
 
 ### RORSituationOperationnelle
-
 La **Situation Opérationnelle** caractérise les conditions d'exercice du professionnel dans le cadre d'une offre opérationnelle précise.
 
 **Règles de gestion :**

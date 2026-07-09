@@ -45,7 +45,7 @@ parameters:
 
 pages:
     index.md:
-        title: Accueil
+        title: Introduction
     avantages-ml.md:
         title: Pourquoi le Modèle Logique HL7 ?
     classes-communes.md:
@@ -68,19 +68,56 @@ pages:
         title: Historique des versions
 
 menu:
-    Accueil: index.html
-    À propos de ce POC: avantages-ml.html
-    Modèle d'exposition:
-        Classes Communes: classes-communes.html
-        Structure: structure.html
-        Organisation: organisation.html
-        Offre Opérationnelle: offre-operationnelle.html
-        Tarif: tarif.html
-        Ressources Opérationnelles: ressources-operationnelles.html
-        Professionnel Ressource: professionnel.html
+    Introduction: index.html
+    Structure:
+        Vue d'ensemble: structure.html
+        Entité Juridique: structure.html#rorentitejuridique
+        Entité Géographique: structure.html#rorentitegeographique
+    Tarif:
+        Vue d'ensemble: tarif.html
+        Tarif (classe abstraite): tarif.html#rortarif-classe-abstraite
+        Forfait Socle Hébergement: tarif.html#rorforfaitsoclehebergement
+        Tarif Accueil de Jour: tarif.html#rortarifaccueildejour
+        Tarif Dépendance: tarif.html#rortarifdependance
+        Tarif Aides Humaines: tarif.html#rortarifaideshumaines
+        Tarif Prestation Supplémentaire: tarif.html#rortarifprestationsupplementaire
+        Supplément Tarif Hébergement: tarif.html#rorsupplementtarifhebergement
+        Tarif Portage Repas: tarif.html#rortarifportagerepas
+    Organisation:
+        Vue d'ensemble: organisation.html
+        Organisation Interne: organisation.html#rororganisationinterne
+        Pôle: organisation.html#rorpole
+        Structure Interne: organisation.html#rorstructureinterne
+        Unité Fonctionnelle: organisation.html#rorunitefonctionnelle
+    Offre Opérationnelle:
+        Vue d'ensemble: offre-operationnelle.html
+        Offre Opérationnelle: offre-operationnelle.html#roroffreoperationnelle
+        Activité Opérationnelle: offre-operationnelle.html#roractiviteoperationnelle
+        Patientèle: offre-operationnelle.html#rorpatientele
+    Ressources Opérationnelles:
+        Vue d'ensemble: ressources-operationnelles.html
+        Lieu de Réalisation de l'Offre: ressources-operationnelles.html#rorlieurealisationoffre
+        Équipement Spécifique: ressources-operationnelles.html#rorequipementspecifique
+        Capacité de Prise en Charge: ressources-operationnelles.html#rorcapaciteprisecharge
+        Capacité d'Accueil Opérationnelle: ressources-operationnelles.html#rorcapaciteaccueiloperationnelle
+        Capacité Habitation: ressources-operationnelles.html#rorcapacitehabitation
+        Limite Caractéristique Équipement: ressources-operationnelles.html#rorlimitecaracteristiqueequipement
+    Professionnel Ressource:
+        Vue d'ensemble: professionnel.html
+        Personne Physique: professionnel.html#rorpersonnephysique
+        Professionnel: professionnel.html#rorprofessionnel
+        Exercice Professionnel: professionnel.html#rorexerciceprofessionnel
+        Savoir-Faire: professionnel.html#rorsavoirfaire
+        Sous-classes de Savoir-Faire: professionnel.html#sous-classes-de-rorsavoirfaire
+        Situation Opérationnelle: professionnel.html#rorsituationoperationnelle
+    Classes Communes:
+        Vue d'ensemble: classes-communes.html
+        Métadonnée: classes-communes.html#rormetadonnee
+        Classes héritées du MOS: classes-communes.html#classes-communes-hrites-du-mos
     Règles de gestion: regles-de-gestion.html
-    Ressources de conformité: artifacts.html
+    #Ressources de conformité: artifacts.html
     Historique: change-log.html
-    Documentations:
+    Autres resources:
+        À propos de ce POC: avantages-ml.html
         Documentation des IGs: new-tab https://interop.esante.gouv.fr/ig/documentation/
         Documentation de l'API: new-tab https://interop.esante.gouv.fr/ig/fhir/ror/

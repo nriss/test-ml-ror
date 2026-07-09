@@ -22,21 +22,9 @@ Ces données pivots ne sont pas modifiables après création.
 
 ### Diagramme
 
-{% include svg-interactive-styles.html %}
-
-<div class="figure svg-wrap" style="width:100%;">
-  <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
-    <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>
-    <button class="btn btn-light btn-sm svg-zoom-out" title="Zoom arrière">🔍−</button>
-    <button class="btn btn-light btn-sm svg-zoom-reset" title="Réinitialiser">↻</button>
-    <button class="btn btn-light btn-sm svg-fullscreen" title="Plein écran">⛶</button>
-  </div>
-  <p style="margin: 0; padding: 0;">
-    {%include Structure.svg%}
-  </p>
+<div class="mermaid" markdown="0">
+{% include Structure.mmd %}
 </div>
-
-{% include svg-interactive-script.html %}
 
 ---
 
@@ -56,7 +44,6 @@ Ces données pivots ne sont pas modifiables après création.
 ---
 
 ### ROREntiteJuridique
-
 L'**Entité Juridique** (EJ) correspond à la notion de personne morale :
 - Pour les établissements FINESS : une EJ détient des droits lui permettant d'exercer ses activités dans des entités géographiques.
 - Pour les structures dans RPPS/ADELI hors FINESS : l'EJ représente la personne morale qui porte la responsabilité d'exercice.
@@ -74,7 +61,6 @@ L'**Entité Juridique** (EJ) correspond à la notion de personne morale :
 ---
 
 ### ROREntiteGeographique
-
 L'**Entité Géographique** (EG) correspond à la notion d'établissement d'une entité juridique :
 - Pour les entités FINESS : l'EG correspond à une implantation géographique caractérisée par une catégorie d'établissement.
 - Pour les entités RPPS/ADELI hors FINESS : l'EG correspond à l'implantation géographique où le professionnel exerce.

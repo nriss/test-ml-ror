@@ -1,0 +1,89 @@
+classDiagram
+    class PP["RORPersonnePhysique"] {
+        civilite : Coding [0..1]
+        nomFamille : string [1..1]
+        prenom : string [1..1]
+        metadonnee : RORMetadonnee [1..1]
+    }
+
+    class Pro["RORProfessionnel"] {
+        idNatPS : Identifier [1..1]
+        metadonnee : RORMetadonnee [1..1]
+    }
+
+    class EP["RORExerciceProfessionnel"] {
+        profession : Coding [1..1]
+        civiliteExercice : Coding [0..1]
+        metadonnee : RORMetadonnee [1..1]
+    }
+
+    class SF["RORSavoirFaire"] {
+        &lt;&lt;abstract&gt;&gt;
+        typeSavoirFaire : Coding [1..1]
+        metadonnee : RORMetadonnee [1..1]
+    }
+
+    class Spec["RORSpecialite"] {
+        specialite : Coding [1..1]
+    }
+    class Comp["RORCompetence"] {
+        competence : Coding [1..1]
+    }
+    class CompExcl["RORCompetenceExclusive"] {
+        competenceExclusive : Coding [1..1]
+    }
+    class OrPart["ROROrientationParticuliere"] {
+        orientationParticuliere : Coding [1..1]
+    }
+    class Cap["RORCapacite"] {
+        capaciteSavoirFaire : Coding [1..1]
+    }
+    class QPAC["RORQualificationPAC"] {
+        qualificationPAC : Coding [1..1]
+    }
+    class DEC["RORDroitExerciceComplementaire"] {
+        droitExerciceComplementaire : Coding [1..1]
+    }
+    class SST["RORSurspecialiteTransversale"] {
+        surspecialiteTransversale : Coding [1..1]
+    }
+    class DESC["RORDESCNonQualifiant"] {
+        DESCNonQualifiant : Coding [1..1]
+    }
+
+    class SitOp["RORSituationOperationnelle"] {
+        modeExerciceOffre : Coding [1..1]
+        competenceSpecifique : Coding [0..*]
+        secteurConventionnement : Coding [0..1]
+        metadonnee : RORMetadonnee [1..1]
+    }
+
+    PP "1" --> "1" Pro
+    Pro "1" --> "0..*" EP
+    EP "1" --> "0..*" SF
+    SF <|-- Spec
+    SF <|-- Comp
+    SF <|-- CompExcl
+    SF <|-- OrPart
+    SF <|-- Cap
+    SF <|-- QPAC
+    SF <|-- DEC
+    SF <|-- SST
+    SF <|-- DESC
+
+    EP "1" --> "0..*" SitOp : situation dans une offre
+
+    click PP href "StructureDefinition-ror-personne-physique.html" "RORPersonnePhysique"
+    click Pro href "StructureDefinition-ror-professionnel.html" "RORProfessionnel"
+    click EP href "StructureDefinition-ror-exercice-professionnel.html" "RORExerciceProfessionnel"
+    click SF href "StructureDefinition-ror-savoir-faire.html" "RORSavoirFaire"
+    click Spec href "StructureDefinition-ror-specialite.html" "RORSpecialite"
+    click Comp href "StructureDefinition-ror-competence.html" "RORCompetence"
+    click CompExcl href "StructureDefinition-ror-competence-exclusive.html" "RORCompetenceExclusive"
+    click OrPart href "StructureDefinition-ror-orientation-particuliere.html" "ROROrientationParticuliere"
+    click Cap href "StructureDefinition-ror-capacite-savoir-faire.html" "RORCapacite"
+    click QPAC href "StructureDefinition-ror-qualification-pac.html" "RORQualificationPAC"
+    click DEC href "StructureDefinition-ror-droit-exercice-complementaire.html" "RORDroitExerciceComplementaire"
+    click SST href "StructureDefinition-ror-surspecialite-transversale.html" "RORSurspecialiteTransversale"
+    click DESC href "StructureDefinition-ror-desc-non-qualifiant.html" "RORDESCNonQualifiant"
+    click SitOp href "StructureDefinition-ror-situation-operationnelle.html" "RORSituationOperationnelle"

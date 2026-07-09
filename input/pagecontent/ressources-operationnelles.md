@@ -13,21 +13,9 @@ L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette s
 
 ### Diagramme
 
-{% include svg-interactive-styles.html %}
-
-<div class="figure svg-wrap" style="width:100%;">
-  <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
-    <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>
-    <button class="btn btn-light btn-sm svg-zoom-out" title="Zoom arrière">🔍−</button>
-    <button class="btn btn-light btn-sm svg-zoom-reset" title="Réinitialiser">↻</button>
-    <button class="btn btn-light btn-sm svg-fullscreen" title="Plein écran">⛶</button>
-  </div>
-  <p style="margin: 0; padding: 0;">
-    {%include RessourcesOperationnelles.svg%}
-  </p>
+<div class="mermaid" markdown="0">
+{% include RessourcesOperationnelles.mmd %}
 </div>
-
-{% include svg-interactive-script.html %}
 
 ---
 
@@ -45,7 +33,6 @@ L'identifiant du lieu de réalisation de l'offre est la donnée pivot de cette s
 ---
 
 ### RORLieuRealisationOffre
-
 Le **Lieu de Réalisation de l'Offre** indique le lieu précis où se déroule la prestation. Il hérite de la classe MOS `Lieu` (adresse, coordonnées géographiques, etc.) et ajoute les attributs spécifiques au contexte ROR.
 
 {% include StructureDefinition-ror-lieu-realisation-offre-class-table.xhtml %}
@@ -53,7 +40,6 @@ Le **Lieu de Réalisation de l'Offre** indique le lieu précis où se déroule l
 ---
 
 ### ROREquipementSpecifique
-
 L'**Équipement Spécifique** décrit les équipements matériels et installations spécialisés disponibles dans un établissement, susceptibles d'influencer l'orientation d'un patient.
 
 {% include StructureDefinition-ror-equipement-specifique-class-table.xhtml %}
@@ -61,7 +47,6 @@ L'**Équipement Spécifique** décrit les équipements matériels et installatio
 ---
 
 ### RORCapacitePriseCharge
-
 La **Capacité de Prise en Charge** décrit les capacités d'accueil en termes de places autorisées ou installées pour une offre donnée.
 
 {% include StructureDefinition-ror-capacite-prise-charge-class-table.xhtml %}
@@ -69,7 +54,6 @@ La **Capacité de Prise en Charge** décrit les capacités d'accueil en termes d
 ---
 
 ### RORCapaciteAccueilOperationnelle
-
 La **Capacité d'Accueil Opérationnelle** représente les disponibilités de prise en charge en temps réel ou à court terme. Elle permet aux outils d'orientation d'accéder aux disponibilités d'un établissement.
 
 **Règles de gestion :**
@@ -80,7 +64,6 @@ La **Capacité d'Accueil Opérationnelle** représente les disponibilités de pr
 ---
 
 ### RORCapaciteHabitation
-
 La **Capacité Habitation** décrit le nombre de places ou de logements disponibles selon le type d'hébergement.
 
 {% include StructureDefinition-ror-capacite-habitation-class-table.xhtml %}
@@ -88,7 +71,6 @@ La **Capacité Habitation** décrit le nombre de places ou de logements disponib
 ---
 
 ### RORLimiteCaracteristiqueEquipement
-
 La **Limite de Caractéristique d'Équipement** précise les limites que peut supporter l'équipement le plus tolérant parmi les équipements spécifiques de même type dans une organisation. Par exemple, si une organisation possède trois tables de bloc opératoire supportant respectivement 180 kg, 190 kg et 200 kg, seule la valeur de 200 kg est retenue.
 
 {% include StructureDefinition-ror-limite-caracteristique-equipement-class-table.xhtml %}

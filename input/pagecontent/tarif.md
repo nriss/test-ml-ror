@@ -11,21 +11,9 @@ La classe `RORTarif` est une **classe abstraite** dont héritent les différents
 
 ### Diagramme
 
-{% include svg-interactive-styles.html %}
-
-<div class="figure svg-wrap" style="width:100%;">
-  <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
-    <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>
-    <button class="btn btn-light btn-sm svg-zoom-out" title="Zoom arrière">🔍−</button>
-    <button class="btn btn-light btn-sm svg-zoom-reset" title="Réinitialiser">↻</button>
-    <button class="btn btn-light btn-sm svg-fullscreen" title="Plein écran">⛶</button>
-  </div>
-  <p style="margin: 0; padding: 0;">
-    {%include Tarif.svg%}
-  </p>
+<div class="mermaid" markdown="0">
+{% include Tarif.mmd %}
 </div>
-
-{% include svg-interactive-script.html %}
 
 ---
 
@@ -45,7 +33,6 @@ La classe `RORTarif` est une **classe abstraite** dont héritent les différents
 ---
 
 ### RORTarif (classe abstraite)
-
 Attributs communs à tous les types de tarifs. Cette classe n'est pas instanciée directement : seules ses sous-classes spécialisées sont utilisées.
 
 **Règles de gestion :**
@@ -57,7 +44,6 @@ Attributs communs à tous les types de tarifs. Cette classe n'est pas instancié
 ---
 
 ### RORForfaitSocleHebergement
-
 Tarif journalier et par personne pour un type d'hébergement donné. Inclut obligatoirement les prestations définies dans le décret n°2015-1868.
 
 {% include StructureDefinition-ror-forfait-socle-hebergement-class-table.xhtml %}
@@ -65,25 +51,21 @@ Tarif journalier et par personne pour un type d'hébergement donné. Inclut obli
 ---
 
 ### RORTarifAccueilDeJour
-
 {% include StructureDefinition-ror-tarif-accueil-de-jour-class-table.xhtml %}
 
 ---
 
 ### RORTarifDependance
-
 {% include StructureDefinition-ror-tarif-dependance-class-table.xhtml %}
 
 ---
 
 ### RORTarifAidesHumaines
-
 {% include StructureDefinition-ror-tarif-aides-humaines-class-table.xhtml %}
 
 ---
 
 ### RORTarifPrestationSupplementaire
-
 **Règles de gestion :**
 - `RG_EXP_036` : Les attributs de la classe `TarifPrestationSupplementaire` DOIVENT être mutuellement exclusifs : soit `nomPrestationSupp` (code d'une prestation connue), soit `nomAutrePrestationSupp` (libellé libre), mais pas les deux simultanément.
 
@@ -92,7 +74,6 @@ Tarif journalier et par personne pour un type d'hébergement donné. Inclut obli
 ---
 
 ### RORSupplementTarifHebergement
-
 **Règles de gestion :**
 - `RG_EXP_029` : L'attribut `typeHabitation` d'un tarif de type « supplément tarif hébergement » DOIT prendre la valeur « chambre simple ».
 
@@ -101,5 +82,4 @@ Tarif journalier et par personne pour un type d'hébergement donné. Inclut obli
 ---
 
 ### RORTarifPortageRepas
-
 {% include StructureDefinition-ror-tarif-portage-repas-class-table.xhtml %}

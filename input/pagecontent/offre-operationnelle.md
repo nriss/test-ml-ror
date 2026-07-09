@@ -13,21 +13,9 @@ L'**identifiantOffre** est l'identifiant de l'offre opérationnelle, unique et p
 
 ### Diagramme
 
-{% include svg-interactive-styles.html %}
-
-<div class="figure svg-wrap" style="width:100%;">
-  <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
-    <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>
-    <button class="btn btn-light btn-sm svg-zoom-out" title="Zoom arrière">🔍−</button>
-    <button class="btn btn-light btn-sm svg-zoom-reset" title="Réinitialiser">↻</button>
-    <button class="btn btn-light btn-sm svg-fullscreen" title="Plein écran">⛶</button>
-  </div>
-  <p style="margin: 0; padding: 0;">
-    {%include OffreOperationnelle.svg%}
-  </p>
+<div class="mermaid" markdown="0">
+{% include OffreOperationnelle.mmd %}
 </div>
-
-{% include svg-interactive-script.html %}
 
 ---
 
@@ -42,7 +30,6 @@ L'**identifiantOffre** est l'identifiant de l'offre opérationnelle, unique et p
 ---
 
 ### ROROffreOperationnelle
-
 L'**Offre Opérationnelle** décrit les prestations que peut réaliser une structure. Elle est rattachée à une Organisation Interne et peut être réalisée par un ou plusieurs professionnels de santé.
 
 **Règles de gestion :**
@@ -70,7 +57,6 @@ L'**Offre Opérationnelle** décrit les prestations que peut réaliser une struc
 ---
 
 ### RORActiviteOperationnelle
-
 L'**Activité Opérationnelle** caractérise l'activité exercée dans le cadre d'une offre opérationnelle.
 
 **Règles de gestion :**
@@ -81,7 +67,6 @@ L'**Activité Opérationnelle** caractérise l'activité exercée dans le cadre 
 ---
 
 ### RORPatientele
-
 La **Patientèle** décrit les caractéristiques de la population cible de l'offre opérationnelle.
 
 **Règles de gestion :**

@@ -13,21 +13,9 @@ L'identifiant des organisations internes est généré par les ROR. Lorsqu'il es
 
 ### Diagramme
 
-{% include svg-interactive-styles.html %}
-
-<div class="figure svg-wrap" style="width:100%;">
-  <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
-    <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>
-    <button class="btn btn-light btn-sm svg-zoom-out" title="Zoom arrière">🔍−</button>
-    <button class="btn btn-light btn-sm svg-zoom-reset" title="Réinitialiser">↻</button>
-    <button class="btn btn-light btn-sm svg-fullscreen" title="Plein écran">⛶</button>
-  </div>
-  <p style="margin: 0; padding: 0;">
-    {%include Organisation.svg%}
-  </p>
+<div class="mermaid" markdown="0">
+{% include Organisation.mmd %}
 </div>
-
-{% include svg-interactive-script.html %}
 
 ---
 
@@ -43,7 +31,6 @@ L'identifiant des organisations internes est généré par les ROR. Lorsqu'il es
 ---
 
 ### ROROrganisationInterne
-
 L'**Organisation Interne** (OI) représente l'organisation opérationnelle au sein d'un établissement : pôles, services, unités fonctionnelles, équipes de soins, etc. Elle est l'entité à laquelle sont rattachées les offres opérationnelles.
 
 La hiérarchie organisationnelle dans le ROR est la suivante :
@@ -67,17 +54,14 @@ Les classes `RORPole`, `RORStructureInterne` et `RORUniteFonctionnelle` sont des
 ---
 
 ### RORPole
-
 {% include StructureDefinition-ror-pole-class-table.xhtml %}
 
 ---
 
 ### RORStructureInterne
-
 {% include StructureDefinition-ror-structure-interne-class-table.xhtml %}
 
 ---
 
 ### RORUniteFonctionnelle
-
 {% include StructureDefinition-ror-unite-fonctionnelle-class-table.xhtml %}

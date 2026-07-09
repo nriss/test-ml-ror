@@ -42,21 +42,9 @@ Les données de description de l'offre de santé, échangées avec les ROR, sont
 | 4 | **Ressources Opérationnelles** | Moyens mis en œuvre pour réaliser la prestation | [Ressources Opérationnelles](ressources-operationnelles.html) |
 | 5 | **Professionnel** | Personnes physiques, professionnels, exercice professionnel et savoir-faire | [Professionnel Ressource](professionnel.html) |
 
-{% include svg-interactive-styles.html %}
-
-<div class="figure svg-wrap" style="width:100%;">
-  <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
-    <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>
-    <button class="btn btn-light btn-sm svg-zoom-out" title="Zoom arrière">🔍−</button>
-    <button class="btn btn-light btn-sm svg-zoom-reset" title="Réinitialiser">↻</button>
-    <button class="btn btn-light btn-sm svg-fullscreen" title="Plein écran">⛶</button>
-  </div>
-  <p style="margin: 0; padding: 0;">
-    {%include VueEnsemble.svg%}
-  </p>
+<div class="mermaid" markdown="0">
+{% include VueEnsemble.mmd %}
 </div>
-
-{% include svg-interactive-script.html %}
 
 ### Données pivots
 
@@ -81,6 +69,7 @@ Ce modèle ROR dérive du MOS. La stratégie appliquée est :
 - **N'ajouter en FSH que les différences** : attributs supplémentaires, contraintes spécifiques au contexte ROR, cardinalités resserrées
 
 Différences notables par rapport au MOS :
+
 - Les attributs MOS ne répondant pas aux besoins métiers ROR ne sont pas repris.
 - Certaines cardinalités sont contraintes (ex. `idNatStruct 1..1`, `champActivite 1..1`).
 - De nouveaux concepts propres au ROR ont été ajoutés (ex. `RORMetadonnee`, `RORCapaciteAccueilOperationnelle`, hiérarchie `RORTarif`).
@@ -92,17 +81,23 @@ Différences notables par rapport au MOS :
 
 {% include dependency-table.xhtml %}
 
-### Analyse cross-version
+<!--
+### Analyse inter-version FHIR
 
 {% include cross-version-analysis.xhtml %}
+-->
 
+<!--
 ### Profils globaux
 
 {% include globals-table.xhtml %}
+-->
 
+<!-- 
 ### Paramètres d'expansion
 
-{% include expansion-params.xhtml %}
+{% include expansion-params.xhtml %} 
+-->
 
 ### Propriété intellectuelle
 

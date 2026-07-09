@@ -1,0 +1,53 @@
+classDiagram
+    class Offre["ROROffreOperationnelle"] {
+        identifiantOffre : Identifier [1..1]
+        nomOffre : string [0..1]
+        typeOffre : Coding [0..*]
+        champActivite : Coding [1..1]
+        modePriseEnCharge : Coding [1..1]
+        uniteSensible : boolean [1..1]
+        temporaliteAccueil : Coding [0..*]
+        modaliteAccueil : Coding [0..*]
+        modeGestion : Coding [0..1]
+        acteSpecifique : Coding [0..*]
+        specialisationPriseEnCharge : Coding [0..*]
+        ouvertureAnnuelle : Coding [0..*]
+        professionRessource : Coding [0..*]
+        competenceSpecifique : Coding [0..*]
+        niveauExpertise : Coding [0..*]
+        typeFermeture : Coding [0..1]
+        horaire : Horaire [0..*]
+        contact : Contact [0..*]
+        boiteLettreMSS : BoiteLettreMSS [0..*]
+        metadonnee : RORMetadonnee [1..1]
+    }
+
+    class AO["RORActiviteOperationnelle"] {
+        activiteOperationnelle : Coding [1..1]
+        familleActiviteOperationnelle : Coding [0..1]
+        metadonnee : RORMetadonnee [1..1]
+    }
+
+    class Pat["RORPatientele"] {
+        ageMin : Quantity [1..1]
+        ageMax : Quantity [1..1]
+        publicPrisEnCharge : Coding [0..*]
+    }
+
+    namespace RessourcesOperationnelles {
+        class Lieu["RORLieuRealisationOffre"]
+    }
+    namespace Professionnel {
+        class SitOp["RORSituationOperationnelle"]
+    }
+
+    Offre "1" --> "0..*" AO : décrit par
+    Offre "1" --> "0..1" Pat : pour
+    Offre "1" --> "1" Lieu : réalisée dans
+    Offre "1" --> "0..*" SitOp : réalisée par
+
+    click Offre href "StructureDefinition-ror-offre-operationnelle.html" "ROROffreOperationnelle"
+    click AO href "StructureDefinition-ror-activite-operationnelle.html" "RORActiviteOperationnelle"
+    click Pat href "StructureDefinition-ror-patientele.html" "RORPatientele"
+    click Lieu href "StructureDefinition-ror-lieu-realisation-offre.html" "RORLieuRealisationOffre"
+    click SitOp href "StructureDefinition-ror-situation-operationnelle.html" "RORSituationOperationnelle"

@@ -12,26 +12,13 @@ Les **Classes Communes** regroupent les éléments partagés par l'ensemble des 
 
 ### Diagramme
 
-{% include svg-interactive-styles.html %}
-
-<div class="figure svg-wrap" style="width:100%;">
-  <div class="btn-group-vertical position-absolute top-0 end-0 p-2 svg-controls">
-    <button class="btn btn-light btn-sm svg-zoom-in" title="Zoom avant">🔍+</button>
-    <button class="btn btn-light btn-sm svg-zoom-out" title="Zoom arrière">🔍−</button>
-    <button class="btn btn-light btn-sm svg-zoom-reset" title="Réinitialiser">↻</button>
-    <button class="btn btn-light btn-sm svg-fullscreen" title="Plein écran">⛶</button>
-  </div>
-  <p style="margin: 0; padding: 0;">
-    {%include ClassesCommunes.svg%}
-  </p>
+<div class="mermaid" markdown="0">
+{% include ClassesCommunes.mmd %}
 </div>
-
-{% include svg-interactive-script.html %}
 
 ---
 
 ### RORMetadonnee
-
 La **Métadonnée** est présente dans toutes les classes du modèle ROR (`metadonnee 1..1`). Elle permet de tracer les informations de gestion des données : date de création, date de mise à jour, identifiant de la donnée, commentaire, région source et modèle de saisie.
 
 **Règle :** La métadonnée est obligatoire (`1..1`) sur toutes les classes du modèle ROR. Elle permet notamment d'identifier la région source de la donnée et de gérer les mises à jour dans le contexte d'un système fédéré.
@@ -41,7 +28,6 @@ La **Métadonnée** est présente dans toutes les classes du modèle ROR (`metad
 ---
 
 ### Classes communes héritées du MOS
-
 Les classes suivantes sont définies dans le [MOS (Modèle des Objets de Santé)](https://interop.esante.gouv.fr/ig/mos/0.1.0-ballot/) et réutilisées dans les modèles ROR sans redéfinition.
 
 | Classe MOS | Utilisation dans le ROR |
