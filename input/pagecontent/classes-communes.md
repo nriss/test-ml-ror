@@ -25,13 +25,15 @@ classDiagram
 
     note for Meta "Présente dans toutes\nles classes ROR (1..1)"
 
-    class Contact["Contact"]
-    class Adresse["Adresse"]
-    class MSS["BoiteLettreMSS"]
-    class Horaire["Horaire"]
-    class Lieu["Lieu"]
-    class DT["DivisionTerritoriale"]
-    class Tel["Telecommunication"]
+    namespace MOS {
+        class Contact["Contact"]
+        class Adresse["Adresse"]
+        class MSS["BoiteLettreMSS"]
+        class Horaire["Horaire"]
+        class Lieu["Lieu"]
+        class DT["DivisionTerritoriale"]
+        class Tel["Telecommunication"]
+    }
 
     click Meta href "StructureDefinition-ror-metadonnee.html" "RORMetadonnee"
 

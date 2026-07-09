@@ -44,16 +44,28 @@ Les données de description de l'offre de santé, échangées avec les ROR, sont
 
 <div class="mermaid" markdown="0">
 classDiagram
-    class EJ["ROREntiteJuridique"]
-    class EG["ROREntiteGeographique"]
-    class OI["ROROrganisationInterne"]
-    class Tarif["RORTarif"] {
-        &lt;&lt;abstract&gt;&gt;
+    namespace Structure {
+        class EJ["ROREntiteJuridique"]
+        class EG["ROREntiteGeographique"]
     }
-    class Offre["ROROffreOperationnelle"]
-    class Lieu["RORLieuRealisationOffre"]
-    class SitOp["RORSituationOperationnelle"]
-    class EP["RORExerciceProfessionnel"]
+    namespace Organisation {
+        class OI["ROROrganisationInterne"]
+    }
+    namespace TarifPkg {
+        class Tarif["RORTarif"] {
+            &lt;&lt;abstract&gt;&gt;
+        }
+    }
+    namespace OffreOperationnelle {
+        class Offre["ROROffreOperationnelle"]
+    }
+    namespace RessourcesOperationnelles {
+        class Lieu["RORLieuRealisationOffre"]
+    }
+    namespace Professionnel {
+        class SitOp["RORSituationOperationnelle"]
+        class EP["RORExerciceProfessionnel"]
+    }
 
     EJ "1" --> "1..*" EG
     EG "1" --> "0..*" OI
@@ -72,31 +84,6 @@ classDiagram
     click Lieu href "StructureDefinition-ror-lieu-realisation-offre.html" "RORLieuRealisationOffre"
     click SitOp href "StructureDefinition-ror-situation-operationnelle.html" "RORSituationOperationnelle"
     click EP href "StructureDefinition-ror-exercice-professionnel.html" "RORExerciceProfessionnel"
-
-    classDef pkgStructure fill:#E3F2FD
-    classDef pkgStructure stroke:#1976D2
-    classDef pkgStructure color:#333
-    cssClass "EJ,EG" pkgStructure
-    classDef pkgOrganisation fill:#E8F5E9
-    classDef pkgOrganisation stroke:#388E3C
-    classDef pkgOrganisation color:#333
-    cssClass "OI" pkgOrganisation
-    classDef pkgTarif fill:#FFF3E0
-    classDef pkgTarif stroke:#F57C00
-    classDef pkgTarif color:#333
-    cssClass "Tarif" pkgTarif
-    classDef pkgOffre fill:#F3E5F5
-    classDef pkgOffre stroke:#7B1FA2
-    classDef pkgOffre color:#333
-    cssClass "Offre" pkgOffre
-    classDef pkgRessources fill:#FCE4EC
-    classDef pkgRessources stroke:#C2185B
-    classDef pkgRessources color:#333
-    cssClass "Lieu" pkgRessources
-    classDef pkgProfessionnel fill:#E0F7FA
-    classDef pkgProfessionnel stroke:#00838F
-    classDef pkgProfessionnel color:#333
-    cssClass "SitOp,EP" pkgProfessionnel
 </div>
 
 ### Données pivots
