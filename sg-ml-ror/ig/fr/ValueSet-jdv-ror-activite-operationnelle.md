@@ -33,7 +33,7 @@ Jeu de valeurs provisoire incluant tous les codes de TRE_R211-ActiviteOperationn
   "title" : "JDV ROR - Activité Opérationnelle (provisoire)",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-07-09T12:48:10+00:00",
+  "date" : "2026-07-09T15:33:10+00:00",
   "publisher" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
   "contact" : [{
     "name" : "Agence du Numérique en Santé (ANS) - 2-10 Rue d'Oradour-sur-Glane, 75015 Paris",
