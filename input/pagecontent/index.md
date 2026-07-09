@@ -44,6 +44,7 @@ Les données de description de l'offre de santé, échangées avec les ROR, sont
 
 <div class="mermaid" markdown="0">
 classDiagram
+    direction LR
     namespace Structure {
         class EJ["ROREntiteJuridique"]
         class EG["ROREntiteGeographique"]
